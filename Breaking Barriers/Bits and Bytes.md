@@ -11,8 +11,12 @@ A *bit* is a *binary digit*. We already know binary represents one of two states
     <td>Bit A</td>
   </tr>
   <tr>
-    <td>0</td>
-    <td>1</td>
+    <td>
+      <tr>
+        <td>0</td>
+        <td>1</td>
+      </tr>
+    </td>
   </tr>
 </table>
 
