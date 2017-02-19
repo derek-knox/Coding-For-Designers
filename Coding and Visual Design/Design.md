@@ -18,12 +18,20 @@ With the elements as primitives and the principles as an organization of those p
     <td>Coding</td>
   </tr>
   <tr>
-    <td>Elements = Primitives
+    <td>
+Elements = Primitives
+
 Principles = Organization of Primitives
-Constructs = Compound Results</td>
-    <td>Elements = Primitives
+
+Constructs = Compound Results
+    </td>
+    <td>
+Elements = Primitives
+
 Patterns = Organization of Primitives
-Components = Compound Results</td>
+
+Components = Compound Results
+     </td>
   </tr>
 </table>
 
