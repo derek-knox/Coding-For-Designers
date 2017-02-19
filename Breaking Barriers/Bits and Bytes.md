@@ -22,6 +22,8 @@ A *bit* is a *binary digit*. We already know binary represents one of two states
   </tr>
 </table>
 
+1 bit = 2 states
+
 <table>
   <tr>
     <td>Bit B</td>
@@ -47,6 +49,7 @@ A *bit* is a *binary digit*. We already know binary represents one of two states
   </tr>
 </table>
 
+2 bits = 4 states
 
 That makes sense. One bit represents two states. Two bits represents four states. No brainer. Let’s look at all the output states for kicks.
 
