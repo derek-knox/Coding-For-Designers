@@ -2,7 +2,7 @@
 
 Virtually all existing resources aimed at teaching people *about* or *how-to* code, make too many assumptions. Additionally, these same resources do not consider designers directly. *Coding for Designers* is a response to this unfortunate reality.
 
-This book is intended most for designers. If you author content as a visual designer, graphic designer, user interface designer, digital artist, game designer, photographer, or similar, this is for you. Non-coders unfamiliar with design will benefit too, but designers are the focus.
+This book is intended most for designers. If you author content as a visual designer, graphic designer, user interface designer, digital artist, game designer, photographer, or similar, this is for you. Non-coders wanting to learn *about* or *how-to* code will benefit too, but designers are the focus.
 
 The plan of attack is simple. In section one, *Breaking Barriers*, we will explore and demystify a series of concepts that I believe fundamentally intimidate designers and non-coders about how computers and code work. From the seemingly magical ones and zeros to the code you will soon write, we will see simple, basic, repetitive, and reusable concepts at play.
 
