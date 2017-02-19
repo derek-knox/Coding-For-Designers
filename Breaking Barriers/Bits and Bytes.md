@@ -112,7 +112,7 @@ Let’s use what we just learned to make an example code of our own. We will use
 
 ![alt text](../assets/visual-todo-placeholder.jpg "Image Grid of English Symbols")
 
-*Image Grid of English Symbols*
+*^ TODO - Image Grid of English Symbols ^*
 
 What if we wanted a code to represent *all the symbols of every single human language we have ever known*? A single byte would not cut it. Different amounts of bits, and thus bytes, are useful for different scenarios. Chew on that.
 
