@@ -8,24 +8,21 @@ A *bit* is a *binary digit*. We already know binary represents one of two states
 
 <table>
   <tr>
-    <td>
-Bit A
+    <td>Bit A</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+</table>
 
-0
-1
-
-2 States</td>
-    <td>
-Bit B
-
-Bit C
-
-0
-1
-0
-1
-
-4 states</td>
+<table>
+  <tr>
+    <td>Bit B</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>1</td>
   </tr>
 </table>
 
