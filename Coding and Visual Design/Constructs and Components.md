@@ -2,14 +2,14 @@
 
 The constructs embody the elements and principles in an effort to communicate specific structure, ideas, and messages. With the elements as primitives and the principles as an organization of those primitives, the constructs are the compound results. The constructs give visual designer’s the greatest chance for successfully communicating through a design. Remember, we may only influence. There are three core constructs:
 
-- Grid
-- Imagery
-  * Photography
-  * Iconography
-  * Illustration
-- Typography
-  * Text Content
-  * Text Style
+1. Grid
+2. Imagery
+  - Photography
+  - Iconography
+  - Illustration
+3. Typography
+  - Text Content
+  - Text Style
 
 The lack of a grid can be useful, but more often than not a grid will exist in a visual design. A grid instantly provides the scaffolding, scaling, and patterns of space in which imagery and typography will live. Imagery in its various forms and typography are the core communicative components of a visual design. Imagery typically communicates faster than typography, but the content of text itself has the least likelihood of misinterpretation.
 
