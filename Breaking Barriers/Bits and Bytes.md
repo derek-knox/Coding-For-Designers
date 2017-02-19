@@ -17,6 +17,7 @@ A *bit* is a *binary digit*. We already know binary represents one of two states
           <td>0</td>
           <td>1</td>
         </tr>
+        2 States
       </table>
     </td>
   </tr>
