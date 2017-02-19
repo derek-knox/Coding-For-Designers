@@ -21,10 +21,10 @@ I simply flipped a coin eight times. Heads was 1 and tails was 0, my own little 
   </tr>
 </table>
 
-Once encoded, we need to actually save it to a file. How do we do that? Well it is quite simple actually. The OS you run and use your design application(s) on has prewritten code giving you this power. Again, prewritten code stacked on prewritten code gives us an easy way to accomplish what we are after.
+Once encoded, we need to actually save it to a file. How do we do that? Well it is quite simple actually. The OS (Operating System) you run and use your design application(s) on (Windows, Mac, iOS, Android, etc.) has prewritten code giving you this power. Again, prewritten code stacked on prewritten code gives us an easy way to accomplish what we are after.
 
 Long story short, the encoded data needs to be inserted into an empty file. When saving the file, it needs to have a *file extension* appended to the file’s name. Think JPG, PNG, PSD, TXT, and JS for example. The sole reason for a file extension is so the OS and its applications can quickly identify the file’s type. Why is that important? If you didn’t already guess, the file extension helps identify the decoding approach. Full circle.
 
 Later, when we start to write our own JavaScript code, we will use the file extension JS. The code in the JavaScript file will not be in 1s and 0s though. Instead we will use the words that are part of the JavaScript language. We are not limited to just JavaScript words though, we get to use our own too. Much better than 1s and 0s. 
 
-First however, there are some coding concepts to cover. Knowing them will be extremely useful once we start writing JavaScript. To ease understanding, we will get to know these concepts relative to the more familiar elements, principles, and constructs of design.
+First however, there are some coding concepts to cover. Knowing them will be extremely useful once we start writing JavaScript. To ease understanding, we will get to know these concepts relative to the more familiar elements, principles, and constructs of visual design.
