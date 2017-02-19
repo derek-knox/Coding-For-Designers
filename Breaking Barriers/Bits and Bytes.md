@@ -64,14 +64,12 @@ That makes sense. One bit represents two states. Two bits represents four states
   </tr>
 </table>
 
-That *00 or 01 or 10 or 11* looks weird. It is. Thankfully, when we get to writing our own code, we don’t have to write in *1s* and *0s*. As a designer, I would not have became a coder otherwise.
+That *00 or 01 or 10 or 11* looks weird. It is. Thankfully, when we get to writing our own code, we don’t have to write in *1s* and *0s*. As a designer, I would not have learned to code otherwise.
 
-Now is a good point in time to reflect on why we are even looking at *bits *if we don’t have to code with them. There are three ideas worth instilling:
+Now is a good point in time to reflect on why we are even looking at *bits* if we don’t have to code with them. There are three ideas worth instilling:
 
 1. Computers, these complex machines, rely solely on extremely basic concepts
-
 2. There is no magic in coding, just simple ideas stacked atop each other
-
 3. The *one-of-two-states concept* a bit represents is constantly reused in coding
 
 How many states could we represent with three bits?
@@ -126,7 +124,7 @@ Eight? I was expecting six. It makes sense though when we see the state values p
   </tr>
 </table>
 
-You will notice that I stop at eight bits in the table above. We could keep going and the same doubling rule would apply. Why eight? Random I know. Ultimately, *people simply agreed that eight is a good stopping point*. They *agreed* that being able to represent 256 unique states was *good enough*. Again, no inherent magic.
+You will notice that I stop at eight bits in the table above. We could keep going and the same doubling rule would apply. Why stop at eight? Random I know. Ultimately, *people simply agreed that eight is a good stopping point*. They *agreed* that being able to represent 256 states was *good enough*. Again, no inherent magic.
 
 We know coders like shortcuts. Is there a shorter way to say and type *eight bits*? Yes, welcome to the word *byte*. A *byte* is *eight bits*. Naturally, a byte also represents 256 states.
 
@@ -140,4 +138,4 @@ What if we wanted a code to represent *all the symbols of every single human lan
 
 I want to reinforce the notion that the *converted meaning* represented by a certain number of states could be *anything we want*. This is why coding is such an expressive and creative craft. This foundation of binary, bit, and byte is simply about representing *states*. As the amount of states a computer controls increases, so too does the potential power of *the code we author*.
 
-I mentioned previously that we don’t have to write code in 1s and 0s. Thank god. Coders have done that for us already. Then other coders created their own code on top of that. This stacking of code on top of code is what will allow us to write JavaScript later. We won’t care about any of the code underneath JavaScript. We will focus only on the *high-level language* of JavaScript. We will ignore the *low-level languages *beneath it. We will just know they are there.
+I mentioned previously that we don’t have to write code in 1s and 0s. Thank god. Coders have done that for us already. Then other coders created their own code on top of that. This stacking of code on top of code is what will allow us to write JavaScript later. We won’t care about any of the code underneath JavaScript. We will focus only on the *high-level language* of JavaScript. We will ignore the *low-level languages* beneath it. We will just know they are there.
