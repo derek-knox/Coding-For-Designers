@@ -25,12 +25,28 @@ A *bit* is a *binary digit*. We already know binary represents one of two states
 <table>
   <tr>
     <td>Bit B</td>
+    <td>Bit C</td>
   </tr>
   <tr>
-    <td>0</td>
-    <td>1</td>
+    <td>
+      <table>
+        <tr>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+      </table>
+    </td>
+    <td>
+      <table>
+        <tr>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+      </table>
+    </td>
   </tr>
 </table>
+
 
 That makes sense. One bit represents two states. Two bits represents four states. No brainer. Let’s look at all the output states for kicks.
 
