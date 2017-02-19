@@ -1,6 +1,6 @@
 # Coding for Designers
 
-Coding for Designers is a work-in-process book that demystifies code and coding relative to concepts designers are already familiar. The goal of this approach is to instill a mental model that helps designers better grasp coding concepts faster.
+Coding for Designers is a work-in-process book that demystifies code and coding relative to concepts designers are already familiar. The goal of this approach is to instill a mental model that helps designers better grasp coding concepts faster with deeper understanding.
 
 ![alt text](Coding For Designers/cover-coding-for-designers.jpg "Coding for Designers")
 
