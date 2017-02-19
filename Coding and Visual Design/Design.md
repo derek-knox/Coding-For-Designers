@@ -1,4 +1,4 @@
-# Intro
+# Design
 
 Design is a loaded word. On the surface, design is both a process and a result. At its core however, design is a single thing. *Design is an accumulation of decisions*. That is it. Both the process of designing something and the result of that process are an accumulation of decisions. These decisions are intentional or unintentional. They are informed or uninformed. A good designer’s decisions are intentional and informed. A poor designer’s decisions are unintentional and uninformed. Just as we all breathe, we are all designers. Not all of us are good designers however. Few are great.
 
