@@ -19,18 +19,14 @@ With the elements as primitives and the principles as an organization of those p
   </tr>
   <tr>
     <td>
-Elements = Primitives
-
-Principles = Organization of Primitives
-
-Constructs = Compound Results
+- Elements = Primitives
+- Principles = Organization of Primitives
+- Constructs = Compound Results
     </td>
     <td>
-Elements = Primitives
-
-Patterns = Organization of Primitives
-
-Components = Compound Results
+- Elements = Primitives
+- Patterns = Organization of Primitives
+- Components = Compound Results
      </td>
   </tr>
 </table>
