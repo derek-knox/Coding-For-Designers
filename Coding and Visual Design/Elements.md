@@ -91,7 +91,7 @@ Grouping the aforementioned visual design elements in a particular way gives ris
 
 *^ Form & Object Examples ^*
 
-*Texture* when applied to a shape or a form gives it a richer quality. Similarly, a function or object with *state* gives it a richer quality as well. A shape or form that lacks texture often lacks richness. The same is true for a function or object that lacks state.
+*Texture* when applied to a shape or a form gives it a richer quality. Similarly, a function or object with *state* gives it a richer quality as well. A shape or form that lacks texture often lacks richness. The same is true for a function or object that lacks state. It is worth noting that state is vital to coding where texture in a visual design is not. They both enable richness, but state is a necessity in coding.
 
 ![alt text](../assets/visual-todo-placeholder.jpg "Texture and State Examples")
 
