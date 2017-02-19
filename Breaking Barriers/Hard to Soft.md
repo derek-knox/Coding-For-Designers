@@ -6,6 +6,6 @@ How do we actually *control* electricity though? We can’t reliably use binary 
 
 We won’t go into the details of circuits because that is an entirely different topic. If you are interested in learning more however, I highly recommend *But How Do It Know?* by J. Clark Scott. The designer in me wishes the book had a more communicative title in addition to a more timeless cover design, but I digress. J. Clark Scott does an amazing job teaching how computers and their various components work. As important, he teaches in a very easy-to-understand and digestible fashion. Get the book if you want to learn how computers work. Soapbox dismounted.
 
-Scott’s book is not required reading to move forward though. Just know that the amount of binary states that can be represented physically (electrically) and thus virtually (code), is more than you will ever need. Think about that again. Your creativity and experience are the only limiting factors.
+Scott’s book is not required reading to move forward though. Just know that the amount of binary states that can be represented physically (electrically) and thus virtually (code) in a computer, is more than you will ever need. Think about that again. Your creativity and experience are the only limiting factors.
 
 Bridging the physical to virtual gap is the fundamental aspect that enables computers and the amazing games, tools, and software we love, to exist.
