@@ -18,7 +18,7 @@ Breaking Barriers
 - [Saved Image](Breaking Barriers/Saved Image.md)
 
 Coding and Visual Design
-- [Intro](Coding and Visual Design/Intro.md)
+- [Design](Coding and Visual Design/Design.md)
 - [Elements](Coding and Visual Design/Elements.md)
 - [Principles and Patterns](Coding and Visual Design/Principles and Patterns.md)
 - [Constructs and Components](Coding and Visual Design/Constructs and Components.md)
