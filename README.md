@@ -25,4 +25,4 @@ Coding and Visual Design
 
 Coding and Concept
 
-Coning and JavaScript
+Coding and JavaScript
