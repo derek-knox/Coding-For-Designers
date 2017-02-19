@@ -6,7 +6,7 @@ This book is intended most for designers. If you author content as a visual desi
 
 The plan of attack is simple. In section one, *Breaking Barriers*, we will explore and demystify a series of concepts that I believe fundamentally intimidate designers and non-coders about how computers and code work. From the seemingly magical ones and zeros to the code you will soon write, we will see simple, basic, repetitive, and reusable concepts at play.
 
-In section two, *Coding and Visual Design*, we will review the elements, principles, and constructs of design. We will explore them in relation to coding’s counterparts. This work will have helped shape a mental model for effectively moving forward.
+In section two, *Coding and Visual Design*, we will review the elements, principles, and constructs of design. We will explore them in relation to coding’s counterparts. This work will help shape a mental model for effectively moving forward.
 
 In section three, *Coding and Concept*, we will reinforce previously learned concepts while introducing those that are unique to authoring programming code. It is important to understand that these concepts are *language agnostic*. Sounds fancy. This simply means you get to reuse what you learn in *virtually all programming languages*. Bonus.
 
