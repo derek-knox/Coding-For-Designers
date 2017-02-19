@@ -4,7 +4,7 @@
 
 ## Table of Contents
 
-Preface
+[Preface](Coding For Designers/Preface.md)
 
 Breaking Barriers
 - [Ones and Zeros](Breaking Barriers/Ones and Zeros.md)
