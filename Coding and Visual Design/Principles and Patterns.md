@@ -35,7 +35,7 @@ Coding’s equivalent to design principles are *design patterns*. Unlike the pri
 
 Both the visual designer and the coder leverage the principles and patterns respectively to achieve consistent effect. A visual designer applies the principles for the viewer’s benefit. The coder applies design patterns for his or her benefit. This may sound selfish, but the reality is that the user of a software product benefits too. The benefits could be speed, reliability, consistency, and flexibility for example. Additionally, using design patterns allows other coders to better understand a program’s code design.
 
-Design patterns allow the coder to take an approach that solves a general problem that is common and that has been solved before. Design patterns are not a beginner topic so we will not be going into detail. That said, I will provide a few examples below.
+Design patterns allow the coder to take an approach that solves a general problem that is common and that has been solved before. Design patterns are not a beginner topic so we will not be going into detail. That said, I will provide a few examples below for reference.
 
 Often times when coding you only ever want to have a single type of object exist in your program. In a sports video game for example you usually only ever track a single game’s score. Depending on the sport you likely only ever want a single ball or puck too. In a drawing application you may only ever want a single pen or brush to be selected at any given time. The *singleton* design pattern is a useful pattern for enforcing this oneness.
 
