@@ -99,7 +99,7 @@ Naturally, by creating an enclosure, you simultaneously create *space*, the four
 
 ## Form | Object
 
-Grouping the aforementioned visual design elements in a particular way gives rise to a particular *form*. Similarly, grouping the aforementioned coding design elements gives rise to a particular *object*. As a shape and a function are considered self-contained units, a form and an object are more powerful versions. Each embody some configuration of their respective prior elements.
+Grouping the aforementioned visual design elements in a particular way gives rise to a particular *form*. Similarly, grouping the aforementioned coding design elements gives rise to a particular *object*. As a shape and a function are considered self-contained units, a form and an object are more powerful versions. Each embody some configuration of their respective prior elements. A form often embodies more than one shape just as an object often embodies more than one function.
 
 ![alt text](../assets/visual-todo-placeholder.jpg "Form & Object Examples")
 
