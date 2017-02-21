@@ -2,7 +2,7 @@
 
 Let’s chain together everything we have covered thus far to save a color image.
 
-Computers leverage the presence and absence of electricity with circuits. These allow us to bridge the physical world (hardware) to the virtual (software). We agree that the presence of electricity is a 1 and the absence a 0. We refer to 1 and 0 as a binary code. Each 1 and 0 is a binary digit.
+Computers manage the presence and absence of electricity with circuits. These allow us to bridge the physical world (hardware) to the virtual (software). We agree that the presence of electricity is a 1 and the absence a 0. We refer to 1 and 0 as a binary code. Each 1 and 0 is a binary digit.
 
 Saying and typing binary digit is annoying. Coders created the shortcut word bit to alleviate this annoyance. Naturally, a bit represents two states. Eight of these bits represent a byte. A byte allows us to represent 256 states. The number eight is arbitrary. Representing 256 states was simply a good enough amount for coders. It was good enough because it could represent a wide range of codes. All the English characters and then some for example, can be represented within 256 states with ease. 
 
