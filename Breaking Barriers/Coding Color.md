@@ -15,7 +15,7 @@ RGB is represented in a few flavors too. For illustration purposes, let’s brie
 
 *^ Custom RGB = 8 different colors ^*
 
-Eight colors is a pretty limiting palette. What happens if we swap out the bits for bytes? Holy shit. RGB gets us *over 16 million* color values. That palette is not limiting at all. This is an actual flavor of RGB called RGB24. Another is called RGB32 or RGBA, where "A" is an *alpha* (transparency) value. Just call them RGB and RGBA.
+Eight colors is a pretty limiting palette. What happens if we swap out the bits for bytes? Holy shit. RGB gets us *over 16 million* color values. That palette is enormous. This is an actual flavor of RGB called RGB24. Another is called RGB32 or RGBA, where "A" is an *alpha* (transparency) value. Just call them RGB and RGBA.
 
 ![alt text](../assets/visual-todo-placeholder.jpg "RGB and RGBA")
 
