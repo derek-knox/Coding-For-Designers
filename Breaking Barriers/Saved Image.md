@@ -21,7 +21,7 @@ I simply flipped a coin eight times. Heads was 1 and tails was 0, my own little 
   </tr>
 </table>
 
-Once encoded, we need to actually save it to a file. How do we do that? Well it is quite simple actually. The OS (Operating System) you run and use your design application(s) on (Windows, Mac, iOS, Android, etc.) has prewritten code giving you this power. Again, prewritten code stacked on prewritten code gives us an easy way to accomplish what we are after.
+Once encoded, we need to actually save it to a file. How do we do that? Well it is quite simple actually. The OS (Operating System) you run and use your design application(s) on (Windows, Mac, iOS, Android, etc.) has prewritten code giving you this power. Again, prewritten code stacked on prewritten code often gives us an easy way to accomplish tasks that would otherwise be more difficult.
 
 Long story short, the encoded data needs to be inserted into an empty file. When saving the file, it needs to have a *file extension* appended to the file’s name. Think JPG, PNG, PSD, TXT, and JS for example. The sole reason for a file extension is so the OS and its applications can quickly identify the file’s type. Why is that important? If you didn’t already guess, the file extension helps identify the decoding approach. Full circle.
 
