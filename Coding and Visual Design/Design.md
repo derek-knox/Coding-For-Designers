@@ -12,23 +12,15 @@ Learning a programming language, like learning virtually anything, takes effort,
 
 With the elements as primitives and the principles as an organization of those primitives, the constructs are the compound results. Unfortunately there is not a one-to-one mapping from the visual realm to a coding equivalent. We will be able to come close enough however and create a solid bridge for comparison in the process.
 
-<table>
-  <tr>
-    <td>Design</td>
-    <td>Coding</td>
-  </tr>
-  <tr>
-    <td>
-      Elements = Primitives
-      Principles = Organization of Primitives
-      Constructs = Compound Results
-    <td>
-      Elements = Primitives
-      Patterns = Organization of Primitives
-      Components = Compound Results
-     </td>
-  </tr>
-</table>
+Design
+- Elements = Primitives
+- Principles = Organization of Primitives
+- Constructs = Compound Results
+
+Coding
+- Elements = Primitives
+- Patterns = Organization of Primitives
+- Components = Compound Results
 
 Through the application of the elements, principles, and constructs, a visual designer may influence the meaning a viewer extracts from a visual design. A good visual designer is cognizant of their application of them, a poor designer is not. A good visual designer takes advantage and applies them with intention.
 
