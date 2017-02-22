@@ -15,7 +15,7 @@ The lack of a grid can be useful, but more often than not a grid will exist in a
 
 In coding, components embody the elements and design patterns in an effort to encapsulate specific functionality and ways of communicating with other components. They manage subsystems of the root system that is the program itself. Components give the coder reliable and often reusable functionality through a single object, a composition of objects, or a family of objects.
 
-There is no sensibile relation between the three core constructs of visual design to an equivalent in coding. There do happen to be three high levels in which to group components however.
+There is no sensibile relation between the three core constructs of visual design to an equivalent in coding. There do happen to be three high levels in which to group coding's components however.
 
 1. Built-in
 2. 3rd party
