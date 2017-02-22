@@ -27,7 +27,7 @@ Now is a good time to share an often deemphasized fact that coders benefit from.
 
 ## Interfacing
 
-How do all these components work together if different people wrote them? In order for components to be useful they provide an *application programming interface*. Yea, that is lengthy. Coders instead just use API (each letter pronounced individually). An API is a fancy term that simply defines how components may (or may not) be used by another coder. An API as synonymous with *interface*. 
+How do all these components work together if different people wrote them? In order for components to be useful by coders other than the original author, they need to provide an *application programming interface*. Yea, that is lengthy. Coders instead just use API (each letter pronounced individually). An API is a fancy term that simply defines how components may (or may not) be used by another coder. An API as synonymous with *interface*. 
 
 Think of driving a car. It also has an interface. The interface, its gas pedal, brake pedal, and steering wheel, are physical so you touch them. A component's interface is virtual so you code them. Just as a user of the car, does not need to know all the details of how the engine works to use it. You just use the interface and you get what you want out of the deal.
 
