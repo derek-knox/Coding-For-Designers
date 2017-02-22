@@ -21,7 +21,7 @@ There is no sensibile relation between the three core constructs of visual desig
 2. 3rd party
 3. Yours
 
-Now is a good time to share an often deemphasized fact that coders benefit from. A lot, and I mean a lot, of code you will write is already written. How can that be? Well, you often get to copy and paste as you rarely start from scratch. In fact the first two groups mentioned above can be referenced as a checklist before having to write your own custom code.
+Now is a good time to share an often deemphasized fact that coders benefit from. A lot, and I mean a lot, of code you will write is already written. How can you write what is already written? Well, you often get to copy and paste as you rarely start from scratch. In fact the first two groups mentioned above can be referenced as a checklist before having to write your own custom code.
 
 *Built-in* components are those that come with the language you are writing in. The initial author(s) of the programming language provide components that are "built-in". As you may have guessed, a programming language never has all the built-in functionality you need to acheive what you are after. This is where *3rd party* components often come to the rescue. These are written by other coders and often shared for you to use. In fact, you can share the code you create for others to use too. We all help each other out. Lastly, you write your own code by combining built-in and 3rd party components with the code you create on your own.
 
