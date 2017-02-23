@@ -6,7 +6,7 @@ Coding for Designers is a work-in-process book that demystifies code and coding 
 
 ## Table of Contents
 
-[Preface](Coding For Designers/Preface.md)
+### [Preface](Coding For Designers/Preface.md)
 
 ### Breaking Barriers
 - [Ones and Zeros](Breaking Barriers/Ones and Zeros.md)
