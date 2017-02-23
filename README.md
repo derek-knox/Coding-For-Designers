@@ -8,7 +8,7 @@ Coding for Designers is a work-in-process book that demystifies code and coding 
 
 [Preface](Coding For Designers/Preface.md)
 
-Breaking Barriers
+### Breaking Barriers
 - [Ones and Zeros](Breaking Barriers/Ones and Zeros.md)
 - [Hard to Soft](Breaking Barriers/Hard to Soft.md)
 - [Bits and Bytes](Breaking Barriers/Bits and Bytes.md)
@@ -17,17 +17,17 @@ Breaking Barriers
 - [Encode and Decode](Breaking Barriers/Encode and Decode.md)
 - [Saved Image](Breaking Barriers/Saved Image.md)
 
-Coding and Visual Design
+### Coding and Visual Design
 - [Design](Coding and Visual Design/Design.md)
 - [Elements and Elements](Coding and Visual Design/Elements and Elements.md)
 - [Principles and Patterns](Coding and Visual Design/Principles and Patterns.md)
 - [Constructs and Components](Coding and Visual Design/Constructs and Components.md)
 
-Coding and Concept
+### Coding and Concept
 - Shoulders of Giants
-- Interface vs Implementation
-- Inheritence vs Composition (Abstract vs Concrete)
-- Static vs Dynamic
+- Interface vs Implementation (consistency, flexibility, simplicity)
+- Inheritence vs Composition (abstract, concrete, flexibility/coupling)
+- Static vs Dynamic ()
 - Synchronous vs Asynchronous (time and speed, human/computer-sketchbook notes)
 - Send vs Receive
 - Scope vs Context
@@ -38,11 +38,13 @@ Coding and Concept
 - Recycle/Reuse
 - Encapsulation
 - Polymorphic
+- Effeciency
 
-Coding and JavaScript
+### Coding and JavaScript
 - Environment - Browser hooks you up
 - Keywords - Most important keywords
 - Syntax - Common rules
 - Scope and Context - Don’t clash
 - State - Time for time
+- Types
 - ...
