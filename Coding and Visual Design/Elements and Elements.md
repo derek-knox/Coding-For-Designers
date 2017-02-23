@@ -1,4 +1,4 @@
-# Elements
+# Elements and Elements
 
 The elements of visual design are the *primitive* pieces of visual design. Though some may argue the exact list, we will use the one below. A related set of primitives are listed for coding though there is not a formal one-to-one mapping.
 
