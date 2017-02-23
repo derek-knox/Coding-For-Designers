@@ -25,12 +25,23 @@ Coding and Visual Design
 
 Coding and Concept
 - Shoulders of Giants
-- Interface vs Implementation, Inheritence vs composition, greenfield vs. brownfield, trees vs graphs, time and speed, static vs. dynamic, abstract vs concrete, synhronous vs asynchornous, one vs. many (single vs aggregate, once vs. loop, polymorphic), send vs receive, encapsulation, recycle/reuse, work-right-better, scope-context
-
+- Interface vs Implementation
+- Inheritence vs Composition (Abstract vs Concrete)
+- Static vs Dynamic
+- Synchronous vs Asynchronous (time and speed)
+- Send vs Receive
+- Scope vs Context
+- Data Structures and Algorithms (trees, graphs)
+- One vs Many (single, aggregate, once, loop)
+- Greenfield vs Brownfield
+- Work. Right. Better.
+- Recycle/Reuse
+- Encapsulation
+- Polymorphic
 
 Coding and JavaScript
 - Environment - Browser hooks you up
-Keywords - Most important keywords
-Syntax - Common rules
-Scope and Context - Don’t clash
-State - Time for time
+- Keywords - Most important keywords
+- Syntax - Common rules
+- Scope and Context - Don’t clash
+- State - Time for time
