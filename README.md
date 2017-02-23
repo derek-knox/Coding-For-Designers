@@ -28,7 +28,7 @@ Coding and Concept
 - Interface vs Implementation
 - Inheritence vs Composition (Abstract vs Concrete)
 - Static vs Dynamic
-- Synchronous vs Asynchronous (time and speed)
+- Synchronous vs Asynchronous (time and speed, human/computer-sketchbook notes)
 - Send vs Receive
 - Scope vs Context
 - Data Structures and Algorithms (trees, graphs)
@@ -45,3 +45,4 @@ Coding and JavaScript
 - Syntax - Common rules
 - Scope and Context - Don’t clash
 - State - Time for time
+- ...
