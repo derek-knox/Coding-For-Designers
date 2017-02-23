@@ -19,7 +19,7 @@ Breaking Barriers
 
 Coding and Visual Design
 - [Design](Coding and Visual Design/Design.md)
-- [Elements](Coding and Visual Design/Elements.md)
+- [Elements and Elements](Coding and Visual Design/Elements and Elements.md)
 - [Principles and Patterns](Coding and Visual Design/Principles and Patterns.md)
 - [Constructs and Components](Coding and Visual Design/Constructs and Components.md)
 
