@@ -25,7 +25,7 @@ Coding for Designers is a work-in-process book that demystifies code and coding 
 
 ### Coding and Concept
 - Shoulders of Giants (auto generated object graph, graph of scopes)
-- Interface vs Implementation (consistency, flexibility, simplicity)
+- Interface vs Implementation (abstraction, consistency, flexibility, simplicity)
 - Inheritence vs Composition (abstract, concrete, flexibility/coupling)
 - Static vs Dynamic ()
 - Synchronous vs Asynchronous (time and speed, human/computer-sketchbook notes)
