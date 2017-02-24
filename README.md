@@ -24,6 +24,7 @@ Coding for Designers is a work-in-process book that demystifies code and coding 
 - [Constructs and Components](Coding and Visual Design/Constructs and Components.md)
 
 ### Coding and Concept
+WIP Sections
 - Shoulders of Giants (auto generated object graph, graph of scopes)
 - Interface vs Implementation (abstraction, consistency, flexibility, simplicity)
 - Inheritence vs Composition (abstract, concrete, flexibility/coupling)
@@ -42,6 +43,7 @@ Coding for Designers is a work-in-process book that demystifies code and coding 
 - Language (small subset)
 
 ### Coding and JavaScript
+WIP Sections
 - Environment - Browser hooks you up
 - Keywords - Most important keywords
 - Syntax - Common rules
