@@ -41,6 +41,7 @@ WIP Sections
 - Polymorphic
 - Effeciency
 - Language (small subset)
+- ...
 
 ### Coding and JavaScript
 WIP Sections
