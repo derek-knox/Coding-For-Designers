@@ -26,17 +26,17 @@ Code is a system for converting meaning between forms. One form is considered *e
   <tr>
     <td>Example English Code</td>
     <td>1 Byte</td>
-    <td>256 Unique Symbols</td>
+    <td>1 of 256 Unique Symbols</td>
   </tr>
   <tr>
     <td>2x2 Black and White Image</td>
     <td>4-Bits</td>
-    <td>16 Unique Images</td>
+    <td>1 of 16 Unique Images</td>
   </tr>
   <tr>
     <td>Color</td>
     <td>3 Bytes</td>
-    <td>Over 16 Million Color Values</td>
+    <td>1 of Over 16 Million Color Values</td>
   </tr>
 </table>
 
