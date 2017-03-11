@@ -34,7 +34,7 @@ Code is a system for converting meaning between forms. One form is considered *e
     <td>1 of 16 Unique Images</td>
   </tr>
   <tr>
-    <td>Color</td>
+    <td>RGB and HEX Color</td>
     <td>3 Bytes</td>
     <td>1 of Over 16 Million Color Values</td>
   </tr>
