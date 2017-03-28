@@ -2,26 +2,26 @@
 
 Coding for Designers is a work-in-process book that demystifies code and coding relative to concepts designers are already familiar. The goal of this approach is to instill a mental model that helps designers better grasp coding concepts faster with deeper understanding.
 
-![alt text](Coding For Designers/cover-coding-for-designers.jpg "Coding for Designers")
+![alt text](Coding%20For%20Designers/cover-coding-for-designers.jpg "Coding for Designers")
 
 ## Table of Contents
 
-### [Preface](Coding For Designers/Preface.md)
+### [Preface](Coding%20For%20Designers/Preface.md)
 
 ### Breaking Barriers
-- [Ones and Zeros](Breaking Barriers/Ones and Zeros.md)
-- [Hard to Soft](Breaking Barriers/Hard to Soft.md)
-- [Bits and Bytes](Breaking Barriers/Bits and Bytes.md)
-- [Black and White](Breaking Barriers/Black and White.md)
-- [Coding Color](Breaking Barriers/Coding Color.md)
-- [Encode and Decode](Breaking Barriers/Encode and Decode.md)
-- [Saved Image](Breaking Barriers/Saved Image.md)
+- [Ones and Zeros](Breaking%20Barriers/Ones%20and%20Zeros.md)
+- [Hard to Soft](Breaking%20Barriers/Hard%20to%20Soft.md)
+- [Bits and Bytes](Breaking%20Barriers/Bits%20and%20Bytes.md)
+- [Black and White](Breaking%20Barriers/Black%20and%20White.md)
+- [Coding Color](Breaking%20Barriers/Coding%20Color.md)
+- [Encode and Decode](Breaking%20Barriers/Encode%20and%20Decode.md)
+- [Saved Image](Breaking%20Barriers/Saved%20Image.md)
 
 ### Coding and Visual Design
-- [Design](Coding and Visual Design/Design.md)
-- [Elements and Elements](Coding and Visual Design/Elements and Elements.md)
-- [Principles and Patterns](Coding and Visual Design/Principles and Patterns.md)
-- [Constructs and Components](Coding and Visual Design/Constructs and Components.md)
+- [Design](Coding%20and%20Visual%20Design/Design.md)
+- [Elements and Elements](Coding%20and%20Visual%20Design/Elements%20and%20Elements.md)
+- [Principles and Patterns](Coding%20and%20Visual%20Design/Principles%20and%20Patterns.md)
+- [Constructs and Components](Coding%20and%20Visual%20Design/Constructs%20and%20Components.md)
 
 ### Coding and Concept
 WIP Sections
