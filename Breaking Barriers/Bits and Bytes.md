@@ -124,7 +124,7 @@ Eight? I was expecting six. It makes sense though when we see the state values p
   </tr>
 </table>
 
-You will notice that I stop at eight bits in the table above. We could keep going and the same doubling rule would apply. Why stop at eight? Random I know. Ultimately, *people simply agreed that eight is a good stopping point*. They *agreed* that being able to represent 256 states was *good enough*. Again, no inherent magic.
+You will notice that I stop at eight bits in the table above. We could keep going and the same doubling rule would apply. Why stop at eight then? Random I know. Ultimately, *people simply agreed that eight is a good stopping point*. They *agreed* that being able to represent 256 states was *good enough*. Again, no inherent magic.
 
 We know coders like shortcuts. Is there a shorter way to say and type *eight bits*? Yes, welcome to the word *byte*. A *byte* is *eight bits*. Naturally, a byte also represents 256 states.
 
