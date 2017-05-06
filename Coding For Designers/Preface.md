@@ -4,7 +4,7 @@ Virtually all existing resources aimed at teaching people *about* or *how-to* co
 
 This book is intended most for designers. If you author content as a visual designer, graphic designer, user interface designer, digital artist, game designer, or similar, this is for you. Non-coders wanting to learn *about* or *how-to* code will benefit too, but designers are the focus.
 
-The plan of attack is simple. In section one, *Breaking Barriers*, we will explore and demystify a series of concepts that I believe fundamentally intimidate designers and non-coders about how computers and code work. From the seemingly magical ones and zeros to the code you will soon write, we will see simple, basic, repetitive, and reusable concepts at play.
+The plan of attack is simple. In section one, *Breaking Barriers*, we will explore and demystify a series of concepts that fundamentally intimidate most designers and non-coders about how computers and code work. From the seemingly magical ones and zeros to the code you will soon write, we will see simple, basic, repetitive, and reusable concepts at play.
 
 In section two, *Coding and Visual Design*, we will review the elements, principles, and constructs of design. We will explore them in relation to coding’s counterparts. This work will help shape a mental model for effectively moving forward.
 
