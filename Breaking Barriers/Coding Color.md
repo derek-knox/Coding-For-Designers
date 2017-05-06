@@ -7,7 +7,7 @@ Thus far we have made our own example codes. One to represent the symbols in the
 
 In the context of color we will explore the common codes RGB and HEX. The former is *red green blue* and the latter is *hexadecimal*. We will start with RGB.
 
-RGB is composed of three values (color channels). A red value, a green value, and a blue value. Combined they represent a specific color value. The color represented by a specific color value has already been decided. No work on our end. We simply rely on the various design applications we use to consistently represent colors in our digital designs. Photoshop, Illustrator, Lightroom, and Sketch are a few examples of the hundreds, if not thousands, of applications we depend on to consistently represent color.
+RGB is composed of three values (color channels). A red value, a green value, and a blue value. Combined they represent a specific color value. The color represented by a specific color value has already been decided. No work on our end. Nice. We simply rely on the various design applications we use to consistently represent colors in our digital designs. Photoshop, Illustrator, Lightroom, and Sketch are a few examples of the hundreds, if not thousands, of applications we depend on to consistently represent color.
 
 RGB is represented in a few flavors too. For illustration purposes, let’s briefly represent our own custom RGB code using a *bit* for each red value, blue value, and green value.
 
