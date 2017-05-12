@@ -24,6 +24,7 @@ Coding for Designers is a work-in-process book that demystifies coding relative 
 - [Constructs and Components](Coding%20and%20Visual%20Design/Constructs%20and%20Components.md)
 
 ### 2D and 3D
+- Structure, Style, and Behavior
 - Structure
   - 2D with HTML
   - 3D with Unity
