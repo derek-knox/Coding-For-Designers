@@ -1,6 +1,8 @@
 # Design
 
-Design is a loaded word. On the surface, design is both a process and a product. At its core however, design is a single thing. *Design is an accumulation of decisions*. That is it. Both the process of designing something and the resulting product of that process are an accumulation of decisions. These decisions are intentional or unintentional. They are informed or uninformed. A good designer’s decisions are intentional and informed. A poor designer’s decisions are unintentional and uninformed. Just as we all breathe, we are all designers. Not all of us are good designers however. Few are great. We can all improve.
+Design is a loaded word.
+
+On the surface, design is both a process and a product. At its core however, design is a single thing. *Design is an accumulation of decisions*. That is it. Both the process of designing something and the resulting product of that process are an accumulation of decisions. These decisions are intentional or unintentional. They are informed or uninformed. A good designer’s decisions are intentional and informed. A poor designer’s decisions are unintentional and uninformed. Just as we all breathe, we are all designers. Not all of us are good designers however. Few are great. We can all improve.
 
 Visual, sound, experience, circuit, hardware, and software are just a few examples of various design domains. Design is often associated solely with the visual, but it is important to acknowledge that it exists in other domains. We will be working with the visual and software domains specifically as we progress.
 
