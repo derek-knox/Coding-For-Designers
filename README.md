@@ -23,6 +23,17 @@ Coding for Designers is a work-in-process book that demystifies coding relative 
 - [Principles and Patterns](Coding%20and%20Visual%20Design/Principles%20and%20Patterns.md)
 - [Constructs and Components](Coding%20and%20Visual%20Design/Constructs%20and%20Components.md)
 
+### 2D and 3D
+- Structure
+  - 2D - HTML
+  - 3D - Unity
+- Style
+  - 2D - CSS
+  - 3D - Materials
+- Behavior
+  - 2D - JavaScript
+  - 3D - C#
+
 ### Coding and Concept
 WIP Sections
 - Shoulders of Giants (auto generated object graph, graph of scopes)
