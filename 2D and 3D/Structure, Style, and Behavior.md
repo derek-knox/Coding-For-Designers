@@ -1,3 +1,2 @@
-#Structure, Style, and Behavior
+# Structure, Style, and Behavior
 
-...
