@@ -25,14 +25,14 @@ Coding for Designers is a work-in-process book that demystifies coding relative 
 
 ### 2D and 3D
 - Structure
-  - 2D - HTML
-  - 3D - Unity
+  - 2D with HTML
+  - 3D with Unity
 - Style
-  - 2D - CSS
-  - 3D - Materials
+  - 2D with CSS
+  - 3D with Materials
 - Behavior
-  - 2D - JavaScript
-  - 3D - C#
+  - 2D with JavaScript
+  - 3D with C#
 
 ### Coding and Concept
 WIP Sections
