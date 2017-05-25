@@ -45,6 +45,7 @@ WIP Sections
 - Send vs Receive
 - Scope vs Context
 - Data Structures and Algorithms (trees, graphs)
+- Serialize vs. Deserialize
 - One vs Many (single, aggregate, once, loop)
 - Greenfield vs Brownfield
 - Work. Right. Better.
