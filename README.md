@@ -30,12 +30,8 @@ Coding for Designers is a work-in-process book that demystifies coding relative 
 ### 2D and 3D
 - [Structure, Style, and Behavior](2D%20and%203D/Structure,%20Style,%20and%20Behavior.md)
 - [Structure (2D with HTML and 3D with Unity)](2D%20and%203D/Structure.md)
-- Style
-  - 2D with CSS
-  - 3D with Materials
-- Behavior
-  - 2D with JavaScript
-  - 3D with C#
+- [Style (2D with CSS and 3D with Materials)](2D%20and%203D/Style.md)
+- [Behavior (2D with JavaScript and 3D with C#)](2D%20and%203D/Behavior.md)
 
 ### Coding and Concept
 WIP - Web and Unity Contexts
