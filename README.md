@@ -1,6 +1,6 @@
 # Coding for Designers
 
-*A Mental Model for Learning and Talking Code*
+*A Prerequisite for Learning and Talking Code*
 
 Coding for Designers is a work-in-process book that demystifies coding relative to the concepts designers are already familiar with. The goal of this book is to instill a mental model that helps designers better grasp coding concepts faster with deeper understanding. Upon reading, designers will better retain knowledge when learning to code while simultanously equipping themselves to talk code with developers today.
 
