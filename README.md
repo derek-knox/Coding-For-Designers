@@ -40,10 +40,12 @@ Coding for Designers is a work-in-process book that demystifies coding relative 
   - 3D with C#
 
 ### Coding and Concept
-WIP Sections
+WIP - Web and Unity Contexts
 - Authoring Time vs Compile Time vs Runtime
 - Client vs Server
 - Sync vs Async
+
+WIP Sections
 - Shoulders of Giants (auto generated object graph, graph of scopes)
 - Interface vs Implementation (abstraction, consistency, flexibility, simplicity)
 - Inheritence vs Composition (abstract, concrete, flexibility/coupling)
