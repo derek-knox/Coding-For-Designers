@@ -1,3 +1,5 @@
+# Structure
+
 Structure, as previously mentioned, is a particular arrangement of a set of building blocks. In simpler terms, structure is organization. Structural design mirrors the principles of visual design in fact. Where the principles of visual design are particular organizations of visual design primitives, structural designs are the organization of structural building blocks.
 
 These building blocks are contextual. In the context of 2D with the web platform, these building blocks are HTML elements (Hypertext Markup Language). In the context of 3D with Unity, these building blocks are GameObjects.
