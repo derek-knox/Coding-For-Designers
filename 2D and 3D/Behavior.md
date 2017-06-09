@@ -14,11 +14,9 @@ We know behavior(s) may be applied to structure (a specific building block or gr
 
 Now is a good time to explicitly identify example triggers that result in behavioral responses. A trigger is *input* and the response is *output*. Without input triggers, a design remains static and lacks dynamism. It lacks life. There are three types of input triggers:
 
-1. user interaction (ex. tap, click, hit, hover, etc.)
-
-2. environment (ex. layout resizing, operating system, device sensor, etc.)
-
-3. time (ex. delays, schedules, etc.)
+1. user interaction (tap, click, hit, hover, etc.)
+2. environment (layout resizing, operating system, device sensor, etc.)
+3. time (delays, schedules, etc.)
 
 New building blocks or groups of building blocks may be added to the structure dynamically. They can also be removed dynamically. Adornments are added or removed the same way. Behavioral changes to these structures and/or adornments are just as easily modifiable based on any of these three triggers. The takeaway is that there are three input triggers that result in output behavior. The result itself is up to you as the coder.
 
