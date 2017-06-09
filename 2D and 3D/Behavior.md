@@ -12,7 +12,7 @@ Let’s explore some specific applications of behavior by building off the previ
 
 We know behavior(s) may be applied to structure (a specific building block or group of building blocks). Additionally, we know behavior may be applied to style (adornments). The sheer presence of behavior however, due to its dynamic nature, results in an additional target we have yet to talk about. Time itself. Time in the form of delays and schedules are most common.
 
-Now is a good time to explicitly identify example triggers that result in behavioral responses. The triggers are *input* and the response is *output*. Without these input triggers, a design remains static and lacks dynamism, it lacks life. There are three types of input triggers:
+Now is a good time to explicitly identify example triggers that result in behavioral responses. A trigger is *input* and the response is *output*. Without input triggers, a design remains static and lacks dynamism. It lacks life. There are three types of input triggers:
 
 1. user interaction (ex. tap, click, hit, hover, etc.)
 
