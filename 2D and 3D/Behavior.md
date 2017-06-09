@@ -18,6 +18,6 @@ Now is a good time to explicitly identify example triggers that result in behavi
 2. environment (layout resizing, operating system, device sensor, etc.)
 3. time (delays, schedules, etc.)
 
-New building blocks or groups of building blocks may be added to the structure dynamically. They can also be removed dynamically. Adornments are added or removed the same way. Behavioral changes to these structures and/or adornments are just as easily modifiable based on any of these three triggers. The takeaway is that there are three input triggers that result in output behavior. The specific input(s) and result(s) are up to you, the creator, the coder.
+New building blocks or groups of building blocks may be added to the structure dynamically. They can also be removed dynamically. Adornments are added or removed the same way. Behavioral changes to these structures and/or adornments are just as easily modifiable based on any of these three triggers. The takeaway is that there are three input triggers that result in output behavior. The specific input(s) and output(s) are up to you, the creator, the coder.
 
 Ultimately, where traditional visual design is static, behavior makes a design dynamic. This power is addictive, useful, and extremely empowering. In the context of the web platform and Unity, instead of using solely what the JavaScript and C# code provides, you can *extend* their capabilities with your *own* code. You can invent entirely new and better ways to do almost anything. Super cool.
