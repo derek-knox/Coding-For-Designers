@@ -27,11 +27,11 @@ Coding for Designers is a work-in-process book that demystifies coding relative 
 - [Principles and Patterns](Coding%20and%20Visual%20Design/Principles%20and%20Patterns.md)
 - [Constructs and Components](Coding%20and%20Visual%20Design/Constructs%20and%20Components.md)
 
-### 2D and 3D
+### 2D Web and 3D Unity
 - [Structure, Style, and Behavior](2D%20and%203D/Structure,%20Style,%20and%20Behavior.md)
-- [Structure (HTML/GameObjects)](2D%20and%203D/Structure.md)
-- [Style (CSS/Materials)](2D%20and%203D/Style.md)
-- [Behavior (JavaScript/C#)](2D%20and%203D/Behavior.md)
+- [Structure (2D/HTML and 3D/GameObjects)](2D%20and%203D/Structure.md)
+- [Style (2D/CSS and 3D/Materials)](2D%20and%203D/Style.md)
+- [Behavior (2D/JavaScript and 3D/C#)](2D%20and%203D/Behavior.md)
 
 ### Coding and Concept
 WIP - Web and Unity Contexts
