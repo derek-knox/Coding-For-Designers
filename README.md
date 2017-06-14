@@ -28,7 +28,7 @@ Coding for Designers is a work-in-process book that demystifies coding relative 
 - [Constructs and Components](Coding%20and%20Visual%20Design/Constructs%20and%20Components.md)
 
 ### Structure, Style, and Behavior
-- [Structure, Style, and Behavior (2D Web and 3D Unity)](Structure%20Style%20Behavior/Structure, Style, and Behavior.md)
+- [Structure, Style, and Behavior (2D Web and 3D Unity)](Structure%20Style%20Behavior/Structure%2C%20Style%2C%20and%20Behavior.md)
 - [Structure (HTML and GameObjects)](Structure%20Style%20Behavior/Structure.md)
 - [Style (CSS and Materials)](Structure%20Style%20Behavior/Style.md)
 - [Behavior (JavaScript and C#)](Structure%20Style%20Behavior/Behavior.md)
