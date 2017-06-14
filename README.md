@@ -34,13 +34,16 @@ Coding for Designers is a work-in-process book that demystifies coding relative 
 - [Behavior (JavaScript and C#)](Structure%20Style%20Behavior/Behavior.md)
 
 ### Coding and Concept
-WIP - Web and Unity Contexts
+WIP - Sections
+- Web and Unity Contexts
 - Authoring Time vs Compile Time vs Runtime
 - Anatomy of a Source Code File (.HTML, .CSS, .JS)
-- Client vs Server
+- Client vs Server (Networking aspects)
 - Sync vs Async
+- Work. Right. Better.
+- Recycle/Reuse
 
-WIP Sections
+WIP Possible Sections
 - Shoulders of Giants (auto generated object graph, graph of scopes)
 - Interface vs Implementation (abstraction, consistency, flexibility, simplicity)
 - Inheritence vs Composition (abstract, concrete, flexibility/coupling)
@@ -52,13 +55,17 @@ WIP Sections
 - Serialize vs. Deserialize
 - One vs Many (single, aggregate, once, loop)
 - Greenfield vs Brownfield
-- Work. Right. Better.
-- Recycle/Reuse
 - Encapsulation
 - Polymorphic
 - Effeciency
 - Language (small subset)
 - ...
+
+### Deconstructing Designs
+- Frontend Focus
+- Adobe Illustrator
+- Facebook Messenger
+- Gmail Inbox
 
 ### Coding and JavaScript
 WIP Sections
