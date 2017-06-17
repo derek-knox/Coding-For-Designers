@@ -21,17 +21,17 @@ Coding for Designers is a work-in-process book that demystifies coding relative 
 - [Encode and Decode](Breaking%20Barriers/Encode%20and%20Decode.md)
 - [Saved Image](Breaking%20Barriers/Saved%20Image.md)
 
-### Coding and Visual Design
-- [Design](Coding%20and%20Visual%20Design/Design.md)
-- [Elements and Elements](Coding%20and%20Visual%20Design/Elements%20and%20Elements.md)
-- [Principles and Patterns](Coding%20and%20Visual%20Design/Principles%20and%20Patterns.md)
-- [Constructs and Components](Coding%20and%20Visual%20Design/Constructs%20and%20Components.md)
-
 ### Structure, Style, and Behavior
 - [Structure, Style, and Behavior (2D Web and 3D Unity)](Structure%20Style%20Behavior/Structure%2C%20Style%2C%20and%20Behavior.md)
 - [Structure (HTML and GameObjects)](Structure%20Style%20Behavior/Structure.md)
 - [Style (CSS and Materials)](Structure%20Style%20Behavior/Style.md)
 - [Behavior (JavaScript and C#)](Structure%20Style%20Behavior/Behavior.md)
+
+### Coding and Visual Design
+- [Design](Coding%20and%20Visual%20Design/Design.md)
+- [Elements and Elements](Coding%20and%20Visual%20Design/Elements%20and%20Elements.md)
+- [Principles and Patterns](Coding%20and%20Visual%20Design/Principles%20and%20Patterns.md)
+- [Constructs and Components](Coding%20and%20Visual%20Design/Constructs%20and%20Components.md)
 
 ### Coding and Concept
 WIP - Sections
