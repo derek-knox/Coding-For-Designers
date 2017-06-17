@@ -27,4 +27,4 @@ Long story short, the encoded data needs to be inserted into an empty file. When
 
 Later, when we start to write our own JavaScript code, we will use the file extension JS. The code in the JavaScript file will not be in 1s and 0s though. Instead we will use the words that are part of the JavaScript language. We are not limited to just JavaScript words though, we get to use our own too. Much better than 1s and 0s. 
 
-First however, there are some coding concepts to cover. Knowing them will be extremely useful once we start writing JavaScript. To ease understanding, we will get to know these concepts relative to the more familiar elements, principles, and constructs of visual design.
+First however, we will look at the three distinct areas where coding is used to display static, dynamic, and interactive designs on a computer screen. These areas are structure, style, and behavior. We will visit each in the context of 2D and 3D to better shape your perspective (pun intended). Go time.
