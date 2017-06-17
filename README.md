@@ -37,6 +37,7 @@ Coding for Designers is a work-in-process book that demystifies coding relative 
 WIP - Sections
 - Web and Unity Contexts
 - Authoring Time vs Compile Time vs Runtime
+- Event Loop
 - Anatomy of a Source Code File (.HTML, .CSS, .JS)
 - Client vs Server (Networking aspects)
 - Sync vs Async
