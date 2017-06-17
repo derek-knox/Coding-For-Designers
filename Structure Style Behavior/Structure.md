@@ -6,11 +6,11 @@ These building blocks are contextual. In the context of 2D with the web platform
 
 The building blocks are different depending on the context, but the underlying relationships between them are identical. Reusable knowledge is the win here. These relationships are referred to as *parent-child* relationships, a *tree*. In both a 2D and a 3D structure, a tree of parent-child relationships exists. The same parent-child relationships, the same tree structure, can have many layout variations in both 2D and 3D. Structure is not layout, it is simply the tree of parent-child relationships.
 
-The simplest tree structure, in both 2D and 3D, consists of a single parent node and no children nodes. This is a one-node tree. 
+The *body* for an HTML document and the *scene* for Unity are each the root parent for their respective platforms. The simplest tree structure, in both 2D and 3D, consists of a single child node of the root parent. This is a one-node tree. 
 
 *^ TODO - Image 1 node 2D and 1 node 3D (parent only) ^*
 
-The second simplest structure has two variants: one with two parent nodes and one with a parent node containing one child node. These are both examples of two-node trees. 
+The second simplest structure has two variants: one with two child nodes and one with a single child that is also a parent due to itself containing one child. These are both examples of two-node trees. 
 
 *^ TODO - Image 2 node 2D and 2 node 3D (parent with child and two parents) ^*
 
