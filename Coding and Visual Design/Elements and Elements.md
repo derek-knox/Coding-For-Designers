@@ -1,6 +1,6 @@
 # Elements and Elements
 
-The elements of visual design are the *primitive* pieces of visual design. Though some may argue the exact list, we will use the one below. A related set of primitives are listed for coding though there is not a formal one-to-one mapping.
+The elements of visual design are the *primitive* pieces of visual design. Though some may argue the exact list, we will use the one below. A related set of primitives are listed for coding though there is not a formal one-to-one mapping. A bunch of new terms are introduced here, but don't expect to grasp them all at once. We'll continually revisit each throughout the rest of this book. Don't be scared.
 
 <table>
   <tr>
@@ -75,7 +75,7 @@ Combining lines together in specific ways enables the third visual element, a *s
 
 ## Space | Scope
 
-Naturally, by creating an enclosure, you simultaneously create *space*, the fourth design element. In coding, this fourth element can also be thought of as space, but the term used is *scope*. Shapes allow their enclosed space to be distinct from the space outside. A function’s scope allows it to be distinct from the scope outside too. Distinct space and distinct scope allow various areas to exist simultaneously without clashing.
+Naturally, by creating an enclosure, you simultaneously create *space*, the fourth design element. In coding, this fourth element can also be thought of as space, but the term used is *scope*. Shapes allow their enclosed space to be distinct from the space outside. A function’s scope allows it to be distinct from the scope outside too. Distinct space and distinct scope allow various areas to exist simultaneously without clashing. This is super valuable when programming.
 
 ![alt text](../assets/visual-todo-placeholder.jpg "Space & Scope Examples")
 
@@ -99,7 +99,7 @@ Naturally, by creating an enclosure, you simultaneously create *space*, the four
 
 ## Form | Object
 
-Grouping the aforementioned visual design elements in a particular way gives rise to a particular *form*. Similarly, grouping the aforementioned coding elements gives rise to a particular *object*. As a shape and a function are considered self-contained units, a form and an object are more powerful versions. Each embody some configuration of their respective prior elements. A form often embodies more than one shape just as an object often embodies more than one function.
+Grouping the aforementioned visual design elements in a particular way gives rise to a particular *form*. Similarly, grouping the aforementioned coding elements can give rise to a particular *object*. As a shape and a function are considered self-contained units, a form and an object are more powerful versions. Each embody some configuration of their respective prior elements. A form often embodies more than one shape just as an object often embodies more than one function.
 
 ![alt text](../assets/visual-todo-placeholder.jpg "Form & Object Examples")
 
@@ -107,7 +107,7 @@ Grouping the aforementioned visual design elements in a particular way gives ris
 
 ## Texture | State
 
-*Texture* when applied to a shape or a form gives it a richer quality. This richness is exemplified as a sense of time, where a texture is aged and weathered for example. Similarly, a function or object with *state* gives it a richer quality, a sense of time as well. A shape or form that lacks texture often lacks richness. The same is true for a function or object that lacks state. It is worth noting that state is vital to coding where texture in a visual design is not. State is a necessity in coding.
+*Texture* when applied to a shape or a form gives it a richer quality. This richness is exemplified as a sense of time, where a texture is aged and weathered for example. Similarly, a function or object with *state* gives it a richer quality, a sense of time as well. A shape or form that lacks texture often lacks richness. The same is true for a function or object that lacks state. It is worth noting that state is vital to coding where texture in a visual design is not. State is a necessity in programming.
 
 ![alt text](../assets/visual-todo-placeholder.jpg "Texture and State Examples")
 
