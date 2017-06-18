@@ -53,7 +53,6 @@ WIP Sections
 - ...
 
 ### Deconstructing Designs
-- Frontend Focus
 - Adobe Illustrator
 - Facebook Messenger
 - Gmail Inbox
