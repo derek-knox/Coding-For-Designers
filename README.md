@@ -34,39 +34,13 @@ Coding for Designers is a work-in-process book that demystifies coding relative 
 - [Constructs and Components](Coding%20and%20Visual%20Design/Constructs%20and%20Components.md)
 
 ### Coding and Concept
-WIP - Sections
-- Web and Unity Contexts
-- Authoring Time vs Compile Time vs Runtime
+- Client and Server
+- Synchronous and Asynchronous
+- Authoring Time, Compile Time, and Runtime
 - Event Loop
 - Anatomy of a Source Code File (.HTML, .CSS, .JS)
-- Client vs Server (Networking aspects)
-- Sync vs Async
-- Work. Right. Better.
 - Recycle/Reuse
-
-WIP Possible Sections
-- Shoulders of Giants (auto generated object graph, graph of scopes)
-- Interface vs Implementation (abstraction, consistency, flexibility, simplicity)
-- Inheritence vs Composition (abstract, concrete, flexibility/coupling)
-- Static vs Dynamic ()
-- Synchronous vs Asynchronous (time and speed, human/computer-sketchbook notes)
-- Send vs Receive
-- Scope vs Context
-- Data Structures and Algorithms (trees, graphs)
-- Serialize vs. Deserialize
-- One vs Many (single, aggregate, once, loop)
-- Greenfield vs Brownfield
-- Encapsulation
-- Polymorphic
-- Effeciency
-- Language (small subset)
-- ...
-
-### Deconstructing Designs
-- Frontend Focus
-- Adobe Illustrator
-- Facebook Messenger
-- Gmail Inbox
+- Work. Right. Better.
 
 ### Coding and JavaScript
 WIP Sections
@@ -77,3 +51,9 @@ WIP Sections
 - State - Time for time
 - Types
 - ...
+
+### Deconstructing Designs
+- Frontend Focus
+- Adobe Illustrator
+- Facebook Messenger
+- Gmail Inbox
