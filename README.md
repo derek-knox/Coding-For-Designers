@@ -39,7 +39,7 @@ Coding for Designers is a work-in-process book that demystifies coding relative 
 - Authoring Time, Compile Time, and Runtime
 - Event Loop
 - Anatomy of a Source Code File (.HTML, .CSS, .JS)
-- Recycle/Reuse
+- Recycle and Reuse
 - Work. Right. Better.
 
 ### Coding and JavaScript
