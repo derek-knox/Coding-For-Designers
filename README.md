@@ -53,6 +53,6 @@ WIP Sections
 - ...
 
 ### Deconstructing Designs
-- Adobe - Illustrator
-- Facebook - Messenger
-- Gmail - Inbox
+- Adobe Illustrator
+- Facebook Messenger
+- Gmail Inbox
