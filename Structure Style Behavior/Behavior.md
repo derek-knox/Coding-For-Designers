@@ -2,7 +2,7 @@
 
 Behavior, as previously mentioned, is where the structural building blocks in combination with their adorned materials and objects *react*. They react to interaction, the environment, and ultimately time. Behavior enables a specific building block, group of building blocks, and/or adornments to change in time. These changes manifest in an infinite amount of ways.
 
-The possible behavior(s), and their respective ease of application, is contextual. In the context of 2D with the web platform, behavior is applied via JavaScript code. In the context of 3D and Unity, behavior is applied via C# code. Each coding language, in conjunction with each platform’s authoring tools, provides ways to help you apply certain behavior. Naturally, Unity with C# provides simple ways to apply behavior in 3D space. 
+The possible behavior(s), and their respective ease of application, is contextual. In the context of 2D with the web platform, behavior is applied via JavaScript code. In the context of 3D and Unity, behavior is applied via C# code. Each coding language, in conjunction with each platform’s authoring tools, provides ways to help you apply certain behavior. For example, Unity with C# provides simple ways to apply behavior in 3D space. 
 
 Behavior(s) may be different depending on the context, but their fundamental purpose remains constant. Behavior brings life to a design. It does so in the form of interactivity, motion, and/or logic. For example, a design with behavior may manifest as a creative authoring environment, an entertaining animation, or a mission critical tool. The manifestations are endless and limited only by your imagination.
 
@@ -24,4 +24,4 @@ New building blocks or groups of building blocks may be added to the structure d
 
 Ultimately, where traditional visual design is static, behavior makes a design dynamic and interactive. This power is addictive, useful, and extremely empowering. In the context of the web platform and Unity, instead of using solely what the JavaScript and C# code provides, you can *extend* their capabilities with your *own* code. You can invent entirely new and better ways to do almost anything. Super cool.
 
-Next we will look at the pieces that makeup the ability to code behavior. We will do so in in the familiar context of the elements, principles, and constructs of visual design. Rock on!
+Next we will look at the pieces that makeup the ability to code behavior. We will do so in the familiar context of the elements, principles, and constructs of visual design. Rock on!
