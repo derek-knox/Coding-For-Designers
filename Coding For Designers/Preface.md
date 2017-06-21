@@ -2,16 +2,18 @@
 
 Virtually all existing resources aimed at teaching people *about* or *how-to* code, make too many assumptions. Additionally, these same resources do not consider designers directly. *Coding for Designers* is a response to this unfortunate reality.
 
-This book is intended most for designers. If you author content as a visual designer, graphic designer, user interface designer, digital artist, game designer, or similar, this is for you. Non-coders wanting to learn *about* or *how-to* code will benefit too, but designers are the focus.
+This book is intended most for designers. If you author content as a visual designer, graphic designer, user interface designer, motion designer, game designer, digital artist, or similar, this is for you. Other non-coders wanting to learn *about* or *how-to* code will greatly benefit too, but self-identifying designers are the focus.
 
 The plan of attack is simple. In section one, *Breaking Barriers*, we will explore and demystify a series of concepts that fundamentally intimidate most designers and non-coders about how computers and code work. From the seemingly magical ones and zeros to the code you will soon write, we will see simple, basic, repetitive, and reusable concepts at play.
 
-In section two, *Coding and Visual Design*, we will review the elements, principles, and constructs of design. We will explore them in relation to coding’s counterparts. This work will help shape a mental model for effectively moving forward.
+In section two, *Structure, Style, and Behavior*, we will visit the three concepts that computers leverage to render our interactive creations. From both a 2D context with the web platform and a 3D context with the Unity platform, we will quickly see the core concepts we employ to enable a computer to visualize our ideas.
 
-In section three, *Coding and Concept*, we will reinforce previously learned concepts while introducing those that are unique to authoring programming code. It is important to understand that these concepts are *language agnostic*. Sounds fancy. This simply means you get to reuse what you learn in *virtually all programming languages*. Bonus.
+Section three, *Coding and Visual Design*, will review the elements, principles, and constructs of visual design. We will explore them relative to coding’s counterparts. This work will help shape a coding mental model specifically for designers.
 
-It may seem a distant future, but learning your second programming language is far simpler than learning a second spoken language. In programming, the terminology and often the words themselves are reused exactly or with subtle variation. Spoken languages lack this luxury.
+In section four, *Coding and Concept*, we will introduce concepts that are unique to authoring programming code. It is important to understand that these concepts are *language agnostic*. This simply means you get to reuse what you learn in *virtually all programming languages*. In programming, the terminology and often the words themselves are reused exactly or with subtle variation among languages. Spoken languages lack this luxury. Bonus.
 
-In section four, *Coding and JavaScript*, we will again reinforce what we have learned, but in the context of the programming language JavaScript. JavaScript is the most accessible programming language today. If you have pushed a button on a web page, then you have been impacted by JavaScript.
+Section five, *Coding and JavaScript*, will reinforce what has been learned, but specifically in the context of the programming language JavaScript. JavaScript is the most accessible programming language today. If you have pushed a button on a web page, then you have been impacted by JavaScript.
+
+Finally, in *Deconstructing Designs*, we will put everything we have learned to practice. We will do so by analyzing and deconstructing the user interfaces of a few impactful applications. We will then selectively reconstruct portions of the UI relative to previously introduced concepts.
 
 Let’s do this.
