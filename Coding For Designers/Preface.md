@@ -8,7 +8,7 @@ The plan of attack is simple. In section one, *Breaking Barriers*, we will explo
 
 In section two, *Structure, Style, and Behavior*, we will visit the three codeable aspects that enable computers to render our interactive creations. We will do so from both a 2D context with the web platform and a 3D context with the Unity platform. These perspectives will help solidify the distinct purpose structure, style, and behavior each exhibit.
 
-Section three, *Coding and Visual Design*, will review the elements, principles, and constructs of visual design. We will explore them relative to coding’s counterparts. This work will help shape a behavioral-coding mental model tuned specifically for designers.
+Section three, *Coding and Visual Design*, will review the elements, principles, and constructs of visual design. We will explore them relative to coding’s counterparts. This work will help shape a mental model tuned specifically for designers.
 
 In section four, *Coding and Concept*, we will introduce concepts that are unique to authoring programming code. It is important to understand that these concepts are *language agnostic*. This simply means you get to reuse what you learn in *virtually all programming languages*. In programming languages, the terminology and often the words themselves are reused exactly or with subtle variation. Spoken languages lack this luxury. Bonus.
 
