@@ -40,7 +40,7 @@ Code is a system for converting meaning between forms. One form is considered *e
   </tr>
 </table>
 
-A decoded form can be another code’s encoded form. The opposite is also possible. Remember this. Different environments, systems, and software sometimes only work with a specific form. The internet, browsers, and design software for example, in addition to the operating systems they run on, all need to encode and decode to do the cool things they do. Having the capability to convert forms enables better communication with each other. Each may expand its own capabilities by having this conversion power too. Conversion is power.
+A decoded form can be another code’s encoded form. The opposite is also possible. Remember this. Different environments, systems, and software sometimes only work with a specific form. The internet, browsers, and design software for example, in addition to the operating systems they run on, all need to encode and decode to do the cool things they do. Having the capability to convert forms enables better communication with each other. Each software system may expand its own capabilities by having this conversion power too. Conversion through encoding and decoding is power.
 
 Imagine a code where a bit’s two states encoded for two RGB colors. The bit’s 1 would represent white. The bit’s 0 would represent black.
 
