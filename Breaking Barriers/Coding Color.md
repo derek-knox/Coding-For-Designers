@@ -1,6 +1,6 @@
 # Coding Color
 
-Thus far we have made our own example codes. One to represent the symbols in the English language and another to represent black and white images. We could continue this trend. Instead we will begin to use codes that already exist. The advantage is twofold:
+Thus far we have made our own example codes. One to represent the symbols in the English language and another to represent black and white images. We could continue this trend. Instead we will transition toward codes that already exist. The advantage is twofold:
 
 1. Less work for us, we don’t need to reinvent the wheel
 2. Using established codes empowers us to achieve more, faster
