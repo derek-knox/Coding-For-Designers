@@ -14,7 +14,7 @@ Your solution may differ from mine. This is totally fine. The goal here is simpl
 
 The visual above illustrates a core aspect of computer graphics. If you author digital content you will have connected the dots. Welcome to the *pixel*.
 
-Pixel is another shortcut word. A pixel is a *picture element*. Do not ask me where the "x" came from. Simply put, to visualize a code on a computer screen, pixels are used. Naturally, the more pixels you have, the larger the picture. Makes sense.
+Pixel is another shortcut word. A pixel is a *picture element*. Do not ask me where the "x" came from. Simply put, to visualize a code on a computer screen, pixels are used. Naturally, the more pixels you have, the larger the image. Makes sense.
 
 The sixteen variants above each represent a four pixel image. They are represented in code using a 4-bit code (half a byte). If we used a full byte, then we could represent a 2x4 pixel image resulting in two-hundred fifty-six variants. Generally speaking, the greater the dimensions of a digital image, the more bytes are required to represent it.
 
