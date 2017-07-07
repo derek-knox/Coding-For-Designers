@@ -22,4 +22,4 @@ As you’ll notice in the 2D and 3D examples above, what differs between them is
 
 The computer program, the web browser for our 2D examples and the Unity Engine for our 3D examples, knows how to read, to decode, a tree structure. Each program then outputs a 2D or 3D rendering respectively. It is important to understand that the tree structure simply defines the relationships between the building blocks. HTML elements for 2D with the web platform and GameObjects for 3D with the Unity platform.
 
-As our custom defined structure is respected and properly reflected by each platform, we may begin to stylize each building block. This stylization process ensures particular aesthetic and/or functional effects are present for the viewer. Style time.
+As our custom defined structure is respected and properly reflected by each platform, we may begin to stylize each building block. This stylization process ensures particular aesthetic and/or functional effects are present for the viewer. As visual designers, this is usually the most fun and rewarding part. Style time.
