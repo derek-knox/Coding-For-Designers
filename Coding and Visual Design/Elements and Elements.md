@@ -5,7 +5,7 @@ The elements of visual design are the *primitive* pieces of visual design. Thoug
 <table>
   <tr>
     <td>Design Elements</td>
-    <td>Coding Elements</td>
+    <td>programming Elements</td>
   </tr>
   <tr>
     <td>Point</td>
@@ -47,7 +47,7 @@ The elements of visual design are the *primitive* pieces of visual design. Thoug
 
 ![alt text](../assets/visual-todo-placeholder.jpg "Coding Elements in a visual form")
 
-*^ Coding Elements in a visual form breakdown ^*
+*^ Programming Elements in a visual form breakdown ^*
 
 ## Point | Expression
 
