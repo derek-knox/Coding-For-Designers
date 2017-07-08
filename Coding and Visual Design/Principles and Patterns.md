@@ -41,7 +41,7 @@ Design patterns allow the programmer to take an approach that solves a general p
 
 Often times when programming, you only ever want to have a single instance of a type of object exist in your program. In a sports video game for example you usually only ever track a single game’s score. Depending on the sport you likely only ever want a single ball or puck. In a drawing application you may only ever want a single pen or brush to be selected at any given time. The *singleton* design pattern is a useful pattern for enforcing this oneness.
 
-In forgiving sports video games or drawing applications, the software lets you undo and redo your actions. This is an extremely common desire in software, the ability to undo and redo actions. The *command* design pattern is extremely handy for giving an application, and thus its user, this ability.
+In forgiving sports video games or drawing applications, the software lets you undo and redo your actions. This is an extremely common desire in software, the ability to undo and redo actions. The *command* design pattern is extremely handy for giving an application, and thus its user(s), this ability.
 
 A sports video game will likely consist of two teams, each with a certain amount of players. Design applications may provide numerous tools like a pen, brush, or eraser with variations of each. A few flavors of the *factory* design pattern are useful in stamping out these products (team, player, or tool).
 
