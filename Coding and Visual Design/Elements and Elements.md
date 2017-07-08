@@ -5,7 +5,7 @@ The elements of visual design are the *primitive* pieces of visual design. Thoug
 <table>
   <tr>
     <td>Design Elements</td>
-    <td>programming Elements</td>
+    <td>Programming Elements</td>
   </tr>
   <tr>
     <td>Point</td>
