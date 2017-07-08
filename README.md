@@ -34,10 +34,10 @@ Coding for Designers is a work-in-process book that demystifies coding relative 
 - [Constructs and Components](Coding%20and%20Visual%20Design/Constructs%20and%20Components.md)
 
 ### Coding and Concept
-- Client and Server
-- Synchronous and Asynchronous
 - Authoring Time, Compile Time, and Runtime
 - Event Loop
+- Synchronous and Asynchronous
+- Client and Server
 - Anatomy of a Source Code File (.HTML, .CSS, .JS)
 - Recycle and Reuse
 - Work. Right. Better.
