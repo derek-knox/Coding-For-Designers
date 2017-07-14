@@ -83,7 +83,7 @@ How many states could we represent with three bits?
   </tr>
 </table>
 
-Eight? I was expecting six. It makes sense though when we see the state values printed out. For every bit we add, we double the possible output as before. This is obvious when we write it out.
+Eight? I was expecting six. It makes sense though when we see the state values printed out. For every bit we add, we double the total output states as before. This is obvious when we write it out.
 
 <table>
   <tr>
