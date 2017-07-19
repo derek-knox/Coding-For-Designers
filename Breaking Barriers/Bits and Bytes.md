@@ -70,7 +70,7 @@ Now is a good point in time to reflect on why we are even looking at *bits* if w
 
 1. Computers, these complex machines, rely solely on extremely basic concepts
 2. There is no magic in coding, just simple ideas stacked atop each other
-3. Each *state* maps directly to a particular *bit sequence*
+3. Each *state* is represented by particular *sequence of bits*
 4. The *one-of-two-states concept* a bit represents is constantly reused in coding
 
 How many states could we represent with three bits?
