@@ -34,7 +34,7 @@ Coding for Designers is a work-in-process book that demystifies coding relative 
 - [Constructs and Components](Coding%20and%20Visual%20Design/Constructs%20and%20Components.md)
 
 ### Coding and Concept
-- Coding and Concept
+- [Coding and Concept] (Coding%20and%20Concept/Coding%20and%20Concept.md)
 - Authoring Time, Compile Time, and Runtime
 - Event Loop
 - Synchronous and Asynchronous
