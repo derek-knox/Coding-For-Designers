@@ -13,7 +13,7 @@ Inevitably, these visual tools will be limitied and not allow you to pull off ex
 
 After we have authored the code to do what we are trying to do, we need to "run it". Running it helps us confirm if it actually does what we want in *realtime* aka *runtime*. Before we can do this however, a step needs to be taken that transforms our static code into runtime code. Welcome to *compile time*.
 
-Compile time is how we get from our authored *static* code to *dynamic* interactive code. We won't go into the details of this step as it is complex. Feel free to research deeper. All you need to know is that this step exists so *we* can use words we understand (English words within the programming language JavaScript for example) instead of coding in binary, the only thing computers fundamentally understand. In essence, some smart and nerdy authors wrote a *compiler program* that can compiles and converts a high level programming language like JavaScript (easier for us humans to use) to lower-level languages (easier for computers to use).
+Compile time is how we get from our authored *static* code to *dynamic* interactive code. We won't go into the details of this step as it is complex. Feel free to research deeper. All you need to know is that this step exists so *we* can use words *we* understand (English words within the programming language JavaScript for example) instead of coding in binary, the only thing computers fundamentally understand. In essence, some smart and nerdy authors wrote a *compiler program* that can compiles and converts a high level programming language like JavaScript (easier for us humans to use) to lower-level languages (easier for computers to use).
 
 ![alt text](../assets/visual-todo-placeholder.jpg "Author > Compile > Run")
 
