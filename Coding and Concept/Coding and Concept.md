@@ -6,6 +6,8 @@ To do so, we will visit one more set of concepts before getting into JavaScript 
 
 In this section, we will visit the most important programming concepts that will help shape your future programming efforts. We will talk about the three timeframes in which code lives, namely *authoring time*, *compile time*, and *runtime*. This will help you connect the dots between when you are authoring code to when you will be able to interact with your interactive creations. Following this, we will visit the *event loop* in detail so we have a fine-tuned grasp of what actually happens during *runtime*.
 
+Next we will talk about *interfacing* which will allow us to understand how we can actually use built-in, 3rd-party, and custom code in a reusable manner. This is how we actually get two different pieces of code to talk to eachother.
+
 Additionally, we will explore the differences between synchronous and asynchronous behavior. This is just a fancy way of saying when things happen at the *same* or at *different* times. This exploration will naturally tie into visiting the client and server model. We will learn the specific benefits of having multiple devices (phones, computers, etc.) communicate and/or do dedicated and unique work.
 
 Lastly, we will look at the anatomy of a source code file for HTML (.html), CSS (.css), and JavaScript (.js). In doing so we will visit a few examples that highlight the value of two extemely important programming concepts. The first is *recycle and reuse* (also known as *don't repeat yourself* or *DRY*). The second is *work. right. better.*, a mantra that will help you improve your code authoring over time.
