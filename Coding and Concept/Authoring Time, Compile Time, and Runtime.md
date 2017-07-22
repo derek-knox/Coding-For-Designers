@@ -20,4 +20,3 @@ In essence, some smart and nerdy authors wrote a *compiler program* that compile
 ![alt text](../assets/visual-todo-placeholder.jpg "Author > Compile > Run")
 
 The output of this compilation process results in *runtime* code that works the way we programmed it to (unless we made mistakes). For our purposes, this manifests into an interactive user interface within a computer screen.
-
