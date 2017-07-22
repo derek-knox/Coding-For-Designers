@@ -9,7 +9,7 @@ These distinct timeframes are useful in understanding how the static code in a t
 
 *Authoring time* is pretty self-explanatory right? It is the time when we are authoring code. That's it. We have a text editor program of some kind open, and we are typing or pasting into it. Simple as that. Some programs even exist, like Unity for example, that enable a more visual programming approach. This simply means that the program has some amount of UI interaction that enables you as the author to *generate* code and/or wire behavior in a non-text based way. Admittedly, this is often more fun than text-based programming... but there is a catch.
 
-Inevitably, these visual tools will be limitied and not allow you to pull off exactly what you want. This is why we're concentrating on authoring custom code in a text editor. We get *ultimate control* as to how something works, because *we get to write the code*.
+Inevitably, these visual tools will be limitied and not allow you to pull off exactly what you want. This is why we're concentrating on authoring custom code in a text editor. We get *ultimate control* as to how something works because *we get to write the code*.
 
 After we have authored the code to do what we are trying to do, we need to "run it". Running it helps us confirm if it actually does what we want in *realtime*, or more specifically during *runtime*. Before we can do this however, a step needs to be taken that transforms our static code into runtime code. Welcome to compile time.
 
