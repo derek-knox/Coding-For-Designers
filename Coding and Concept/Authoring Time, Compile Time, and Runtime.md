@@ -11,7 +11,7 @@ These distinct timeframes are useful in understanding how the static code in a t
 
 Inevitably, these visual tools will be limitied and not allow you to pull off exactly what you want. This is why we're concentrating on authoring custom code in a text editor. We get *ultimate control* as to how something works because *we get to write the code*.
 
-After we have authored the code to do what we are trying to do, we need to "run it". Running it helps us confirm if it actually does what we want in *realtime* aka *runtime*. Before we can do this however, a step needs to be taken that transforms our static code into runtime code. Welcome to compile time.
+After we have authored the code to do what we are trying to do, we need to "run it". Running it helps us confirm if it actually does what we want in *realtime* aka *runtime*. Before we can do this however, a step needs to be taken that transforms our static code into runtime code. Welcome to *compile time*.
 
 Compile time is how we get from our authored *static* code to *dynamic* interactive code. We won't go into the details of this step as it is complex. Feel free to research deeper. All you need to know is that this step exists so *we* can use words we understand (English words within the programming language JavaScript for example) instead of coding in binary, the only thing computers fundamentally understand. In essence, some smart and nerdy authors wrote a *compiler program* that can compiles and converts a high level programming language like JavaScript (easier for us humans to use) to lower-level languages (easier for computers to use).
 
