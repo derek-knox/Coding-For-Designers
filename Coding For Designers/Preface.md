@@ -10,7 +10,7 @@ In section two, *Structure, Style, and Behavior*, we will visit the three codeab
 
 Section three, *Coding and Visual Design*, will review the elements, principles, and constructs of visual design. We will explore them relative to coding’s counterparts. This work will help shape a mental model tuned specifically for designers.
 
-In section four, *Coding and Concept*, we will introduce concepts that are unique to authoring programming code. It is important to understand that these concepts are *language agnostic*. This simply means you get to reuse what you learn in *virtually all programming languages*. In programming languages, the terminology and often the words themselves are reused exactly or with subtle variation. Spoken languages lack this luxury. Bonus.
+In section four, *Coding and Concept*, we will introduce concepts that are invaluable when authoring programming code. It is important to understand that these concepts are *language agnostic*. This simply means you get to reuse what you learn in *virtually all programming languages*. In programming languages, the terminology and often the words themselves are reused exactly or with subtle variation. Spoken languages lack this luxury. Bonus.
 
 Section five, *Coding and JavaScript*, will reinforce what has been learned, but specifically in the context of JavaScript. JavaScript is the most accessible programming language today. If you have pushed a button on a web page, then you have been impacted by JavaScript.
 
