@@ -1,4 +1,4 @@
-# Event Loop
+# Frame Rate and the Event Loop
 
 We know computers are dumb and fast, but some computers are dumber and slower than others. To ensure the code we author will run well on dumber and slower computers, we often author our code with a target *frame rate* in mind.
 
