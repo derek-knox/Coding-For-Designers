@@ -11,7 +11,7 @@ As you likely guessed, a high frame rate results in smoother motion where a slow
 
 It is worth noting that if your application does not change much at all during runtime, you may be able to get away with something as small as 5fps or 10fps. The more motion and animation you have however, the more likely you'll want to target 60fps.
 
-In an application or game that targets 60fps, this means that your program's UI must update every 16.6 milliseconds. That's fast.
+In an application or game that targets 60fps, this means the application or game must render a new image every 16.6 milliseconds. That's fast.
 
 *^ 1 second = 1000 milliseconds so 1000ms/60fps = 16.66ms per frame ^*
 
