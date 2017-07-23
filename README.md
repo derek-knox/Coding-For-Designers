@@ -36,7 +36,7 @@ Coding for Designers is a work-in-process book that demystifies coding relative 
 ### Coding and Concept
 - [Coding and Concept](Coding%20and%20Concept/Coding%20and%20Concept.md)
 - [Authoring Time, Compile Time, and Runtime](Coding%20and%20Concept/Authoring%20Time,%20Compile%20Time,%20and%20Runtime.md)
-- [Event Loop](Coding%20and%20Concept/Event%20Loop.md)
+- [Frame Rate and the Event Loop](Coding%20and%20Concept/Frame%20Rate%20and%20the%20Event%20Loop.md)
 - [Interfacing](Coding%20and%20Concept/Interfacing.md)
 - Synchronous and Asynchronous
 - Client and Server
