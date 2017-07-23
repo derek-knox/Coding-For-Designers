@@ -23,4 +23,4 @@ The output of this compilation process results in *runtime* code that works the 
 
 To recap, we write in a high-level language using its reserved keywords and English. This is author time. Then a compiler program converts the code we humans can understand into code the computer understands. This is compile time. Finally, if the conversion process has no errors, the result is an application or game that is interactive. This is runtime.
 
-How is runtime actually interactive though? One or more users could take any number of actions within our application at any given moment. We can't possibly handle all these potential scenarios in our code, can we? Thankfully, it is much simpler than that. We just need to understand the runtime *event loop*.
+How is runtime actually interactive though? One or more users could take any number of actions within our application at any given moment. We can't possibly handle all these potential scenarios in our code, can we? Thankfully, it is much simpler than that. We just need to understand the *frame rate* and the runtime *event loop*.
