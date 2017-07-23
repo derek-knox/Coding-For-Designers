@@ -4,7 +4,7 @@ So far we've broken down some barriers around coding and computers in general. W
 
 To do so, we will visit one more set of concepts before getting into JavaScript itself. Virtually all of these concepts are language agnostic. This is just a fancy way of saying that what you will learn is reusable in virtually every programming language you will ever use. Hell yea.
 
-In this section, we will visit the most important programming concepts that will help shape your future programming efforts. We will talk about the three timeframes in which code lives, namely *authoring time*, *compile time*, and *runtime*. This will help you connect the dots between when you are authoring code to when you will be able to interact with your interactive creations. Following this, we will visit the *event loop* in detail so we have a fine-tuned grasp of what actually happens during *runtime*.
+In this section, we will visit the most important programming concepts that will help shape your future programming efforts. We will talk about the three timeframes in which code lives, namely *authoring time*, *compile time*, and *runtime*. This will help you connect the dots between when you are authoring code to when you will be able to interact with your interactive creations. Following this, we will visit the *frame rate* and *event loop* concepts in detail so we have a fine-tuned grasp of what actually happens during *runtime*.
 
 Next we will talk about *interfacing* which will allow us to understand how we can actually use built-in, 3rd-party, and custom code in a reusable manner. This is also how we get different sections of code to talk to eachother.
 
