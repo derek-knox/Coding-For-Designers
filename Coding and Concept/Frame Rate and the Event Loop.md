@@ -18,5 +18,6 @@ In an application or game that targets 60fps, this means the application or game
 This might sound scary if you don't work with milliseconds, but you'll get used to them quickly, especially when defining animation transition times. Remember however that computers are fast so you usually don't have to worry about this 16.66ms window. I present it here simply for you to keep this in the back of your mind. In the future, if your application's animation and motion seems to have hiccups or it looks janky, then you likely have one of two problems. Typically this means your code or a 3rd-party's code is: 
 1. doing too much each frame
 2. doing work inefficiently
+
 We'll revisit these two problems later, but just be aware of them.
 
