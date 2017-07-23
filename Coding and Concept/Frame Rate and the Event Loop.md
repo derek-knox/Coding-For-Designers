@@ -3,9 +3,9 @@
 We know computers are dumb and fast, but some computers are dumber and slower than others. To ensure the code we author will run well on dumber and slower computers, we often author our code with a target *frame rate* in mind.
 
 A frame rate is simply the amount of frames that are shown in a second. A frame is a single rendered image. Frames shown back to back over time create the illusion of motion. Common frame rates are:
-- 30fps in movies
-- 60fps in games
-- 90fps in VR/AR/MR
+- 30fps (movies)
+- 60fps (games)
+- 90fps (VR/AR/MR)
 
 As you likely guessed, a high frame rate results in smoother motion where a slow frame rate results in less smooth motion. The human eye typically needs 24fps or more in order for a smooth perception of motion between frames. Within an interactive medium like applications or games, 60fps is a common target.
 
