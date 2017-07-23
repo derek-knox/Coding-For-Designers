@@ -21,3 +21,4 @@ This might sound scary if you don't work with milliseconds, but you'll get used 
 
 We'll revisit these two problems later, but just be aware of them.
 
+So a frame rate is vital for percieved motion, that's great. But how do we actually allow interactivity to be reflected in this motion? You guessed it, *event loop* time.
