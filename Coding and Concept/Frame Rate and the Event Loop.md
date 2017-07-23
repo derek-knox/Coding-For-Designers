@@ -2,7 +2,7 @@
 
 We know computers are dumb and fast, but some computers are dumber and slower than others. To ensure the code we author will run well on dumber and slower computers, we often author our code with a target *frame rate* in mind.
 
-A frame rate is simply the amount of frames that are shown in a second. Common frame rates are:
+A frame rate is simply the amount of frames that are shown in a second. A frame is a single rendered image. Frames shown back to back over time create the illusion of motion. Common frame rates are:
 - 30fps in movies
 - 60fps in games
 - 90fps in VR/AR/MR
