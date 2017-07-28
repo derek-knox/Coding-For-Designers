@@ -1,6 +1,6 @@
 # Authoring Time, Compile Time, and Runtime
 
-As mentioned previously there are three fundamental timeframes in which code lives. In order, these are:
+As mentioned previously there are three fundamental timeframes when code exists. In order, these are:
 1. authoring time
 2. compile time
 3. runtime
