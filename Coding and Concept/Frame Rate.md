@@ -1,17 +1,17 @@
 # Frame Rate
 
-We know computers are dumb and fast, but some computers are dumber and slower than others. To ensure the code we author will run well on dumber and slower computers, we often author our code with a target *frame rate* in mind.
+We know computers are dumb. We know computers are fast. Some computers are faster than others however. How do we ensure the code we author will run well on slow computers? To do so, we need to author our code with a target *frame rate* in mind.
 
 A frame rate is simply the amount of frames that are shown in a second. A frame is a single rendered image. Frames shown back to back over time create the illusion of motion. Common frame rates are:
 - 30fps (movies)
 - 60fps (games)
-- 90fps (VR/AR/MR)
+- 90fps (AR/MR/VR)
 
-As you likely guessed, a high frame rate results in smoother motion where a slow frame rate results in less smooth motion. The human eye typically needs 24fps or more in order for a smooth perception of motion between frames. Within an interactive medium like applications or games, 60fps is a common target.
+As you likely guessed, a high frame rate results in smoother motion where a slow frame rate results in less smooth motion. The human eye typically needs 24fps or more in order for a smooth perception of motion. Within an interactive medium like applications or games, 60fps is a common target.
 
-It is worth noting that if your application does not change much at all during runtime, you may be able to get away with something as small as 5fps or 10fps. The more motion and animation you have however, the more likely you'll want to target 60fps.
+It is worth noting that if your application or game does not change often and/or lacks animation, you will likely be able to get away with 5fps or 10fps. The more motion and animation you have however, the more likely you'll want to target 60fps.
 
-In an application or game that targets 60fps, this means the application or game must render a new image every 16.6 milliseconds. That's fast.
+An application or game that targets 60fps must render a new image every 16.6 milliseconds. That's fast.
 
 *^ 1 second = 1000 milliseconds so 1000ms/60fps = 16.6ms per frame ^*
 
