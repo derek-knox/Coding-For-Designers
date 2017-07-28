@@ -1,6 +1,6 @@
 # Event Loop
 
-An interactive application or game is simply the manifestation of a target 60+ rendered images, shown in sequence, per second. The only reason this frame rate is important is so the user(s) experience is perceptually fluid and responsive. If fluidity and responsiveness was not a goal, our application or game could leverage an aformentioned 10fps, 5fps, or lower target frame rate. More often than not however we desire the interactive content we create to be extremely fluid and responsive. 60+fps? Yes please.
+An interactive application or game is simply the manifestation of a target 60+ rendered images, shown in sequence, per second. The only reason this frame rate is important is so the user(s) experience is perceptually fluid and responsive. If fluidity and responsiveness was not a goal, our application or game could leverage the aformentioned 10fps, 5fps, or lower target frame rate. More often than not however we desire the interactive content we create to be extremely fluid and responsive. 60+fps? Yes please.
 
 A non-interactive animation hitting 60fps undoubtedly looks smooth, but it is just that, *non-interactive*. How do we account for this interactive quality?
 
