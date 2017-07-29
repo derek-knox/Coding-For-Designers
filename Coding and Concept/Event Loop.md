@@ -21,6 +21,19 @@ The JavaScript runtime in a web browser is composed of four core pieces where th
 3. *event queue*
 4. *event loop*
 
+We can update our example code from before:
+
+```
+<runtime>
+    <apis></apis>
+    <engine>
+        <stack></stack>
+    </engine>
+    <queue></queue>
+    <loop></loop>
+</runtime>
+```
+
 ![alt text](../assets/visual-todo-placeholder.jpg "Event Loop")
 
 *^ Stack, Queue, and Event Loop ^*
