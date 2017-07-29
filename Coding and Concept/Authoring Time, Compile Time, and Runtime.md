@@ -19,7 +19,7 @@ In essence, some smart and nerdy authors wrote a *compiler program* that compile
 
 ![alt text](../assets/visual-todo-placeholder.jpg "Author > Compile > Run")
 
-The output of this compilation process results in *runtime* code that the computer executes. This process manifests as an interactive user interface within an application or game.
+The output of this compilation process results in *runtime* code that the computer executes in realtime. This process manifests as an interactive user interface within an application or game.
 
 To recap, we write in a high-level language using English words and abbreviations. This is author time. Then a compiler program converts the code we humans can understand into code the computer understands. This is compile time. Finally, if the conversion process has no errors, the result is an application or game that is interactive. This is runtime.
 
