@@ -4,7 +4,7 @@ We know computers are dumb. We know computers are fast. Some computers are faste
 
 A frame rate is simply the amount of frames that are shown in a second. A frame is a single rendered image. Frames shown back to back over time create the illusion of motion. Common target frame rates are:
 - 30fps (movies)
-- 60fps (games)
+- 60fps (apps/games)
 - 90fps (AR/MR/VR)
 
 As you likely guessed, a high frame rate results in the illusion of smoother motion where a slow frame rate results in an illusion of less smooth motion. The human eye typically needs 24fps or more for a smooth perception of motion to exist. Within an interactive medium like applications or games, 60fps is a common target.
