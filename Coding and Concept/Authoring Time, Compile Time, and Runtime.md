@@ -25,6 +25,7 @@ In Unity, the process is:
 1. *Author* code in a text editor and/or with Unity's built-in UI to generate code
 2. Click the "Build" button to *compile* the authored code into a single packaged file
 3. Run this file on the target operating system that knows how to convert the compiled code to *runtime* code
+    - Remember file extensions? ;)
 
 In JavaScript in a web browser, the process is:
 1. *Author* code in a text editor
