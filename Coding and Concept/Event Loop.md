@@ -14,7 +14,7 @@ Thankfully, the program responsible for *executing* compiled code helps us out. 
 
 To take advantage of the runtime and engine, we just need to get an idea of how they work together. This allows us to author code that reacts interactively as the engine executes it in realtime.
 
-The JavaScript runtime in a web browser is composed of four core pieces:
+The JavaScript runtime in a web browser is composed of four core pieces where the engine has one:
 1. *runtime APIs*
 2. *engine*
     - *stack*
