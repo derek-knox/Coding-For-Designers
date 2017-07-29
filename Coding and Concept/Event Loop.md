@@ -6,7 +6,7 @@ A non-interactive animation hitting 60fps undoubtedly looks smooth, but it is ju
 
 Thankfully, the program responsible for *executing* compiled code does it for us. This program is often referred to as a *runtime* or an *engine*. The JavaScript runtime, the JavaScript engine, and the Unity engine are all valid examples.
 
-To take advantage of a preexisting runtime or engine, we just need to grasp how it works. This allows our code to react interactively as it executes in realtime.
+To take advantage of a runtime or engine, we just need to grasp how it works. This allows our code to react interactively as it executes in realtime.
 
 The JavaScript runtime in a web browser uses an *event loop* to enable interactivity.
 
