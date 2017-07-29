@@ -4,12 +4,9 @@ An interactive application or game is simply the manifestation of a target 60+ r
 
 A non-interactive animation hitting 60fps undoubtedly looks smooth, but it is just that, *non-interactive*. How do we account for this desired interactive quality?
 
-The answer is quite simple actually. Depending on the runtime, or more specifically, the program that is responsible for converting the compilation process result to a realtime interactive interface. 
+The answer is quite simple actually. The runtime, or more specifically, the program responsible for converting compiled code to a realtime interactive interface, does it for us. We must need to grasp how it works so we can code our own interactivity. JavaScript in a web browser uses an *event loop*.
 
 
-Each programming language has its specific approach, but JavaScript within a web browser has a common and specific one.
-
-Thankfully, the programming language we are programming in has us covered, namely JavaScript. 
 
 - host environment
 - stack > web api (async thread work) > task queue > event loop > stack
