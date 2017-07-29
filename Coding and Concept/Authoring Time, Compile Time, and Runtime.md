@@ -21,6 +21,16 @@ In essence, some smart and nerdy authors wrote a *compiler program* that compile
 
 The output of this compilation process results in *runtime* code that the computer executes in realtime. This process manifests as an interactive user interface within an application or game.
 
+In Unity, the process is as follows:
+1. *Author* code in a text editor and/or with Unity's built-in UI to generate code
+2. Click the "Build" button to *compile* the authored code into a single packaged file
+3. Run this file on the target operating system that knows how to convert the compiled code to *runtime* code
+
+In JavaScript in a web browser, the process is as follows:
+1. *Author* code in a text editor
+2. View a web page that hosts your authored JavaScript code, the browser *compiles* it on the fly
+3. This just-in-time compiled code is automatically ran as *runtime* code and you have an interactive interface 
+
 To recap, we write in a high-level language using English words and abbreviations. This is author time. Then a compiler program converts the code we humans can understand into code the computer understands. This is compile time. Finally, if the conversion process has no errors, the result is an application or game that is interactive. This is runtime.
 
 How is runtime actually interactive though? One or more users could take any number of actions within our application at any given moment. We can't possibly handle all these potential scenarios in our code, can we? Thankfully, it is much simpler than that. We just need to understand the *frame rate* and the runtime *event loop*.
