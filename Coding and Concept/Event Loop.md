@@ -8,7 +8,9 @@ Thankfully, the program responsible for *executing* compiled code does it for us
 
 To take advantage of a preexisting runtime or engine, we just need to grasp how it works. This allows our code to react interactively as it executes in realtime.
 
-The JavaScript runtime in a web browser uses an *event loop*. 
+The JavaScript runtime in a web browser uses an *event loop* to enable interactivity.
+
+
 
 
 
