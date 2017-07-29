@@ -21,12 +21,12 @@ In essence, some smart and nerdy authors wrote a *compiler program* that compile
 
 The output of this compilation process results in *runtime* code that the computer executes in realtime. This process manifests as an interactive user interface within an application or game.
 
-In Unity, the process is as follows:
+In Unity, the process is:
 1. *Author* code in a text editor and/or with Unity's built-in UI to generate code
 2. Click the "Build" button to *compile* the authored code into a single packaged file
 3. Run this file on the target operating system that knows how to convert the compiled code to *runtime* code
 
-In JavaScript in a web browser, the process is as follows:
+In JavaScript in a web browser, the process is:
 1. *Author* code in a text editor
 2. View a web page that hosts your authored JavaScript code, the browser *compiles* it on the fly
 3. This just-in-time compiled code is automatically ran as *runtime* code and you have an interactive interface 
