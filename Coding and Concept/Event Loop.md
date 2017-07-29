@@ -14,7 +14,7 @@ The JavaScript runtime in a web browser uses an *event loop* to enable interacti
 
 *^ Stack, Queue, and Event Loop ^*
 
-
+The process is sequential and cyclical.
 
 - host environment
 - stack > web api (async thread work) > task queue > event loop > stack
