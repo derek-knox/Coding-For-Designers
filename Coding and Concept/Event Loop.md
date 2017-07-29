@@ -10,7 +10,9 @@ To take advantage of a preexisting runtime or engine, we just need to grasp how 
 
 The JavaScript runtime in a web browser uses an *event loop* to enable interactivity.
 
+![alt text](../assets/visual-todo-placeholder.jpg "Event Loop")
 
+*^ Stack, Queue, and Event Loop ^*
 
 
 
