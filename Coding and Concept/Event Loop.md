@@ -4,7 +4,7 @@ An interactive application or game is simply the manifestation of a target 60+ r
 
 A non-interactive animation hitting 60fps undoubtedly looks smooth, but it is just that, *non-interactive*. How do we account for this desired interactive quality?
 
-The answer is quite simple actually. Depending on the runtime, or more specifically, the program that is responsible for converting the compilation process result to the realtime interactive manifestation. 
+The answer is quite simple actually. Depending on the runtime, or more specifically, the program that is responsible for converting the compilation process result to a realtime interactive interface. 
 
 
 Each programming language has its specific approach, but JavaScript within a web browser has a common and specific one.
