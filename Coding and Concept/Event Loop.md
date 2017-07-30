@@ -4,7 +4,7 @@ An interactive application or game is simply the manifestation of a target 60+ r
 
 A non-interactive animation hitting 60fps undoubtedly looks smooth, but it is just that, *non-interactive*. How do we account for this desired interactive quality?
 
-Thankfully, the program responsible for *executing* compiled code helps us out. This program is called the *engine*. A parent program called the *runtime* hosts the engine. The below example code isn't real, but if I were to code the relationship in HTML, it would look like this:
+Thankfully, the program responsible for *executing* compiled code helps us out. This program is called the *engine*. A parent program called the *runtime* hosts the engine. Together they provide an interactive system that executes code in realtime. The below example code isn't real, but if I were to code the relationship in HTML, it would look like this:
 
 ```
 <runtime>
@@ -34,9 +34,19 @@ We can update our example HTML from before:
 </runtime>
 ```
 
-![alt text](../assets/visual-todo-placeholder.jpg "Event Loop")
+Here is a 3D representation of the relationship between the runtime and engine components:
 
-*^ Stack, Queue, and Event Loop ^*
+![alt text](../assets/visual-todo-placeholder.jpg "The Event Loop Machine")
+
+*^ The Event Loop Machine ^*
+
+What essentially happens, is this:
+1. The engine quickly reads our code, optimizes it, and reorganizes it in preperation for faster execution
+2. Execution begins where units of work are added to the *stack* to be executed
+3. Some units of work can't be completed without *runtime APIs*, so the runtime handles that work for us
+4. This runtime work, once completed, updates the *event queue* to communicate its completion
+5. The *event loop* cycles in an effort to clear the *stack* and the *queue*, but is blocked if the *stack* isn't empty
+6. Once empty, the *event loop* cycles, and grabs a single item from the *queue* 
 
 The process is sequential and cyclical.
 
