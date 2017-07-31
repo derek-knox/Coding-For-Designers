@@ -44,7 +44,10 @@ During the compilation process, the *engine* quickly reads our code, optimizes i
 1. The *engine* tries to clear its *stack*
 2. The *event loop* tries to clear its *event queue*
 
-Once these two goals are met, the *runtime* and *engine* just chill. They simply wait for input triggers to occur. Remember the input triggers we covered in the *Behavior* section? Same ones. Again, these input triggers, often called *events*, are user interaction, environment, and/or time.
+Once these two goals are met, the *runtime* and *engine* just chill. They simply wait for input triggers to occur. Remember the input triggers we covered in the *Behavior* section? Same ones. Again, these input triggers, often called *events*, are:
+1. user interaction (tap, click, hit, hover, etc.)
+2. environment (layout resizing, operating system, device sensor, etc.)
+3. time (delays, schedules, etc.)
 
 Here is the process:
 1. Units of work are read by the *engine*
