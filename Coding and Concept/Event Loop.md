@@ -49,24 +49,21 @@ Combined, these steps prepare the *engine* so execution time is super fast. Duri
 1. clear the *stack*
 2. clear the *event queue*
 
-Once these two goals are met, the *engine* can relax. It does so until new work is added to its *stack*. How does it get new work though? Do you remember the input triggers we covered in the *Behavior* section? Bingo. As a reminder, these input triggers, often called *events*, are:
+Once these two goals are met, the *engine* can relax. It relaxes until new work is added to its *stack*. How does it get new work though? Do you remember the input triggers we covered in the *Behavior* section? Bingo. As a reminder, these input triggers, often called *events*, are:
 1. user interaction (tap, click, hit, hover, etc.)
 2. environment (layout resizing, operating system, device sensor, etc.)
 3. time (delays, schedules, etc.)
 
-When one or more of these events occurs, the *runtime APIs* update the *event queue*. Since the *event loop* has been cycling while the *engine* was relaxing, it now notices the updated *event queue*. Consequently, it takes one item from the queue and puts it on the *stack*. Remember it only takes one at a time. You guessed it, now the *engine* has work to do.
+When one or more of these events occur, the *runtime APIs* update the *event queue*. Since the *event loop* has been cycling while the *engine* was relaxing, it now notices the updated *event queue*. Consequently, it takes one item from the queue and puts it on the *stack*. You guessed it, now the *engine* has more work to do. The *event loop* is the foundational piece that helps us make our coded creations interactive. Thanks *event loop*.
 
-Here is the process:
-1. Units of work are read by the *engine*
-2. The *engine* adds this work to its *stack* to organize its execution
-2. *Runtime APIs* specialize in certain work and do it for the *engine* instead
-3. The *event queue* is updated when specialized work completes
-4. The *event loop* cycles in an effort to move any queued work to the *engine*'s *stack*
-5. Once the *event queue* is empty *event loop* is freed and it resumes its cycle
-6. A single item from the *event queue* (if present) is then added it to the *stack*
-
-
-The process is sequential and cyclical.
-
-- host environment
-- stack > web api (async thread work) > task queue > event loop > stack
+Let's review the process one more time, in small discreet steps:
+- the *engine* enters "scan" mode
+- the *engine* scans our code looking for units of work
+- when a unit of work is found, the *engine* adds it to the *stack*
+- when work is on the stack, the *engine* enters "execute" mode
+- the *engine* executes the top-most unit of work on the *stack*
+- *runtime APIs* specialize in certain work and do it for the *engine* instead
+- the *event queue* is updated when specialized work completes
+- the *event loop* cycles in an effort to move any queued work to the *engine*'s *stack*
+- once the *event queue* is empty *event loop* is freed and it resumes its cycle
+- a single item from the *event queue* (if present) is then added it to the *stack*
