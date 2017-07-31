@@ -40,13 +40,19 @@ Here is a 3D representation of the relationship between the runtime and engine c
 
 *^ The Event Loop Machine ^*
 
-What essentially happens, is this:
-1. The engine quickly reads our code, optimizes it, and reorganizes it in preperation for faster execution
-2. Execution begins where units of work are added to the *stack* to be executed
-3. Some units of work can't be completed without *runtime APIs*, so the runtime handles that work for us
-4. This runtime work, once completed, updates the *event queue* to communicate its completion
-5. The *event loop* cycles in an effort to clear the *stack* and the *queue*, but is blocked if the *stack* isn't empty
-6. Once empty, the *event loop* cycles, and grabs a single item from the *queue* 
+During the compilation process, the *engine* quickly reads our code, optimizes it, and reorganizes it in preperation for faster execution. After this step, our code is ready for execution. During execution time, there are two main goals:
+1. The *engine* tries to clear its *stack*
+2. The *event loop* tries to clear its *event queue*
+
+Here is the process:
+1. Units of work are read by the *engine*
+2. The *engine* adds this work to its *stack* to organize its execution
+2. *Runtime APIs* specialize in certain work and do it for the *engine* instead
+3. The *event queue* is updated when specialized work completes
+4. The *event loop* cycles in an effort to move any queued work to the *engine*'s *stack*
+5. Once the *event queue* is empty *event loop* is freed and it resumes its cycle
+6. A single item from the *event queue* (if present) is then added it to the *stack*
+
 
 The process is sequential and cyclical.
 
