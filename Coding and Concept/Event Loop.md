@@ -40,14 +40,18 @@ Here is a 3D representation of the relationship between the runtime and engine c
 
 *^ The Event Loop Machine ^*
 
-During the compilation process, the *engine* quickly reads our code, optimizes it, and reorganizes it in preperation for faster execution time. During execution time, there are two main goals:
+During the compilation process, the *engine* quickly reads our code, optimizes it, and reorganizes it in preperation for faster execution time. When the *runtime* and the *engine* are working together to execute our code, there two main goals:
 1. The *engine* tries to clear its *stack*
 2. The *event loop* tries to clear its *event queue*
 
-Once these two goals are met, the *runtime* and *engine* just chill. They simply wait for input triggers to occur. Remember the input triggers we covered in the *Behavior* section? Same ones. Again, these input triggers, often called *events*, are:
+Once these two goals are met, the *runtime* and *engine* just relax. They simply wait for something to happen.
+
+Remember the input triggers we covered in the *Behavior* section? They break this relaxation because they make things happen. Again, these input triggers, often called *events*, are:
 1. user interaction (tap, click, hit, hover, etc.)
 2. environment (layout resizing, operating system, device sensor, etc.)
 3. time (delays, schedules, etc.)
+
+When an input trigger occurs, the *runtime APIs* update the *event queue*. Since the *event loop* has been continously cycling while the *runtime* and *engine* were relaxing
 
 Here is the process:
 1. Units of work are read by the *engine*
