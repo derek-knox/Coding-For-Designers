@@ -4,7 +4,7 @@ An interactive application or game is simply the manifestation of a target 60+ r
 
 A non-interactive animation hitting 60fps undoubtedly looks smooth, but it is just that, *non-interactive*. How do we account for this desired interactive quality?
 
-Thankfully, the program responsible for *executing* compiled code helps us out. This program is called the *engine*. A parent program called the *runtime* hosts the engine. Together they provide an interactive system that executes code in realtime. The below example code isn't real, but if I were to code the relationship in HTML, it would look like this:
+Thankfully, the program responsible for *executing* compiled code helps us out. This program is called the *engine*. It gets help from its parent program, the *runtime*. Together they provide an interactive system that executes code in realtime. The below example code isn't real, but if I were to code the relationship in HTML, it would look like this:
 
 ```
 <runtime>
