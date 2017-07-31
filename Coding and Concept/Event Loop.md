@@ -15,11 +15,11 @@ Thankfully, the program responsible for *executing* compiled code helps us out. 
 To take advantage of the runtime and engine, we just need to get an idea of how they work together. This allows us to author code that reacts interactively as the engine executes it in realtime.
 
 The JavaScript runtime in a web browser is composed of four core components where the engine has only one:
-1. *engine*
-    - *stack*
-2. *runtime APIs*
-3. *event queue*
-4. *event loop*
+1. engine
+    - stack
+2. runtime APIs
+3. event queue
+4. event loop
 
 We can update our example HTML from before:
 
