@@ -45,13 +45,11 @@ During compilation time, just before execution time, the *engine* quickly takes 
 2. reorganizes
 3. optimizes
 
-Combined, these steps help the *engine* execute our code even faster than before.
-
-During execution time, the *runtime* and *engine* have two main goals:
+Combined, these steps prepare the *engine* so execution time is super fast. During execution time, the *runtime* and *engine* have two main goals:
 1. clear the *stack*
 2. clear the *event queue*
 
-Once these two goals are met, the *engine* can relax. It does so until it has new work on its *stack*. How does it get new work? Remember the input triggers we covered in the *Behavior* section? These triggers break this relaxation. As a reminder, these input triggers, often called *events*, are:
+Once these two goals are met, the *engine* can relax. It does so until new work is added to its *stack*. How does it get new work though? Do you remember the input triggers we covered in the *Behavior* section? Bingo. As a reminder, these input triggers, often called *events*, are:
 1. user interaction (tap, click, hit, hover, etc.)
 2. environment (layout resizing, operating system, device sensor, etc.)
 3. time (delays, schedules, etc.)
