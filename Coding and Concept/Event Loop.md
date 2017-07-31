@@ -51,7 +51,7 @@ Remember the input triggers we covered in the *Behavior* section? They break thi
 2. environment (layout resizing, operating system, device sensor, etc.)
 3. time (delays, schedules, etc.)
 
-When an input trigger occurs, the *runtime APIs* update the *event queue*. Since the *event loop* has been cycling while the *runtime* and *engine* were relaxing, it now notices the updated *event queue*. Consequently it takes an item from the queue and puts it on the *stack*. Now the *engine* has work to do. This cycle continues until the program is no longer running. Pretty cool.
+When an input trigger occurs, the *runtime APIs* update the *event queue*. Since the *event loop* has been cycling while the *runtime* and *engine* were relaxing, it now notices the updated *event queue*. Consequently it takes an item from the queue and puts it on the *stack*. Now the *engine* has work to do. This cycle continues until the program is no longer running. The *runtime* and *engine* make our lives way easier.
 
 Here is the process:
 1. Units of work are read by the *engine*
