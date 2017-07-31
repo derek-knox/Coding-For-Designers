@@ -44,6 +44,7 @@ During compilation time, just before execution time, the *engine* quickly takes 
 1. reads
 2. reorganizes
 3. optimizes
+
 Combined, these steps help the *engine* execute our code even faster than before.
 
 During execution time, the *runtime* and *engine* have two main goals:
