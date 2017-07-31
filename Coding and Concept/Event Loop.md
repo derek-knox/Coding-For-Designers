@@ -40,9 +40,11 @@ Here is a 3D representation of the relationship between the runtime and engine c
 
 *^ The Event Loop Machine ^*
 
-During the compilation process, the *engine* quickly reads our code, optimizes it, and reorganizes it in preperation for faster execution. After this step, our code is ready for execution. During execution time, there are two main goals:
+During the compilation process, the *engine* quickly reads our code, optimizes it, and reorganizes it in preperation for faster execution time. During execution time, there are two main goals:
 1. The *engine* tries to clear its *stack*
 2. The *event loop* tries to clear its *event queue*
+
+Once these two goals are met, the *runtime* and *engine* just chill. They simply wait for input triggers to occur. Remember the input triggers we covered in the *Behavior* section? Same ones. Again, these input triggers, often called *events*, are user interaction, environment, and/or time.
 
 Here is the process:
 1. Units of work are read by the *engine*
