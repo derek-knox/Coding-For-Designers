@@ -54,7 +54,7 @@ Once these two goals are met, the *engine* can relax. It does so until new work 
 2. environment (layout resizing, operating system, device sensor, etc.)
 3. time (delays, schedules, etc.)
 
-When one or more input triggers occurs, the *runtime APIs* update the *event queue*. Since the *event loop* has been cycling while the *engine* was relaxing, it now notices the updated *event queue*. Consequently, it takes one item from the queue and puts it on the *stack*. Remember it only takes one at a time. You guessed it, now the *engine* has work to do.
+When one or more of these events occurs, the *runtime APIs* update the *event queue*. Since the *event loop* has been cycling while the *engine* was relaxing, it now notices the updated *event queue*. Consequently, it takes one item from the queue and puts it on the *stack*. Remember it only takes one at a time. You guessed it, now the *engine* has work to do.
 
 Here is the process:
 1. Units of work are read by the *engine*
