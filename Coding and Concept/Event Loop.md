@@ -40,18 +40,22 @@ Here is a 3D representation of the relationship between the runtime and engine c
 
 *^ The Event Loop Machine ^*
 
-During compilation time, the *engine* quickly reads our code, optimizes it, and reorganizes it in preperation for faster execution time. When the *runtime* and the *engine* are working together to execute our code, there two main goals:
-1. The *engine* tries to clear its *stack*
-2. The *event loop* tries to clear its *event queue*
+During compilation time, just before execution time, the *engine* quickly takes three steps on our code:
+1. reads
+2. reorganizes
+3. optimizes
+Combined, these steps help the *engine* execute our code even faster than before.
 
-Once these two goals are met, the *runtime* and *engine* just relax. They simply wait for something to happen.
+During execution time, the *runtime* and *engine* have two main goals:
+1. clear the *stack*
+2. clear the *event queue*
 
-Remember the input triggers we covered in the *Behavior* section? They break this relaxation because they make things happen. Again, these input triggers, often called *events*, are:
+Once these two goals are met, the *engine* can relax. It does so until it has new work on its *stack*. How does it get new work? Remember the input triggers we covered in the *Behavior* section? These triggers break this relaxation. As a reminder, these input triggers, often called *events*, are:
 1. user interaction (tap, click, hit, hover, etc.)
 2. environment (layout resizing, operating system, device sensor, etc.)
 3. time (delays, schedules, etc.)
 
-When an input trigger occurs, the *runtime APIs* update the *event queue*. Since the *event loop* has been cycling while the *runtime* and *engine* were relaxing, it now notices the updated *event queue*. Consequently it takes an item from the queue and puts it on the *stack*. Now the *engine* has work to do. This cycle continues until the program is no longer running. The *runtime* and *engine* make our lives way easier.
+When one or more input triggers occurs, the *runtime APIs* update the *event queue*. Since the *event loop* has been cycling while the *engine* was relaxing, it now notices the updated *event queue*. Consequently, it takes one item from the queue and puts it on the *stack*. Remember it only takes one at a time. You guessed it, now the *engine* has work to do.
 
 Here is the process:
 1. Units of work are read by the *engine*
