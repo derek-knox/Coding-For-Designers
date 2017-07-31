@@ -40,7 +40,7 @@ Here is a 3D representation of the relationship between the runtime and engine c
 
 *^ The Event Loop Machine ^*
 
-During the compilation process, the *engine* quickly reads our code, optimizes it, and reorganizes it in preperation for faster execution time. When the *runtime* and the *engine* are working together to execute our code, there two main goals:
+During compilation time, the *engine* quickly reads our code, optimizes it, and reorganizes it in preperation for faster execution time. When the *runtime* and the *engine* are working together to execute our code, there two main goals:
 1. The *engine* tries to clear its *stack*
 2. The *event loop* tries to clear its *event queue*
 
