@@ -18,8 +18,8 @@ The JavaScript runtime in a web browser has four core components where the engin
 1. engine - does work
     - *stack* - organizes the engine's work
 2. *runtime APIs* - does special work the engine cannot
-3. *event queue* - packages results of special work into main work
-4. *event loop* - gives engine queued packages
+3. *event queue* - organizes the results of special work as packages of main work
+4. *event loop* - gives the engine queued packages
 
 We can update our example HTML from before:
 
