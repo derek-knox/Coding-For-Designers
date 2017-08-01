@@ -16,10 +16,10 @@ To take advantage of the runtime and engine, we just need to get an idea of how 
 
 The JavaScript runtime in a web browser has four core components where the engine has only one:
 1. engine - does work
-    - stack - organizes the engine's work
-2. runtime APIs - does special work the engine cannot
-3. event queue - packages results of special work into main work
-4. event loop - gives engine queued packages
+    - *stack* - organizes the engine's work
+2. *runtime APIs* - does special work the engine cannot
+3. *event queue* - packages results of special work into main work
+4. *event loop* - gives engine queued packages
 
 We can update our example HTML from before:
 
