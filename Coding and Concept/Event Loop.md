@@ -45,7 +45,7 @@ During compilation time, just before execution time, the engine quickly does thr
 2. reorganizes
 3. optimizes
 
-Combined, this work enables the engine to run fast and effeciently during execution time. This is when the runtime and engine work together to achieve two main goals:
+These steps enable the engine to run fast and effeciently during execution time. This is when the runtime and engine work together to achieve two main goals:
 1. clear the stack
 2. clear the event queue
 
