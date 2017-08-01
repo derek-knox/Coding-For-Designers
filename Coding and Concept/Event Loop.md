@@ -15,11 +15,11 @@ Thankfully, the program responsible for *executing* compiled code helps us out. 
 To take advantage of the runtime and engine, we just need to get an idea of how they work together. This allows us to author code that reacts interactively as the engine executes it in realtime.
 
 The JavaScript runtime in a web browser has four core components where the engine has only one:
-1. engine
-    - stack
-2. runtime APIs
-3. event queue
-4. event loop
+1. engine - does work
+    - stack - organizes the engine's work
+2. runtime APIs - does special work the engine cannot
+3. event queue - packages results of special work into main work
+4. event loop - gives engine queued packages
 
 We can update our example HTML from before:
 
@@ -45,16 +45,16 @@ During compilation time, just before execution time, the engine quickly does thr
 2. reorganizes
 3. optimizes
 
-Combined, this work enables the *engine* to run fast and effeciently during execution time. During this time, the *runtime* and *engine* have two main goals:
-1. clear the *stack*
-2. clear the *event queue*
+Combined, this work enables the engine to run fast and effeciently during execution time. This is when the runtime and engine work toward two main goals:
+1. clear the stack
+2. clear the event queue
 
-Once these two goals are met, the *engine* can relax. It relaxes until new work is added to its *stack*. How does it get new work though? Do you remember the input triggers we covered in the *Behavior* section? Bingo. As a reminder, these input triggers, often called *events*, are:
+Once these two goals are met, the engine can relax. It relaxes until new work is added to its stack. How does it get new work though? Do you remember the input triggers we covered in the Behavior section? Bingo. As a reminder, these input triggers, often called *events*, are:
 1. user interaction (tap, click, hit, hover, etc.)
 2. environment (layout resizing, operating system, device sensor, etc.)
 3. time (delays, schedules, etc.)
 
-When one or more of these events occur, the *runtime APIs* update the *event queue*. Since the *event loop* has been cycling while the *engine* was relaxing, it now notices the updated *event queue*. Consequently, it takes one item from the queue and puts it on the *stack*. You guessed it, now the *engine* has more work to do. The *event loop* is the foundational piece that helps us make our coded creations interactive. Thanks *event loop*.
+When one or more of these events occur, the runtime APIs update the event queue. Since the event loop has been cycling while the engine was relaxing, it now notices the updated event queue. Consequently, it takes one item from the queue and puts it on the stack. You guessed it, now the engine has more work to do. The event loop is the foundational piece that helps us make our coded creations interactive. Thanks event loop.
 
 Let's review the process one more time, in small discreet steps:
 - the *engine* enters "scan" mode
