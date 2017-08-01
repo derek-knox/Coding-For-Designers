@@ -38,8 +38,8 @@ Coding for Designers is a work-in-process book that demystifies coding relative 
 - [Authoring, Compiling, and Executing](Coding%20and%20Concept/Authoring,%20Compiling,%20and%20Executing.md)
 - [Frame Rate](Coding%20and%20Concept/Frame%20Rate.md)
 - [Event Loop](Coding%20and%20Concept/Event%20Loop.md)
+- [Sync and Async](Coding%20and%20Concept/Sync%20and%20Async.md)
 - [Interfacing](Coding%20and%20Concept/Interfacing.md)
-- Synchronous and Asynchronous
 - Client and Server
 - Anatomy of a Source Code File (.HTML, .CSS, .JS)
 - Recycle and Reuse
