@@ -14,7 +14,7 @@ Thankfully, the program responsible for *executing* compiled code helps us out. 
 
 To take advantage of the runtime and engine, we just need to get an idea of how they work together. This allows us to author code that reacts interactively as the engine executes it in realtime.
 
-The JavaScript runtime in a web browser has four core components where the engine has only one:
+The JavaScript runtime in a web browser has four core parts where the engine has only one:
 1. engine - does work
     - *stack* - organizes the engine's work
 2. *runtime APIs* - does special work the engine cannot
@@ -54,4 +54,6 @@ Once these two goals are met, the engine can relax. It relaxes until new work is
 2. environment (layout resizing, operating system, device sensor, etc.)
 3. time (delays, schedules, etc.)
 
-When one or more of these events occur, the runtime APIs handle the special work required by the event and then update the event queue when finished. Since the event loop has been cycling while the engine was relaxing, it now notices the updated event queue. Consequently, it takes one item from the queue and puts it on the stack. You guessed it, now the engine has more work to do. The event loop is the foundational piece that helps us make our coded creations interactive. Thanks event loop.
+When an event occurs, the runtime APIs manage the special work required by it and then update the event queue when finished. Since the event loop has been cycling while the engine was relaxing, it now notices the updated event queue. Consequently, it takes one item from the queue and gives it to the engine. The engine then puts it on the stack. You guessed it, new work for the engine.
+
+Though all of the runtime's parts are vital, the event loop most ensures our interactive creations come to life. Thanks event loop.
