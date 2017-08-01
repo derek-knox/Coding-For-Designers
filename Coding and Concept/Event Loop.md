@@ -54,4 +54,4 @@ Once these two goals are met, the engine can relax. It relaxes until new work is
 2. environment (layout resizing, operating system, device sensor, etc.)
 3. time (delays, schedules, etc.)
 
-When one or more of these events occur, the runtime APIs update the event queue. Since the event loop has been cycling while the engine was relaxing, it now notices the updated event queue. Consequently, it takes one item from the queue and puts it on the stack. You guessed it, now the engine has more work to do. The event loop is the foundational piece that helps us make our coded creations interactive. Thanks event loop.
+When one or more of these events occur, the runtime APIs do their special work and then update the event queue. Since the event loop has been cycling while the engine was relaxing, it now notices the updated event queue. Consequently, it takes one item from the queue and puts it on the stack. You guessed it, now the engine has more work to do. The event loop is the foundational piece that helps us make our coded creations interactive. Thanks event loop.
