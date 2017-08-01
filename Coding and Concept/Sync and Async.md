@@ -7,9 +7,6 @@ Sync work is referred to as *blocking* where async work is *non-blocking*. Regar
 Answer time:
 <table>
   <tr>
-    <td>Sync vs. Async</td>
-  </tr>
-  <tr>
     <td>sync</td>
     <td>blocking</td>
     <td>stack work</td>
