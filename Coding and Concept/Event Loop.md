@@ -40,12 +40,12 @@ Here is a 3D representation of the relationship between the runtime and engine c
 
 *^ The Event Loop Machine ^*
 
-During compilation time, just before execution time, the *engine* quickly takes three steps on our code:
+During compilation time, just before execution time, the engine quickly does three things with our code:
 1. reads
 2. reorganizes
 3. optimizes
 
-Combined, these steps prepare the *engine* so execution time is super fast. During execution time, the *runtime* and *engine* have two main goals:
+Combined, this work enables the *engine* to run fast and effeciently during execution time. During this time, the *runtime* and *engine* have two main goals:
 1. clear the *stack*
 2. clear the *event queue*
 
