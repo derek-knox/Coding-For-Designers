@@ -55,15 +55,3 @@ Once these two goals are met, the engine can relax. It relaxes until new work is
 3. time (delays, schedules, etc.)
 
 When one or more of these events occur, the runtime APIs update the event queue. Since the event loop has been cycling while the engine was relaxing, it now notices the updated event queue. Consequently, it takes one item from the queue and puts it on the stack. You guessed it, now the engine has more work to do. The event loop is the foundational piece that helps us make our coded creations interactive. Thanks event loop.
-
-Let's review the process one more time, in small discreet steps:
-- the *engine* enters "scan" mode
-- the *engine* scans our code looking for units of work
-- when a unit of work is found, the *engine* adds it to the *stack*
-- when work is on the stack, the *engine* enters "execute" mode
-- the *engine* executes the top-most unit of work on the *stack*
-- *runtime APIs* specialize in certain work and do it for the *engine* instead
-- the *event queue* is updated when specialized work completes
-- the *event loop* cycles in an effort to move any queued work to the *engine*'s *stack*
-- once the *event queue* is empty *event loop* is freed and it resumes its cycle
-- a single item from the *event queue* (if present) is then added it to the *stack*
