@@ -89,6 +89,34 @@ The work `setTimout` actually does, in English, is:
 3. wait for the timer to complete
 4. upon completion, update the event queue with the function provided
 
-What is cool about many functions, `setTimeout` included, is that they are flexible in what work they do. As you may have guessed, as long as we give `setTimeout` valid arguments, it will always do the work we want (via the function we give it) after a delay (via the amount of time we give it). Pretty cool.
+What is cool about many functions, `setTimeout` included, is that they're designed with a small amount of flexibility built-in. As you may have guessed, as long as we give `setTimeout` valid arguments, it will always do the work we want (via the function provided) after a delay (via the time provided). Pretty cool. As you may have guessed, you can design your own functions with flexibility as well.
 
-...
+As a quick example, let's design a new function named `changeBackgroundColor`.
+```
+function changeBackgroundColor(newColor) {
+  document.body.style.backgroundColor = newColor;
+}
+```
+
+Here are a few examples of how we could use it:
+```
+changeBackgroundColor('#FF0000');
+```
+
+or
+
+```
+changeBackgroundColor('Green');
+```
+
+or
+
+```
+changeBackgroundColor('Blue');
+```
+
+You get the idea.
+
+We explored some JavaScript a little bit in this section, but the main takeaway if the difference between sync and async. If you understand how to keep your stack work small and fast, you'll be running 60fps with no problem.
+
+As you learn more about runtime APIs you will discover that the runtime will do a lot of really cool non-blocking work for you. If you haven't already noticed, the runtime APIs provide a simple *interface* for you as a code author to work with. Let's dig deeper.
