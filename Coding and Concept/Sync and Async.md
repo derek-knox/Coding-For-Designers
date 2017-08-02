@@ -42,7 +42,7 @@ There are likely some details you don't understand, but that is to be expected. 
 // 2. We name the function whatever we want, 'makeBackgroundBlack' in this case
 // 3. The engine doesn't do the work yet (code statement between the '{' and '}')
 
-function makeBackgroundBlack() {
+function makeBackgroundBlack function is declared here() {
 
   // Remember the Coding Color section ;)
   document.body.style.backgroundColor = '#000000';
@@ -56,33 +56,37 @@ makeBackgroundBlack();
 
 Without comments, there are naturally a lot less lines for us humans to read. As far as the engine is concerned however, these are the same program. As you gain more experience you will understand when and when not to use comments.
 
-Admittedly, the code above does not do a whole lot. The work inside of the `makeBackgroundBlack` function will happen really fast too. The event loop will be blocked, but from a user perspective, the work will happen instantly and become unblocked. If the function instead counted to a trillion before changing the background color, then the user would percieve the program as slower.
+Admittedly, the code above does not do a whole lot. The work inside of the `makeBackgroundBlack` function will happen really fast too. The event loop will be blocked, but from a user perspective, the work will happen instantly and then the event loop will become unblocked. If the function instead counted to a trillion before changing the background color, then the user would percieve the program as slower (and rightly so).
 
-The takeaway here is that you should try to do small and effiecient work in your functions. As you author code over time, you will develop an intuitive understanding of what that really means. Just put this idea in your back pocket. Again, the faster the stack and event queue are cleared, the greater the chance you will hit your target frame rate. 60fps? Yes please.
+The takeaway here is that you should try to do small and efficient work in your functions. As you author code over time, you will develop an intuitive understanding of what that really means. Just put this idea in the back of your mind. Remember, the faster the stack and event queue are cleared, the greater the chance you will hit your target frame rate. 60fps? Yes please.
 
-Let's now look at one possible async example. We will make it similar to the sync example for comparison. In fact we will make the program identical, except we will swap one statement of code and add new comments.
+Let's now look at an async example. We will make it similar to the sync example for comparison. In fact, we will make the program identical except for a single statement and its comments.
 
 Async work:
 ```
+function makeBackgroundBlack() {
+  document.body.style.backgroundColor = '#000000';
+}
+
 // 1. We tell the engine to do work using the code sequence `(makeBackgroundBlack, 1000);`
 // 2. 'setTimeout' is a built-in named function that the 'runtime APIs' provide, thank you runtime
-// 3. The 'setTimeout' function expects two arguments (values)
+// 3. The 'setTimeout' function expects two argument values
 
 setTimeout(makeBackgroundBlack, 1000);
 ```
 
-This async program is identical to the sync program except for one statement of code. If we look up how `setTimeout` uses the arguments to do work, we can learn to use it in the future without looking it up. I want to stress again, that professional coders, just like beginners, use references to learn and remind themselves what certain functions do. Even the best can't remember everything.
+This async program is identical to the sync program except for one statement of code. If we look up how the `setTimeout` function uses its arguments to do work, we can learn to reuse it in the future without looking it up. I want to stress again, that professional coders, just like beginners, use references to learn and remind themselves what certain functions do. Even the best cannot remember everything.
 
-In this case, I will just tell you what arguments `setTimeout` expects:
+I will just tell you what arguments `setTimeout` expects:
 1. a function
 2. a time in milliseconds
 
 The work `setTimout` actually does, in English, is:
 1. create a timer
-2. run the timer for the time in milliseconds provided (1000)
+2. run the timer for the time in milliseconds provided
 3. wait for the timer to complete
-4. upon completion, run the function provided (makeBackgroundBlack)
+4. upon completion, run the function provided
 
-What is cool about some functions, `setTimeout` is one of them, is that they are flexible in what work they do. As you may have guessed, as long as we give `setTimeout` valid arguments, it will always do the work we want (via the function we give it) after a delay (via the amount of time we give it). Pretty cool.
+What is cool about many functions, `setTimeout` included, is that they are flexible in what work they do. As you may have guessed, as long as we give `setTimeout` valid arguments, it will always do the work we want (via the function we give it) after a delay (via the amount of time we give it). Pretty cool.
 
 ...
