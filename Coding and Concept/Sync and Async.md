@@ -29,7 +29,7 @@ Let's look at code examples of both work types to see this in action. We haven't
 Sync work:
 ```
 function makeBackgroundBlack() {
-  document.body.style.background = '#000000';
+  document.body.style.backgroundColor = '#000000';
 }
 
 makeBackgroundBlack();
@@ -45,7 +45,7 @@ There are likely some details you don't understand, but that is to be expected. 
 function makeBackgroundBlack() {
 
   // Remember the Coding Color section ;)
-  document.body.style.background = '#000000';
+  document.body.style.backgroundColor = '#000000';
 }
 
 // 1. We tell the engine to do work using the code sequence `();`
@@ -56,7 +56,7 @@ makeBackgroundBlack();
 
 Without comments, there are naturally a lot less lines for us humans to read. As far as the engine is concerned however, these are the same program. As you gain more experience you will understand when and when not to use comments.
 
-Admittedly, the code above does not do a whole lot, but each example is an entire program. The work inside of the `makeBackgroundBlack` function will happen really fast too. The event loop will be blocked, but from a user perspective, the work will happen instantly and become unblocked. If the function instead counted to a trillion before changing the button color, then the user would percieve the program as slower.
+Admittedly, the code above does not do a whole lot. The work inside of the `makeBackgroundBlack` function will happen really fast too. The event loop will be blocked, but from a user perspective, the work will happen instantly and become unblocked. If the function instead counted to a trillion before changing the background color, then the user would percieve the program as slower.
 
 The takeaway here is that you should try to do small and effiecient work in your functions. As you author code over time, you will develop an intuitive understanding of what that really means. Just put this idea in your back pocket. Again, the faster the stack and event queue are cleared, the greater the chance you will hit your target frame rate. 60fps? Yes please.
 
