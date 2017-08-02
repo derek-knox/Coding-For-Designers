@@ -11,3 +11,5 @@ In the last section we saw one API, the built-in `setTimeout`, in action. We wro
 In the Constructs and Components section we covered built-in, 3rd party, and custom components. They each provide various APIs. As previously mentioned, we can create useful code for others to use too. Another author using our code APIs doesn't have to care about how the work actually get done. They get the same trade-off, a simpler way to do work.
 
 As you gain coding and programming experience, you'll memorize certain built-in and 3rd party APIs. This translates to improving your authoring speed. Don't worry about being slow when you start out, you'll get better in time.
+
+This might sound weird at first, but some APIs exist, and do work, on different computer than the one your program runs on. Whoa. Have you ever wondered how a particular app or game can provide new content without actually updating the app? Welcome to the *client and server*.
