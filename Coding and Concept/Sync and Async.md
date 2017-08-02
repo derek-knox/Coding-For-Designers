@@ -31,13 +31,15 @@ Sync work:
 // 1. We declare a function statement (stack work) for the engine to read
 // 2. We name the function whatever we want, 'makeButtonBlack' in this case
 // 3. The engine doesn't do the work yet (code statement between the '{' and '}')
+
 function makeButtonBlack() {
   button.color = '#000000';
 }
 
 // 1. We tell the engine that we want work to be done by using the code sequence of `();` characters
 // 2. This code sequence tells the engine that there is work we want it to do
-// 3. Since we named the function, the engine knows the exact work to put on its stack 
+// 3. Since we named the function, the engine knows the exact work to put on its stack
+
 makeButtonBlack();
 ```
 
