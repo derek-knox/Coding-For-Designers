@@ -2,7 +2,7 @@
 
 Though we didn't explicitly state it, the nature of how the event loop works gives rise to the notion of *sync* and *async* work. Synchronous and asynchronous are the full terms, but we like shortcut words.
 
-Sync work is referred to as *blocking* where async work is *non-blocking*. Using your new knowledge of the event loop, how would you categorize the engine's stack work? How would you categorize the runtime APIs work? I'll give you a clue, they're different. Take a moment before continuing.
+Sync work is referred to as *blocking* where async work is *non-blocking*. Using your new knowledge of the event loop, how would you categorize the engine's stack work? How about the runtime APIs work? I'll give you a clue, they're different. Take a moment before continuing.
 
 Answer time:
 <table>
