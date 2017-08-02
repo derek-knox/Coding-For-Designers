@@ -36,9 +36,8 @@ function makeButtonBlack() {
   button.color = '#000000';
 }
 
-// 1. We tell the engine that we want work to be done by using the code sequence of `();` characters
-// 2. This code sequence tells the engine that there is work we want it to do
-// 3. Since we named the function, the engine knows the exact work to put on its stack
+// 1. We tell the engine to do work using the code sequence `();`
+// 2. Since we named the function, the engine knows the exact work to put on its stack
 
 makeButtonBlack();
 ```
