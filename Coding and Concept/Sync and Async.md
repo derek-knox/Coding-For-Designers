@@ -44,9 +44,31 @@ makeButtonBlack();
 
 Admittedly, the code above does not do a whole lot, but it is an entire program. The work inside of the `makeButtonWork` function will happen really fast too. The event loop will be blocked, but from a user perspective, the work will happen instantly and become unblocked. If the function instead counted to a trillion before changing the button color, then the user would percieve the program as slower.
 
-The takeaway here is that you should try to do small and effiecient work in your functions. As you code, you will develop an intuitive understanding of what that really means, but just be aware. Again, the faster the stack and event queue are cleared, the greater the chance you will hit your target frame rate. 60fps? Yes please.
+The takeaway here is that you should try to do small and effiecient work in your functions. As you author code over time, you will develop an intuitive understanding of what that really means. Just put this idea in your back pocket. Again, the faster the stack and event queue are cleared, the greater the chance you will hit your target frame rate. 60fps? Yes please.
+
+Let's now look at one possible async example. We will make it similar to the sync example for comparison. In fact we will make the program identical, except we will swap one statement of code and add new comments.
 
 Async work:
 ```
+// 1. We tell the engine to do work using the code sequence `(makeButtonBlack, 1000);`
+// 2. 'setTimeout' is a built-in named function that the 'runtime APIs' provide, cool
+// 3. The 'setTimeout' function expects two arguments (values)
 
+setTimeout(makeButtonBlack, 1000);
 ```
+
+This async program is identical to the sync program except for one statement of code. If we look up how `setTimeout` uses the arguments to do work, we can learn to use it in the future without looking it up. I want to stress again, that professional coders, just like beginners, use references to learn and remind themselves what certain functions do. Even the best can't remember everything.
+
+In this case, I will just tell you what arguments `setTimeout` expects:
+1. a function
+2. a time in milliseconds
+
+The work `setTimout` actually does, in English, is:
+1. create a timer
+2. run the timer for the time in milliseconds provided (1000)
+3. wait for the timer to complete
+4. upon completion, run the function provided (makeButtonBlack)
+
+What is cool about some functions, `setTimeout` is one of them, is that they are flexible in what work they do. As you may have guessed, as long as we give `setTimeout` valid arguments, it will always do the work we want (via the function we give it) after a delay (via the amount of time we give it). Pretty cool.
+
+...
