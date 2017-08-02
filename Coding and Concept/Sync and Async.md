@@ -23,3 +23,25 @@ Remember the 3D representation? The event loop cannot cycle when work is on the 
 ![alt text](../assets/visual-todo-placeholder.jpg "The Event Loop Machine")
 
 *^ The Event Loop Machine ^*
+
+Let's look at an example of both work types to get a deeper understanding. We haven't specifically covered JavaScript code yet, but I am confident you'll get the gist. Take note that the words following the `//` are plain English, not code. These plain English comments are useful for us humans when we read and share our code for others to read, that is what they are there for. The engine ignores them completely.
+
+Sync work:
+```
+// 1. We declare a function statement (stack work) for the engine to read
+// 2. We name the function whatever we want, 'makeButtonBlack' in this case
+// 3. The engine doesn't do the work yet (code statement between the '{' and '}')
+function makeButtonBlack() {
+  button.color = '#000000';
+}
+
+// 1. We tell the engine that we want work to be done by using the code sequence of `();` characters
+// 2. This code sequence tells the engine that there is work we want it to do
+// 3. Since we named the function, the engine knows the exact work to put on its stack 
+makeButtonBlack();
+```
+
+Async work:
+```
+
+```
