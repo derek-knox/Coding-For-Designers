@@ -33,6 +33,8 @@ Sync work:
 // 3. The engine doesn't do the work yet (code statement between the '{' and '}')
 
 function makeButtonBlack() {
+
+  // Remember the Coding Color section ;)
   button.color = '#000000';
 }
 
