@@ -77,9 +77,9 @@ setTimeout(makeBackgroundBlack, 1000);
 
 Before reading on, try to guess what `setTimeout` does. How do you think it uses the argument values?
 
-This async program is identical to the sync program except for one statement of code. If we look up how the `setTimeout` function uses its arguments to do work, we can learn to reuse it in the future without looking it up. I want to stress again, that professional coders, just like beginners, use references to learn and remind themselves what certain functions do. Even the best cannot remember everything.
+This async program is identical to the sync program except for one statement of code. If we look up how the `setTimeout` function uses its arguments to do work, we can learn what work it does. I want to stress again, that professional coders, just like beginners, use references to lookup, learn, and remind themselves what certain functions do. Even the best cannot remember everything.
 
-I will just tell you what arguments `setTimeout` expects:
+I will just tell you what arguments, in order, `setTimeout` expects:
 1. a function
 2. a time in milliseconds
 
