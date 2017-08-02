@@ -54,7 +54,7 @@ function makeBackgroundBlack() {
 makeBackgroundBlack();
 ```
 
-Without comments, there are naturally a lot less lines, for us humans, to read. As far as the engine is concerned, these are the same program. As you gain more experience you will understand when and when not to use comments.
+Without comments, there are naturally a lot less lines for us humans to read. As far as the engine is concerned however, these are the same program. As you gain more experience you will understand when and when not to use comments.
 
 Admittedly, the code above does not do a whole lot, but each example is an entire program. The work inside of the `makeBackgroundBlack` function will happen really fast too. The event loop will be blocked, but from a user perspective, the work will happen instantly and become unblocked. If the function instead counted to a trillion before changing the button color, then the user would percieve the program as slower.
 
