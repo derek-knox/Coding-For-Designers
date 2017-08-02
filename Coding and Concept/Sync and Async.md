@@ -24,9 +24,19 @@ The 3D visualization from the Event Loop section should be popping into your hea
 
 *^ The Event Loop Machine ^*
 
-Let's look at code examples of both work types to see this in action. We haven't specifically covered JavaScript code yet, but I am confident you'll get the gist. Take note that the words following the `//` are plain English, not code. These plain English *comments* are useful for us humans when we read and share our code for others to read. Comments are for humans not computers. The engine ignores them.
+Let's look at code examples of both work types to see this in action. We haven't specifically covered JavaScript code yet, but I am confident you'll get the gist.
 
 Sync work:
+```
+function makeBackgroundBlack() {
+  document.body.style.background = '#000000';
+}
+
+makeBackgroundBlack();
+```
+
+There are likely some details you don't understand, but that is to be expected. Let's look at the same code with some added explanations. Take note that the words following the `//` are plain English, not code. These plain English *comments* are useful for us humans when we read and share our code for others to read. Comments are for humans not computers. The engine ignores them.
+
 ```
 // 1. We declare a function statement (stack work) for the engine to read
 // 2. We name the function whatever we want, 'makeBackgroundBlack' in this case
@@ -44,19 +54,9 @@ function makeBackgroundBlack() {
 makeBackgroundBlack();
 ```
 
-Without comments, there are naturally a lot less lines to read:
+Without comments, there are naturally a lot less lines, for us humans, to read. As far as the engine is concerned, these are the same program. As you gain more experience you will understand when and when not to use comments.
 
-```
-function makeBackgroundBlack() {
-  document.body.style.background = '#000000';
-}
-
-makeBackgroundBlack();
-```
-
-As far as the engine is concerned, these are the same program. As you gain more experience you will understand when and when not to use comments.
-
-Admittedly, the code above does not do a whole lot, but it is an entire program. The work inside of the `makeBackgroundBlack` function will happen really fast too. The event loop will be blocked, but from a user perspective, the work will happen instantly and become unblocked. If the function instead counted to a trillion before changing the button color, then the user would percieve the program as slower.
+Admittedly, the code above does not do a whole lot, but each example is an entire program. The work inside of the `makeBackgroundBlack` function will happen really fast too. The event loop will be blocked, but from a user perspective, the work will happen instantly and become unblocked. If the function instead counted to a trillion before changing the button color, then the user would percieve the program as slower.
 
 The takeaway here is that you should try to do small and effiecient work in your functions. As you author code over time, you will develop an intuitive understanding of what that really means. Just put this idea in your back pocket. Again, the faster the stack and event queue are cleared, the greater the chance you will hit your target frame rate. 60fps? Yes please.
 
