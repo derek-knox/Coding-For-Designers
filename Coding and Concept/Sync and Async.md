@@ -24,7 +24,7 @@ Remember the 3D representation? The event loop cannot cycle when work is on the 
 
 *^ The Event Loop Machine ^*
 
-Let's look at code examples of both work types. We haven't specifically covered JavaScript code yet, but I am confident you'll get the gist. Take note that the words following the `//` are plain English, not code. These plain English *comments* are useful for us humans when we read and share our code for others to read. Comments are for humans not computers. The engine ignores them.
+Let's look at code examples of both work types to see this in action. We haven't specifically covered JavaScript code yet, but I am confident you'll get the gist. Take note that the words following the `//` are plain English, not code. These plain English *comments* are useful for us humans when we read and share our code for others to read. Comments are for humans not computers. The engine ignores them.
 
 Sync work:
 ```
