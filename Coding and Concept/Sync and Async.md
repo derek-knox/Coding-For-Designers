@@ -48,7 +48,7 @@ function makeBackgroundBlack function is declared here() {
   document.body.style.backgroundColor = '#000000';
 }
 
-// 1. We tell the engine to do work using the code sequence `();`
+// 1. We tell the engine to do work, the code sequence `();` is the trigger
 // 2. Since we named the function, the engine knows the exact work to put on its stack
 
 makeBackgroundBlack();
