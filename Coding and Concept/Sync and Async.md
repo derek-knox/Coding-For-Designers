@@ -87,7 +87,7 @@ The work `setTimout` actually does, in English, is:
 1. create a timer
 2. run the timer for the time in milliseconds provided
 3. wait for the timer to complete
-4. upon completion, run the function provided
+4. upon completion, update the event queue with the function provided
 
 What is cool about many functions, `setTimeout` included, is that they are flexible in what work they do. As you may have guessed, as long as we give `setTimeout` valid arguments, it will always do the work we want (via the function we give it) after a delay (via the amount of time we give it). Pretty cool.
 
