@@ -18,7 +18,7 @@ Answer time:
   </tr>
 </table>
 
-Remember the 3D representation? The event loop cannot cycle when work is on the stack. The loop is blocked. Work in the queue does not prevent the event loop from cycling. The loop is not blocked.
+Remember the 3D representation we recently covered? The event loop cannot cycle when work is on the stack. The loop is blocked. Work in the queue does not prevent the event loop from cycling. The loop is not blocked.
 
 ![alt text](../assets/visual-todo-placeholder.jpg "The Event Loop Machine")
 
