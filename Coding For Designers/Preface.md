@@ -4,7 +4,7 @@ Virtually all existing resources aimed at teaching people *about* or *how-to* co
 
 This book is intended most for designers. If you author content as a graphic, visual, user interface, user experience, motion, or game designer, then this is for you. Other non-coders wanting to learn about or how-to code will greatly benefit too, but self-identifying designers are the focus.
 
-If you want to jump straight into code, then this book likely is not for you. We cover many areas before getting deep into actual programming code, though some snippets arise along the journey. Again, the goal of this book is to instill a mental model that helps designers learn coding concepts faster, more deeply, and more intuitively.
+If you want to jump straight into code, then this book is not for you. We cover many areas before getting deep into actual programming code, though some snippets arise along the journey. Again, the goal of this book is to instill a mental model that helps designers learn coding concepts faster, more deeply, and more intuitively.
 
 The plan of attack is simple. In section one, *Breaking Barriers*, we will explore and demystify a series of concepts that fundamentally intimidate most designers and non-coders about how computers and code work. From the seemingly magical ones and zeros to the code you will soon write, we will see simple, basic, repetitive, and reusable concepts at play.
 
