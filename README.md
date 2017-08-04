@@ -4,7 +4,7 @@
 
 Coding for Designers is a work-in-process book that demystifies coding relative to concepts designers are already familiar with. This book adds the framing that is lacking in virtually all learn-to-code resources. The goal of this book is to instill a mental model that helps designers better grasp coding concepts faster with deeper and more intuitive understanding. Empower yourself to better learn, grasp, and talk code today.
 
-[CodingForDesignersBook.com](http://codingfordesignersbook.com/) by By Derek Knox [derekknox.com](http://www.derekknox.com)
+[CodingForDesignersBook.com](http://codingfordesignersbook.com/) by [derekknox.com](http://www.derekknox.com)
 
 ![Coding for Designers](Coding%20For%20Designers/cover-coding-for-designers.jpg "Coding for Designers")
 
