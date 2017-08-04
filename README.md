@@ -2,7 +2,7 @@
 
 *A Prerequisite for Learning and Talking Code*
 
-Coding for Designers is a work-in-process book that demystifies coding relative to concepts designers are already familiar with. This book adds the framing that is lacking in virtually all learn-to-code resources. The goal of this book is to instill a mental model that helps designers better grasp coding concepts faster with deeper and more intuitive understanding. Empower yourself to better learn, grasp, and talk code today.
+Coding for Designers is a work-in-progress book that demystifies coding relative to concepts that designers are already familiar with. This book adds the framing that is lacking in virtually all learn-to-code resources. The goal of this book is to instill a mental model that helps designers learn coding concepts faster, more deeply, and more intuitively. Empower yourself to better learn and talk code today.
 
 [CodingForDesignersBook.com](http://codingfordesignersbook.com/) by [derekknox.com](http://www.derekknox.com)
 
