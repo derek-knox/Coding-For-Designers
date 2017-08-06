@@ -14,4 +14,4 @@ You already know that a web browser may be used to access a particular website o
 
 An internet-connected game works exactly the same way. When it starts up (or a button is hit), it could make an API request to get current world-wide player rankings for the game. Additionally, if the designers and code authors designed the game in such a way, they could make a different API request for new worlds, levels, characters, etc. No update required. Pretty damn cool.
 
-Since games are typically more diverse in their structure, style, and behavior, we'll focus on 2D web with HTML, CSS, and JavaScript moving forward. In fact, let's look at the anatomy of each as we begin to venture deeper into coding.
+A server, if you didn't guess already, is also responsible for providing a client web browser the *initial* HTML, CSS, and JavaScript for a website or web app. Now is a great time to venture deeper into coding and we'll do so by exploring the anatomy of each file type.
