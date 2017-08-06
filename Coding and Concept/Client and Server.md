@@ -12,6 +12,6 @@ Let's look at two example programs that utilize the internet to help solidify yo
 
 You already know that a web browser may be used to access a particular website or web app. While the site or web app is running, its code can make *additional requests* so the server provides more info. For example, when a sport statistics app is starting up (or a button is hit), it could use an API to get the most up-to-date scores and stats. An updated version of the app is not required. Instead, an API interaction provides updated information.
 
-An internet-connected game works exactly the same way. When it starts up (or a button is hit), it could make an API request to get current world-wide rankings for the game. Additionally, if the designers and code authors designed the game in such a way, they could make a different API request for new worlds, levels, characters, etc. No update is required to get updated content. Pretty cool.
+An internet-connected game works exactly the same way. When it starts up (or a button is hit), it could make an API request to get current world-wide rankings for the game. Additionally, if the designers and code authors designed the game in such a way, they could make a different API request for new worlds, levels, characters, etc. No update is required. Pretty damn cool.
 
 Later when you use JavaScript you will take advatage of this.
