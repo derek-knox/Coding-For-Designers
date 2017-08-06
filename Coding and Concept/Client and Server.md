@@ -1,10 +1,10 @@
 # Client and Server
 
-Clients and servers communicate and work together over a network. The internet is one such network that facilitates this communication between different computers. Some of these computers are clients and some are servers. Sometimes a computer is both a client and a server. The distinction is simple. A client asks for something and the server provides it. The network between them is the communication channel.
+Clients and servers are computers that communicate and work together over a network. The internet is one such network that facilitates this communication. Some of these computers are clients and some are servers. Sometimes a computer is both a client and a server. The distinction is simple. A client asks for something and the server provides it. The network between them is the communication channel.
 
 The details of how the internet facilitates this communication is elegant and impressive, but it is not a focus of this book. That said, I highly recommend Introduction to Networking by Charles Severance if you want to dig deeper. Reading it is not required to move forward. Just know that the internet enables a client computer and a server computer to talk.
 
-Let's look at two example programs that utilize the internet: a web browser and a mobile internet-connected game. Each example runs on a smartphone. The browser and the game are on the client, the smartphone. Each leverage an API to request information from a remote computer, the server. Pretty simple concept really.
+Let's look at two example programs that utilize the internet to help solidify your understanding. One program will be a web browser and the other an internet-connected mobile game. Let's just say that each example runs on a smartphone. Both the browser and the game are on the client, the smartphone. Each leverage distinct APIs to request information from distinct and remote computers, the servers. Pretty simple concept really.
 
 ![alt text](../assets/visual-todo-placeholder.jpg "Client and Server")
 
