@@ -2,7 +2,7 @@
 
 It wasn't important until now to tell you what the aforementioned *API* of runtime APIs stands for. Now is the time. Welcome to *Application Programming Interface*. Yea, that is lengthy. Coders instead just say API (each letter pronounced individually).
 
-An API is just an interface. The doorknob of a door is an interface. The steering wheel of a driverless car is an interface. The keys of a virtual keyboard are too. Interfaces provide a way to interact. The doorknob and steering wheel are physical interfaces designed for humans. A virtual keyboard is a digital interface designed for humans. An API is a programming interface designed for code. An API allows code to talk to each other, this is the takeaway.
+An API is just an interface. The doorknob of a door is an interface. The steering wheel of a vehicle is an interface. The keys of a virtual keyboard are too. Interfaces provide a way to interact. The doorknob and steering wheel are physical interfaces designed for humans. A virtual keyboard is a digital interface designed for humans. An API is a programming interface designed for code. An API allows code to talk to each other, this is the takeaway.
 
 APIs rock! You get ease-of-use while the underlying complexity is the designer's, the code author's, responsibility. Think about it. As a driver of a car, you do not need to know all the details of how the engine works to use it. The designers take responsibility. Similarly with code, you just use the API provided to gain benefit. This is a pretty solid trade.
 
