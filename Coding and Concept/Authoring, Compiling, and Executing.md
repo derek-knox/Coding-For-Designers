@@ -5,7 +5,7 @@ As mentioned previously there are three distinct timeframes when code exists. In
 2. compile time
 3. execution time
 
-These distinct timeframes are useful in understanding how the static code in a text file gets transformed to enable a dynamic and interactive creation to exist in realtime. We will also touch on why this transformation even needs to occur.
+These distinct timeframes are useful for understanding how the static code we write in a text file transforms to enable a dynamic, interactive, and real-time creation to exist. We will also touch on why this transformation even needs to occur.
 
 *Authoring time* is pretty self-explanatory right? It is the time when we are authoring code. That's it. We have a text editor program of some kind open, and we are typing or pasting into it. Simple as that. Some programs even exist, like Unity for example, that enable a more visual programming approach. This simply means that the program has some amount of UI interaction that enables you as the author to *generate* code in a non-text based way. Admittedly, this is often more fun than text-based programming... but there is a catch.
 
