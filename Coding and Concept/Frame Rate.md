@@ -1,6 +1,6 @@
 # Frame Rate
 
-We know computers are dumb and fast. Some computers are faster than others however. How do we ensure the code we author will execute well on slow computers? To do so, we need to author our code with a target *frame rate* in mind.
+We know computers are dumb and fast. Some computers are faster than others however. How do we ensure the code we author will execute well on computers of all speeds? To do so, we need to author our code with a target *frame rate* in mind.
 
 A frame rate is simply the amount of frames that are shown in a second. A frame is a single rendered image. Frames shown back to back over time create the illusion of motion. Common target frame rates are:
 - 30fps (movies)
