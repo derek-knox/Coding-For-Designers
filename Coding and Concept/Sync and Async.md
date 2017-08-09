@@ -54,7 +54,7 @@ function makeBackgroundBlack function is declared here() {
 makeBackgroundBlack();
 ```
 
-Without comments, there are naturally a lot less lines for us humans to read. As far as the engine is concerned however, these are the same program. As you gain more experience you will understand when and when not to use comments.
+Without comments, there are naturally a lot less lines for us humans to read. As far as the engine is concerned however, these are the same program. As you gain more experience you will understand when and when not to use comments. When in doubt, use them.
 
 Admittedly, the code above does not do a whole lot. The work inside of the `makeBackgroundBlack` function will happen really fast too. The event loop will be blocked, but from a user perspective, the work will happen instantly and then the event loop will become unblocked. If the function instead counted to a trillion before changing the background color, then the user would percieve the program as slower (and rightly so).
 
@@ -69,7 +69,7 @@ function makeBackgroundBlack() {
 }
 
 // 1. We tell the engine to do work using the code sequence `(makeBackgroundBlack, 1000);`
-// 2. 'setTimeout' is a built-in named function that the 'runtime APIs' provide, thank you runtime
+// 2. 'setTimeout' is a named built-in function that the 'runtime APIs' provide, thank you runtime
 // 3. The 'setTimeout' function expects two argument values
 
 setTimeout(makeBackgroundBlack, 1000);
@@ -89,7 +89,7 @@ The work `setTimout` actually does, in English, is:
 3. wait for the timer to complete
 4. upon completion, update the event queue with the function provided
 
-What is cool about many functions, `setTimeout` included, is that they're designed with a small amount of flexibility built-in. As you may have guessed, as long as we give `setTimeout` valid arguments, it will always do the work we want (via the function provided) after a delay (via the time provided). Pretty cool. As you may have guessed, you can design your own functions with flexibility as well.
+What is cool about many functions, `setTimeout` included, is that they can be designed with a small amount of flexibility built-in. As you may have guessed, as long as we give `setTimeout` valid arguments, it will always do the work we want (via the function provided) after a delay (via the time provided). Pretty damn cool. As you may have guessed, you can design your own functions with flexibility as well.
 
 As a quick example, let's design a new function named `changeBackgroundColor`.
 ```
@@ -117,6 +117,6 @@ changeBackgroundColor('Blue');
 
 You get the idea.
 
-We explored some JavaScript a little bit in this section, but the main takeaway if the difference between sync and async. If you understand how to keep your stack work small and fast, you'll be running 60fps with no problem.
+We explored some JavaScript a little bit in this section, but the main takeaway is the difference between sync and async. If you understand how to keep your stack work small and fast, you'll be running 60fps with no problem.
 
-As you learn more about runtime APIs you will discover that the runtime will do a lot of really cool non-blocking work for you. If you haven't already noticed, the runtime APIs provide a simple *interface* for you as a code author to work with. Let's dig deeper.
+As you learn more about runtime APIs you will discover that the runtime will do a lot of really cool non-blocking work for you. If you haven't already noticed, the runtime APIs provide a simple *interface* for you as a code author to work with. Let's dig deeper into what that means.
