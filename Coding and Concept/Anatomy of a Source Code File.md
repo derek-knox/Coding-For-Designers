@@ -18,10 +18,10 @@ In keeping with the structure, style, and behavior order, let's look at the anat
 ```
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Example Coding for Designers Page</title>
-    </head>
-    <body></body>
+  <head>
+    <meta charset="utf-8">
+    <title>Example Coding for Designers Page</title>
+  </head>
+  <body></body>
 </html>
 ```
