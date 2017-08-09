@@ -4,7 +4,7 @@ An interactive application or game is simply the manifestation of a target 60+ r
 
 A non-interactive animation hitting 60fps undoubtedly looks smooth, but it is just that, *non-interactive*. How do we account for this desired interactivity?
 
-Thankfully, the program responsible for *executing* our compiled code helps us out. This program is called the *engine*. Additionally, the engine gets help from its parent program, the *runtime*. Together, the runtime and engine provide an interactive system that executes code in realtime. If we were to code the relationship in an HTML-like code, it would look like this:
+Thankfully, the program responsible for *executing* our compiled code helps us out. This program is called the *engine*. Additionally, the engine gets help from its parent program, the *runtime*. Together, the runtime and engine provide an interactive system that executes code in real-time. If we were to code the relationship in an HTML-like code, it would look like this:
 
 ```
 <runtime>
@@ -12,7 +12,7 @@ Thankfully, the program responsible for *executing* our compiled code helps us o
 </runtime>
 ```
 
-For us to take advantage of the runtime and engine, we just need to get an idea of how they work together. This allows us to author code that reacts interactively as the engine executes it in realtime.
+For us to take advantage of the runtime and engine, we just need to get an idea of how they work together. This allows us to author code that reacts interactively as the engine executes it in real-time.
 
 The JavaScript runtime in a web browser has four core parts and the engine has two:
 1. engine
