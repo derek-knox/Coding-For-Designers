@@ -6,7 +6,7 @@ We know code is a system for converting meaning between forms and HTML, CSS, and
 
 We will now start to dig into HTML, CSS, and JavaScript since we have a greater understanding of how the various concepts we have covered fit, work, and play-off each other. Your mental model should be primed.
 
-Let's squash a myth real quick. Designers and other non-coders new to coding think they need to learn an entire new language, and in the context of the web, *three* new languages. This is not true. What needs to be learned is simply:
+Let's squash a myth real quick. Designers and other non-coders new to coding think they need to learn an entire new language, and in the context of the web, *three* new languages. This is not true. What needs to be learned is:
 1. structure, style, and behavior concepts
 2. anatomical implementation of each concept
 3. 80/20 subset of code words for each implementation
