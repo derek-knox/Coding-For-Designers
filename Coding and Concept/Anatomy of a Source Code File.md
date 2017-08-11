@@ -69,10 +69,12 @@ There are many types of tags that can be added in both the `<head>` and the `<bo
 </body>
 ```
 
-The `<div>`, `<h1>`, `<p>`, `<button>`, and `<h2>` tags are simple to grasp, but the `<a>` and `<img>` tags are less so. This is because they are both lacking *attributes*. We'll use the shortcut *attrs* moving forward. All elements can leverage attrs, but these latter two are required for them to function as designed. Think of attrs as APIs. Attrs enable the coder to achieve functionality based on a shared understanding of designed usage.
+The `<div>`, `<h1>`, `<p>`, `<button>`, and `<h2>` tags are simple to grasp, but the `<a>` and `<img>` tags are less so. This is because they are both lacking *attributes*. We'll use the shortcut *attrs* moving forward. All elements can leverage attrs, but these latter two are required for the elements to function as designed.
 
-Attrs are where we start to transition toward CSS with the `class` attr. First we will update the `<a>` and `<img>` tags with each of their most useful attrs to attain desired functionality.
+Think of attrs as APIs. Attrs enable the coder to achieve functionality based on a shared understanding of designed usage. They are also where we start to transition toward CSS with the `class` attr. First we will update the `<a>` and `<img>` tags with each of their most useful attrs to attain the desired functionality.
 
-So `<a>hyperlink</a>` becomes `<a href='http://www.codingfordesignersbook.com'>hyperlink</a>` where the `href` attr is set with `=` to the value of `http://www.codingfordesignersbook.com`. The browser knows that the anchor tag, when hit, should change the web page to the value provided. This same functionality can be achieved using JavaScript only, but we'd have to write much more code. The browser provides useful APIs via attrs applied to elements.
+So `<a>hyperlink</a>` becomes `<a href='http://www.codingfordesignersbook.com'>hyperlink</a>` where the `href` attr is set with `=` to the value `http://www.codingfordesignersbook.com`. The browser knows that the anchor tag, when hit, should change the web page to the value provided. This same functionality can be achieved using JavaScript only, but we'd have to write more code. Remember, APIs provide a tradeoff and a simpler way to do work.
 
-Additionally, `<img></img>` becomes `<img src='http://codingfordesignersbook.com/assets/img/cover-coding-for-designers.jpg'></img>`.
+Additionally, `<img></img>` becomes `<img src='http://codingfordesignersbook.com/assets/img/cover-coding-for-designers.jpg'></img>` where the `src` attr is set with `=` to the value `http://codingfordesignersbook.com/assets/img/cover-coding-for-designers.jpg`. The browser knows that the image tag, when read by the browser, should automatically download the image at the provided `src` or source path value. Upon completion of the download, the tag embodies the downloaded image. This same functionality can be achieved using JavaScript only, but we'd have to write more code. Again, a simpler way to do work.
+
+The takeaway is that the browser provides useful APIs via attrs applied to elements. The attr that enables styling to occur is the `class` attr.
