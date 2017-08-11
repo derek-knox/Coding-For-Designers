@@ -43,10 +43,12 @@ This is the most structurally simple and valid HTML a browser uses. Let's walk t
     
     <!-- Define the page title -->
     <title>Example Coding for Designers Page</title>
+    
   </head>
   
   <!-- Define the page content, what gets rendered for users to see and interact with -->
   <body></body>
+  
 </html>
 ```
 
