@@ -9,7 +9,7 @@ We will now start to dig into HTML, CSS, and JavaScript since we have a greater 
 Let's squash a myth real quick. Designers and other non-coders new to coding think they need to learn an entire new language, and in the context of the web, *three* new languages. This is not true. What needs to be learned is:
 1. structure, style, and behavior concepts
 2. anatomical implementation of each concept
-3. 80/20 subset of code words for each implementation
+3. common subset of code words for each implementation
 
 For 2D and the web, that means we need to know the difference between HTML structure, CSS styling, and JavaScript behavior. Number one is covered. Let's dig into number two and three.
 
@@ -52,3 +52,27 @@ This is the most structurally simple and valid HTML a browser uses. Let's walk t
 </html>
 ```
 
+There are many types of tags that can be added in both the `<head>` and the `<body>`. As mentioned earlier, we will not go over them here as you can use other resources to dig deeper. We will reveal the most common ones however:
+
+<table>
+  <tr>
+    <td>`<div>`</td>
+    <td>division</td>
+  </tr>
+  <tr>
+    <td>`<h1-6>`</td>
+    <td>headings</td>
+  </tr>
+  <tr>
+    <td>`<p>`</td>
+    <td>paragraph</td>
+  </tr>
+  <tr>
+    <td>`<img>`</td>
+    <td>image</td>
+  </tr>
+  <tr>
+    <td>`<a>`</td>
+    <td>anchor link</td>
+  </tr>
+</table>
