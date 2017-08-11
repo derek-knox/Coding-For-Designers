@@ -20,7 +20,7 @@ In keeping with the structure, style, and behavior order, let's look at the anat
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Example Coding for Designers Page</title>
+    <title>Coding for Designers Page</title>
   </head>
   <body></body>
 </html>
@@ -42,7 +42,7 @@ This is the most structurally simple and valid HTML a browser uses. Let's walk t
     <meta charset="utf-8">
     
     <!-- Define the page title, useful for browser tab and search engines among other programs -->
-    <title>Example Coding for Designers Page</title>
+    <title>Coding for Designers Page</title>
     
   </head>
   
@@ -77,4 +77,4 @@ So `<a>hyperlink</a>` becomes `<a href='http://www.codingfordesignersbook.com'>h
 
 Additionally, `<img></img>` becomes `<img src='http://codingfordesignersbook.com/assets/img/cover-coding-for-designers.jpg'></img>` where the `src` attr is set with `=` to the value `http://codingfordesignersbook.com/assets/img/cover-coding-for-designers.jpg`. The browser knows that the image tag, when read by the browser, should automatically download the image at the provided `src` or source path value. Upon completion of the download, the tag embodies the downloaded image. This same functionality can be achieved using JavaScript only, but we'd have to write more code. Again, a simpler way to do work.
 
-The takeaway is that the browser provides useful APIs via attrs applied to elements. The attr that enables styling to occur is the `class` attr.
+The takeaway is that the browser provides useful APIs via attrs applied to elements. Now that we've covered the basic implementation of HTML structure, let's dig into style. Welcome to the `class` attr.
