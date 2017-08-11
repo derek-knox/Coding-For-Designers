@@ -52,27 +52,23 @@ This is the most structurally simple and valid HTML a browser uses. Let's walk t
 </html>
 ```
 
-There are many types of tags that can be added in both the `<head>` and the `<body>`. As mentioned earlier, we will not go over them here as you can use other resources to dig deeper. We will reveal the most common ones however:
+There are many types of tags that can be added in both the `<head>` and the `<body>`. As mentioned earlier, we will not go over them here as you, just like other coders, can use other resources to dig deeper. We will reveal the most common ones for the `<body>` however to fulfill the *common subset* bullet above. Instead of comments I will just use English inline with tags to show how the elements wrap content. The content is visible to the user where the tags that wrap it are not. Remember the tags simply tell the browser your content structure.
 
-<table>
-  <tr>
-    <td>```<div>```</td>
-    <td>division</td>
-  </tr>
-  <tr>
-    <td>`<h1-6>`</td>
-    <td>headings</td>
-  </tr>
-  <tr>
-    <td>`<p>`</td>
-    <td>paragraph</td>
-  </tr>
-  <tr>
-    <td>`<img>`</td>
-    <td>image</td>
-  </tr>
-  <tr>
-    <td>`<a>`</td>
-    <td>anchor link</td>
-  </tr>
-</table>
+```
+<body>
+  <div>
+    <h1>This is the Main Title of the Page</h1>
+    <p>This is a paragraph. It usually has more sentences. This one only has three.</p>
+    <button>Push Me</button>
+  </div>
+  <div>
+    <h2>This is a Secondary Title</h2>
+    <p>This is another paragraph. It only has two sentences, but it also has a <a>hyperlink</a>.</p>
+    <img></img>
+  </div>
+</body>
+```
+
+The `<div>`, `<h1>`, `<p>`, `<button>`, and `<h2>` tags are simple to grasp, but the `<a>` and `<img>` tags are less so. This is because they are both lacking *attributes*. This is where we start to transition toward CSS with the `class` attribute. First we will update the `<a>` and `<img>` tags with each of their most useful attributes.
+
+So `<a>hyperlink</a>` becomes `<a href='http://www.codingfordesignersbook.com'>hyperlink</a>` where the `href` attribute is set with `=` to the value of `http://www.codingfordesignersbook.com`. The browser knows that the anchor tag, when hit, should change the web page to the value provided.
