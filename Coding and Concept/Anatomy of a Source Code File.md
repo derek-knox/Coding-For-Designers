@@ -25,3 +25,28 @@ In keeping with the structure, style, and behavior order, let's look at the anat
   <body></body>
 </html>
 ```
+
+This is the most structurally simple and valid HTML a browser uses. Let's walk through each tag using *comments*. Take note that each language may have a uniqe approach to comments. We already saw an example in JavaScript earlier using the `//` character sequence. HTML uses the `<!---->` sequence where the actual comment rests in the middle of the dashes.
+
+```
+<!-- Tell the browser the document type, we only care about html -->
+<!DOCTYPE html>
+
+<!-- Tell the browser where we've defined our html, additional data could be outside it -->
+<html>
+
+  <!-- Define the page metadata, useful data for the browser and other programs -->
+  <head>
+  
+    <!-- Define the character encoding -->
+    <meta charset="utf-8">
+    
+    <!-- Define the page title -->
+    <title>Example Coding for Designers Page</title>
+  </head>
+  
+  <!-- Define the page content, what gets rendered for users to see and interact with -->
+  <body></body>
+</html>
+```
+
