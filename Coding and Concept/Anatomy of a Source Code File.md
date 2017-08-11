@@ -13,7 +13,7 @@ Let's squash a myth real quick. Designers and other non-coders new to coding thi
 
 For 2D and the web, that means we need to know the difference between HTML structure, CSS styling, and JavaScript behavior. Number one is covered. Let's dig into number two and three.
 
-In keeping with the structure, style, and behavior order, let's look at the anatomy of each file type starting with HTML that uses the `.html` file extension.
+In keeping with the structure, style, and behavior order, let's look at the anatomy of each file type starting with HTML which uses the `.html` file extension.
 
 ```
 <!DOCTYPE html>
