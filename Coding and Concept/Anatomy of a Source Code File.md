@@ -56,7 +56,7 @@ There are many types of tags that can be added in both the `<head>` and the `<bo
 
 <table>
   <tr>
-    <td>`<div>`</td>
+    <td>```<div>```</td>
     <td>division</td>
   </tr>
   <tr>
