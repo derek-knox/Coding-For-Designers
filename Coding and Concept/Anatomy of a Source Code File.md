@@ -26,7 +26,7 @@ In keeping with the structure, style, and behavior order, let's look at the anat
 </html>
 ```
 
-This is the most structurally simple and valid HTML a browser uses. Let's walk through each tag using *comments*. We already saw an example in JavaScript earlier using the `//` character sequence. HTML uses the `<!---->` sequence where the actual comment rests in the middle of the dashes. Just take note that each language may have a uniqe approach to comments, but their purpose is the same. 
+This is the most structurally simple and valid HTML a browser uses. Let's walk through each tag using *comments*. We saw earlier that JavaScript uses the `//` character sequence for comments. HTML uses the `<!---->` sequence where the actual comment rests in the middle of the dashes. Just take note that each language may have a uniqe approach to comments, but their purpose is the same. 
 
 ```
 <!-- Tell the browser the document type, we only care about html -->
