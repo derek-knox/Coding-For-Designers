@@ -38,10 +38,10 @@ This is the most structurally simple and valid HTML a browser uses. Let's walk t
   <!-- Define the page metadata, useful data for the browser and other programs -->
   <head>
   
-    <!-- Define the character encoding -->
+    <!-- Define the character encoding, ensures browser knows how to read the characters -->
     <meta charset="utf-8">
     
-    <!-- Define the page title -->
+    <!-- Define the page title, useful for browser tab and search engines among other programs -->
     <title>Example Coding for Designers Page</title>
     
   </head>
