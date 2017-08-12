@@ -69,7 +69,7 @@ There are many types of tags that can be added in both the `<head>` and the `<bo
 </body>
 ```
 
-The `<div>`, `<h1>`, `<p>`, `<button>`, and `<h2>` tags are simple to grasp, but the `<a>` and `<img>` tags are less so. This is because they are both lacking *attributes*. We'll use the shortcut *attrs* moving forward. All elements can leverage attrs, but these latter two are required for the elements to function as designed.
+The `<div>`, `<h1>`, `<p>`, `<button>`, and `<h2>` tags are simple to grasp, but the `<a>` and `<img>` tags are less so. This is because they are both lacking *attributes*. We'll use the shortcut *attrs* moving forward. All elements can leverage attrs, but these latter two elements require them to function as designed.
 
 Think of attrs as APIs. Attrs enable the coder to achieve functionality based on a shared understanding of designed usage. They are also where we start to transition toward CSS with the `class` attr. First we will update the `<a>` and `<img>` tags with each of their most useful attrs to attain the desired functionality.
 
