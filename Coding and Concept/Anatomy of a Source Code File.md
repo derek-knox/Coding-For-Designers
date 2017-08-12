@@ -58,7 +58,7 @@ There are many types of tags that can be added in both the `<head>` and the `<bo
 <body>
   <div>
     <h1>This is the Main Title of the Page</h1>
-    <p>This is a paragraph. It usually has more sentences. This one only has three.</p>
+    <p>This is a paragraph. It usually has more sentences. This paragraph has only three.</p>
     <button>Push Me</button>
   </div>
   <div>
