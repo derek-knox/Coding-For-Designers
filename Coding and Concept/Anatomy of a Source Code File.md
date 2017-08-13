@@ -116,3 +116,7 @@ Now is the time to look at the anatomy of a `.css` file which, for our purpose, 
 ```
 
 Each class definition is denoted by a preceding `.` so our `black-background` class becomes `.black-background` within our `.css` file. Then, similar to the JavaScript scope concept we visited earlier, the property-value pairs are defined between the `{` and `}` values. The `{` and `}` define the scope, the space, where one or more property-value pairs represent a particular class.
+
+Each property-value pair consists of a property name, which uses the same rules for class naming as mentioned above, followed by a `:` and the actual value within `'` and `'`. With this class and its valid property-value pairs defined, and element that has a `class` of `black-background` will get the styles applied. Pretty cool.
+
+
