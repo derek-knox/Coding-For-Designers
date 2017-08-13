@@ -150,5 +150,7 @@ With either solution, both our `<div>`s will have black backgrounds and the text
 
 We've covered the anatomy of HTML and CSS, so now it is time for JavaScript. In a way we already looked at the anatomy of JavaScript in the *Elements and Elements* section. That breakdown was a bit more granular and we'll revisit the specifics in the next chapter *Coding and JavaScript*. For now we will look at the high level anatomy of a JavaScript file. We will focus on shape, space, and form or more precisely function, scope, and object.
 
-As you already know, a function is like a shape because it encloses scope just as a shape encloses space. An enclosure helps prevent clashing of what exists in the aforementioned scope and space. 
+As you already know, a function is like a shape because it encloses scope just as a shape encloses space. An enclosure helps prevent clashing of what exists in the aforementioned scope and space. No clashing please. Objects like forms, are a higher level enclosure. They each embody one or more functions or shapes respectively. JavaScript has both specific types of objects, but a function is also an object. This may seem odd at first, but the idea is really simple when you think about the importance of scopes.
+
+Long story short, because a function is an object in JavaScript, a JavaScript program is simply a nested tree of functions. As a by product of functions each enclosing a scope, a JavaScript program can also be thought of as a nested tree of scopes.
 
