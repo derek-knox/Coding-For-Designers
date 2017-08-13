@@ -115,4 +115,4 @@ Now is the time to look at the anatomy of a `.css` file which, for our purpose, 
 }
 ```
 
-Each class definition is denoted by a preceding `.` so our `black-background` class becomes `.black-background` within our `.css` file. Then, similar to the JavaScript scope concept we visited earlier, the property-value pairs are defined between the `{` and `}` values. The `{` and `}` define the scope, the space, where one or more property-value pairs embody a particular class.
+Each class definition is denoted by a preceding `.` so our `black-background` class becomes `.black-background` within our `.css` file. Then, similar to the JavaScript scope concept we visited earlier, the property-value pairs are defined between the `{` and `}` values. The `{` and `}` define the scope, the space, where one or more property-value pairs represent a particular class.
