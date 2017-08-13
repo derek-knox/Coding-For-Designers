@@ -75,15 +75,15 @@ Think of attrs as APIs. Attrs enable the coder to achieve functionality based on
 
 So `<a>hyperlink</a>` becomes `<a href='http://www.codingfordesignersbook.com'>hyperlink</a>` where the `href` attr is set with `=` to the value `http://www.codingfordesignersbook.com`. The browser knows that the anchor tag, when hit, should change the web page to the value provided. This same functionality can be achieved using JavaScript only, but we'd have to write more code. Remember, APIs provide a tradeoff and a simpler way to do work.
 
-Additionally, `<img></img>` becomes `<img src='http://codingfordesignersbook.com/assets/img/cover-coding-for-designers.jpg'></img>` where the `src` attr is set with `=` to the value `http://codingfordesignersbook.com/assets/img/cover-coding-for-designers.jpg`. The browser knows that the image tag, when read by the browser, should automatically download the image at the provided `src` or source path value. Upon completion of the download, the tag embodies the downloaded image. This same functionality can be achieved using JavaScript only, but we'd have to write more code. Again, a simpler way to do work.
+Additionally, `<img></img>` becomes `<img src='assets/img/cover-coding-for-designers.jpg'></img>` where the `src` attr is set with `=` to the value `assets/img/cover-coding-for-designers.jpg`. The browser knows that the image tag, when read by the browser, should automatically download the image at the provided `src` or source path value. Upon completion of the download, the tag embodies the downloaded image. This same functionality can be achieved using JavaScript only, but we'd have to write more code. Again, a simpler way to do work.
 
 The takeaway is that the browser provides useful APIs via attrs applied to elements. Now that we've covered the basic implementation of HTML structure, let's dig into style. Welcome to the `class` attr.
 
-The `class` attr gives you the power to style content, to give it a look and feel. Let's for example give our first division of content a unique stye. So `<div>` becomes `<div class='primary-intro'>` where the `class` attr is set with `=` to the value `primary-intro`. The `primary-intro` value could be virtually anything we want but there are rules. Make it easier on yourself and stick with:
+The `class` attr gives you the power to style content, to give it a look and feel. Let's for example give each `<div>` the same style. So `<div>` becomes `<div class='black-background'>` where the `class` attr is set with `=` to the value `black-background`. The `black-background` name value could be virtually anything we want but there are rules. Make it easier on yourself and stick with:
 - lowercase English characters
 - use `-` instead of spaces between words.
 
-Now that we have set a `primary-intro` value for the `class` attr, how do we actually set the style for it? Remember that I mentioned other tags can be added to the `<head>` tag? Specifically, there is a `<link>` tag that allows us to link another file to our web page. Perfect. Our updated `<head>` is below and it now has a `<link>` tag. The attrs of it tell the browser to download and use a CSS file where our defined styles, including `primary-intro`, reside.
+Now that we have set a `black-background` value for the `class` attr, how do we actually set the style for it? Remember that I mentioned other tags can be added to the `<head>`? Specifically, there is a `<link>` tag that allows us to link another file to our web page. Perfect. Our updated `<head>` is below and it now has a `<link>` tag. The attrs of it tell the browser to download and use a CSS file where our defined styles, including `black-background`, reside.
 
 ```
 <head>
@@ -93,7 +93,7 @@ Now that we have set a `primary-intro` value for the `class` attr, how do we act
 </head>
 ```
 
-The folder structure on the server computer that is providing these files to client computers is below. Take note that a lacking file extension means the item is a folder.
+The folder structure on the server computer that is providing these files to client computers is below. Take note that a lacking file extension means the item is a folder. The *relative* paths of the `<link>`'s `href` attr value and the `<img>`'s `src` attr value rely on the structure below. These relative paths tell the browser exactly where to find the file to use.
 
 ```
 index.html
@@ -104,11 +104,13 @@ assets
     cover-coding-for-designers.jpg
 ```
 
-Now is the time to look at the anatomy of a `.css` file which simply consists of one or more class definitions. Our `style.css` file looks like this as we only have one class we want to use in our HTML currently:
+Now is the time to look at the anatomy of a `.css` file which, for our purpose, simply consists of one or more class definitions. Our `style.css` file is:
 
 ```
-.primary-intro {
-  /* This is a CSS comment, we do not have any styles set yet */
+.black-background {
+  /* This is a CSS comment, this class makes an element's background black */
+  background-color: '#000000';
 }
 ```
 
+Each class definition is denoted by a preceding `.` so our `black-background` class becomes `.black-background` within our `.css` file. Then, similar to the JavaScript scope concept we visited earlier, the property-value pairs are defined between the `{` and `}` values. The `{` and `}` define the scope, the space, where one or more property-value pairs embody a particular class.
