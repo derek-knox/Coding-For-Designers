@@ -140,7 +140,7 @@ Another approach could be:
 }
 ```
 
-where our `<div>`s would need to be updated for this solution. Take note that spaces are used between class names to enable application of more than one class style:
+Our `<div>`s would need to be updated for this second solution. Take note that spaces are used between class names to enable application of more than one class style. This is a very powerful aspect of CSS.
 
 ```
 <div class='black-background white-text'>
