@@ -115,8 +115,16 @@ Now is the time to look at the anatomy of a `.css` file which, for our purpose, 
 }
 ```
 
-Each class definition is denoted by a preceding `.` so our `black-background` class becomes `.black-background` within our `.css` file. Then, similar to the JavaScript scope concept we visited earlier, the property-value pairs are defined between the `{` and `}` values. The `{` and `}` define the scope, the space, where one or more property-value pairs represent a particular class.
+Each class definition is denoted by a preceding `.` so our `black-background` class becomes `.black-background` within our `.css` file. Then, similar to the JavaScript scope concept we visited earlier, the property-value pairs are defined between the `{` and `}` characters. The `{` and `}` define the scope, the space and enclosure, where one or more property-value pairs are associated with a particular class.
 
-Each property-value pair consists of a property name, which uses the same rules for class naming as mentioned above, followed by a `:` and the actual value within `'` and `'`. With this class and its valid property-value pairs defined, and element that has a `class` of `black-background` will get the styles applied. Pretty cool.
+Each property-value pair consists of a property name, which uses the same rules for class naming suggested above, followed by a `:` and the actual value within `'` and `'`. With this class and its valid property-value pairs defined, any element that has a `class` of `black-background` will get the styles applied. Pretty cool.
 
+Since browsers typically default the color of text to black, our applied `black-background` class makes our text blend with the black background. We want to see the text too so we can fix this by updating our class definition to use another common property-value pair named `color`. Again, we won't go over all the valid properties that are possible as you, like other coders, can reference resources. The takeaway is the relationship of property-value pairs within class definitions. Here is our updated class definition:
+
+```
+.black-background {
+  background-color: '#000000';
+  color: '#ffffff';  
+}
+```
 
