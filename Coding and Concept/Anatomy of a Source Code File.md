@@ -35,13 +35,13 @@ This is the most structurally simple and valid HTML a browser uses. Let's walk t
 <!-- Tell the browser where we've defined our html, additional data could be outside it -->
 <html>
 
-  <!-- Define the page metadata, useful data for the browser and other programs -->
+  <!-- Define the page metadata, useful data for the browser, other programs, and search engines -->
   <head>
   
     <!-- Define the character encoding, ensures browser knows how to read the characters -->
     <meta charset="utf-8">
     
-    <!-- Define the page title, useful for browser tab and search engines among other programs -->
+    <!-- Define the page title, useful for the browser, other programs, and search engines -->
     <title>Coding for Designers Page</title>
     
   </head>
