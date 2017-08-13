@@ -57,7 +57,7 @@ There are many types of tags that can be added in both the `<head>` and the `<bo
 ```
 <body>
   <div>
-    <h1>This is the Main Title of the Page</h1>
+    <h1>This is the Primary Title of the Page</h1>
     <p>This is a paragraph. It usually has more sentences. This paragraph has only three.</p>
     <button>Push Me</button>
   </div>
@@ -79,4 +79,6 @@ Additionally, `<img></img>` becomes `<img src='http://codingfordesignersbook.com
 
 The takeaway is that the browser provides useful APIs via attrs applied to elements. Now that we've covered the basic implementation of HTML structure, let's dig into style. Welcome to the `class` attr.
 
-The `class` attr gives you the power to style content, to give it a look and feel. Let's for example give our first division of content a unique stye. So `<div>` becomes `<div class='main-intro'>` where the `class` attr is set with `=` to the value `main-intro`. The `main-intro` value could be virtually anything we want but there are some rules as to which characters you can use. Make it easier on yourself and stick with lowercase English characters using `-` instead of spaces between words.
+The `class` attr gives you the power to style content, to give it a look and feel. Let's for example give our first division of content a unique stye. So `<div>` becomes `<div class='primary-intro'>` where the `class` attr is set with `=` to the value `primary-intro`. The `primary-intro` value could be virtually anything we want but there are rules. Make it easier on yourself and stick with:
+- lowercase English characters
+- use `-` instead of spaces between words.
