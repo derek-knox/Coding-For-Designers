@@ -79,7 +79,7 @@ Additionally, `<img></img>` becomes `<img src='assets/img/cover-coding-for-desig
 
 The takeaway is that the browser provides useful APIs via attrs applied to elements. Now that we've covered the basic implementation of HTML structure, let's dig into style. Welcome to the `class` attr.
 
-The `class` attr gives you the power to style content, to give it a look and feel. Let's for example give each `<div>` the same style. So `<div>` becomes `<div class='black-background'>` where the `class` attr is set with `=` to the value `black-background`. The `black-background` name value could be virtually anything we want but there are rules. Make it easier on yourself and stick with:
+The `class` attr gives you the power to style content, to give it a look and feel. Let's for example give each `<div>` the same style. So `<div>` becomes `<div class='black-background'>` where the `class` attr is set with `=` to the value `black-background`. The `black-background` name value could be virtually anything we want but there are rules for valid names. Make it easier on yourself and stick with:
 - lowercase English characters
 - use `-` instead of spaces between words.
 
