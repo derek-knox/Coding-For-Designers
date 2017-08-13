@@ -119,7 +119,7 @@ Each class definition is denoted by a preceding `.` so our `black-background` cl
 
 Each property-value pair consists of a property name, which uses the same rules for class naming suggested above, followed by a `:` and the actual value within `'` and `'`. With this class and its valid property-value pairs defined, any element that has a `class` of `black-background` will get the styles applied. Pretty cool.
 
-Since browsers typically default the color of text to black, our applied `black-background` class makes our text blend with the black background. We want to see the text too so we can fix this by updating our class definition to use another common property-value pair named `color`. Again, we won't go over all the valid properties that are possible as you, like other coders, can reference resources. The takeaway is the relationship of property-value pairs within class definitions. Here is our updated class definition:
+Since browsers typically default the color of text to black, our applied `black-background` class makes our text blend with the black background. We want to see the text too so we can fix this by updating our class definition to use another common property named `color`. Again, we won't go over all the valid properties that are possible as you, like other coders, can reference resources. The takeaway is the relationship of property-value pairs within class definitions. Here is our updated class definition:
 
 ```
 .black-background {
@@ -127,4 +127,6 @@ Since browsers typically default the color of text to black, our applied `black-
   color: '#ffffff';  
 }
 ```
+
+Now both our `<div>`s will have black background and the text within them will be white. It is worth noting that as a creation evolves, it is common practice to change names of classes. A class name may make less sense as new property-value pairs are added or removed. For example, the `black-background` class does more than just set the background color of an element to black, so its name may be a bit misleading. Over time you will leverage established naming practices and/or develop your own. Just know that it is very common to change names as a creation evolves.
 
