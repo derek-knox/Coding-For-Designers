@@ -119,7 +119,7 @@ Each class definition is denoted by a preceding `.` so our `black-background` cl
 
 Each property-value pair consists of a property name, which uses the same rules for class naming suggested above, followed by a `:` and the actual value within `'` and `'`. With this class and its valid property-value pairs defined, any element that has a `class` of `black-background` will get the styles applied. Pretty cool.
 
-Since browsers typically default the color of text to black, our applied `black-background` class makes our text blend with the black background. We want to see the text too so we can fix this by updating our class definition to use another common property named `color`. Again, we won't go over all the valid properties that are possible as you, like other coders, can reference resources. The takeaway is the relationship of property-value pairs within class definitions. Here is our updated class definition:
+Since browsers typically default the color of text to black, our applied `black-background` class makes our text blend with the black background. We want to see the text too so we can fix this by updating our class definition to use another common property named `color`. Again, we won't go over all the valid properties that are possible as you, like other coders, can reference resources. The takeaway is the relationship of property-value pairs within class definitions. Here is one approach to update our `style.css` file:
 
 ```
 .black-background {
@@ -128,5 +128,27 @@ Since browsers typically default the color of text to black, our applied `black-
 }
 ```
 
-Now both our `<div>`s will have black background and the text within them will be white. It is worth noting that as a creation evolves, it is common practice to change names of classes. A class name may make less sense as new property-value pairs are added or removed. For example, the `black-background` class does more than just set the background color of an element to black, so its name may be a bit misleading. Over time you will leverage established naming practices and/or develop your own. Just know that it is very common to change names as a creation evolves.
+Another approach could be:
+
+```
+.black-background {
+  background-color: '#000000';
+}
+
+.white-text {
+  color: '#ffffff';
+}
+```
+
+where our `<div>`s would need to be updated for this solution. Take note that spaces are used between class names to enable application of more than one class style:
+
+```
+  <div class='black-background white-text'>
+```
+
+With either solution, both our `<div>`s will have black backgrounds and the text within them will be white. As a creation evolves, feel free to change names of classes if it makes sense to. A class name may make less sense as new property-value pairs are added or removed. Over time you will leverage established naming practices and/or develop your own to gain an intuitive feel of when to update a name. Just know that it is a very common to change names as a creation evolves.
+
+We've covered the anatomy of HTML and CSS, so now it is time for JavaScript. In a way we already looked at the anatomy of JavaScript in the *Elements and Elements* section. That breakdown was a bit more granular and we'll revisit the specifics in the next chapter *Coding and JavaScript*. For now we will look at the high level anatomy of a JavaScript file. We will focus on shape, space, and form or more precisely function, scope, and object.
+
+As you already know, a function is like a shape because it encloses scope just as a shape encloses space. An enclosure helps prevent clashing of what exists in the aforementioned scope and space. 
 
