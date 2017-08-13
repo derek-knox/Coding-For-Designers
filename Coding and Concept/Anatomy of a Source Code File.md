@@ -22,7 +22,7 @@ In keeping with the structure, style, and behavior order, let's look at the anat
     <meta charset="utf-8">
     <title>Coding for Designers Page</title>
   </head>
-  <body></body>
+  <body>Content goes here.</body>
 </html>
 ```
 
@@ -47,7 +47,7 @@ This is the most structurally simple and valid HTML a browser uses. Let's walk t
   </head>
   
   <!-- Define the page content, what gets rendered for users to see and interact with -->
-  <body></body>
+  <body>Content goes here</body>
   
 </html>
 ```
