@@ -47,7 +47,7 @@ This is the most structurally simple and valid HTML a browser uses. Let's walk t
   </head>
   
   <!-- Define the page content, what gets rendered for users to see and interact with -->
-  <body>Content goes here</body>
+  <body>Content goes here.</body>
   
 </html>
 ```
