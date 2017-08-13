@@ -69,7 +69,7 @@ There are many types of tags that can be added in both the `<head>` and the `<bo
 </body>
 ```
 
-The `<div>`, `<h1>`, `<p>`, `<button>`, and `<h2>` tags are simple to grasp, but the `<a>` and `<img>` tags are less so. This is because they are both lacking *attributes*. We'll use the shortcut *attrs* moving forward. All elements can leverage attrs, but these latter two elements require them to function as designed.
+A `<div>` tag simpy denotes a division of content where the layout of each division is dependent on style. This will likely become your most used element tag. The `<h1>`, `<p>`, `<button>`, and `<h2>` tags are self-expanatory, but the `<a>` and `<img>` tags are less so. This is because they are each lacking *attributes*. We'll use the shortcut *attrs* moving forward. All elements can leverage attrs, but these latter two elements require them to function as designed.
 
 Think of attrs as APIs. Attrs enable the coder to achieve functionality based on a shared understanding of designed usage. They are also where we start to transition toward CSS with the `class` attr. First we will update the `<a>` and `<img>` tags with each of their most useful attrs to attain the desired functionality.
 
@@ -78,3 +78,5 @@ So `<a>hyperlink</a>` becomes `<a href='http://www.codingfordesignersbook.com'>h
 Additionally, `<img></img>` becomes `<img src='http://codingfordesignersbook.com/assets/img/cover-coding-for-designers.jpg'></img>` where the `src` attr is set with `=` to the value `http://codingfordesignersbook.com/assets/img/cover-coding-for-designers.jpg`. The browser knows that the image tag, when read by the browser, should automatically download the image at the provided `src` or source path value. Upon completion of the download, the tag embodies the downloaded image. This same functionality can be achieved using JavaScript only, but we'd have to write more code. Again, a simpler way to do work.
 
 The takeaway is that the browser provides useful APIs via attrs applied to elements. Now that we've covered the basic implementation of HTML structure, let's dig into style. Welcome to the `class` attr.
+
+The `class` attr gives you the power to style content, to give it a look and feel. Let's for example give our first division of content a unique stye. So `<div>` becomes `<div class='main-intro'>` where the `class` attr is set with `=` to the value `main-intro`. The `main-intro` value could be virtually anything we want but there are some rules as to which characters you can use. Make it easier on yourself and stick with lowercase English characters using `-` instead of spaces between words.
