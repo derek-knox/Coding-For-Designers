@@ -143,7 +143,7 @@ Another approach could be:
 where our `<div>`s would need to be updated for this solution. Take note that spaces are used between class names to enable application of more than one class style:
 
 ```
-  <div class='black-background white-text'>
+<div class='black-background white-text'>
 ```
 
 With either solution, both our `<div>`s will have black backgrounds and the text within them will be white. As a creation evolves, feel free to change names of classes if it makes sense to. A class name may make less sense as new property-value pairs are added or removed. Over time you will leverage established naming practices and/or develop your own to gain an intuitive feel of when to update a name. Just know that it is a very common to change names as a creation evolves.
