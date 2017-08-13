@@ -152,9 +152,32 @@ We've covered the anatomy of HTML and CSS, so now it is time for JavaScript. In 
 
 As you already know, a function is like a shape because it encloses scope just as a shape encloses space. An enclosure helps prevent clashing of what exists in the aforementioned scope and space. No clashing please. Objects like forms, are a higher level enclosure. They each embody one or more functions or shapes respectively. JavaScript has specific types of objects, but a function is *also* an object. This may seem odd at first, but the idea is really simple when you think about the importance of scopes.
 
-Long story short, because a function is an object in JavaScript, a JavaScript program is simply a nested tree of functions. As a by product of functions each enclosing a scope, a JavaScript program can also be thought of as a nested tree of scopes. So when the JavaScript engine executes a particular line of code that has a reference to some other code in the program, it works like this:
+Long story short, because a function is an object in JavaScript, a JavaScript program is essentially a nested tree of functions. As a by product of functions each enclosing a scope, a JavaScript program can also be thought of as a nested tree of scopes. So when the JavaScript engine executes a particular line of code that has a reference to a value, it works like this in an effort to get the actual value:
 1. look in the target scope for the reference
 2. if not found, look in its next enclosing scope
 3. repeat until the last scope is hit
-...
+
+If the reference is found in one of the scopes, it can use the referenced value and continue to do work. This is what we want. If the last scope is hit and the value does not exist, then we have a problem. We will go into detail later regarding this scenario, so just be aware of it.
+
+Now that we know the anatomy of a JavaScript program is simply a nested tree of function scopes, let's add a simple example based on our HTML and CSS examples used thus far in this section. HTML has a tag that allows us to add JavaScript with ease, it is the `<script>` tag. You can add a `<script>` tag to the `<head>` or the `<body>`, but the later is best practice. Specifically, `<script>` tags should reside just before the `</body>`. Here is an updated excerpt from our `index.html` file.
+
+```
+    <!-- The previous HTML code from our index.html file is excluded for brevity -->
+    </div>
+    <script src='assets/js/main.js'></script>
+</body>
+```
+
+Naturally, the server folder structure needs the path to our `main.js` so our updated structure becomes:
+
+```
+index.html
+assets
+  css
+    style.css
+  img
+    cover-coding-for-designers.jpg
+  js
+    main.js
+```
 
