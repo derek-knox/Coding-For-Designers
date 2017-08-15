@@ -16,6 +16,6 @@ In chapter four, *Coding and Concept*, we will introduce concepts that are inval
 
 Chapter five, *Coding and JavaScript*, will reinforce what has been learned, but specifically in the context of JavaScript. JavaScript is the most accessible programming language today. If you have pushed a button on a web page, then you have been impacted by JavaScript.
 
-Finally, in chapter six *Deconstructing Designs*, we will put everything we have learned to practice. We will do so by analyzing and deconstructing the user interfaces of a few impactful applications. We will then selectively reconstruct portions of the UI relative to the previously introduced concepts.
+Finally in chapter six, *Deconstructing Designs*, we will put everything we have learned to practice. We will do so by analyzing and deconstructing the user interfaces of a few impactful applications. We will then selectively reconstruct portions of the UI relative to the previously introduced concepts.
 
 Let’s do this.
