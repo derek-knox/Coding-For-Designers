@@ -8,11 +8,11 @@ If you want to jump straight into code though, then this book is not for you. We
 
 The plan of attack is simple. In chapter one, *Breaking Barriers*, we will explore and demystify a series of concepts that fundamentally intimidate most designers and non-coders about how computers and code work. From the seemingly magical ones and zeros to the code you will soon write, we will see simple, basic, repetitive, and reusable concepts at play.
 
-In chapter two, *Structure, Style, and Behavior*, we will visit the three codeable aspects that enable computers to render our interactive creations. We will do so from both a 2D context with the web platform and a 3D context with the Unity® platform. These perspectives will help solidify the distinct role that structure, style, and behavior each play.
+In chapter two, *Structure, Style, and Behavior*, we will cover the three codeable layers that enable computers to render our interactive creations. We will do so from both a 2D context with the web platform and a 3D context with the Unity® platform. These perspectives will help solidify the distinct role that structure, style, and behavior each play regardless of dimensionality.
 
-Chapter three, *Coding and Visual Design*, will review the elements, principles, and constructs of visual design. We will explore them relative to coding’s counterparts. This work will help shape a mental model tuned specifically for designers.
+Chapter three, *Coding and Visual Design*, will cover the elements, principles, and constructs of visual design. We will explore them relative to coding’s counterparts. This work will help shape a mental model tuned specifically for designers.
 
-In chapter four, *Coding and Concept*, we will introduce concepts that are invaluable when authoring programming code. It is important to understand that these concepts are *language agnostic*. This simply means you get to reuse what you learn in *virtually all programming languages*. In programming languages, the terminology and often the words themselves are reused exactly or with subtle variation. Spoken languages lack this luxury. Bonus.
+In chapter four, *Coding and Concept*, we will introduce concepts that are invaluable when authoring interactive creations. We will also visually explore how our code actually runs in real-time. Virtually all the concepts covered are language agnostic, they are reusable regardless of coding language. In coding, the terminology and often the code words themselves are reused exactly or with subtle variation across languages. Spoken languages lack this luxury. 
 
 Chapter five, *Coding and JavaScript*, will reinforce what has been learned, but specifically in the context of JavaScript. JavaScript is the most accessible programming language today. If you have pushed a button on a web page, then you have been impacted by JavaScript.
 
