@@ -1,6 +1,6 @@
 # Preface
 
-Virtually all existing resources aimed at teaching people *about* or *how-to* code, introduce the code way too soon. In doing so, many insightful and empowering concepts remain hidden from the reader. Additionally, these same resources rarely consider designers directly. *Coding for Designers* is a response to this unfortunate reality.
+Virtually all existing resources aimed at teaching people *about* or *how-to* code, introduce the code way too soon. In doing so, many insightful and empowering concepts remain hidden. Additionally, these same resources rarely consider designers directly. *Coding for Designers* is a response to this unfortunate reality.
 
 This book is intended most for designers. If you author content as a graphic, visual, UI, UX, motion, or game designer, then this is for you. Other non-coders wanting to learn about or how-to code will greatly benefit too, but self-identifying designers are the focus. This book, the one I wish existed when I began coding, is also for an earlier time-slice of myself. He will not reap the benefits of its existence, but I hope you will.
 
