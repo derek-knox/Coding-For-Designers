@@ -52,7 +52,7 @@ This is the most structurally simple, complete, and valid HTML a browser uses. L
 </html>
 ```
 
-There are many types of tags that can be added in both the `<head>` and the `<body>`. As mentioned earlier, we will not go over them here as you, just like other coders, can use other resources to dig deeper. We will reveal the most common ones for the `<body>` however to fulfill the *common subset* bullet above. Instead of comments I will just use English inline with tags to show how the elements wrap content. The content is visible to the user where the tags that wrap it are not. Remember the tags simply tell the browser your content structure. As a result the spacing between elements is not important, the browser understands the structure regardless. Spacing within content is what matters.
+There are many types of tags that can be added in both the `<head>` and the `<body>`. As mentioned earlier, we will not go over them here as you, just like other coders, can use other resources to dig deeper. We will reveal the most common ones for the `<body>` however to fulfill the *common subset* bullet above. Instead of comments I will use English inline with the tags to show how the elements wrap content. The content is visible to the user where the tags that wrap content are not. Remember the tags simply tell the browser your content structure. As a result the spacing between elements is not important, the browser understands the structure regardless. Spacing within content is what matters.
 
 ```
 <body>
@@ -75,15 +75,15 @@ Think of attrs as APIs. Attrs enable the coder to achieve functionality based on
 
 So `<a>hyperlink</a>` becomes `<a href='http://www.codingfordesignersbook.com'>hyperlink</a>` where the `href` attr is set with `=` to the value `http://www.codingfordesignersbook.com`. The browser knows that the anchor tag, when hit, should change the web page to the value provided. This same functionality can be achieved using JavaScript only, but we'd have to write more code. Remember, APIs provide a tradeoff and a simpler way to do work.
 
-Additionally, `<img></img>` becomes `<img src='assets/img/cover-coding-for-designers.jpg'></img>` where the `src` attr is set with `=` to the value `assets/img/cover-coding-for-designers.jpg`. The browser knows that the image tag, when read by the browser, should automatically download the image at the provided `src` or source path value. Upon completion of the download, the tag embodies the downloaded image. This same functionality can be achieved using JavaScript only, but we'd have to write more code. Again, a simpler way to do work.
+Additionally, `<img></img>` becomes `<img src='assets/img/cover-coding-for-designers.jpg'></img>` where the `src` attr is set with `=` to the value `assets/img/cover-coding-for-designers.jpg`. The browser knows that the image tag, when read by the browser, will automatically download the image at the provided `src`, the source path to the asset. Upon completion of the download, the tag embodies the downloaded image. This same functionality can be achieved using JavaScript only, but we'd have to write more code. Again, a simpler way to do work.
 
 The takeaway is that the browser provides useful APIs via attrs applied to elements. Now that we've covered the basic implementation of HTML structure, let's dig into style. Welcome to the `class` attr.
 
-The `class` attr gives you the power to style content, to give it a look and feel. Let's for example give each `<div>` the same style. So `<div>` becomes `<div class='black-background'>` where the `class` attr is set with `=` to the value `black-background`. The `black-background` name value could be virtually anything we want but there are rules for valid names. Make it easier on yourself and stick with:
+The `class` attr gives you the awesome power to style content. We will start by giving each `<div>` the same style. So `<div>` becomes `<div class='black-background'>` where the `class` attr is set with `=` to the value `black-background`. The `black-background` name value could be virtually anything we want but there are rules for valid names. Make it easier on yourself and stick with:
 - lowercase English characters
 - use `-` instead of spaces between words.
 
-Now that we have set a `black-background` value for the `class` attr, how do we actually set the style for it? Remember that I mentioned other tags can be added to the `<head>`? Specifically, there is a `<link>` tag that allows us to link another file to our web page. Perfect. Our updated `<head>` is below and it now has a `<link>` tag. The attrs of it tell the browser to download and use a CSS file where our defined styles, including `black-background`, reside.
+Now that we have set a `black-background` value for the `class` attr, how do we actually set the style for the browser to render it? Remember when I mentioned that other tags can be added to the `<head>`? Specifically, there is a `<link>` tag that allows us to link another file to our web page. Perfect. Our updated `<head>` is below and it now has a `<link>` tag. The attrs of it tell the browser to download and use a CSS file where our defined styles, including `black-background`, reside.
 
 ```
 <head>
@@ -104,27 +104,27 @@ assets
     cover-coding-for-designers.jpg
 ```
 
-Now is the time to look at the anatomy of a `.css` file which, for our purpose, simply consists of one or more class definitions. Our `style.css` file is:
+Now is the time to look at the anatomy of a `.css` file which, for our purpose, simply consists of one or more class definitions. Our `style.css` file is simply:
 
 ```
 .black-background {
 
   /* This is a CSS comment, the below property-value pair sets an element's background color to black */
-  background-color: '#000000';
+  background-color: #000000;
   
 }
 ```
 
 Each class definition is denoted by a preceding `.` so our `black-background` class becomes `.black-background` within our `.css` file. Then, similar to the JavaScript scope concept we visited earlier, the property-value pairs are defined between the `{` and `}` characters. The `{` and `}` define the scope, the space and enclosure, where one or more property-value pairs are associated with a particular class.
 
-Each property-value pair consists of a property name, which uses the same rules for class naming suggested above, followed by a `:` and the actual value within `'` and `'`. With this class and its valid property-value pairs defined, any element that has a `class` of `black-background` will get the styles applied. Pretty cool.
+Each property-value pair consists of a property name that uses the same rules for class naming suggested above, followed by a `:` and the actual value. With a class and its valid property-value pairs defined, any element that has a `class` by the same name will get the styles applied. Pretty cool.
 
 Since browsers typically default the color of text to black, our applied `black-background` class makes our text blend with the black background. We want to see the text too so we can fix this by updating our class definition to use another common property named `color`. Again, we won't go over all the valid properties that are possible as you, like other coders, can reference resources. The takeaway is the relationship of property-value pairs within class definitions. Here is one approach to update our `style.css` file:
 
 ```
 .black-background {
-  background-color: '#000000';
-  color: '#ffffff';  
+  background-color: #000000;
+  color: #ffffff;  
 }
 ```
 
@@ -132,21 +132,23 @@ Another approach could be:
 
 ```
 .black-background {
-  background-color: '#000000';
+  background-color: #000000;
 }
 
 .white-text {
-  color: '#ffffff';
+  color: #ffffff;
 }
 ```
 
-Our `<div>`s would need to be updated for this second solution. Take note that spaces are used between class names to enable application of more than one class style. This is a very powerful aspect of CSS.
+Our `<div>`s would need to be updated for this second solution. Take note that spaces are used between class names to enable application of more than one class style. This is a very powerful aspect of CSS. Updated HTML using this second solution is below:
 
 ```
 <div class='black-background white-text'>
 ```
 
-With either solution, both our `<div>`s will have black backgrounds and the text within them will be white. As a creation evolves, feel free to change names of classes if it makes sense to. A class name may make less sense as new property-value pairs are added or removed. Over time you will leverage established naming practices and/or develop your own to gain an intuitive feel of when to update a name. Just know that it is a very common to change names as a creation evolves.
+With either solution, both our `<div>`s will have black backgrounds and the text within them will be white. You might wonder how the text of the child elements can be white without explicitly setting styles on them. This is where the *cascading* part of cascading style sheets comes in. This cascading, this style inheritence, is extremely powerful. You will learn its nuances in time.
+
+As a creation evolves over time, feel free to change the names of classes if it makes sense to. A class name may make less sense as new property-value pairs are added or removed. Over time you will leverage established naming practices and/or develop your own to gain an intuitive feel of when to update a name. Just know that it is extremely common to change names as a creation evolves.
 
 We've covered the anatomy of HTML and CSS, so now it is time for JavaScript. In a way we already looked at the anatomy of JavaScript in the *Elements and Elements* section. That breakdown was a bit more granular and we'll revisit the specifics in the next chapter *Coding and JavaScript*. For now we will look at the high level anatomy of a JavaScript file. We will focus on shape, space, and form or more precisely function, scope, and object.
 
