@@ -185,8 +185,18 @@ assets
     main.js
 ```
 
-The browser understands the script tag and its `src` attr. You guessed it, the browser automatically downloads it. When completely downloaded, the runtime and engine take over as JavaScript is there domain. As you know, the compilation process happens and then right after it is execution time. Here is our main.js contents:
+The browser understands the script tag and its `src` attr and then, you guessed it, the browser automatically downloads it. When completely downloaded, the runtime and engine take over as JavaScript is their domain. As you know, the compilation process happens and then right after that it is execution time. Before looking at the contents of our main.js file, let's update the `<button>` HTML to more easily use it with JavaScript.
 
 ```
+<button id='toggle-button' onclick='toggleStyle()'>
+```
 
+The `id` attr is how we identify an element in our HTML as unique to our document. We give it a unique name to gain a reference to in our JavaScript. Once we have a reference in JavaScript, we can use its API to do all sorts of things. The result of clicking the `toggle-button` button during run-time will be that the function named `toggleStyle` will be called via the `()`. This results in the function's contents being executed.
+
+Here is our main.js contents:
+
+```
+function toggleStyle() {
+  
+}
 ```
