@@ -185,15 +185,15 @@ assets
     main.js
 ```
 
-The browser understands the script tag and its `src` attr and then, you guessed it, the browser automatically downloads it. When completely downloaded, the runtime and engine take over as JavaScript is their domain. As you know, the compilation process happens and then right after that it is execution time. Before looking at the contents of our main.js file, let's update the `<button>` HTML to more easily use it with JavaScript. Now, with two added attrs, it looks like this:
+The browser understands the script tag and its `src` attr and then, you guessed it, the browser automatically downloads it. When completely downloaded, the runtime and engine take over with compilation and execution. Before we look at the contents of our main.js file, let's update the `<button>` HTML to more easily use it with JavaScript. Now, with two added attrs, it looks like this:
 
 ```
 <button id='toggle-button' onclick='toggleStyle()'>
 ```
 
-The `id` attr is how we identify an element in our HTML as unique to our document. An id means we intend there to be only one element with a given name. We give it a unique name to gain a reference to the element it is attached to via JavaScript. Once we have a reference to an element in JavaScript, we can use its API to do all sorts of things.
+The `id` attr is how we identify an element in our HTML as unique to our document. An id means we intend there to be only one element with a given name. A unique name enables us to gain a reference to the element it is attached to via JavaScript. Once we have a reference to an element in JavaScript, we can use its API to do all sorts of things.
 
-The result of clicking the `toggle-button` button during run-time results in the function named `toggleStyle` to be called via `()`. This results in the function's contents being executed by the engine. Behind the scenes, the runtime APIs are used to transform the hardware input (mouse, trackpad, stylus, touch, etc.) to event queue work. The event loop then picks up the resulting package and it gets placed on the stack. This all happens in milliseconds or less when the event loop is not blocked. Lastly, the engine actually executes the function contents. Let's look at our main.js now:
+The result of clicking the `toggle-button` button during run-time results in the function named `toggleStyle` to be called via `()`. This results in the function's contents being executed by the engine. Behind the scenes, the runtime APIs are used to transform the hardware input (mouse, trackpad, stylus, touch, etc.) to event queue work. The event loop then picks up the resulting package and it gets placed on the stack. This all happens in milliseconds or less when the event loop is not blocked. Lastly, the engine actually executes the function contents. Now is a good time to look at those contents.
 
 ```
 function toggleStyle() {
