@@ -46,7 +46,7 @@ This is the most structurally simple, complete, and valid HTML a browser uses. L
     
   </head>
   
-  <!-- Define the page content - what gets rendered for users to see and interact with -->
+  <!-- Define the page content - what users and other programs see and interact with -->
   <body>Content goes here.</body>
   
 </html>
