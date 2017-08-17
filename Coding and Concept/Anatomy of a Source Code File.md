@@ -38,7 +38,7 @@ This is the most structurally simple, complete, and valid HTML a browser uses. L
   <!-- Define the page metadata - useful data for the browser, other programs, and search engines -->
   <head>
   
-    <!-- Define the character encoding - inform the browser how to decode this document -->
+    <!-- Define the character encoding - inform the browser how to better decode this document -->
     <meta charset="utf-8">
     
     <!-- Define the page title - useful for the browser, other programs, and search engines -->
