@@ -32,7 +32,7 @@ This is the most structurally simple, complete, and valid HTML a browser uses. L
 <!-- Tell the browser the document type - we only care about html -->
 <!DOCTYPE html>
 
-<!-- Tell the browser where we've defined our html - additional data could be outside it -->
+<!-- Tell the browser where we've defined our html - additional data exists outside it -->
 <html>
 
   <!-- Define the page metadata - useful data for the browser, other programs, and search engines -->
