@@ -63,7 +63,7 @@ There are many types of element tags that can be added in both the `<head>` and 
   </div>
   <div>
     <h2>This is a Secondary Title</h2>
-    <p>This is another paragraph. It only has two sentences, but it also has a <a>hyperlink</a>.</p>
+    <p>This is another paragraph. It has two sentences, contains a <a>hyperlink</a>, and is followed by an image.</p>
     <img></img>
   </div>
 </body>
