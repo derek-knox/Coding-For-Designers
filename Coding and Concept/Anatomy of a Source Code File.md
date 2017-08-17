@@ -112,7 +112,7 @@ Now is the time to look at the anatomy of a `.css` file which, for our purpose, 
 ```
 .black-background {
 
-  /* This is a CSS comment, the below property-value pair sets an element's background color to black */
+  /* This is a CSS comment - the below property-value pair sets an element's background color to black */
   background-color: #000000;
   
 }
