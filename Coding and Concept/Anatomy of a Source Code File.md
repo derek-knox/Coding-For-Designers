@@ -1,6 +1,6 @@
 # Anatomy of a Source Code File
 
-This section will be the first where we really start digging into the existing languages of HTML, CSS, and JavaScript. We have covered quite a bit in an effort to get to this point. Specifically, we learned about the powerful concepts of binary and states in addition to encoding and decoding in the Breaking Barriers chapter. We learned in Structure, Style, and Behavior how each layer plays a valuable and distinct role in an interactive creation. In Coding and Visual Design, we mapped familiar design-specific concepts to coding concepts to help establish a frame of reference. More recently, we introduced programming-specific concepts to help shape your understanding of how code lives and communicates in real-time.
+This section will be the first where we really start digging into the existing languages of HTML, CSS, and JavaScript. We have covered quite a bit in an effort to get to this point. Specifically, we learned about the powerful concepts of binary and states in addition to encoding and decoding in the Breaking Barriers chapter. We learned in Structure, Style, and Behavior how each layer plays a valuable and distinct role in an interactive creation. In Coding and Visual Design, we mapped familiar design-specific concepts to coding concepts to help establish a knowledge bridge. More recently, we introduced programming-specific concepts to help shape your understanding of how code lives and communicates in real-time.
 
 We know code is a system for converting meaning between forms and HTML, CSS, and JavaScript are just specific forms. The web browser knows how to decode HTML into divisions of content and render them. It also knows how to decode CSS property-value pairs to adorn the HTML elements with style and functionality. Lastly, we know a runtime and engine understand how to decode and execute JavaScript which enables a living and interactive creation to exist.
 
@@ -38,7 +38,7 @@ This is the most structurally simple, complete, and valid HTML a browser uses. L
   <!-- Define the page metadata - useful data for the browser, other programs, and search engines -->
   <head>
   
-    <!-- Define the character encoding - inform the browser how to better decode this document -->
+    <!-- Define the character encoding - inform the browser how to reliably decode this document -->
     <meta charset="utf-8">
     
     <!-- Define the page title - useful for the browser, other programs, and search engines -->
@@ -46,7 +46,7 @@ This is the most structurally simple, complete, and valid HTML a browser uses. L
     
   </head>
   
-  <!-- Define the page content - what users and other programs see and interact with -->
+  <!-- Define the page content - what gets rendered for viewing and interacting -->
   <body>Content goes here.</body>
   
 </html>
@@ -96,7 +96,7 @@ Now that we have set a `black-background` value for the `class` attr, how do we 
 </head>
 ```
 
-The folder structure on the server computer that is providing these files to client computers is below. Take note that a lacking file extension means the item is a folder. The *relative* paths of the `<link>`'s `href` attr value and the `<img>`'s `src` attr value rely on the structure below. These relative paths tell the browser exactly where to find the file to use.
+The folder structure on the server computer that is providing these files to client computers is below. Take note that a lacking file extension means the item is a folder. The *relative* paths of the `<link>`'s `href` attr value and the `<img>`'s `src` attr value rely on the structure below. These relative paths, relative to the `index.html` that is, tell the browser exactly where to find the file to use.
 
 ```
 index.html
@@ -120,7 +120,7 @@ Now is the time to look at the anatomy of a `.css` file which, for our purpose, 
 
 Each class definition is denoted by a preceding `.` so our `black-background` class becomes `.black-background` within our `.css` file. Then, similar to the JavaScript scope concept we visited earlier, the property-value pairs are defined between the `{` and `}` characters. The `{` and `}` define the scope, the space and enclosure, where one or more property-value pairs are associated with a particular class.
 
-Each property-value pair consists of a property name that uses the same rules for class naming suggested above, followed by a `:` and the actual value. With a class and its valid property-value pairs defined, any element that has a `class` by the same name will get the styles applied. Pretty cool.
+Each property-value pair consists of a property name that uses the same rules for class naming suggested above, followed by a `:` and then an actual value. With a class and its valid property-value pairs defined, any element that has a `class` by the same name will get the styles applied. Pretty cool and very reusable.
 
 Since browsers typically default the color of text to black, our applied `black-background` class makes our text blend with the black background. We want to see the text too so we can fix this by updating our class definition to use another common property named `color`. Again, we won't go over all the valid properties that are possible as you, like other coders, can reference resources. The takeaway is the relationship of property-value pairs within class definitions. Here is one approach to update our `style.css` file:
 
@@ -143,7 +143,7 @@ Another approach could be:
 }
 ```
 
-Our `<div>`s would need to be updated for this second solution. Take note that spaces are used between class names to enable application of more than one class style. This is a very powerful aspect of CSS. Updated HTML using this second solution is below:
+Our `<div>`s would need to be updated for this second solution. Take note that spaces are used between class names to enable more than one class style to be applied. This is a very powerful aspect of CSS, one which you will grasp more intuitively in time. Updated HTML using this second solution is below:
 
 ```
 <div class='black-background white-text'>
