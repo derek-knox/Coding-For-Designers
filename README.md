@@ -44,7 +44,7 @@ Coding for Designers is a work-in-progress book that demystifies coding relative
 - [Sync and Async](Coding%20and%20Concept/Sync%20and%20Async.md)
 - [Interfacing](Coding%20and%20Concept/Interfacing.md)
 - [Client and Server](Coding%20and%20Concept/Client%20and%20Server.md)
-- [Anatomy of a Source Code File](Coding%20and%20Concept/Anatomy%20of%20a%20Source%20Code%20File.md)
+- [Anatomy of HTML, CSS, and JavaScript](Coding%20and%20Concept/Anatomy%20of%20HTML,%20CSS,%20and%20JavaScript.md)
 - Work. Right. Better.
 - Recycle and Reuse
 
