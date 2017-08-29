@@ -149,13 +149,13 @@ Our `<div>`s would need to be updated for this second solution. Take note that s
 <div class='black-background white-text'>
 ```
 
-With either solution, both our `<div>`s will have black backgrounds and the text within them will be white. You might wonder how the text of the child elements can be white without explicitly setting styles on them. This is where the *cascading* part of cascading style sheets comes in. This cascading, this style inheritence, is extremely powerful and you will learn its nuances in time.
+With either solution, both our `<div>`s will have black backgrounds and the text within them will be white. You might wonder how the text of the child elements can be white without explicitly setting styles on them. This is where the *cascading* part of cascading style sheets comes in. Think of cascading as style inheritence. Cascading is extremely powerful and you will learn its nuances in time.
 
 As a creation evolves, feel free to change the names of classes if it makes sense to. A class name may make less sense as new property-value pairs are added or removed. Over time you will leverage established naming practices and/or develop your own to gain an intuitive feel of when to update a name. Additionally, you'll develop a sense of how best to group certain property-value pairs. Just know that it is extremely common to change names as a creation evolves.
 
 Thus far we've covered the anatomy of HTML and CSS, so now it is time for JavaScript. In a way we already looked at the anatomy of JavaScript in the *Elements and Elements* section. That breakdown was a bit more granular and we'll revisit the specifics in the next chapter *Coding and JavaScript*. For now we will look at the high level anatomy of a JavaScript file. We will focus on shape, space, and form or more precisely function, scope, and object.
 
-As you already know, a function is like a shape because it encloses scope just as a shape encloses space. An enclosure helps prevent clashing of what exists between different scopes or spaces. No clashing please. Objects like forms, are a higher level enclosure. They each embody one or more functions or shapes respectively. JavaScript has specific types of objects, but a function is *also* an object. This may seem odd at first, but the idea is really simple when you think about the importance of scopes.
+As you already know, a function is like a shape because it encloses scope just as a shape encloses space. An enclosure helps prevent clashing of what exists between different scopes or spaces. No clashing please. Objects, like forms, are a higher level enclosure. They each, more often than not, embody one or more functions or shapes respectively. JavaScript has specific types of objects, but a function is *also* an object. This may seem odd at first, but the idea is really simple when you think about the importance of scopes.
 
 Long story short, a JavaScript program is essentially a nested tree of functions. As a by-product of functions each enclosing a scope, a JavaScript program can also be thought of as a nested tree of scopes. So when the JavaScript engine executes a particular line of code that has a reference to a value, it works like this in an effort to get the actual value:
 1. look in the target scope for the reference
@@ -164,7 +164,7 @@ Long story short, a JavaScript program is essentially a nested tree of functions
 
 When the reference is found in one of the scopes, it can use the referenced value and continue to do work. This is what we want. If the root scope is hit and the value does not exist, then we have a problem. We will go into detail later regarding this scenario, so just be aware of it.
 
-Now that we know the anatomy of a JavaScript program is simply a nested tree of function scopes, let's add a simple example based on this section's HTML and CSS examples. As you might imagine, HTML has a tag that allows us to add JavaScript just as easily as we added CSS. Welcome to the `<script>` tag. You can add a `<script>` tag to the `<head>` or the `<body>`, but the latter is best practice. Specifically, `<script>` tags should reside just before the closing body, the `</body>`. Here is an updated excerpt from our `index.html` file.
+Now that we know the anatomy of a JavaScript program is simply a nested tree of scopes, let's add a simple example based on this section's HTML and CSS examples. As you might imagine, HTML has a tag that allows us to add JavaScript just as easily as we added CSS. Welcome to the `<script>` tag. You can add a `<script>` tag to the `<head>` or the `<body>`, but the latter is best practice. Specifically, `<script>` tags should reside just before the closing body, the `</body>`. Here is an updated excerpt from our `index.html` file.
 
 ```
     <!-- The previous HTML code from our index.html file is excluded for brevity -->
@@ -191,7 +191,7 @@ The browser understands the script tag and its `src` attr and then, you guessed 
 <button id='toggle-button' onclick='toggleStyle()'>
 ```
 
-The `id` attr is how we identify an element in our HTML as unique to our document. An id means we intend there to be only one element with a given name. A unique id enables us to gain a reference to the element it is attached to via JavaScript. With this element reference in JavaScript, we can use its API to do all sorts of things.
+The `id` attr is how we identify an element in our HTML as unique to our document. An id means we intend there to be only one element with a specific name. A unique id enables us to gain a reference to the element it is attached to via JavaScript. With this element reference in JavaScript, we can use its API to do all sorts of things.
 
 The result of clicking the `toggle-button` button during run-time results in the function named `toggleStyle` to be called via `()`. This results in the function's contents being executed by the engine. Behind the scenes, the runtime APIs are used to transform the hardware input (mouse, trackpad, stylus, touch, etc.) to event queue work. The event loop then picks up the resulting package and it gets placed on the stack. This all happens in milliseconds or even microseconds when the event loop is not blocked. Lastly, the engine actually executes the function contents. Now is a good time to look at those contents.
 
