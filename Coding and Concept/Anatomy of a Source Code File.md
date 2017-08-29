@@ -122,7 +122,7 @@ Each class definition is denoted by a preceding `.` so our `dark-background` cla
 
 Each property-value pair consists of a property name that uses the same rules for class naming suggested above, followed by a `:` and then an actual value. With a class and its valid property-value pairs defined, any element that has a `class` by the same name will get the styles applied. Pretty cool and very reusable.
 
-Since browsers typically default the color of text to black, our applied `black-background` class makes our text blend with the black background. We want to see the text too so we can fix this by updating our class definition to use another common property named `color`. Again, we won't go over all the valid properties that are possible as you, like other coders, can reference resources. The takeaway is the relationship of property-value pairs within class definitions. Here is one approach to update our `style.css` file:
+Since browsers typically default the color of text to black, our applied `dark-background` class makes our text blend with the dark background. We want to see the text too so we can fix this by updating our class definition to use another common property named `color`. Again, we won't go over all the valid properties that are possible as you, like other coders, can reference resources. The takeaway is the relationship of property-value pairs within class definitions. Here is one approach to update our `style.css` file:
 
 ```
 .dark-background {
@@ -149,7 +149,7 @@ Our `<div>`s would need to be updated for this second solution. Take note that s
 <div class='dark-background light-text'>
 ```
 
-With either solution, both our `<div>`s will have black backgrounds and the text within them will be white. You might wonder how the text of the child elements can be white without explicitly setting styles on them. This is where the *cascading* part of cascading style sheets comes in. Think of cascading as style inheritence. Cascading is extremely powerful and you will learn its nuances in time.
+With either solution, both our `<div>`s will have dark backgrounds and the text within them will be light. You might wonder how the text of the child elements can be white without explicitly setting styles on them. This is where the *cascading* part of cascading style sheets comes in. Think of cascading as style inheritence. Cascading is extremely powerful and you will learn its nuances in time.
 
 As a creation evolves, feel free to change the names of classes if it makes sense to. A class name may make less sense as new property-value pairs are added or removed. Over time you will leverage established naming practices and/or develop your own to gain an intuitive feel of when to update a name. Additionally, you'll develop a sense of how best to group certain property-value pairs. Just know that it is extremely common to change names as a creation evolves.
 
