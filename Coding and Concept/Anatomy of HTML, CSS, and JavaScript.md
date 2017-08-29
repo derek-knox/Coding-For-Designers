@@ -60,7 +60,7 @@ There are many types of element tags that can be added in both the `<head>` and 
     <h1>This is the Primary Title of the Page</h1>
     <p>This is a paragraph. It is followed by an image and a button.</p>
     <img></img>
-    <button>Push Me</button>
+    <button>Toggle Image Opacity</button>
   </div>
   <div>
     <h2>This is a Secondary Title</h2>
@@ -185,26 +185,34 @@ assets
     main.js
 ```
 
-The browser understands the script tag and its `src` attr and then, you guessed it, the browser automatically downloads it. When completely downloaded, the runtime and engine take over with compilation and execution. Before we look at the contents of our main.js file, let's update our `<button>` and `<img>` HTML to more easily use each with JavaScript. This is what they look like now:
+The browser understands the script tag and its `src` attr and then, you guessed it, the browser automatically downloads it. When completely downloaded, the runtime and engine take over with compilation and execution. Before we look at the contents of our main.js file, let's update our `<img>` and `<button>` HTML to more easily use each with JavaScript.
+
+Updated `<img>`:
 
 ```
-<button id='toggle-button' onclick='toggleOpacity()'>
+<img id='image-to-toggle' src='assets/img/cover-coding-for-designers.jpg'></img>
 ```
 
-The `id` attr is how we identify an element in our HTML as unique to our document. An id means we intend there to be only one element with a specific name. A unique id enables us to gain a reference to the element that it is attached to via JavaScript. With this element reference in JavaScript, we can use its API to do all sorts of things.
-
-The result of clicking the `toggle-button` button during run-time results in the function named `toggleOpacity` to be called via `()`. This results in the function's contents being executed by the engine. Behind the scenes, the runtime APIs transform the hardware input (mouse, trackpad, stylus, touch, etc.) to event queue work. The event loop then picks up the resulting package and it gets placed on the stack. This all happens in milliseconds or even microseconds when the event loop is not blocked. Lastly, the engine actually executes the function contents. Now is a good time to look at those contents.
+Updated `<button>`:
 
 ```
-function toggleOpacity() {
-  var toggleButton = document.getElementById('toggle-button');
-  var currentOpacity = toggleButton.style.opacity;
-  if(currentOpacity === 1) {
-    toggleButton.style.opacity = .5;
+<button onclick='toggleImageOpacity()'>Toggle Image Opacity</button>
+```
+
+The `id` attr is how we identify an element in our HTML as unique to our document. An id means we intend there to be only one element with a specific name. A unique id enables us to gain a reference to the element for use in JavaScript. With this element reference in JavaScript, we can use its API to do all sorts of cool things.
+
+The result of clicking the button above during run-time results in the function named `toggleImageOpacity` to be called via `()`. This results in the function's contents being executed by the engine. Behind the scenes, the runtime APIs transform the hardware input (mouse, trackpad, stylus, touch, etc.) to event queue work. Thanks again runtime APIs. The event loop then picks up the resulting package and it gets placed on the stack. This all happens in milliseconds or even microseconds when the event loop is not blocked. Lastly, the engine actually executes the function contents. Now is a great time to look at those contents.
+
+```
+function toggleImageOpacity() {
+  var imageToToggle = document.getElementById('image-to-toggle');
+  var currentOpacity = getComputedStyle(imageToToggle).opacity;
+  if(currentOpacity == 1) {
+    imageToToggle.style.opacity = .5;
   } else {
-    toggleButton.style.opacity = 1;
+    imageToToggle.style.opacity = 1;
   }
 }
 ```
 
-
+Do not worry if you don't understand everything in the above function as we'll take a deep dive in the next section *Work. Right. Better.*.
