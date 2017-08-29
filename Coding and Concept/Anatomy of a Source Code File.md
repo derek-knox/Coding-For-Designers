@@ -79,11 +79,11 @@ Additionally, `<img></img>` becomes `<img src='assets/img/cover-coding-for-desig
 
 The takeaway is that the browser provides useful APIs via attrs applied to elements. Now that we've covered the basic implementation of HTML structure, let's dig into style. Welcome to the `class` attr.
 
-The `class` attr gives you the creative power to style content. We will start by giving each `<div>` the same style. So `<div>` becomes `<div class='black-background'>` where the `class` attr is set with `=` to the value `black-background`. The `black-background` name value could be virtually anything we want but there are rules for valid names. Make it easier on yourself and stick with:
+The `class` attr gives you the creative power to style content. We will start by giving each `<div>` the same style. So `<div>` becomes `<div class='dark-background'>` where the `class` attr is set with `=` to the value `dark-background`. The `dark-background` name value could be virtually anything we want but there are rules for valid names. Make it easier on yourself and stick with:
 - lowercase English characters
 - use `-` instead of spaces
 
-Now that we have set a `black-background` value for the `class` attr, how do we actually define the style for the browser to render it? Remember when I mentioned that other tags can be added to the `<head>`? There is a `<link>` tag that allows us to link another file to our web page. Perfect. Our updated `<head>` is below and it now has a `<link>` tag. The attrs of it tell the browser to download and use a CSS file where our defined styles reside, including `black-background`.
+Now that we have set a `dark-background` value for the `class` attr, how do we actually define the style for the browser to render it? Remember when I mentioned that other tags can be added to the `<head>`? There is a `<link>` tag that allows us to link another file to our web page. Perfect. Our updated `<head>` is below and it now has a `<link>` tag. The attrs of it tell the browser to download and use a CSS file where our defined styles reside, including `dark-background`.
 
 ```
 <head>
@@ -110,7 +110,7 @@ assets
 Now is the time to look at the anatomy of a `.css` file which, for our purpose, simply consists of one or more class definitions. Our `style.css` file is simply:
 
 ```
-.black-background {
+.dark-background {
 
   /* This is a CSS comment - the below property-value pair sets an element's background color to black */
   background-color: #000000;
@@ -118,14 +118,14 @@ Now is the time to look at the anatomy of a `.css` file which, for our purpose, 
 }
 ```
 
-Each class definition is denoted by a preceding `.` so our `black-background` class becomes `.black-background` within our `.css` file. Then, similar to the JavaScript scope concept we visited earlier, the property-value pairs are defined between the `{` and `}` characters. The `{` and `}` define the scope, the space and enclosure, where one or more property-value pairs are associated with a particular class.
+Each class definition is denoted by a preceding `.` so our `dark-background` class becomes `.dark-background` within our `.css` file. Then, similar to the JavaScript scope concept we visited earlier, the property-value pairs are defined between the `{` and `}` characters. The `{` and `}` define the scope, the space and enclosure, where one or more property-value pairs are associated with a particular class.
 
 Each property-value pair consists of a property name that uses the same rules for class naming suggested above, followed by a `:` and then an actual value. With a class and its valid property-value pairs defined, any element that has a `class` by the same name will get the styles applied. Pretty cool and very reusable.
 
 Since browsers typically default the color of text to black, our applied `black-background` class makes our text blend with the black background. We want to see the text too so we can fix this by updating our class definition to use another common property named `color`. Again, we won't go over all the valid properties that are possible as you, like other coders, can reference resources. The takeaway is the relationship of property-value pairs within class definitions. Here is one approach to update our `style.css` file:
 
 ```
-.black-background {
+.dark-background {
   background-color: #000000;
   color: #ffffff;  
 }
@@ -134,11 +134,11 @@ Since browsers typically default the color of text to black, our applied `black-
 Another approach could be:
 
 ```
-.black-background {
+.dark-background {
   background-color: #000000;
 }
 
-.white-text {
+.light-text {
   color: #ffffff;
 }
 ```
@@ -146,7 +146,7 @@ Another approach could be:
 Our `<div>`s would need to be updated for this second solution. Take note that spaces are used between class names to enable more than one class style to be applied. This is a very powerful aspect of CSS, one which you will grasp more intuitively in time. Updated HTML using this second solution is below:
 
 ```
-<div class='black-background white-text'>
+<div class='dark-background light-text'>
 ```
 
 With either solution, both our `<div>`s will have black backgrounds and the text within them will be white. You might wonder how the text of the child elements can be white without explicitly setting styles on them. This is where the *cascading* part of cascading style sheets comes in. Think of cascading as style inheritence. Cascading is extremely powerful and you will learn its nuances in time.
@@ -155,14 +155,14 @@ As a creation evolves, feel free to change the names of classes if it makes sens
 
 Thus far we've covered the anatomy of HTML and CSS, so now it is time for JavaScript. In a way we already looked at the anatomy of JavaScript in the *Elements and Elements* section. That breakdown was a bit more granular and we'll revisit the specifics in the next chapter *Coding and JavaScript*. For now we will look at the high level anatomy of a JavaScript file. We will focus on shape, space, and form or more precisely function, scope, and object.
 
-As you already know, a function is like a shape because it encloses scope just as a shape encloses space. An enclosure helps prevent clashing of what exists between different scopes or spaces. No clashing please. Objects, like forms, are a higher level enclosure. They each, more often than not, embody one or more functions or shapes respectively. JavaScript has specific types of objects, but a function is *also* an object. This may seem odd at first, but the idea is really simple when you think about the importance of scopes.
+As you already know, a function is like a shape because it encloses scope just as a shape encloses space. An enclosure helps prevent clashing of what exists between different scopes or spaces. No clashing please. Objects, like forms, are a higher level enclosure. More often than not, they each embody one or more functions or shapes respectively. JavaScript, like most programming languages has specific types of objects. JavaScript is really unique in that a function is *also* an object. This may seem odd at first, but the idea is beneficial when considering the importance of scopes.
 
 Long story short, a JavaScript program is essentially a nested tree of functions. As a by-product of functions each enclosing a scope, a JavaScript program can also be thought of as a nested tree of scopes. So when the JavaScript engine executes a particular line of code that has a reference to a value, it works like this in an effort to get the actual value:
 1. look in the target scope for the reference
 2. if not found, look in that scope's parent scope
 3. repeat until the root parent scope is hit
 
-When the reference is found in one of the scopes, it can use the referenced value and continue to do work. This is what we want. If the root scope is hit and the value does not exist, then we have a problem. We will go into detail later regarding this scenario, so just be aware of it.
+When the reference is found in one of the scopes, the engine uses the referenced value and continues to do work. This is what we want. If the root scope is hit and the value does not exist, then we have a problem. We will go into detail later regarding this scenario, so just be aware of it.
 
 Now that we know the anatomy of a JavaScript program is simply a nested tree of scopes, let's add a simple example based on this section's HTML and CSS examples. As you might imagine, HTML has a tag that allows us to add JavaScript just as easily as we added CSS. Welcome to the `<script>` tag. You can add a `<script>` tag to the `<head>` or the `<body>`, but the latter is best practice. Specifically, `<script>` tags should reside just before the closing body, the `</body>`. Here is an updated excerpt from our `index.html` file.
 
@@ -188,15 +188,23 @@ assets
 The browser understands the script tag and its `src` attr and then, you guessed it, the browser automatically downloads it. When completely downloaded, the runtime and engine take over with compilation and execution. Before we look at the contents of our main.js file, let's update the `<button>` HTML to more easily use it with JavaScript. Now, with two added attrs, it looks like this:
 
 ```
-<button id='toggle-button' onclick='toggleStyle()'>
+<button id='toggle-button' onclick='toggleOpacity()'>
 ```
 
-The `id` attr is how we identify an element in our HTML as unique to our document. An id means we intend there to be only one element with a specific name. A unique id enables us to gain a reference to the element it is attached to via JavaScript. With this element reference in JavaScript, we can use its API to do all sorts of things.
+The `id` attr is how we identify an element in our HTML as unique to our document. An id means we intend there to be only one element with a specific name. A unique id enables us to gain a reference to the element that it is attached to via JavaScript. With this element reference in JavaScript, we can use its API to do all sorts of things.
 
-The result of clicking the `toggle-button` button during run-time results in the function named `toggleStyle` to be called via `()`. This results in the function's contents being executed by the engine. Behind the scenes, the runtime APIs are used to transform the hardware input (mouse, trackpad, stylus, touch, etc.) to event queue work. The event loop then picks up the resulting package and it gets placed on the stack. This all happens in milliseconds or even microseconds when the event loop is not blocked. Lastly, the engine actually executes the function contents. Now is a good time to look at those contents.
+The result of clicking the `toggle-button` button during run-time results in the function named `toggleOpacity` to be called via `()`. This results in the function's contents being executed by the engine. Behind the scenes, the runtime APIs transform the hardware input (mouse, trackpad, stylus, touch, etc.) to event queue work. The event loop then picks up the resulting package and it gets placed on the stack. This all happens in milliseconds or even microseconds when the event loop is not blocked. Lastly, the engine actually executes the function contents. Now is a good time to look at those contents.
 
 ```
-function toggleStyle() {
+function toggleOpacity() {
   var toggleButton = document.getElementById('toggle-button');
+  var currentOpacity = toggleButton.style.opacity;
+  if(currentOpacity === 1) {
+    toggleButton.style.opacity = .5;
+  } else {
+    toggleButton.style.opacity = 1;
+  }
 }
 ```
+
+
