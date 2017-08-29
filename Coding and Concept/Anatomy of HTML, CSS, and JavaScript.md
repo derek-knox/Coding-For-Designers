@@ -1,4 +1,4 @@
-# Anatomy of a Source Code File
+# Anatomy of HTML, CSS, and JavaScript
 
 This section will be the first where we really start digging into the existing languages of HTML, CSS, and JavaScript. We have covered quite a bit in an effort to get to this point. Specifically, we learned about the powerful concepts of binary and states in addition to encoding and decoding in the Breaking Barriers chapter. We learned in Structure, Style, and Behavior how each layer plays a valuable and distinct role in an interactive creation. In Coding and Visual Design, we mapped familiar design-specific concepts to coding concepts to help establish a knowledge bridge. More recently, we introduced programming-specific concepts to help shape your understanding of how code lives and communicates in real-time.
 
