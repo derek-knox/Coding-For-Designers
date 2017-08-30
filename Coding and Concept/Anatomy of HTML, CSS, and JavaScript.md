@@ -205,14 +205,27 @@ The result of clicking the button above during run-time results in the function 
 
 ```
 function toggleImageOpacity() {
+
+  // Reference work
   var imageToToggle = document.getElementById('image-to-toggle');
   var currentOpacity = getComputedStyle(imageToToggle).opacity;
+  
+  // Core work
   if(currentOpacity == 1) {
     imageToToggle.style.opacity = .5;
   } else {
     imageToToggle.style.opacity = 1;
   }
+  
 }
 ```
 
-Do not worry if you don't understand everything in the above function as we'll take a deep dive in the next section *Work. Right. Better.*.
+Do not worry if you cannot understand everything in the above function as we'll take a deep dive in the next section *Work. Right. Better.*. You should however be able to grasp what is happening each time the `toggleImageOpacity` function executes. The image's opacity style is simply toggled between 50% and 100% and the function is structured in two sections:
+1. reference work
+2. core work
+
+A function is not always structed this way by a coder, but compilation time essentially enforces it. We don't go into the details of compilation as previously mentioned, but look into *JavaScript hoisting* if you want to dig deeper. Just save yourself some pain and declare your identifiers (`var`s and `function`s) at the top of their parent function.
+
+Admittedly, this program is tiny as it is comprised of only one small function. Take note however that programs of all sizes leverage this structure since they are just functions nested in functions. We will consider larger programs later in the *Coding and JavaScript* chapter to see this in action.
+
+Before advancing to the next chapter though, we'll dive really deep into the `toggleImageOpacity` function. The function works, but we can do better. Time for *Work. Right. Better.*.
