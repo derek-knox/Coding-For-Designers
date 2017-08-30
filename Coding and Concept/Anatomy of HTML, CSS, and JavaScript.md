@@ -228,4 +228,4 @@ A function is not always structed this way by a coder, but compilation time esse
 
 Admittedly, this program is tiny as it is comprised of only one small function. Take note however that programs of all sizes leverage this structure since they are just functions nested in functions. We will consider larger programs later in the *Coding and JavaScript* chapter to see this in action.
 
-Before advancing to the next chapter though, we'll dive really deep into the `toggleImageOpacity` function. The function works, but we can do much better. We will simultanously cover a few JavaScript concepts to aid our transition into the *Coding and JavaScript* chapter.
+Before advancing to the next chapter though, we'll dive really deep into the `toggleImageOpacity` function. The function works, but we can do much better.
