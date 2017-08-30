@@ -208,7 +208,7 @@ function toggleImageOpacity() {
 
   // Reference work
   var imageToToggle = document.getElementById('image-to-toggle');
-  var currentOpacity = getComputedStyle(imageToToggle).opacity;
+  var currentOpacity = window.getComputedStyle(imageToToggle).opacity;
   
   // Core work
   if(currentOpacity == 1) {
