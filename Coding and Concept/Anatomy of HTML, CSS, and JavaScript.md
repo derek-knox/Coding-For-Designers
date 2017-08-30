@@ -220,7 +220,7 @@ function toggleImageOpacity() {
 }
 ```
 
-Do not worry if you cannot understand everything in the above function as we'll take a deep dive in the next section *Work. Right. Better.*. You should however be able to grasp what is happening each time the `toggleImageOpacity` function executes. The image's opacity style is simply toggled between 50% and 100% and the function is structured in two sections:
+Do not worry if you cannot understand everything in the above function as we'll cover it in the next section of this chapter. You should however be able to grasp what is happening each time the `toggleImageOpacity` function executes. The image's opacity style is simply toggled between 50% and 100% and the function is structured in two sections:
 1. reference work
 2. core work
 
