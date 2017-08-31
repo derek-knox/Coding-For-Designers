@@ -153,9 +153,9 @@ With either solution, both our `<div>`s will have dark backgrounds and the text 
 
 As a creation evolves, feel free to change the names of classes if it makes sense to. A class name may make less sense as new property-value pairs are added or removed. Over time you will leverage established naming practices and/or develop your own to gain an intuitive feel of when to update a name. Additionally, you'll develop a sense of how best to group certain property-value pairs. Just know that it is extremely common to change names as a creation evolves.
 
-Thus far we've covered the anatomy of HTML and CSS, so now it is time for JavaScript. In a way we already looked at the anatomy of JavaScript in the *Elements and Elements* section. That breakdown was a bit more granular and we'll revisit the specifics in the next chapter *Coding and JavaScript*. For now we will look at the high level anatomy of a JavaScript file. We will focus on shape, space, and form or more precisely function, scope, and object.
+Thus far we've covered the anatomy of HTML and CSS, so now it is time for JavaScript. In a way we already looked at the anatomy of JavaScript in the *Elements and Elements* section. That breakdown was a bit more granular and we'll revisit the specifics in the next chapter *Coding and JavaScript*. For now we will look at the high level anatomy of a JavaScript program. We will focus on shape, space, and form or more precisely function, scope, and object.
 
-As you already know, a function is like a shape because it encloses scope just as a shape encloses space. An enclosure helps prevent clashing of what exists between different scopes or spaces. No clashing please. Objects, like forms, are a higher level enclosure. More often than not, they each embody one or more functions or shapes respectively. JavaScript, like most programming languages has specific types of objects. JavaScript is really unique in that a function is *also* an object. This may seem odd at first, but the idea is beneficial when considering the importance of scopes.
+As you already know, a function is like a shape because it encloses scope just as a shape encloses space. An enclosure helps prevent clashing of what exists between different scopes or spaces. No clashing please. Objects, like forms, are a higher level enclosure. More often than not, they each embody one or more functions or shapes respectively. JavaScript, like the majority of programming languages has specific types of objects. JavaScript is really unique however in that a function is *also* an object. This may seem odd at first, but the idea is beneficial when considering the importance of function scopes.
 
 Long story short, a JavaScript program is essentially a nested tree of functions. As a by-product of functions each enclosing a scope, a JavaScript program can also be thought of as a nested tree of scopes. So when the JavaScript engine executes a particular line of code that has a reference to a value, it works like this in an effort to get the actual value:
 1. look in the target scope for the reference
@@ -164,7 +164,7 @@ Long story short, a JavaScript program is essentially a nested tree of functions
 
 When the reference is found in one of the scopes, the engine uses the referenced value and continues to do work. This is what we want. If the root scope is hit and the value does not exist, then we have a problem. We will go into detail later regarding this scenario, so just be aware of it.
 
-Now that we know the anatomy of a JavaScript program is simply a nested tree of scopes, let's add a simple example based on this section's HTML and CSS examples. As you might imagine, HTML has a tag that allows us to add JavaScript just as easily as we added CSS. Welcome to the `<script>` tag. You can add a `<script>` tag to the `<head>` or the `<body>`, but the latter is best practice. Specifically, `<script>` tags should reside just before the closing body, the `</body>`. Here is an updated excerpt from our `index.html` file.
+Now that we know the anatomy of a JavaScript program is simply a nested tree of scopes, let's add a simple example based on this section's HTML and CSS examples. As you might imagine, HTML has a tag that allows us to add JavaScript just as easily as we added CSS. Welcome to the `<script>` tag. You can add a `<script>` tag to the `<head>` or the `<body>`, but the latter is best practice for non-blocking reasons. Specifically, `<script>` tags should reside just before the closing body, the `</body>`. Here is an updated excerpt from our `index.html` file.
 
 ```
     <!-- The previous HTML code from our index.html file is excluded for brevity -->
@@ -185,15 +185,15 @@ assets
     main.js
 ```
 
-The browser understands the script tag and its `src` attr and then, you guessed it, the browser automatically downloads it. When completely downloaded, the runtime and engine take over with compilation and execution. Before we look at the contents of our main.js file, let's update our `<img>` and `<button>` HTML to more easily use each with JavaScript.
+The browser understands the script tag and its `src` attr and then, you guessed it, the browser automatically downloads it. When completely downloaded, the runtime and engine take over with compilation and execution of it. Before we look at the contents of our main.js file, let's update our `<img>` and `<button>` HTML to more easily use each with JavaScript.
 
-Updated `<img>`:
+Updated `<img>` becomes:
 
 ```
 <img id='image-to-toggle' src='assets/img/cover-coding-for-designers.jpg'></img>
 ```
 
-Updated `<button>`:
+Updated `<button>` becomes:
 
 ```
 <button onclick='toggleImageOpacity()'>Toggle Image Opacity</button>
