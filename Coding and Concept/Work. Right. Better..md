@@ -10,7 +10,7 @@ In this section we will explore the notion of *right* and *better* specifically 
 
 Is the code better for beginner and junior coders? Is it better for advanced and senior coders? Is it better for the computer? Sometimes the solution is ideal for all, but this is not always the case. For instance an uncommon but advantageous language feature may be common sense to an advanced coder, but confusing to a junior coder. The code is better for one group and less so for the other. Similarly, when performance is a bottleneck in a program, better means sacrificing coder readability. This should be avoided, but it is sometimes necessary. This latter example translates to an improvement in compilation time and/or execution time, but not authoring time. As you'll learn in time, programming is about trade-offs.
 
-Below is the `toggleImageOpacity` function with added comments. They are numbered for reference as we will soon be investigating each in detail. After we understand exactly what is going on in the function, line by line, we will entertain improvement ideas.
+Below is the `toggleImageOpacity` function with added comments. They are numbered for reference as we will soon be investigating each in detail. After we understand each line of code in the function, we will entertain improvement ideas.
 
 ```
 // 1. function declaration with toggleImageOpacity identifier
