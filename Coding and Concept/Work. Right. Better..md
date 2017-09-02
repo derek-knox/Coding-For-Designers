@@ -25,7 +25,7 @@ function toggleImageOpacity() {
   // 4. 'if' portion of an if/else conditional statement
   if(currentOpacity == 1) {
   
-    // 5. 
+    // 5. sub-property value assignment of imageToToggle reference value
     imageToToggle.style.opacity = .5;
   
   }
@@ -33,7 +33,7 @@ function toggleImageOpacity() {
   // 6. 'else' portion of an if/else conditional statement
   else {
   
-    // 7.
+    // 7. sub-property value assignment of imageToToggle reference value
     imageToToggle.style.opacity = 1;
     
   }
