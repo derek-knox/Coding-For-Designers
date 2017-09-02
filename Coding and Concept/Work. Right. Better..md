@@ -43,6 +43,13 @@ function toggleImageOpacity() {
 }
 ```
 
+Now that the numbered comments provide a bit more context to each associated line of code, let's take a step deeper into each.
+
+```
+// 1. function declaration using toggleImageOpacity identifier
+function toggleImageOpacity() {  }
+```
+
 If it is not already obvious, identifers are invaluable. They provide a reference to a particular value that may be used in other parts of the code. The reference may be used in a sync or async fashion too. Identifiers are your friend.
 
 Above we saw one example of a function identifier and two examples of variable identifers. If a function expected one argument value, that function's signature would define an argument identifier. Think of an argument identifier as a shortcut for creating a variable identifier. Here is an example function named `setImageOpacity` with an argument identifier named `newOpacityValue`. The value passed at run-time is automatically assigned to it.
