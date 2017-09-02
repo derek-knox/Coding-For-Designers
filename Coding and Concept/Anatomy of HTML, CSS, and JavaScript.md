@@ -122,9 +122,11 @@ Now is the time to look at the anatomy of a `.css` file which, for our purpose, 
 
 Each class definition is denoted by a preceding `.` so our `dark-background` class becomes `.dark-background` within our `.css` file. Then, similar to the JavaScript scope concept we visited earlier, the property-value pairs are defined between the `{` and `}` characters. The `{` and `}` define the scope, the space and enclosure, where one or more property-value pairs are associated with a particular class.
 
-Each property-value pair consists of a property name that uses the same rules for class naming suggested above, followed by a `:` and then an actual value. With a class and its valid property-value pairs defined, any element that has a `class` by the same name will get the styles applied. Pretty cool and very reusable.
+Each property-value pair consists of a property name that uses the same rules for class naming suggested above, followed by a `:` and then an actual value. For ease of learning, I wish the `:` was `=` instead, but I digress. With a class and its valid property-value pairs defined, any element that has a `class` by the same name will get the styles applied. Pretty damn cool and very reusable.
 
-Since browsers typically default the color of text to black, our applied `dark-background` class makes our text blend with the dark background. We want to see the text too so we can fix this by updating our class definition to use another common property named `color`. Again, we won't go over all the valid properties that are possible as you, like other coders, can reference resources. The takeaway is the relationship of property-value pairs within class definitions. Here is one approach to update our `style.css` file:
+If it isn't already obvious, each browser sets default styles for elements to provide some baseline style. More often than not, you'll want to set your own styles to override the defaults. This is why we created `style.css`.
+
+Since browsers typically default the color of text to black, our applied `dark-background` class makes our text blend with the dark background. We want to see the text too so we can fix this by updating our class definition to use another common property named `color`. Again, we won't go over all the valid properties that are possible as you, like other coders and designers, can reference resources. The takeaway is the relationship of property-value pairs within class definitions. Here is one approach to update our `style.css` file:
 
 ```
 .dark-background {
@@ -145,19 +147,19 @@ Another approach could be:
 }
 ```
 
-Our `<div>`s would need to be updated for this second solution. Take note that spaces are used between class names to enable more than one class style to be applied. This is a very powerful aspect of CSS, one which you will grasp more intuitively in time. Updated HTML using this second solution is below:
+Our `<div>`s would need to be updated for the second solution. Take note that spaces are used between class names to enable more than one class style to be applied to a single element. This is a very powerful aspect of CSS, one which you will grasp more intuitively in time. Updated HTML using the second solution is below:
 
 ```
 <div class='dark-background light-text'>
 ```
 
-With either solution, both our `<div>`s will have dark backgrounds and the text within them will be light. You might wonder how the text of the child elements can be light without explicitly setting styles on them. This is where the *cascading* part of cascading style sheets comes in. Think of cascading as style inheritence. Cascading is extremely powerful and you will learn its nuances in time.
+With either solution, both our `<div>`s will have dark backgrounds and the text within them will be light. You might wonder how the text of the child elements can be light without explicitly setting styles on them. This is where the *cascading* part of cascading style sheets comes in. Think of cascading as style inheritence. Long story short, a majority of property-value styles can be inherited regardless of nested element depth. Cascading is extremely powerful and you will learn its nuances in time.
 
-As a creation evolves, feel free to change the names of classes if it makes sense to. A class name may make less sense as new property-value pairs are added or removed. Over time you will leverage established naming practices and/or develop your own to gain an intuitive feel of when to update a name. Additionally, you'll develop a sense of how best to group certain property-value pairs. Just know that it is extremely common to change names as a creation evolves.
+As a creation evolves, feel free to change the names of classes if it makes sense to. A class name may make less sense as new property-value pairs are added or removed. Over time you will leverage established naming practices and/or develop your own to gain an intuitive feel of when to update a name. Additionally, you'll develop a sense of how best to group certain property-value pairs for reuse by different elements. Just know that it is extremely common to change names as a creation evolves.
 
-Thus far we've covered the anatomy of HTML and CSS, so now it is time for JavaScript. In a way we already looked at the anatomy of JavaScript in the *Elements and Elements* section. That breakdown was a bit more granular and we'll revisit the specifics in the next chapter *Coding and JavaScript*. For now we will look at the high level anatomy of a JavaScript program. We will focus on shape, space, and form or more precisely function, scope, and object.
+Thus far we've covered the anatomy of HTML and CSS, so now it is time for JavaScript. In a way we already looked at the anatomy of JavaScript in the *Elements and Elements* section. That breakdown was a bit more granular though and we'll revisit the specifics in the next chapter *Coding and JavaScript*. For now we will look at the high level anatomy of a JavaScript program. We will focus on shape, space, and form or more precisely function, scope, and object.
 
-As you already know, a function is like a shape because it encloses scope just as a shape encloses space. An enclosure helps prevent clashing of what exists between different scopes or spaces. No clashing please. Objects, like forms, are a higher level enclosure. More often than not, they each embody one or more functions or shapes respectively. JavaScript, like the majority of programming languages has specific types of objects. JavaScript is really unique however in that a function is *also* an object. This may seem odd at first, but the idea is beneficial when considering the importance of function scopes.
+As you already know, a function is like a shape because it encloses scope just as a shape encloses space. An enclosure helps prevent clashing of what exists between different scopes or spaces. No clashing please. Objects, like forms, are a higher level enclosure. More often than not, they each embody one or more functions or shapes respectively. JavaScript, like the majority of programming languages, has specific types of objects. JavaScript is really unique however in that a function is *also* an object. This may seem odd at first, but the idea is beneficial when considering the importance of function scopes.
 
 Long story short, a JavaScript program is essentially a nested tree of functions. As a by-product of functions each enclosing a scope, a JavaScript program can also be thought of as a nested tree of scopes. So when the JavaScript engine executes a particular line of code that has a reference to a value, it works like this in an effort to get the actual value:
 1. look in the target scope for the reference
@@ -187,7 +189,7 @@ assets
     main.js
 ```
 
-The browser understands the script tag and its `src` attr and then, you guessed it, the browser automatically downloads it. When completely downloaded, the runtime and engine take over with compilation and execution of it. Before we look at the contents of our main.js file, let's update our `<img>` and `<button>` HTML to more easily use each with JavaScript.
+The browser understands the script tag and its `src` attr and then, you guessed it, the browser automatically downloads it. When completely downloaded, the runtime and engine take over with compilation and execution of its contents. Before we look at the contents of our main.js file, let's update our `<img>` and `<button>` HTML to more easily use each with JavaScript.
 
 Updated `<img>` becomes:
 
@@ -222,7 +224,7 @@ function toggleImageOpacity() {
 }
 ```
 
-Do not worry if you cannot understand everything in the above function as we'll cover it in the next section of this chapter. You should however be able to grasp what is happening each time the `toggleImageOpacity` function executes. The image's opacity style is simply toggled between 50% and 100% where the function is structured in two sections:
+Do not worry if you cannot understand everything in the above function as we'll cover it in great detail in the next section. You should however be able to grasp what is happening each time the `toggleImageOpacity` function executes. The image's opacity style is simply toggled between 50% and 100% where the function is structured in two sections:
 1. reference work
 2. core work
 
@@ -230,4 +232,4 @@ A function is not always structed this way by a coder, but compilation time esse
 
 Admittedly, this program is tiny as it is comprised of only one small function. Take note however that programs of all sizes leverage this structure since they are just functions nested in functions. We will consider larger programs later in the *Coding and JavaScript* chapter to see this in action.
 
-Before advancing to the next chapter though, we'll dive really deep into the `toggleImageOpacity` function. The function works, but we can do much better.
+Before advancing to the next chapter though, we'll dive really deep into the `toggleImageOpacity` function. The function works, but we can improve it.
