@@ -2,7 +2,7 @@
 
 This section will be the first where we really start digging into the existing languages of HTML, CSS, and JavaScript. We have covered quite a bit in an effort to get to this point. Specifically, we learned about the powerful concepts of binary and states in addition to encoding and decoding in the Breaking Barriers chapter. We learned in Structure, Style, and Behavior how each layer plays a valuable and distinct role in an interactive creation. In Coding and Visual Design, we mapped familiar design-specific concepts to coding concepts to help establish a knowledge bridge. More recently, we introduced programming-specific concepts to help shape your understanding of how code lives and communicates in real-time.
 
-We know code is a system for converting meaning between forms and HTML, CSS, and JavaScript are just specific forms. The web browser knows how to decode HTML into divisions of content and render them. It also knows how to decode CSS property-value pairs to adorn the HTML elements with style and functionality. Lastly, we know a runtime and engine understand how to decode and execute JavaScript which enables a living and interactive creation to exist.
+We know code is a system for converting meaning between forms and HTML, CSS, and JavaScript are just specific forms. HTML is a markup language used to define structure. CSS is a style language used to define style. JavaScript is a scripting language used to define behavior. The web browser knows how to decode HTML into divisions of content and render them. It also knows how to decode CSS property-value pairs to adorn the HTML elements with style and functionality. Lastly, we know a runtime and engine understand how to decode and execute JavaScript which enables a living and interactive creation to exist.
 
 We will now start to dig into HTML, CSS, and JavaScript since we have a greater understanding of how the various concepts we have covered play-off each other. Your mental model should be primed.
 
@@ -13,14 +13,14 @@ Let's squash a myth real quick. Designers and other non-coders new to coding thi
 
 For 2D and the web, that means we need to know the difference between HTML structure, CSS styling, and JavaScript behavior. We have this distinction covered. Let's dig into number two and three.
 
-In keeping with the structure, style, and behavior order, let's look at the anatomy of each file type starting with HTML which uses the `.html` file extension. Our file is titled `index.html` to align with a best practice naming convention.
+In keeping with the structure, style, and behavior order, let's look at the anatomy of each starting with HTML. We will title our file `index.html` to align with a best practice naming convention.
 
 ```
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Coding for Designers Page</title>
+    <title>Coding for Designers</title>
   </head>
   <body>Content goes here.</body>
 </html>
@@ -42,17 +42,17 @@ This is the most structurally simple, complete, and valid HTML a browser uses. L
     <meta charset="utf-8">
     
     <!-- Define the page title - useful for the browser, other programs, and search engines -->
-    <title>Coding for Designers Page</title>
+    <title>Coding for Designers</title>
     
   </head>
   
-  <!-- Define the page content - what gets rendered for viewing and interacting -->
+  <!-- Define the page content - what gets rendered for viewing and user interaction -->
   <body>Content goes here.</body>
   
 </html>
 ```
 
-There are many types of element tags that can be added in both the `<head>` and `<body>` element tags. As mentioned earlier, we will not go over them here as you, just like other coders, can use other resources to dig deeper. We will reveal the most common ones for the `<body>` however to fulfill the *common subset* bullet above. Instead of comments I will use English inline with the tags to show how the elements wrap content. The content is visible to the user where the tags that wrap the content are not. Remember the tags simply tell the browser your content structure. As a result the spacing between elements is not important, the browser understands the structure regardless. Spacing within content is what matters.
+There are many types of element tags that can be added in both the `<head>` and `<body>` element tags. As mentioned earlier, we will not go over them here as you, just like other coders, can use other resources to dig deeper. We will reveal the most common ones for the `<body>` however to fulfill the *common subset* bullet above. Instead of comments I will use English inline with the tags to show how the elements wrap content. The content is visible to the user where the tags that wrap the content are not. Remember the tags simply tell the browser your content structure. The spacing between elements is not important, the browser understands the structure regardless. Spacing *within* content is what matters. Typically however spacing, tabs, and new lines do exist between elements to improve human readability. You could imagine if the below HTML elements were all on a single line, the browser wouldn't care, but we would have a much tougher time seeing the parent-child relationships.
 
 ```
 <body>
@@ -69,9 +69,9 @@ There are many types of element tags that can be added in both the `<head>` and 
 </body>
 ```
 
-A `<div>` tag simpy denotes a division of content where the layout of each division is dependent on style. This will likely become your most used element tag. The `<h1>`, `<p>`, `<button>`, and `<h2>` tags are self-expanatory, but the `<img>` and `<a>` tags are less so. This is because they are each lacking *attributes*. We'll use the shortcut *attrs* moving forward. All elements can leverage attrs, but these latter two elements require them to function as designed.
+A `<div>` tag simpy denotes a division of content where the layout (position and dimension) of each division is dependent on style. This will likely become your most used element tag. The `<h1>`, `<p>`, `<button>`, and `<h2>` tags are self-expanatory, but the `<img>` and `<a>` tags are less so. This is because they are each lacking *attributes*. We'll use the shortcut *attrs* moving forward. All elements can leverage attrs, but these latter two elements *require* them to function as designed.
 
-Think of attrs as APIs. Attrs enable the coder to achieve functionality based on a shared understanding of designed use. They are also where we start to transition toward CSS via the `class` attr. First we will update the `<img>` and `<a>` tags with each of their most useful attrs to attain the desired functionality.
+Think of attrs as APIs. Attrs enable the coder to achieve functionality based on a shared understanding of designed use. They are also where we start to transition toward CSS via the `class` attr. First we will update the `<img>` and `<a>` tags with each of their most useful attrs.
 
 So `<img></img>` becomes `<img src='assets/img/cover-coding-for-designers.jpg'></img>` where the `src` attr is set with `=` to the value `assets/img/cover-coding-for-designers.jpg` between quotes. The browser knows how the image tag is designed to work, so it automatically downloads the image provided by the `src` attr, which is the path to the asset. Upon completion of the download, the tag embodies the downloaded image. This same functionality can be achieved using JavaScript only, but we'd have to write more code. Remember, APIs provide a tradeoff and a simpler way to do work.
 
@@ -79,11 +79,13 @@ Additionally, `<a>hyperlink</a>` becomes `<a href='http://www.codingfordesigners
 
 The takeaway is that the browser provides useful APIs via attrs applied to elements. Now that we've covered the basic implementation of HTML structure, let's dig into style. Welcome to the `class` attr.
 
-The `class` attr gives you the creative power to style content. We will start by giving each `<div>` the same style. So `<div>` becomes `<div class='dark-background'>` where the `class` attr is set with `=` to the value `dark-background`. The `dark-background` name value could be virtually anything we want but there are rules for valid names. Make it easier on yourself and stick with:
+The `class` attr gives you the creative power to style content. We will start by giving each `<div>` the same style. So `<div>` becomes `<div class='dark-background'>` where the `class` attr is set with `=` to the value `dark-background`. The `dark-background` name value could be virtually anything we want, but there are rules for valid names. Make it easier on yourself and stick with:
 - lowercase English characters
 - use `-` instead of spaces
 
-Now that we have set a `dark-background` value for the `class` attr, how do we actually define the style for the browser to render it? Remember when I mentioned that other tags can be added to the `<head>`? There is a `<link>` tag that allows us to link another file to our web page. Perfect. Our updated `<head>` is below and it now has a `<link>` tag. The attrs of it tell the browser to download and use a CSS file where our defined styles reside, including `dark-background`.
+Now that we have set a `dark-background` value for the `class` attr, how do we actually define the style for the browser to render it? Remember when I mentioned that other tags can be added to the `<head>`?
+
+There is a `<link>` tag that allows us to link another file to our web page. Perfect. Our updated `<head>` is below and it now has a `<link>` tag. The attrs of it tell the browser to download and use a CSS file where our defined styles reside, including `dark-background`.
 
 ```
 <head>
@@ -92,7 +94,7 @@ Now that we have set a `dark-background` value for the `class` attr, how do we a
   <!-- rel defines the href relationship type - href defines the hyperlink reference -->
   <link rel="stylesheet" href="assets/css/style.css">
   
-  <title>Coding for Designers Page</title>
+  <title>Coding for Designers</title>
 </head>
 ```
 
