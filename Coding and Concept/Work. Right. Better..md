@@ -55,8 +55,8 @@ In snippet one, the `toggleImageOpacity` function declaration, there are four co
 2. `toggleImageOpacity` - custom identifier for referencing a function by name
 3. `()` - *function signature input* defining how to call the function to do work
 4. `{` - opening curly brace for declaring the beginning of the *function body*
-  - `}` - a closing curly brace is expected after the *function body* for declaring its end
-  - the `{` and `}` define the scope boundary of a function
+    - `}` - a closing curly brace is expected after the *function body* for declaring its end
+    - the `{` and `}` define the scope boundary of a function
 
 If it is not already obvious, identifers are invaluable. They provide a reference to a particular value that may be used in other parts of the code. The reference may be used in a sync or async fashion too. Identifiers are your friend.
 
