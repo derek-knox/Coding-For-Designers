@@ -30,16 +30,19 @@ function toggleImageOpacity() {
     // 5. sub-property assignment using imageToToggle reference
     imageToToggle.style.opacity = .5;
   
+  // 6. end of 'if'
   }
   
-  // 6. 'else' portion of an if/else conditional statement
+  // 7. 'else' portion of an if/else conditional statement
   else {
   
-    // 7. sub-property assignment using imageToToggle reference
+    // 8. sub-property assignment using imageToToggle reference
     imageToToggle.style.opacity = 1;
-    
-  }
   
+  // 9. end of 'else' 
+  }
+
+// 10. end of toggleImageOpacity function
 }
 ```
 
@@ -50,13 +53,31 @@ Now that the numbered comments provide a bit more context to each associated lin
 function toggleImageOpacity() {
 ```
 
-In snippet one, the `toggleImageOpacity` function declaration, there are four core parts comprising the line of code:
+In snippet one there are four core parts comprising the line of code:
 1. `function` - keyword reserved by JavaScript denoting a function
 2. `toggleImageOpacity` - custom identifier for referencing a function by name
 3. `()` - *function signature input* defining how to call the function to do work
 4. `{` - opening curly brace for declaring the beginning of the *function body*
     - `}` - a closing curly brace is expected after the *function body* for declaring its end
     - the `{` and `}` define the scope boundary of a function
+
+The above four parts make up the anatomy of a function. First, the `function` keyword tells the JavaScript engine your intention to define a function. Second, a custom identifier is set to enable other code to properly reference and call the function by name. Third, the function's signature input defines what arguments the function accepts. No arguments are expected for `toggleImageOpacity`. Lastly, the `{` and `}` define the bounds of the function body. Some functions, just prior to closing the function body `return` a value too, but this will be covered in the next chapter. 
+
+With respect to making snippet one *right* and *better*, there is nothing we can do. Let's move to snippet two.
+
+```
+// 2. variable declaration and assignment using imageToToggle identifier
+var imageToToggle = document.getElementById('image-to-toggle');
+```
+
+In snippet two there are five parts comprising the line of code:
+1. `var` - keyword reserved by JavaScript denoting a variable aka a value reference
+2. `imageToToggle` - custom identifier for referencing a variable by name
+3. `=` - *assignment operator* that assigns the value on its right to the identifer on its left
+4. `document.getElementById('image-to-toggle')` - browser API for referencing a specific HTML element
+5. `;` - character reserved by JavaScript denoting the end of a code statement
+
+The above five parts...
 
 If it is not already obvious, identifers are invaluable. They provide a reference to a particular value that may be used in other parts of the code. The reference may be used in a sync or async fashion too. Identifiers are your friend.
 
