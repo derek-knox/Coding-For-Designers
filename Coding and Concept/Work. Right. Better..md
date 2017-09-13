@@ -27,7 +27,7 @@ function toggleImageOpacity() {
   // 4. 'if' portion of an if/else conditional statement
   if(currentOpacity == 1) {
   
-    // 5. sub-property assignment using imageToToggle reference
+    // 5. nested property assignment using imageToToggle reference
     imageToToggle.style.opacity = .5;
   
   // 6. end of 'if'
@@ -36,7 +36,7 @@ function toggleImageOpacity() {
   // 7. 'else' portion of an if/else conditional statement
   else {
   
-    // 8. sub-property assignment using imageToToggle reference
+    // 8. nested property assignment using imageToToggle reference
     imageToToggle.style.opacity = 1;
   
   // 9. end of 'else' 
@@ -61,7 +61,7 @@ In snippet one there are four core parts comprising the line of code:
     - `}` - a closing curly brace is expected after the *function body* for declaring its end
     - the `{` and `}` define the scope boundary of a function
 
-The above four parts make up the anatomy of a function. First, the `function` keyword tells the JavaScript engine your intention to define a function. Second, a custom identifier is set to enable other code to properly reference and call the function by name. Third, the function's signature input defines what arguments the function accepts. No arguments are expected for `toggleImageOpacity`. Lastly, the `{` and `}` define the bounds of the function body. Some functions, just prior to closing the function body `return` a value too, but this will be covered in the next chapter. 
+The above four parts make up the anatomy of a function. First, the `function` keyword tells the JavaScript engine your intent to define a function. Second, a custom identifier is set to enable other code to properly reference and call the function by name. Third, the function's signature input defines what arguments the function accepts. No arguments are expected for `toggleImageOpacity`. Lastly, the `{` and `}` define the bounds of the function body. Some functions return a value prior to closing the function body too, but this will be covered in the next chapter. 
 
 With respect to making snippet one *right* and *better*, there is nothing we can do. Let's move to snippet two.
 
@@ -79,9 +79,11 @@ In snippet two there are five parts comprising the line of code:
 
 The above five parts...
 
-If it is not already obvious, identifers are invaluable. They provide a reference to a particular value that may be used in other parts of the code. The reference may be used in a sync or async fashion too. Identifiers are your friend.
+If it is not already obvious, identifers are invaluable. They provide a reference to a particular value by name that may be used in other parts of the code. The named reference may be used in a sync or async fashion too. Identifiers are your friend.
 
-Above we saw one example of a function identifier and two examples of variable identifers. If a function expected one argument value, that function's signature would define an argument identifier. Think of an argument identifier as a shortcut for creating a variable identifier. Here is an example function named `setImageOpacity` with an argument identifier named `newOpacityValue`. The value passed at run-time is automatically assigned to it for use inside the function.
+Above we saw the three identifiers `toggleImageOpacity`, `imageToToggle`, and `currentOpacity`. Based on the values assigned, the first became a function identifier while the other two became variable identifiers. If a function expected any number of argument values, that function's signature would define the same amount of argument identifiers. An argument identifier is just a shortcut name to the passed in value, be it a function or variable.
+
+Here is an example function named `setImageOpacity` with an argument identifier named `newOpacityValue`. The value passed at run-time is automatically assigned to it for use inside the function.
 
 ```
 function setImageOpacity(newOpacityValue) {
