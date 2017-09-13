@@ -8,9 +8,9 @@ In programming there is the axiom "make it right before you make it faster". Thi
 
 In this section we will explore the notion of *right* and *better* in reference to the `toggleImageOpacity` function that we recently looked at. The three step process will become second nature as you continue to improve your coding skills.
 
-First and foremost you need the code to *work*. No shit eh? Making it *right* is less obvious, but typically the goal is to achieve the same functionality with less code. Making it *better* is a bit more subjective.
+First and foremost you need the code to *work*. No shit eh? Making it *right* is less obvious, but typically the goal is to achieve the same functionality with less and/or more efficient code. Making it *better* is a bit more subjective.
 
-Is the code better for beginner and junior coders? Is it better for advanced and senior coders? Is it better for the computer? Sometimes the solution is ideal for all, but this is not always the case. For example an advantageous language feature may be common sense to an advanced coder, but confusing to a beginner coder. The code is better for one group and less so for the other. Similarly, when performance is a bottleneck in a program, better may mean sacrificing human readability. This should be avoided, but it is sometimes necessary. This latter example translates to an advantage during compilation time and/or execution time, but a disadvantage during authoring time. Programming is about trade-offs.
+Is the code better for beginner and junior coders? Is it better for advanced and senior coders? Is it better for the computer? Sometimes the solution is ideal for all, but this is not always the case. For example an advantageous language feature may be common sense to an advanced coder, but confusing to a beginner coder. The code is better for one group and less so for the other. Similarly, when performance is a bottleneck in a program, better may mean sacrificing human readability. This should be avoided, but it is sometimes necessary. This latter example translates to an advantage during compilation time and/or execution time, but a disadvantage during authoring time.
 
 Below is the `toggleImageOpacity` function from the previous section with added comments. Each comment is numbered for reference as we will soon be investigating the code line-by-line. After we understand each line of code, we will entertain improvement ideas.
 
@@ -71,15 +71,19 @@ var imageToToggle = document.getElementById('image-to-toggle');
 ```
 
 In snippet two there are five parts comprising the line of code:
-1. `var` - keyword reserved by JavaScript denoting a variable aka a value reference
-2. `imageToToggle` - custom identifier for referencing a variable by name
+1. `var` - keyword reserved by JavaScript denoting a variable aka a named value
+2. `imageToToggle` - custom identifier for referencing a value by name
 3. `=` - *assignment operator* that assigns the value on its right to the identifer on its left
 4. `document.getElementById('image-to-toggle')` - browser API for referencing a specific HTML element
 5. `;` - character reserved by JavaScript denoting the end of a code statement
 
 The above five parts...
 
-If it is not already obvious, identifers are invaluable. They provide a reference to a particular value by name that may be used in other parts of the code. The named reference may be used in a sync or async fashion too. Identifiers are your key to getting specific work done at specific times.
+If it is not already obvious, identifers are invaluable. They provide a reference to a particular value by name that may be used in other parts of the code. The named reference may be used in a sync or async fashion too. Identifiers are your key to getting specific work done at specific times. A value is denoted in one of two ways:
+1. primitive
+2. reference
+
+We will dive deeper into this in the next chapter, but the general idea is that a reference value is one that may parent other values where a primitive value will not. Put another way, a reference value may be considered "complex" where a primitive value may be considered "simple". 
 
 Above we saw the three identifiers `toggleImageOpacity`, `imageToToggle`, and `currentOpacity`. Based on the values assigned to each, the first became a function identifier while the other two became variable identifiers. If a function expected any number of argument values, that function's signature would define the same amount of argument identifiers. An argument identifier is just a shortcut name to the passed in value, be it a function or variable.
 
