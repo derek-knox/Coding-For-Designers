@@ -48,12 +48,11 @@ function toggleImageOpacity() {
 
 Now that the numbered comments provide a bit more context to each associated line of code, let's take a step deeper into each snippet.
 
+In snippet one there are four core parts comprising the line of code:
 ```
 // 1. function declaration using toggleImageOpacity identifier
 function toggleImageOpacity() {
 ```
-
-In snippet one there are four core parts comprising the line of code:
 1. `function` - keyword reserved by JavaScript denoting a function
 2. `toggleImageOpacity` - custom identifier for referencing a function by name
 3. `()` - *function signature input* defining how to call the function to do work
@@ -70,8 +69,6 @@ In snippet two there are five core parts comprising the line of code:
 // 2. variable declaration and assignment using imageToToggle identifier
 var imageToToggle = document.getElementById('image-to-toggle');
 ```
-
-In snippet two there are five parts comprising the line of code:
 1. `var` - keyword reserved by JavaScript denoting a variable
 2. `imageToToggle` - custom identifier for referencing a value by name
 3. `=` - *assignment operator* that assigns the value on its right to the identifer on its left
@@ -86,9 +83,16 @@ With respect to making snippet two *more right*, there is one other thing we cou
 1. never changed
 2. always remained in the document
 
-Additionally, this cached `imageToToggle` value could be valuable to other code within our program. If this was the case then the variable declaration wouldn't leverage the scope just outside the `toggleImageOpacity`'s scope, but could instead leverage the singleton design pattern like we mentioned in the Principles and Patterns section. For us currently though, this is overkill so we'll leave it as is. 
+Additionally, this cached `imageToToggle` identifier's value could be useful to other code within our program. If this was the case then the variable wouldn't exist the scope just outside the `toggleImageOpacity`'s scope, but could instead leverage another scope through the singleton design pattern We mentioned this approach in the Principles and Patterns section. This approach is outside the scope of this book and overkill for our purpose.
 
-A case could be made for making it *better* 
+We'll leave the snippet as is for simplicity and because there isn't anything *better* we can do.
+
+In snippet three there are five core parts comprising the line of code:
+```
+  // 3. variable declaration and assignment using currentOpacity identifier
+  var currentOpacity = window.getComputedStyle(imageToToggle).opacity;
+```
+Each part reflects the same breakdown as snippet two so we won't go into detail here. However, the suggestion for caching the variable identifier outside the function...
 
 If it is not already obvious, identifers are invaluable. They provide a reference to a particular value by name that may be used in other parts of the code. The named reference may be used in a sync or async fashion too. Identifiers are your key to getting specific work done at specific times. A value is denoted in one of two ways:
 1. primitive
