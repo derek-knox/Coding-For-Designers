@@ -86,9 +86,9 @@ With respect to making snippet two *more right*, there is one other thing we cou
 1. never changed
 2. always remained in the document
 
-Additionally, this cached `imageToToggle` could be valuable to other code within our program. 
+Additionally, this cached `imageToToggle` value could be valuable to other code within our program. If this was the case then the variable declaration wouldn't leverage the scope just outside the `toggleImageOpacity`'s scope, but could instead leverage the singleton design pattern like we mentioned in the Principles and Patterns section. For us currently though, this is overkill so we'll leave it as is. 
 
-A case could be made for making it *better*
+A case could be made for making it *better* 
 
 If it is not already obvious, identifers are invaluable. They provide a reference to a particular value by name that may be used in other parts of the code. The named reference may be used in a sync or async fashion too. Identifiers are your key to getting specific work done at specific times. A value is denoted in one of two ways:
 1. primitive
