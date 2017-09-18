@@ -65,21 +65,30 @@ The above four parts make up the anatomy of a function. First, the `function` ke
 
 With respect to making snippet one *right* there is nothing we can do. A case could be made for making it *better* by renaming `toggleImageOpacity` to a single character alternative. This change is better for computers because there is less information to read which also translates to a smaller payload to send over a network. We won't make this change as we want to keep the code better for us humans. Research the *minification* process to learn about attaining the best of both worlds.
 
-Let's move to snippet two.
-
+In snippet two there are five core parts comprising the line of code:
 ```
 // 2. variable declaration and assignment using imageToToggle identifier
 var imageToToggle = document.getElementById('image-to-toggle');
 ```
 
 In snippet two there are five parts comprising the line of code:
-1. `var` - keyword reserved by JavaScript denoting a variable aka a named value
+1. `var` - keyword reserved by JavaScript denoting a variable
 2. `imageToToggle` - custom identifier for referencing a value by name
 3. `=` - *assignment operator* that assigns the value on its right to the identifer on its left
-4. `document.getElementById('image-to-toggle')` - browser API for referencing a specific HTML element
+4. `document.getElementById('image-to-toggle')` - browser API for referencing a specific HTML element in the document
 5. `;` - character reserved by JavaScript denoting the end of a code statement
 
-The above five parts...
+The above five parts work together to assign the resulting value from the `document.getElementById()` browser API call to an `imageToToggle` identifier. In subsequent code, the identifier can be used as a shortcut to reference the actual element object and then use its API. It is worth noting that every use of `imageToToggle` could be replaced with `document.getElementById('image-to-toggle')`. This approach would *work*, but it would be *less right* because we'd be doing the same work more times than needed.
+
+Assigning an executed function's result to a variable is referred to as caching. Caching is often a great approach for decreasing code volume and increasing run-time performance. The more expensive and time consuming the function call, the more valuable caching the result may be.
+
+With respect to making snippet two *more right*, there is one other thing we could do. We could cache the `imageToToggle` lookup and assignment *outside* of the `toggleImageOpacity` function if we knew the value assigned:
+1. never changed
+2. always remained in the document
+
+Additionally, this cached `imageToToggle` could be valuable to other code within our program. 
+
+A case could be made for making it *better*
 
 If it is not already obvious, identifers are invaluable. They provide a reference to a particular value by name that may be used in other parts of the code. The named reference may be used in a sync or async fashion too. Identifiers are your key to getting specific work done at specific times. A value is denoted in one of two ways:
 1. primitive
