@@ -1,14 +1,14 @@
 # Work. Right. Better.
 
-In programming there is the axiom "make it right before you make it faster". This specific version is found in The Elements of Programming Style by Brian W. Kernighan and P.J. Plauger and it is heavily respected by the programming community. Ultimately, when authoring code you should:
+In programming there is the axiom "make it right before you make it faster". This exact quote is found in The Elements of Programming Style by Brian W. Kernighan and P.J. Plauger and it is heavily respected by the programming community. Ultimately, when authoring code you should:
 
 1. make code work
 2. make code right
 3. make code better
 
-In this section we will explore the notion of *right* and *better* in reference to the `toggleImageOpacity` function that we recently looked at. The three step process will become second nature as you continue to improve your coding skills.
+In this section we will explore the notion of *right* and *better* in reference to the `toggleImageOpacity` function that we recently looked at. The three step process will become second nature as you continue to improve your coding skills over time.
 
-First and foremost you need the code to *work*. No shit eh? Making it *right* is less obvious, but typically the goal is to achieve the same functionality with less and/or more efficient code. Making it *better* is a bit more subjective.
+First and foremost you need the code to *work*. No shit. Making it *right* is less obvious though. Typically the goal is to achieve the same functionality with less and/or more efficient code. Making it *better* is a bit more subjective.
 
 Is the code better for beginner and junior coders? Is it better for advanced and senior coders? Is it better for the computer? Sometimes the solution is ideal for all, but this is not always the case. For example an advantageous language feature may be common sense to an advanced coder, but confusing to a beginner coder. The code is better for one group and less so for the other. Similarly, when performance is a bottleneck in a program, better may mean sacrificing human readability. This should be avoided, but it is sometimes necessary. This latter example translates to an advantage during compilation time and/or execution time, but a disadvantage during authoring time.
 
@@ -61,9 +61,11 @@ In snippet one there are four core parts comprising the line of code:
     - `}` - a closing curly brace is expected after the *function body* for declaring its end
     - the `{` and `}` define the scope boundary of a function
 
-The above four parts make up the anatomy of a function. First, the `function` keyword tells the JavaScript engine your intent to define a function. Second, a custom identifier is set to enable other code to properly reference and call the function by name. Third, the function's signature input defines what arguments the function expects. No arguments are expected for `toggleImageOpacity`. Lastly, the `{` and `}` define the bounds of the function body. Some functions return a value prior to closing the function body too, but this will be covered in the next chapter. 
+The above four parts make up the anatomy of a function. First, the `function` keyword tells the JavaScript engine your intent to define a function. Second, a custom identifier is set to enable other code to properly reference and call the function by name. Third, the function's signature input defines what arguments the function expects. No arguments are expected for `toggleImageOpacity` currently. Lastly, the `{` and `}` define the bounds of the function body. Some functions return a value prior to closing the function body too, but this will be covered in the next chapter. 
 
-With respect to making snippet one *right* and *better*, there is nothing we can do. Let's move to snippet two.
+With respect to making snippet one *right* there is nothing we can do. A case could be made for making it *better* by renaming `toggleImageOpacity` to a single character alternative. This change is better for computers because there is less information to read which also translates to a smaller payload to send over a network. We won't make this change as we want our identifers to be useful and meaningful, we'll keep the code better for us and not the computer.
+
+Let's move to snippet two.
 
 ```
 // 2. variable declaration and assignment using imageToToggle identifier
