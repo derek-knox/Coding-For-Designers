@@ -77,7 +77,7 @@ var imageToToggle = document.getElementById('image-to-toggle');
 
 The above five parts work together to assign the resulting value from the `document.getElementById()` browser API call to an `imageToToggle` identifier. In subsequent code, the identifier can be used as a shortcut to reference the actual element object and then use its API. It is worth noting that every use of `imageToToggle` could be replaced with `document.getElementById('image-to-toggle')`. This approach would *work*, but it would be *less right* because we'd be doing the same work more times than needed.
 
-Assigning an executed function's result to a variable is referred to as *caching*. Caching is often a great approach for decreasing code volume and increasing run-time performance. The more expensive and time consuming the function call, the more valuable caching the result may be.
+Assigning an executed function's result to a variable is referred to as *caching*. Caching is often a great approach for decreasing code volume and increasing run-time performance. The more expensive and time consuming the function call, the more valuable caching is.
 
 With respect to making snippet two *more right*, there is one other thing we could do. We could cache the `imageToToggle` lookup and assignment *outside* of the `toggleImageOpacity` function if we knew the:
 1. value assigned never changed
