@@ -79,11 +79,11 @@ The above five parts work together to assign the resulting value from the `docum
 
 Assigning an executed function's result to a variable is referred to as caching. Caching is often a great approach for decreasing code volume and increasing run-time performance. The more expensive and time consuming the function call, the more valuable caching the result may be.
 
-With respect to making snippet two *more right*, there is one other thing we could do. We could cache the `imageToToggle` lookup and assignment *outside* of the `toggleImageOpacity` function if we knew the value assigned:
-1. never changed
-2. always remained in the document
+With respect to making snippet two *more right*, there is one other thing we could do. We could cache the `imageToToggle` lookup and assignment *outside* of the `toggleImageOpacity` function if we knew the:
+1. value assigned never changed
+2. element remained in the document
 
-Additionally, this cached `imageToToggle` identifier's value could be useful to other code within our program. If this was the case then the variable wouldn't exist the scope just outside the `toggleImageOpacity`'s scope, but could instead leverage another scope through the singleton design pattern We mentioned this approach in the Principles and Patterns section. This approach is outside the scope of this book and overkill for our purpose.
+Additionally, this cached `imageToToggle` identifier's value could be useful to other code within our program. If this was the case then the variable wouldn't exist in the scope just outside the `toggleImageOpacity`'s scope, but could instead leverage another scope via the singleton design pattern. We mentioned this approach in the Principles and Patterns section, but the details are outside the scope of this book.
 
 We'll leave the snippet as is for simplicity and because there isn't anything *better* we can do.
 
@@ -92,7 +92,11 @@ In snippet three there are five core parts comprising the line of code:
   // 3. variable declaration and assignment using currentOpacity identifier
   var currentOpacity = window.getComputedStyle(imageToToggle).opacity;
 ```
-Each part reflects the same breakdown as snippet two so we won't go into detail here. However, the suggestion for caching the variable identifier outside the function...
+Each part reflects the same general description as snippet two with the exception of `window.getComputedStyle(imageToToggle).opacity`. This part accesses the specific `opacity` style property of the cached `imageToToggle` element instead.
+
+The suggestion to cache the style property outside the `toggleImageOpacity` function is problematic in this snippet though. The difference is that `currentOpacity` is something we want to lookup *each time* the function executes. This is a requirement if we want an up-to-date opacity value. 
+
+...`var imageToToggleStyle = getComputedStyle(imageToToggle);`...
 
 If it is not already obvious, identifers are invaluable. They provide a reference to a particular value by name that may be used in other parts of the code. The named reference may be used in a sync or async fashion too. Identifiers are your key to getting specific work done at specific times. A value is denoted in one of two ways:
 1. primitive
