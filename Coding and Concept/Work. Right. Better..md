@@ -111,12 +111,12 @@ if(currentOpacity == 1) {
 
 The above seven parts make up the core anatomy of an `if` statement. First, the `if` keyword tells the JavaScript engine your intent to define a condition to control execution flow. When the condition is true, the code between its `{` and `}` will execute. If the condition is false, then the code block is skipped. The beginning `(` and ending `)` parens define the space where the condition in question resides. This condition is the comparison between the value in the `currentOpacity` identifier and the number value `1`. We will cover this again later, but `=` is used to assign where `==` is used to compare.
 
-With respect to making snippet four *right* and *better*, we enter subjective changes. This subjectivity sources from three features of JavaScript:
+With respect to making snippet four *right* and *better*, we enter subjective changes. This subjectivity sources from advanced understanding of JavaScript referred to as:
 1. implicit coercion
 2. optional parens
 3. optional braces
 
-
+The latter two you could figure out on your own, but the former is a much more nuanced sub-system...
 
 ...
 
