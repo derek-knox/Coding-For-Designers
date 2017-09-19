@@ -1,12 +1,12 @@
 # Work. Right. Better.
 
-In programming there is the axiom "make it right before you make it faster". This exact quote is found in The Elements of Programming Style by Brian W. Kernighan and P.J. Plauger and it is heavily respected by the programming community. Ultimately, when authoring code you should:
+In programming there is the axiom "make it right before you make it faster". This exact quote is found in The Elements of Programming Style by Brian W. Kernighan and P.J. Plauger and it is heavily respected by the programming community. Ultimately, when authoring code you should make code:
 
-1. make code work
-2. make code right
-3. make code better
+1. work
+2. right
+3. better
 
-In this section we will explore the notion of *right* and *better* in reference to the `toggleImageOpacity` function that we recently looked at. The three step process will become second nature as you continue to improve your coding skills over time.
+In this section we will explore the notion of *right* and *better* in reference to the `toggleImageOpacity` function that we recently looked at. This effort will showcase specific examples that also reveal general code improvement approaches. The three step process will become second nature as you continue to improve your coding skills over time.
 
 First and foremost you need the code to *work*. No shit. Making it *right* is less obvious though. Typically the goal is to achieve the same functionality with less and/or more efficient code. Making it *better* is a bit more subjective.
 
