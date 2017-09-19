@@ -73,7 +73,7 @@ var imageToToggle = document.getElementById('image-to-toggle');
 2. `imageToToggle` - custom identifier for referencing a value by name
 3. `=` - *assignment operator* that assigns the value on its right to the identifer on its left
 4. `document.getElementById('image-to-toggle')` - browser API for referencing a specific HTML element
-5. `;` - character reserved by JavaScript denoting the end of a code statement
+5. `;` - character reserved by JavaScript denoting the explicit end of a code statement
 
 The above five parts work together to assign the resulting value from the `document.getElementById()` browser API call to an `imageToToggle` identifier. In subsequent code, the identifier can be used as a shortcut to reference the actual element object and then use its API. It is worth noting that every use of `imageToToggle` could be replaced with `document.getElementById('image-to-toggle')`. This approach would *work*, but it would be *less right* because we'd be doing the same work more times than needed.
 
@@ -116,7 +116,20 @@ With respect to making snippet four *right* and *better*, we enter subjective ch
 2. optional parens
 3. optional braces
 
-The latter two you could figure out on your own, but the former is a much more nuanced sub-system. Coercion is a fancy word for interpreting a value in one distinct form as another form. We'll leave the details to the next chapter, but know that the loose equality `==` allows coercion where *strict equality* `===` does not...
+The latter two you could figure out on your own, but the former is a much more nuanced sub-system. Coercion is a fancy word for interpreting a value in one distinct form as another form. We'll leave the details to the next chapter, but know that loose equality `==` allows coercion where *strict equality* `===` does not.
+
+Just like implicit coercion, optional parens and braces require more JavaScript knowledge to know when they should and should not be used. The snippet will remain for now, but we will keep things more explicit than implicit moving forward. The main win is that certain sub-systems and their caveats do not need to be learned until you are ready to dig deeper.
+
+In snippet five there are four parts comprising the line of code:
+```
+// 5. nested property assignment using imageToToggle reference
+imageToToggle.style.opacity = .5;
+```
+1. `imageToToggle.style.opacity` - xxx
+2. `=` - assignment operator that assigns the value on its right to the identifer on its left
+3. `.5` - xxx
+4. `;` - character reserved by JavaScript denoting the explicit end of a code statement
+
 
 ...
 
