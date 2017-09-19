@@ -92,11 +92,11 @@ In snippet three there are five core parts comprising the line of code:
   // 3. variable declaration and assignment using currentOpacity identifier
   var currentOpacity = window.getComputedStyle(imageToToggle).opacity;
 ```
-Each part reflects the same general description as snippet two with the exception of `window.getComputedStyle(imageToToggle).opacity`. This part accesses the specific `opacity` style property of the cached `imageToToggle` element instead.
+Each part reflects the same general description as snippet two with the exception of `window.getComputedStyle(imageToToggle).opacity`. This part accesses the specific `opacity` property of the cached `imageToToggle` element object instead of the element object itself.
 
-The suggestion to cache the style property outside the `toggleImageOpacity` function is problematic in this snippet though. The difference is that `currentOpacity` is something we want to lookup *each time* the function executes. This is a requirement if we want an up-to-date opacity value. 
+The suggestion to cache the style property outside the `toggleImageOpacity` function is problematic in this snippet though. The difference is that `currentOpacity` is something we want to lookup *each time* the function executes. This is a requirement if we want an up-to-date opacity value. As a result making this change would result in a *less right* and ultimately broken set of code. Caching the `getComputedStyle(imageToToggle)` lookup outside the function scope could be considered *better* however.
 
-...`var imageToToggleStyle = getComputedStyle(imageToToggle);`...
+...
 
 If it is not already obvious, identifers are invaluable. They provide a reference to a particular value by name that may be used in other parts of the code. The named reference may be used in a sync or async fashion too. Identifiers are your key to getting specific work done at specific times. A value is denoted in one of two ways:
 1. primitive
