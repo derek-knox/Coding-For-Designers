@@ -79,7 +79,7 @@ The above five parts work together to assign the resulting value from the `docum
 
 Assigning an executed function's result to a variable is referred to as *caching*. Caching is often a great approach for decreasing code volume and increasing run-time performance. The more expensive and time consuming the function call, the more valuable caching is.
 
-With respect to making snippet two *more right*, there is one other thing we could do. We could cache the `imageToToggle` lookup and assignment *outside* of the `toggleImageOpacity` function if we knew the:
+With respect to making snippet two *more right*, there is one other thing we could do. We could cache the `imageToToggle` lookup and assignment *outside* of the `toggleImageOpacity` function if we knew two things:
 1. value assigned never changed
 2. element remained in the document
 
