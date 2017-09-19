@@ -46,9 +46,9 @@ function toggleImageOpacity() {
 }
 ```
 
-Now that the numbered comments provide a bit more context to each associated line of code, let's take a step deeper into each snippet.
+Now that the numbered comments provide a bit more context to each associated line of code, let's take a step deeper into each snippet. I do not expect you to understand everything we cover in the rest of this chapter, so do not be discouraged if some words or ideas make no sense yet. The intention below is to plant seeds in your mind regarding certain vocabulary and concepts. Extract what you can and pass over the rest.
 
-In snippet one there are four core parts comprising the line of code:
+In snippet one there are four parts comprising the line of code:
 ```
 // 1. function declaration using toggleImageOpacity identifier
 function toggleImageOpacity() {
@@ -64,7 +64,7 @@ The above four parts make up the anatomy of a function. First, the `function` ke
 
 With respect to making snippet one *right* there is nothing we can do. A case could be made for making it *better* by renaming `toggleImageOpacity` to a single character alternative. This change is better for computers because there is less information to read which also translates to a smaller payload to send over a network. We won't make this change as we want to keep the code better for us humans. Research the *minification* process to learn about attaining the best of both worlds.
 
-In snippet two there are five core parts comprising the line of code:
+In snippet two there are five parts comprising the line of code:
 ```
 // 2. variable declaration and assignment using imageToToggle identifier
 var imageToToggle = document.getElementById('image-to-toggle');
@@ -87,7 +87,7 @@ Additionally, this cached `imageToToggle` identifier's value could be useful to 
 
 We'll leave the snippet as is for simplicity and because there isn't anything *better* we can do.
 
-In snippet three there are five core parts comprising the line of code:
+In snippet three there are five parts comprising the line of code:
 ```
   // 3. variable declaration and assignment using currentOpacity identifier
   var currentOpacity = window.getComputedStyle(imageToToggle).opacity;
@@ -95,6 +95,21 @@ In snippet three there are five core parts comprising the line of code:
 Each part reflects the same general description as snippet two with the exception of `window.getComputedStyle(imageToToggle).opacity`. This part accesses the specific `opacity` property of the cached `imageToToggle` element object instead of the element object itself.
 
 The suggestion to cache the style property outside the `toggleImageOpacity` function is problematic in this snippet though. The difference is that `currentOpacity` is something we want to lookup *each time* the function executes. This is a requirement if we want an up-to-date opacity value. As a result making this change would result in a *less right* and ultimately broken set of code. Caching the `getComputedStyle(imageToToggle)` lookup outside the function scope could be considered *more right* however. Nothing *better* is possible.
+
+In snippet four there are seven parts comprising the line of code:
+```
+// 4. 'if' portion of an if/else conditional statement
+if(currentOpacity == 1) {
+```
+1. `if` - keyword reserved by JavaScript denoting conditional code execution
+2. `(` - opening paren for declaring the beginning `if` condition
+3. `currentOpacity` - custom identifier for referencing a value by name
+4. `==` - *loose equality* that coercively compares values on each side and produces a true or false value
+5. `1` - a literal number value
+6. `)` - closing paren for declaring the `if` condition end
+7. `{` - opening curly brace for declaring the beginning of the *true*-condition code to execute
+
+The above seven parts work together
 
 ...
 
