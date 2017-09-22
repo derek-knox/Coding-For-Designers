@@ -111,12 +111,11 @@ if(currentOpacity == 1) {
 
 The above seven parts make up the core anatomy of an `if` statement. First, the `if` keyword tells the JavaScript engine your intent to define a condition to control execution flow. When the condition is true, the code between its `{` and `}` will execute. If the condition is false, then the code block is skipped. The beginning `(` and ending `)` parens define the space where the condition in question resides. This condition is the comparison between the value in the `currentOpacity` identifier and the number value `1`. We will cover this again later, but `=` is used to assign where `==` is used to compare.
 
-With respect to making snippet four *right* and *better*, we enter subjective changes. This subjectivity sources from a deeper understanding of three JavaScript features:
+With respect to making snippet four *right* and *better*, we enter subjective changes. This subjectivity sources from a deeper understanding of JavaScript:
 1. implicit coercion
-2. optional parens
-3. optional braces
+2. optional braces
 
-The latter two you could figure out on your own, but the former is a much more nuanced sub-system. Coercion is a fancy word for interpreting a value in one distinct form as another form. We'll leave the details to the next chapter, but know that loose equality `==` allows coercion where *strict equality* `===` does not.
+Implicit coercion is a nuanced sub-system. Coercion is a fancy word for interpreting a value in one form as another form. We'll leave the details to the next chapter, but just know that loose equality `==` allows coercion where *strict equality* `===` does not. Put another way, loose equality allows interpretation where strict equality does not. Optional braces are a simple authoring time convenience for succinct code writing.
 
 Just like implicit coercion, optional parens and braces require more JavaScript knowledge to know when they should and should not be used. The snippet will remain for now, but we will keep things more explicit than implicit moving forward. The main win is that certain sub-systems and their caveats do not need to be learned until you are ready to dig deeper.
 
