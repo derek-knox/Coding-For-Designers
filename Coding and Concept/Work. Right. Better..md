@@ -115,9 +115,9 @@ With respect to making snippet four *right* and *better*, we enter subjective ch
 1. implicit coercion
 2. optional braces
 
-Implicit coercion is a nuanced sub-system. Coercion is a fancy word for interpreting a value in one form as another form. We'll leave the details to the next chapter, but just know that loose equality `==` allows coercion where *strict equality* `===` does not. Put another way, loose equality allows interpretation where strict equality does not. Optional braces are a simple authoring time convenience for succinct code writing.
+Implicit coercion is a nuanced sub-system. Coercion is a fancy word for interpreting a value in one form as another form. We'll leave the details to the next chapter, but just know that loose equality `==` allows coercion where *strict equality* `===` does not. Put another way, loose equality allows interpretation where strict equality does not. Optional braces are an authoring time convenience for succinct code writing.
 
-Just like implicit coercion, optional parens and braces require more JavaScript knowledge to know when they should and should not be used. The snippet will remain for now, but we will keep things more explicit than implicit moving forward. The main win is that certain sub-systems and their caveats do not need to be learned until you are ready to dig deeper.
+The snippet will remain for now. Certain sub-systems and their caveats do not need to be learned until you are ready to dig deeper.
 
 In snippet five there are four parts comprising the line of code:
 ```
@@ -128,7 +128,6 @@ imageToToggle.style.opacity = .5;
 2. `=` - assignment operator that assigns the value on its right to the identifer on its left
 3. `.5` - xxx
 4. `;` - character reserved by JavaScript denoting the explicit end of a code statement
-
 
 ...
 
