@@ -54,7 +54,7 @@ In snippet one there are four parts comprising the line of code:
 function toggleImageOpacity() {
 ```
 1. `function` - keyword reserved by JavaScript denoting a function
-2. `toggleImageOpacity` - custom identifier for referencing a function by name
+2. `toggleImageOpacity` - custom identifier for referencing the function by name
 3. `()` - *function signature input* defining how to call the function to do work
 4. `{` - opening curly brace for declaring the beginning of the *function body*
     - `}` - a closing curly brace is expected after the *function body* for declaring its end
@@ -75,15 +75,15 @@ var imageToToggle = document.getElementById('image-to-toggle');
 4. `document.getElementById('image-to-toggle')` - browser API for referencing a specific HTML element
 5. `;` - character reserved by JavaScript denoting the explicit end of a code statement
 
-The above five parts work together to assign the resulting value from the `document.getElementById()` browser API call to an `imageToToggle` identifier. In subsequent code, the identifier can be used as a shortcut to reference the actual element object and then use its API. It is worth noting that every use of `imageToToggle` could be replaced with `document.getElementById('image-to-toggle')`. This approach would *work*, but it would be *less right* because we'd be doing the same work more times than needed.
+The above five parts make up the anatomy of a declaration and assignment statement. The parts work together to assign the resulting value from the `document.getElementById()` browser API call to the declared `imageToToggle` identifier. In subsequent code, the identifier can be used as a shortcut to reference the actual element object and then use its API. It is worth noting that every use of `imageToToggle` could be replaced with `document.getElementById('image-to-toggle')`. This approach would *work*, but it would be *less right* because we'd be doing the same work more times than needed.
 
-Assigning an executed function's result to a variable is referred to as *caching*. Caching is often a great approach for decreasing code volume and increasing run-time performance. The more expensive and time consuming the function call, the more valuable caching is.
+Assigning an executed function's result to a variable is an example of *caching*. Caching is a great approach for decreasing code volume and increasing run-time performance. The more expensive and time consuming the function call, the more valuable caching is. Preventing repetitive work is the win here.
 
-With respect to making snippet two *more right*, there is one other thing we could do. We could cache the `imageToToggle` lookup and assignment *outside* of the `toggleImageOpacity` function if we knew two things:
+With respect to making snippet two *more right*, there is one other thing we could do. We could cache the `imageToToggle` lookup and assignment *outside* of the `toggleImageOpacity` function. In doing so, we would prevent the repetitive work that occurs each time `toggleImageOpacity` executes. This approach would require two conditions to continue to work:
 1. value assigned never changed
 2. element remained in the document
 
-Additionally, this cached `imageToToggle` identifier's value could be useful to other code within our program. If this was the case then the variable wouldn't exist in the scope just outside the `toggleImageOpacity`'s scope, but could instead leverage another scope via the singleton design pattern. We mentioned this approach in the Principles and Patterns section, but the details are outside the scope of this book.
+Additionally, an even *more right* approach could be made if `imageToToggle`'s value would be useful to other code within our program. If this was the case then the variable wouldn't exist in the scope just outside the `toggleImageOpacity`'s scope, but could instead leverage a higher level scope via the singleton design pattern. We mentioned this approach in the Principles and Patterns section, but the details are outside the scope of this book. Again, we're just planting seeds here so do not concern yourself if much of this is over your head.
 
 We'll leave the snippet as is for simplicity and because there isn't anything *better* we can do.
 
