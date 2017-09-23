@@ -120,14 +120,14 @@ In snippet five there are four parts comprising the line of code:
 // 5. nested property assignment using imageToToggle reference
 imageToToggle.style.opacity = .5;
 ```
-1. `imageToToggle.style.opacity` - the custom identifier's 
+1. `imageToToggle.style.opacity` - nested identifier of another identifier's value
 2. `=` - assignment operator that assigns the value on its right to the identifer on its left
 3. `.5` - a literal number value
 4. `;` - character reserved by JavaScript denoting the explicit end of a code statement
 
 ...
 
-If it is not already obvious, identifers are invaluable. They provide a reference to a particular value by name that may be used in other parts of the code. The named reference may be used in a sync or async fashion too. Identifiers are your key to getting specific work done at specific times. A value is denoted in one of two ways:
+If it is not already obvious, identifers are invaluable. They provide a cached reference to a particular value by name that may be used in other parts of the code. The named reference may be used in a sync or async fashion too. Identifiers are your key to getting specific work done at specific times. The value an identifier identifies is denoted in one of two ways:
 1. primitive
 2. reference
 
