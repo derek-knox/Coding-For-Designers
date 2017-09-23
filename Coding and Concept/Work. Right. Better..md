@@ -120,9 +120,9 @@ In snippet five there are four parts comprising the line of code:
 // 5. nested property assignment using imageToToggle reference
 imageToToggle.style.opacity = .5;
 ```
-1. `imageToToggle.style.opacity` - xxx
+1. `imageToToggle.style.opacity` - the custom identifier's 
 2. `=` - assignment operator that assigns the value on its right to the identifer on its left
-3. `.5` - xxx
+3. `.5` - a literal number value
 4. `;` - character reserved by JavaScript denoting the explicit end of a code statement
 
 ...
