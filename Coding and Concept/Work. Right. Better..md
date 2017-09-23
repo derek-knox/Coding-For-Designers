@@ -105,7 +105,7 @@ if(currentOpacity == 1) {
 4. `==` - *loose equality* that coercively compares values on each side and produces a true or false value
 5. `1` - a literal number value
 6. `)` - closing paren for declaring the `if` condition end
-7. `{` - opening curly brace for declaring the beginning of the *true*-condition code to execute
+7. `{` - opening curly brace for declaring the beginning of the *true*-condition code block
 
 The above seven parts make up the anatomy of an `if` statement. First, the `if` keyword tells the JavaScript engine your intent to define a condition to control execution flow. When the condition is true, the code between its `{` and `}` will execute. If the condition is false, then the code block is skipped. The beginning `(` and ending `)` parens define the space where the condition in question resides. This condition is the comparison between the value in the `currentOpacity` identifier and the number value `1`. We will cover this again later, but `=` is used to *assign* where `==` is used to *compare*.
 
@@ -125,7 +125,27 @@ imageToToggle.style.opacity = .5;
 3. `.5` - a literal number value
 4. `;` - character reserved by JavaScript denoting the explicit end of a code statement
 
-...
+The above four parts make up the anatomy of an assignment statement. This snippet has one small difference compared to snippet two. Where snippet two has a declaration and an assignment, this snippet only has the latter. The assumption made is that the nested identifiers `style` and `opacity` already exist. As a result, a simple assignment using `=` can be made.
+
+Regarding *right* and *better*, we could cache the `imageToToggle.style` lookup. Technically speaking, each time the `imageToToggle.style.opacity` portion executes there is repetitive lookup work the engine has to do. We will not make this change as the performance benefit is negligible. This will be learned in time, but changes to increase performance should only be of concern when your target framerate or user experience suffers.
+
+In snippet six there is one part comprising the line of code:
+```
+// 6. end of 'if'
+}
+```
+1. `}` - closing curly brace for declaring the end of the *true*-condition code block
+
+This closing curly brace simply defines the end of the `if` statement's code block.
+
+In snippet seven there are two parts comprising the line of code:
+```
+// 7. 'else' portion of an if/else conditional statement
+else {
+```
+1. `else` - keyword reserved by JavaScript denoting conditional code execution
+2. `{` - opening curly brace for declaring the beginning of the *else*-condition code block
+The above two parts make up the anatomy of an `else` statement. The `else` is an optional execution flow that follows an `if` statement. 
 
 If it is not already obvious, identifers are invaluable. They provide a cached reference to a particular value by name that may be used in other parts of the code. The named reference may be used in a sync or async fashion too. Identifiers are your key to getting specific work done at specific times. The value an identifier identifies is denoted in one of two ways:
 1. primitive
