@@ -102,7 +102,7 @@ In snippet four there are seven parts comprising the line of code:
 if(currentOpacity == 1) {
 ```
 1. `if` - keyword reserved by JavaScript denoting conditional code execution
-2. `(` - opening paren for declaring the beginning `if` condition
+2. `(` - opening paren for declaring the `if` condition beginning
 3. `currentOpacity` - custom identifier for referencing a value by name
 4. `==` - *loose equality* that coercively compares values on each side and produces a true or false value
 5. `1` - a literal number value
