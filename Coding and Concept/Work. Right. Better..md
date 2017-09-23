@@ -109,15 +109,13 @@ if(currentOpacity == 1) {
 6. `)` - closing paren for declaring the `if` condition end
 7. `{` - opening curly brace for declaring the beginning of the *true*-condition code to execute
 
-The above seven parts make up the core anatomy of an `if` statement. First, the `if` keyword tells the JavaScript engine your intent to define a condition to control execution flow. When the condition is true, the code between its `{` and `}` will execute. If the condition is false, then the code block is skipped. The beginning `(` and ending `)` parens define the space where the condition in question resides. This condition is the comparison between the value in the `currentOpacity` identifier and the number value `1`. We will cover this again later, but `=` is used to assign where `==` is used to compare.
+The above seven parts make up the core anatomy of an `if` statement. First, the `if` keyword tells the JavaScript engine your intent to define a condition to control execution flow. When the condition is true, the code between its `{` and `}` will execute. If the condition is false, then the code block is skipped. The beginning `(` and ending `)` parens define the space where the condition in question resides. This condition is the comparison between the value in the `currentOpacity` identifier and the number value `1`. We will cover this again later, but `=` is used to *assign* where `==` is used to *compare*.
 
 With respect to making snippet four *right* and *better*, we enter subjective changes. This subjectivity sources from a deeper understanding of JavaScript:
 1. implicit coercion
 2. optional braces
 
-Implicit coercion is a nuanced sub-system. Coercion is a fancy word for interpreting a value in one form as another form. We'll leave the details to the next chapter, but just know that loose equality `==` allows coercion where *strict equality* `===` does not. Put another way, loose equality allows interpretation where strict equality does not. Optional braces are an authoring time convenience for succinct code writing.
-
-The snippet will remain for now. Certain sub-systems and their caveats do not need to be learned until you are ready to dig deeper.
+Implicit coercion is a nuanced sub-system. Coercion is a fancy word for interpreting a value in one form as another form. We'll leave the details to the next chapter, but just know that loose equality `==` allows coercion where *strict equality* `===` does not. Put another way, loose equality allows interpretation where strict equality does not. Optional braces are an authoring time convenience for succinct code writing. The snippet will remain as-is for now as many sub-systems and their caveats do not need to be learned until you are ready to dig deeper. We want to get good at making code *work* first and foremost.
 
 In snippet five there are four parts comprising the line of code:
 ```
