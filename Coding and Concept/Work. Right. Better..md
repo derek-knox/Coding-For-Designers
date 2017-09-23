@@ -46,7 +46,7 @@ function toggleImageOpacity() {
 }
 ```
 
-Now that the numbered comments provide a bit more context to each associated line of code, let's take a step deeper into each snippet. I do not expect you to understand everything we cover in the rest of this chapter, so do not be discouraged if some words or ideas make no sense yet. The intention below is to plant seeds in your mind regarding certain vocabulary and concepts. Extract what you can and pass over the rest.
+Now that the numbered comments provide a bit more context to each associated line of code, let's take a step deeper into each snippet. I do not expect you to understand everything we cover in the rest of this section, so do not be discouraged if some words or ideas make no sense yet as this is expected. The intention below is to plant seeds in your mind regarding certain vocabulary and concepts. Extract what you can and pass over the rest.
 
 In snippet one there are four parts comprising the line of code:
 ```
