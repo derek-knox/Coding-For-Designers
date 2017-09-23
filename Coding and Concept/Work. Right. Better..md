@@ -127,16 +127,16 @@ imageToToggle.style.opacity = .5;
 
 The above four parts make up the anatomy of an assignment statement. This snippet has one small difference compared to snippet two. Where snippet two has a declaration and an assignment, this snippet only has the latter. The assumption made is that the nested identifiers `style` and `opacity` already exist. As a result, a simple assignment using `=` can be made.
 
-Regarding *right* and *better*, we could cache the `imageToToggle.style` lookup. Technically speaking, each time the `imageToToggle.style.opacity` portion executes there is repetitive lookup work the engine has to do. We will not make this change as the performance benefit is negligible. This will be learned in time, but changes to increase performance should only be of concern when your target framerate or user experience suffers.
+Regarding *right* and *better*, we could cache the `imageToToggle.style` lookup. Technically speaking, each time the `imageToToggle.style.opacity` portion executes there is repetitive lookup work the engine has to do. We will not make this change as the performance benefit is negligible. This will be learned in time, but changes to increase performance should only be considered when the target framerate or user experience suffers.
 
-In snippet six there is one part comprising the line of code:
+In snippet six there is only one part comprising the line of code:
 ```
 // 6. end of 'if'
 }
 ```
 1. `}` - closing curly brace for declaring the end of the *true*-condition code block
 
-This closing curly brace simply defines the end of the `if` statement's code block.
+This closing curly brace simply defines the end of the `if` statement's code block. Nothing *right* or *better* is possible.
 
 In snippet seven there are two parts comprising the line of code:
 ```
@@ -145,7 +145,32 @@ else {
 ```
 1. `else` - keyword reserved by JavaScript denoting conditional code execution
 2. `{` - opening curly brace for declaring the beginning of the *else*-condition code block
-The above two parts make up the anatomy of an `else` statement. The `else` is an optional execution flow that follows an `if` statement. 
+
+The above two parts make up the anatomy of an `else` statement. The `else` is an optional execution flow that follows an `if` statement. When the corresponding `if` condition is false, the code between its `{` and `}` will execute. The `if`/`else` allows a program to branch, to have optional execution flow at run-time. Specifically in our `toggleImageOpacity` function, we use this tactic to ping-pong, or toggle, an image's opacity between the values `1` and `.5`. Put another way, the program toggles the image's opacity between fully opaque and 50% transparent. There is nothing *right* or *better* to do with this snippet.
+
+In snippet eight there four two parts comprising the line of code:
+```
+// 8. nested property assignment using imageToToggle reference
+imageToToggle.style.opacity = 1;
+```
+1. `imageToToggle.style.opacity` - nested identifier of another identifier's value
+2. `=` - assignment operator that assigns the value on its right to the identifer on its left
+3. `1` - a literal number value
+4. `;` - character reserved by JavaScript denoting the explicit end of a code statement
+
+Everything covered in snippet five can be said of this snippet. The only difference is the use of the literal value `1` in place of `.5`.
+
+In snippet nine there is one part comprising the line of code:
+```
+// 9. end of 'else' 
+}
+```
+1. `}` - closing curly brace for declaring the end of the *false*-condition code block
+
+This closing curly brace simply defines the end of the `else` statement's code block. There are no *right* or *better* improvements that are possible with this particular snippet. There is an improved *right* change possible when considering the entire `if`/`else` block as a whole however. Snippets four through nine can be encapsulated more succintly using the *ternary operator*. The ternary operator does the same work as an `if`/`else`, but does so in a single line of code:
+```
+imageToToggle.style.opacity = currentOpacity == 1 ? .5 : 1;
+```
 
 If it is not already obvious, identifers are invaluable. They provide a cached reference to a particular value by name that may be used in other parts of the code. The named reference may be used in a sync or async fashion too. Identifiers are your key to getting specific work done at specific times. The value an identifier identifies is denoted in one of two ways:
 1. primitive
