@@ -46,7 +46,7 @@ function toggleImageOpacity() {
 }
 ```
 
-Now that the numbered comments provide a bit more context to each associated line of code, let's take a step deeper into each snippet. I do not expect you to understand everything we cover in the rest of this section, so do not be discouraged if some words or ideas make no sense yet as this is expected. The intention below is to plant seeds in your mind regarding certain vocabulary and concepts. Extract what you can and pass over the rest.
+Now that the numbered comments provide a bit more context to each associated line of code, let's take a step deeper into each snippet. I do not expect you to understand everything we cover in the rest of this section, so do not be discouraged if some words or ideas make no sense yet. This is expected. The intention below is to plant seeds in your mind regarding the vocabulary, concepts, and considerations of advanced coders. Extract what you can and pass over the rest.
 
 In snippet one there are four parts comprising the line of code:
 ```
@@ -77,15 +77,13 @@ var imageToToggle = document.getElementById('image-to-toggle');
 
 The above five parts make up the anatomy of a declaration and assignment statement. The parts work together to assign the resulting value from the `document.getElementById()` browser API call to the declared `imageToToggle` identifier. In subsequent code, the identifier can be used as a shortcut to reference the actual element object and then use its API. It is worth noting that every use of `imageToToggle` could be replaced with `document.getElementById('image-to-toggle')`. This approach would *work*, but it would be *less right* because we'd be doing the same work more times than needed.
 
-Assigning an executed function's result to a variable is an example of *caching*. Caching is a great approach for decreasing code volume and increasing run-time performance. The more expensive and time consuming the function call, the more valuable caching is. Preventing repetitive work is the win here.
+Assigning an executed function's result to a variable is an example of *caching*. Caching is a great approach for decreasing code volume and increasing run-time performance. The more expensive and time consuming the function call, the more valuable caching is. Preventing repetitive work is the win with caching.
 
 With respect to making snippet two *more right*, there is one other thing we could do. We could cache the `imageToToggle` lookup and assignment *outside* of the `toggleImageOpacity` function. In doing so, we would prevent the repetitive work that occurs each time `toggleImageOpacity` executes. This approach would require two conditions to continue to work:
-1. value assigned never changed
-2. element remained in the document
+1. value assignment can never change
+2. element assigned must remain in the document
 
-Additionally, an even *more right* approach could be made if `imageToToggle`'s value would be useful to other code within our program. If this was the case then the variable wouldn't exist in the scope just outside the `toggleImageOpacity`'s scope, but could instead leverage a higher level scope via the singleton design pattern. We mentioned this approach in the Principles and Patterns section, but the details are outside the scope of this book. Again, we're just planting seeds here so do not concern yourself if much of this is over your head.
-
-We'll leave the snippet as is for simplicity and because there isn't anything *better* we can do.
+Additionally, an even *more right* approach could be made if `imageToToggle`'s value would be useful to other code within our program. If this was the case then the variable wouldn't exist in the scope just outside the `toggleImageOpacity`'s scope, but could instead exist in a higher level scope via the singleton design pattern. We mentioned this approach in the Principles and Patterns section, but the details are outside the scope of this book. Again, we're just planting seeds here so do not concern yourself with the details. We'll leave the snippet as is for simplicity and because there isn't anything *better* we can do.
 
 In snippet three there are five parts comprising the line of code:
 ```
@@ -109,7 +107,7 @@ if(currentOpacity == 1) {
 6. `)` - closing paren for declaring the `if` condition end
 7. `{` - opening curly brace for declaring the beginning of the *true*-condition code to execute
 
-The above seven parts make up the core anatomy of an `if` statement. First, the `if` keyword tells the JavaScript engine your intent to define a condition to control execution flow. When the condition is true, the code between its `{` and `}` will execute. If the condition is false, then the code block is skipped. The beginning `(` and ending `)` parens define the space where the condition in question resides. This condition is the comparison between the value in the `currentOpacity` identifier and the number value `1`. We will cover this again later, but `=` is used to *assign* where `==` is used to *compare*.
+The above seven parts make up the anatomy of an `if` statement. First, the `if` keyword tells the JavaScript engine your intent to define a condition to control execution flow. When the condition is true, the code between its `{` and `}` will execute. If the condition is false, then the code block is skipped. The beginning `(` and ending `)` parens define the space where the condition in question resides. This condition is the comparison between the value in the `currentOpacity` identifier and the number value `1`. We will cover this again later, but `=` is used to *assign* where `==` is used to *compare*.
 
 With respect to making snippet four *right* and *better*, we enter subjective changes. This subjectivity sources from a deeper understanding of JavaScript:
 1. implicit coercion
