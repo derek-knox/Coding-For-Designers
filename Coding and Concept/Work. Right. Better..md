@@ -8,7 +8,7 @@ In programming there is the axiom "make it right before you make it faster". Thi
 
 In this section we will explore the notion of *right* and *better* in reference to the working `toggleImageOpacity` function that we recently looked at. This effort will introduce reusable code improvement tactics and the thought process behind them. The three step process will become second nature in time.
 
-First and foremost you need the code to *work*. No shit. Making it *right* is less obvious though. Typically the goal is to achieve the same functionality with less and/or more efficient code. Making it *better* is more subjective.
+First and foremost you need the code to *work*. No shit. Making it *right* is less obvious though. Typically the goal is to achieve the same functionality with less and/or more efficient code. Making it *better* is much more subjective.
 
 Is the code better for beginner and junior coders? Is it better for advanced and senior coders? Is it better for the computer? Sometimes the solution is ideal for all, but this is not always the case. For example an advantageous language feature may be common sense to an advanced coder, but confusing to a beginner coder. The code is better for one group and less so for the other. Similarly, when program performance is a bottleneck, better may mean sacrificing human readability. This should be avoided, but it is sometimes necessary. This latter example translates to an advantage during compilation time and/or execution time, but a disadvantage during authoring time.
 
