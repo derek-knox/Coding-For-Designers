@@ -148,12 +148,12 @@ else {
 
 The above two parts make up the anatomy of an `else` statement. The `else` is an optional execution flow that follows an `if` statement. When the corresponding `if` condition is false, the code between the `else`'s `{` and `}` will execute. The `if`/`else` allows a program to branch, to have conditional execution flow at run-time. Specifically in our `toggleImageOpacity` function, we use this tactic to ping-pong, or toggle, an image's opacity between the values `1` and `.5`. Put another way, the program toggles the image's opacity between fully opaque (100%) and half transparent (50%). There is nothing *right* or *better* to do with this snippet.
 
-In snippet eight there four two parts comprising the line of code:
+In snippet eight there are four parts comprising the line of code:
 ```
 // 8. nested property assignment using imageToToggle reference
 imageToToggle.style.opacity = 1;
 ```
-1. `imageToToggle.style.opacity` - nested identifier of another identifier's value
+1. `imageToToggle.style.opacity` - nested identifier
 2. `=` - assignment operator that assigns the value on its right to the identifer on its left
 3. `1` - a literal number value
 4. `;` - character reserved by JavaScript denoting the explicit end of a code statement
@@ -167,13 +167,13 @@ In snippet nine there is one part comprising the line of code:
 ```
 1. `}` - closing curly brace for declaring the end of the *false*-condition code block
 
-This closing curly brace simply defines the end of the `else` statement's code block. There are no *right* or *better* improvements that are possible with this particular snippet. There is an improved *right* change possible when considering the entire `if`/`else` block as a whole however. Snippets four through nine can be encapsulated more succintly using the *ternary operator*. The ternary operator does the same work as an `if`/`else`, but does so in a single line of code:
+This closing curly brace simply defines the end of the `else` statement's code block. There are no *right* or *better* improvements that are possible with this particular snippet. There is an improved *better* change possible when considering the entire `if`/`else` as a whole however. Snippets four through nine can be encapsulated more succintly using the *ternary operator*. The ternary operator does the same work as an `if`/`else`, but does so in a single line of code:
 ```
-// Ternary operator alternative encapsulating snippets four through nine
+// Ternary operator alternative to an if/else that encapsulates snippets four through nine
 imageToToggle.style.opacity = currentOpacity == 1 ? .5 : 1;
 ```
 
-This is admittedly an advanced code statement, but it is functionally identical to the `if`/`else`. We won't go into its anatomy, but you could probably guess how it works. It is better for advanced JavaScript coders and less so for beginner coders. 
+This is admittedly an advanced code statement, but it is functionally identical to the `if`/`else`. We won't go into its anatomy, but you could probably guess how it works. It is better for advanced JavaScript coders and less so for beginner coders. Subjectivity is at play.
 
 In snippet ten there is one part comprising the line of code:
 ```
