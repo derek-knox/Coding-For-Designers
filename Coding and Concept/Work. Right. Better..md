@@ -173,7 +173,7 @@ This closing curly brace simply defines the end of the `else` statement's code b
 imageToToggle.style.opacity = currentOpacity == 1 ? .5 : 1;
 ```
 
-This is admittedly an advanced code statement, but it is functionally identical to the `if`/`else`. We won't go into its anatomy though you could likely guess how it works. This approach is better for advanced JavaScript coders, but less so for beginner coders.
+This is admittedly an advanced code statement, but it is functionally identical to the `if`/`else`. We won't go into its anatomy, but you could probably guess how it works. It is better for advanced JavaScript coders and less so for beginner coders. 
 
 In snippet ten there is one part comprising the line of code:
 ```
@@ -184,7 +184,7 @@ In snippet ten there is one part comprising the line of code:
     - `{` - an opening curly brace is expected before the *function body* for declaring its beginning
     - the `{` and `}` define the scope boundary of a function
     
-This closing curly brace simply defines the end of the `toggleImageOpacity` function. There are no *right* or *better* improvements that are possible.
+This closing curly brace simply defines the end of the `toggleImageOpacity` function. There are no *right* or *better* improvement possibilities.
 
 //
 
