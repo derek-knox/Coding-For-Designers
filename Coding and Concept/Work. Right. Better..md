@@ -186,7 +186,7 @@ In snippet ten there is one part comprising the line of code:
     
 This closing curly brace simply defines the end of the `toggleImageOpacity` function. There are no *right* or *better* improvement possibilities.
 
-//
+So far in this section we have introduced some of the vocabulary, concepts, and considerations of advanced coders. Overwhelming I know. Hopefully a few things clicked though. Regardless, seeds should be planted that will bear fruit later.
 
 If it is not already obvious, identifers are invaluable. They provide a cached reference to a particular value by name that may be used in other parts of the code. The named reference may be used in a sync or async fashion too. Identifiers are your key to getting specific work done at specific times. The value an identifier identifies is denoted in one of two ways:
 1. primitive
