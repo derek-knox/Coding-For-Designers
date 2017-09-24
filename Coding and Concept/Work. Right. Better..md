@@ -169,8 +169,24 @@ In snippet nine there is one part comprising the line of code:
 
 This closing curly brace simply defines the end of the `else` statement's code block. There are no *right* or *better* improvements that are possible with this particular snippet. There is an improved *right* change possible when considering the entire `if`/`else` block as a whole however. Snippets four through nine can be encapsulated more succintly using the *ternary operator*. The ternary operator does the same work as an `if`/`else`, but does so in a single line of code:
 ```
+// Ternary operator alternative encapsulating snippets four through nine
 imageToToggle.style.opacity = currentOpacity == 1 ? .5 : 1;
 ```
+
+This is admittedly an advanced code statement, but it is functionally identical to the `if`/`else`. We won't go into its anatomy though you could likely guess how it works. This approach is better for advanced JavaScript coders, but less so for beginner coders.
+
+In snippet ten there is one part comprising the line of code:
+```
+// 10. end of toggleImageOpacity function
+}
+```
+1. `}` - closing curly brace for declaring the end of the *function body*
+    - `{` - an opening curly brace is expected before the *function body* for declaring its beginning
+    - the `{` and `}` define the scope boundary of a function
+    
+This closing curly brace simply defines the end of the `toggleImageOpacity` function. There are no *right* or *better* improvements that are possible.
+
+//
 
 If it is not already obvious, identifers are invaluable. They provide a cached reference to a particular value by name that may be used in other parts of the code. The named reference may be used in a sync or async fashion too. Identifiers are your key to getting specific work done at specific times. The value an identifier identifies is denoted in one of two ways:
 1. primitive
