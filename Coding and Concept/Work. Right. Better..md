@@ -186,4 +186,6 @@ In snippet ten there is one part comprising the line of code:
     
 This closing curly brace simply defines the end of the `toggleImageOpacity` function. There are no *right* or *better* improvement possibilities.
 
-So far in this section we have introduced some of the vocabulary, concepts, and considerations of advanced coders. Overwhelming I know. Hopefully a few things began to click though. Regardless, seeds should be planted that will bear fruit in the Coding and JavaScript chapter and beyond.
+In this section we introduced some of the vocabulary, concepts, and considerations of advanced coders. Overwhelming I know. Hopefully a few things made sense though. Regardless, seeds should be planted that will bear fruit later in your learn-to-code journey.
+
+The next chapter, Coding and JavaScript, will bypass much of the above advanced material in favor of a simplified approach. As you progress as a coder, you can begin to make code *right* and *better*. Until then, the goal is to make code that works.
