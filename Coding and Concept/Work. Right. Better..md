@@ -127,7 +127,7 @@ imageToToggle.style.opacity = .5;
 
 The above four parts make up the anatomy of an assignment statement. This snippet has one small difference compared to snippet two. Where snippet two has a declaration and an assignment, this snippet only has the latter. The assumption made is that the nested identifiers `style` and `opacity` already exist. As a result, a simple assignment using `=` can be made.
 
-Regarding *right* and *better*, we could cache the `imageToToggle.style` lookup. Technically speaking, each time the `imageToToggle.style.opacity` portion executes there is repetitive lookup work the engine has to do. We will not make this change as the performance benefit is negligible. This will be learned in time, but changes to increase performance should only be considered when the target framerate or user experience suffers.
+Regarding *right* and *better*, we could cache the `imageToToggle.style` lookup. Technically speaking, each time the `imageToToggle.style.opacity` portion executes there is repetitive lookup work the engine has to do. We will not make this change as the performance benefit is negligible. This will be learned in time, but changes to increase performance should only be considered when the target framerate or user experience suffers. Put another way, "premature optimization is the root of all evil". This exact quote is from Donald Knuth, a heavilty respected and influential coder. We will take his advice.
 
 In snippet six there is only one part comprising the line of code:
 ```
@@ -146,7 +146,7 @@ else {
 1. `else` - keyword reserved by JavaScript denoting conditional code execution
 2. `{` - opening curly brace for declaring the beginning of the *else*-condition code block
 
-The above two parts make up the anatomy of an `else` statement. The `else` is an optional execution flow that follows an `if` statement. When the corresponding `if` condition is false, the code between its `{` and `}` will execute. The `if`/`else` allows a program to branch, to have optional execution flow at run-time. Specifically in our `toggleImageOpacity` function, we use this tactic to ping-pong, or toggle, an image's opacity between the values `1` and `.5`. Put another way, the program toggles the image's opacity between fully opaque and 50% transparent. There is nothing *right* or *better* to do with this snippet.
+The above two parts make up the anatomy of an `else` statement. The `else` is an optional execution flow that follows an `if` statement. When the corresponding `if` condition is false, the code between the `else`'s `{` and `}` will execute. The `if`/`else` allows a program to branch, to have conditional execution flow at run-time. Specifically in our `toggleImageOpacity` function, we use this tactic to ping-pong, or toggle, an image's opacity between the values `1` and `.5`. Put another way, the program toggles the image's opacity between fully opaque (100%) and half transparent (50%). There is nothing *right* or *better* to do with this snippet.
 
 In snippet eight there four two parts comprising the line of code:
 ```
