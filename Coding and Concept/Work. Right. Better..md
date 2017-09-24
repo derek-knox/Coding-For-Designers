@@ -186,21 +186,4 @@ In snippet ten there is one part comprising the line of code:
     
 This closing curly brace simply defines the end of the `toggleImageOpacity` function. There are no *right* or *better* improvement possibilities.
 
-So far in this section we have introduced some of the vocabulary, concepts, and considerations of advanced coders. Overwhelming I know. Hopefully a few things clicked though. Regardless, seeds should be planted that will bear fruit later.
-
-If it is not already obvious, identifers are invaluable. They provide a cached reference to a particular value by name that may be used in other parts of the code. The named reference may be used in a sync or async fashion too. Identifiers are your key to getting specific work done at specific times. The value an identifier identifies is denoted in one of two ways:
-1. primitive
-2. reference
-
-We will dive deeper into this in the next chapter, but the general idea is that a reference value is one that may parent other values where a primitive value will not. Put another way, a reference value may be considered "complex" where a primitive value may be considered "simple". 
-
-Above we saw the three identifiers `toggleImageOpacity`, `imageToToggle`, and `currentOpacity`. Based on the values assigned to each, the first became a function identifier while the other two became variable identifiers. If a function expected any number of argument values, that function's signature would define the same amount of argument identifiers. An argument identifier is just a shortcut name to the passed in value, be it a function or variable.
-
-Here is an example function named `setImageOpacity` with an argument identifier named `newOpacityValue`. The value passed at run-time is automatically assigned to it for use inside the function.
-
-```
-function setImageOpacity(newOpacityValue) {
-  var imageToToggle = document.getElementById('image-to-toggle');
-  imageToToggle.style.opacity = newOpacityValue;
-}
-```
+So far in this section we have introduced some of the vocabulary, concepts, and considerations of advanced coders. Overwhelming I know. Hopefully a few things began to click though. Regardless, seeds should be planted that will bear fruit in the Coding and JavaScript chapter and beyond.
