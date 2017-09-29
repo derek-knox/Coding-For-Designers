@@ -24,4 +24,4 @@ New building blocks or groups of building blocks may be added to the structure d
 
 Where traditional visual design is static, behavior makes a design dynamic and interactive. This power is addictive, useful, and extremely empowering. In the context of the web platform and Unity, instead of using solely what the JavaScript and C# code provides, you can *extend* their capabilities with your *own* code. You can invent entirely new and better ways to do almost anything. Super cool.
 
-Next we will look at the pieces that makeup the ability to code behavior. We will do so in the familiar context of the elements, principles, and constructs of visual design. Rock on!
+Next we will look at the pieces that makeup the ability to *code behavior*. We will do so in the familiar context of the elements, principles, and constructs of visual design. Rock on!
