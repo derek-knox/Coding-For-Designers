@@ -1,6 +1,6 @@
 # Structure, Style, and Behavior
 
-Visual designs created directly with code and/or computer software most often only use 2D space. Do not let this be a limitation as a designer. Designs leveraging 3D space can be extremely valuable too, especially when designing novel user interfaces, games, and other creative interactive products. Ultimately, 3D design excels where conveying spatial relationships are most valuable.
+Visual designs created directly with code and/or computer software most often only use 2D space. Do not let this be a limitation as a designer. Designs leveraging 3D space can be extremely valuable too, especially when designing novel user interfaces, games, and other creative interactive products. Ultimately, 3D design excels when conveying spatial relationships is valuable.
 
 Though a 2D and 3D design may look drastically different in comparison, a computer utilizes the same three concepts to render interactive visuals for each. These concepts are:
 1. Structure
