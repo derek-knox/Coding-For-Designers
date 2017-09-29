@@ -2,7 +2,7 @@
 
 Behavior, as previously mentioned, is where the structural building blocks in combination with their adorned materials and objects *react*. They react to interaction, the environment, and ultimately time. Behavior enables a specific building block, group of building blocks, and/or adornments to change in time. These changes manifest in an infinite amount of ways.
 
-The possible behavior(s), and their respective ease of application, is contextual. In the context of 2D with the web platform, behavior is applied via JavaScript code. In the context of 3D and Unity, behavior is applied via C# code. Each coding language, in conjunction with each platform’s authoring tools, provides ways to help you apply certain behavior. For example, Unity with C# provides simple ways to apply behavior in 3D space. 
+The possible behavior(s), and their respective ease of application, is contextual. In the context of 2D with the web platform, behavior is applied via JavaScript code. In the context of 3D and Unity, behavior is applied via C# code. Each coding language, in conjunction with each platform’s authoring tools, provide ways to help you apply certain behavior. For example, Unity with C# provides simple ways to apply behavior in 3D space. 
 
 Behavior(s) may be different depending on the context, but their fundamental purpose remains constant. Behavior brings life to a design. It does so in the form of interactivity, motion, and/or logic. For example, a design with behavior may manifest as a creative authoring environment, an entertaining animation, or a mission critical tool. The manifestations are endless and limited only by your imagination.
 
