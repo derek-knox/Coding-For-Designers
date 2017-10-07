@@ -49,7 +49,6 @@ function makeBackgroundBlack() {
 
 // 1. We tell the engine to do work, the code sequence `();` is the trigger
 // 2. Since we named the function, the engine knows the exact work to put on its stack
-
 makeBackgroundBlack();
 ```
 
