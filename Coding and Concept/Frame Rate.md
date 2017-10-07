@@ -15,7 +15,7 @@ An application or game that targets 60fps must render a new image every 16.6 mil
 
 *^ 1 second = 1000 milliseconds so 1000ms/60fps = 16.6ms per frame ^*
 
-Milliseconds might sound scary, but you'll get used to them quickly. In fact, you likely already have an intuitive understanding of milliseconds. Do you ever feel an  animation within an application or game is too slow or too fast? The milliseconds chosen as the animation time is the culprit.
+Milliseconds might be intimidating at first, but you'll get used to them quickly. In fact, you likely already have an intuitive understanding of milliseconds. Do you ever feel an  animation within an application or game is too slow or too fast? The milliseconds chosen as the animation time is the culprit.
 
 You usually don't have to worry about the 16.6ms window however. I present it here simply for you to keep it in the back of your mind.
 
