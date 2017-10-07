@@ -56,7 +56,7 @@ Without comments, there are naturally a lot less lines for us humans to read. As
 
 Admittedly, the code above does not do a whole lot. The work inside of the `makeBackgroundBlack` function will happen really fast too. The event loop will be blocked, but from a user's perspective the work will happen instantly and then the event loop will become unblocked. If the function instead counted to a million before changing the background color, then the user would percieve the program as slower (and rightly so).
 
-The takeaway here is that you should try to do small and efficient work in your functions. As you author code over time, you will develop an intuitive understanding of what that really means. Just put this idea in the back of your mind. Remember, the faster the stack and event queue are cleared, the greater the chance you will hit your target frame rate. 60fps? Yes please.
+The takeaway here is that you should try to do small and efficient work in your functions. As you author code over time, you will develop an intuitive understanding of what that really means. For now, put this idea in the back of your mind. Remember, the faster the stack and event queue are cleared, the greater the chance you will hit your target frame rate. 60fps? Yes please.
 
 Let's now look at an async example. We will make it similar to the sync example for comparison. In fact, we will make the program identical except for a single statement and its comments.
 
