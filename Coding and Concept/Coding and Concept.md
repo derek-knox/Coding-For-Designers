@@ -8,6 +8,6 @@ In this section, we will visit the most important programming concepts that will
 
 Next we will explore the differences between sync (happens now) and async (happens later) behavior. This exploration will naturally tie into visiting interfacing and the client and server model. As a result, we will learn how code talks to other code while also learning the specific benefits of having multiple devices communicate and/or do dedicated and unique work.
 
-Lastly, we will look at the anatomy of a source code file for HTML (.html), CSS (.css), and JavaScript (.js). This will allow us to reference real code against various concepts covered thus far. A few examples that highlight the value of two extemely important programming concepts will also be touched upon. The first is *recycle and reuse* (also known as *don't repeat yourself* or *DRY*). The second is *work. right. better.*, a mantra that will help you improve your code authoring over time. All coders live by this, myself included.
+Second to last, we will look at the anatomy of a source code file for HTML (.html), CSS (.css), and JavaScript (.js). This will allow us to reference real code against various concepts covered thus far. Lastly, we will cover the *work. right. better.* mantra to help you improve your code authoring over time. All coders live by this, myself included.
 
 Upon completion of this section, your mental model will be primed for programming in JavaScript. Let's get going.
