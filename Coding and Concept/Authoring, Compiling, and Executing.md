@@ -30,7 +30,7 @@ With Unity, the process is:
 With JavaScript in a web browser, the process is:
 1. *Author* code in a text editor and/or a tool that helps generate code
 2. View a web page that hosts your authored JavaScript code, the browser *compiles* it on the fly
-3. This just-in-time compiled code is then automatically *executed* in real-time 
+3. This compiled code is then automatically *executed* in real-time 
 
 To recap, we write in a high-level language using English words and abbreviations. This is author time. Then a compiler program converts the code we humans can understand into code the computer understands. This is compile time. Finally, if the conversion process has no errors, the result is an application or game that is interactive. This is execution time.
 
