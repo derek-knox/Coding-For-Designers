@@ -70,7 +70,6 @@ function makeBackgroundBlack() {
 // 1. We tell the engine to do work using the code sequence `(makeBackgroundBlack, 1000);`
 // 2. 'setTimeout' is a named built-in function that the 'runtime APIs' provide, thank you runtime
 // 3. The 'setTimeout' function expects two argument values
-
 setTimeout(makeBackgroundBlack, 1000);
 ```
 
