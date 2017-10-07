@@ -25,4 +25,4 @@ In the future, if your application's animation and motion seems to have hiccups 
 
 We'll revisit these two problems later, but just be aware of them.
 
-So a frame rate is vital for percieved motion, that's great. But how do we actually allow interactivity to be reflected in this motion? You guessed it, *event loop* time.
+So a frame rate is vital for percieved motion, that's great. But how do we actually allow interactivity to be reflected in this motion? *Event loop* time.
