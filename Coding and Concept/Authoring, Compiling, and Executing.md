@@ -13,7 +13,7 @@ Inevitably, these visual tools are limiting as they do not allow you to pull off
 
 After we have authored the code, we need to "run" or "execute" it. Executing it helps us confirm that it actually does what we want in real-time. Before we can do this however, a step needs to be taken that transforms our static authored code into code that can be executed. Welcome to *compile time*.
 
-Compile time is how we get from our authored *static* code to *dynamic* code that manifests as an interactive application or game. We won't go into the details of this step as it is complex. Feel free to research deeper. All you need to know is that this step exists so *we* can use words *we* understand instead of coding in binary, the only thing computers fundamentally understand. A prime example is how we use English words (and English abbreviations) within the programming language JavaScript.
+Compile time is how we get from our authored *static* code to *dynamic* code that manifests as an interactive application or game. We won't go into the details of this step as it is complex. All you need to know is that this step exists so *we* can use words *we* understand instead of coding in binary, the only thing computers fundamentally understand. A prime example is how we use English words (and English abbreviations) within the programming language JavaScript.
 
 In essence, some smart and nerdy authors wrote a *compiler program* that compiles and converts a high-level programming language like JavaScript (easier for us humans to use) to lower-level languages (easier for super-nerdy humans to use) to binary (easier for super-super-nerdy humans and computers to use).
 
