@@ -117,6 +117,6 @@ Grouping the aforementioned visual design elements in a particular way gives ris
 
 The linear walk through above is intentional as each builds upon the previous. Points connect to create lines just as expressions connect to create statements. By combining these lines in specific ways, a shape is created. The shape encloses space. Similarly, combining statements and enclosing them in a function creates a scope. Adding color to a shape gives it identity just as adding a signature to a function does. Assigning value to a color gives it a particular effect or result. Arguments assigned to a function provide a particular result as well. A form exists as a particular combination of the prior visual elements. An object, like a form, exists as a particular combination, but of the previous programming elements. Finally, richness is achieved through texture for visuals and state for code.
 
-Virtually an unlimited amount of visual and programming designs are possible using the elements above. Your creativity and experience are the only limiting factors.
+An infinite amount of visual and programming designs are possible using the elements above. Your creativity and experience are the only limiting factors.
 
 Over time, the visual and programming communities at large acknowledged common patterns that were useful in using the aforementioned elements. In visual design these are known as the *design principles*. In programming they are called *design patterns*. Both are extremely useful in their respective domains.
