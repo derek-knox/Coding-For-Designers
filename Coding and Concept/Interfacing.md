@@ -8,7 +8,7 @@ As a code author, you get ease-of-use while the underlying complexity is the cod
 
 In the last section we saw one API, the built-in `setTimeout` function, in action. We wrote our code to interact with that API by giving it two argument values. Behind the scenes, the runtime wired up and provided the functionality we expected. Both you and I don't really care how the work is done, as long as it gets done. This is the trade-off an API provides, a simpler way to do work. APIs rock!
 
-Earlier in the Constructs and Components section we covered built-in, 3rd party, and custom components. Naturally, they each provide various APIs. As previously mentioned, we can create useful code for others to use too. Another author using our code APIs doesn't have to care about how the work actually gets done. They get the same trade-off as us, a simpler way to do work.
+Earlier in the *Constructs and Components* section we covered built-in, 3rd party, and custom components. Naturally, they each provide various APIs. As previously mentioned, we can create useful code for others to use too. Another author using our code APIs doesn't have to care about how the work actually gets done. They get the same trade-off as us, a simpler way to do work.
 
 As you gain coding and programming experience, you'll memorize certain built-in and 3rd party APIs. This translates to improving your authoring speed. Don't worry about being slow when you start out, you'll get better in time.
 
