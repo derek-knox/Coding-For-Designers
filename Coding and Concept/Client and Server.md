@@ -1,6 +1,6 @@
 # Client and Server
 
-Clients and servers are computers that communicate and work together over a network. The internet is one such network that facilitates this communication. Some of these computers are clients and some are servers. Sometimes a computer is both a client and a server. The distinction is simple. A client asks for data and the server provides it. The network between them is the communication channel.
+Clients and servers are computers that communicate over a network. The internet is one such network that facilitates this communication. Some of these computers are clients and some are servers. Sometimes a computer is both a client and a server. The distinction is simple. A client asks for data and the server provides it. The network between them is the communication channel.
 
 The details of how the internet facilitates this communication is elegant and impressive, but not a focus of this book. I highly recommend Introduction to Networking by Charles Severance if you want to dig deeper, but it is not required reading to move forward. Just know that the internet enables a client computer and a server computer to talk.
 
