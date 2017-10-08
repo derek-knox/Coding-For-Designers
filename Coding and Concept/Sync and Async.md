@@ -38,12 +38,12 @@ makeBackgroundBlack();
 There are likely some details you don't understand, but that is to be expected. Let's look at the same code with some added explanations. Take note that the words following the `//` are plain English, not code. These plain English *comments* are useful for us humans when we read and share our code for others to read. Comments are for humans not computers. The engine ignores them.
 
 ```
-// 1. We declare a function statement (stack work) for the engine to read
+// 1. We declare a function statement (stack work) for the engine
 // 2. We name the function whatever we want, 'makeBackgroundBlack' in this case
 // 3. The engine doesn't do the work yet (code statement between the '{' and '}')
 function makeBackgroundBlack() {
 
-  // Remember the Coding Color section ;)
+  // Remember the Coding Color section? We set the document's background color to black
   document.body.style.backgroundColor = '#000000';
 }
 
