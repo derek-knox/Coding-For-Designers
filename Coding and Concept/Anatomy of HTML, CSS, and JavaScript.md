@@ -122,7 +122,7 @@ Now is the time to look at the anatomy of a `.css` file which, for our purpose, 
 
 Each class definition is denoted by a preceding `.` so our `dark-background` class becomes `.dark-background` within our `.css` file. Then, similar to the JavaScript scope concept we visited earlier, the property-value pairs are defined between the `{` and `}` characters. The `{` and `}` define the scope, the space and enclosure, where one or more property-value pairs are associated with a particular class.
 
-Each property-value pair consists of a property name that uses the same rules for class naming suggested above, followed by a `:` and then an actual value. For ease of learning, I wish the `:` was `=` instead, but I digress. With a class and its valid property-value pairs defined, any element that has a `class` by the same name will get the styles applied. Pretty damn cool and very reusable.
+Each property-value pair consists of a property name that uses the same rules for class naming suggested above, followed by a `:` and then an actual value. For ease of learning, I wish the `:` was `=` instead, but I digress. With a class and its valid property-value pair(s) defined, any element that has a `class` by the same name will get the styles applied. Pretty damn cool and very reusable.
 
 If it isn't already obvious, each browser sets default styles for elements to provide some baseline style. More often than not, you'll want to set your own styles to override the defaults. This is why we created `style.css`.
 
