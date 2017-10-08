@@ -203,7 +203,7 @@ Updated `<button>` becomes:
 <button onclick='toggleImageOpacity()'>Toggle Image Opacity</button>
 ```
 
-The `id` attr is how we identify an element in our HTML as unique to our document. An id means we intend there to be only one element with a specific name. A unique id enables us to gain a reference to the element for use in JavaScript. With this element reference in JavaScript, we can use its API to do all sorts of cool things.
+The `id` attr is how we identify an element in our HTML as unique to our document. An id means we intend there to be only one element with a specific name. A unique id enables us to gain a reference to the element's corresponding object for use in JavaScript. With this reference in JavaScript, we can use its API to do all sorts of cool things.
 
 The result of clicking the button above during run-time results in the function named `toggleImageOpacity` to be called via `()`. This results in the function's contents being executed by the engine. Behind the scenes, the runtime APIs transform the hardware input (mouse, trackpad, stylus, touch, etc.) to event queue work. The event loop then picks up the resulting package and it gets placed on the stack. This all happens in milliseconds or even microseconds when the event loop is not blocked. Lastly, the engine actually executes the function contents. Now is a great time to look at those contents.
 
