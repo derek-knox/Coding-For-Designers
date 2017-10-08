@@ -81,8 +81,8 @@ Additionally, `<a>hyperlink</a>` becomes `<a href='http://www.codingfordesigners
 
 The takeaway is that the browser provides useful APIs via attrs applied to elements. Now that we've covered the basic implementation of HTML structure, let's dig into style. Welcome to the `class` attr.
 
-The `class` attr gives you the creative power to style content. We will start by giving each `<div>` the same style. So `<div>` becomes `<div class='dark-background'>` where the `class` attr is set with `=` to the value `dark-background`. The `dark-background` name value could be virtually anything we want, but there are rules for valid names. Make it easier on yourself and stick with:
-- lowercase English characters
+The `class` attr gives you the creative power to style content. We will start by giving each `<div>` the same style. So `<div>` becomes `<div class='dark-background'>` where the `class` attr is set with `=` to the value `dark-background` between quotes. The `dark-background` name value could be virtually anything we want, but there are rules for valid names. Make it easier on yourself and stick with:
+- lowercase English alphabet characters
 - use `-` instead of spaces
 
 Now that we have set a `dark-background` value for the `class` attr, how do we actually define the style for the browser to render it? Remember when I mentioned that other tags can be added to the `<head>`?
