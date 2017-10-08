@@ -91,7 +91,7 @@ Now that we have set a `dark-background` value for the `class` attr, how do we a
 <head>
   <meta charset="utf-8">
   
-  <!-- rel defines the href relationship type - href defines the hyperlink reference -->
+  <!-- 'rel' defines the href relationship type - 'href' defines the hyperlink reference -->
   <link rel="stylesheet" href="assets/css/style.css">
   
   <title>Coding for Designers</title>
