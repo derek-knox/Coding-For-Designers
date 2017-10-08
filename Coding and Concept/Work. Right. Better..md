@@ -78,9 +78,7 @@ The above five parts make up the anatomy of a declaration and assignment stateme
 
 Assigning an executed function's result to a variable identifier is an example of *caching*. Caching is a great approach for decreasing code volume and increasing execution time performance. The more expensive and time consuming the function call (blocking stack work), the more valuable caching is. Preventing repetitive work is the win with caching.
 
-With respect to making snippet two *more right*, there is one other thing we could do. We could cache the `imageToToggle` lookup and assignment *outside* of the `toggleImageOpacity` function. In doing so, we would prevent the repetitive work that occurs each time `toggleImageOpacity` executes. This approach would require two conditions to continue to work:
-1. value assignment can never change
-2. element assigned must remain in the document
+With respect to making snippet two *more right*, there is one other thing we could do. We could cache the `imageToToggle` lookup and assignment *outside* of the `toggleImageOpacity` function. In doing so, we would prevent the repetitive work that occurs each time `toggleImageOpacity` executes. This approach would require the identifier to never be reassigned to continue to work.
 
 Additionally, an even *more right* approach could be made if `imageToToggle`'s value would be useful to other code within our program. If this was the case then the variable wouldn't exist in the scope just outside the `toggleImageOpacity`'s scope, but could instead exist in a higher level scope via the singleton design pattern. We mentioned this approach in the Principles and Patterns section, but the details are outside the scope of this book. Again, we're just planting seeds here so do not concern yourself with the details. We'll leave the snippet as is for simplicity and because there isn't anything *better* we can do.
 
