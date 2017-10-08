@@ -109,7 +109,7 @@ assets
     cover-coding-for-designers.jpg
 ```
 
-Now is the time to look at the anatomy of a `.css` file which, for our purpose, simply consists of one or more class definitions. Our `style.css` file is simply:
+Now is the time to look at the anatomy of a `.css` file which, for our purpose, consists of one class definition. Typically the file would have more than one, but currently we only need one. Our `style.css` file is simply:
 
 ```
 .dark-background {
