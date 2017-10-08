@@ -71,7 +71,7 @@ Spacing, tabs, and new lines do typically exist between elements however. This i
 </body>
 ```
 
-A `<div>` tag simpy denotes a division of content where the layout (position and dimension) of each division is dependent on style. This will likely become your most used element tag. The `<h1>`, `<p>`, `<button>`, and `<h2>` tags are self-expanatory, but the `<img>` and `<a>` tags are less so. This is because they are each lacking *attributes*. We'll use the shortcut *attrs* moving forward. All elements can leverage attrs, but these latter two elements *require* them to function as designed.
+A `<div>` tag simpy denotes a division of content where the layout (position and dimension) of each division is dependent on style. This will likely become your most used element tag. The `<h1>`, `<p>`, `<button>`, and `<h2>` tags are self-describing, but the `<img>` and `<a>` tags are less so. This is because they are each lacking *attributes*. We'll use the shortcut *attrs* moving forward. All elements can leverage attrs, but these latter two elements *require* them to function as designed.
 
 Think of attrs as APIs. Attrs enable the coder to achieve functionality based on a shared understanding of designed use. They are also where we start to transition toward CSS via the `class` attr. First we will update the `<img>` and `<a>` tags with each of their most useful attrs.
 
