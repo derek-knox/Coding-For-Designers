@@ -143,7 +143,7 @@ else {
 1. `else` - keyword reserved by JavaScript denoting conditional code execution
 2. `{` - opening curly brace for declaring the beginning of the *else*-condition code block
 
-The above two parts make up the anatomy of an `else` statement. The `else` is an optional execution flow that follows an `if` statement. When the corresponding `if` condition is false, the code between the `else`'s `{` and `}` will execute. The `if`/`else` allows a program to branch, to have conditional execution flow at run-time. Specifically in our `toggleImageOpacity` function, we use this tactic to ping-pong, or toggle, an image's opacity between the values `1` and `.5`. Put another way, the program toggles the image's opacity between fully opaque (100%) and half transparent (50%). There is nothing *right* or *better* to do with this snippet.
+The above two parts make up the anatomy of an `else` statement. The `else` is an optional execution flow that follows an `if` statement. When the corresponding `if` condition is false, the code between the `else`'s `{` and `}` will execute. The `if`/`else` allows a program to branch, to have conditional execution flow at execution time. Specifically in our `toggleImageOpacity` function, we use this tactic to ping-pong, or toggle, an image's opacity between the values `1` and `.5`. Put another way, the program toggles the image's opacity between fully opaque (100%) and half transparent (50%). There is nothing *right* or *better* to do with this snippet.
 
 In snippet eight there are four parts comprising the line of code:
 ```
