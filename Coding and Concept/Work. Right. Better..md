@@ -71,7 +71,7 @@ var imageToToggle = document.getElementById('image-to-toggle');
 1. `var` - keyword reserved by JavaScript denoting a variable
 2. `imageToToggle` - custom identifier for referencing a value by name
 3. `=` - *assignment operator* that assigns the value on its right to the identifer on its left
-4. `document.getElementById('image-to-toggle')` - browser API for referencing a specific HTML element
+4. `document.getElementById('image-to-toggle')` - browser API for referencing a specific HTML element's object
 5. `;` - character reserved by JavaScript denoting the explicit end of a code statement
 
 The above five parts make up the anatomy of a declaration and assignment statement. The parts work together to assign the resulting value from the `document.getElementById()` browser API call to the declared `imageToToggle` identifier. In subsequent code, the identifier can be used as a shortcut to reference the actual element object and then use its API. It is worth noting that every use of `imageToToggle` could be replaced with `document.getElementById('image-to-toggle')`. This approach would *work*, but it would be *less right* because we'd be doing the same work more times than needed.
