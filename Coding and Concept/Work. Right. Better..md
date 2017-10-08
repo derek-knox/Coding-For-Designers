@@ -76,7 +76,7 @@ var imageToToggle = document.getElementById('image-to-toggle');
 
 The above five parts make up the anatomy of a declaration and assignment statement. The parts work together to assign the resulting value from the `document.getElementById()` browser API call to the declared `imageToToggle` identifier. In subsequent code, the identifier can be used as a shortcut to reference the actual element object and then use its API. It is worth noting that every use of `imageToToggle` could be replaced with `document.getElementById('image-to-toggle')`. This approach would *work*, but it would be *less right* because we'd be doing the same work more times than needed.
 
-Assigning an executed function's result to a variable identifier is an example of *caching*. Caching is a great approach for decreasing code volume and increasing execution time performance. The more expensive and time consuming the function call (remember the stack), the more valuable caching is. Preventing repetitive work is the win with caching.
+Assigning an executed function's result to a variable identifier is an example of *caching*. Caching is a great approach for decreasing code volume and increasing execution time performance. The more expensive and time consuming the function call (blocking stack work), the more valuable caching is. Preventing repetitive work is the win with caching.
 
 With respect to making snippet two *more right*, there is one other thing we could do. We could cache the `imageToToggle` lookup and assignment *outside* of the `toggleImageOpacity` function. In doing so, we would prevent the repetitive work that occurs each time `toggleImageOpacity` executes. This approach would require two conditions to continue to work:
 1. value assignment can never change
