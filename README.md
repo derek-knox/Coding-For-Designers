@@ -48,16 +48,16 @@ Coding for Designers is a work-in-progress book that demystifies coding relative
 - [Work. Right. Better.](Coding%20and%20Concept/Work.%20Right.%20Better..md)
 
 ### Coding and JavaScript
-WIP Sections
-- Environment - Browser hooks you up
-- Keywords - Most important keywords
-- Syntax - Common rules
-- Scope and Context - Don’t clash
-- State - Time for time
-- Types
-- ...
+- Browser
+- Values
+- Operators
+- Identifiers
+- Conditionals
+- Functions
+- Flow
+- Errors
 
 ### Deconstructing Designs
 - Adobe Illustrator
-- Facebook Messenger
+- Twitter
 - Gmail Inbox
