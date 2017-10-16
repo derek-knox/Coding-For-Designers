@@ -1,6 +1,6 @@
 # Elements and Elements
 
-The elements of visual design are the *primitive* pieces of visual design. Though some may argue the exact list, we will use the one below. A related set of primitives are listed for programming code though there is not a formal one-to-one mapping. A bunch of new terms are introduced here, but don't expect to grasp them all at once. We'll continually revisit each throughout the rest of this book. Take note of the fundamental and auxiliary groupings.
+The elements of visual design are the *primitive* pieces of visual design. Though some may argue the exact list, we will use the one below. A related set of primitives are listed for programming code though there is not a formal one-to-one mapping. A bunch of new terms are introduced here, but don't expect to grasp them all at once. We'll continually revisit each throughout the rest of this book.
 
 <table>
   <tr>
