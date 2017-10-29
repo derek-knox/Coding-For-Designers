@@ -7,9 +7,9 @@ We know code is a system for converting meaning between forms and HTML, CSS, and
 We will now start to dig into HTML, CSS, and JavaScript since we have a greater understanding of how the various concepts we have covered play-off each other. Your mental model should be primed.
 
 Let's squash a myth real quick. Designers and other non-coders new to coding think they need to learn an entire new language, and in the context of the web, *three* new languages. This is not true. What needs to be learned is the:
-1. distinction between structure, style, and behavior
-2. anatomical implementation of structure, style, and behavior
-3. common subset of code words for each implementation
+1. Distinction between structure, style, and behavior
+2. Anatomical implementation of structure, style, and behavior
+3. Common subset of code words for each implementation
 
 For 2D and the web, that means we need to know the difference between HTML structure, CSS styling, and JavaScript behavior. We have this distinction covered. Let's dig into number two and three.
 
