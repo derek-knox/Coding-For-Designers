@@ -19,7 +19,7 @@ In essence, some smart and nerdy authors wrote a *compiler program* that compile
 
 ![alt text](../assets/visual-todo-placeholder.jpg "Author > Compile > Run")
 
-The output of this compilation process results in code that the computer *executes* in real-time. This process often manifests as an interactive user interface within an application or game.
+The output of this compilation process results in code that the computer *executes* in real-time. This process often manifests as an interactive user interface in an application or an interactive environment in a game.
 
 With Unity, the process is:
 1. *Author* code in a text editor and/or with Unity's built-in UI that generates code
