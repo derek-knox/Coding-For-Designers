@@ -34,4 +34,4 @@ With JavaScript in a web browser, the process is:
 
 To recap, we write in a high-level language using English words and abbreviations. This is author time. Then a compiler program converts the code we humans can understand into code the computer understands. This is compile time. Finally, if the conversion process has no errors, the result is an application or game that is interactive. This is execution time.
 
-How is execution time actually interactive though? One or more users could take any number of actions within our application or game at any given moment. We can't possibly handle all these potential scenarios in our code can we? Thankfully the answer is yes we can. We just need to understand the *frame rate* and the runtime *event loop*.
+How is execution time actually interactive though? One or more users could take any number of actions within our application or game at any given moment. We can't possibly handle all these potential scenarios in our code can we? Thankfully the answer is yes we can. We just need to understand the *frame rate* and the *event loop*.
