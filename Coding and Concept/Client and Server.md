@@ -4,7 +4,7 @@ Clients and servers are computers that communicate over a network. The internet 
 
 The details of how the internet facilitates this communication is elegant and impressive, but not a focus of this book. I highly recommend *Introduction to Networking* by Charles Severance if you want to dig deeper, but it is not required reading to move forward. Just know that the internet enables a client computer and a server computer to talk.
 
-Let's look at two example programs that utilize the internet to help solidify your understanding. One program will be a web browser and the other an internet-connected mobile game. Let's just say that each example runs on a smartphone. Both the browser and the game are on the client, the smartphone. Each program leverages distinct APIs to request information from distinct and remote computers, the servers. Pretty simple relationship really.
+Let's look at two example programs that utilize the internet to help solidify your understanding. One program will be a web browser and the other an internet-connected mobile game. Let's just say that each example is running on a smartphone. Both the browser and the game are on the client, the smartphone. Each program leverages distinct APIs to request information from distinct and remote computers, the servers. Pretty simple relationship really.
 
 ![alt text](../assets/visual-todo-placeholder.jpg "Client and Server")
 
