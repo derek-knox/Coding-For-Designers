@@ -3,7 +3,7 @@
 We know computers are dumb and fast. Some computers are faster than others however. How do we ensure the code we author will execute well on a given computer? To do so, we need to author our code with a target *frame rate* in mind.
 
 A frame rate is simply the amount of frames that are shown in a second. A frame is a single rendered image. Frames shown back to back over time create the illusion of motion. Common target frame rates are:
-- 30fps (movies)
+- 30fps (video)
 - 60fps (apps/games)
 - 90fps (AR/VR)
 
