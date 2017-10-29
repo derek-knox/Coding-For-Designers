@@ -22,6 +22,6 @@ Programming
 - Patterns = Organization of Primitives
 - Components = Compound Results
 
-Through the application of the elements, principles, and constructs, a visual designer may influence the meaning a viewer extracts from a visual design. A good visual designer is cognizant of their application of them where a poor designer is not. A good visual designer takes advantage and applies them with intention.
+Through the application of the elements, principles, and constructs a visual designer may influence the meaning a viewer extracts from a visual design. A good visual designer is cognizant of their application of them where a poor designer is not. A good visual designer takes advantage and applies them with intention.
 
 Just as a visual designer has the power to evoke meaning for a viewer, so too does a coder. This coder’s code often gets transformed into a visual design on-screen that is *interactive* and *alive*. These interactive designs entertain, educate, and empower people. Coding is very rewarding for these reasons. Empower yourself.
