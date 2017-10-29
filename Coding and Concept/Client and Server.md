@@ -16,4 +16,4 @@ An internet-connected game works exactly the same way. When it starts up, or ano
 
 A server, if you didn't guess already, is also responsible for providing a client web browser the *initial* HTML, CSS, and JavaScript for a website or web app. If too many people try to access the same data at the same time however, the server can crash. It is worth noting that each client is actually getting a copy of the data to reconstruct in its browser. Typically a crash occurs because the server software can't properly provide the various clients the copies fast enough. I mention this simply because many people don't grasp the fact that the client reconstructs what the server provides.
 
-Having talked about HTML, CSS, and JavaScript at solely a high level thus far, now is a great time to venture deeper. We'll do so next by exploring the anatomy of the three file types .html, .css, and .js.
+Having talked about HTML, CSS, and JavaScript at solely a high level thus far, now is a great time to venture deeper. We'll do so next by exploring the anatomy of the three file types `.html`, `.css`, and `.js`.
