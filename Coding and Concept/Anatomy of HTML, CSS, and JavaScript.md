@@ -11,7 +11,7 @@ Let's squash a myth real quick. Designers and other non-coders new to coding thi
 2. Anatomical implementation of structure, style, and behavior
 3. Common subset of code words for each implementation (80/20 rule)
 
-For 2D and the web, that means we need to know the difference between HTML structure, CSS styling, and JavaScript behavior. We have this distinction covered. Let's dig into number two and three.
+For 2D and the web, that means we need to know the difference between HTML structure, CSS styling, and JavaScript behavior. We have this distinction covered. Let's dig into number two and three. Learning each language won't be easy, but it can be simple.
 
 In keeping with the structure, style, and behavior order, let's look at the anatomy of each starting with HTML. We will title our file `index.html` to align with a best practice naming convention.
 
