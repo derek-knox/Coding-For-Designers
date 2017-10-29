@@ -7,7 +7,7 @@ As mentioned previously there are three distinct timeframes when code exists. In
 
 These distinct timeframes are useful for understanding how the static code we author in a text file enables a dynamic and interactive creation to exist in real-time. We will also touch on why this transformation even needs to occur.
 
-*Authoring time* is pretty self-explanatory right? It is the time when we are authoring code. That's it. We have a text editor program of some kind open, and we are typing or pasting into it. Simple as that. Some programs even exist, like Unity for example, that enable a more visual programming approach. This simply means that the program has some amount of UI interaction that enables you as the author to *generate* code in a non-text based way. Admittedly, this is often more fun than text-based programming... but there is a catch.
+*Authoring time* is pretty self-explanatory right? It is the time when we are authoring code. That's it. We have a text editor program of some kind open and we are typing or pasting into it. Simple as that. Some programs even exist, like Unity for example, that enable a more visual programming approach. This simply means that the program has some amount of UI interaction that enables you as the author to *generate* code in a non-text based way. Admittedly, this is often more fun than text-based programming... but there is a catch.
 
 Inevitably, these visual tools are limiting as they do not allow you to pull off exactly what you want. This is why we're concentrating on authoring custom code in a text editor. We get *ultimate control* as to how something works because *we get to write the code*.
 
