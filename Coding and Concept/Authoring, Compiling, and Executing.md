@@ -23,7 +23,7 @@ The output of this compilation process results in code that the computer *execut
 
 With Unity, the process is:
 1. *Author* code in a text editor and/or with Unity's built-in UI that generates code
-2. Click the "Build" button to *compile* the authored code into a single packaged file
+2. Click the "Build" button to *compile* the authored code into an executable package
 3. *Execute* this file's code on the target operating system in real-time
     - Remember file extensions? ;)
 
