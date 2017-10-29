@@ -6,7 +6,7 @@ An API is just an interface. The doorknob of a door is an interface. The steerin
 
 As a code author, you get ease-of-use while the underlying complexity is the code designer's responsibility. Think about it. As a driver of a vehicle, you do not need to know all the details of how the engine works to use it. The designers take that responsibility. Similarly with code, you just use the API provided to gain benefit. This is a pretty solid trade.
 
-In the last section we saw one API, the built-in `setTimeout` function, in action. We wrote our code to interact with that API by giving it two argument values. Behind the scenes, the runtime wired up and provided the functionality we expected. Both you and I don't really care how the work is done, as long as it gets done. This is the trade-off an API provides, a simpler way to do work. APIs rock!
+In the last section we saw one API, the built-in `setTimeout` function, in action. We wrote our code to interact with that API by giving it two argument values. Behind the scenes, the runtime wired up and provided the functionality we expected. Both you and I don't really care how the work is done as long as it gets done. This is the trade-off an API provides, a simpler way to do work. APIs rock!
 
 Earlier in the *Constructs and Components* section we covered built-in, 3rd party, and custom components. Naturally, they each provide various APIs. As previously mentioned, we can create useful code for others to use too. Another author using our code APIs doesn't have to care about how the work actually gets done. They get the same trade-off as us, a simpler way to do work.
 
