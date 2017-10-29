@@ -43,7 +43,7 @@ There are likely some details you don't understand, but that is to be expected. 
 // 3. The engine doesn't do the work yet (code statement between the '{' and '}')
 function makeBackgroundBlack() {
 
-  // Remember the Coding Color section? We set the document's background color to black
+  // We set the document's background color to black (remember the Coding Color section?)
   document.body.style.backgroundColor = '#000000';
 }
 
