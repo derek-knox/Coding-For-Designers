@@ -60,8 +60,8 @@ These steps enable the engine to run fast and efficiently during execution time.
 2. clear the event queue
 
 Once these two goals are met, the engine can relax. It relaxes until new work is added to its stack. How does it get new work though? Do you remember the input triggers we covered in the *Behavior* section? Bingo. As a reminder, these input triggers, often called *events*, are:
-1. user interaction (tap, click, hit, hover, etc.)
-2. environment (layout resizing, operating system, device sensor, etc.)
+1. user interaction (tap, click, hover, gesture, voice, etc.)
+2. environment (layout resizing, operating system, device sensors, etc.)
 3. time (delays, schedules, etc.)
 
 When an event occurs, the runtime APIs manage the special work required and then update the event queue when finished. Since the event loop has been cycling while the engine was relaxing, it now notices the updated event queue. Consequently, it takes one item from the queue and gives it to the engine. The engine then puts it on the stack. You guessed it, new work for the engine. This process cycles.
