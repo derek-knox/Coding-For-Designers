@@ -12,7 +12,7 @@ Your solution may differ from mine. This is totally fine. The goal here is simpl
 
 *^ Grid of 2x2 examples with 4-bit code ^*
 
-The visual above illustrates a core aspect of computer graphics. If you author digital content you will have connected the dots. Welcome to the *pixel*.
+The visual above illustrates a core aspect of computer graphics. If you author digital content you will have made the connection. Welcome to the *pixel*.
 
 Pixel is another shortcut word. A pixel is a *picture element*. Do not ask me where the "x" came from. Simply put, to visualize a code on a computer screen, pixels are used. Naturally, the more pixels you have, the larger the image. Makes sense.
 
