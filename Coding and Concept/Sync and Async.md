@@ -66,7 +66,7 @@ function makeBackgroundBlack() {
   document.body.style.backgroundColor = '#000000';
 }
 
-// 1. We tell the engine to do work using the code sequence `(makeBackgroundBlack, 1000);`
+// 1. We tell the engine to do work, the code sequence `(makeBackgroundBlack, 1000);` is the trigger
 // 2. 'setTimeout' is a named built-in function that the 'runtime APIs' provide, thank you runtime
 // 3. The 'setTimeout' function expects two argument values
 setTimeout(makeBackgroundBlack, 1000);
