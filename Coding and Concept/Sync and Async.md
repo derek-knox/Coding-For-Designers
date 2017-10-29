@@ -24,7 +24,7 @@ The 3D visualization from the *Event Loop* section should be popping into your h
 
 *^ The Event Loop Machine ^*
 
-Let's look at code examples of both work types to see this in action. We haven't specifically covered JavaScript code yet, but I am confident you'll get the gist.
+Let's look at code examples of both work types to see this in action. We haven't specifically covered JavaScript outside the *Elements and Elements* section yet, but I am confident you'll get the gist.
 
 Sync work:
 ```
