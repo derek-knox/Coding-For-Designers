@@ -91,7 +91,7 @@ Naturally, by creating an enclosure, you simultaneously create *space*, the four
 
 ## Value and Arguments
 
-*Value*, may be applied to a shape’s color to modify the result. Similarly in a function’s signature, different *arguments* may be applied to change the function’s result. Value allows a shape with a specific color to be reused with a different effect. Arguments allow a function with a specific signature to be reused with a different effect too.
+*Value* may be applied to a shape’s color to modify the result. Similarly in a function’s signature, different *arguments* may be applied to change the function’s result. Value allows a shape with a specific color to be reused with a different effect. Arguments allow a function with a specific signature to be reused with a different effect too.
 
 ![alt text](../assets/visual-todo-placeholder.jpg "Value & Signature Examples")
 
