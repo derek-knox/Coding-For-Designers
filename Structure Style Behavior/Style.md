@@ -24,7 +24,7 @@ As you’ll notice in the 2D and 3D examples above, what differs between them is
 
 The computer program, the web browser for our 2D examples and the Unity Engine for our 3D examples, knows how to read valid properties and values. Each program can then output a stylized 2D or 3D rendering respectively.
 
-As style is respected and reliably applied by each platform, we begin to truly differentiate the visual representation of potentially identical structures. This is a super powerful concept to grasp, read that again. Here are a few more examples to drive home the difference between structure and style.
+As style is respected and reliably applied by each platform, we begin to truly differentiate the visual representation of potentially identical structures. This is a super powerful concept to grasp so read that again. Here are a few more examples to drive home the difference between structure and style.
 
  *^ TODO - Image showcase 1 structure, 3 2D and 3 3D styled examples^*
 
