@@ -43,12 +43,14 @@ This is the most structurally simple, complete, and valid HTML a browser uses. L
     
     <!-- Define the page title - useful for the browser, other programs, and search engines -->
     <title>Coding for Designers</title>
-    
+  
+  <!-- Define the page metadata end -->
   </head>
   
   <!-- Define the page content - what gets rendered for viewing and user interaction -->
   <body>Content goes here.</body>
-  
+
+<!-- Define the html end -->
 </html>
 ```
 
