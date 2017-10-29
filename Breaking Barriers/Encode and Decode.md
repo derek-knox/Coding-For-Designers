@@ -68,4 +68,4 @@ Math is not my strong suit, but a single bit is twenty-four times smaller than t
 
 What if I told you that the decoding process took one hour? This is just a thought experiment, but if that was the case, then I would take my chances sending the twenty-four bits instead. 
 
-The takeaway here is that encoded and decoded forms are valuable in different scenarios. For example, the desire for fast internet often means encoding data before sending and then decoding upon arrival.
+The takeaway here is that encoded and decoded forms are valuable in different scenarios. As illustrated above, the desire for fast internet often means encoding data before sending and then decoding upon arrival.
