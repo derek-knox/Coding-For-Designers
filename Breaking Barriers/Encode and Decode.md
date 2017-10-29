@@ -16,12 +16,12 @@ Code is a system for converting meaning between forms. One form is considered *e
   <tr>
     <td>Pencil and Paper Questions</td>
     <td>1 and 0</td>
-    <td>"Yes" and “No”</td>
+    <td>Yes and No</td>
   </tr>
   <tr>
     <td>Binary Switch</td>
     <td>1 and 0</td>
-    <td>“On” and “Off”</td>
+    <td>On and Off</td>
   </tr>
   <tr>
     <td>Example English Code</td>
