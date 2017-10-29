@@ -1,9 +1,9 @@
 # Authoring, Compiling, and Executing
 
 As mentioned previously there are three distinct timeframes when code exists. In order, these are:
-1. authoring time
-2. compile time
-3. execution time
+1. Authoring time
+2. Compile time
+3. Execution time
 
 These distinct timeframes are useful for understanding how the static code we author in a text file enables a dynamic and interactive creation to exist in real-time. We will also touch on why this transformation even needs to occur.
 
