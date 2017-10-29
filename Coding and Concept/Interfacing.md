@@ -1,6 +1,6 @@
 ## Interfacing
 
-It wasn't important until now to tell you what the aforementioned *API* of runtime APIs stands for. Now is the time. Welcome to *Application Programming Interface*. Yea, that is lengthy. Coders instead just say API (each letter pronounced individually).
+It wasn't important until now to tell you what the aforementioned *API* of runtime APIs stands for. Now is the time. Welcome to *Application Programming Interface*. Yea, that is a mouthful. Coders instead just say API (each letter pronounced individually).
 
 An API is just an interface. The doorknob of a door is an interface. The steering wheel of a vehicle is an interface. The keys of a virtual keyboard are too. Interfaces provide a way to interact. The doorknob and steering wheel are physical interfaces designed for humans. A virtual keyboard is a digital interface also designed for humans. An API is a programming interface designed for code. An API allows code to interact with other code, this is the takeaway.
 
