@@ -64,7 +64,7 @@ Imagine a code where a bit’s two states encoded for two RGB colors. The bit’
 
 What if we had to send this coded data over the internet from one side of the world to the other. Remember that a decoded form may be another code’s encoded form. Remember the opposite is also possible. Armed with this knowledge, which form would you send over the internet?
 
-Math is not my strong suit, but a single bit is twenty-four times smaller than twenty-four bits. In principle, the single bit will be delivered twenty-four times faster. Winning. This illustrates that the single bit is better for sending across the internet. However, once the bit arrives, it will not be understood as "White" or “Black” until decoding occurs.
+Math is not my strong suit, but a single bit is twenty-four times smaller than twenty-four bits. In principle, the single bit will be delivered twenty-four times faster. Winning. This illustrates that the single bit is better for sending across the internet. However, once the bit arrives, it will not be understood as white or black until decoding occurs.
 
 What if I told you that the decoding process took one hour? This is just a thought experiment, but if that was the case, then I would take my chances sending the twenty-four bits instead. 
 
