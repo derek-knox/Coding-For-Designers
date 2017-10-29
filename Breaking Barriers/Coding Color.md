@@ -25,6 +25,10 @@ Eight colors is a pretty limiting palette. What happens if we swap out the bits 
 
 1 byte + 1 byte + 1 byte + 1 byte = 8 bits + 8 bits + 8 bits + 8 bits = RGB32 = RGBA
 
+R(255) + G(255) + B(255) = White
+
+R(0) + G(0) + B(0) = Black
+
 R(255) + G(0) + B(0) = Red
 
 R(255) + G(255) + B(0) = Yellow
@@ -34,10 +38,6 @@ R(0) + G(255) + B(0) = Green
 R(0) + G(255) + B(255) = Cyan
 
 R(0) + G(0) + B(255) = Blue
-
-R(255) + G(255) + B(255) = White
-
-R(0) + G(0) + B(0) = Black
 
 ^*
 
@@ -92,6 +92,10 @@ Naturally, each character pair represents 256 values (16 * 16 = 256). Additional
 
 1 byte + 1 byte + 1 byte = 8 bits + 8 bits + 8 bits = HEX
 
+FF + FF + FF = #FFFFFF = White
+
+00 + 00 + 00 = #000000 = Black
+
 FF + 00 + 00 = #FF0000= Red
 
 FF + FF + 00 = #FFFF00 = Yellow
@@ -101,10 +105,6 @@ FF + FF + 00 = #FFFF00 = Yellow
 00 + FF + FF = #00FFFF = Cyan
 
 00 + 00 + FF = #0000FF = Blue
-
-FF + FF + FF = #FFFFFF = White
-
-00 + 00 + 00 = #000000 = Black
 
 ^*
 
