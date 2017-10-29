@@ -14,8 +14,8 @@ We know behavior may be applied to structure (a specific building block or group
 
 Now is a good time to explicitly identify example triggers that result in behavioral reactions. A trigger is *input* and the reaction produces *output*. Without input triggers a design remains static and lacks dynamism. It lacks life. There are three types of input triggers:
 
-1. user interaction (tap, click, hit, hover, etc.)
-2. environment (layout resizing, operating system, device sensor, etc.)
+1. user interaction (tap, click, hover, gesture, voice, etc.)
+2. environment (layout resizing, operating system, device sensors, etc.)
 3. time (delays, schedules, etc.)
 
 As you can imagine, the output possibilities are endless as a result of any of the above input triggers. This is where you get to be super creative. Let's hit on a few simple examples for context.
