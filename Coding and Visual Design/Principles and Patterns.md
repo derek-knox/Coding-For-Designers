@@ -31,7 +31,7 @@ With the elements of visual design as primitives, the principles are the *organi
 
 The core takeaway is that these are recognized approaches for organizing visual design elements for consistent effect. Humans perceptually and often unconsciously absorb specific meaning when the principles in a visual design are applied. Being intentional and informed is to your advantage.
 
-Programming’s equivalent to design principles are *design patterns*. Unlike the principles, there are many more than eight. Like the principles however, they are recognized approaches for organizing the programming elements.
+Programming’s equivalent to design principles are *design patterns*. Unlike the principles, there are many more than eight. Like the principles however, they are recognized approaches for organizing the elements.
 
 Both the visual designer and the programmer leverage the principles and patterns respectively to achieve consistent effect. A visual designer applies the principles for the viewer’s benefit. The programmer applies design patterns for his or her benefit. This may sound selfish, but the reality is that the user of a software product benefits too. The benefits could be speed, reliability, consistency, and flexibility for example. Additionally, using design patterns allows other programmers to better understand a program’s code design.
 
