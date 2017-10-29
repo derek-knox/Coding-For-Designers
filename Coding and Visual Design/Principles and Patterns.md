@@ -35,7 +35,7 @@ Programming’s equivalent to design principles are *design patterns*. Unlike th
 
 Both the visual designer and the programmer leverage the principles and patterns respectively to achieve consistent effect. A visual designer applies the principles for the viewer’s benefit. The programmer applies design patterns for his or her benefit. This may sound selfish, but the reality is that the user of a software product benefits too. The benefits could be speed, reliability, consistency, and flexibility for example. Additionally, using design patterns allows other programmers to better understand a program’s code design.
 
-Design patterns allow the programmer to take an approach that solves a general problem that is common and that has been solved before. Design patterns are not a beginner topic so we will not be going into detail. That said, I provide a few examples below for reference. I will recommend two books though, for when you feel you are ready. Learning JavaScript Design Patterns by Addy Osmani and Design Patterns: Elements of Reusable Object-Oriented Software by the Gang of Four (GoF) are both amazing resources.
+Design patterns allow the programmer to take an approach that solves a general problem that is common and that has been solved before. Design patterns are not a beginner topic so we will not be going into detail. That said, I recommend two books for when you feel ready. Learning JavaScript Design Patterns by Addy Osmani and Design Patterns: Elements of Reusable Object-Oriented Software by the Gang of Four (GoF) are both amazing resources.
 
 ## Pattern Examples
 
