@@ -9,7 +9,7 @@ We will now start to dig into HTML, CSS, and JavaScript since we have a greater 
 Let's squash a myth real quick. Designers and other non-coders new to coding think they need to learn an entire new language, and in the context of the web, *three* new languages. This is not true. What needs to be learned is the:
 1. Distinction between structure, style, and behavior
 2. Anatomical implementation of structure, style, and behavior
-3. Common subset of code words for each implementation
+3. Common subset of code words for each implementation (80/20 rule)
 
 For 2D and the web, that means we need to know the difference between HTML structure, CSS styling, and JavaScript behavior. We have this distinction covered. Let's dig into number two and three.
 
