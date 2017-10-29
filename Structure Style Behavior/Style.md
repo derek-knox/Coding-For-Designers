@@ -8,7 +8,7 @@ The adornments are different depending on the context, but their underlying purp
 
 In either the 2D or 3D context, it is not important to know all the possible adornments. Professional coders simply know the purpose of style and its distinction from structure and behavior. A professional’s level of experience simply makes him or her quicker in their application of it. Professional coders, just like beginners, still need to reference resources. For this reason, we will use only a very small subset in the examples below. You can reference resources to expand your understanding of what is possible.
 
-We will build off the structural examples from before when applying style examples. In the 2D CSS context, this is done by adorning an HTML element with a specific *class*. The class has a unique name, that you as the coder create. Within the class definition, you list one or more property-value pairs. Each pair simply defines a style property and a value for it. Really straightforward. Let’s see this in action.
+We will build off the structural examples from before when applying style examples. In the 2D CSS context, this is done by adorning an HTML element with a specific *class*. The class has a unique name that you as the coder create. Within the class definition, you list one or more property-value pairs. Each pair simply defines a style property and a value for it. Really straightforward. Let’s see this in action.
 
 *^ TODO - Image 1 node 2D (parent only with class and class definition of background-color and then background image then opacity) ^*
 
