@@ -13,6 +13,8 @@ Let's squash a myth real quick. Designers and other non-coders new to coding thi
 
 For 2D and the web, that means we need to know the difference between HTML structure, CSS styling, and JavaScript behavior. We have this distinction covered. Let's dig into number two and three. Learning these two facets for each language won't be easy, but it can be simple. Remember, there is no substitue for practice.
 
+## HTML
+
 In keeping with the structure, style, and behavior order, let's look at the anatomy of each starting with HTML. We will title our file `index.html` to align with a best practice naming convention.
 
 ```
@@ -82,6 +84,8 @@ So `<img></img>` becomes `<img src='assets/img/cover-coding-for-designers.jpg'><
 Additionally, `<a>hyperlink</a>` becomes `<a href='http://www.codingfordesignersbook.com'>hyperlink</a>` where the `href` attr is set with `=` to the value `http://www.codingfordesignersbook.com` between quotes. The browser knows that the anchor tag, when hit, should change the web page to the value provided. This same functionality can be achieved using JavaScript only, but we'd have to write more code. Again, the goal is a simpler way to do work.
 
 The takeaway is that the browser provides useful APIs via attrs applied to elements. Now that we've covered the basic implementation of HTML structure, let's dig into style. Welcome to the `class` attr.
+
+## CSS
 
 The `class` attr gives you the creative power to style content. We will start by giving each `<div>` the same style. So `<div>` becomes `<div class='dark-background'>` where the `class` attr is set with `=` to the value `dark-background` between quotes. The `dark-background` name could be virtually anything we want, but there are rules for valid names. Make it easier on yourself and stick with:
 - lowercase English alphabet characters
