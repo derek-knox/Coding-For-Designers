@@ -54,8 +54,8 @@ Coding for Designers is a work-in-progress book that demystifies coding relative
 - Identifiers
 - Conditionals
 - Functions
-- Errors
 - Execution Flow
+- Errors
 
 ### Deconstructing Designs
 - Adobe Illustrator
