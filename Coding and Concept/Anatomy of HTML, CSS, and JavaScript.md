@@ -91,7 +91,7 @@ The `class` attr gives you the creative power to style content, to override defa
 - lowercase English alphabet characters
 - use `-` instead of spaces
 
-Now that we have set a `dark-background` value for the `class` attr, how do we actually define the style for the browser to render it? Remember when I mentioned that other tags can be added to the `<head>`? Welcome to the `<link>` tag. It allows us to link another file to our web page. Perfect. Our updated `<head>` is below and it now has a `<link>` tag. The attrs of it tell the browser to download and use a CSS file where our defined styles reside, including `dark-background`.
+Now that we have set a `dark-background` value for the `class` attr, how do we actually define the style for the browser to render it? Remember when I mentioned that other tags can be added to the `<head>`? Welcome to the `<link>` tag. It allows us to link another file to our web page. Perfect. Our updated `<head>` is below and it now has a `<link>` tag. The attrs of it tell the browser to download and use a CSS file where our defined `dark-background` style resides.
 
 ```
 <head>
