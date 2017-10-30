@@ -199,13 +199,13 @@ assets
 
 The browser understands the script tag and its `src` attr and then, you guessed it, the browser automatically downloads it. When completely downloaded, the runtime and engine take over with compilation and execution of its contents. Before we look at the contents of our `main.js` file, let's update our `<img>` and `<button>` HTML to more easily use each with JavaScript.
 
-Updated `<img>` becomes:
+The updated `<img>` becomes:
 
 ```
 <img id='image-to-toggle' src='assets/img/cover-coding-for-designers.jpg'></img>
 ```
 
-Updated `<button>` becomes:
+The updated `<button>` becomes:
 
 ```
 <button onclick='toggleImageOpacity()'>Toggle Image Opacity</button>
