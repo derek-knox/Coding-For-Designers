@@ -87,7 +87,7 @@ The takeaway is that the browser provides useful runtime API hooks via element a
 
 ## CSS
 
-The `class` attr gives you the creative power to style content, to override default browser styles. We will start by giving each `<div>` the same style. So `<div>` becomes `<div class='dark-background'>` where the `class` attr is set with `=` to the value `dark-background` between quotes. The `dark-background` name could be virtually anything we want, but there are rules for valid names. Make it easier on yourself and stick with:
+The `class` attr gives you the creative power to style content. We will start by giving each `<div>` the same style. So `<div>` becomes `<div class='dark-background'>` where the `class` attr is set with `=` to the value `dark-background` between quotes. The `dark-background` name could be virtually anything we want, but there are rules for valid names. Make it easier on yourself and stick with:
 - lowercase English alphabet characters
 - use `-` instead of spaces
 
