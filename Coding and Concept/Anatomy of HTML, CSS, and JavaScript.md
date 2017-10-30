@@ -169,10 +169,10 @@ Thus far we've covered the anatomy of HTML and CSS, so now it is time for JavaSc
 
 As you already know, a function is like a shape because it encloses scope just as a shape encloses space. An enclosure helps prevent clashing of what exists between different scopes or spaces. No clashing please. Objects, like forms, are a higher level enclosure. More often than not, they each embody one or more functions or shapes respectively. JavaScript, like the majority of programming languages, has specific types of objects. JavaScript is fairly unique however in that a function is *also* an object.
 
-Long story short, a JavaScript program is essentially a nested tree of functions. As a by-product of functions each enclosing a scope, a JavaScript program can also be thought of as a nested tree of scopes. So when the JavaScript engine evaluates an expression that has a reference, it works like this in an effort to get the bound value:
-1. look in the target scope for the reference
-2. if not found, look in that scope's parent scope
-3. repeat until the root parent scope is hit
+Long story short, a JavaScript program is essentially a nested tree of functions. As a byproduct of functions each enclosing a scope, a JavaScript program can also be thought of as a nested tree of scopes. So when the JavaScript engine evaluates an expression that has a reference, it works like this in an effort to get the bound value:
+1. Look in the target scope for the reference
+2. If not found, look in that scope's parent scope
+3. Repeat until the reference is found or the root parent scope is hit
 
 When the reference is found in one of the scopes, the engine uses the value that is bound to the reference and continues to do work. This is what we want. If the root scope is hit and the value does not exist, then we have a problem. We will go into detail later regarding this scenario, so just be aware of it.
 
