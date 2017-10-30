@@ -83,7 +83,7 @@ So `<img></img>` becomes `<img src='assets/img/cover-coding-for-designers.jpg'><
 
 Additionally, `<a>hyperlink</a>` becomes `<a href='http://www.codingfordesignersbook.com'>hyperlink</a>` where the `href` attr is set with `=` to the value `http://www.codingfordesignersbook.com` between quotes. The browser knows that the anchor tag, when hit, should change the web page to the value provided. This same functionality can be achieved using JavaScript only, but we'd have to write more code. Again, the goal is a simpler way to do work.
 
-The takeaway is that the browser provides useful runtime APIs via attrs applied to elements. Now that we've covered the basic implementation of HTML structure, let's dig into style. Welcome to the `class` attr.
+The takeaway is that the browser provides useful runtime API hooks via element attrs. Now that we've covered the basic implementation of HTML structure, let's dig into style. Welcome to the `class` attr.
 
 ## CSS
 
