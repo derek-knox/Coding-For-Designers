@@ -236,7 +236,7 @@ Do not worry if you cannot understand everything in the above function as we'll 
 1. Reference work
 2. Core work
 
-A function is not always structed this way by a coder, but JavaScript compilation essentially enforces it. We don't go into the details of compilation as previously mentioned, but look into *JavaScript hoisting* if you want to dig a little deeper. Just save yourself some pain and declare your identifiers (`var`s and then `function`s) at the top of their parent function prior to use.
+A function is not always structed this way by a coder, but JavaScript compilation essentially enforces it. We don't go into the details of compilation as previously mentioned, but look into *JavaScript hoisting* if you want to dig deeper. Just save yourself some pain and declare your identifiers (`var`s and then `function`s) at the top of their parent function prior to use.
 
 Admittedly, this program is tiny as it is comprised of only one small function. Take note however that programs of all sizes leverage this structure since they are just functions nested in functions. We will consider larger programs later in the *Coding and JavaScript* chapter to see this in action.
 
