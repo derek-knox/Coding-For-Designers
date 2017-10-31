@@ -107,8 +107,8 @@ if(currentOpacity == 1) {
 The above seven parts make up the anatomy of an `if` statement. First, the `if` keyword tells the JavaScript engine your intent to define a condition to control execution flow. When the condition is true, the code between its `{` and `}` will execute. If the condition is false, then the code block is skipped. The beginning `(` and ending `)` parens define the space where the condition in question resides. This condition is the comparison between the value in the `currentOpacity` identifier and the number value `1`. We will cover this again later, but `=` is used to *assign* where `==` is used to *compare*.
 
 With respect to making snippet four *right* and *better*, we enter subjective changes. This subjectivity sources from a deeper understanding of JavaScript:
-1. implicit coercion
-2. optional braces
+1. Implicit coercion
+2. Optional braces
 
 Implicit coercion is a nuanced sub-system of JavaScript. Coercion is a fancy word for interpreting a value in one form as another form. We'll leave the details to the next chapter, but just know that loose equality `==` allows coercion where *strict equality* `===` does not. Put another way, loose equality allows interpretation where strict equality does not. Optional braces are an authoring time convenience for more succinct code writing. The snippet will remain as-is for now as many sub-systems and their caveats do not need to be learned to make code *work*.
 
