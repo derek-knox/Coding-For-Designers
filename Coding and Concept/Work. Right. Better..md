@@ -89,7 +89,7 @@ In snippet three there are five parts comprising the line of code:
 ```
 Each part reflects the same general description as snippet two with the exception of `window.getComputedStyle(imageToToggle).opacity`. This part accesses the nested and specific `opacity` style object property of the cached `imageToToggle` element. The `opacity` property doesn't exist on the `imageToToggle` object itself and that is why we need the help of the API.
 
-The previous snippet's suggestion to cache the identifier outside the `toggleImageOpacity` function is problematic in this snippet though. The difference is that `currentOpacity` is something we want to lookup *each time* the function executes. This is a requirement if we want an up-to-date opacity value. As a result, making this change would result in a *less right* and ultimately broken set of code. Caching the `getComputedStyle(imageToToggle)` lookup outside the function scope could be considered *more right* however. Nothing *better* is possible.
+The previous snippet's suggestion to cache the identifier outside the `toggleImageOpacity` function is problematic in this snippet though. The difference is that `currentOpacity` is something we want to lookup *each time* the function executes. This is a requirement if we want an up-to-date opacity value. A change like this would result in a *less right* and ultimately broken set of code. Caching the `getComputedStyle(imageToToggle)` lookup outside the function scope could be considered *more right* however. Nothing *better* is possible.
 
 In snippet four there are seven parts comprising the line of code:
 ```
