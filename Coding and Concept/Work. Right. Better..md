@@ -1,6 +1,6 @@
 # Work. Right. Better.
 
-In programming there is the axiom "make it right before you make it faster". This exact quote is found in The Elements of Programming Style by Brian W. Kernighan and P.J. Plauger and it is heavily respected by the programming community. Put another way, when authoring code you should make it:
+In programming there is the axiom "make it right before you make it faster". This exact quote is found in *The Elements of Programming Style* by Brian W. Kernighan and P.J. Plauger and it is heavily respected by the programming community. Put another way, when authoring code you should make it:
 1. Work
 2. Right
 3. Better
