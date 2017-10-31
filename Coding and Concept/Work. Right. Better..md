@@ -1,9 +1,9 @@
 # Work. Right. Better.
 
 In programming there is the axiom "make it right before you make it faster". This exact quote is found in The Elements of Programming Style by Brian W. Kernighan and P.J. Plauger and it is heavily respected by the programming community. Put another way, when authoring code you should make it:
-1. work
-2. right
-3. better
+1. Work
+2. Right
+3. Better
 
 In this section we will explore the notion of *right* and *better* in reference to the working `toggleImageOpacity` function that we recently looked at. This effort will introduce reusable code improvement tactics and the thought process behind them. The three step process will become second nature in time.
 
