@@ -88,8 +88,8 @@ The takeaway is that the browser provides useful runtime API hooks via element a
 ## CSS
 
 The `class` attr gives you the creative power to style content. We will start by giving each `<div>` the same style. So `<div>` becomes `<div class='dark-background'>` where the `class` attr is set with `=` to the value `dark-background` between quotes. The `dark-background` name could be virtually anything we want, but there are rules for valid names. Make it easier on yourself and stick with:
-- lowercase English alphabet characters
-- use `-` instead of spaces
+- Lowercase English alphabet characters
+- Use `-` instead of spaces
 
 Now that we have set a `dark-background` value for the `class` attr, how do we actually define the style for the browser to render it? Remember when I mentioned that other tags can be added to the `<head>`? Welcome to the `<link>` tag. It allows us to link another file to our web page. Perfect. Our updated `<head>` is below and it now has a `<link>` tag. The attrs of it tell the browser to download and use a CSS file where our defined `dark-background` style resides.
 
@@ -233,8 +233,8 @@ function toggleImageOpacity() {
 ```
 
 Do not worry if you cannot understand everything in the above function as we'll cover it in great detail in the next section. You should however be able to grasp what is happening each time the `toggleImageOpacity` function executes. The image's opacity style is simply toggled between `.5` (50%) and `1` (100%). Take note that the function is structured in two parts:
-1. reference work
-2. core work
+1. Reference work
+2. Core work
 
 A function is not always structed this way by a coder, but JavaScript compilation essentially enforces it. We don't go into the details of compilation as previously mentioned, but look into *JavaScript hoisting* if you want to dig a little deeper. Just save yourself some pain and declare your identifiers (`var`s and then `function`s) at the top of their parent function prior to use.
 
