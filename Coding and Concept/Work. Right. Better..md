@@ -104,7 +104,7 @@ if(currentOpacity == 1) {
 6. `)` - closing paren for declaring the `if` condition end
 7. `{` - opening curly brace for declaring the beginning of the *if*-condition code block
 
-The above seven parts make up the anatomy of an `if` statement. First, the `if` keyword tells the JavaScript engine your intent to define a condition to control execution flow. When the condition is `true`, the code between its `{` and `}` will execute. If the condition is false, then the code block is skipped. The beginning `(` and ending `)` parens define the space where the condition in question resides. This condition is the comparison between the value in the `currentOpacity` identifier and the number value `1`. We will cover this again later, but `=` is used to *assign* where `==` is used to *compare*.
+The above seven parts make up the anatomy of an `if` statement. First, the `if` keyword tells the JavaScript engine your intent to define a condition to control execution flow. When the condition is `true`, the code between its `{` and `}` will execute. If the condition is `false`, then the code block is skipped. The beginning `(` and ending `)` parens define the space where the condition in question resides. This condition is the comparison between the value in the `currentOpacity` identifier and the number value `1`. We will cover this again later, but `=` is used to *assign* where `==` is used to *compare*.
 
 With respect to making snippet four *right* and *better*, we enter subjective changes. This subjectivity sources from a deeper understanding of JavaScript:
 1. Implicit coercion
@@ -145,7 +145,7 @@ else {
 1. `else` - keyword reserved by JavaScript denoting conditional code execution
 2. `{` - opening curly brace for declaring the beginning of the *else*-condition code block
 
-The above two parts make up the anatomy of an `else` statement. The `else` is an optional execution flow that follows an `if` or `else if` statement. When the corresponding `if` or `else if` condition is false, the code between the `else`'s `{` and `}` code block will execute. The `if`/`else` allows a program to branch, to have conditional execution flow at execution time. Specifically in our `toggleImageOpacity` function, we use this tactic to ping-pong, or toggle, an image's opacity between the values `1` and `.5`. Put another way, the program toggles the image's opacity between fully opaque (100%) and half transparent (50%). There is nothing *right* or *better* to do with this snippet.
+The above two parts make up the anatomy of an `else` statement. The `else` is an optional execution flow that follows an `if` or `else if` statement. When the corresponding `if` or `else if` condition is `false`, the code between the `else`'s `{` and `}` code block will execute. The `if`/`else` allows a program to branch, to have conditional execution flow at execution time. Specifically in our `toggleImageOpacity` function, we use this tactic to ping-pong, or toggle, an image's opacity between the values `1` and `.5`. Put another way, the program toggles the image's opacity between fully opaque (100%) and half transparent (50%). There is nothing *right* or *better* to do with this snippet.
 
 In snippet eight there are four parts comprising the line of code:
 ```
