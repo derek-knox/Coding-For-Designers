@@ -102,7 +102,7 @@ if(currentOpacity == 1) {
 4. `==` - *loose equality* that coercively compares values on each side and produces a true or false value
 5. `1` - a literal number value
 6. `)` - closing paren for declaring the `if` condition end
-7. `{` - opening curly brace for declaring the beginning of the *true*-condition code block
+7. `{` - opening curly brace for declaring the beginning of the *if*-condition code block
 
 The above seven parts make up the anatomy of an `if` statement. First, the `if` keyword tells the JavaScript engine your intent to define a condition to control execution flow. When the condition is true, the code between its `{` and `}` will execute. If the condition is false, then the code block is skipped. The beginning `(` and ending `)` parens define the space where the condition in question resides. This condition is the comparison between the value in the `currentOpacity` identifier and the number value `1`. We will cover this again later, but `=` is used to *assign* where `==` is used to *compare*.
 
