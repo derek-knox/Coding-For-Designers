@@ -48,6 +48,7 @@ Coding for Designers is a work-in-progress book that demystifies coding relative
 - [Work. Right. Better.](Coding%20and%20Concept/Work.%20Right.%20Better..md)
 
 ### Coding and JavaScript
+- Subset
 - Browser
 - Execution
 - Values
