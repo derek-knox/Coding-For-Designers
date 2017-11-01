@@ -99,12 +99,12 @@ if(currentOpacity == 1) {
 1. `if` - keyword reserved by JavaScript denoting conditional code execution
 2. `(` - opening paren for declaring the `if` condition beginning
 3. `currentOpacity` - custom identifier for referencing a value by name
-4. `==` - *loose equality* that coercively compares values on each side and produces a true or false value
+4. `==` - *loose equality* that coercively compares values on each side and produces a `true` or `false` value
 5. `1` - a literal number value
 6. `)` - closing paren for declaring the `if` condition end
 7. `{` - opening curly brace for declaring the beginning of the *if*-condition code block
 
-The above seven parts make up the anatomy of an `if` statement. First, the `if` keyword tells the JavaScript engine your intent to define a condition to control execution flow. When the condition is true, the code between its `{` and `}` will execute. If the condition is false, then the code block is skipped. The beginning `(` and ending `)` parens define the space where the condition in question resides. This condition is the comparison between the value in the `currentOpacity` identifier and the number value `1`. We will cover this again later, but `=` is used to *assign* where `==` is used to *compare*.
+The above seven parts make up the anatomy of an `if` statement. First, the `if` keyword tells the JavaScript engine your intent to define a condition to control execution flow. When the condition is `true`, the code between its `{` and `}` will execute. If the condition is false, then the code block is skipped. The beginning `(` and ending `)` parens define the space where the condition in question resides. This condition is the comparison between the value in the `currentOpacity` identifier and the number value `1`. We will cover this again later, but `=` is used to *assign* where `==` is used to *compare*.
 
 With respect to making snippet four *right* and *better*, we enter subjective changes. This subjectivity sources from a deeper understanding of JavaScript:
 1. Implicit coercion
@@ -133,7 +133,7 @@ In snippet six there is only one part comprising the line of code:
 // 6. end of 'if'
 }
 ```
-1. `}` - closing curly brace for declaring the end of the *true*-condition code block
+1. `}` - closing curly brace for declaring the end of the `if`-condition code block
 
 This closing curly brace simply defines the end of the `if` statement's code block. Nothing *right* or *better* is possible.
 
