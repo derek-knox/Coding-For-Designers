@@ -143,7 +143,7 @@ In snippet seven there are two parts comprising the line of code:
 else {
 ```
 1. `else` - keyword reserved by JavaScript denoting conditional code execution
-2. `{` - opening curly brace for declaring the beginning of the *else*-condition code block
+2. `{` - opening curly brace for declaring the beginning of the `else`-condition code block
 
 The above two parts make up the anatomy of an `else` statement. The `else` is an optional execution flow that follows an `if` or `else if` statement. When the corresponding `if` or `else if` condition is `false`, the code between the `else`'s `{` and `}` code block will execute. The `if`/`else` allows a program to branch, to have conditional execution flow at execution time. Specifically in our `toggleImageOpacity` function, we use this tactic to ping-pong, or toggle, an image's opacity between the values `1` and `.5`. Put another way, the program toggles the image's opacity between fully opaque (100%) and half transparent (50%). There is nothing *right* or *better* to do with this snippet.
 
@@ -164,7 +164,7 @@ In snippet nine there is one part comprising the line of code:
 // 9. end of 'else' 
 }
 ```
-1. `}` - closing curly brace for declaring the end of the *else*-condition code block
+1. `}` - closing curly brace for declaring the end of the `else`-condition code block
 
 This closing curly brace simply defines the end of the `else` statement's code block. There are no *right* or *better* improvements that are possible with this particular snippet. There is a *better* change possible when considering the entire `if`/`else` as a whole however. Snippets four through nine can be encapsulated more succintly using the *ternary operator*. The ternary operator does the same work as an `if`/`else`, but does so more succinctly (often in a single line of code):
 ```
