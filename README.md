@@ -49,7 +49,7 @@ Coding for Designers is a work-in-progress book that demystifies coding relative
 
 ### Coding and JavaScript
 - Browser
-- Flow
+- Execution
 - Values
 - Operators
 - Identifiers
