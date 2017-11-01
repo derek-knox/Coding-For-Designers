@@ -164,7 +164,7 @@ In snippet nine there is one part comprising the line of code:
 // 9. end of 'else' 
 }
 ```
-1. `}` - closing curly brace for declaring the end of the *false*-condition code block
+1. `}` - closing curly brace for declaring the end of the *else*-condition code block
 
 This closing curly brace simply defines the end of the `else` statement's code block. There are no *right* or *better* improvements that are possible with this particular snippet. There is a *better* change possible when considering the entire `if`/`else` as a whole however. Snippets four through nine can be encapsulated more succintly using the *ternary operator*. The ternary operator does the same work as an `if`/`else`, but does so more succinctly (often in a single line of code):
 ```
