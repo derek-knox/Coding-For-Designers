@@ -6,7 +6,7 @@ The details of how the internet facilitates this communication is elegant and im
 
 Let's look at two example programs that utilize the internet to help solidify your understanding. One program will be a web browser and the other an internet-connected mobile game. Let's just say that each example is running on a smartphone. Both the browser and the game are on the client, the smartphone. Each program leverages distinct APIs to request information from distinct and remote computers, the servers. Pretty simple relationship really.
 
-![alt text](../assets/visual-todo-placeholder.jpg "Client and Server")
+![alt text](../assets/img/visual-todo-placeholder.jpg "Client and Server")
 
 *^ client and server graphic ^*
 

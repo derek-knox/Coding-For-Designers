@@ -41,11 +41,11 @@ The elements of visual design are the *primitive* pieces of visual design. Thoug
   </tr>
 </table>
 
-![alt text](../assets/visual-todo-placeholder.jpg "Design Elements in my visual form")
+![alt text](../assets/img/visual-todo-placeholder.jpg "Design Elements in my visual form")
 
 *^ Design Elements in my visual form breakdown ^*
 
-![alt text](../assets/visual-todo-placeholder.jpg "Coding Elements in a visual form")
+![alt text](../assets/img/visual-todo-placeholder.jpg "Coding Elements in a visual form")
 
 *^ Programming Elements in a visual form breakdown ^*
 
@@ -53,7 +53,7 @@ The elements of visual design are the *primitive* pieces of visual design. Thoug
 
 The *point* is the first element. A point by itself may, at most, represent a single idea or value at a given time. Similarly an *expression* represents, at most, a single idea or value at a given time. Both are the smallest meaningful and composable elements of design and programming respectively.
 
-![alt text](../assets/visual-todo-placeholder.jpg "Point & Expression Examples")
+![alt text](../assets/img/visual-todo-placeholder.jpg "Point & Expression Examples")
 
 *^ Point & Expression Examples ^*
 
@@ -61,7 +61,7 @@ The *point* is the first element. A point by itself may, at most, represent a si
 
 More than one point or expression enables another level of meaning to be possible. For example connecting two points forms the second visual element, a *line*. Similarly, connecting expressions forms the second programming element, a *statement*. Each are the building blocks of design and programming respectively.
 
-![alt text](../assets/visual-todo-placeholder.jpg "Line & Statement Examples")
+![alt text](../assets/img/visual-todo-placeholder.jpg "Line & Statement Examples")
 
 *^ Line & Statement Examples ^*
 
@@ -69,7 +69,7 @@ More than one point or expression enables another level of meaning to be possibl
 
 Combining lines together in specific ways enables the third visual element, a *shape*. A shape is ultimately a set of straight lines, or an organic line, that creates an enclosure. A *function*, the third programming element, is a great way to create an enclosure of statements. Take note that a function, like a shape, is considered a self-contained unit.
 
-![alt text](../assets/visual-todo-placeholder.jpg "Shape & Function Examples")
+![alt text](../assets/img/visual-todo-placeholder.jpg "Shape & Function Examples")
 
 *^ Shape & Function Examples ^*
 
@@ -77,7 +77,7 @@ Combining lines together in specific ways enables the third visual element, a *s
 
 Naturally, by creating an enclosure, you simultaneously create *space*, the fourth design element. In programming, this fourth element can also be thought of as space, but the term used is *scope*. Shapes allow their enclosed space to be distinct from the space outside. A function’s scope allows it to be distinct from the scope outside too. Distinct space and distinct scope allow various areas to exist simultaneously without clashing. This is super valuable when programming.
 
-![alt text](../assets/visual-todo-placeholder.jpg "Space & Scope Examples")
+![alt text](../assets/img/visual-todo-placeholder.jpg "Space & Scope Examples")
 
 *^ Space & Scope Examples ^*
 
@@ -85,7 +85,7 @@ Naturally, by creating an enclosure, you simultaneously create *space*, the four
 
 *Color*, the fifth element of design provides a common way to differentiate similar or otherwise identical shapes. A function’s *signature* allows functions to differentiate themselves too. Adding a signature to a function, like color to a shape, gives it an identity.
 
-![alt text](../assets/visual-todo-placeholder.jpg "Color & Signature Examples")
+![alt text](../assets/img/visual-todo-placeholder.jpg "Color & Signature Examples")
 
 *^ Color & Signature Examples ^*
 
@@ -93,7 +93,7 @@ Naturally, by creating an enclosure, you simultaneously create *space*, the four
 
 *Value* may be applied to a shape’s color to modify the result. Similarly in a function’s signature, different *arguments* may be applied to change the function’s result. Value allows a shape with a specific color to be reused with a different effect. Arguments allow a function with a specific signature to be reused with a different effect too.
 
-![alt text](../assets/visual-todo-placeholder.jpg "Value & Signature Examples")
+![alt text](../assets/img/visual-todo-placeholder.jpg "Value & Signature Examples")
 
 *^ Value & Signature Examples ^*
 
@@ -101,7 +101,7 @@ Naturally, by creating an enclosure, you simultaneously create *space*, the four
 
 Grouping the aforementioned visual design elements in a particular way gives rise to a particular *form*. Similarly, grouping the aforementioned programming elements can give rise to a particular *object*. As a shape and a function are considered self-contained units, a form and an object are more powerful versions. Each embody some configuration of their respective prior elements. A form often embodies more than one shape just as an object often embodies more than one function.
 
-![alt text](../assets/visual-todo-placeholder.jpg "Form & Object Examples")
+![alt text](../assets/img/visual-todo-placeholder.jpg "Form & Object Examples")
 
 *^ Form & Object Examples ^*
 
@@ -109,7 +109,7 @@ Grouping the aforementioned visual design elements in a particular way gives ris
 
 *Texture* when applied to a shape or a form gives it a richer quality. This richness is exemplified as a sense of time, where a texture is aged and weathered for example. Similarly, a function or object with *state* gives it a richer quality, a sense of time as well. A shape or form that lacks texture often lacks richness. The same is true for a function or object that lacks state. It is worth noting that state is vital to programming where texture in a visual design is not. State is a necessity in programming interactive designs.
 
-![alt text](../assets/visual-todo-placeholder.jpg "Texture and State Examples")
+![alt text](../assets/img/visual-todo-placeholder.jpg "Texture and State Examples")
 
 *^ Texture and State Examples ^*
 

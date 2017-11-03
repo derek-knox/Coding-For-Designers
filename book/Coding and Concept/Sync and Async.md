@@ -20,7 +20,7 @@ Answer time:
 
 The 3D visualization from the *Event Loop* section should be popping into your head. The event loop cannot cycle when work is on the stack. The loop is blocked. The event queue does not prevent the event loop from cycling. The loop is not blocked.
 
-![alt text](../assets/visual-todo-placeholder.jpg "The Event Loop Machine")
+![alt text](../assets/img/visual-todo-placeholder.jpg "The Event Loop Machine")
 
 *^ The Event Loop Machine ^*
 

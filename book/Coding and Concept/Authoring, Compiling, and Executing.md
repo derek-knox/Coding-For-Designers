@@ -17,7 +17,7 @@ Compile time is how we get from our authored *static* code to *dynamic* code tha
 
 In essence, some smart and nerdy authors wrote a *compiler program* that compiles and converts a high-level programming language like JavaScript (easier for us humans to use) to lower-level languages (easier for super-nerdy humans to use) to binary (easier for super-super-nerdy humans and computers to use).
 
-![alt text](../assets/visual-todo-placeholder.jpg "Author > Compile > Run")
+![alt text](../assets/img/visual-todo-placeholder.jpg "Author > Compile > Run")
 
 The output of this compilation process results in code that the computer *executes* in real-time. This process often manifests as an interactive user interface in an application or an interactive environment in a game.
 

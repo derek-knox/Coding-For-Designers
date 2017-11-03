@@ -131,7 +131,7 @@ We know coders like shortcuts. Is there a shorter way to say and type *eight bit
 
 Let’s use what we just learned to make an example code of our own. We will use a byte’s 256 states to represent the symbols of the English language. Twenty-six lowercase and twenty-six uppercase letters would use up fifty-two states. Ten numerals and all the punctuation marks, including a lot of obscure marks, could be represented in another fifty states. We could increase fifty to one-hundred and include even more obscure marks (poop emoji included). One hundred four unused states would *still remain* (256 - 26 - 26 - 100 = 104). Good enough, for English at least.
 
-![alt text](../assets/visual-todo-placeholder.jpg "Image Grid of English Symbols")
+![alt text](../assets/img/visual-todo-placeholder.jpg "Image Grid of English Symbols")
 
 *^ TODO - Image Grid of English Symbols ^*
 

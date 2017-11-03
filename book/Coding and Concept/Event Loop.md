@@ -46,7 +46,7 @@ So what do each of these runtime parts do anyway? Here is a succint breakdown wh
 
 Here is a 3D representation of the relationship between the runtime and engine parts:
 
-![alt text](../assets/visual-todo-placeholder.jpg "The Event Loop Machine")
+![alt text](../assets/img/visual-todo-placeholder.jpg "The Event Loop Machine")
 
 *^ The Event Loop Machine ^*
 

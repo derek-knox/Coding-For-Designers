@@ -11,13 +11,13 @@ RGB is composed of three values (color channels). A red value, a green value, an
 
 RGB is represented in a few flavors too. For illustration purposes, let’s briefly represent our own custom RGB code using a *bit* for each red value, blue value, and green value.
 
-![alt text](../assets/visual-todo-placeholder.jpg "Custom RGB = 8 different colors")
+![alt text](../assets/img/visual-todo-placeholder.jpg "Custom RGB = 8 different colors")
 
 *^ Custom RGB = 8 different colors ^*
 
 Eight colors is a pretty limiting palette. What happens if we swap out the bits for bytes? Holy shit. RGB gets us *over 16 million* color values. That palette is enormous. This is an actual flavor of RGB called RGB24. Another is called RGB32 or RGBA, where "A" is an *alpha* (transparency) value. Just call them by their normal names RGB and RGBA.
 
-![alt text](../assets/visual-todo-placeholder.jpg "RGB and RGBA")
+![alt text](../assets/img/visual-todo-placeholder.jpg "RGB and RGBA")
 
 *^
 
