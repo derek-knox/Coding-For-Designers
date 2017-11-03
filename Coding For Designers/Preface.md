@@ -16,7 +16,7 @@ Chapter three, *Coding and Visual Design*, will cover the elements, principles, 
 
 In chapter four, *Coding and Concept*, we will introduce language agnostic concepts that are invaluable when authoring interactive creations. In coding, the terminology and often the code words themselves are reused exactly or with subtle variation across languages. Spoken languages lack this luxury. We will also visually explore how our code actually runs in real-time.
 
-Chapter five, *Coding and JavaScript*, will reinforce what has been learned specifically in the context of JavaScript. JavaScript is the most accessible programming language today. If you have pushed a button on a web page, then you have been impacted by JavaScript.
+Chapter five, *Coding and JavaScript*, will reinforce what has been learned specifically, but in the context of JavaScript. JavaScript is the most accessible programming language today. If you have pushed a button on a web page, then you have been impacted by JavaScript.
 
 Finally in chapter six, *Deconstructing Designs*, we will put everything we have learned to practice. We will do so by analyzing and deconstructing the user interfaces of a few impactful applications. We will then selectively reconstruct portions of the UI relative to the previously introduced concepts.
 
