@@ -113,7 +113,9 @@ Metalsmith(__dirname)
     }
   }))
   .use(markdown())
-  .use(permalinks())
+  .use(permalinks({
+    relative: false
+  }))
   .use(layouts({
     engine: 'handlebars',
     partials: 'partials'
