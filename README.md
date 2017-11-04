@@ -13,7 +13,7 @@ Coding for Designers is a work-in-progress book that demystifies coding relative
 ## Table of Contents
 
 ### Preface
-- [Preface](book/Coding%20For%20Designers/Preface.md)
+- [Preface](book/Coding%20for%20Designers/Preface.md)
 
 ### Breaking Barriers
 - [Ones and Zeros](book/Breaking%20Barriers/Ones%20and%20Zeros.md)
