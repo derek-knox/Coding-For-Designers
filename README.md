@@ -8,7 +8,7 @@ Coding for Designers is a work-in-progress book that demystifies coding relative
 - [Give Feedback/Ideas](https://goo.gl/forms/hFoc5wE7x7KCYDwI2)
 - [Derek Knox website](http://www.derekknox.com)
 
-![Coding for Designers](book/assets/img/cover-coding-for-designers-yellow.jpg?v0.2 "Coding for Designers")
+![Coding for Designers](book/assets/img/coding-for-designers-cover-4.png?v0.2 "Coding for Designers")
 
 ## Table of Contents
 
