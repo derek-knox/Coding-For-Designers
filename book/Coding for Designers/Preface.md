@@ -10,7 +10,7 @@ Designer or not, this book isn't for you if you want to jump *straight* into cod
 
 The plan of attack is simple. In chapter one, *Breaking Barriers*, we will explore and demystify a series of concepts that fundamentally intimidate most designers and non-coders about how computers and code work. From the seemingly magical ones and zeros to the code you will soon write, we will see simple, basic, repetitive, and reusable concepts at play.
 
-In chapter two, *Structure, Style, and Behavior*, we will cover the three codeable layers that enable computers to render our interactive creations. We will do so from both a 2D context with the web platform and a 3D context with the Unity® platform. These perspectives will help solidify the distinct role that structure, style, and behavior each play regardless of dimensionality.
+In chapter two, *Structure, Style, and Behavior*, we will cover the three codeable concepts that enable computers to render our interactive creations. We will do so from both a 2D context with the web platform and a 3D context with the Unity® platform. These perspectives will help solidify the distinct role that structure, style, and behavior each play regardless of dimensionality.
 
 Chapter three, *Coding and Visual Design*, will cover the elements, principles, and constructs of visual design. We will explore them relative to coding’s counterparts. This work will help shape a mental model tuned specifically for designers.
 
