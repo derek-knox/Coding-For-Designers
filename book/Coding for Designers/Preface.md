@@ -14,7 +14,7 @@ In chapter two, *Structure, Style, and Behavior*, we will cover the three codeab
 
 Chapter three, *Coding and Visual Design*, will cover the elements, principles, and constructs of visual design. We will explore them relative to programming’s counterparts. This work will help shape a mental model tuned specifically for designers.
 
-In chapter four, *Coding and Concept*, we will introduce language agnostic concepts that are invaluable when authoring dynamic and/or interactive creations. In coding, the terminology and often the code words themselves are reused exactly or with subtle variation across languages. Spoken languages lack this luxury. We will also visually explore how our code actually runs in real-time.
+In chapter four, *Coding and Concept*, we will introduce language agnostic concepts that are invaluable when authoring dynamic and interactive creations. In coding, the terminology and often the code words themselves are reused exactly or with subtle variation across languages. Spoken languages lack this luxury. We will also visually explore how our code actually runs in real-time.
 
 Chapter five, *Coding and JavaScript*, will reinforce what has been learned, but in the context of JavaScript. JavaScript is the most accessible programming language today. If you have pushed a button on a web page, then you have been impacted by JavaScript.
 
