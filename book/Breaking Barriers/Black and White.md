@@ -16,7 +16,7 @@ The visual above illustrates a core aspect of computer graphics. If you author d
 
 Pixel is another shortcut word. A pixel is a *picture element*. Do not ask me where the "x" came from. Simply put, to visualize a code on a computer screen, pixels are used. Naturally, the more pixels you have, the larger the image. Makes sense.
 
-The sixteen variants above each represent a 2x2 four pixel image. They are represented in code using a 4-bit code (half a byte). If we used a full byte, then we could represent an eight pixel image that has two-hundred fifty-six variants. Technically speaking our image's dimensions, using the same two-hundred fifty-six state variants, could be either:
+The sixteen variants above each represent a 2x2 four pixel image. They are represented in code using a 4-bit code (half a byte). If we used a full byte, then we could represent an eight pixel image that has two-hundred fifty-six variants. Technically speaking our image's dimensions, using the two-hundred fifty-six state variants, could be either:
 - 1x8
 - 2x4
 - 4x2
