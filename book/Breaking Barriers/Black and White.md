@@ -27,6 +27,6 @@ Similarly, our 4-bit code could represent the image dimensions:
 - 2x2
 - 4x1
 
-In either case, the underlying bits are simply a sequence of ones and zeros. The pixel count remains constant for either 4-bits (16 image variants) or 1-byte (256 image variants) of code. The converted meaning determines the image's dimensions. Generally speaking, the greater the dimensions of a digital image, the more bits and thus bytes are required to represent it.
+In either case, the underlying bits are simply a sequence of ones and zeros. The pixel count remains constant for either 4-bits or 1-byte of code, 16 image or 256 image variants respectively. The converted meaning determines the image's dimensions. Generally speaking, the greater the dimensions of a digital image, the more bits and thus bytes are required to represent it.
 
 The above approach only allows for black and white images. As designers however, we greatly value the use of color to communicate within our creations. Take a moment before continuing and consider *how might you code color*?
