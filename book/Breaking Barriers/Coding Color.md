@@ -45,7 +45,7 @@ You will notice the sample RGB colors above range from 0-255 for each byte’s v
 
 Counting starting at zero instead of one is a recurring pattern you will see in coding. This is one of the fundamental aspects that throws non-coders off when first learning more about coding. We have started counting from *one not zero our entire lives*. This is admittedly a difficult pill to swallow, but we must. Thankfully it will become second nature in time. Feel free to pursue clarity through *zero-based numbering* research however. For a quick and dirty answer, math nerds and computer optimization are to blame.
 
-Hexadecimal is another common color code. It represents the same color range as RGB, just differently. Instead of a range between *0-255* for each R, G, and B value, HEX uses *00-FF* for each. The letters A-F replace the numbers 10-15 so one character instead of two is used. As a result, each character represents 16 different values. For HEX, since each color channel is represented by two characters (16x16), we know 256 possibilities exist.
+Hexadecimal is another common color code. It represents the same color range as RGB, just differently. Instead of a range between *0-255* for each R, G, and B value, HEX uses *00-FF* for each. The letters A-F replace the numbers 10-15 so one character instead of two is used. As a result, each character represents 16 different values. Two characters combined results in 256 possibilities (16x16). So for HEX, each color channel is represented by two characters instead of a 0-255 number.
 
 <table>
   <tr>
