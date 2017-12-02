@@ -66,7 +66,7 @@ That makes sense. One bit represents two states. Two bits represents four states
 
 That *00 or 01 or 10 or 11* looks weird. It is. Thankfully, when we get to writing our own code, we don’t have to write in *1s* and *0s*. As a designer, I would not have learned to code otherwise.
 
-Now is a good point in time to reflect on why we are even looking at bits if we don’t have to code with them. There are four ideas worth instilling:
+Now is a good point in time to reflect on *why* we are even looking at bits if we don’t have to code with them. There are four ideas worth instilling:
 
 1. Computers, these complex machines, rely solely on extremely basic concepts
 2. There is no magic in coding, just simple ideas stacked atop each other
