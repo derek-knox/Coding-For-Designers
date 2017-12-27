@@ -33,6 +33,8 @@ In fact, you have just learned the most basic code of computers. That was quick.
 
 Most coders don’t really care about the presence or absence of electricity though. Myself included. Coders just care that binary *represents one of two states*. State *1* or state *0*. State *on* or state *off*. State *true* or state *false*. Ultimately the two states can represent anything you want. State *color* or state *grayscale* for example. Only one is active at a time. You get the idea.
 
-For binary code, the computer takes the presence or absence of electricity in (input) and we *convert meaning* out (output). What makes binary code a *code* is that it is a *system for converting meaning between forms*. Etch this in your brain, code is a system for converting meaning between forms.
+For binary code, the computer takes the presence or absence of electricity in (input) and we *convert meaning* out (output). What makes binary code a *code* is that it is a *system for converting meaning between forms*. Etch this in your brain.
+
+[quote] *** Code is a system for converting meaning between forms. ***
 
 I could take a pencil and write a 1 or a 0 on a sheet of paper (or any two distinct symbols for that matter). I could then give it to you. As long as both of us agree on the *converted meaning*, then we would have a binary code to communicate. For example a 1 could mean "yes" and a 0 “no”. We could ask each other questions verbally and respond in this code. There is nothing inherently magical about code. Remember this fact.

@@ -1,6 +1,6 @@
 # Coding for Designers
 
-*A Prerequisite for Learning and Talking Code*
+*A Visually Infused Prerequisite for Learning and Talking Code*
 
 Coding for Designers is a work-in-progress book that demystifies coding relative to concepts that designers are already familiar with. This book adds the framing that is lacking in virtually all learn-to-code resources. The goal of this book is to instill a mental model that helps designers learn coding concepts faster, more deeply, and more intuitively. The topics and concepts covered will act as reference and reflection points on your learn-to-code journey. Empower yourself to better learn and talk code today.
 
@@ -8,7 +8,7 @@ Coding for Designers is a work-in-progress book that demystifies coding relative
 - [Give Feedback/Ideas](https://goo.gl/forms/hFoc5wE7x7KCYDwI2)
 - [Derek Knox website](http://www.derekknox.com)
 
-![Coding for Designers](book/assets/img/coding-for-designers-cover-4.png?v0.2 "Coding for Designers")
+![Coding for Designers](book/assets/img/coding-for-designers-4-visually-infused.png?v0.3 "Coding for Designers")
 
 ## Table of Contents
 
