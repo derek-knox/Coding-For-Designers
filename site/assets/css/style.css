@@ -1,0 +1,87 @@
+/* ELEMENTS */
+
+html {
+	font-size: 18px;
+	line-height: 23px;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.27777778em;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 900;
+}
+h1 {
+	font-size: 4.22222222em;
+	line-height: 1.21052632em;
+	margin-top: 0.30263158em;
+	margin-bottom: 0.60526316em;
+}
+h2 {
+	font-size: 2.61111111em;
+	line-height: 1.46808511em;
+	margin-top: 0.4893617em;
+	margin-bottom: 0.4893617em;
+}
+h3 {
+	font-size: 1.61111111em;
+	line-height: 1.5862069em;
+	margin-top: 0.79310345em;
+	margin-bottom: 0em;
+}
+h4 {
+	font-size: 1em;
+	line-height: 1.27777778em;
+	margin-top: 1.27777778em;
+	margin-bottom: 0em;
+}
+h5 {
+	font-size: 1em;
+	line-height: 1.27777778em;
+	margin-top: 1.27777778em;
+	margin-bottom: 0em;
+}
+p, ul, ol, pre, table, blockquote {
+	margin-top: 0em;
+	margin-bottom: 1.27777778em;
+}
+ul ul, ol ol, ul ol, ol ul {
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+hr {
+	border: 1px solid;
+	margin: -1px 0;
+}
+a, b, i, strong, em, small, code {
+	line-height: 0;
+}
+sub, sup {
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+
+/* STYLES */
+
+.content-text {
+	max-width: 720px;
+	margin: 0 auto;
+	padding: 0 25px;
+}
+
+.content-visual {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #333;
+}

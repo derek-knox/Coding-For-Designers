@@ -4,16 +4,19 @@
   <meta charset="UTF-8" />
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 </head>
 <body>
   <header>
     <p>
       {{> nav}}
     </p>
-
   </header>
-  <h1>{{ title }}</h1>
-  {{{ contents }}}
+  <section>
+    <h1 class='chapter-title'>{{ title }}</h1>
+    {{{ contents }}}
+  </section>
 
   <footer>
     <p>...</p>

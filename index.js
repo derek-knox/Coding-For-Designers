@@ -85,31 +85,31 @@ Metalsmith(__dirname)
   .use(metadata({
     'collections.chapter0': {
       layout: 'chapter.html',
-      title: 'Chapter 0: Preface'
+      title: 'Preface'
     },
     'collections.chapter1': {
       layout: 'chapter.html',
-      title: 'Chapter 1: Breaking Barriers'
+      title: 'Breaking Barriers'
     },
     'collections.chapter2': {
       layout: 'chapter.html',
-      title: 'Chapter 2: Structure, Style, and Behavior'
+      title: 'Structure, Style, and Behavior'
     },
     'collections.chapter3': {
       layout: 'chapter.html',
-      title: 'Chapter 3: Coding and Visual Design'
+      title: 'Coding and Visual Design'
     },
     'collections.chapter4': {
       layout: 'chapter.html',
-      title: 'Chapter 4: Coding and Concept'
+      title: 'Coding and Concept'
     },
     'collections.chapter5': {
       layout: 'chapter.html',
-      title: 'Chapter 5: Coding and JavaScript'
+      title: 'Coding and JavaScript'
     },
     'collections.chapter6': {
       layout: 'chapter.html',
-      title: 'Chapter 6: Deconstructing Designs'
+      title: 'Deconstructing Designs'
     }
   }))
   .use(markdown())
