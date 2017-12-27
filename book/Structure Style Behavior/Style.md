@@ -1,4 +1,4 @@
-# Style
+## Style
 
 Style, as previously mentioned, is where the building blocks of a structure are adorned with materials and objects that have aesthetic and/or functional value. An adornment allows a specific building block or a group of building blocks to look and/or function identically. An adornment may also ensure a building block is truly unique in its look and/or function. Each platform may have default styles for its building blocks but ultimately the creative power is in your hands as the coder and designer.
 

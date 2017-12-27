@@ -1,4 +1,4 @@
-# Preface
+## Preface
 
 Virtually all existing resources aimed at teaching people *about* or *how-to* code introduce the code itself way too soon. In doing so, many fundamental, insightful, and empowering concepts remain hidden and out of reach. Often these same resources lack explanations of *why* a coding concept exists as it does. Additionally, these same resources rarely consider designers directly. *Coding for Designers* is a response to this unfortunate reality.
 

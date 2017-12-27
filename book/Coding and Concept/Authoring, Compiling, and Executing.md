@@ -1,4 +1,4 @@
-# Authoring, Compiling, and Executing
+## Authoring, Compiling, and Executing
 
 As mentioned previously there are three distinct timeframes when code exists. In order, these are:
 1. Authoring time

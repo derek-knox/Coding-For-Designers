@@ -1,4 +1,4 @@
-# Principles and Patterns
+## Principles and Patterns
 
 With the elements of visual design as primitives, the principles are the *organization of those primitives*. There are generally considered to be eight though names and count are debatable. I will use the list below.
 
@@ -37,7 +37,7 @@ Both the visual designer and the programmer leverage the principles and patterns
 
 Design patterns allow the programmer to take an approach that solves a general problem that is common and that has been solved before. Design patterns are not a beginner topic so we will not be going into detail. That said, I recommend two books for when you feel ready. *Learning JavaScript Design Patterns* by Addy Osmani and *Design Patterns: Elements of Reusable Object-Oriented Software* by the Gang of Four (GoF) are both amazing resources.
 
-## Pattern Examples
+### Pattern Examples
 
 Often times when programming, you only ever want to have a single instance of a type of object exist in your program. In a sports video game for example you usually only ever track a single game’s score. Depending on the sport you likely only ever want a single ball or puck. In a drawing application you may only ever want a single pen or brush to be selected at any given time. The *singleton* design pattern is a useful pattern for enforcing this oneness.
 

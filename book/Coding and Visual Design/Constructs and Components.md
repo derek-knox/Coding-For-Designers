@@ -1,4 +1,4 @@
-# Constructs and Components
+## Constructs and Components
 
 The constructs embody the elements and principles in an effort to communicate specific structure, ideas, and messages. With the elements as primitives and the principles as an organization of those primitives, the constructs are the compound results. The constructs give visual designer’s the greatest chance for successfully communicating through a design. Remember, we may only influence. There are three core constructs:
 

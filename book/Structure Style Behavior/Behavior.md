@@ -1,4 +1,4 @@
-# Behavior
+## Behavior
 
 Behavior, as previously mentioned, is where the structural building blocks in combination with their adornments *react*. They react to interaction, the environment, and ultimately time. Behavior enables one or more building blocks and one or more adornments to change in time. These changes manifest in an infinite amount of ways.
 

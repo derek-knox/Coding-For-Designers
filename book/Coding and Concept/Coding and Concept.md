@@ -1,4 +1,4 @@
-# Coding and Concept
+## Coding and Concept
 
 So far we've broken down some barriers around coding and computers in general. We've learned about coding structure, style, and behavior too. Additionally, we've introduced coding relative to visual design's elements, principles, and constructs. Though there is always more to learn, your confidence should be magnitudes higher than when we started. Additionally, a strong mental model should be forming. Let's strengthen it even more.
 

@@ -1,4 +1,4 @@
-# Structure
+## Structure
 
 Structure, as previously mentioned, is a particular arrangement of a set of building blocks. In simpler terms, structure is organization. Structural designs are the organization of structural building blocks.
 

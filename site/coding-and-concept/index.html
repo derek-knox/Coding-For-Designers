@@ -20,7 +20,161 @@
   </header>
   <section>
     <h1 class='chapter-title'>Coding and Concept</h1>
-    
+    <h2 id="work-right-better-">Work. Right. Better.</h2>
+<p>In programming there is the axiom &quot;make it right before you make it faster&quot;. This exact quote is found in <em>The Elements of Programming Style</em> by Brian W. Kernighan and P.J. Plauger and it is heavily respected by the programming community. Put another way, when authoring code you should make it:</p>
+<ol>
+<li>Work</li>
+<li>Right</li>
+<li>Better</li>
+</ol>
+<p>In this section we will explore the notion of <em>right</em> and <em>better</em> in reference to the working <code>toggleImageOpacity</code> function that we recently looked at. This effort will introduce reusable code improvement tactics and the thought process behind them. The three step process will become second nature in time.</p>
+<p>First and foremost you need the code to <em>work</em>. No shit. Making it <em>right</em> is less obvious though. Typically the goal is to achieve the same functionality with less and/or more efficient code. Making it <em>better</em> is much more subjective.</p>
+<p>Is the code better for beginner and junior coders? Is it better for advanced and senior coders? Is it better for the computer? Sometimes the solution is ideal for all, but this is not always the case. For example an advantageous language feature may be common sense to an advanced coder, but confusing to a beginner coder. The code is better for one group and less so for the other. Similarly, when program performance is a bottleneck, better may mean sacrificing human readability. This should be avoided, but it is sometimes necessary. This latter example translates to an advantage during compilation time and/or execution time, but a disadvantage to authoring time.</p>
+<p>Below is the <code>toggleImageOpacity</code> function from the previous section with added comments. Each comment is numbered for reference as we will soon be investigating the code line-by-line. After we understand each line of code, we will entertain improvement ideas.</p>
+<pre><code>// 1. function declaration using toggleImageOpacity identifier
+function toggleImageOpacity() {
+
+  // 2. variable declaration and assignment using imageToToggle identifier
+  var imageToToggle = document.getElementById(&#39;image-to-toggle&#39;);
+
+  // 3. variable declaration and assignment using currentOpacity identifier
+  var currentOpacity = window.getComputedStyle(imageToToggle).opacity;
+
+  // 4. &#39;if&#39; portion of an if/else conditional statement
+  if(currentOpacity == 1) {
+
+    // 5. nested property assignment using imageToToggle reference
+    imageToToggle.style.opacity = .5;
+
+  // 6. end of &#39;if&#39;
+  }
+
+  // 7. &#39;else&#39; portion of an if/else conditional statement
+  else {
+
+    // 8. nested property assignment using imageToToggle reference
+    imageToToggle.style.opacity = 1;
+
+  // 9. end of &#39;else&#39; 
+  }
+
+// 10. end of toggleImageOpacity function
+}
+</code></pre><p>Now that the numbered comments provide a bit more context to each associated line of code, let&#39;s take a step deeper into each snippet. I do not expect you to understand everything we cover in the rest of this section however. Do not be discouraged if some words or ideas make no sense yet as this is expected. The intention of this section is to plant seeds in your mind regarding the vocabulary, concepts, and considerations of advanced coders. Extract what you can.</p>
+<p>In snippet one there are four parts comprising the line of code:</p>
+<pre><code>// 1. function declaration using toggleImageOpacity identifier
+function toggleImageOpacity() {
+</code></pre><ol>
+<li><code>function</code> - keyword reserved by JavaScript denoting a function</li>
+<li><code>toggleImageOpacity</code> - custom identifier for referencing the function by name</li>
+<li><code>()</code> - <em>function signature input</em> defining how to call the function to do work</li>
+<li><code>{</code> - opening curly brace for declaring the beginning of the <em>function body</em><ul>
+<li><code>}</code> - a closing curly brace is expected after the <em>function body</em> for declaring its end</li>
+<li>the <code>{</code> and <code>}</code> define the scope boundary of a function</li>
+</ul>
+</li>
+</ol>
+<p>The above four parts make up the anatomy of a function. First, the <code>function</code> keyword tells the JavaScript engine your intent to define a function. Second, a custom identifier is set to enable other code to properly reference and call the function by name. Third, the function&#39;s signature input defines what arguments the function expects to use when doing its work. No arguments are expected for <code>toggleImageOpacity</code> currently. Lastly, the <code>{</code> and <code>}</code> define the bounds of the function body. All functions return a value prior to closing the function body too, but this <em>function signature output</em> will be covered in the next chapter. </p>
+<p>With respect to making snippet one <em>right</em> there is nothing we can do. A case could be made for making it <em>better</em> by renaming <code>toggleImageOpacity</code> to a single character alternative. This change is better for computers because there is less information to read which also translates to a smaller payload to send over a network. We won&#39;t make this change as we want to keep the code better for us humans. Research the <em>minification</em> process to learn about attaining the best of both worlds.</p>
+<p>In snippet two there are five parts comprising the line of code:</p>
+<pre><code>// 2. variable declaration and assignment using imageToToggle identifier
+var imageToToggle = document.getElementById(&#39;image-to-toggle&#39;);
+</code></pre><ol>
+<li><code>var</code> - keyword reserved by JavaScript denoting a variable</li>
+<li><code>imageToToggle</code> - custom identifier for referencing a value by name</li>
+<li><code>=</code> - <em>assignment operator</em> that assigns the value on its right to the identifer on its left</li>
+<li><code>document.getElementById(&#39;image-to-toggle&#39;)</code> - browser API for referencing a specific HTML element&#39;s object</li>
+<li><code>;</code> - character reserved by JavaScript denoting the explicit end of a code statement</li>
+</ol>
+<p>The above five parts make up the anatomy of a declaration and assignment statement. The parts work together to assign the resulting value from the <code>document.getElementById()</code> browser API call to the declared <code>imageToToggle</code> identifier. In subsequent code, the identifier can be used as a shortcut to reference the actual element object and then use its API. It is worth noting that every use of <code>imageToToggle</code> could be replaced with <code>document.getElementById(&#39;image-to-toggle&#39;)</code>. This approach would <em>work</em>, but it would be <em>less right</em> because we&#39;d be doing the same work more times than needed.</p>
+<p>Assigning an executed function&#39;s result to a variable identifier is an example of <em>caching</em>. Caching is a great approach for decreasing code volume and increasing execution time performance. The more expensive and time consuming the function call (blocking stack work), the more valuable caching is. Preventing repetitive work is the win with caching.</p>
+<p>With respect to making snippet two <em>more right</em>, there is one other thing we could do. We could cache the <code>imageToToggle</code> lookup and assignment <em>outside</em> of the <code>toggleImageOpacity</code> function. In doing so, we would prevent the repetitive work that occurs each time <code>toggleImageOpacity</code> executes. This approach would require the identifier to never be reassigned to continue to work.</p>
+<p>Additionally, an even <em>more right</em> approach could be made if <code>imageToToggle</code>&#39;s value would be useful to other code within our program. If this was the case then the variable wouldn&#39;t exist in the scope just outside the <code>toggleImageOpacity</code>&#39;s scope, but could instead exist in a higher level scope via the singleton design pattern. We mentioned this approach in the <em>Principles and Patterns</em> section, but the details are outside the scope of this book. Again, we&#39;re just planting seeds here so do not concern yourself with the details. We&#39;ll leave the snippet as is for simplicity and because there isn&#39;t anything <em>better</em> we can do.</p>
+<p>In snippet three there are five parts comprising the line of code:</p>
+<pre><code>  // 3. variable declaration and assignment using currentOpacity identifier
+  var currentOpacity = window.getComputedStyle(imageToToggle).opacity;
+</code></pre><p>Each part reflects the same general description as snippet two with the exception of <code>window.getComputedStyle(imageToToggle).opacity</code>. This part accesses the nested and specific <code>opacity</code> style object property of the cached <code>imageToToggle</code> element. The <code>opacity</code> property doesn&#39;t exist on the <code>imageToToggle</code> object itself and that is why we need the help of the API.</p>
+<p>The previous snippet&#39;s suggestion to cache the identifier outside the <code>toggleImageOpacity</code> function is problematic in this snippet though. The difference is that <code>currentOpacity</code> is something we want to lookup <em>each time</em> the function executes. This is a requirement if we want an up-to-date opacity value. A change like this would result in a <em>less right</em> and ultimately broken set of code. Caching the style object returned from the <code>getComputedStyle(imageToToggle)</code> call outside the function scope could be considered <em>more right</em> however. Nothing <em>better</em> is possible.</p>
+<p>In snippet four there are seven parts comprising the line of code:</p>
+<pre><code>// 4. &#39;if&#39; portion of an if/else conditional statement
+if(currentOpacity == 1) {
+</code></pre><ol>
+<li><code>if</code> - keyword reserved by JavaScript denoting conditional code execution</li>
+<li><code>(</code> - opening paren for declaring the <code>if</code> condition beginning</li>
+<li><code>currentOpacity</code> - custom identifier for referencing a value by name</li>
+<li><code>==</code> - <em>loose equality</em> that coercively compares values on each side and produces a <code>true</code> or <code>false</code> value</li>
+<li><code>1</code> - a literal number value</li>
+<li><code>)</code> - closing paren for declaring the <code>if</code> condition end</li>
+<li><code>{</code> - opening curly brace for declaring the beginning of the <code>if</code>-condition code block</li>
+</ol>
+<p>The above seven parts make up the anatomy of an <code>if</code> statement. First, the <code>if</code> keyword tells the JavaScript engine your intent to define a condition to control execution flow. When the condition is <code>true</code>, the code between its <code>{</code> and <code>}</code> will execute. If the condition is <code>false</code>, then the code block is skipped. The beginning <code>(</code> and ending <code>)</code> parens define the space where the condition in question resides. This condition is the comparison between the value in the <code>currentOpacity</code> identifier and the number value <code>1</code>. We will cover this again later, but <code>=</code> is used to <em>assign</em> where <code>==</code> is used to <em>compare</em>.</p>
+<p>With respect to making snippet four <em>right</em> and <em>better</em>, we enter subjective changes. This subjectivity sources from a deeper understanding of JavaScript:</p>
+<ol>
+<li>Implicit coercion</li>
+<li>Optional braces</li>
+</ol>
+<p>Implicit coercion is a nuanced sub-system of JavaScript. Coercion is a fancy word for interpreting a value in one form as another form. We&#39;ll leave the details to the next chapter, but just know that loose equality <code>==</code> allows coercion where <em>strict equality</em> <code>===</code> does not. Put another way, loose equality allows interpretation where strict equality does not.</p>
+<p>Optional braces are an authoring time convenience for more succinct code writing. The snippet will remain as-is for now as many sub-systems and their caveats do not need to be learned to make code <em>work</em>.</p>
+<p>In snippet five there are four parts comprising the line of code:</p>
+<pre><code>// 5. nested property assignment using imageToToggle reference
+imageToToggle.style.opacity = .5;
+</code></pre><ol>
+<li><code>imageToToggle.style.opacity</code> - nested identifier</li>
+<li><code>=</code> - assignment operator that assigns the value on its right to the identifer on its left</li>
+<li><code>.5</code> - a literal number value</li>
+<li><code>;</code> - character reserved by JavaScript denoting the explicit end of a code statement</li>
+</ol>
+<p>The above four parts make up the anatomy of an assignment statement. This snippet has one small difference compared to snippet two. Where snippet two has a declaration and an assignment, this snippet only has the latter. The assumption made is that the nested identifiers <code>style</code> and <code>opacity</code> already exist. As a result, a simple assignment using <code>=</code> can be made.</p>
+<p>Regarding <em>right</em> and <em>better</em>, we could cache the <code>imageToToggle.style</code> lookup. Technically speaking, each time the <code>imageToToggle.style.opacity</code> portion executes there is repetitive lookup work the engine has to do. We will not make this change as the performance benefit is negligible. This will be learned in time, but changes to increase performance should only be considered when the target framerate or user experience suffers. Put another way, &quot;premature optimization is the root of all evil&quot;. This exact quote is from Donald Knuth, a heavilty respected and influential coder. We will take his advice.</p>
+<p>In snippet six there is only one part comprising the line of code:</p>
+<pre><code>// 6. end of &#39;if&#39;
+}
+</code></pre><ol>
+<li><code>}</code> - closing curly brace for declaring the end of the <code>if</code>-condition code block</li>
+</ol>
+<p>This closing curly brace simply defines the end of the <code>if</code> statement&#39;s code block. Nothing <em>right</em> or <em>better</em> is possible.</p>
+<p>In snippet seven there are two parts comprising the line of code:</p>
+<pre><code>// 7. &#39;else&#39; portion of an if/else conditional statement
+else {
+</code></pre><ol>
+<li><code>else</code> - keyword reserved by JavaScript denoting conditional code execution</li>
+<li><code>{</code> - opening curly brace for declaring the beginning of the <code>else</code>-condition code block</li>
+</ol>
+<p>The above two parts make up the anatomy of an <code>else</code> statement. The <code>else</code> is an optional execution flow that follows an <code>if</code> or <code>else if</code> statement. When the corresponding <code>if</code> or <code>else if</code> condition is <code>false</code>, the code between the <code>else</code>&#39;s <code>{</code> and <code>}</code> code block will execute. The <code>if</code>/<code>else</code> allows a program to branch, to have conditional execution flow at execution time. Specifically in our <code>toggleImageOpacity</code> function, we use this tactic to ping-pong, or toggle, an image&#39;s opacity between the values <code>1</code> and <code>.5</code>. Put another way, the program toggles the image&#39;s opacity between fully opaque (100%) and half transparent (50%). There is nothing <em>right</em> or <em>better</em> to do with this snippet.</p>
+<p>In snippet eight there are four parts comprising the line of code:</p>
+<pre><code>// 8. nested property assignment using imageToToggle reference
+imageToToggle.style.opacity = 1;
+</code></pre><ol>
+<li><code>imageToToggle.style.opacity</code> - nested identifier</li>
+<li><code>=</code> - assignment operator that assigns the value on its right to the identifer on its left</li>
+<li><code>1</code> - a literal number value</li>
+<li><code>;</code> - character reserved by JavaScript denoting the explicit end of a code statement</li>
+</ol>
+<p>Everything covered in snippet five can be said of this snippet. The only difference is the use of the literal value <code>1</code> in place of <code>.5</code>.</p>
+<p>In snippet nine there is one part comprising the line of code:</p>
+<pre><code>// 9. end of &#39;else&#39; 
+}
+</code></pre><ol>
+<li><code>}</code> - closing curly brace for declaring the end of the <code>else</code>-condition code block</li>
+</ol>
+<p>This closing curly brace simply defines the end of the <code>else</code> statement&#39;s code block. There are no <em>right</em> or <em>better</em> improvements that are possible with this particular snippet. There is a <em>better</em> change possible when considering the entire <code>if</code>/<code>else</code> as a whole however. Snippets four through nine can be encapsulated more succintly using the <em>ternary operator</em>. The ternary operator does the same work as an <code>if</code>/<code>else</code>, but does so more succinctly (often in a single line of code):</p>
+<pre><code>// Ternary operator alternative to an if/else that encapsulates snippets four through nine
+imageToToggle.style.opacity = currentOpacity == 1 ? .5 : 1;
+</code></pre><p>This is admittedly an advanced code statement, but it is functionally identical to the <code>if</code>/<code>else</code>. We won&#39;t go into its anatomy, but you could probably guess how it works. It is better for advanced JavaScript coders and less so for beginner coders. Subjectivity is at play.</p>
+<p>In snippet ten there is one part comprising the line of code:</p>
+<pre><code>// 10. end of toggleImageOpacity function
+}
+</code></pre><ol>
+<li><code>}</code> - closing curly brace for declaring the end of the <em>function body</em><ul>
+<li><code>{</code> - an opening curly brace is expected before the <em>function body</em> for declaring its beginning</li>
+<li>the <code>{</code> and <code>}</code> define the scope boundary of a function</li>
+</ul>
+</li>
+</ol>
+<p>This closing curly brace simply defines the end of the <code>toggleImageOpacity</code> function. There are no <em>right</em> or <em>better</em> improvement possibilities.</p>
+<p>In this section we introduced some of the vocabulary, concepts, and considerations of advanced coders. Overwhelming I know. Hopefully a few things made sense though. Regardless, seeds should be planted that will bear fruit later in your learn-to-code journey.</p>
+<p>In the next chapter <em>Coding and JavaScript</em> we will bypass much of this advanced material in favor of a simplified approach. As you progress as a coder you can begin to make code <em>right</em> and <em>better</em>. Until then, the goal is to make code that works. Let&#39;s do this.</p>
+
   </section>
 
   <footer>

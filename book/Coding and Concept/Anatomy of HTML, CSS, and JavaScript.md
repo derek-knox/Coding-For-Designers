@@ -1,4 +1,4 @@
-# Anatomy of HTML, CSS, and JavaScript
+## Anatomy of HTML, CSS, and JavaScript
 
 This section will be the first where we really start digging into the existing languages of HTML, CSS, and JavaScript. We have covered quite a bit in an effort to get to this point. Specifically, we learned about the powerful concepts of binary and states in addition to encoding and decoding in the *Breaking Barriers* chapter. We learned in *Structure, Style, and Behavior* how each concept plays a valuable and distinct role in an interactive creation. In *Coding and Visual Design* we mapped familiar design-specific concepts to coding concepts to help establish a knowledge bridge. More recently, we explored programming-specific concepts to help shape your understanding of how code lives and communicates in real-time.
 
@@ -13,7 +13,7 @@ Let's squash a myth real quick. Designers and other non-coders new to coding thi
 
 For 2D and the web, that means we need to know the difference between HTML structure, CSS styling, and JavaScript behavior. We have this distinction covered. Let's dig into number two and three. Learning these two facets for each language won't be easy, but it can be simple. Regardless, there is no substitue for practice.
 
-## HTML
+### HTML
 
 In keeping with the structure, style, and behavior order, let's look at the anatomy of each starting with HTML. We will title our file `index.html` to align with a best practice naming convention.
 
@@ -85,7 +85,7 @@ Additionally, `<a>hyperlink</a>` becomes `<a href='http://www.codingfordesigners
 
 The takeaway is that the browser provides useful runtime API hooks via element attrs. Now that we've covered the basic implementation of HTML structure, let's dig into style. Welcome to the `class` attr.
 
-## CSS
+### CSS
 
 The `class` attr gives you the creative power to style content. We will start by giving each `<div>` the same style. So `<div>` becomes `<div class='dark-background'>` where the `class` attr is set with `=` to the value `dark-background` between quotes. The `dark-background` name could be virtually anything we want, but there are rules for valid names. Make it easier on yourself and stick with:
 - Lowercase English alphabet characters
@@ -163,7 +163,7 @@ With either solution, both our `<div>`s will have dark backgrounds and the text 
 
 As a creation evolves, feel free to change the names of classes if it makes sense to. A class name may make less sense as new property-value pairs are added or removed. Over time you will leverage established naming practices and/or develop your own to gain an intuitive feel of when to update a name. Additionally, you'll develop a sense of how best to group certain property-value pairs for reuse by different elements. Just know that it is extremely common to change names as a creation evolves.
 
-## JavaScript
+### JavaScript
 
 Thus far we've covered the anatomy of HTML and CSS, so now it is time for JavaScript. In a way we already looked at the anatomy of JavaScript in the *Elements and Elements* section. That breakdown was a bit more granular though and we'll revisit the specifics in the next chapter *Coding and JavaScript*. For now we will look at the high level anatomy of a JavaScript program. We will focus on shape, space, and form or more precisely function, scope, and object.
 

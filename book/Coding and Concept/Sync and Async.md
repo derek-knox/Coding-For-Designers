@@ -1,4 +1,4 @@
-# Sync and Async
+## Sync and Async
 
 Though we didn't explicitly state it, the nature of how the event loop works gives rise to the notion of *sync* and *async* work. Synchronous and asynchronous are the full terms, but we will use the shortcuts sync and async instead.
 

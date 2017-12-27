@@ -1,4 +1,4 @@
-# Frame Rate
+## Frame Rate
 
 We know computers are dumb and fast. Some computers are faster than others however. How do we ensure the code we author will execute well on a given computer? To do so, we need to author our code with a target *frame rate* in mind.
 
