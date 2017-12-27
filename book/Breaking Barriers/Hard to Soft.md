@@ -1,4 +1,4 @@
-# Hard to Soft
+## Hard to Soft
 
 Computers take electricity as input. People convert meaning as output. Specifically, people have agreed that the presence of electricity is 1 and the absence is 0. Go take a look at the power buttons of various devices around you. I will wait. You will see that most, if not all, have a line symbol (1) and a circle symbol (0). Binary switch. On and Off. Cool.
 

@@ -1,4 +1,4 @@
-# Encode and Decode
+## Encode and Decode
 
 Code is a system for converting meaning between forms. One form is considered *encoded* and the other *decoded*. To *encode*, is to convert *into* coded form. To *decode* is to convert *from* coded form. A few forms have been encoded and decoded already.
 

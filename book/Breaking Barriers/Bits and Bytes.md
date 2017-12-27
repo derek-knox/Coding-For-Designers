@@ -1,4 +1,4 @@
-# Bits and Bytes
+## Bits and Bytes
 
 A code with only two states is kind of boring. Useful yes, but boring. I bet you are thinking we can make a more interesting code if we have more than one binary. You are correct. Coders never say *more than one binary* though. It sounds weird. It also takes too long to say and type. Coders prefer shortcuts. Welcome to the word *bit*.
 

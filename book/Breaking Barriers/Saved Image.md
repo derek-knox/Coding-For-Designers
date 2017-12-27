@@ -1,4 +1,4 @@
-# Saved Image
+## Saved Image
 
 Let’s chain together everything we have covered thus far to save a color image.
 

@@ -1,4 +1,4 @@
-# Black and White
+## Black and White
 
 Get out your sketchbook and try to come up with your own code that *represents* a 2x2 black and white image. Seriously, try it. Feel free to use the visual output states below as a guide.
 

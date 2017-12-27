@@ -1,4 +1,4 @@
-# Ones and Zeros
+## Ones and Zeros
 
 Computers are dumb. They can do amazing things, but they are dumb. They are pretty needy too. We give them what they need and what they need is *electricity*.
 

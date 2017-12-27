@@ -1,4 +1,4 @@
-# Coding Color
+## Coding Color
 
 Thus far we have made our own example codes. One to represent the symbols in the English language and another to represent black and white images. We could continue this trend. Instead we will transition toward codes that already exist. The advantage is twofold:
 
