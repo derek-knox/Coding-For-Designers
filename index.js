@@ -8,6 +8,7 @@ var concat            = require('metalsmith-concat');
 var collections       = require('metalsmith-collections');
 var metadata          = require('metalsmith-collection-metadata');
 var replace           = require('metalsmith-regex-replace');
+var assets            = require('metalsmith-assets');
 
 Metalsmith(__dirname)
   .metadata({
@@ -21,7 +22,7 @@ Metalsmith(__dirname)
   .use (
     watch({
       paths: {
-        '${source}/**/*': true
+        '${source}/**/*.md': true
       },
       livereload: true
     })
@@ -116,25 +117,16 @@ Metalsmith(__dirname)
   .use(markdown())
   .use(replace({
       subs: [
-          // Viz Quote
+          // img > figure>img
           {
-              search: /<p>-viz-quote/gm,
-              replace: '</div><div class="content-visual"><blockquote>'
-          },
-          {
-              search: /quote-viz-<\/p>/gm,
-              replace: '</blockquote></div><div class="content-text">'
-          },
-          // Viz
-          {
-              search: /<p>-viz/gm,
-              replace: '</div><div class="content-visual">'
-          },
-          {
-              search: /viz-<\/p>/gm,
-              replace: '</div><div class="content-text">'
+              search: /<p><img (.*) title=['"](.*)['"]><\/p>/gm,
+              replace: '</div><div class="content-visual"><figure><img $1 title="$2"><figcaption>$2</figcaption></figure></div><div class="content-text">'
           }
       ]
+  }))
+  .use(assets({
+    source: './book/assets', // relative to the working directory
+    destination: './assets' // relative to the build directory
   }))
   .use(permalinks({
     relative: false

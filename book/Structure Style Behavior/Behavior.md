@@ -8,7 +8,7 @@ Behavior(s) may be different depending on the context, but their fundamental pur
 
 Let’s explore some specific applications of behavior by building off the previous structure and style examples.
 
- *^ TODO - (structural, styles, logical) ^*
+![TODO - (structural, styles, logical)](../assets/img/visual-todo-placeholder.jpg "TODO - (structural, styles, logical)")
 
 We know behavior may be applied to structure (a specific building block or group of building blocks). Additionally, we know behavior may be applied to style (adornments). The sheer presence of behavior however, due to its dynamic nature, results in an additional target we have yet to talk about. Time itself. Time in the form of delays and schedules are most common.
 

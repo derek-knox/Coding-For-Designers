@@ -11,13 +11,11 @@ RGB is composed of three values (color channels). A red value, a green value, an
 
 RGB is represented in a few flavors too. For illustration purposes, let’s briefly represent our own custom RGB code using a *bit* for each red value, blue value, and green value.
 
-![alt text](../assets/img/visual-todo-placeholder.jpg "Custom RGB = 8 different colors")
-
-*^ Custom RGB = 8 different colors ^*
+![Custom RGB = 8 different colors](../assets/img/visual-todo-placeholder.jpg "Custom RGB = 8 different colors")
 
 Eight colors is a pretty limiting palette. What happens if we swap out the bits for bytes? Holy shit. RGB gets us *over 16 million* color values. That palette is enormous. This is an actual flavor of RGB called RGB24. Another is called RGB32 or RGBA, where "A" is an *alpha* (transparency) value. Just call them by their normal names RGB and RGBA.
 
-![alt text](../assets/img/visual-todo-placeholder.jpg "RGB and RGBA")
+![RGB and RGBA](../assets/img/visual-todo-placeholder.jpg "RGB and RGBA")
 
 *^
 
@@ -46,6 +44,8 @@ You will notice the sample RGB colors above range from 0-255 for each byte’s v
 Counting starting at zero instead of one is a recurring pattern you will see in coding. This is one of the fundamental aspects that throws non-coders off when first learning more about coding. We have started counting from *one not zero our entire lives*. This is admittedly a difficult pill to swallow, but we must. Thankfully it will become second nature in time. Feel free to pursue clarity through *zero-based numbering* research however. For a quick and dirty answer, math nerds and computer optimization are to blame.
 
 Hexadecimal is another common color code. It represents the same color range as RGB, just differently. Instead of a range between *0-255* for each R, G, and B value, HEX uses *00-FF* for each. The letters A-F replace the numbers 10-15 (A instead of 10 through F instead of 15). So for HEX, each color channel is represented by two characters (00-FF) instead of RGB's three (0-255).
+
+![TODO - Table Replace](../assets/img/visual-todo-placeholder.jpg "TODO - Table Replace")
 
 <table>
   <tr>
@@ -87,6 +87,8 @@ Hexadecimal is another common color code. It represents the same color range as 
 </table>
 
 Naturally, each character pair represents 256 values (16 * 16 = 256). Additionally, the *#* symbol often precedes the value. Example time.
+
+![HEX](../assets/img/visual-todo-placeholder.jpg "HEX")
 
 *^
 

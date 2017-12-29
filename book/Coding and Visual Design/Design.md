@@ -12,6 +12,8 @@ Learning a programming language, like learning virtually anything, takes effort,
 
 With the elements as primitives and the principles as an organization of those primitives, the constructs are the compound results. Unfortunately there is not a one-to-one mapping from the visual realm to a programming equivalent. We will be able to come close enough however and create a solid bridge for comparison in the process.
 
+![TODO - Table Replace](../assets/img/visual-todo-placeholder.jpg "TODO - Table Replace")
+
 Design
 - Elements = Primitives
 - Principles = Organization of Primitives

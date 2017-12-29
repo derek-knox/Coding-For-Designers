@@ -8,15 +8,15 @@ The building blocks are different depending on the context, but the underlying r
 
 The *body* for an HTML document and the *scene* for Unity are each the root parent for their respective platforms. The simplest tree structure, in both 2D and 3D, consists of a single child node of the root parent. This is a one-node tree. 
 
-*^ TODO - Image 1 node 2D and 1 node 3D (parent only) ^*
+![TODO - Image 1 node 2D and 1 node 3D (parent only)](../assets/img/visual-todo-placeholder.jpg "TODO - Image 1 node 2D and 1 node 3D (parent only)")
 
 The second simplest structure has two variants: one with two child nodes and one with a single child that is also a parent due to itself containing one child. These are both examples of two-node trees. 
 
-*^ TODO - Image 2 node 2D and 2 node 3D (parent with child and two parents) ^*
+![TODO - Image 2 node 2D and 2 node 3D (parent with child and two parents)](../assets/img/visual-todo-placeholder.jpg "TODO - Image 2 node 2D and 2 node 3D (parent with child and two parents)")
 
 The structural variations building off these examples, as you can imagine, are infinite. Here are some visual examples for context:
 
-*^ TODO - Image X nodes 2D and X nodes 3D (complex example of any variation of above examples) ^*
+![TODO - Image X nodes 2D and X nodes 3D (complex example of any variation of above examples)](../assets/img/visual-todo-placeholder.jpg "TODO - Image X nodes 2D and X nodes 3D (complex example of any variation of above examples)")
 
 As you’ll notice in the 2D and 3D examples above, what differs between them is only the building block type. The variations of the parent-child relationships remain constant. What results is a tree structure. This is the takeaway.
 

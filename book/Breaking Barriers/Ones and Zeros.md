@@ -8,9 +8,11 @@ A *one* is the *presence of electricity*. A *zero* is the *absence of electricit
 
 In fact, you have just learned the most basic code of computers. That was quick. One is presence and zero is absence. One is on and zero is off. This particular code is called *binary*. Now when you hear coders talk about *binary*, you know what they are referring to. Ones and zeros. That is it. Those ones and zeros are not that magical now huh?
 
+![TODO - Table Replace](../assets/img/visual-todo-placeholder.jpg "TODO - Table Replace")
+
 <table>
   <tr>
-    <td>Some Binary Flavors</td>
+    <td>Common Binary Flavors</td>
     <td></td>
   </tr>
   <tr>
@@ -35,6 +37,6 @@ Most coders don’t really care about the presence or absence of electricity tho
 
 For binary code, the computer takes the presence or absence of electricity in (input) and we *convert meaning* out (output). What makes binary code a *code* is that it is a *system for converting meaning between forms*. Etch this in your brain.
 
--viz-quote Code is a system for converting meaning between forms. quote-viz-
+> Code is a system for converting meaning between forms.
 
 I could take a pencil and write a 1 or a 0 on a sheet of paper (or any two distinct symbols for that matter). I could then give it to you. As long as both of us agree on the *converted meaning*, then we would have a binary code to communicate. For example a 1 could mean "yes" and a 0 “no”. We could ask each other questions verbally and respond in this code. There is nothing inherently magical about code. Remember this fact.

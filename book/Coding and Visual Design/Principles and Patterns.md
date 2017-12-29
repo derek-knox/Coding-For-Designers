@@ -2,6 +2,8 @@
 
 With the elements of visual design as primitives, the principles are the *organization of those primitives*. There are generally considered to be eight though names and count are debatable. I will use the list below.
 
+![TODO - Table Replace](../assets/img/visual-todo-placeholder.jpg "TODO - Table Replace")
+
 <table>
   <tr>
     <td>Balance</td>

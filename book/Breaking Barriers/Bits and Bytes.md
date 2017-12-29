@@ -6,6 +6,8 @@ A *bit* is a *binary digit*. We already know binary represents one of two states
 
 One bit is boring because it can only represent one of two states. The natural question is then, how many states can we represent with *two* bits?
 
+![TODO - Table Replace](../assets/img/visual-todo-placeholder.jpg "TODO - Table Replace")
+
 <table>
   <tr>
     <td>Bit A</td>
@@ -23,6 +25,8 @@ One bit is boring because it can only represent one of two states. The natural q
 </table>
 
 1 bit = 2 states
+
+![TODO - Table Replace](../assets/img/visual-todo-placeholder.jpg "TODO - Table Replace")
 
 <table>
   <tr>
@@ -53,6 +57,8 @@ One bit is boring because it can only represent one of two states. The natural q
 
 That makes sense. One bit represents two states. Two bits represents four states. No brainer. Let’s look at all the output states for kicks.
 
+![TODO - Table Replace](../assets/img/visual-todo-placeholder.jpg "TODO - Table Replace")
+
 <table>
   <tr>
     <td>Bit A</td>
@@ -75,6 +81,8 @@ Now is a good point in time to reflect on *why* we are even looking at bits if w
 
 How many states could we represent with three bits?
 
+![TODO - Table Replace](../assets/img/visual-todo-placeholder.jpg "TODO - Table Replace")
+
 <table>
   <tr>
     <td>Bit D and Bit E and Bit F</td>
@@ -85,6 +93,8 @@ How many states could we represent with three bits?
 </table>
 
 Eight? I was expecting six. It makes sense though when we see the state values printed out. For every bit we add, we double the total output states as before. This is obvious when we write it out.
+
+![TODO - Table Replace](../assets/img/visual-todo-placeholder.jpg "TODO - Table Replace")
 
 <table>
   <tr>
@@ -131,9 +141,7 @@ We know coders like shortcuts. Is there a shorter way to say and type *eight bit
 
 Let’s use what we just learned to make an example code of our own. We will use a byte’s 256 states to represent the symbols of the English language. Twenty-six lowercase and twenty-six uppercase letters would use up fifty-two states. Ten numerals and all the punctuation marks, including a lot of obscure marks, could be represented in another fifty states. We could increase fifty to one-hundred and include even more obscure marks (poop emoji included). One hundred four unused states would *still remain* (256 - 26 - 26 - 100 = 104). Good enough, for English at least.
 
-![alt text](../assets/img/visual-todo-placeholder.jpg "Image Grid of English Symbols")
-
-*^ TODO - Image Grid of English Symbols ^*
+![Image Grid of English Symbols](../assets/img/visual-todo-placeholder.jpg "Image Grid of English Symbols")
 
 What if we wanted a code to represent *all the symbols of every single human language we have ever known*? A single byte would not cut it. Different amounts of bits, and thus bytes, are useful for different scenarios. Chew on that.
 
