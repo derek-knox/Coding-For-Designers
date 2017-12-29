@@ -6,7 +6,7 @@ A non-interactive animation hitting 60fps undoubtedly looks smooth, but it is ju
 
 Thankfully, the program responsible for *executing* our compiled code helps us out. This program is called the *engine*. Additionally, the engine gets help from its parent program, the *runtime*. Together, the runtime and engine provide an interactive system that executes code in real-time. If we were to code the relationship in an HTML-like code, it would look like this:
 
-```
+```html
 <runtime>
     <engine></engine>
 </runtime>
@@ -24,7 +24,7 @@ The JavaScript runtime in a web browser has four core parts and the engine has t
 
 We can update our HTML-like example from before:
 
-```
+```html
 <runtime>
     <engine>
         <heap></heap>
@@ -46,9 +46,7 @@ So what do each of these runtime parts do anyway? Here is a succint breakdown wh
 
 Here is a 3D representation of the relationship between the runtime and engine parts:
 
-![alt text](../assets/img/visual-todo-placeholder.jpg "The Event Loop Machine")
-
-*^ The Event Loop Machine ^*
+![The Event Loop Machine](../assets/img/visual-todo-placeholder.jpg "The Event Loop Machine")
 
 During compile time, just before execution time, the engine quickly does three things with our code:
 1. reads

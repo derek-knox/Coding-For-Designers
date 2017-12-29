@@ -13,7 +13,7 @@ Is the code better for beginner and junior coders? Is it better for advanced and
 
 Below is the `toggleImageOpacity` function from the previous section with added comments. Each comment is numbered for reference as we will soon be investigating the code line-by-line. After we understand each line of code, we will entertain improvement ideas.
 
-```
+```javascript
 // 1. function declaration using toggleImageOpacity identifier
 function toggleImageOpacity() {
 
@@ -48,7 +48,7 @@ function toggleImageOpacity() {
 Now that the numbered comments provide a bit more context to each associated line of code, let's take a step deeper into each snippet. I do not expect you to understand everything we cover in the rest of this section however. Do not be discouraged if some words or ideas make no sense yet as this is expected. The intention of this section is to plant seeds in your mind regarding the vocabulary, concepts, and considerations of advanced coders. Extract what you can.
 
 In snippet one there are four parts comprising the line of code:
-```
+```javascript
 // 1. function declaration using toggleImageOpacity identifier
 function toggleImageOpacity() {
 ```
@@ -64,7 +64,7 @@ The above four parts make up the anatomy of a function. First, the `function` ke
 With respect to making snippet one *right* there is nothing we can do. A case could be made for making it *better* by renaming `toggleImageOpacity` to a single character alternative. This change is better for computers because there is less information to read which also translates to a smaller payload to send over a network. We won't make this change as we want to keep the code better for us humans. Research the *minification* process to learn about attaining the best of both worlds.
 
 In snippet two there are five parts comprising the line of code:
-```
+```javascript
 // 2. variable declaration and assignment using imageToToggle identifier
 var imageToToggle = document.getElementById('image-to-toggle');
 ```
@@ -83,7 +83,7 @@ With respect to making snippet two *more right*, there is one other thing we cou
 Additionally, an even *more right* approach could be made if `imageToToggle`'s value would be useful to other code within our program. If this was the case then the variable wouldn't exist in the scope just outside the `toggleImageOpacity`'s scope, but could instead exist in a higher level scope via the singleton design pattern. We mentioned this approach in the *Principles and Patterns* section, but the details are outside the scope of this book. Again, we're just planting seeds here so do not concern yourself with the details. We'll leave the snippet as is for simplicity and because there isn't anything *better* we can do.
 
 In snippet three there are five parts comprising the line of code:
-```
+```javascript
   // 3. variable declaration and assignment using currentOpacity identifier
   var currentOpacity = window.getComputedStyle(imageToToggle).opacity;
 ```
@@ -92,7 +92,7 @@ Each part reflects the same general description as snippet two with the exceptio
 The previous snippet's suggestion to cache the identifier outside the `toggleImageOpacity` function is problematic in this snippet though. The difference is that `currentOpacity` is something we want to lookup *each time* the function executes. This is a requirement if we want an up-to-date opacity value. A change like this would result in a *less right* and ultimately broken set of code. Caching the style object returned from the `getComputedStyle(imageToToggle)` call outside the function scope could be considered *more right* however. Nothing *better* is possible.
 
 In snippet four there are seven parts comprising the line of code:
-```
+```javascript
 // 4. 'if' portion of an if/else conditional statement
 if(currentOpacity == 1) {
 ```
@@ -115,7 +115,7 @@ Implicit coercion is a nuanced sub-system of JavaScript. Coercion is a fancy wor
 Optional braces are an authoring time convenience for more succinct code writing. The snippet will remain as-is for now as many sub-systems and their caveats do not need to be learned to make code *work*.
 
 In snippet five there are four parts comprising the line of code:
-```
+```javascript
 // 5. nested property assignment using imageToToggle reference
 imageToToggle.style.opacity = .5;
 ```
@@ -129,7 +129,7 @@ The above four parts make up the anatomy of an assignment statement. This snippe
 Regarding *right* and *better*, we could cache the `imageToToggle.style` lookup. Technically speaking, each time the `imageToToggle.style.opacity` portion executes there is repetitive lookup work the engine has to do. We will not make this change as the performance benefit is negligible. This will be learned in time, but changes to increase performance should only be considered when the target framerate or user experience suffers. Put another way, "premature optimization is the root of all evil". This exact quote is from Donald Knuth, a heavilty respected and influential coder. We will take his advice.
 
 In snippet six there is only one part comprising the line of code:
-```
+```javascript
 // 6. end of 'if'
 }
 ```
@@ -138,7 +138,7 @@ In snippet six there is only one part comprising the line of code:
 This closing curly brace simply defines the end of the `if` statement's code block. Nothing *right* or *better* is possible.
 
 In snippet seven there are two parts comprising the line of code:
-```
+```javascript
 // 7. 'else' portion of an if/else conditional statement
 else {
 ```
@@ -148,7 +148,7 @@ else {
 The above two parts make up the anatomy of an `else` statement. The `else` is an optional execution flow that follows an `if` or `else if` statement. When the corresponding `if` or `else if` condition is `false`, the code between the `else`'s `{` and `}` code block will execute. The `if`/`else` allows a program to branch, to have conditional execution flow at execution time. Specifically in our `toggleImageOpacity` function, we use this tactic to ping-pong, or toggle, an image's opacity between the values `1` and `.5`. Put another way, the program toggles the image's opacity between fully opaque (100%) and half transparent (50%). There is nothing *right* or *better* to do with this snippet.
 
 In snippet eight there are four parts comprising the line of code:
-```
+```javascript
 // 8. nested property assignment using imageToToggle reference
 imageToToggle.style.opacity = 1;
 ```
@@ -160,14 +160,14 @@ imageToToggle.style.opacity = 1;
 Everything covered in snippet five can be said of this snippet. The only difference is the use of the literal value `1` in place of `.5`.
 
 In snippet nine there is one part comprising the line of code:
-```
+```javascript
 // 9. end of 'else' 
 }
 ```
 1. `}` - closing curly brace for declaring the end of the `else`-condition code block
 
 This closing curly brace simply defines the end of the `else` statement's code block. There are no *right* or *better* improvements that are possible with this particular snippet. There is a *better* change possible when considering the entire `if`/`else` as a whole however. Snippets four through nine can be encapsulated more succintly using the *ternary operator*. The ternary operator does the same work as an `if`/`else`, but does so more succinctly (often in a single line of code):
-```
+```javascript
 // Ternary operator alternative to an if/else that encapsulates snippets four through nine
 imageToToggle.style.opacity = currentOpacity == 1 ? .5 : 1;
 ```
@@ -175,7 +175,7 @@ imageToToggle.style.opacity = currentOpacity == 1 ? .5 : 1;
 This is admittedly an advanced code statement, but it is functionally identical to the `if`/`else`. We won't go into its anatomy, but you could probably guess how it works. It is better for advanced JavaScript coders and less so for beginner coders. Subjectivity is at play.
 
 In snippet ten there is one part comprising the line of code:
-```
+```javascript
 // 10. end of toggleImageOpacity function
 }
 ```

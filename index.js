@@ -121,7 +121,16 @@ Metalsmith(__dirname)
           {
               search: /<p><img (.*) title=['"](.*)['"]><\/p>/gm,
               replace: '</div><div class="content-visual"><figure><img $1 title="$2"><figcaption>$2</figcaption></figure></div><div class="content-text">'
-          }
+          },
+          // code
+          {
+              search: /<pre><code class=['"]lang-(.*)['"]>/gm,
+              replace: '</div><div class="content-code"><pre><code class="lang-$1">'
+          },
+          {
+              search: /<\/code><\/pre>/gm,
+              replace: '</code></pre></div><div class="content-text">'
+          },
       ]
   }))
   .use(assets({

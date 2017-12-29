@@ -77,13 +77,15 @@ sub {
 
 /* STYLES */
 
-.content-text {
+.content-text,
+.content-code pre {
 	max-width: 720px;
 	margin: 0 auto;
 	padding: 0 25px;
 }
 
-.content-visual {
+.content-visual,
+.content-code {
 	width: auto;
 	margin: 0 auto 1.27777778em;
 	padding: 15px;
@@ -92,4 +94,17 @@ sub {
 	border-bottom: 1px solid #cccccc;
 	background-color: #272822;
 	color: #eeeeee;
+}
+
+.content-visual figure,
+.content-code pre {
+	margin: 1.27777778em auto;
+}
+
+.content-code {
+	overflow-x: auto;
+}
+
+.content-code pre {
+	text-align: left;
 }

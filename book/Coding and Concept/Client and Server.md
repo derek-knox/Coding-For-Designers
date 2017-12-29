@@ -6,9 +6,7 @@ The details of how the internet facilitates this communication is elegant and im
 
 Let's look at two example programs that utilize the internet to help solidify your understanding. One program will be a web browser and the other an internet-connected mobile game. Let's just say that each example is running on a smartphone. Both the browser and the game are on the client, the smartphone. Each program leverages distinct APIs to request information from distinct and remote computers, the servers. Pretty simple relationship really.
 
-![alt text](../assets/img/visual-todo-placeholder.jpg "Client and Server")
-
-*^ client and server graphic ^*
+![Client and Server](../assets/img/visual-todo-placeholder.jpg "Client and Server")
 
 You already know that a web browser may be used to access a particular website or web app. While the site or web app is running, its code can make *additional requests* to the server in an effort to get additional data. For example, when a sport statistics app is starting up, or another input trigger occurs, the app could use an API to get the most up-to-date scores and stats. An updated version of the app is not required. Instead, an API interaction provides updated data. This is super useful.
 

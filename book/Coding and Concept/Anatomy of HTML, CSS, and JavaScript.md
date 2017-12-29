@@ -17,7 +17,7 @@ For 2D and the web, that means we need to know the difference between HTML struc
 
 In keeping with the structure, style, and behavior order, let's look at the anatomy of each starting with HTML. We will title our file `index.html` to align with a best practice naming convention.
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -30,7 +30,7 @@ In keeping with the structure, style, and behavior order, let's look at the anat
 
 This is the most structurally simple, complete, and valid HTML a browser uses. Let's walk through each tag using *comments* to clarify each tag's purpose. We saw earlier that JavaScript uses the `//` character sequence for comments. HTML uses the `<!---->` sequence where the actual comment rests in the middle of the dashes. Just take note that each language may have a uniqe approach to comments, but the purpose is the same. Yes, it would be ideal if all languages used the same character sequence for denoting comments. It's not a perfect world.
 
-```
+```html
 <!-- Tell the browser the document type - we only care about html -->
 <!DOCTYPE html>
 
@@ -60,7 +60,7 @@ There are many types of element tags that can be added in both the `<head>` and 
 
 Spacing, tabs, and new lines do typically exist between elements however. This is solely to improve human readability. Imagine if the below HTML elements were all on a single line. The browser wouldn't care as the defined structure would remain the same, but we would have a much tougher time reading and easily seeing the parent-child relationships.
 
-```
+```html
 <body>
   <div>
     <h1>This is the Primary Title of the Page</h1>
@@ -93,7 +93,7 @@ The `class` attr gives you the creative power to style content. We will start by
 
 Now that we have set a `dark-background` value for the `class` attr, how do we actually define the style for the browser to render it? Remember when I mentioned that other tags can be added to the `<head>`? Welcome to the `<link>` tag. It allows us to link another file to our web page. Perfect. Our updated `<head>` is below and it now has a `<link>` tag. The attrs of it tell the browser to download and use a CSS file where our defined `dark-background` style resides.
 
-```
+```html
 <head>
   <meta charset="utf-8">
   
@@ -106,7 +106,7 @@ Now that we have set a `dark-background` value for the `class` attr, how do we a
 
 The folder structure on the server computer that is providing these files to client computers is below. Take note that a lacking file extension means the item is a folder. The *relative* paths of the `<link>`'s `href` attr value and the `<img>`'s `src` attr value rely on the structure below. These relative paths, relative to the `index.html` that is, tell the browser exactly where to find the file to use.
 
-```
+```text
 index.html
 assets
   css
@@ -117,7 +117,7 @@ assets
 
 Now is the time to look at the anatomy of a `.css` file which, for our purpose, consists of one class definition. Typically the file would have more than one, but currently we only need one. Take note that CSS uses *comments* via `/**/` where the comment itself resides in the middle. Our `style.css` file is simply:
 
-```
+```css
 .dark-background {
 
   /* This is a CSS comment - the below property-value pair sets an element's background color to black */
@@ -134,7 +134,7 @@ If it isn't already obvious, each browser sets default styles for elements to pr
 
 Since browsers typically default the color of text to black, our applied `dark-background` class makes our text blend with the dark background. We want to see the text too so we can fix this by updating our class definition to use another common property named `color`. Again, we won't go over all the valid properties that are possible as you, like other coders and designers, can reference resources. The takeaway is the relationship of property-value pairs within class definitions. Here is one approach to update our `style.css` file:
 
-```
+```css
 .dark-background {
   background-color: #000000;
   color: #ffffff;  
@@ -143,7 +143,7 @@ Since browsers typically default the color of text to black, our applied `dark-b
 
 Another approach could be:
 
-```
+```css
 .dark-background {
   background-color: #000000;
 }
@@ -155,7 +155,7 @@ Another approach could be:
 
 Our `<div>`s would need to be updated for the second solution. Take note that spaces are used between class names to enable more than one class style to be applied to a single element. This is a very powerful aspect of CSS, one which you will grasp more intuitively in time. Updated HTML using the second solution is below:
 
-```
+```html
 <div class='dark-background light-text'>
 ```
 
@@ -178,7 +178,7 @@ When the reference is found in one of the scopes, the engine uses the value that
 
 Now that we know the anatomy of a JavaScript program is simply a nested tree of scopes, let's add a simple example based on this section's HTML and CSS examples. As you might imagine, HTML has a tag that allows us to add JavaScript just as easily as we added CSS. Welcome to the `<script>` tag. You can add a `<script>` tag to the `<head>` or the `<body>`, but the latter is best practice for non-blocking reasons. Specifically, `<script>` tags should reside just before the closing body, the `</body>`. Here is an updated excerpt from our `index.html` file.
 
-```
+```html
     <!-- The previous HTML code from our index.html file is excluded for brevity -->
     <script src='assets/js/main.js'></script>
 </body>
@@ -186,7 +186,7 @@ Now that we know the anatomy of a JavaScript program is simply a nested tree of 
 
 Naturally, the server folder structure needs the path to our `main.js` so our updated structure becomes:
 
-```
+```text
 index.html
 assets
   css
@@ -201,13 +201,13 @@ The browser understands the script tag and its `src` attr and then, you guessed 
 
 The updated `<img>` becomes:
 
-```
+```html
 <img id='image-to-toggle' src='assets/img/cover-coding-for-designers.jpg'></img>
 ```
 
 The updated `<button>` becomes:
 
-```
+```html
 <button onclick='toggleImageOpacity()'>Toggle Image Opacity</button>
 ```
 
@@ -215,7 +215,7 @@ The `id` attr is how we identify an element in our HTML as unique to our documen
 
 The result of clicking the button above during execution time results in the function named `toggleImageOpacity` to be called via `()`. This results in the function's contents being executed by the engine. Behind the scenes, the runtime APIs transform the hardware input (mouse, trackpad, stylus, touch, etc.) to event queue work. The event loop then picks up the resulting package and it gets placed on the stack. This all happens in milliseconds or even microseconds when the event loop is not blocked. Lastly, the engine actually executes the function contents. Now is a great time to look at those contents that reside in our `main.js` file.
 
-```
+```javascript
 function toggleImageOpacity() {
 
   // Reference work

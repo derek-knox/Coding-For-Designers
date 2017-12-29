@@ -5,6 +5,9 @@ Though we didn't explicitly state it, the nature of how the event loop works giv
 Sync work is referred to as *blocking* where async work is *non-blocking*. Using your new knowledge of the event loop, how would you categorize the engine's stack work? How about the runtime APIs work? I'll give you a clue, they are different. Take a moment before continuing.
 
 Answer time:
+
+![TODO - Replace](../assets/img/visual-todo-placeholder.jpg "TODO - Replace")
+
 <table>
   <tr>
     <td>sync</td>
@@ -20,14 +23,12 @@ Answer time:
 
 The 3D visualization from the *Event Loop* section should be popping into your head. The event loop cannot cycle when work is on the stack. The loop is blocked. The event queue does not prevent the event loop from cycling. The loop is not blocked.
 
-![alt text](../assets/img/visual-todo-placeholder.jpg "The Event Loop Machine")
-
-*^ The Event Loop Machine ^*
+![The Event Loop Machine](../assets/img/visual-todo-placeholder.jpg "The Event Loop Machine")
 
 Let's look at code examples of both work types to see this in action. We haven't specifically covered JavaScript outside the *Elements and Elements* section yet, but I am confident you'll get the gist.
 
 Sync work:
-```
+```javascript
 function makeBackgroundBlack() {
   document.body.style.backgroundColor = '#000000';
 }
@@ -35,9 +36,9 @@ function makeBackgroundBlack() {
 makeBackgroundBlack();
 ```
 
-There are likely some details you don't understand, but that is to be expected. Let's look at the same code with some added explanations. Take note that the words following the `//` are plain English, not code. These plain English *comments* are useful for us humans when we read and share our code for others to read. Comments are for humans not computers. The engine ignores them.
+There are likely some details you don't understand, but that is to be expected. Let's look at the same code with some added explanations. Take note that the words following the `//` are plain English, not code. These plain English *comments* are useful for us humans when we read and share our code for others (including our future self) to read. Comments are for humans not computers. The engine ignores them.
 
-```
+```javascript
 // 1. We declare a function statement (stack work) for the engine
 // 2. We name the function whatever we want, 'makeBackgroundBlack' in this case
 // 3. The engine doesn't do the work yet (code statement between the '{' and '}')
@@ -61,7 +62,7 @@ The takeaway here is that you should try to do small and efficient work in your 
 Let's now look at an async example. We will make it similar to the sync example for comparison. In fact, we will make the program identical except for a single statement and its comments.
 
 Async work:
-```
+```javascript
 function makeBackgroundBlack() {
   document.body.style.backgroundColor = '#000000';
 }
@@ -89,26 +90,26 @@ The work `setTimout` actually does, in English, is:
 What is cool about many functions, `setTimeout` included, is that they can be designed with a small amount of flexibility built-in. As you may have guessed, as long as we give `setTimeout` valid arguments, it will always do the work we want (via the function provided) after a delay (via the time provided). Pretty damn cool. You can design your own functions with flexibility as well.
 
 As a quick example, let's design a new function named `changeBackgroundColor`.
-```
+```javascript
 function changeBackgroundColor(newColor) {
   document.body.style.backgroundColor = newColor;
 }
 ```
 
 Here are a few examples of how we could use it:
-```
+```javascript
 changeBackgroundColor('#FF0000');
 ```
 
 or
 
-```
+```javascript
 changeBackgroundColor('Green');
 ```
 
 or
 
-```
+```javascript
 changeBackgroundColor('Blue');
 ```
 
