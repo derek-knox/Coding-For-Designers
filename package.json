@@ -13,6 +13,7 @@
     "metalsmith-collections": "^0.9.0",
     "metalsmith-concat": "^6.0.0",
     "metalsmith-express": "^0.1.0",
+    "metalsmith-regex-replace": "^1.2.0",
     "metalsmith-watch": "^1.0.3"
   }
 }

@@ -2,11 +2,12 @@ var Metalsmith        = require('metalsmith');
 var markdown          = require('metalsmith-markdown');
 var layouts           = require('metalsmith-layouts');
 var permalinks        = require('metalsmith-permalinks');
-var watch             = require('metalsmith-watch')
-var metalsmithExpress = require('metalsmith-express')
-var concat            = require('metalsmith-concat')
-var collections       = require('metalsmith-collections')
-var metadata          = require('metalsmith-collection-metadata')
+var watch             = require('metalsmith-watch');
+var metalsmithExpress = require('metalsmith-express');
+var concat            = require('metalsmith-concat');
+var collections       = require('metalsmith-collections');
+var metadata          = require('metalsmith-collection-metadata');
+var replace           = require('metalsmith-regex-replace');
 
 Metalsmith(__dirname)
   .metadata({
@@ -85,7 +86,7 @@ Metalsmith(__dirname)
   .use(metadata({
     'collections.chapter0': {
       layout: 'chapter.html',
-      title: 'Preface'
+      title: 'Coding for Designers'
     },
     'collections.chapter1': {
       layout: 'chapter.html',
@@ -113,6 +114,28 @@ Metalsmith(__dirname)
     }
   }))
   .use(markdown())
+  .use(replace({
+      subs: [
+          // Viz Quote
+          {
+              search: /<p>-viz-quote/gm,
+              replace: '</div><div class="content-visual"><blockquote>'
+          },
+          {
+              search: /quote-viz-<\/p>/gm,
+              replace: '</blockquote></div><div class="content-text">'
+          },
+          // Viz
+          {
+              search: /<p>-viz/gm,
+              replace: '</div><div class="content-visual">'
+          },
+          {
+              search: /viz-<\/p>/gm,
+              replace: '</div><div class="content-text">'
+          }
+      ]
+  }))
   .use(permalinks({
     relative: false
   }))

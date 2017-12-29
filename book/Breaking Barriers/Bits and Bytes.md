@@ -4,7 +4,7 @@ A code with only two states is kind of boring. Useful yes, but boring. I bet you
 
 A *bit* is a *binary digit*. We already know binary represents one of two states. We also know that those two states are agreed to mean *1* and *0*. So a bit is a binary digit. A bit can either be a *1* or a *0*. Simple.
 
- One bit is boring because it can only represent one of two states. The natural question is then, how many states can we represent with *two* bits?
+One bit is boring because it can only represent one of two states. The natural question is then, how many states can we represent with *two* bits?
 
 <table>
   <tr>

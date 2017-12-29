@@ -1,25 +1,32 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>{{ title }}</title>
-  <meta name="description" content="{{ description }}">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
-</head>
-<body>
-  <header>
-    <p>
-      {{> nav}}
-    </p>
-  </header>
-  <section>
-    <h1 class='chapter-title'>{{ title }}</h1>
-    {{{ contents }}}
-  </section>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+  </head>
+  <body>
+    
+    <header>
+      <p>
+        {{> nav}}
+      </p>
+    </header>
 
-  <footer>
-    <p>...</p>
-  </footer>
-</body>
+    <section>
+      <div class='content-text'>
+        <h1 class='chapter-title'>{{ title }}</h1>
+      </div>
+      <div class='content-text'>
+        {{{ contents }}}
+      </div>
+    </section>
+
+    <footer>
+      <p>...</p>
+    </footer>
+
+  </body>
 </html>
