@@ -9,6 +9,7 @@ var collections       = require('metalsmith-collections');
 var metadata          = require('metalsmith-collection-metadata');
 var replace           = require('metalsmith-regex-replace');
 var assets            = require('metalsmith-assets');
+var metalsmithPrism   = require('metalsmith-prism');
 
 Metalsmith(__dirname)
   .metadata({
@@ -114,23 +115,29 @@ Metalsmith(__dirname)
       title: 'Deconstructing Designs'
     }
   }))
-  .use(markdown())
+  .use(markdown({
+    langPrefix: 'language-'
+  }))
+  .use(metalsmithPrism({
+    decode: true,
+    lineNumbers: true
+  }))
   .use(replace({
       subs: [
-          // img > figure>img
+          // img
           {
               search: /<p><img (.*) title=['"](.*)['"]><\/p>/gm,
               replace: '</div><div class="content-visual"><figure><img $1 title="$2"><figcaption>$2</figcaption></figure></div><div class="content-text">'
           },
           // code
           {
-              search: /<pre><code class=['"]lang-(.*)['"]>/gm,
-              replace: '</div><div class="content-code"><pre><code class="lang-$1">'
+              search: /<pre (.*)><code (.*)>/gm,
+              replace: '</div><div class="content-code"><pre $1><code $2>'
           },
           {
               search: /<\/code><\/pre>/gm,
               replace: '</code></pre></div><div class="content-text">'
-          },
+          }
       ]
   }))
   .use(assets({

@@ -6,7 +6,7 @@ A non-interactive animation hitting 60fps undoubtedly looks smooth, but it is ju
 
 Thankfully, the program responsible for *executing* our compiled code helps us out. This program is called the *engine*. Additionally, the engine gets help from its parent program, the *runtime*. Together, the runtime and engine provide an interactive system that executes code in real-time. If we were to code the relationship in an HTML-like code, it would look like this:
 
-```html
+```markup
 <runtime>
     <engine></engine>
 </runtime>
@@ -24,7 +24,7 @@ The JavaScript runtime in a web browser has four core parts and the engine has t
 
 We can update our HTML-like example from before:
 
-```html
+```markup
 <runtime>
     <engine>
         <heap></heap>

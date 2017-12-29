@@ -75,7 +75,7 @@ sub {
 	bottom: -0.25em;
 }
 
-/* STYLES */
+/* Visual Areas (image figure w/caption + code) */
 
 .content-text,
 .content-code pre {
@@ -88,7 +88,7 @@ sub {
 .content-code {
 	width: auto;
 	margin: 0 auto 1.27777778em;
-	padding: 15px;
+	padding: 0 15px;
 	text-align: center;
 	border-top: 1px solid #cccccc;
 	border-bottom: 1px solid #cccccc;
@@ -97,14 +97,19 @@ sub {
 }
 
 .content-visual figure,
-.content-code pre {
+.content-code pre[class*="language-"] {
 	margin: 1.27777778em auto;
+	border-radius: 0;
+}
+.content-visual figure {
+	padding: 1em; /* Ensure figure padding matches prismjs code special padding to keep "visual areas" consistent */
 }
 
-.content-code {
-	overflow-x: auto;
-}
+/* Prismjs Override */
 
-.content-code pre {
-	text-align: left;
+.content-code .line-numbers .line-numbers-rows {
+	border-color: #444;
+}
+.content-code .line-numbers-rows > span:before {
+	color: #666;
 }
