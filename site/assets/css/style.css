@@ -75,7 +75,7 @@ sub {
 	bottom: -0.25em;
 }
 
-/* Visual Areas (image figure w/caption + code) */
+/* Visual Areas (main copy, image figure w/caption, and code) */
 
 .content-text,
 .content-code pre {
@@ -105,6 +105,18 @@ sub {
 	padding: 1em; /* Ensure figure padding matches prismjs code special padding to keep "visual areas" consistent */
 }
 
+span.inline-code {
+	padding: .15em;
+}
+
+p code {
+	padding: 0 .2em;
+	margin: 0 .1em;
+	border-radius: 3px;
+	background-color: #ccc;
+	font-size: 90%;
+}
+
 /* Prismjs Override */
 
 .content-code .line-numbers .line-numbers-rows {
@@ -112,4 +124,18 @@ sub {
 }
 .content-code .line-numbers-rows > span:before {
 	color: #666;
+}
+
+/* Custom Scrollbar */
+
+pre::-webkit-scrollbar
+{
+	height: 8px;
+	background-color: #333;
+}
+
+pre::-webkit-scrollbar-thumb
+{
+	border-radius: 4px;
+	background-color: #444;
 }

@@ -127,9 +127,12 @@ Metalsmith(__dirname)
           // img
           {
               search: /<p><img (.*) title=['"](.*)['"]><\/p>/gm,
-              replace: '</div><div class="content-visual"><figure><img $1 title="$2"><figcaption>$2</figcaption></figure></div><div class="content-text">'
+              replace: function(match, p1, p2){
+                var id = p2.toLowerCase().replace(/ /g, '-');
+                return '</div><div id="' + id + '" class="content-visual"><figure><img ' + p1 + ' title="' + p2 + '"><figcaption>' + p2 + '</figcaption></figure></div><div class="content-text">'
+              }
           },
-          // code
+          // code block
           {
               search: /<pre (.*)><code (.*)>/gm,
               replace: '</div><div class="content-code"><pre $1><code $2>'

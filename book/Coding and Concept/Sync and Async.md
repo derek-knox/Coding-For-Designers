@@ -21,9 +21,7 @@ Answer time:
   </tr>
 </table>
 
-The 3D visualization from the *Event Loop* section should be popping into your head. The event loop cannot cycle when work is on the stack. The loop is blocked. The event queue does not prevent the event loop from cycling. The loop is not blocked.
-
-![The Event Loop Machine](../assets/img/visual-todo-placeholder.jpg "The Event Loop Machine")
+The Event Loop Machine 3D visualization from the *Event Loop* section should be popping into your head. The event loop cannot cycle when work is on the stack. The loop is blocked. The event queue does not prevent the event loop from cycling. The loop is not blocked.
 
 Let's look at code examples of both work types to see this in action. We haven't specifically covered JavaScript outside the *Elements and Elements* section yet, but I am confident you'll get the gist.
 
@@ -36,7 +34,7 @@ function makeBackgroundBlack() {
 makeBackgroundBlack();
 ```
 
-There are likely some details you don't understand, but that is to be expected. Let's look at the same code with some added explanations. Take note that the words following the `//` are plain English, not code. These plain English *comments* are useful for us humans when we read and share our code for others (including our future self) to read. Comments are for humans not computers. The engine ignores them.
+There are likely some details you don't understand, but that is to be expected. Let's look at the same code with some added explanations. Take note that the words following the `//` are plain English, not code. These plain English *comments* are useful for us humans when we read and share our code for others to read (including our future self). Comments are for humans not computers. The engine essentially ignores them.
 
 ```javascript
 // 1. We declare a function statement (stack work) for the engine
