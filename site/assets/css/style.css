@@ -13,10 +13,6 @@ body {
 	margin: 0;
 	background-color: #eee;
 }
-h1, h2, h3, h4, h5 {
-	font-weight: 900;
-	color: #272822;
-}
 h1 {
 	font-size: 4.22222222em;
 	line-height: 1.21052632em;
@@ -27,26 +23,25 @@ h1 {
 h2 {
 	font-size: 2.61111111em;
 	line-height: 1.46808511em;
-	margin-top: 0.4893617em;
+	margin-top: 0.9787234em;
 	margin-bottom: 0.4893617em;
 }
 h3 {
 	font-size: 1.61111111em;
 	line-height: 1.5862069em;
-	margin-top: 0.79310345em;
-	margin-bottom: 0em;
+	margin-top: 0.9787234em;
+	margin-bottom: 0.4893617em;
 }
-h4 {
-	font-size: 1em;
-	line-height: 1.27777778em;
-	margin-top: 1.27777778em;
-	margin-bottom: 0em;
+h1, h2, h3 {
+	line-height: 1em;
+	font-weight: 900;
+	color: #272822;
+	overflow: hidden;
 }
-h5 {
-	font-size: 1em;
-	line-height: 1.27777778em;
-	margin-top: 1.27777778em;
-	margin-bottom: 0em;
+h1 span {
+	font-size: 50%;
+	display: inline-block;
+	line-height: 1em;
 }
 p, ul, ol, pre, table, blockquote {
 	margin-top: 0em;
@@ -56,12 +51,17 @@ ul ul, ol ol, ul ol, ol ul {
 	margin-top: 0em;
 	margin-bottom: 0em;
 }
-hr {
-	border: 1px solid;
-	margin: -1px 0;
+section {
+	margin-top: 10vh;
 }
 a, b, i, strong, em, small, code {
 	line-height: 0;
+}
+hr {
+	border: none;
+	background-color: #666;
+    height: 1px;
+	margin: 1em -1em 0.5em;
 }
 sub, sup {
 	line-height: 0;
@@ -73,6 +73,31 @@ sup {
 }
 sub {
 	bottom: -0.25em;
+}
+img {
+	display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto .5em;
+}
+figcaption {
+	color: #999;
+	font-variant: small-caps;
+}
+
+
+/* WIP Banner */
+
+.wip {
+	font-weight: 900;
+	font-size: 60%;
+	background-color: #99cc33;
+	border: 1px solid #272822;
+	position: fixed;
+	top: 25px;
+	right: -50px;
+	padding: 2px 50px;
+	transform: rotate(45deg);
 }
 
 /* Visual Areas (main copy, image figure w/caption, and code) */
@@ -94,6 +119,7 @@ sub {
 	border-bottom: 1px solid #cccccc;
 	background-color: #272822;
 	color: #eeeeee;
+	font-size: 80%;
 }
 
 .content-visual figure,
@@ -105,16 +131,12 @@ sub {
 	padding: 1em; /* Ensure figure padding matches prismjs code special padding to keep "visual areas" consistent */
 }
 
-span.inline-code {
-	padding: .15em;
-}
-
 p code {
 	padding: 0 .2em;
 	margin: 0 .1em;
 	border-radius: 3px;
 	background-color: #ccc;
-	font-size: 90%;
+	font-size: 80%;
 }
 
 /* Prismjs Override */
@@ -138,4 +160,18 @@ pre::-webkit-scrollbar-thumb
 {
 	border-radius: 4px;
 	background-color: #444;
+}
+
+/* Custom hr */
+
+.hr {
+  display: inline-block;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 640px) {
+	html {
+		font-size: 16px;
+	}
 }

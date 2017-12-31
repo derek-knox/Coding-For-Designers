@@ -88,7 +88,7 @@ Metalsmith(__dirname)
   .use(metadata({
     'collections.chapter0': {
       layout: 'chapter.html',
-      title: 'Coding for Designers'
+      title: 'Coding <span>for</span> Designers'
     },
     'collections.chapter1': {
       layout: 'chapter.html',
@@ -96,19 +96,19 @@ Metalsmith(__dirname)
     },
     'collections.chapter2': {
       layout: 'chapter.html',
-      title: 'Structure, Style, and Behavior'
+      title: 'Structure,<br>Style, <span>and</span><br>Behavior'
     },
     'collections.chapter3': {
       layout: 'chapter.html',
-      title: 'Coding and Visual Design'
+      title: 'Coding <span>and</span><br>Visual Design'
     },
     'collections.chapter4': {
       layout: 'chapter.html',
-      title: 'Coding and Concept'
+      title: 'Coding <span>and</span><br> Concept'
     },
     'collections.chapter5': {
       layout: 'chapter.html',
-      title: 'Coding and JavaScript'
+      title: 'Coding <span>and</span><br> JavaScript'
     },
     'collections.chapter6': {
       layout: 'chapter.html',
@@ -129,7 +129,7 @@ Metalsmith(__dirname)
               search: /<p><img (.*) title=['"](.*)['"]><\/p>/gm,
               replace: function(match, p1, p2){
                 var id = p2.toLowerCase().replace(/ /g, '-');
-                return '</div><div id="' + id + '" class="content-visual"><figure><img ' + p1 + ' title="' + p2 + '"><figcaption>' + p2 + '</figcaption></figure></div><div class="content-text">'
+                return '</div><div id="' + id + '" class="content-visual"><figure><img ' + p1 + ' title="' + p2 + '"><figcaption class="hr"><hr>' + p2 + '</figcaption></figure></div><div class="content-text">'
               }
           },
           // code block
