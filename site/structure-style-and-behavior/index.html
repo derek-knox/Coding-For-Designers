@@ -10,20 +10,74 @@
   </head>
   <body>
     
-    <header>
-      <p>
-        <a href="/preface">Ch0</a>
-        <a href="/breaking-barriers">Ch1</a>
-        <a href="/structure-style-and-behavior">Ch2</a>
-        <a href="/coding-and-visual-design">Ch3</a>
-        <a href="/coding-and-concept">Ch4</a>
-        <a href="/coding-and-javascript">Ch5</a>
-        <a href="/deconstructing-designs">Ch6</a>      </p>
-    </header>
-
     <div class='wip'>
       62% Complete
     </div>
+
+    <header>
+      <div class='nav'>
+      	<div id='nav-menu-toggle' class='nav-button' onclick='onToggleNav(event)'>
+      		Menu +
+      	</div>
+      	<ul id='nav-menu' class='nav-menu-closed'>
+      		<li>
+      			<a href="/preface">
+      				<h1>
+      					<span class='chapter-designation'>Chapter 0</span><br>
+      					Coding <span>for</span><br>Designers
+      				</h1>
+      			</a>
+      		</li>
+      		<li>
+      			<a href="/breaking-barriers">
+      				<h1>
+      					<span class='chapter-designation'>Chapter 1</span><br>
+      					Breaking<br>Barriers
+      				</h1>
+      			</a>
+      		</li>
+      		<li>
+      			<a href="/structure-style-and-behavior">
+      				<h1>
+      					<span class='chapter-designation'>Chapter 2</span><br>
+      					Structure,<br>Style, <span>and</span><br>Behavior
+      				</h1>
+      			</a>
+      		</li>
+      		<li>
+      			<a href="/coding-and-visual-design">
+      				<h1>
+      					<span class='chapter-designation'>Chapter 3</span><br>
+      					Coding <span>and</span><br>Visual Design
+      				</h1>
+      			</a>
+      		</li>
+      		<li>
+      			<a href="/coding-and-concept">
+      				<h1>
+      					<span class='chapter-designation'>Chapter 4</span><br>
+      					Coding <span>and</span><br> Concept
+      				</h1>
+      			</a>
+      		</li>
+      		<li>
+      			<a href="/coding-and-javascript">
+      				<h1>
+      					<span class='chapter-designation'>Chapter 5</span><br>
+      					Coding <span>and</span><br> JavaScript
+      				</h1>
+      			</a>
+      		</li>
+      		<li>
+      			<a href="/deconstructing-designs">
+      				<h1>
+      					<span class='chapter-designation'>Chapter 6</span><br>
+      					Deconstructing<br>Designs
+      				</h1>
+      			</a>
+      		</li>
+      	</ul>
+      </div>    </header>
 
     <section>
       <div class='content-text'>
@@ -93,10 +147,9 @@
       </div>
     </section>
 
-    <footer>
-      <p>...</p>
-    </footer>
+    <footer></footer>
 
+    <script src="../assets/js/book.js"></script>
     <script src="../assets/js/prism.js"></script>
 
   </body>

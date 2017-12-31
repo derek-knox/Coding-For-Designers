@@ -51,8 +51,21 @@ ul ul, ol ol, ul ol, ol ul {
 	margin-top: 0em;
 	margin-bottom: 0em;
 }
+header {
+	margin-top: 50px;
+}
+header h1 {
+	font-size: 1.61111111em;
+	margin-bottom: 0;
+}
+header ul {
+	padding: 0;
+}
+header li {
+	list-style: none;
+}
 section {
-	margin-top: 10vh;
+	margin-top: 80px;
 }
 a, b, i, strong, em, small, code {
 	line-height: 0;
@@ -84,6 +97,9 @@ figcaption {
 	color: #999;
 	font-variant: small-caps;
 }
+footer {
+	margin-bottom: 50px;
+}
 
 
 /* WIP Banner */
@@ -100,8 +116,43 @@ figcaption {
 	transform: rotate(45deg);
 }
 
+/* Menu */
+
+.nav a:link,
+.nav a:visited,
+.nav a:hover,
+.nav a:active {
+	text-decoration: none;
+}
+
+.nav-button {
+	margin-top: 0em;
+	padding: 5px 10px;
+	border: 1px solid #272822;
+	text-transform: uppercase;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.nav-menu-open {
+	display: block;
+	margin-top: 1.27777778em;
+}
+
+.nav-menu-closed {
+	display: none;
+}
+
+.chapter-designation {
+	font-size: 40%;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #999;
+}
+
 /* Visual Areas (main copy, image figure w/caption, and code) */
 
+.nav,
 .content-text,
 .content-code pre {
 	max-width: 720px;

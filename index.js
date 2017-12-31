@@ -88,11 +88,11 @@ Metalsmith(__dirname)
   .use(metadata({
     'collections.chapter0': {
       layout: 'chapter.html',
-      title: 'Coding <span>for</span> Designers'
+      title: 'Coding <span>for</span><br>Designers'
     },
     'collections.chapter1': {
       layout: 'chapter.html',
-      title: 'Breaking Barriers'
+      title: 'Breaking<br>Barriers'
     },
     'collections.chapter2': {
       layout: 'chapter.html',
@@ -112,7 +112,7 @@ Metalsmith(__dirname)
     },
     'collections.chapter6': {
       layout: 'chapter.html',
-      title: 'Deconstructing Designs'
+      title: 'Deconstructing<br>Designs'
     }
   }))
   .use(markdown({
