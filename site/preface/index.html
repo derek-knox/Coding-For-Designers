@@ -2,28 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Coding &lt;span&gt;for&lt;/span&gt;&lt;br&gt;Designers</title>
+    <title>Preface</title>
     <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.0.5">
     <link rel="stylesheet" href="../assets/css/prism.css">
   </head>
   <body>
     
-    <div class='wip'>
-      62% Complete
+    <div id='wip-container'>
+    	<div class='wip'>
+    		<span>62% Complete</span>
+    	</div>
+    
+    	<div class='github-star'>
+    		<a class="github-button" href="https://github.com/derek-knox/Coding-For-Designers" data-icon="octicon-star" data-show-count="true" aria-label="Star derek-knox/Coding-For-Designers on GitHub">Star</a>
+    	</div>
     </div>
-
     <header>
       <div class='nav'>
-      	<div id='nav-menu-toggle' class='nav-button' onclick='onToggleNav(event)'>
-      		Menu +
+      	<div id='nav-menu-toggle' class='nav-button shadow-1' onclick='onToggleNav(event)'>
+      		Chapter<br>Selection<br>+
       	</div>
       	<ul id='nav-menu' class='nav-menu-closed'>
       		<li>
       			<a href="/preface">
       				<h1>
-      					<span class='chapter-designation'>Chapter 0</span><br>
+      					<span class='chapter-designation'>Preface</span><br>
       					Coding <span>for</span><br>Designers
       				</h1>
       			</a>
@@ -40,7 +46,7 @@
       			<a href="/structure-style-and-behavior">
       				<h1>
       					<span class='chapter-designation'>Chapter 2</span><br>
-      					Structure,<br>Style, <span>and</span><br>Behavior
+      					Structure,<br>Style, <span>&</span><br>Behavior
       				</h1>
       			</a>
       		</li>
@@ -48,7 +54,7 @@
       			<a href="/coding-and-visual-design">
       				<h1>
       					<span class='chapter-designation'>Chapter 3</span><br>
-      					Coding <span>and</span><br>Visual Design
+      					Coding <span>&</span><br>Visual Design
       				</h1>
       			</a>
       		</li>
@@ -56,7 +62,7 @@
       			<a href="/coding-and-concept">
       				<h1>
       					<span class='chapter-designation'>Chapter 4</span><br>
-      					Coding <span>and</span><br> Concept
+      					Coding <span>&</span><br> Concept
       				</h1>
       			</a>
       		</li>
@@ -64,7 +70,7 @@
       			<a href="/coding-and-javascript">
       				<h1>
       					<span class='chapter-designation'>Chapter 5</span><br>
-      					Coding <span>and</span><br> JavaScript
+      					Coding <span>&</span><br> JavaScript
       				</h1>
       			</a>
       		</li>
@@ -85,7 +91,7 @@
       </div>
       <div class='content-text'>
         <h2 id="preface">Preface</h2>
-<p>Virtually all existing resources aimed at teaching people <em>about</em> or <em>how-to</em> code introduce the code itself way too soon. In doing so, many fundamental, insightful, and empowering concepts remain hidden and out of reach. Often these same resources lack explanations of <em>why</em> a coding concept exists as it does. Additionally, these same resources rarely consider designers directly. <em>Coding for Designers</em> is a response to this unfortunate reality.</p>
+<p>Virtually all existing resources aimed at teaching people <em>about</em> or <em>how-to</em> code introduce the code itself way too soon. In doing so, many fundamental, insightful, and empowering concepts remain uncovered, hidden, and out of reach. Often these same resources lack explanations of <em>why</em> a coding concept exists as it does. Additionally, these same resources rarely consider designers directly. <em>Coding for Designers</em> is a response to this unfortunate reality.</p>
 <p>If you author content and self-identify as a graphic, visual, UI, UX, motion, or game designer, then this is for you. Other non-coders wanting to learn about or how-to code will greatly benefit too, but self-identifying designers are the focus. This book, the one I wish existed when I began coding, is also for an earlier time-slice of myself. He will not reap the benefits of its existence, but you will.</p>
 <p>Though I don&#39;t believe designers <em>need</em> to learn to code, those who do will undoubtedly have a valuable and powerful tool added to their toolbox. After reading this book, should you pursue coding further or not, you will have acquired a mental model and knowledge that will inform future code-related conversations at the least and future coding pursuits at the most.</p>
 <p>Designer or not, this book isn&#39;t for you if you want to jump <em>straight</em> into code. We cover many ideas, topics, and concepts before truly diving into actual programming code. This intentionality helps frame <em>why</em> certain programming concepts exist as they do. The primary goal of this book is to instill a mental model that helps designers learn coding concepts faster, more deeply, and more intuitively. The secondary goal is to lower the barrier of entry by instilling confidence in those new(er) to coding. Neither goal is efficiently achievable by taking the traditional approach.</p>
@@ -102,8 +108,9 @@
 
     <footer></footer>
 
-    <script src="../assets/js/book.js"></script>
+    <script src="../assets/js/book.js?1.0.5"></script>
     <script src="../assets/js/prism.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 
   </body>
 </html>

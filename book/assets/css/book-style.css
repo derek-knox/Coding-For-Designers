@@ -1,4 +1,4 @@
-/* ELEMENTS */
+/* Elements */
 
 html {
 	font-size: 18px;
@@ -87,6 +87,12 @@ sup {
 sub {
 	bottom: -0.25em;
 }
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: bold;
+}
 img {
 	display: block;
     max-width: 100%;
@@ -104,16 +110,42 @@ footer {
 
 /* WIP Banner */
 
+#wip-container {
+	opacity: 0;
+	transition: opacity .6s linear 1s;
+}
+
+#wip-container.reveal {
+	opacity: 1;
+}
+
 .wip {
-	font-weight: 900;
-	font-size: 60%;
-	background-color: #99cc33;
-	border: 1px solid #272822;
-	position: fixed;
-	top: 25px;
-	right: -50px;
-	padding: 2px 50px;
-	transform: rotate(45deg);
+	font-size: 11px;
+    font-weight: 400;
+    border: 1px solid #d1d2d3;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    right: 80px;
+    margin: 10px;
+    padding: 0 6px;
+    height: 18px;
+    color: #24292e;
+    cursor: default;
+	z-index: 1;
+}
+
+.wip span {
+	line-height: 18px;
+    vertical-align: 8px;
+}
+
+.github-star {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px;
+	z-index: 1;
 }
 
 /* Menu */
@@ -127,8 +159,7 @@ footer {
 
 .nav-button {
 	margin-top: 0em;
-	padding: 5px 10px;
-	border: 1px solid #272822;
+	padding: 10px 15px;
 	text-transform: uppercase;
 	display: inline-block;
 	cursor: pointer;
@@ -148,6 +179,87 @@ footer {
 	font-weight: 400;
 	text-transform: uppercase;
 	color: #999;
+}
+
+/* Home */
+
+.home-container {
+	width: 100vw;
+	height: 100vh;
+}
+
+.intro-container {
+	padding: 0 20vw;
+	position: relative;
+}
+
+.intro-top {
+	height: 62vh;
+	background-color: #eee;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.intro-top h1 {
+	font-size: 3.555em;
+	padding-top: 53px;
+	margin: 0 0 20px;
+}
+.intro-top h2 {
+	font-size: 1.25em;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 1.29em;
+	margin-top: 0;
+	padding-bottom: 5px;
+}
+.intro-top h3 {
+	font-size: 1.25em;
+	text-transform: uppercase;
+	margin: 0;
+    position: absolute;
+    bottom: -4px;
+}
+.intro-top h3 span {
+    font-size: 50%;
+    display: inline-block;
+    line-height: 1em;
+}
+
+.intro-bottom {
+	height: 38vh;
+	background-color: #272822;
+}
+
+.home-buttons {
+	margin-top: 20px;
+}
+
+.home-button {
+	display: inline-block;
+	padding: 10px 15px;
+	margin-right: 15px;
+}
+
+.home-button a:link,
+.home-button a:visited,
+.home-button a:hover,
+.home-button a:active {
+	text-decoration: none;
+	color: #272822
+}
+
+.align-flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.shadow-1 {
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.80);
+	-moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.80);
+	-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.80);
 }
 
 /* Visual Areas (main copy, image figure w/caption, and code) */
@@ -190,6 +302,11 @@ p code {
 	font-size: 80%;
 }
 
+/* Custom Selection Color */
+
+::-moz-selection { background: #99cc33;  color: #24292e;}
+::selection { background: #99cc33;  color: #24292e;}
+
 /* Prismjs Override */
 
 .content-code .line-numbers .line-numbers-rows {
@@ -221,8 +338,46 @@ pre::-webkit-scrollbar-thumb
 
 /* Media Queries */
 
+@media screen and (max-width: 768px) {
+	.intro-container {
+		padding: 0 10vw;
+	}
+	.home-button {
+		display: inline-block;
+		padding: 5px 10px;
+		margin-right: 10px;
+	}
+	.intro-top h3 {
+		bottom: -3px;
+	}
+}
+
 @media screen and (max-width: 640px) {
 	html {
 		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	h1 {
+		font-size: 2.22222222em;
+	}
+	h2 {
+		font-size: 1.61111111em;
+	}
+	h3 {
+		font-size: 1.21111111em;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	h1 {
+		font-size: 2em;
+	}
+	h2 {
+		font-size: 1.4em;
+	}
+	h3 {
+		font-size: 1.1em;
 	}
 }

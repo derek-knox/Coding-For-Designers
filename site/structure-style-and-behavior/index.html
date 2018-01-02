@@ -2,28 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Structure,&lt;br&gt;Style, &lt;span&gt;and&lt;/span&gt;&lt;br&gt;Behavior</title>
+    <title>Structure, Style, &amp; Behavior</title>
     <meta name="description" content="...">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.0.5">
     <link rel="stylesheet" href="../assets/css/prism.css">
   </head>
   <body>
     
-    <div class='wip'>
-      62% Complete
+    <div id='wip-container'>
+    	<div class='wip'>
+    		<span>62% Complete</span>
+    	</div>
+    
+    	<div class='github-star'>
+    		<a class="github-button" href="https://github.com/derek-knox/Coding-For-Designers" data-icon="octicon-star" data-show-count="true" aria-label="Star derek-knox/Coding-For-Designers on GitHub">Star</a>
+    	</div>
     </div>
-
     <header>
       <div class='nav'>
-      	<div id='nav-menu-toggle' class='nav-button' onclick='onToggleNav(event)'>
-      		Menu +
+      	<div id='nav-menu-toggle' class='nav-button shadow-1' onclick='onToggleNav(event)'>
+      		Chapter<br>Selection<br>+
       	</div>
       	<ul id='nav-menu' class='nav-menu-closed'>
       		<li>
       			<a href="/preface">
       				<h1>
-      					<span class='chapter-designation'>Chapter 0</span><br>
+      					<span class='chapter-designation'>Preface</span><br>
       					Coding <span>for</span><br>Designers
       				</h1>
       			</a>
@@ -40,7 +46,7 @@
       			<a href="/structure-style-and-behavior">
       				<h1>
       					<span class='chapter-designation'>Chapter 2</span><br>
-      					Structure,<br>Style, <span>and</span><br>Behavior
+      					Structure,<br>Style, <span>&</span><br>Behavior
       				</h1>
       			</a>
       		</li>
@@ -48,7 +54,7 @@
       			<a href="/coding-and-visual-design">
       				<h1>
       					<span class='chapter-designation'>Chapter 3</span><br>
-      					Coding <span>and</span><br>Visual Design
+      					Coding <span>&</span><br>Visual Design
       				</h1>
       			</a>
       		</li>
@@ -56,7 +62,7 @@
       			<a href="/coding-and-concept">
       				<h1>
       					<span class='chapter-designation'>Chapter 4</span><br>
-      					Coding <span>and</span><br> Concept
+      					Coding <span>&</span><br> Concept
       				</h1>
       			</a>
       		</li>
@@ -64,7 +70,7 @@
       			<a href="/coding-and-javascript">
       				<h1>
       					<span class='chapter-designation'>Chapter 5</span><br>
-      					Coding <span>and</span><br> JavaScript
+      					Coding <span>&</span><br> JavaScript
       				</h1>
       			</a>
       		</li>
@@ -81,7 +87,7 @@
 
     <section>
       <div class='content-text'>
-        <h1 class='chapter-title'>Structure,<br>Style, <span>and</span><br>Behavior</h1>
+        <h1 class='chapter-title'>Structure,<br>Style, <span>&</span><br>Behavior</h1>
       </div>
       <div class='content-text'>
         <h2 id="structure-style-and-behavior">Structure, Style, and Behavior</h2>
@@ -149,8 +155,9 @@
 
     <footer></footer>
 
-    <script src="../assets/js/book.js"></script>
+    <script src="../assets/js/book.js?1.0.5"></script>
     <script src="../assets/js/prism.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 
   </body>
 </html>

@@ -14,7 +14,8 @@ var metalsmithPrism   = require('metalsmith-prism');
 Metalsmith(__dirname)
   .metadata({
     title: "Coding for Designers",
-    description: "..."
+    description: "...",
+    version: '1.0.5'
   })
   .source('./book')
   .destination('./site')
@@ -23,7 +24,8 @@ Metalsmith(__dirname)
   .use (
     watch({
       paths: {
-        '${source}/**/*.md': true
+        '${source}/**/*.md': true,
+        '${source}/**/**/*': true
       },
       livereload: true
     })
@@ -69,14 +71,15 @@ Metalsmith(__dirname)
     output: 'coding-and-concept.md'
   }))
   .use(concat({
-    files: ['Coding and JavaScript/XXX.md'],
+    files: ['Coding and JavaScript/wip.md'],
     output: 'coding-and-javascript.md'
   }))
   .use(concat({
-    files: ['Deconstructing Designs/XXX.md'],
+    files: ['Deconstructing Designs/wip.md'],
     output: 'deconstructing-designs.md'
   }))
   .use(collections({
+    home: 'home.md',
     chapter0: 'preface.md',
     chapter1: 'breaking-barriers.md',
     chapter2: 'structure-style-and-behavior.md',
@@ -86,33 +89,45 @@ Metalsmith(__dirname)
     chapter6: 'deconstructing-designs.md'
   }))
   .use(metadata({
+    'collections.home': {
+      layout: 'home.html',
+      htmlTitle: 'Coding <span>for</span><br>Designers',
+      title: 'Coding for Designers'
+    },
     'collections.chapter0': {
       layout: 'chapter.html',
-      title: 'Coding <span>for</span><br>Designers'
+      htmlTitle: 'Coding <span>for</span><br>Designers',
+      title: 'Preface'
     },
     'collections.chapter1': {
       layout: 'chapter.html',
-      title: 'Breaking<br>Barriers'
+      htmlTitle: 'Breaking<br>Barriers',
+      title: 'Breaking Barriers'
     },
     'collections.chapter2': {
       layout: 'chapter.html',
-      title: 'Structure,<br>Style, <span>and</span><br>Behavior'
+      htmlTitle: 'Structure,<br>Style, <span>&</span><br>Behavior',
+      title: 'Structure, Style, & Behavior'
     },
     'collections.chapter3': {
       layout: 'chapter.html',
-      title: 'Coding <span>and</span><br>Visual Design'
+      htmlTitle: 'Coding <span>&</span><br>Visual Design',
+      title: 'Coding & Visual Design'
     },
     'collections.chapter4': {
       layout: 'chapter.html',
-      title: 'Coding <span>and</span><br> Concept'
+      htmlTitle: 'Coding <span>&</span><br>Concept',
+      title: 'Coding & Concept'
     },
     'collections.chapter5': {
       layout: 'chapter.html',
-      title: 'Coding <span>and</span><br> JavaScript'
+      htmlTitle: 'Coding <span>&</span><br>JavaScript',
+      title: 'Coding & JavaScript'
     },
     'collections.chapter6': {
       layout: 'chapter.html',
-      title: 'Deconstructing<br>Designs'
+      htmlTitle: 'Deconstructing<br>Designs',
+      title: 'Deconstructing Designs'
     }
   }))
   .use(markdown({

@@ -4,15 +4,14 @@
     <meta charset="UTF-8" />
     <title>{{ title }}</title>
     <meta name="description" content="{{ description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?{{version}}">
     <link rel="stylesheet" href="../assets/css/prism.css">
   </head>
   <body>
     
-    <div class='wip'>
-      62% Complete
-    </div>
+    {{> wip}}
 
     <header>
       {{> nav}}
@@ -20,7 +19,7 @@
 
     <section>
       <div class='content-text'>
-        <h1 class='chapter-title'>{{{ title }}}</h1>
+        <h1 class='chapter-title'>{{{ htmlTitle }}}</h1>
       </div>
       <div class='content-text'>
         {{{ contents }}}
@@ -29,8 +28,9 @@
 
     <footer></footer>
 
-    <script src="../assets/js/book.js"></script>
+    <script src="../assets/js/book.js?{{version}}"></script>
     <script src="../assets/js/prism.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 
   </body>
 </html>
