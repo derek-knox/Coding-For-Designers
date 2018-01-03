@@ -18,15 +18,23 @@ I simply flipped a coin eight times. Heads was 1 and tails was 0, my own little 
 
 <table>
   <tr>
-    <td>Random Color</td>
+    <td>Random Color Binary</td>
     <td>10010001 01110101 001010101</td>
+  </tr>
+  <tr>
+    <td>Random Color RGB</td>
+    <td>R(145) G(117) B(85)</td>
+  </tr>
+  <tr>
+    <td>Random Color HEX</td>
+    <td>#917555</td>
   </tr>
 </table>
 
-Once encoded, we need to actually save it to a file. How do we do that? Well it is quite simple actually. The OS (Operating System) you run and use your design application(s) on (Windows, Mac, iOS, Android, etc.) has prewritten code giving you this power. Again, prewritten code stacked on prewritten code often gives us an easy way to accomplish tasks that would otherwise be more difficult.
+Once encoded, we need to actually save it to a file. How do we do that? Well it is quite simple actually. The Operating System (OS) you run and use your design application(s) on (Windows, Mac, iOS, Android, etc.) has prewritten code giving you this power. Again, prewritten code stacked on prewritten code often gives us an easy way to accomplish tasks that would otherwise be more difficult.
 
 Long story short, the encoded data needs to be inserted into an empty file. When saving the file, it needs to have a *file extension* appended to the file’s name. Think `.jpg`, `.png`, `.psd`, `.html`, `.css`, and `.js` for example. The sole reason for a file extension is so the OS and its applications can quickly identify the file’s type. Why is that important? If you didn’t already guess, the file extension helps identify the decoding approach. In turn, only certain applications know how to work with certain file types. Full circle.
 
 Later, when we start to write our own JavaScript code, we will use the file extension `.js`. The code in the JavaScript file will not be in 1s and 0s though. Instead we will use the words that are part of the JavaScript language. We are not limited to just JavaScript words though, we get to use our own too. Much better than 1s and 0s. 
 
-First however, we will look at the three distinct concepts used to display static, dynamic, and interactive designs on a computer screen. These concepts are structure, style, and behavior. We will visit each in the context of 2D and 3D to better shape your perspective (pun intended). Go time.
+First however, we will look at the three distinct concepts used to display static, dynamic, and interactive designs on a computer or device screen. These concepts are structure, style, and behavior. We will visit each in the context of 2D and 3D to better shape your perspective (pun intended). Go time.

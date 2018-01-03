@@ -6,7 +6,7 @@
     <meta name="description" content="...">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.0.12">
+    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.0.13">
     <link rel="stylesheet" href="../assets/css/prism.css">
   </head>
   <body>
@@ -124,7 +124,8 @@
 <blockquote>
 <p>Code is a system for converting meaning between forms.</p>
 </blockquote>
-<p>I could take a pencil and write a 1 or a 0 on a sheet of paper (or any two distinct symbols for that matter). I could then give it to you. As long as both of us agree on the <em>converted meaning</em>, then we would have a binary code to communicate. For example a 1 could mean &quot;yes&quot; and a 0 “no”. We could ask each other questions verbally and respond in this code. There is nothing inherently magical about code. Remember this fact.</p>
+<p>I could take a pencil and write a 1 or a 0 on a sheet of paper (or any two distinct symbols for that matter). I could then give it to you. As long as both of us agree on the <em>converted meaning</em>, then we would have a binary code to communicate. For example a 1 could mean &quot;yes&quot; and a 0 “no”. We could ask each other questions verbally and respond in this code.</p>
+<p>There is nothing inherently magical about code. Remember this fact.</p>
 <h2 id="hard-to-soft">Hard to Soft</h2>
 <p>Computers take electricity as input. People convert meaning as output. Specifically, people have agreed that the presence of electricity is 1 and the absence is 0. Go take a look at the power buttons of various devices around you. I will wait. You will see that most, if not all, have a line symbol (1) and a circle symbol (0). Binary switch. On and Off. Cool.</p>
 <p>How do we actually <em>control</em> electricity though? We can’t reliably use binary code to convert meaning in a computer if we cannot control electricity now can we. Welcome to the <em>electric circuit</em>. It has one job. Control the <em>flow of electricity</em>. How convenient. Presence and absence. On and off. One and zero. This is the exact point where we bridge the physical world (presence or absence of electricity in a circuit) and the virtual world (one or zero). Think <em>hard</em> to <em>soft</em>. <em>Hard</em>ware to <em>soft</em>ware.</p>
@@ -280,7 +281,7 @@
 <li>2x2</li>
 <li>4x1</li>
 </ul>
-<p>In either case, the underlying bits are simply a sequence of ones and zeros. The pixel count remains constant where the converted meaning of the bit sequence determines the image&#39;s dimensions. Generally speaking, the greater the pixel count, the more bits and thus bytes are required to represent it.</p>
+<p>In either case, the underlying bits are simply a sequence of ones and zeros. The pixel count remains constant where the <em>converted meaning</em> of the bit sequence determines the image&#39;s dimensions. Generally speaking, the greater the pixel count, the more bits and thus bytes are required to represent it.</p>
 <p>The above approach only allows for black and white images. As designers however, we greatly value the use of color to communicate within our creations. Take a moment before continuing and consider <em>how might you code color</em>?</p>
 <h2 id="coding-color">Coding Color</h2>
 <p>Thus far we have made our own example codes. One to represent the symbols in the English language and another to represent black and white images. We could continue this trend. Instead we will transition toward codes that already exist. The advantage is twofold:</p>
@@ -289,6 +290,7 @@
 <li>Using established codes empowers us to achieve more, faster</li>
 </ol>
 <p>In the context of color we will explore the common codes RGB and HEX. The former is <em>red green blue</em> and the latter is <em>hexadecimal</em>. We will start with RGB.</p>
+<h3 id="rgb">RGB</h3>
 <p>RGB is composed of three values (color channels). A red value, a green value, and a blue value. Combined they represent a specific color value. The literal color represented by a specific RGB coded value has already been decided. No work on our end. Nice. We simply rely on the various design applications we use to consistently represent colors in our digital designs. Photoshop, Illustrator, Lightroom, and Sketch are a few examples of the hundreds, if not thousands, of authoring applications we depend on to consistently represent color.</p>
 <p>RGB is represented in a few flavors too. For illustration purposes, let’s briefly represent our own custom RGB code using a <em>bit</em> for each red value, blue value, and green value.</p>
 </div><div id="custom-rgb-=-8-different-colors" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg" alt="Custom RGB = 8 different colors" title="Custom RGB = 8 different colors"><figcaption class="hr"><hr>Custom RGB = 8 different colors</figcaption></figure></div><div class="content-text">
@@ -307,6 +309,7 @@
 <p>^*</p>
 <p>You will notice the sample RGB colors above range from 0-255 for each byte’s value. If I invented the RGB code, 1-256 would be used instead. I did not invent it and instead we must use 0-255. Sad.</p>
 <p>Counting starting at zero instead of one is a recurring pattern you will see in coding. This is one of the fundamental aspects that throws non-coders off when first learning more about coding. We have started counting from <em>one not zero our entire lives</em>. This is admittedly a difficult pill to swallow, but we must. Thankfully it will become second nature in time. Feel free to pursue clarity through <em>zero-based numbering</em> research however. For a quick and dirty answer, math nerds and computer optimization are to blame.</p>
+<h3 id="hex">HEX</h3>
 <p>Hexadecimal is another common color code. It represents the same color range as RGB, just differently. Instead of a range between <em>0-255</em> for each R, G, and B value, HEX uses <em>00-FF</em> for each. The letters A-F replace the numbers 10-15 (A instead of 10 through F instead of 15). So for HEX, each color channel is represented by two characters (00-FF) instead of RGB&#39;s three (0-255).</p>
 </div><div id="todo---table-replace" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg" alt="TODO - Table Replace" title="TODO - Table Replace"><figcaption class="hr"><hr>TODO - Table Replace</figcaption></figure></div><div class="content-text">
 <table>
@@ -438,22 +441,30 @@
 </div><div id="todo---table-replace" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg" alt="TODO - Table Replace" title="TODO - Table Replace"><figcaption class="hr"><hr>TODO - Table Replace</figcaption></figure></div><div class="content-text">
 <table>
   <tr>
-    <td>Random Color</td>
+    <td>Random Color Binary</td>
     <td>10010001 01110101 001010101</td>
+  </tr>
+  <tr>
+    <td>Random Color RGB</td>
+    <td>R(145) G(117) B(85)</td>
+  </tr>
+  <tr>
+    <td>Random Color HEX</td>
+    <td>#917555</td>
   </tr>
 </table>
 
-<p>Once encoded, we need to actually save it to a file. How do we do that? Well it is quite simple actually. The OS (Operating System) you run and use your design application(s) on (Windows, Mac, iOS, Android, etc.) has prewritten code giving you this power. Again, prewritten code stacked on prewritten code often gives us an easy way to accomplish tasks that would otherwise be more difficult.</p>
+<p>Once encoded, we need to actually save it to a file. How do we do that? Well it is quite simple actually. The Operating System (OS) you run and use your design application(s) on (Windows, Mac, iOS, Android, etc.) has prewritten code giving you this power. Again, prewritten code stacked on prewritten code often gives us an easy way to accomplish tasks that would otherwise be more difficult.</p>
 <p>Long story short, the encoded data needs to be inserted into an empty file. When saving the file, it needs to have a <em>file extension</em> appended to the file’s name. Think <code>.jpg</code>, <code>.png</code>, <code>.psd</code>, <code>.html</code>, <code>.css</code>, and <code>.js</code> for example. The sole reason for a file extension is so the OS and its applications can quickly identify the file’s type. Why is that important? If you didn’t already guess, the file extension helps identify the decoding approach. In turn, only certain applications know how to work with certain file types. Full circle.</p>
 <p>Later, when we start to write our own JavaScript code, we will use the file extension <code>.js</code>. The code in the JavaScript file will not be in 1s and 0s though. Instead we will use the words that are part of the JavaScript language. We are not limited to just JavaScript words though, we get to use our own too. Much better than 1s and 0s. </p>
-<p>First however, we will look at the three distinct concepts used to display static, dynamic, and interactive designs on a computer screen. These concepts are structure, style, and behavior. We will visit each in the context of 2D and 3D to better shape your perspective (pun intended). Go time.</p>
+<p>First however, we will look at the three distinct concepts used to display static, dynamic, and interactive designs on a computer or device screen. These concepts are structure, style, and behavior. We will visit each in the context of 2D and 3D to better shape your perspective (pun intended). Go time.</p>
 
       </div>
     </section>
 
     <footer></footer>
 
-    <script src="../assets/js/book.js?1.0.12"></script>
+    <script src="../assets/js/book.js?1.0.13"></script>
     <script src="../assets/js/prism.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 

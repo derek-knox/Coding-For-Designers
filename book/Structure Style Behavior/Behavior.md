@@ -2,9 +2,9 @@
 
 Behavior, as previously mentioned, is where the structural building blocks in combination with their adornments *react*. They react to interaction, the environment, and ultimately time. Behavior enables one or more building blocks and one or more adornments to change in time. These changes manifest in an infinite amount of ways.
 
-The possible behavior(s), and their respective ease of application, is contextual. In the context of 2D with the web platform, behavior is applied via JavaScript code. In the context of 3D and Unity, behavior is applied via C# code. Each coding language, in conjunction with each platform’s authoring tools, provide ways to help you apply certain behavior. For example, Unity with C# provide simple ways (compared to the web and JavaScript) to apply behavior in 3D space.
+The possible behaviors, and their respective ease of application, is contextual. In the context of 2D with the web platform, behavior is applied via JavaScript code. In the context of 3D and Unity, behavior is applied via C# code. Each coding language, in conjunction with each platform’s authoring tools, provide ways to help you apply certain behavior. For example, Unity with C# provides simple ways (compared to the web and JavaScript) to apply behavior in 3D space.
 
-Behavior(s) may be different depending on the context, but their fundamental purpose remains constant. Behavior brings life to a design. It does so in the form of interactivity, motion, and/or logic. For example, a design with behavior may manifest as a creative authoring environment, an entertaining animation, or a mission critical tool. The manifestations are endless and limited only by your imagination.
+Behaviors may be different depending on the context, but their fundamental purpose remains constant. Behavior brings life to a design. It does so in the form of interactivity, motion, and/or logic. For example, a design with behavior may manifest as a creative authoring environment, an entertaining animation, or a mission critical tool. The manifestations are endless and limited only by your imagination.
 
 Let’s explore some specific applications of behavior by building off the previous structure and style examples.
 
@@ -22,6 +22,6 @@ As you can imagine, the output possibilities are endless as a result of any of t
 
 New building blocks or groups of building blocks may be added to the structure dynamically. They can also be removed dynamically. Adornments may be added or removed dynamically too. Behavioral changes to these structures and/or adornments are just as easily modifiable based on any of these three triggers. The takeaway is that there are three input trigger types that provide an opportunity for output behavior. The specific input(s) and output(s) are up to you, the creator.
 
-Where traditional visual design is static, behavior makes a design dynamic and interactive. This power is addictive, useful, and extremely empowering. In the context of the web platform and Unity, instead of using solely what the JavaScript and C# code provides, you can *extend* their capabilities with your *own* code. You can invent entirely new and better ways to do almost anything. Super cool.
+Where traditional visual design is static, behavior makes a design dynamic and interactive. This power is addictive, useful, and extremely empowering. In the context of the web platform and Unity, instead of using solely what the JavaScript and C# code provides, you can *extend* each language's capabilities with your *own* code. You can invent entirely new and better ways to do almost anything. Super cool.
 
-Next we will look at the pieces that makeup the ability to *code behavior*. We will do so in the familiar context of the elements, principles, and constructs of visual design. Rock on!
+Next we will look at the pieces that makeup the ability to *code behavior*. We will do so in the familiar context of the Elements, Principles, and Constructs of Visual Design. Rock on!

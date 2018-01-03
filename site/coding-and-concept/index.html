@@ -6,7 +6,7 @@
     <meta name="description" content="...">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.0.12">
+    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.0.13">
     <link rel="stylesheet" href="../assets/css/prism.css">
   </head>
   <body>
@@ -91,11 +91,11 @@
       </div>
       <div class='content-text'>
         <h2 id="coding-and-concept">Coding and Concept</h2>
-<p>So far we&apos;ve broken down some barriers around coding and computers in general. We&apos;ve learned about coding structure, style, and behavior too. Additionally, we&apos;ve introduced coding relative to visual design&apos;s elements, principles, and constructs. Though there is always more to learn, your confidence should be magnitudes higher than when we started. Additionally, a strong mental model should be forming. Let&apos;s strengthen it even more.</p>
+<p>So far we&apos;ve broken down some barriers around coding and computers in general. We&apos;ve learned about coding structure, style, and behavior too. Additionally, we&apos;ve introduced programming relative to visual design&apos;s elements, principles, and constructs. Though there is always more to learn, your confidence should be magnitudes higher than when we started. Additionally, a mental model should be forming. Let&apos;s strengthen it.</p>
 <p>To do so, we will visit one more set of concepts before getting into JavaScript itself. Virtually all of these concepts are language agnostic. Hell yea.</p>
-<p>In this section, we will visit the most important programming concepts that will help shape your future programming efforts. We will talk about the three main and distinct timeframes when code exists. These are <em>authoring time</em>, <em>compile time</em>, and <em>execution time</em>. This knowledge will help you understand the difference between when you are authoring code to when people will be able to use your interactive creations. Following this, we will visit the <em>frame rate</em> and <em>event loop</em> concepts in detail so we have a fine-tuned grasp of what actually happens during <em>execution time</em>.</p>
-<p>Next we will explore the differences between <em>sync</em> (happens now) and <em>async</em> (happens later) behavior. This exploration will naturally tie into visiting <em>interfacing</em> and the <em>client-server model</em>. As a result, we will learn how code talks to other code while also learning the specific benefits of having multiple devices communicate and/or do dedicated and unique work.</p>
-<p>Second to last, we will look at the <em>anatomy of a source code file</em> for HTML (<code>.html</code>), CSS (<code>.css</code>), and JavaScript (<code>.js</code>). This will allow us to reference real code against various concepts covered thus far. Lastly, we will cover the <em>work. right. better.</em> mantra to help you improve your code authoring over time. All coders live by this, myself included.</p>
+<p>In this section, we will visit the most important programming concepts that will help shape your future programming efforts. We will talk about the three main and distinct timeframes when code exists. These are <em>authoring time</em>, <em>compile time</em>, and <em>execution time</em>. This knowledge will help you understand the transition from authoring code to interactive creations people can use. Following this, we will visit the <em>frame rate</em> and <em>event loop</em> concepts in detail so we have a fine-tuned grasp of what actually happens during <em>execution time</em>.</p>
+<p>Next we will explore the differences between <em>sync</em> (happens now) and <em>async</em> (happens later) behavior. This exploration will naturally tie into visiting <em>interfacing</em> and the <em>client-server model</em>. As a result, we will learn how code talks to other code while also learning the specific benefits of having multiple computers communicate and/or do dedicated and unique work.</p>
+<p>Second to last, we will look at the <em>anatomy of HTML (<code>.html</code>), CSS (<code>.css</code>), and JavaScript (<code>.js</code>)</em>. This will allow us to reference real code against various concepts covered thus far. Lastly, we will cover the <em>work. right. better.</em> mantra to help you improve your code authoring over time. All coders live by this, myself included.</p>
 <p>Upon completion of this section, your mental model will be primed for programming in JavaScript. Let&apos;s get going.</p>
 <h2 id="authoring-compiling-and-executing">Authoring, Compiling, and Executing</h2>
 <p>As mentioned previously there are three distinct timeframes when code exists. In order, these are:</p>
@@ -106,18 +106,19 @@
 </ol>
 <p>These distinct timeframes are useful for understanding how the static code we author in a text file enables a dynamic and interactive creation to exist in real-time. We will also touch on why this transformation even needs to occur.</p>
 <p><em>Authoring time</em> is pretty self-explanatory right? It is the time when we are authoring code. That&apos;s it. We have a text editor program of some kind open and we are typing or pasting into it. Simple as that. Some programs even exist, like Unity for example, that enable a more visual programming approach. This simply means that the program has some amount of UI interaction that enables you as the author to <em>generate</em> code in a non-text based way. Admittedly, this is often more fun than text-based programming... but there is a catch.</p>
-<p>Inevitably, these visual tools are limiting as they do not allow you to pull off exactly what you want. This is why we&apos;re concentrating on authoring custom code in a text editor. We get <em>ultimate control</em> as to how something works because <em>we get to write the code</em>.</p>
+<p>Inevitably, these visual tools are limiting as they do not allow you to pull off <em>exactly</em> what you want. This is why we&apos;re concentrating on authoring custom code in a text editor. We get <em>ultimate control</em> as to how something works because <em>we get to write the code</em>.</p>
 <p>After we have authored the code, we need to &quot;run&quot; or &quot;execute&quot; it. Executing it helps us confirm that it actually does what we want in real-time. Before we can do this however, a step needs to be taken that transforms our static authored code into code that can be executed. Welcome to <em>compile time</em>.</p>
 <p>Compile time is how we get from our authored <em>static</em> code to <em>dynamic</em> code that manifests as an interactive application or game. We won&apos;t go into the details of this step as it is complex. All you need to know is that this step exists so <em>we</em> can use words <em>we</em> understand instead of coding in binary, the only thing computers fundamentally understand. A prime example is how we use English words (and English abbreviations) within the programming language JavaScript.</p>
-<p>In essence, some smart and nerdy authors wrote a <em>compiler program</em> that compiles and converts a high-level programming language like JavaScript (easier for us humans to use) to lower-level languages (easier for super-nerdy humans to use) to binary (easier for super-super-nerdy humans and computers to use).</p>
-</div><div id="author-&gt;-compile-&gt;-run" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg" alt="Author &gt; Compile &gt; Run" title="Author &gt; Compile &gt; Run"><figcaption class="hr"><hr>Author &gt; Compile &gt; Run</figcaption></figure></div><div class="content-text">
+<p>In essence, some smart and nerdy authors write <em>compiler programs</em> that compile and convert a high-level programming language like JavaScript (easier for us humans to use) to lower-level languages (easier for super-nerdy humans to use) to binary (easier for super-super-nerdy humans and computers to use).</p>
+</div><div id="author-&gt;-compile-&gt;-execute" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg" alt="Author &gt; Compile &gt; Run" title="Author &gt; Compile &gt; Execute"><figcaption class="hr"><hr>Author &gt; Compile &gt; Execute</figcaption></figure></div><div class="content-text">
 <p>The output of this compilation process results in code that the computer <em>executes</em> in real-time. This process often manifests as an interactive user interface in an application or an interactive environment in a game.</p>
 <p>With Unity, the process is:</p>
 <ol>
 <li><em>Author</em> code in a text editor and/or with Unity&apos;s built-in UI that generates code</li>
 <li>Click the &quot;Build&quot; button to <em>compile</em> the authored code into an executable package</li>
 <li><em>Execute</em> this file&apos;s code on the target operating system in real-time<ul>
-<li>Remember file extensions? ;)</li>
+<li>Remember file extensions?</li>
+<li>Remember decoding?</li>
 </ul>
 </li>
 </ol>
@@ -130,7 +131,7 @@
 <p>To recap, we write in a high-level language using English words and abbreviations. This is author time. Then a compiler program converts the code we humans can understand into code the computer understands. This is compile time. Finally, if the conversion process has no errors, the result is an application or game that is interactive. This is execution time.</p>
 <p>How is execution time actually interactive though? One or more users could take any number of actions within our application or game at any given moment. We can&apos;t possibly handle all these potential scenarios in our code can we? Thankfully the answer is yes we can. We just need to understand the <em>frame rate</em> and the <em>event loop</em>.</p>
 <h2 id="frame-rate">Frame Rate</h2>
-<p>We know computers are dumb and fast. Some computers are faster than others however. How do we ensure the code we author will execute well on a given computer? To do so, we need to author our code with a target <em>frame rate</em> in mind.</p>
+<p>We know computers are dumb and fast. Some computers are faster than others however. How do we ensure the code we author will execute well on any given computer? To do so, we need to author our code with a target <em>frame rate</em> in mind.</p>
 <p>A frame rate is simply the amount of frames that are shown in a second. A frame is a single rendered image. Frames shown back to back over time create the illusion of motion. Common target frame rates are:</p>
 <ul>
 <li>30fps (video)</li>
@@ -232,7 +233,7 @@
 </table>
 
 <p>The Event Loop Machine 3D visualization from the <em>Event Loop</em> section should be popping into your head. The event loop cannot cycle when work is on the stack. The loop is blocked. The event queue does not prevent the event loop from cycling. The loop is not blocked.</p>
-<p>Let&apos;s look at code examples of both work types to see this in action. We haven&apos;t specifically covered JavaScript outside the <em>Elements and Elements</em> section yet, but I am confident you&apos;ll get the gist.</p>
+<p>Let&apos;s look at code examples of both work types to see this in action. We haven&apos;t specifically covered JavaScript outside the brief introduction in the <em>Elements and Elements</em> section, but I am confident you&apos;ll get the gist.</p>
 <p>Sync work:</p>
 </div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">makeBackgroundBlack</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>backgroundColor <span class="token operator">=</span> <span class="token string">&apos;#000000&apos;</span><span class="token punctuation">;</span>
@@ -250,7 +251,7 @@
   document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>backgroundColor <span class="token operator">=</span> <span class="token string">&apos;#000000&apos;</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
-<span class="token comment">// 1. We tell the engine to do work, the code sequence `();` is the trigger</span>
+<span class="token comment">// 1. We tell the engine to do work, the code sequence `()` is the trigger</span>
 <span class="token comment">// 2. Since we named the function, the engine knows the exact work to put on its stack</span>
 <span class="token function">makeBackgroundBlack</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><div class="content-text">
@@ -263,7 +264,7 @@
   document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>backgroundColor <span class="token operator">=</span> <span class="token string">&apos;#000000&apos;</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
-<span class="token comment">// 1. We tell the engine to do work, the code sequence `(makeBackgroundBlack, 1000);` is the trigger</span>
+<span class="token comment">// 1. We tell the engine to do work, the code sequence `(makeBackgroundBlack, 1000)` is the trigger</span>
 <span class="token comment">// 2. &apos;setTimeout&apos; is a named built-in function that the &apos;runtime APIs&apos; provide, thank you runtime</span>
 <span class="token comment">// 3. The &apos;setTimeout&apos; function expects two argument values</span>
 <span class="token function">setTimeout</span><span class="token punctuation">(</span>makeBackgroundBlack<span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -304,10 +305,10 @@
 <p>It wasn&apos;t important until now to tell you what the aforementioned <em>API</em> of runtime APIs stands for. Now is the time. Welcome to <em>Application Programming Interface</em>. Yea, that is a mouthful. Coders instead just say API (each letter pronounced individually).</p>
 <p>An API is just an interface. The doorknob of a door is an interface. The steering wheel of a vehicle is an interface. The keys of a virtual keyboard are too. Interfaces provide a way to interact. The doorknob and steering wheel are physical interfaces designed for humans. A virtual keyboard is a digital interface also designed for humans. An API is a programming interface designed for code. An API allows code to interact with other code, this is the takeaway.</p>
 <p>As a code author, you get ease-of-use while the underlying complexity is the code designer&apos;s responsibility. Think about it. As a driver of a vehicle, you do not need to know all the details of how the engine works to use it. The designers take that responsibility. Similarly with code, you just use the API provided to gain benefit. This is a pretty solid trade.</p>
-<p>In the last section we saw one API, the built-in <code>setTimeout</code> function, in action. We wrote our code to interact with that API by giving it two argument values. Behind the scenes, the runtime wired up and provided the functionality we expected. Both you and I don&apos;t really care how the work is done as long as it gets done. This is the trade-off an API provides, a simpler way to do work. APIs rock!</p>
+<p>In the last section we saw one API in action, the built-in <code>setTimeout</code> function. We wrote our code to interact with that API by giving it two argument values. Behind the scenes, the runtime wired up and provided the functionality we expected. Both you and I don&apos;t really care how the work is done as long as it gets done. This is the trade-off an API provides, a simpler way to do work. APIs rock!</p>
 <p>Earlier in the <em>Constructs and Components</em> section we covered built-in, 3rd party, and custom components. Naturally, they each provide various APIs. As previously mentioned, we can create useful code for others to use too. Another author using our code APIs doesn&apos;t have to care about how the work actually gets done. They get the same trade-off as us, a simpler way to do work.</p>
 <p>As you gain coding and programming experience, you&apos;ll memorize certain built-in and 3rd party APIs. This translates to improving your authoring speed. Don&apos;t worry about being slow when you start out, you&apos;ll get better in time.</p>
-<p>This might sound weird at first, but some APIs exist on a different computer than the one your program runs on. Whoa. Have you ever wondered how a particular app or game can provide new content without actually updating the app? Welcome to the <em>client-server model</em>.</p>
+<p>This might sound weird at first, but some APIs exist on a different computer than the one your program runs on. Whoa. Have you ever wondered how a particular app or game can provide new content without actually updating? Welcome to the <em>client-server model</em>.</p>
 <h2 id="client-and-server">Client and Server</h2>
 <p>Clients and servers are computers that communicate over a network. The internet is one such network that facilitates this communication. Some of these computers are clients and some are servers. Sometimes a computer is both a client and a server. The distinction is simple. A client asks for data and the server provides it. The network between them is the communication channel.</p>
 <p>The details of how the internet facilitates this communication is elegant and impressive, but not a focus of this book. I highly recommend <em>Introduction to Networking</em> by Charles Severance if you want to dig deeper, but it is not required reading to move forward. Just know that the internet enables a client computer and a server computer to talk.</p>
@@ -668,7 +669,7 @@ imageToToggle<span class="token punctuation">.</span>style<span class="token pun
 
     <footer></footer>
 
-    <script src="../assets/js/book.js?1.0.12"></script>
+    <script src="../assets/js/book.js?1.0.13"></script>
     <script src="../assets/js/prism.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 

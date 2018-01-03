@@ -4,7 +4,7 @@ The elements of visual design are the *primitive* pieces of visual design. Thoug
 
 <table>
   <tr>
-    <td>Design Elements</td>
+    <td>Visual Design Elements</td>
     <td>Programming Elements</td>
   </tr>
   <tr>
@@ -41,19 +41,19 @@ The elements of visual design are the *primitive* pieces of visual design. Thoug
   </tr>
 </table>
 
-![Design Elements in my visual form breakdown](../assets/img/visual-todo-placeholder.jpg "Design Elements in my visual form")
+![Visual Design Elements in my visual form breakdown](../assets/img/visual-todo-placeholder.jpg "Design Elements in my visual form")
 
 ![Programming Elements in a visual form breakdown](../assets/img/visual-todo-placeholder.jpg "Coding Elements in a visual form")
 
 ### Point and Expression
 
-The *point* is the first element. A point by itself may, at most, represent a single idea or value at a given time. Similarly an *expression* represents, at most, a single idea or value at a given time. Both are the smallest meaningful and composable elements of design and programming respectively.
+The *point* is the first element. A point by itself may, at most, represent a single idea or value at a given time. Similarly an *expression* represents, at most, a single idea or value at a given time. Both are the smallest meaningful and composable elements of visual design and programming respectively.
 
 ![Point & Expression Examples](../assets/img/visual-todo-placeholder.jpg "Point & Expression Examples")
 
 ### Line and Statement
 
-More than one point or expression enables another level of meaning to be possible. For example connecting two points forms the second visual element, a *line*. Similarly, connecting expressions forms the second programming element, a *statement*. Each are the building blocks of design and programming respectively.
+More than one point or expression enables another level of meaning to be possible. For example connecting two points forms the second visual element, a *line*. Similarly, connecting expressions forms the second programming element, a *statement*. Each are the building blocks of visual design and programming respectively.
 
 ![Line & Statement Examples](../assets/img/visual-todo-placeholder.jpg "Line & Statement Examples")
 
@@ -65,13 +65,13 @@ Combining lines together in specific ways enables the third visual element, a *s
 
 ### Space and Scope
 
-Naturally, by creating an enclosure, you simultaneously create *space*, the fourth design element. In programming, this fourth element can also be thought of as space, but the term used is *scope*. Shapes allow their enclosed space to be distinct from the space outside. A function’s scope allows it to be distinct from the scope outside too. Distinct space and distinct scope allow various areas to exist simultaneously without clashing. This is super valuable when programming.
+Naturally, by creating an enclosure, you simultaneously create *space*, the fourth visual design element. In programming, this fourth element can also be thought of as space, but the term used is *scope*. Shapes allow their enclosed space to be distinct from the space outside. A function’s scope allows it to be distinct from the scope outside too. Distinct space and distinct scope allow various areas to exist simultaneously without clashing. This is super valuable when programming.
 
 ![Space & Scope Examples](../assets/img/visual-todo-placeholder.jpg "Space & Scope Examples")
 
 ### Color and Signature
 
-*Color*, the fifth element of design provides a common way to differentiate similar or otherwise identical shapes. A function’s *signature* allows functions to differentiate themselves too. Adding a signature to a function, like color to a shape, gives it an identity.
+*Color*, the fifth element of visual design provides a common way to differentiate similar or otherwise identical shapes. A function’s *signature* allows functions to differentiate themselves too. Adding a signature to a function, like color to a shape, gives it an identity.
 
 ![Color & Signature Examples](../assets/img/visual-todo-placeholder.jpg "Color & Signature Examples")
 
@@ -95,7 +95,7 @@ Grouping the aforementioned visual design elements in a particular way gives ris
 
 ### Summary
 
-The linear walk through above is intentional as each builds upon the previous. Points connect to create lines just as expressions connect to create statements. By combining these lines in specific ways, a particular shape is created. The shape encloses space. Similarly, combining statements and enclosing them in a function creates a scope. Adding color to a shape gives it identity just as adding a signature to a function does. Assigning value to a color gives it a particular effect or result. Arguments assigned to a function provide a particular result as well. A form exists as a particular combination of the prior visual elements. An object, like a form, exists as a particular combination, but of the previous programming elements. Finally, richness is achieved through texture for visuals and state for code.
+The linear walk through above is intentional as each primitive builds upon the previous. Points connect to create lines just as expressions connect to create statements. By combining these lines in specific ways, a particular shape is created. The shape encloses space. Similarly, combining statements and enclosing them in a function creates a scope. Adding color to a shape gives it identity just as adding a signature to a function does. Assigning value to a color gives it a particular effect or result. Arguments assigned to a function provide a particular result as well. A form exists as a particular combination of the prior visual elements. An object, like a form, exists as a particular combination, but of the previous programming elements. Finally, richness is achieved through texture for visuals and state for code.
 
 An infinite amount of visual and programming designs are possible using the elements above. Your creativity and experience are the only limiting factors.
 

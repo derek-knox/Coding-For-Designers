@@ -39,4 +39,6 @@ For binary code, the computer takes the presence or absence of electricity in (i
 
 > Code is a system for converting meaning between forms.
 
-I could take a pencil and write a 1 or a 0 on a sheet of paper (or any two distinct symbols for that matter). I could then give it to you. As long as both of us agree on the *converted meaning*, then we would have a binary code to communicate. For example a 1 could mean "yes" and a 0 “no”. We could ask each other questions verbally and respond in this code. There is nothing inherently magical about code. Remember this fact.
+I could take a pencil and write a 1 or a 0 on a sheet of paper (or any two distinct symbols for that matter). I could then give it to you. As long as both of us agree on the *converted meaning*, then we would have a binary code to communicate. For example a 1 could mean "yes" and a 0 “no”. We could ask each other questions verbally and respond in this code.
+
+There is nothing inherently magical about code. Remember this fact.

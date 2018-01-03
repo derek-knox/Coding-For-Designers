@@ -15,7 +15,7 @@ Metalsmith(__dirname)
   .metadata({
     title: "Coding for Designers",
     description: "...",
-    version: '1.0.12'
+    version: '1.0.13'
   })
   .source('./book')
   .destination('./site')
@@ -155,6 +155,11 @@ Metalsmith(__dirname)
           {
               search: /<\/code><\/pre>/gm,
               replace: '</code></pre></div><div class="content-text">'
+          },
+          //®
+          {
+              search: 'Unity®',
+              replace: 'Unity<sup>&#174;</sup>'
           }
       ]
   }))

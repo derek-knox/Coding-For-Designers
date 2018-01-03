@@ -7,6 +7,8 @@ Thus far we have made our own example codes. One to represent the symbols in the
 
 In the context of color we will explore the common codes RGB and HEX. The former is *red green blue* and the latter is *hexadecimal*. We will start with RGB.
 
+### RGB
+
 RGB is composed of three values (color channels). A red value, a green value, and a blue value. Combined they represent a specific color value. The literal color represented by a specific RGB coded value has already been decided. No work on our end. Nice. We simply rely on the various design applications we use to consistently represent colors in our digital designs. Photoshop, Illustrator, Lightroom, and Sketch are a few examples of the hundreds, if not thousands, of authoring applications we depend on to consistently represent color.
 
 RGB is represented in a few flavors too. For illustration purposes, let’s briefly represent our own custom RGB code using a *bit* for each red value, blue value, and green value.
@@ -42,6 +44,8 @@ R(0) + G(0) + B(255) = Blue
 You will notice the sample RGB colors above range from 0-255 for each byte’s value. If I invented the RGB code, 1-256 would be used instead. I did not invent it and instead we must use 0-255. Sad.
 
 Counting starting at zero instead of one is a recurring pattern you will see in coding. This is one of the fundamental aspects that throws non-coders off when first learning more about coding. We have started counting from *one not zero our entire lives*. This is admittedly a difficult pill to swallow, but we must. Thankfully it will become second nature in time. Feel free to pursue clarity through *zero-based numbering* research however. For a quick and dirty answer, math nerds and computer optimization are to blame.
+
+### HEX
 
 Hexadecimal is another common color code. It represents the same color range as RGB, just differently. Instead of a range between *0-255* for each R, G, and B value, HEX uses *00-FF* for each. The letters A-F replace the numbers 10-15 (A instead of 10 through F instead of 15). So for HEX, each color channel is represented by two characters (00-FF) instead of RGB's three (0-255).
 

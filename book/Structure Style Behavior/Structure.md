@@ -10,7 +10,11 @@ The *body* for an HTML document and the *scene* for Unity are each the root pare
 
 ![TODO - Image 1 node 2D and 1 node 3D (parent only)](../assets/img/visual-todo-placeholder.jpg "TODO - Image 1 node 2D and 1 node 3D (parent only)")
 
-The second simplest structure has two variants: one with two child nodes and one with a single child that is also a parent due to itself containing one child. These are both examples of two-node trees. 
+The second simplest structure has two variants:
+1. two child nodes
+2. a single child that is also a parent due to itself containing one child
+
+These are both examples of two-node trees. 
 
 ![TODO - Image 2 node 2D and 2 node 3D (parent with child and two parents)](../assets/img/visual-todo-placeholder.jpg "TODO - Image 2 node 2D and 2 node 3D (parent with child and two parents)")
 
