@@ -177,7 +177,7 @@ footer {
     border-radius: 3px;
     position: absolute;
     top: 0;
-    right: 80px;
+    right: 218px;
     margin: 10px;
     padding: 0 6px;
     height: 18px;
@@ -189,6 +189,14 @@ footer {
 .wip span {
 	line-height: 18px;
     vertical-align: 8px;
+}
+
+.github-follow {
+	position: absolute;
+	top: 0;
+	right: 80px;
+	padding: 10px;
+	z-index: 1;
 }
 
 .github-star {
@@ -347,7 +355,7 @@ footer {
 	padding: 1em; /* Ensure figure padding matches prismjs code special padding to keep "visual areas" consistent */
 }
 
-p code {
+.content-text code {
 	padding: 0 .2em;
 	margin: 0 .1em;
 	border-radius: 3px;

@@ -6,7 +6,7 @@
     <meta name="description" content="...">
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.0.13">
+    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.0.16">
     <link rel="stylesheet" href="../assets/css/prism.css">
   </head>
   <body>
@@ -14,6 +14,10 @@
     <div id='wip-container'>
     	<div class='wip'>
     		<span>62% Complete</span>
+    	</div>
+    
+    	<div class='github-follow'>
+    		<a href="https://twitter.com/derekknox?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-lang="en" data-show-count="false">Follow @derekknox</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     	</div>
     
     	<div class='github-star'>
@@ -319,18 +323,18 @@
 <p>A server, if you didn&apos;t guess already, is also responsible for providing a client web browser the <em>initial</em> HTML, CSS, and JavaScript for a website or web app. If too many people try to access the same data at the same time however, the server can crash. It is worth noting that each client is actually getting a copy of the data to reconstruct in its browser. Typically a crash occurs because the server software can&apos;t properly provide the various clients the copies fast enough. I mention this simply because many people don&apos;t grasp the fact that the client reconstructs what the server provides.</p>
 <p>Having talked about HTML, CSS, and JavaScript at solely a high level thus far, now is a great time to venture deeper. We&apos;ll do so next by exploring the anatomy of the three file types <code>.html</code>, <code>.css</code>, and <code>.js</code>.</p>
 <h2 id="anatomy-of-html-css-and-javascript">Anatomy of HTML, CSS, and JavaScript</h2>
-<p>This section will be the first where we really start digging into the existing languages of HTML, CSS, and JavaScript. We have covered quite a bit in an effort to get to this point. Specifically, we learned about the powerful concepts of binary and states in addition to encoding and decoding in the <em>Breaking Barriers</em> chapter. We learned in <em>Structure, Style, and Behavior</em> how each concept plays a valuable and distinct role in an interactive creation. In <em>Coding and Visual Design</em> we mapped familiar design-specific concepts to coding concepts to help establish a knowledge bridge. More recently, we explored programming-specific concepts to help shape your understanding of how code lives and communicates in real-time.</p>
-<p>We know code is a system for converting meaning between forms and HTML, CSS, and JavaScript are just specific forms. HTML is a markup language used to define structure. CSS is a style language used to define style. JavaScript is a scripting language used to define behavior. The web browser knows how to decode HTML into divisions of content and render them. It also knows how to decode CSS property-value pairs to adorn the HTML elements with style and functionality. Lastly, we know a browser&apos;s runtime and engine understand how to decode and execute JavaScript which enables an interactive creation to exist.</p>
+<p>This section will be the first where we really start digging into the existing languages of HTML, CSS, and JavaScript. We have covered quite a bit in an effort to get to this point. Specifically, we learned about the powerful concepts of binary and states in addition to encoding and decoding in the <em>Breaking Barriers</em> chapter. We learned in <em>Structure, Style, and Behavior</em> how each concept plays a valuable and distinct role in an interactive creation. In <em>Coding and Visual Design</em> we mapped familiar design-specific concepts to programming concepts to help establish a knowledge bridge. More recently, we explored programming-specific concepts to help shape your understanding of how code lives and communicates in real-time.</p>
+<p>We know code is a system for converting meaning between forms where HTML, CSS, and JavaScript are just specific forms. HTML is a markup language used to define structure. CSS is a style language used to define style. JavaScript is a scripting language used to define behavior. The web browser knows how to decode HTML into divisions of content and render them. It also knows how to decode CSS property-value pairs to adorn the HTML elements with style and functionality. Lastly, we know a browser&apos;s runtime and engine understand how to decode and execute JavaScript which enables an interactive creation to exist.</p>
 <p>We will now start to dig into HTML, CSS, and JavaScript since we have a greater understanding of how the various concepts we have covered play-off each other. Your mental model should be primed.</p>
-<p>Let&apos;s squash a myth real quick. Designers and other non-coders new to coding think they need to learn an entire new language, and in the context of the web, <em>three</em> new languages. This is not true. What needs to be learned is the:</p>
+<p>Let&apos;s squash a myth real quick. Designers and other non-coders new to coding think they need to learn an entire new language including all its words, syntax, and idiosyncrasies. In the context of the web, that would mean <em>three</em> sets of words, syntax, and idiosyncrasies need to be learned. There is a better way to spend time and energy learning however. What really needs to be learned is:</p>
 <ol>
 <li>Distinction between structure, style, and behavior</li>
-<li>Anatomical implementation of structure, style, and behavior</li>
-<li>Common subset of code words for each implementation (80/20 rule)</li>
+<li>Language syntax of structure, style, and behavior</li>
+<li>Subset of code words for each implementation (80/20 rule)</li>
 </ol>
-<p>For 2D and the web, that means we need to know the difference between HTML structure, CSS styling, and JavaScript behavior. We have this distinction covered. Let&apos;s dig into number two and three. Learning these two facets for each language won&apos;t be easy, but it can be simple. Regardless, there is no substitue for practice.</p>
+<p>For 2D and the web, that means we need to know the difference between HTML structure, CSS styling, and JavaScript behavior. We have this distinction covered already. Bonus. Let&apos;s dig into number two and three. Learning these two facets for each language may not be easy, but it can be simple. Regardless, there is no substitue for practice.</p>
 <h3 id="html">HTML</h3>
-<p>In keeping with the structure, style, and behavior order, let&apos;s look at the anatomy of each starting with HTML. We will title our file <code>index.html</code> to align with a best practice naming convention.</p>
+<p>In keeping with the structure, style, and behavior order, let&apos;s look at the anatomy of each starting with HTML. We will title our file <code>index.html</code> to align with a best practice naming convention. Technically you can name it anything your OS allows, but make it easier on yourself and follow this best practice.</p>
 </div><div class="content-code"><pre class="language-markup line-numbers"><code class="language-markup"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
@@ -340,7 +344,7 @@
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>Content goes here.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
 </code></pre></div><div class="content-text">
-<p>This is the most structurally simple, complete, and valid HTML a browser uses. Let&apos;s walk through each tag using <em>comments</em> to clarify each tag&apos;s purpose. We saw earlier that JavaScript uses the <code>//</code> character sequence for comments. HTML uses the <code>&lt;!----&gt;</code> sequence where the actual comment rests in the middle of the dashes. Just take note that each language may have a uniqe approach to comments, but the purpose is the same. Yes, it would be ideal if all languages used the same character sequence for denoting comments. It&apos;s not a perfect world.</p>
+<p>This is the most structurally simple, complete, and valid HTML a browser uses. Let&apos;s walk through each tag using <em>comments</em> to clarify each tag&apos;s purpose. We saw earlier that JavaScript uses the <code>//</code> character sequence for comments. HTML uses the <code>&lt;!----&gt;</code> sequence where the actual comment rests in the middle of the dashes. Just take note that each language may have a uniqe approach to comments, but the purpose is the same. Yes, it would be ideal if all languages used the same character sequence for denoting comments. It&apos;s not a perfect world. Sad face.</p>
 </div><div class="content-code"><pre class="language-markup line-numbers"><code class="language-markup"><span class="token comment">&lt;!-- Tell the browser the document type - we only care about html --&gt;</span>
 <span class="token doctype">&lt;!DOCTYPE html&gt;</span>
 
@@ -366,12 +370,12 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
 </code></pre></div><div class="content-text">
 <p>There are many types of element tags that can be added in both the <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> element tags. As mentioned earlier, we will not go over them here as you, just like other coders, can use other resources to look up what tags are available. We will reveal the most common ones for the <code>&lt;body&gt;</code> however to fulfill the <em>common subset</em> bullet above. Instead of comments I will use English inline with the tags to show how the elements wrap content. Content is visible to the user where the tags that wrap the content are not. The tags simply tell the browser your structure, the building block parent-child relationships. The spacing <em>between elements</em> is not important as the browser understands the structure regardless. Spacing <em>between content</em> is what matters.</p>
-<p>Spacing, tabs, and new lines do typically exist between elements however. This is solely to improve human readability. Imagine if the below HTML elements were all on a single line. The browser wouldn&apos;t care as the defined structure would remain the same, but we would have a much tougher time reading and easily seeing the parent-child relationships.</p>
+<p>Spacing, tabs, and new lines do typically exist between elements however. This is solely to improve human readability. Imagine if the below HTML elements were all on a single line. The browser wouldn&apos;t care as the defined structure would remain the same, but we would have a much tougher time reading and easily seeing the parent-child relationships when authoring.</p>
 </div><div class="content-code"><pre class="language-markup line-numbers"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>This is the Primary Title of the Page<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>This is a paragraph. It is followed by an image and a button.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>img</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span><span class="token punctuation">&gt;</span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">&gt;</span></span>Toggle Image Opacity<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
@@ -380,9 +384,43 @@
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
 </code></pre></div><div class="content-text">
-<p>A <code>&lt;div&gt;</code> tag simpy denotes a division of content where the layout (position and dimension) of each division is dependent on style. This will likely become your most used element tag. The <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;button&gt;</code>, and <code>&lt;h2&gt;</code> tags are self-describing, but the <code>&lt;img&gt;</code> and <code>&lt;a&gt;</code> tags are not. This is because they are each lacking <em>attributes</em>. We&apos;ll use the shortcut <em>attrs</em> moving forward. All elements can leverage attrs, but these latter two elements <em>require</em> them to function as designed.</p>
+<p>The first thing you will notice about six of the seven tags is that they are abbreviations, they are shortcuts. This admitedly sucks for beginners, but it is great for when you know the small subset by heart. You will learn it quickly, but it still is lame from a beginner perspective. Here&apos;s a breakdown to help:</p>
+</div><div id="html-tags-subset-map" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg" alt="HTML Tags Subset Map" title="HTML Tags Subset Map"><figcaption class="hr"><hr>HTML Tags Subset Map</figcaption></figure></div><div class="content-text">
+<table>
+  <tr>
+    <td><code>div</code></td>
+    <td>division</td>
+  </tr>
+  <tr>
+    <td><code>h1</code></td>
+    <td>heading one</td>
+  </tr>
+  <tr>
+    <td><code>p</code></td>
+    <td>paragraph</td>
+  </tr>
+  <tr>
+    <td><code>img</code></td>
+    <td>image</td>
+  </tr>
+  <tr>
+    <td><code>button</code></td>
+    <td>button</td>
+  </tr>
+  <tr>
+    <td><code>h2</code></td>
+    <td>heading two</td>
+  </tr>
+  <tr>
+    <td><code>a</code></td>
+    <td>hyperlink</td>
+  </tr>
+</table>
+
+<p>A <code>&lt;div&gt;</code> tag simpy denotes a division of content where the aesthetic and layout (position and dimension) of each division is dependent on style. This will likely become your most used element tag. Combining it with the virtually infinite variations of CSS styling enables you to create the same visual effect of virtually every other tag. If not for the specific <em>attributes</em> and <em>semantics</em> of certain tags that browsers, operating systems, and search engines use, we could almost get away with solely using <code>&lt;div&gt;</code>s with custom styles. This idea it so illustrate the notion that a lot can be achieved with little.</p>
+<p>Moving on, the <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;button&gt;</code>, and <code>&lt;h2&gt;</code> tags are explained and covered with the examples above. The <code>&lt;img&gt;</code> and <code>&lt;a&gt;</code> tags are not however. This is because they are each lacking <em>attributes</em>. We&apos;ll use the shortcut <em>attrs</em> moving forward. All elements can leverage attrs, but these latter two elements <em>require</em> them to function as designed.</p>
 <p>Think of attrs as APIs. Attrs enable the coder to achieve functionality based on a shared understanding of designed use. They are also where we start to transition toward CSS via the <code>class</code> attr. First we will update the <code>&lt;img&gt;</code> and <code>&lt;a&gt;</code> tags with each of their most useful attrs.</p>
-<p>So <code>&lt;img&gt;&lt;/img&gt;</code> becomes <code>&lt;img src=&apos;assets/img/cover-coding-for-designers.jpg&apos;&gt;&lt;/img&gt;</code> where the <code>src</code> attr is set with <code>=</code> to the value <code>assets/img/cover-coding-for-designers.jpg</code> between quotes. Quotes define the start and end of the attr value. The browser knows how the image tag is designed to work so its runtime APIs automatically download the image provided by the <code>src</code> attr, which is the path to the asset. Upon completion of the download, the tag embodies the downloaded image. This same functionality can be achieved using JavaScript only, but we&apos;d have to write more code. Remember, APIs provide a tradeoff and a simpler way to do work.</p>
+<p>So <code>&lt;img&gt;</code> becomes <code>&lt;img src=&apos;assets/img/cover-coding-for-designers.jpg&apos;&gt;</code> where the <code>src</code> attr is set with <code>=</code> to the value <code>assets/img/cover-coding-for-designers.jpg</code> between quotes. Quotes define the start and end of the attr value. The browser knows how the image tag is designed to work so its runtime APIs automatically download the image provided by the <code>src</code> attr, which is the path to the asset. Upon completion of the download, the tag embodies the downloaded image. This same functionality can be achieved using JavaScript only, but we&apos;d have to write more code. Remember, APIs provide a tradeoff and a simpler way to do work.</p>
 <p>Additionally, <code>&lt;a&gt;hyperlink&lt;/a&gt;</code> becomes <code>&lt;a href=&apos;http://www.codingfordesignersbook.com&apos;&gt;hyperlink&lt;/a&gt;</code> where the <code>href</code> attr is set with <code>=</code> to the value <code>http://www.codingfordesignersbook.com</code> between quotes. The browser knows that the anchor tag, when hit, should change the web page to the value provided. This same functionality can be achieved using JavaScript only, but we&apos;d have to write more code. Again, the goal is a simpler way to do work.</p>
 <p>The takeaway is that the browser provides useful runtime API hooks via element attrs. Now that we&apos;ve covered the basic implementation of HTML structure, let&apos;s dig into style. Welcome to the <code>class</code> attr.</p>
 <h3 id="css">CSS</h3>
@@ -409,7 +447,7 @@ assets
   img
     cover-coding-for-designers.jpg
 </code></pre></div><div class="content-text">
-<p>Now is the time to look at the anatomy of a <code>.css</code> file which, for our purpose, consists of one class definition. Typically the file would have more than one, but currently we only need one. Take note that CSS uses <em>comments</em> via <code>/**/</code> where the comment itself resides in the middle. Our <code>style.css</code> file is simply:</p>
+<p>Now is the time to look at the anatomy of a <code>.css</code> file which, for our purpose, consists of one class definition. Typically the file would have more than one, but currently we only need one. Take note that CSS uses <em>comments</em> via <code>/**/</code> where the comment itself resides in the middle. I too wish HTML, CSS, JS shared the same comment syntax, but I digress. Our <code>style.css</code> file is simply:</p>
 </div><div class="content-code"><pre class="language-css line-numbers"><code class="language-css"><span class="token selector">.dark-background</span> <span class="token punctuation">{</span>
 
   <span class="token comment">/* This is a CSS comment - the below property-value pair sets an element&apos;s background color to black */</span>
@@ -442,8 +480,8 @@ assets
 <p>As a creation evolves, feel free to change the names of classes if it makes sense to. A class name may make less sense as new property-value pairs are added or removed. Over time you will leverage established naming practices and/or develop your own to gain an intuitive feel of when to update a name. Additionally, you&apos;ll develop a sense of how best to group certain property-value pairs for reuse by different elements. Just know that it is extremely common to change names as a creation evolves.</p>
 <h3 id="javascript">JavaScript</h3>
 <p>Thus far we&apos;ve covered the anatomy of HTML and CSS, so now it is time for JavaScript. In a way we already looked at the anatomy of JavaScript in the <em>Elements and Elements</em> section. That breakdown was a bit more granular though and we&apos;ll revisit the specifics in the next chapter <em>Coding and JavaScript</em>. For now we will look at the high level anatomy of a JavaScript program. We will focus on shape, space, and form or more precisely function, scope, and object.</p>
-<p>As you already know, a function is like a shape because it encloses scope just as a shape encloses space. An enclosure helps prevent clashing of what exists between different scopes or spaces. No clashing please. Objects, like forms, are a higher level enclosure. More often than not, they each embody one or more functions or shapes respectively. JavaScript, like the majority of programming languages, has specific types of objects. JavaScript is fairly unique however in that a function is <em>also</em> an object.</p>
-<p>Long story short, a JavaScript program is essentially a nested tree of functions. As a byproduct of functions each enclosing a scope, a JavaScript program can also be thought of as a nested tree of scopes. So when the JavaScript engine evaluates an expression that has a reference, it works like this in an effort to get the bound value:</p>
+<p>As you already know, a function is like a shape because it encloses scope just as a shape encloses space. An enclosure helps prevent clashing of what exists between different scopes or spaces. No clashing please. Objects, like forms, are a higher level enclosure. More often than not, they each embody one or more functions or shapes respectively. JavaScript, like the majority of programming languages, has specific <em>types</em> of objects. JavaScript is fairly unique however in that a function is <em>also</em> an object.</p>
+<p>Long story short, a JavaScript program is essentially a nested tree of functions. As a byproduct of functions each enclosing a scope, a JavaScript program can also be thought of as a nested tree of scopes. So when the JavaScript engine evaluates an expression that has a reference (shortcut name for a value), it works like this in an effort to get the bound value:</p>
 <ol>
 <li>Look in the target scope for the reference</li>
 <li>If not found, look in that scope&apos;s parent scope</li>
@@ -473,7 +511,7 @@ assets
 </div><div class="content-code"><pre class="language-markup line-numbers"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&apos;</span>toggleImageOpacity()<span class="token punctuation">&apos;</span></span><span class="token punctuation">&gt;</span></span>Toggle Image Opacity<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
 </code></pre></div><div class="content-text">
 <p>The <code>id</code> attr is how we identify an element in our HTML as unique to our document. An id means we intend there to be only one element with a specific name. A unique id enables us to gain a reference to the element&apos;s corresponding object for use in JavaScript. With this JavaScript reference we can use its API to do all sorts of cool things.</p>
-<p>The result of clicking the button above during execution time results in the function named <code>toggleImageOpacity</code> to be called via <code>()</code>. This results in the function&apos;s contents being executed by the engine. Behind the scenes, the runtime APIs transform the hardware input (mouse, trackpad, stylus, touch, etc.) to event queue work. The event loop then picks up the resulting package and it gets placed on the stack. This all happens in milliseconds or even microseconds when the event loop is not blocked. Lastly, the engine actually executes the function contents. Now is a great time to look at those contents that reside in our <code>main.js</code> file.</p>
+<p>The result of clicking the button above during execution time results in the function named <code>toggleImageOpacity</code> to be called via <code>()</code>. This results in the function&apos;s contents being executed by the engine. Behind the scenes, the runtime APIs transform the hardware input (mouse, trackpad, stylus, touch, etc.) to event queue work. The event loop then picks up the resulting package and it gets placed on the stack. This all happens in milliseconds or even microseconds when the event loop is not blocked. Lastly, the engine actually executes the function contents. Now is a great time to look at the contents residing in our <code>main.js</code> file.</p>
 </div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">toggleImageOpacity</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 
   <span class="token comment">// Reference work</span>
@@ -495,7 +533,7 @@ assets
 <li>Core work</li>
 </ol>
 <p>A function is not always structed this way by a coder, but JavaScript compilation essentially enforces it. We don&apos;t go into the details of compilation as previously mentioned, but look into <em>JavaScript hoisting</em> if you want to dig deeper. Just save yourself some pain and declare your identifiers (<code>var</code>s first and <code>function</code>s second) at the top of their parent function prior to use.</p>
-<p>Admittedly, this program is tiny as it is comprised of only one small function. Take note however that programs of all sizes leverage this structure since they are just functions nested in functions. We will consider larger programs later in the <em>Coding and JavaScript</em> chapter to see this in action.</p>
+<p>Admittedly, this program is tiny as it is comprised of only one small function. Take note however that programs of all sizes leverage this structure since they are just functions nested in functions. And consequently scopes nested in scopes. We will consider larger programs later in the <em>Coding and JavaScript</em> chapter to see this in action.</p>
 <p>Before advancing to the next chapter though, we&apos;ll dive really deep into the <code>toggleImageOpacity</code> function. The function <em>works</em>, but we can <em>improve</em> it.</p>
 <h2 id="work-right-better-">Work. Right. Better.</h2>
 <p>In programming there is the axiom &quot;make it right before you make it faster&quot;. This exact quote is found in <em>The Elements of Programming Style</em> by Brian W. Kernighan and P.J. Plauger and it is heavily respected by the programming community. Put another way, when authoring code you should make it:</p>
@@ -520,7 +558,7 @@ assets
   <span class="token comment">// 4. &apos;if&apos; portion of an if/else conditional statement</span>
   <span class="token keyword">if</span><span class="token punctuation">(</span>currentOpacity <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
 
-    <span class="token comment">// 5. nested property assignment using imageToToggle reference</span>
+    <span class="token comment">// 5. property assignment using imageToToggle reference</span>
     imageToToggle<span class="token punctuation">.</span>style<span class="token punctuation">.</span>opacity <span class="token operator">=</span> <span class="token punctuation">.</span><span class="token number">5</span><span class="token punctuation">;</span>
 
   <span class="token comment">// 6. end of &apos;if&apos;</span>
@@ -529,7 +567,7 @@ assets
   <span class="token comment">// 7. &apos;else&apos; portion of an if/else conditional statement</span>
   <span class="token keyword">else</span> <span class="token punctuation">{</span>
 
-    <span class="token comment">// 8. nested property assignment using imageToToggle reference</span>
+    <span class="token comment">// 8. property assignment using imageToToggle reference</span>
     imageToToggle<span class="token punctuation">.</span>style<span class="token punctuation">.</span>opacity <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
 
   <span class="token comment">// 9. end of &apos;else&apos; </span>
@@ -563,7 +601,7 @@ assets
 <li><code>var</code> - keyword reserved by JavaScript denoting a variable</li>
 <li><code>imageToToggle</code> - custom identifier for referencing a value by name</li>
 <li><code>=</code> - <em>assignment operator</em> that assigns the value on its right to the identifer on its left</li>
-<li><code>document.getElementById(&apos;image-to-toggle&apos;)</code> - browser API for referencing a specific HTML element&apos;s object</li>
+<li><code>document.getElementById(&apos;image-to-toggle&apos;)</code> - browser API for referencing a specific HTML element&apos;s corresponding JavaScript object</li>
 <li><code>;</code> - character reserved by JavaScript denoting the explicit end of a code statement</li>
 </ol>
 <p>The above five parts make up the anatomy of a declaration and assignment statement. The parts work together to assign the resulting value from the <code>document.getElementById()</code> browser API call to the declared <code>imageToToggle</code> identifier. In subsequent code, the identifier can be used as a shortcut to reference the actual element object and then use its API. It is worth noting that every use of <code>imageToToggle</code> could be replaced with <code>document.getElementById(&apos;image-to-toggle&apos;)</code>. This approach would <em>work</em>, but it would be <em>less right</em> because we&apos;d be doing the same work more times than needed.</p>
@@ -587,7 +625,10 @@ assets
 <li><code>==</code> - <em>loose equality</em> that coercively compares values on each side and produces a <code>true</code> or <code>false</code> value</li>
 <li><code>1</code> - a literal number value</li>
 <li><code>)</code> - closing paren for declaring the <code>if</code> condition end</li>
-<li><code>{</code> - opening curly brace for declaring the beginning of the <code>if</code>-condition code block</li>
+<li><code>{</code> - opening curly brace for declaring the beginning of the <code>if</code>-condition code block<ul>
+<li><code>}</code> - a closing curly brace is expected to declare its end</li>
+</ul>
+</li>
 </ol>
 <p>The above seven parts make up the anatomy of an <code>if</code> statement. First, the <code>if</code> keyword tells the JavaScript engine your intent to define a condition to control execution flow. When the condition is <code>true</code>, the code between its <code>{</code> and <code>}</code> will execute. If the condition is <code>false</code>, then the code block is skipped. The beginning <code>(</code> and ending <code>)</code> parens define the space where the condition in question resides. This condition is the comparison between the value in the <code>currentOpacity</code> identifier and the number value <code>1</code>. We will cover this again later, but <code>=</code> is used to <em>assign</em> where <code>==</code> is used to <em>compare</em>.</p>
 <p>With respect to making snippet four <em>right</em> and <em>better</em>, we enter subjective changes. This subjectivity sources from a deeper understanding of JavaScript:</p>
@@ -598,7 +639,7 @@ assets
 <p>Implicit coercion is a nuanced sub-system of JavaScript. Coercion is a fancy word for interpreting a value in one form as another form. We&apos;ll leave the details to the next chapter, but just know that loose equality <code>==</code> allows coercion where <em>strict equality</em> <code>===</code> does not. Put another way, loose equality allows interpretation where strict equality does not.</p>
 <p>Optional braces are an authoring time convenience for more succinct code writing. The snippet will remain as-is for now as many sub-systems and their caveats do not need to be learned to make code <em>work</em>.</p>
 <p>In snippet five there are four parts comprising the line of code:</p>
-</div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token comment">// 5. nested property assignment using imageToToggle reference</span>
+</div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token comment">// 5. property assignment using imageToToggle reference</span>
 imageToToggle<span class="token punctuation">.</span>style<span class="token punctuation">.</span>opacity <span class="token operator">=</span> <span class="token punctuation">.</span><span class="token number">5</span><span class="token punctuation">;</span>
 </code></pre></div><div class="content-text">
 <ol>
@@ -608,7 +649,7 @@ imageToToggle<span class="token punctuation">.</span>style<span class="token pun
 <li><code>;</code> - character reserved by JavaScript denoting the explicit end of a code statement</li>
 </ol>
 <p>The above four parts make up the anatomy of an assignment statement. This snippet has one small difference compared to snippet two. Where snippet two has a declaration and an assignment, this snippet only has the latter. The assumption made is that the nested identifiers <code>style</code> and <code>opacity</code> already exist. As a result, a simple assignment using <code>=</code> can be made.</p>
-<p>Regarding <em>right</em> and <em>better</em>, we could cache the <code>imageToToggle.style</code> lookup. Technically speaking, each time the <code>imageToToggle.style.opacity</code> portion executes there is repetitive lookup work the engine has to do. We will not make this change as the performance benefit is negligible. This will be learned in time, but changes to increase performance should only be considered when the target framerate or user experience suffers. Put another way, &quot;premature optimization is the root of all evil&quot;. This exact quote is from Donald Knuth, a heavilty respected and influential coder. We will take his advice.</p>
+<p>Regarding <em>right</em> and <em>better</em>, we could cache the <code>imageToToggle.style</code> lookup. Technically speaking, each time the <code>imageToToggle.style.opacity</code> portion executes there is repetitive lookup work the engine has to do. We will not make this change as the performance benefit is negligible. This will be learned in time, but changes to increase performance should only be considered when the target frame rate or user experience suffers. Put another way, &quot;premature optimization is the root of all evil&quot;. This exact quote is from Donald Knuth, a heavilty respected and influential coder. We will take his advice.</p>
 <p>In snippet six there is only one part comprising the line of code:</p>
 </div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token comment">// 6. end of &apos;if&apos;</span>
 <span class="token punctuation">}</span>
@@ -623,11 +664,14 @@ imageToToggle<span class="token punctuation">.</span>style<span class="token pun
 </code></pre></div><div class="content-text">
 <ol>
 <li><code>else</code> - keyword reserved by JavaScript denoting conditional code execution</li>
-<li><code>{</code> - opening curly brace for declaring the beginning of the <code>else</code>-condition code block</li>
+<li><code>{</code> - opening curly brace for declaring the beginning of the <code>else</code>-condition code block<ul>
+<li><code>}</code> - a closing curly brace is expected to declare its end</li>
+</ul>
+</li>
 </ol>
 <p>The above two parts make up the anatomy of an <code>else</code> statement. The <code>else</code> is an optional execution flow that follows an <code>if</code> or <code>else if</code> statement. When the corresponding <code>if</code> or <code>else if</code> condition is <code>false</code>, the code between the <code>else</code>&apos;s <code>{</code> and <code>}</code> code block will execute. The <code>if</code>/<code>else</code> allows a program to branch, to have conditional execution flow at execution time. Specifically in our <code>toggleImageOpacity</code> function, we use this tactic to ping-pong, or toggle, an image&apos;s opacity between the values <code>1</code> and <code>.5</code>. Put another way, the program toggles the image&apos;s opacity between fully opaque (100%) and half transparent (50%). There is nothing <em>right</em> or <em>better</em> to do with this snippet.</p>
 <p>In snippet eight there are four parts comprising the line of code:</p>
-</div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token comment">// 8. nested property assignment using imageToToggle reference</span>
+</div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token comment">// 8. property assignment using imageToToggle reference</span>
 imageToToggle<span class="token punctuation">.</span>style<span class="token punctuation">.</span>opacity <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
 </code></pre></div><div class="content-text">
 <ol>
@@ -669,7 +713,7 @@ imageToToggle<span class="token punctuation">.</span>style<span class="token pun
 
     <footer></footer>
 
-    <script src="../assets/js/book.js?1.0.13"></script>
+    <script src="../assets/js/book.js?1.0.16"></script>
     <script src="../assets/js/prism.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 

@@ -1,21 +1,21 @@
 ## Anatomy of HTML, CSS, and JavaScript
 
-This section will be the first where we really start digging into the existing languages of HTML, CSS, and JavaScript. We have covered quite a bit in an effort to get to this point. Specifically, we learned about the powerful concepts of binary and states in addition to encoding and decoding in the *Breaking Barriers* chapter. We learned in *Structure, Style, and Behavior* how each concept plays a valuable and distinct role in an interactive creation. In *Coding and Visual Design* we mapped familiar design-specific concepts to coding concepts to help establish a knowledge bridge. More recently, we explored programming-specific concepts to help shape your understanding of how code lives and communicates in real-time.
+This section will be the first where we really start digging into the existing languages of HTML, CSS, and JavaScript. We have covered quite a bit in an effort to get to this point. Specifically, we learned about the powerful concepts of binary and states in addition to encoding and decoding in the *Breaking Barriers* chapter. We learned in *Structure, Style, and Behavior* how each concept plays a valuable and distinct role in an interactive creation. In *Coding and Visual Design* we mapped familiar design-specific concepts to programming concepts to help establish a knowledge bridge. More recently, we explored programming-specific concepts to help shape your understanding of how code lives and communicates in real-time.
 
-We know code is a system for converting meaning between forms and HTML, CSS, and JavaScript are just specific forms. HTML is a markup language used to define structure. CSS is a style language used to define style. JavaScript is a scripting language used to define behavior. The web browser knows how to decode HTML into divisions of content and render them. It also knows how to decode CSS property-value pairs to adorn the HTML elements with style and functionality. Lastly, we know a browser's runtime and engine understand how to decode and execute JavaScript which enables an interactive creation to exist.
+We know code is a system for converting meaning between forms where HTML, CSS, and JavaScript are just specific forms. HTML is a markup language used to define structure. CSS is a style language used to define style. JavaScript is a scripting language used to define behavior. The web browser knows how to decode HTML into divisions of content and render them. It also knows how to decode CSS property-value pairs to adorn the HTML elements with style and functionality. Lastly, we know a browser's runtime and engine understand how to decode and execute JavaScript which enables an interactive creation to exist.
 
 We will now start to dig into HTML, CSS, and JavaScript since we have a greater understanding of how the various concepts we have covered play-off each other. Your mental model should be primed.
 
-Let's squash a myth real quick. Designers and other non-coders new to coding think they need to learn an entire new language, and in the context of the web, *three* new languages. This is not true. What needs to be learned is the:
+Let's squash a myth real quick. Designers and other non-coders new to coding think they need to learn an entire new language including all its words, syntax, and idiosyncrasies. In the context of the web, that would mean *three* sets of words, syntax, and idiosyncrasies need to be learned. There is a better way to spend time and energy learning however. What really needs to be learned is:
 1. Distinction between structure, style, and behavior
-2. Anatomical implementation of structure, style, and behavior
-3. Common subset of code words for each implementation (80/20 rule)
+2. Language syntax of structure, style, and behavior
+3. Subset of code words for each implementation (80/20 rule)
 
-For 2D and the web, that means we need to know the difference between HTML structure, CSS styling, and JavaScript behavior. We have this distinction covered. Let's dig into number two and three. Learning these two facets for each language won't be easy, but it can be simple. Regardless, there is no substitue for practice.
+For 2D and the web, that means we need to know the difference between HTML structure, CSS styling, and JavaScript behavior. We have this distinction covered already. Bonus. Let's dig into number two and three. Learning these two facets for each language may not be easy, but it can be simple. Regardless, there is no substitue for practice.
 
 ### HTML
 
-In keeping with the structure, style, and behavior order, let's look at the anatomy of each starting with HTML. We will title our file `index.html` to align with a best practice naming convention.
+In keeping with the structure, style, and behavior order, let's look at the anatomy of each starting with HTML. We will title our file `index.html` to align with a best practice naming convention. Technically you can name it anything your OS allows, but make it easier on yourself and follow this best practice.
 
 ```markup
 <!DOCTYPE html>
@@ -28,7 +28,7 @@ In keeping with the structure, style, and behavior order, let's look at the anat
 </html>
 ```
 
-This is the most structurally simple, complete, and valid HTML a browser uses. Let's walk through each tag using *comments* to clarify each tag's purpose. We saw earlier that JavaScript uses the `//` character sequence for comments. HTML uses the `<!---->` sequence where the actual comment rests in the middle of the dashes. Just take note that each language may have a uniqe approach to comments, but the purpose is the same. Yes, it would be ideal if all languages used the same character sequence for denoting comments. It's not a perfect world.
+This is the most structurally simple, complete, and valid HTML a browser uses. Let's walk through each tag using *comments* to clarify each tag's purpose. We saw earlier that JavaScript uses the `//` character sequence for comments. HTML uses the `<!---->` sequence where the actual comment rests in the middle of the dashes. Just take note that each language may have a uniqe approach to comments, but the purpose is the same. Yes, it would be ideal if all languages used the same character sequence for denoting comments. It's not a perfect world. Sad face.
 
 ```markup
 <!-- Tell the browser the document type - we only care about html -->
@@ -58,14 +58,14 @@ This is the most structurally simple, complete, and valid HTML a browser uses. L
 
 There are many types of element tags that can be added in both the `<head>` and `<body>` element tags. As mentioned earlier, we will not go over them here as you, just like other coders, can use other resources to look up what tags are available. We will reveal the most common ones for the `<body>` however to fulfill the *common subset* bullet above. Instead of comments I will use English inline with the tags to show how the elements wrap content. Content is visible to the user where the tags that wrap the content are not. The tags simply tell the browser your structure, the building block parent-child relationships. The spacing *between elements* is not important as the browser understands the structure regardless. Spacing *between content* is what matters.
 
-Spacing, tabs, and new lines do typically exist between elements however. This is solely to improve human readability. Imagine if the below HTML elements were all on a single line. The browser wouldn't care as the defined structure would remain the same, but we would have a much tougher time reading and easily seeing the parent-child relationships.
+Spacing, tabs, and new lines do typically exist between elements however. This is solely to improve human readability. Imagine if the below HTML elements were all on a single line. The browser wouldn't care as the defined structure would remain the same, but we would have a much tougher time reading and easily seeing the parent-child relationships when authoring.
 
 ```markup
 <body>
   <div>
     <h1>This is the Primary Title of the Page</h1>
     <p>This is a paragraph. It is followed by an image and a button.</p>
-    <img></img>
+    <img>
     <button>Toggle Image Opacity</button>
   </div>
   <div>
@@ -75,11 +75,48 @@ Spacing, tabs, and new lines do typically exist between elements however. This i
 </body>
 ```
 
-A `<div>` tag simpy denotes a division of content where the layout (position and dimension) of each division is dependent on style. This will likely become your most used element tag. The `<h1>`, `<p>`, `<button>`, and `<h2>` tags are self-describing, but the `<img>` and `<a>` tags are not. This is because they are each lacking *attributes*. We'll use the shortcut *attrs* moving forward. All elements can leverage attrs, but these latter two elements *require* them to function as designed.
+The first thing you will notice about six of the seven tags is that they are abbreviations, they are shortcuts. This admitedly sucks for beginners, but it is great for when you know the small subset by heart. You will learn it quickly, but it still is lame from a beginner perspective. Here's a breakdown to help:
+
+![HTML Tags Subset Map](../assets/img/visual-todo-placeholder.jpg "HTML Tags Subset Map")
+
+<table>
+  <tr>
+    <td>`div`</td>
+    <td>division</td>
+  </tr>
+  <tr>
+    <td>`h1`</td>
+    <td>heading one</td>
+  </tr>
+  <tr>
+    <td>`p`</td>
+    <td>paragraph</td>
+  </tr>
+  <tr>
+    <td>`img`</td>
+    <td>image</td>
+  </tr>
+  <tr>
+    <td>`button`</td>
+    <td>button</td>
+  </tr>
+  <tr>
+    <td>`h2`</td>
+    <td>heading two</td>
+  </tr>
+  <tr>
+    <td>`a`</td>
+    <td>hyperlink</td>
+  </tr>
+</table>
+
+A `<div>` tag simpy denotes a division of content where the aesthetic and layout (position and dimension) of each division is dependent on style. This will likely become your most used element tag. Combining it with the virtually infinite variations of CSS styling enables you to create the same visual effect of virtually every other tag. If not for the specific *attributes* and *semantics* of certain tags that browsers, operating systems, and search engines use, we could almost get away with solely using `<div>`s with custom styles. This idea it so illustrate the notion that a lot can be achieved with little.
+
+Moving on, the `<h1>`, `<p>`, `<button>`, and `<h2>` tags are explained and covered with the examples above. The `<img>` and `<a>` tags are not however. This is because they are each lacking *attributes*. We'll use the shortcut *attrs* moving forward. All elements can leverage attrs, but these latter two elements *require* them to function as designed.
 
 Think of attrs as APIs. Attrs enable the coder to achieve functionality based on a shared understanding of designed use. They are also where we start to transition toward CSS via the `class` attr. First we will update the `<img>` and `<a>` tags with each of their most useful attrs.
 
-So `<img></img>` becomes `<img src='assets/img/cover-coding-for-designers.jpg'></img>` where the `src` attr is set with `=` to the value `assets/img/cover-coding-for-designers.jpg` between quotes. Quotes define the start and end of the attr value. The browser knows how the image tag is designed to work so its runtime APIs automatically download the image provided by the `src` attr, which is the path to the asset. Upon completion of the download, the tag embodies the downloaded image. This same functionality can be achieved using JavaScript only, but we'd have to write more code. Remember, APIs provide a tradeoff and a simpler way to do work.
+So `<img>` becomes `<img src='assets/img/cover-coding-for-designers.jpg'>` where the `src` attr is set with `=` to the value `assets/img/cover-coding-for-designers.jpg` between quotes. Quotes define the start and end of the attr value. The browser knows how the image tag is designed to work so its runtime APIs automatically download the image provided by the `src` attr, which is the path to the asset. Upon completion of the download, the tag embodies the downloaded image. This same functionality can be achieved using JavaScript only, but we'd have to write more code. Remember, APIs provide a tradeoff and a simpler way to do work.
 
 Additionally, `<a>hyperlink</a>` becomes `<a href='http://www.codingfordesignersbook.com'>hyperlink</a>` where the `href` attr is set with `=` to the value `http://www.codingfordesignersbook.com` between quotes. The browser knows that the anchor tag, when hit, should change the web page to the value provided. This same functionality can be achieved using JavaScript only, but we'd have to write more code. Again, the goal is a simpler way to do work.
 
@@ -115,7 +152,7 @@ assets
     cover-coding-for-designers.jpg
 ```
 
-Now is the time to look at the anatomy of a `.css` file which, for our purpose, consists of one class definition. Typically the file would have more than one, but currently we only need one. Take note that CSS uses *comments* via `/**/` where the comment itself resides in the middle. Our `style.css` file is simply:
+Now is the time to look at the anatomy of a `.css` file which, for our purpose, consists of one class definition. Typically the file would have more than one, but currently we only need one. Take note that CSS uses *comments* via `/**/` where the comment itself resides in the middle. I too wish HTML, CSS, JS shared the same comment syntax, but I digress. Our `style.css` file is simply:
 
 ```css
 .dark-background {
@@ -167,9 +204,9 @@ As a creation evolves, feel free to change the names of classes if it makes sens
 
 Thus far we've covered the anatomy of HTML and CSS, so now it is time for JavaScript. In a way we already looked at the anatomy of JavaScript in the *Elements and Elements* section. That breakdown was a bit more granular though and we'll revisit the specifics in the next chapter *Coding and JavaScript*. For now we will look at the high level anatomy of a JavaScript program. We will focus on shape, space, and form or more precisely function, scope, and object.
 
-As you already know, a function is like a shape because it encloses scope just as a shape encloses space. An enclosure helps prevent clashing of what exists between different scopes or spaces. No clashing please. Objects, like forms, are a higher level enclosure. More often than not, they each embody one or more functions or shapes respectively. JavaScript, like the majority of programming languages, has specific types of objects. JavaScript is fairly unique however in that a function is *also* an object.
+As you already know, a function is like a shape because it encloses scope just as a shape encloses space. An enclosure helps prevent clashing of what exists between different scopes or spaces. No clashing please. Objects, like forms, are a higher level enclosure. More often than not, they each embody one or more functions or shapes respectively. JavaScript, like the majority of programming languages, has specific *types* of objects. JavaScript is fairly unique however in that a function is *also* an object.
 
-Long story short, a JavaScript program is essentially a nested tree of functions. As a byproduct of functions each enclosing a scope, a JavaScript program can also be thought of as a nested tree of scopes. So when the JavaScript engine evaluates an expression that has a reference, it works like this in an effort to get the bound value:
+Long story short, a JavaScript program is essentially a nested tree of functions. As a byproduct of functions each enclosing a scope, a JavaScript program can also be thought of as a nested tree of scopes. So when the JavaScript engine evaluates an expression that has a reference (shortcut name for a value), it works like this in an effort to get the bound value:
 1. Look in the target scope for the reference
 2. If not found, look in that scope's parent scope
 3. Repeat until the reference is found or the root parent scope is hit
@@ -213,7 +250,7 @@ The updated `<button>` becomes:
 
 The `id` attr is how we identify an element in our HTML as unique to our document. An id means we intend there to be only one element with a specific name. A unique id enables us to gain a reference to the element's corresponding object for use in JavaScript. With this JavaScript reference we can use its API to do all sorts of cool things.
 
-The result of clicking the button above during execution time results in the function named `toggleImageOpacity` to be called via `()`. This results in the function's contents being executed by the engine. Behind the scenes, the runtime APIs transform the hardware input (mouse, trackpad, stylus, touch, etc.) to event queue work. The event loop then picks up the resulting package and it gets placed on the stack. This all happens in milliseconds or even microseconds when the event loop is not blocked. Lastly, the engine actually executes the function contents. Now is a great time to look at those contents that reside in our `main.js` file.
+The result of clicking the button above during execution time results in the function named `toggleImageOpacity` to be called via `()`. This results in the function's contents being executed by the engine. Behind the scenes, the runtime APIs transform the hardware input (mouse, trackpad, stylus, touch, etc.) to event queue work. The event loop then picks up the resulting package and it gets placed on the stack. This all happens in milliseconds or even microseconds when the event loop is not blocked. Lastly, the engine actually executes the function contents. Now is a great time to look at the contents residing in our `main.js` file.
 
 ```javascript
 function toggleImageOpacity() {
@@ -238,6 +275,6 @@ Do not worry if you cannot understand everything in the above function as we'll 
 
 A function is not always structed this way by a coder, but JavaScript compilation essentially enforces it. We don't go into the details of compilation as previously mentioned, but look into *JavaScript hoisting* if you want to dig deeper. Just save yourself some pain and declare your identifiers (`var`s first and `function`s second) at the top of their parent function prior to use.
 
-Admittedly, this program is tiny as it is comprised of only one small function. Take note however that programs of all sizes leverage this structure since they are just functions nested in functions. We will consider larger programs later in the *Coding and JavaScript* chapter to see this in action.
+Admittedly, this program is tiny as it is comprised of only one small function. Take note however that programs of all sizes leverage this structure since they are just functions nested in functions. And consequently scopes nested in scopes. We will consider larger programs later in the *Coding and JavaScript* chapter to see this in action.
 
 Before advancing to the next chapter though, we'll dive really deep into the `toggleImageOpacity` function. The function *works*, but we can *improve* it.
