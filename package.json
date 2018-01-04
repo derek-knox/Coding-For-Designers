@@ -9,6 +9,7 @@
     "metalsmith-permalinks": "^0.5.0"
   },
   "devDependencies": {
+    "marked": "^0.3.9",
     "metalsmith-assets": "^0.1.0",
     "metalsmith-collection-metadata": "^0.1.0",
     "metalsmith-collections": "^0.9.0",
