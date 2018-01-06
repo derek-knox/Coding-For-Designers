@@ -15,7 +15,7 @@ Metalsmith(__dirname)
   .metadata({
     title: "Coding for Designers",
     description: "...",
-    version: '1.0.16'
+    version: '1.0.17'
   })
   .source('./book')
   .destination('./site')
@@ -92,42 +92,50 @@ Metalsmith(__dirname)
     'collections.home': {
       layout: 'home.html',
       htmlTitle: 'Coding <span>for</span><br>Designers',
-      title: 'Coding for Designers'
+      title: 'Coding for Designers',
+      description: 'A Visually Infused Prerequisite for Learning and Talking Code'
     },
     'collections.chapter0': {
       layout: 'chapter.html',
       htmlTitle: 'Coding <span>for</span><br>Designers',
-      title: 'Preface'
+      title: 'Preface',
+      description: 'A Visually Infused Prerequisite for Learning and Talking Code'
     },
     'collections.chapter1': {
       layout: 'chapter.html',
       htmlTitle: 'Breaking<br>Barriers',
-      title: 'Breaking Barriers'
+      title: 'Breaking Barriers',
+      description: 'In chapter one, Breaking Barriers, we will explore and demystify a series of concepts that fundamentally intimidate most designers and non-coders about how computers and code work. From the seemingly magical ones and zeros to the code you will soon write, we will see simple, basic, repetitive, and reusable concepts at play.'
     },
     'collections.chapter2': {
       layout: 'chapter.html',
       htmlTitle: 'Structure,<br>Style, <span>&</span><br>Behavior',
-      title: 'Structure, Style, & Behavior'
+      title: 'Structure, Style, & Behavior',
+      description: 'In chapter two, Structure, Style, and Behavior, we will cover the three codeable concepts that enable computers to render our interactive creations. We will do so from both a 2D context with the web platform and a 3D context with the Unity® platform. These perspectives will help solidify the distinct role that structure, style, and behavior each play regardless of dimensionality.'
     },
     'collections.chapter3': {
       layout: 'chapter.html',
       htmlTitle: 'Coding <span>&</span><br>Visual Design',
-      title: 'Coding & Visual Design'
+      title: 'Coding & Visual Design',
+      description: 'Chapter three, Coding and Visual Design, will cover the elements, principles, and constructs of visual design. We will explore them relative to programming’s counterparts. This work will help shape a mental model tuned specifically for designers.'
     },
     'collections.chapter4': {
       layout: 'chapter.html',
       htmlTitle: 'Coding <span>&</span><br>Concept',
-      title: 'Coding & Concept'
+      title: 'Coding & Concept',
+      description: 'In chapter four, Coding and Concept, we will introduce language agnostic concepts that are invaluable when authoring dynamic and interactive creations. In coding, the terminology and often the code words themselves are reused exactly or with subtle variation across languages. Spoken languages lack this luxury. We will also visually explore how our code actually runs in real-time.'
     },
     'collections.chapter5': {
       layout: 'chapter.html',
       htmlTitle: 'Coding <span>&</span><br>JavaScript',
-      title: 'Coding & JavaScript'
+      title: 'Coding & JavaScript',
+      description: 'Chapter five, Coding and JavaScript, will reinforce what has been learned, but in the context of JavaScript. JavaScript is the most accessible programming language today. If you have pushed a button on a web page, then you have been impacted by JavaScript.'
     },
     'collections.chapter6': {
       layout: 'chapter.html',
       htmlTitle: 'Deconstructing<br>Designs',
-      title: 'Deconstructing Designs'
+      title: 'Deconstructing Designs',
+      description: 'Finally in chapter six, Deconstructing Designs, we will put everything we have learned to practice. We will do so by analyzing and deconstructing the user interfaces of a few impactful applications. We will then selectively reconstruct portions of the UI relative to the previously introduced concepts.'
     }
   }))
   .use(markdown({
