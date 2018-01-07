@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <title>{{ title }}</title>
     <meta name="description" content="{{ description }}">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:site_name" content="Coding for Designers">
+    <meta property="og:locale" content="en_ID">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.codingfordesignersbook.com">
+    <meta property="og:image" content="http://www.codingfordesignersbook.com/assets/img/coding-for-designers-twitter-card.png">
     {{> twitter-card}}
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+    {{> header-main}}
     <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?{{version}}">
     <link rel="stylesheet" href="../assets/css/prism.css">
   </head>

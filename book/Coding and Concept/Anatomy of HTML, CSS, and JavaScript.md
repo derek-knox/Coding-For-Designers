@@ -8,7 +8,7 @@ We will now start to dig into HTML, CSS, and JavaScript since we have a greater 
 
 Let's squash a myth real quick. Designers and other non-coders new to coding think they need to learn an entire new language including all its words, syntax, and idiosyncrasies. In the context of the web, that would mean *three* sets of words, syntax, and idiosyncrasies need to be learned. There is a better way to spend time and energy learning however. What really needs to be learned is:
 1. Distinction between structure, style, and behavior
-2. Language syntax of structure, style, and behavior
+2. Syntax of structure, style, and behavior language
 3. Subset of code words for each implementation (80/20 rule)
 
 For 2D and the web, that means we need to know the difference between HTML structure, CSS styling, and JavaScript behavior. We have this distinction covered already. Bonus. Let's dig into number two and three. Learning these two facets for each language may not be easy, but it can be simple. Regardless, there is no substitue for practice.
