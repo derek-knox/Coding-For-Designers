@@ -103,7 +103,7 @@ ul ul, ol ol, ul ol, ol ul {
 	margin-bottom: 0em;
 }
 header {
-	margin-top: 50px;
+	margin-top: 100px;
 }
 header h1 {
 	font-size: 1.61111111em;
@@ -116,7 +116,7 @@ header li {
 	list-style: none;
 }
 section {
-	margin-top: 80px;
+	margin-top: 50px;
 }
 a, b, i, strong, em, small, code {
 	line-height: 0;
@@ -158,12 +158,36 @@ footer {
 	margin-bottom: 50px;
 }
 
+/* CFD */
+
+.cfd {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	z-index: 1;
+}
+
+/* TOC */
+
+.toc,
+.toc h1,
+.toc h2,
+.toc h3 {
+	color: #99cc33;
+}
+
+.toc {
+	height: 38vh;
+	overflow-y: scroll;
+}
 
 /* WIP Banner */
 
 #wip-container {
 	opacity: 0;
-	transition: opacity .6s linear 1s;
+    transition: opacity .9s linear 2s;
 }
 
 #wip-container.reveal {
@@ -177,7 +201,7 @@ footer {
     border-radius: 3px;
     position: absolute;
     top: 0;
-    right: 195px;
+    left: 40px;
     margin: 10px;
     padding: 0 6px;
     height: 18px;
@@ -219,9 +243,13 @@ footer {
 .nav-button {
 	margin-top: 0em;
 	padding: 10px 15px;
-	text-transform: uppercase;
 	display: inline-block;
 	cursor: pointer;
+	border: 2px solid #fff;
+}
+
+#nav-menu {
+	transition: all .4s ease-in;
 }
 
 .nav-menu-open {
@@ -397,6 +425,30 @@ pre::-webkit-scrollbar-thumb
 
 .hr {
   display: inline-block;
+}
+
+/* Page Reveal */
+
+#reveal-overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: #eee;
+	z-index: 2;
+
+	opacity: 1;
+  	transform-origin:top;
+}
+
+#reveal-overlay.show {
+	opacity: 0;
+	transition: all .9s ease-in;
+}
+
+#reveal-overlay.hide {
+	display: none;
 }
 
 /* Media Queries */

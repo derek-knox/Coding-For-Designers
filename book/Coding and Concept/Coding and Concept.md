@@ -1,5 +1,3 @@
-## Coding and Concept
-
 So far we've broken down some barriers around coding and computers in general. We've learned about coding structure, style, and behavior too. Additionally, we've introduced programming relative to visual design's elements, principles, and constructs. Though there is always more to learn, your confidence should be magnitudes higher than when we started. Additionally, a mental model should be forming. Let's strengthen it.
 
 To do so, we will visit one more set of concepts before getting into JavaScript itself. Virtually all of these concepts are language agnostic. Hell yea.
