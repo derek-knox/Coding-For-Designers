@@ -12,42 +12,39 @@ Coding for Designers is a work-in-progress book that demystifies coding relative
 
 ## Table of Contents
 
-### 0 | Preface
-- [Preface](http://codingfordesignersbook.com/preface/)
+### [Preface](http://codingfordesignersbook.com/preface/)
 
-### 1 | Breaking Barriers
-- [Ones and Zeros](book/Breaking%20Barriers/Ones%20and%20Zeros.md)
-- [Hard to Soft](book/Breaking%20Barriers/Hard%20to%20Soft.md)
-- [Bits and Bytes](book/Breaking%20Barriers/Bits%20and%20Bytes.md)
-- [Black and White](book/Breaking%20Barriers/Black%20and%20White.md)
-- [Coding Color](book/Breaking%20Barriers/Coding%20Color.md)
-- [Encode and Decode](book/Breaking%20Barriers/Encode%20and%20Decode.md)
-- [Saved Image](book/Breaking%20Barriers/Saved%20Image.md)
+### [Breaking Barriers](http://codingfordesignersbook.com/breaking-barriers/)
+- [Ones and Zeros](http://codingfordesignersbook.com/breaking-barriers/#ones-and-zeros)
+- [Hard to Soft](http://codingfordesignersbook.com/breaking-barriers/#hard-to-soft)
+- [Bits and Bytes](http://codingfordesignersbook.com/breaking-barriers/#bits-and-bytes)
+- [Black and White](http://codingfordesignersbook.com/breaking-barriers/#black-and-white)
+- [Coding Color](http://codingfordesignersbook.com/breaking-barriers/#coding-color)
+- [Encode and Decode](http://codingfordesignersbook.com/breaking-barriers/#encode-and-decode)
+- [Saved Image](http://codingfordesignersbook.com/breaking-barriers/#saved-image)
 
-### 2 | Structure, Style, and Behavior
-- [Structure, Style, and Behavior](book/Structure%20Style%20Behavior/Structure%2C%20Style%2C%20and%20Behavior.md)
-- [Structure](book/Structure%20Style%20Behavior/Structure.md)
-- [Style](book/Structure%20Style%20Behavior/Style.md)
-- [Behavior](book/Structure%20Style%20Behavior/Behavior.md)
+### [Structure, Style, and Behavior](http://codingfordesignersbook.com/structure-style-and-behavior/)
+- [Structure](http://codingfordesignersbook.com/structure-style-and-behavior/#structure)
+- [Style](http://codingfordesignersbook.com/structure-style-and-behavior/#style)
+- [Behavior](http://codingfordesignersbook.com/structure-style-and-behavior/#behavior)
 
-### 3 | Coding and Visual Design
-- [Design](book/Coding%20and%20Visual%20Design/Design.md)
-- [Elements and Elements](book/Coding%20and%20Visual%20Design/Elements%20and%20Elements.md)
-- [Principles and Patterns](book/Coding%20and%20Visual%20Design/Principles%20and%20Patterns.md)
-- [Constructs and Components](book/Coding%20and%20Visual%20Design/Constructs%20and%20Components.md)
+### [Coding and Visual Design](http://codingfordesignersbook.com/coding-and-visual-design/)
+- [Design](http://codingfordesignersbook.com/coding-and-visual-design/#design)
+- [Elements and Elements](http://codingfordesignersbook.com/coding-and-visual-design/#elements-and-elements)
+- [Principles and Patterns](http://codingfordesignersbook.com/coding-and-visual-design/#principles-and-patterns)
+- [Constructs and Components](http://codingfordesignersbook.com/coding-and-visual-design/#constructs-and-components)
 
-### 4 | Coding and Concept
-- [Coding and Concept](book/Coding%20and%20Concept/Coding%20and%20Concept.md)
-- [Authoring, Compiling, and Executing](book/Coding%20and%20Concept/Authoring,%20Compiling,%20and%20Executing.md)
-- [Frame Rate](book/Coding%20and%20Concept/Frame%20Rate.md)
-- [Event Loop](book/Coding%20and%20Concept/Event%20Loop.md)
-- [Sync and Async](book/Coding%20and%20Concept/Sync%20and%20Async.md)
-- [Interfacing](book/Coding%20and%20Concept/Interfacing.md)
-- [Client and Server](book/Coding%20and%20Concept/Client%20and%20Server.md)
-- [Anatomy of HTML, CSS, and JavaScript](book/Coding%20and%20Concept/Anatomy%20of%20HTML,%20CSS,%20and%20JavaScript.md)
-- [Work. Right. Better.](book/Coding%20and%20Concept/Work.%20Right.%20Better..md)
+### [Coding and Concept](http://codingfordesignersbook.com/coding-and-concept/)
+- [Authoring, Compiling, and Executing](http://codingfordesignersbook.com/coding-and-concept/#authoring-compiling-and-executing)
+- [Frame Rate](http://codingfordesignersbook.com/coding-and-concept/#frame-rate)
+- [Event Loop](http://codingfordesignersbook.com/coding-and-concept/#event-loop)
+- [Sync and Async](http://codingfordesignersbook.com/coding-and-concept/#sync-and-async)
+- [Interfacing](http://codingfordesignersbook.com/coding-and-concept/#interfacing)
+- [Client and Server](http://codingfordesignersbook.com/coding-and-concept/#client-and-server)
+- [Anatomy of HTML, CSS, and JavaScript](http://codingfordesignersbook.com/coding-and-concept/#anatomy-of-html-css-and-javascript)
+- [Work. Right. Better.](http://codingfordesignersbook.com/coding-and-concept/#work-right-better-)
 
-### 5 | Coding and JavaScript
+### [Coding and JavaScript](http://codingfordesignersbook.com/coding-and-javascript/)
 - Subset
 - Browser
 - Execution
@@ -58,7 +55,7 @@ Coding for Designers is a work-in-progress book that demystifies coding relative
 - Functions
 - Errors
 
-### 6 | Deconstructing Designs
+### [Deconstructing Designs](http://codingfordesignersbook.com/deconstructing-designs/)
 - Adobe Illustrator
 - Twitter
 - Airbnb
