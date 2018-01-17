@@ -19,7 +19,7 @@
     <meta name="twitter:image" content="http://codingfordesignersbook.com/assets/img/coding-for-designers-twitter-card.png">    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
-    <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon">    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.0.24">
+    <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon">    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.0.28">
     <link rel="stylesheet" href="../assets/css/prism.css">
   </head>
   <body>
@@ -45,7 +45,7 @@
     	</div>
     
     </div>
-    <header>
+    <header class='header-chapter'>
       <div class='nav'>
       	<div id='nav-menu-toggle' class='nav-button shadow-1' onclick='onToggleNav(event)'>
       		Chapter<br>Selection<br>+
@@ -66,6 +66,15 @@
       					Breaking<br>Barriers
       				</h1>
       			</a>
+      			<ul class="nav-section">
+      				<li><a href="/breaking-barriers#ones-and-zeros">Ones and Zeros</a></li>
+      				<li><a href="/breaking-barriers#hard-to-soft">Hard to Soft</a></li>
+      				<li><a href="/breaking-barriers#bits-and-bytes">Bits and Bytes</a></li>
+      				<li><a href="/breaking-barriers#black-and-white">Black and White</a></li>
+      				<li><a href="/breaking-barriers#coding-color">Coding Color</a></li>
+      				<li><a href="/breaking-barriers#encode-and-decode">Encode and Decode</a></li>
+      				<li><a href="/breaking-barriers#saved-image">Saved Image</a></li>
+      			</ul>
       		</li>
       		<li>
       			<a href="/structure-style-and-behavior">
@@ -74,6 +83,11 @@
       					Structure,<br>Style, <span>&</span><br>Behavior
       				</h1>
       			</a>
+      			<ul class='nav-section'>
+      				<li><a href="/structure-style-and-behavior#structure">Structure</a></li>
+      				<li><a href="/structure-style-and-behavior#style">Style</a></li>
+      				<li><a href="/structure-style-and-behavior#behavior">Behavior</a></li>
+      			</ul>
       		</li>
       		<li>
       			<a href="/coding-and-visual-design">
@@ -82,6 +96,12 @@
       					Coding <span>&</span><br>Visual Design
       				</h1>
       			</a>
+      			<ul class="nav-section">
+      				<li><a href="/coding-and-visual-design#design">Design</a></li>
+      				<li><a href="/coding-and-visual-design#elements-and-elements">Elements and Elements</a></li>
+      				<li><a href="/coding-and-visual-design#principles-and-patterns">Principles and Patterns</a></li>
+      				<li><a href="/coding-and-visual-design#constructs-and-components">Constructs and Components</a></li>
+      			</ul>
       		</li>
       		<li>
       			<a href="/coding-and-concept">
@@ -90,6 +110,16 @@
       					Coding <span>&</span><br> Concept
       				</h1>
       			</a>
+      			<ul class="nav-section">
+      				<li><a href="/coding-and-concept#authoring-compiling-executing">Authoring, Compiling, and Executing</a></li>
+      				<li><a href="/coding-and-concept#frame-rate">Frame Rate</a></li>
+      				<li><a href="/coding-and-concept#event-loop">Event Loop</a></li>
+      				<li><a href="/coding-and-concept#sync-and-async">Sync and Async</a></li>
+      				<li><a href="/coding-and-concept#interfacing">Interfacing</a></li>
+      				<li><a href="/coding-and-concept#client-and-server">Client and Server</a></li>
+      				<li><a href="/coding-and-concept#anatomy-of-html-css-and-javascript">Anatomy of HTML, CSS, and JavaScript</a><li>
+      				<li><a href="/coding-and-concept#work-right-better">Work. Right. Better.</a></li>
+      			</ul>
       		</li>
       		<li>
       			<a href="/coding-and-javascript">
@@ -179,19 +209,32 @@
 <li>time (delays, schedules, etc.)</li>
 </ol>
 <p>As you can imagine, the output possibilities are endless as a result of any of the above input triggers. This is where you get to be super creative. Let&#39;s hit on a few simple examples for context.</p>
-<p>New building blocks or groups of building blocks may be added to the structure dynamically. They can also be removed dynamically. Adornments may be added or removed dynamically too. Behavioral changes to these structures and/or adornments are just as easily modifiable based on any of these three triggers. The takeaway is that there are three input trigger types that provide an opportunity for output behavior. The specific input(s) and output(s) are up to you, the creator.</p>
+<p>New building blocks or groups of building blocks may be added to the structure dynamically. They can also be removed dynamically.</p>
+</div><div id="todo---structural-add/remove" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg" alt="TODO - Structural add/remove" title="TODO - Structural add/remove"><figcaption class="hr"><hr>TODO - Structural add/remove</figcaption></figure></div><div class="content-text">
+<p>Adornments may be added or removed dynamically too.</p>
+</div><div id="todo---style-add/remove" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg" alt="TODO - Style add/remove" title="TODO - Style add/remove"><figcaption class="hr"><hr>TODO - Style add/remove</figcaption></figure></div><div class="content-text">
+<p>Behavioral changes to these structures and/or adornments are just as easily modifiable based on any of these three triggers.</p>
+</div><div id="todo---behavior-change" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg" alt="TODO - Behavior change" title="TODO - Behavior change"><figcaption class="hr"><hr>TODO - Behavior change</figcaption></figure></div><div class="content-text">
+<p>The takeaway is that there are three input trigger types that provide an opportunity for output behavior. The specific inputs and outputs are up to you, the creator.</p>
 <p>Where traditional visual design is static, behavior makes a design dynamic and interactive. This power is addictive, useful, and extremely empowering. In the context of the web platform and Unity, instead of using solely what the JavaScript and C# code provides, you can <em>extend</em> each language&#39;s capabilities with your <em>own</em> code. You can invent entirely new and better ways to do almost anything. Super cool.</p>
 <p>Next we will look at the pieces that makeup the ability to <em>code behavior</em>. We will do so in the familiar context of the Elements, Principles, and Constructs of Visual Design. Rock on!</p>
 
       </div>
     </section>
 
-    <footer></footer>
+    <footer class='footer-chapter change-chapter'>
+      <div class="prev-chapter">
+        <a href="/breaking-barriers"><h1><span class="chapter-designation">Chapter 1</span><br>Breaking<br>Barriers</h1></a>
+      </div>
+      <div class="next-chapter">
+        <a href="/coding-and-visual-design"><h1><span class="chapter-designation">Chapter 3</span><br>Coding <span>&</span><br>Visual Design</h1></a>
+      </div>
+    </footer>
 
     <!-- Reveal Animation -->
     <div id='reveal-overlay'></div>
 
-    <script src="../assets/js/book.js?1.0.24"></script>
+    <script src="../assets/js/book.js?1.0.28"></script>
     <script src="../assets/js/prism.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 

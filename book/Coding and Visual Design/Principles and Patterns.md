@@ -37,13 +37,15 @@ Programming’s equivalent to design principles are *design patterns*. Unlike th
 
 Both the visual designer and the programmer leverage the principles and patterns respectively to achieve consistent effect. A visual designer applies the principles for the viewer’s benefit. The programmer applies design patterns for his or her benefit. This may sound selfish, but the reality is that the user of a software product benefits too. The benefits could be speed, reliability, consistency, and flexibility for example. Additionally, using design patterns allows other programmers to better understand a program’s code design.
 
-Design patterns allow the programmer to take an approach that solves a general problem that is common and that has been solved before. Design patterns are not a beginner topic so we will not be going into detail. That said, I recommend two books for when you feel ready. *Learning JavaScript Design Patterns* by Addy Osmani and *Design Patterns: Elements of Reusable Object-Oriented Software* by the Gang of Four (GoF) are both amazing resources.
+Design patterns allow the programmer to take an approach that solves a common or general problem, one that has been solved before. Design patterns are not a beginner topic so we will not be going into detail. That said, I recommend two books for when you feel ready. *Learning JavaScript Design Patterns* by Addy Osmani and *Design Patterns: Elements of Reusable Object-Oriented Software* by the Gang of Four (GoF) are both amazing resources.
+
+I will not leave you hanging though. Below are a few examples that illustrate some of the more common design patterns.
 
 ### Pattern Examples
 
 Often times when programming, you only ever want to have a single instance of a type of object exist in your program. In a sports video game for example you usually only ever track a single game’s score. Depending on the sport you likely only ever want a single ball or puck. In a drawing application you may only ever want a single pen or brush to be selected at any given time. The *singleton* design pattern is a useful pattern for enforcing this oneness.
 
-In forgiving sports video games or drawing applications, the software lets you undo and redo your actions. This is an extremely common desire in software, the ability to undo and redo actions. The *command* design pattern is extremely handy for giving an application, and thus its users, this ability.
+In forgiving sports video games or drawing applications, the software lets you undo and redo your actions. This is an extremely common desire in software, the ability to undo and redo actions. The *command* and *flux* design patterns are extremely handy for giving an application, and thus its users, this ability.
 
 A sports video game will likely consist of two teams, each with a certain amount of players. Design applications may provide numerous tools like a pen, brush, or eraser with variations of each. A few flavors of the *factory* design pattern are useful in stamping out these products (team, player, or tool).
 

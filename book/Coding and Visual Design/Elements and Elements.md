@@ -59,7 +59,7 @@ More than one point or expression enables another level of meaning to be possibl
 
 ### Shape and Function
 
-Combining lines together in specific ways enables the third visual element, a *shape*. A shape is ultimately a set of straight lines, or an organic line, that creates an enclosure. A *function*, the third programming element, is a great way to create an enclosure of statements. Take note that a function, like a shape, is considered a self-contained unit.
+Combining lines together in specific ways enables the third visual element, a *shape*. A shape is ultimately a set of lines, straight or organic, that creates an enclosure. A *function*, the third programming element, is a great way to create an enclosure of statements. Take note that a function, like a shape, is considered a self-contained unit.
 
 ![Shape & Function Examples](../assets/img/visual-todo-placeholder.jpg "Shape & Function Examples")
 

@@ -15,7 +15,7 @@ After we have authored the code, we need to "run" or "execute" it. Executing it 
 
 Compile time is how we get from our authored *static* code to *dynamic* code that manifests as an interactive application or game. We won't go into the details of this step as it is complex. All you need to know is that this step exists so *we* can use words *we* understand instead of coding in binary, the only thing computers fundamentally understand. A prime example is how we use English words (and English abbreviations) within the programming language JavaScript.
 
-In essence, some smart and nerdy authors write *compiler programs* that compile and convert a high-level programming language like JavaScript (easier for us humans to use) to lower-level languages (easier for super-nerdy humans to use) to binary (easier for super-super-nerdy humans and computers to use).
+In essence, smart and nerdy authors write *compiler programs* that compile and convert a high-level programming language like JavaScript (easier for us humans to use) to lower-level languages (easier for super-nerdy humans to use) to binary (easier for super-super-nerdy humans and computers to use).
 
 ![Author > Compile > Run](../assets/img/visual-todo-placeholder.jpg "Author > Compile > Execute")
 

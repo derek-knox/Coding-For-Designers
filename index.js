@@ -11,11 +11,29 @@ var replace           = require('metalsmith-regex-replace');
 var assets            = require('metalsmith-assets');
 var metalsmithPrism   = require('metalsmith-prism');
 
+var htmlTitles        = {
+                          chapter0:  '<span class="chapter-designation">Preface</span><br>Coding <span>for</span><br>Designers',
+                          openCh0 : '<a href="/preface"><h1>',
+                          chapter1: '<span class="chapter-designation">Chapter 1</span><br>Breaking<br>Barriers',
+                          openCh1 : '<a href="/breaking-barriers"><h1>',
+                          chapter2: '<span class="chapter-designation">Chapter 2</span><br>Structure,<br>Style, <span>&</span><br>Behavior',
+                          openCh2 : '<a href="/structure-style-and-behavior"><h1>',
+                          chapter3: '<span class="chapter-designation">Chapter 3</span><br>Coding <span>&</span><br>Visual Design',
+                          openCh3 : '<a href="/coding-and-visual-design"><h1>',
+                          chapter4: '<span class="chapter-designation">Chapter 4</span><br>Coding <span>&</span><br>Concept',
+                          openCh4 : '<a href="/coding-and-concept"><h1>',
+                          chapter5: '<span class="chapter-designation">Chapter 5</span><br>Coding <span>&</span><br>JavaScript',
+                          openCh5 : '<a href="/coding-and-javascript"><h1>',
+                          chapter6: '<span class="chapter-designation">Chapter 6</span><br>Deconstructing<br>Designs',
+                          openCh6 : '<a href="/deconstructing-designs"><h1>',
+                          closeCh : '</h1></a>'
+                        };
+
 Metalsmith(__dirname)
   .metadata({
     title: "Coding for Designers",
     description: "...",
-    version: '1.0.24'
+    version: '1.0.28'
   })
   .source('./book')
   .destination('./site')
@@ -93,49 +111,61 @@ Metalsmith(__dirname)
       layout: 'home.html',
       htmlTitle: 'Coding <span>for</span><br>Designers',
       title: 'Coding for Designers',
-      description: 'A Visually Infused Prerequisite for Learning and Talking Code'
+      description: 'A Visually Infused Prerequisite for Learning and Talking Code',
     },
     'collections.chapter0': {
       layout: 'chapter.html',
-      htmlTitle: '<span class="chapter-designation">Preface</span><br>Coding <span>for</span><br>Designers',
+      htmlTitle: htmlTitles.chapter0,
       title: 'Preface',
-      description: 'A Visually Infused Prerequisite for Learning and Talking Code'
+      description: 'A Visually Infused Prerequisite for Learning and Talking Code',
+      htmlNextChapter: htmlTitles.openCh1 + htmlTitles.chapter1 + htmlTitles.closeCh
     },
     'collections.chapter1': {
       layout: 'chapter.html',
-      htmlTitle: '<span class="chapter-designation">Chapter 1</span><br>Breaking<br>Barriers',
+      htmlTitle: htmlTitles.chapter1,
       title: 'Breaking Barriers',
-      description: 'In chapter one, Breaking Barriers, we will explore and demystify a series of concepts that fundamentally intimidate most designers and non-coders about how computers and code work. From the seemingly magical ones and zeros to the code you will soon write, we will see simple, basic, repetitive, and reusable concepts at play.'
+      description: 'In chapter one, Breaking Barriers, we will explore and demystify a series of concepts that fundamentally intimidate most designers and non-coders about how computers and code work. From the seemingly magical ones and zeros to the code you will soon write, we will see simple, basic, repetitive, and reusable concepts at play.',
+      htmlPrevChapter: htmlTitles.openCh0 + htmlTitles.chapter0 + htmlTitles.closeCh,
+      htmlNextChapter: htmlTitles.openCh2 + htmlTitles.chapter2 + htmlTitles.closeCh
     },
     'collections.chapter2': {
       layout: 'chapter.html',
-      htmlTitle: '<span class="chapter-designation">Chapter 2</span><br>Structure,<br>Style, <span>&</span><br>Behavior',
+      htmlTitle: htmlTitles.chapter2,
       title: 'Structure, Style, & Behavior',
-      description: 'In chapter two, Structure, Style, and Behavior, we will cover the three codeable concepts that enable computers to render our interactive creations. We will do so from both a 2D context with the web platform and a 3D context with the Unity® platform. These perspectives will help solidify the distinct role that structure, style, and behavior each play regardless of dimensionality.'
+      description: 'In chapter two, Structure, Style, and Behavior, we will cover the three codeable concepts that enable computers to render our interactive creations. We will do so from both a 2D context with the web platform and a 3D context with the Unity® platform. These perspectives will help solidify the distinct role that structure, style, and behavior each play regardless of dimensionality.',
+      htmlPrevChapter: htmlTitles.openCh1 + htmlTitles.chapter1 + htmlTitles.closeCh,
+      htmlNextChapter: htmlTitles.openCh3 + htmlTitles.chapter3 + htmlTitles.closeCh
     },
     'collections.chapter3': {
       layout: 'chapter.html',
-      htmlTitle: '<span class="chapter-designation">Chapter 3</span><br>Coding <span>&</span><br>Visual Design',
+      htmlTitle: htmlTitles.chapter3,
       title: 'Coding & Visual Design',
-      description: 'Chapter three, Coding and Visual Design, will cover the elements, principles, and constructs of visual design. We will explore them relative to programming’s counterparts. This work will help shape a mental model tuned specifically for designers.'
+      description: 'Chapter three, Coding and Visual Design, will cover the elements, principles, and constructs of visual design. We will explore them relative to programming’s counterparts. This work will help shape a mental model tuned specifically for designers.',
+      htmlPrevChapter: htmlTitles.openCh2 + htmlTitles.chapter2 + htmlTitles.closeCh,
+      htmlNextChapter: htmlTitles.openCh4 + htmlTitles.chapter4 + htmlTitles.closeCh
     },
     'collections.chapter4': {
       layout: 'chapter.html',
-      htmlTitle: '<span class="chapter-designation">Chapter 4</span><br>Coding <span>&</span><br>Concept',
+      htmlTitle: htmlTitles.chapter4,
       title: 'Coding & Concept',
-      description: 'In chapter four, Coding and Concept, we will introduce language agnostic concepts that are invaluable when authoring dynamic and interactive creations. In coding, the terminology and often the code words themselves are reused exactly or with subtle variation across languages. Spoken languages lack this luxury. We will also visually explore how our code actually runs in real-time.'
+      description: 'In chapter four, Coding and Concept, we will introduce language agnostic concepts that are invaluable when authoring dynamic and interactive creations. In coding, the terminology and often the code words themselves are reused exactly or with subtle variation across languages. Spoken languages lack this luxury. We will also visually explore how our code actually runs in real-time.',
+      htmlPrevChapter: htmlTitles.openCh3 + htmlTitles.chapter3 + htmlTitles.closeCh,
+      htmlNextChapter: htmlTitles.openCh5 + htmlTitles.chapter5 + htmlTitles.closeCh
     },
     'collections.chapter5': {
       layout: 'chapter.html',
-      htmlTitle: '<span class="chapter-designation">Chapter 5</span><br>Coding <span>&</span><br>JavaScript',
+      htmlTitle: htmlTitles.chapter5,
       title: 'Coding & JavaScript',
-      description: 'Chapter five, Coding and JavaScript, will reinforce what has been learned, but in the context of JavaScript. JavaScript is the most accessible programming language today. If you have pushed a button on a web page, then you have been impacted by JavaScript.'
+      description: 'Chapter five, Coding and JavaScript, will reinforce what has been learned, but in the context of JavaScript. JavaScript is the most accessible programming language today. If you have pushed a button on a web page, then you have been impacted by JavaScript.',
+      htmlPrevChapter: htmlTitles.openCh4 + htmlTitles.chapter4 + htmlTitles.closeCh,
+      htmlNextChapter: htmlTitles.openCh6 + htmlTitles.chapter6 + htmlTitles.closeCh
     },
     'collections.chapter6': {
       layout: 'chapter.html',
-      htmlTitle: '<span class="chapter-designation">Chapter 6</span><br>Deconstructing<br>Designs',
+      htmlTitle: htmlTitles.chapter6,
       title: 'Deconstructing Designs',
-      description: 'Finally in chapter six, Deconstructing Designs, we will put everything we have learned to practice. We will do so by analyzing and deconstructing the user interfaces of a few impactful applications. We will then selectively reconstruct portions of the UI relative to the previously introduced concepts.'
+      description: 'Finally in chapter six, Deconstructing Designs, we will put everything we have learned to practice. We will do so by analyzing and deconstructing the user interfaces of a few impactful applications. We will then selectively reconstruct portions of the UI relative to the previously introduced concepts.',
+      htmlPrevChapter: htmlTitles.openCh5 + htmlTitles.chapter5 + htmlTitles.closeCh
     }
   }))
   .use(markdown({

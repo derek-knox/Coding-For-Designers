@@ -2,7 +2,7 @@ Virtually all existing resources aimed at teaching people *about* or *how-to* co
 
 If you author content and self-identify as a graphic, visual, UI, UX, motion, or game designer, then this is for you. Other non-coders wanting to learn about or how-to code will greatly benefit too, but self-identifying designers are the focus. This book, the one I wish existed when I began coding, is also for an earlier time-slice of myself. He will not reap the benefits of its existence, but you will.
 
-Though I don't believe designers *need* to learn to code, those who do will undoubtedly have a valuable and powerful tool added to their toolbox. After reading this book, should you pursue coding further or not, you will have acquired a mental model and knowledge that will inform future code-related conversations at the least and future coding pursuits at the most.
+Though I don't believe designers *need* to learn to code, those who do will undoubtedly have a valuable and powerful skill added to their skillset. After reading this book, you will have acquired knowledge and a mental model that will inform future code-related conversations at the least and future coding pursuits at the most.
 
 Designer or not, this book isn't for you if you want to jump *straight* into code. We cover many ideas, topics, and concepts before truly diving into actual programming code. This intentionality helps frame *why* certain programming concepts exist as they do. The primary goal of this book is to instill a mental model that helps designers learn coding concepts faster, more deeply, and more intuitively. The secondary goal is to lower the barrier of entry by instilling confidence in those new(er) to coding. Neither goal is efficiently achievable by taking the traditional approach.
 
@@ -10,7 +10,7 @@ The plan of attack is simple. In chapter one, *Breaking Barriers*, we will explo
 
 In chapter two, *Structure, Style, and Behavior*, we will cover the three codeable concepts that enable computers to render our interactive creations. We will do so from both a 2D context with the web platform and a 3D context with the Unity<sup>®</sup> platform. These perspectives will help solidify the distinct role that structure, style, and behavior each play regardless of dimensionality.
 
-Chapter three, *Coding and Visual Design*, will cover the elements, principles, and constructs of visual design. We will explore them relative to programming’s counterparts. This work will help shape a mental model tuned specifically for designers.
+Chapter three, *Coding and Visual Design*, will cover the Elements, Principles, and Constructs of Visual Design. We will explore them relative to programming’s counterparts. This work will help shape a mental model tuned specifically for designers.
 
 In chapter four, *Coding and Concept*, we will introduce language agnostic concepts that are invaluable when authoring dynamic and interactive creations. In coding, the terminology and often the code words themselves are reused exactly or with subtle variation across languages. Spoken languages lack this luxury. We will also visually explore how our code actually runs in real-time.
 

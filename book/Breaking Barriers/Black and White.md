@@ -4,7 +4,7 @@ Get out your sketchbook and try to come up with your own code that *represents* 
 
 ![Grid of 2x2 example](../assets/img/visual-todo-placeholder.jpg "Grid of 2x2 examples")
 
-Your solution may differ from mine. This is totally fine. The goal here is simply to demonstrate how we can *visualize a code*. This is a primitive example with admittedly uninteresting output. Regardless, it provides one example of how to visualize a code.
+Your solution may differ from mine and that is fine. The goal here is simply to demonstrate how we can *visualize a code*. This is a primitive example with admittedly uninteresting output. Regardless, it provides one example of how to visualize a code.
 
 ![Grid of 2x2 examples with 4-bit code](../assets/img/visual-todo-placeholder.jpg "Grid of 2x2 examples with 4-bit code")
 

@@ -19,7 +19,7 @@
     <meta name="twitter:image" content="http://codingfordesignersbook.com/assets/img/coding-for-designers-twitter-card.png">    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
-    <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon">    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.0.24">
+    <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon">    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.0.28">
     <link rel="stylesheet" href="../assets/css/prism.css">
   </head>
   <body>
@@ -45,7 +45,7 @@
     	</div>
     
     </div>
-    <header>
+    <header class='header-chapter'>
       <div class='nav'>
       	<div id='nav-menu-toggle' class='nav-button shadow-1' onclick='onToggleNav(event)'>
       		Chapter<br>Selection<br>+
@@ -66,6 +66,15 @@
       					Breaking<br>Barriers
       				</h1>
       			</a>
+      			<ul class="nav-section">
+      				<li><a href="/breaking-barriers#ones-and-zeros">Ones and Zeros</a></li>
+      				<li><a href="/breaking-barriers#hard-to-soft">Hard to Soft</a></li>
+      				<li><a href="/breaking-barriers#bits-and-bytes">Bits and Bytes</a></li>
+      				<li><a href="/breaking-barriers#black-and-white">Black and White</a></li>
+      				<li><a href="/breaking-barriers#coding-color">Coding Color</a></li>
+      				<li><a href="/breaking-barriers#encode-and-decode">Encode and Decode</a></li>
+      				<li><a href="/breaking-barriers#saved-image">Saved Image</a></li>
+      			</ul>
       		</li>
       		<li>
       			<a href="/structure-style-and-behavior">
@@ -74,6 +83,11 @@
       					Structure,<br>Style, <span>&</span><br>Behavior
       				</h1>
       			</a>
+      			<ul class='nav-section'>
+      				<li><a href="/structure-style-and-behavior#structure">Structure</a></li>
+      				<li><a href="/structure-style-and-behavior#style">Style</a></li>
+      				<li><a href="/structure-style-and-behavior#behavior">Behavior</a></li>
+      			</ul>
       		</li>
       		<li>
       			<a href="/coding-and-visual-design">
@@ -82,6 +96,12 @@
       					Coding <span>&</span><br>Visual Design
       				</h1>
       			</a>
+      			<ul class="nav-section">
+      				<li><a href="/coding-and-visual-design#design">Design</a></li>
+      				<li><a href="/coding-and-visual-design#elements-and-elements">Elements and Elements</a></li>
+      				<li><a href="/coding-and-visual-design#principles-and-patterns">Principles and Patterns</a></li>
+      				<li><a href="/coding-and-visual-design#constructs-and-components">Constructs and Components</a></li>
+      			</ul>
       		</li>
       		<li>
       			<a href="/coding-and-concept">
@@ -90,6 +110,16 @@
       					Coding <span>&</span><br> Concept
       				</h1>
       			</a>
+      			<ul class="nav-section">
+      				<li><a href="/coding-and-concept#authoring-compiling-executing">Authoring, Compiling, and Executing</a></li>
+      				<li><a href="/coding-and-concept#frame-rate">Frame Rate</a></li>
+      				<li><a href="/coding-and-concept#event-loop">Event Loop</a></li>
+      				<li><a href="/coding-and-concept#sync-and-async">Sync and Async</a></li>
+      				<li><a href="/coding-and-concept#interfacing">Interfacing</a></li>
+      				<li><a href="/coding-and-concept#client-and-server">Client and Server</a></li>
+      				<li><a href="/coding-and-concept#anatomy-of-html-css-and-javascript">Anatomy of HTML, CSS, and JavaScript</a><li>
+      				<li><a href="/coding-and-concept#work-right-better">Work. Right. Better.</a></li>
+      			</ul>
       		</li>
       		<li>
       			<a href="/coding-and-javascript">
@@ -120,12 +150,19 @@
       </div>
     </section>
 
-    <footer></footer>
+    <footer class='footer-chapter change-chapter'>
+      <div class="prev-chapter">
+        <a href="/coding-and-concept"><h1><span class="chapter-designation">Chapter 4</span><br>Coding <span>&</span><br>Concept</h1></a>
+      </div>
+      <div class="next-chapter">
+        <a href="/deconstructing-designs"><h1><span class="chapter-designation">Chapter 6</span><br>Deconstructing<br>Designs</h1></a>
+      </div>
+    </footer>
 
     <!-- Reveal Animation -->
     <div id='reveal-overlay'></div>
 
-    <script src="../assets/js/book.js?1.0.24"></script>
+    <script src="../assets/js/book.js?1.0.28"></script>
     <script src="../assets/js/prism.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 

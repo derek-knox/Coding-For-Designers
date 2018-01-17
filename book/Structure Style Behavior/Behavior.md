@@ -20,7 +20,19 @@ Now is a good time to explicitly identify example triggers that result in behavi
 
 As you can imagine, the output possibilities are endless as a result of any of the above input triggers. This is where you get to be super creative. Let's hit on a few simple examples for context.
 
-New building blocks or groups of building blocks may be added to the structure dynamically. They can also be removed dynamically. Adornments may be added or removed dynamically too. Behavioral changes to these structures and/or adornments are just as easily modifiable based on any of these three triggers. The takeaway is that there are three input trigger types that provide an opportunity for output behavior. The specific input(s) and output(s) are up to you, the creator.
+New building blocks or groups of building blocks may be added to the structure dynamically. They can also be removed dynamically.
+
+![TODO - Structural add/remove](../assets/img/visual-todo-placeholder.jpg "TODO - Structural add/remove")
+
+Adornments may be added or removed dynamically too.
+
+![TODO - Style add/remove](../assets/img/visual-todo-placeholder.jpg "TODO - Style add/remove")
+
+Behavioral changes to these structures and/or adornments are just as easily modifiable based on any of these three triggers.
+
+![TODO - Behavior change](../assets/img/visual-todo-placeholder.jpg "TODO - Behavior change")
+
+The takeaway is that there are three input trigger types that provide an opportunity for output behavior. The specific inputs and outputs are up to you, the creator.
 
 Where traditional visual design is static, behavior makes a design dynamic and interactive. This power is addictive, useful, and extremely empowering. In the context of the web platform and Unity, instead of using solely what the JavaScript and C# code provides, you can *extend* each language's capabilities with your *own* code. You can invent entirely new and better ways to do almost anything. Super cool.
 

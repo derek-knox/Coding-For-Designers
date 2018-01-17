@@ -20,7 +20,7 @@
     
     {{> wip}}
 
-    <header>
+    <header class='header-chapter'>
       {{> nav}}
     </header>
 
@@ -33,7 +33,14 @@
       </div>
     </section>
 
-    <footer></footer>
+    <footer class='footer-chapter change-chapter'>
+      <div class="prev-chapter">
+        {{{ htmlPrevChapter }}}
+      </div>
+      <div class="next-chapter">
+        {{{ htmlNextChapter }}}
+      </div>
+    </footer>
 
     <!-- Reveal Animation -->
     <div id='reveal-overlay'></div>
