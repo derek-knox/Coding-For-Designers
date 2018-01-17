@@ -234,11 +234,7 @@ footer a:active {
 }
 
 .nav-section {
-	padding: 15px 0 0 0;
-}
-
-.nav-section a {
-	font-weight: 600;
+	padding: 10px 0 0 0;
 }
 
 .nav-button {
@@ -397,7 +393,7 @@ footer a:active {
 .change-chapter {
 	display: flex;
 	justify-content: space-between;
-	margin: 100px auto;
+	margin: 25px auto 100px auto;
 }
 
 /* Custom Selection Color */
@@ -512,5 +508,6 @@ pre::-webkit-scrollbar-thumb
 	}
 	.change-chapter {
 		font-size: 80%;
+		margin-bottom: 75px;
 	}
 }
