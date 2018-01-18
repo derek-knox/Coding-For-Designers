@@ -224,13 +224,16 @@ footer {
 
 .nav a:link,
 .nav a:visited,
-.nav a:hover,
 .nav a:active,
 footer a:link,
 footer a:visited,
-footer a:hover,
 footer a:active {
 	text-decoration: none;
+}
+
+.nav a:hover,
+footer a:hover {
+	text-decoration: underline;
 }
 
 .nav-section {

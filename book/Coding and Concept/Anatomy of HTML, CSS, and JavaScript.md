@@ -11,7 +11,7 @@ Let's squash a myth real quick. Designers and other non-coders new to coding thi
 2. Common syntax subset of each structure, style, and behavior language
 3. Common words subset of each language (80/20 rule)
 
-For 2D and the web, that means we need to know the difference between HTML structure, CSS styling, and JavaScript behavior. We have this distinction covered already. Bonus. Let's dig into number two and three. Learning these two subsets for each language may not be easy, but it can be simple. In fact HTML and CSS have a simpler learning curve compared to JavaScript. As such, I will briefly cover the former and let other resources guide you further. For JavaScript however, the next chapter *Coding and JavaScript* will be your go-to guide. Regardless, there is no substitue for practice.
+For 2D and the web, that means we need to know the difference between HTML structure, CSS styling, and JavaScript behavior. We have this distinction covered already. Bonus. Let's dig into number two and three. Learning these two subsets for each language may not be easy, but it can be simple. In fact HTML and CSS have a simpler learning curve compared to JavaScript. As such, I will briefly cover the former and let other resources guide you following this chapter. For JavaScript however, the next chapter *Coding and JavaScript* will be your go-to guide. Regardless, there is no substitue for practice.
 
 ### HTML
 
