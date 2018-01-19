@@ -17,6 +17,8 @@
     "metalsmith-express": "^0.1.0",
     "metalsmith-prism": "^3.1.1",
     "metalsmith-regex-replace": "^1.2.0",
-    "metalsmith-watch": "^1.0.3"
+    "metalsmith-sitemap": "^1.2.0",
+    "metalsmith-watch": "^1.0.3",
+    "metalsmith-word-count": "0.0.4"
   }
 }

@@ -6,7 +6,12 @@ We know code is a system for converting meaning between forms where HTML, CSS, a
 
 We will now start to dig into HTML, CSS, and JavaScript since we have a greater understanding of how the various concepts we have covered play-off each other. Your mental model should be primed.
 
-Let's squash a myth real quick. Designers and other non-coders new to coding think they need to learn an entire new language including all its words, syntax, and idiosyncrasies. In the context of the web, that would mean *three* sets need to be learned. There is a better way to spend time and energy learning however. What really needs to be learned is:
+Let's squash a myth real quick. Designers and other non-coders new to coding think they need to learn an *entire* new language including all its words, syntax, and idiosyncrasies. 
+- Word - you know what a word is
+- Syntax - language-specific rules of meaningful word and character patterns
+- Idiosyncrasies - exceptions to rules
+
+In the context of the web, that would mean *three* sets need to be learned. There is a better way to spend time and energy learning however. What really needs to be learned is:
 1. Distinction between structure, style, and behavior
 2. Common syntax subset of each structure, style, and behavior language
 3. Common words subset of each language (80/20 rule)

@@ -10,6 +10,8 @@ var metadata          = require('metalsmith-collection-metadata');
 var replace           = require('metalsmith-regex-replace');
 var assets            = require('metalsmith-assets');
 var metalsmithPrism   = require('metalsmith-prism');
+var sitemap           = require('metalsmith-sitemap');
+var wordcount         = require("metalsmith-word-count");
 
 var htmlTitles        = {
                           chapter0:  '<span class="chapter-designation">Preface</span><br>Coding <span>for</span><br>Designers',
@@ -33,7 +35,7 @@ Metalsmith(__dirname)
   .metadata({
     title: "Coding for Designers",
     description: "...",
-    version: '1.0.34'
+    version: '1.0.36'
   })
   .source('./book')
   .destination('./site')
@@ -171,6 +173,7 @@ Metalsmith(__dirname)
   .use(markdown({
     langPrefix: 'language-'
   }))
+  // .use(wordcount())
   .use(metalsmithPrism({
     decode: true,
     lineNumbers: true
@@ -211,6 +214,12 @@ Metalsmith(__dirname)
   .use(layouts({
     engine: 'handlebars',
     partials: 'partials'
+  }))
+  .use(sitemap({
+    hostname: 'http://www.codingfordesignersbook.com/',
+    omitIndex: true,
+    modifiedProperty: 'lastmod',
+    lastmod: new Date()
   }))
   .build(function(err, files) {
     if (err) { throw err; }
