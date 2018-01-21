@@ -12,7 +12,7 @@ The plan of attack is simple. In chapter one, *Breaking Barriers*, we will explo
 
 In chapter two, *Structure, Style, and Behavior*, we will cover the three codeable concepts that enable computers to render our interactive creations. We will do so from both a 2D context with the web platform and a 3D context with the Unity<sup>®</sup> platform. These perspectives will help solidify the distinct role that structure, style, and behavior each play regardless of dimensionality.
 
-Chapter three, *Coding and Visual Design*, will cover the Elements, Principles, and Constructs of Visual Design. We will explore them relative to programming’s counterparts. This work will help shape a mental model tuned specifically for designers.
+Chapter three, *Programming and Visual Design*, will cover the Elements, Principles, and Constructs of Visual Design. We will explore them relative to programming’s counterparts. This work will help shape a mental model tuned specifically for designers.
 
 In chapter four, *Coding and Concept*, we will introduce language agnostic concepts that are invaluable when authoring dynamic and interactive creations. In coding, the terminology and often the code words themselves are reused exactly or with subtle variation across languages. Spoken languages lack this luxury. We will also visually explore how our code actually runs in real-time.
 

@@ -20,8 +20,8 @@ var htmlTitles        = {
                           openCh1 : '<a href="/breaking-barriers"><h1>',
                           chapter2: '<span class="chapter-designation">Chapter 2</span><br>Structure,<br>Style, <span>&</span><br>Behavior',
                           openCh2 : '<a href="/structure-style-and-behavior"><h1>',
-                          chapter3: '<span class="chapter-designation">Chapter 3</span><br>Coding <span>&</span><br>Visual Design',
-                          openCh3 : '<a href="/coding-and-visual-design"><h1>',
+                          chapter3: '<span class="chapter-designation">Chapter 3</span><br>Programming <span>&</span><br>Visual Design',
+                          openCh3 : '<a href="/programming-and-visual-design"><h1>',
                           chapter4: '<span class="chapter-designation">Chapter 4</span><br>Coding <span>&</span><br>Concept',
                           openCh4 : '<a href="/coding-and-concept"><h1>',
                           chapter5: '<span class="chapter-designation">Chapter 5</span><br>Coding <span>&</span><br>JavaScript',
@@ -35,7 +35,7 @@ Metalsmith(__dirname)
   .metadata({
     title: "Coding for Designers",
     description: "...",
-    version: '1.0.37'
+    version: '1.0.38'
   })
   .source('./book')
   .destination('./site')
@@ -72,11 +72,11 @@ Metalsmith(__dirname)
     output: 'structure-style-and-behavior.md'
   }))
   .use(concat({
-    files: ['Coding and Visual Design/Design.md',
-            'Coding and Visual Design/Elements and Elements.md',
-            'Coding and Visual Design/Principles and Patterns.md',
-            'Coding and Visual Design/Constructs and Components.md'],
-    output: 'coding-and-visual-design.md'
+    files: ['Programming and Visual Design/Design.md',
+            'Programming and Visual Design/Elements and Elements.md',
+            'Programming and Visual Design/Principles and Patterns.md',
+            'Programming and Visual Design/Constructs and Components.md'],
+    output: 'programming-and-visual-design.md'
   }))
   .use(concat({
     files: ['Coding and Concept/Coding and Concept.md',
@@ -103,7 +103,7 @@ Metalsmith(__dirname)
     chapter0: 'preface.md',
     chapter1: 'breaking-barriers.md',
     chapter2: 'structure-style-and-behavior.md',
-    chapter3: 'coding-and-visual-design.md',
+    chapter3: 'programming-and-visual-design.md',
     chapter4: 'coding-and-concept.md',
     chapter5: 'coding-and-javascript.md',
     chapter6: 'deconstructing-designs.md'
@@ -141,8 +141,8 @@ Metalsmith(__dirname)
     'collections.chapter3': {
       layout: 'chapter.html',
       htmlTitle: htmlTitles.chapter3,
-      title: 'Coding & Visual Design',
-      description: 'Chapter three, Coding and Visual Design, will cover the elements, principles, and constructs of visual design. We will explore them relative to programming’s counterparts. This work will help shape a mental model tuned specifically for designers.',
+      title: 'Programming & Visual Design',
+      description: 'Chapter three, Programming and Visual Design, will cover the elements, principles, and constructs of visual design. We will explore them relative to programming’s counterparts. This work will help shape a mental model tuned specifically for designers.',
       htmlPrevChapter: htmlTitles.openCh2 + htmlTitles.chapter2 + htmlTitles.closeCh,
       htmlNextChapter: htmlTitles.openCh4 + htmlTitles.chapter4 + htmlTitles.closeCh
     },
