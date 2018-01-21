@@ -44,7 +44,7 @@ Coding for Designers is a work-in-progress book that demystifies coding and Java
 - [Anatomy of HTML, CSS, and JavaScript](http://codingfordesignersbook.com/interactive-code/#anatomy-of-html-css-and-javascript)
 - [Work. Right. Better.](http://codingfordesignersbook.com/interactive-code/#work-right-better-)
 
-### [Coding and JavaScript](http://codingfordesignersbook.com/coding-and-javascript/)
+### [80/20 JavaScript](http://codingfordesignersbook.com/80-20-javascript/)
 - Subset
 - Browser
 - Execution
