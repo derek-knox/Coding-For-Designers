@@ -22,8 +22,8 @@ var htmlTitles        = {
                           openCh2 : '<a href="/structure-style-and-behavior"><h1>',
                           chapter3: '<span class="chapter-designation">Chapter 3</span><br>Programming <span>&</span><br>Visual Design',
                           openCh3 : '<a href="/programming-and-visual-design"><h1>',
-                          chapter4: '<span class="chapter-designation">Chapter 4</span><br>Coding <span>&</span><br>Concept',
-                          openCh4 : '<a href="/coding-and-concept"><h1>',
+                          chapter4: '<span class="chapter-designation">Chapter 4</span><br>Interactive<br>Code',
+                          openCh4 : '<a href="/interactive-code"><h1>',
                           chapter5: '<span class="chapter-designation">Chapter 5</span><br>Coding <span>&</span><br>JavaScript',
                           openCh5 : '<a href="/coding-and-javascript"><h1>',
                           chapter6: '<span class="chapter-designation">Chapter 6</span><br>Deconstructing<br>Designs',
@@ -79,16 +79,16 @@ Metalsmith(__dirname)
     output: 'programming-and-visual-design.md'
   }))
   .use(concat({
-    files: ['Coding and Concept/Coding and Concept.md',
-            'Coding and Concept/Authoring, Compiling, and Executing.md',
-            'Coding and Concept/Frame Rate.md',
-            'Coding and Concept/Event Loop.md',
-            'Coding and Concept/Sync and Async.md',
-            'Coding and Concept/Interfacing.md',
-            'Coding and Concept/Client and Server.md',
-            'Coding and Concept/Anatomy of HTML, CSS, and JavaScript.md',
-            'Coding and Concept/Work. Right. Better..md'],
-    output: 'coding-and-concept.md'
+    files: ['Interactive Code/Interactive Code.md',
+            'Interactive Code/Authoring, Compiling, and Executing.md',
+            'Interactive Code/Frame Rate.md',
+            'Interactive Code/Event Loop.md',
+            'Interactive Code/Sync and Async.md',
+            'Interactive Code/Interfacing.md',
+            'Interactive Code/Client and Server.md',
+            'Interactive Code/Anatomy of HTML, CSS, and JavaScript.md',
+            'Interactive Code/Work. Right. Better..md'],
+    output: 'interactive-code.md'
   }))
   .use(concat({
     files: ['Coding and JavaScript/wip.md'],
@@ -104,7 +104,7 @@ Metalsmith(__dirname)
     chapter1: 'breaking-barriers.md',
     chapter2: 'structure-style-and-behavior.md',
     chapter3: 'programming-and-visual-design.md',
-    chapter4: 'coding-and-concept.md',
+    chapter4: 'interactive-code.md',
     chapter5: 'coding-and-javascript.md',
     chapter6: 'deconstructing-designs.md'
   }))
@@ -150,7 +150,7 @@ Metalsmith(__dirname)
       layout: 'chapter.html',
       htmlTitle: htmlTitles.chapter4,
       title: 'Coding & Concept',
-      description: 'In chapter four, Coding and Concept, we will introduce language agnostic concepts that are invaluable when authoring dynamic and interactive creations. In coding, the terminology and often the code words themselves are reused exactly or with subtle variation across languages. Spoken languages lack this luxury. We will also visually explore how our code actually runs in real-time.',
+      description: 'In chapter four, Interactive Code, we will introduce language agnostic concepts that are invaluable when authoring dynamic and interactive creations. In coding, the terminology and often the code words themselves are reused exactly or with subtle variation across languages. Spoken languages lack this luxury. We will also visually explore how our code actually runs in real-time.',
       htmlPrevChapter: htmlTitles.openCh3 + htmlTitles.chapter3 + htmlTitles.closeCh,
       htmlNextChapter: htmlTitles.openCh5 + htmlTitles.chapter5 + htmlTitles.closeCh
     },
