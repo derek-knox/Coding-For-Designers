@@ -16,7 +16,7 @@ In the context of the web, that would mean *three* sets need to be learned. Ther
 2. Common syntax subset of each structure, style, and behavior language
 3. Common words subset of each language (80/20 rule)
 
-For 2D and the web, that means we need to know the difference between HTML structure, CSS styling, and JavaScript behavior. We have this distinction covered already. Bonus. Let's dig into number two and three. Learning these two subsets for each language may not be easy, but it can be simple. In fact HTML and CSS have a simpler learning curve compared to JavaScript. As such, I will briefly cover the former and let other resources guide you following this chapter. For JavaScript however, the next chapter *Coding and JavaScript* will be your go-to guide. Regardless, there is no substitue for practice.
+For 2D and the web, that means we need to know the difference between HTML structure, CSS styling, and JavaScript behavior. We have this distinction covered already. Bonus. Let's dig into number two and three. Learning these two subsets for each language may not be easy, but it can be simple. In fact HTML and CSS have a simpler learning curve compared to JavaScript. As such, I will briefly cover the former and let other resources guide you following this chapter. For JavaScript however, the next chapter *80/20 JavaScript* will be your go-to guide. Regardless, there is no substitue for practice.
 
 ### HTML
 
@@ -207,7 +207,7 @@ As a creation evolves, feel free to change the names of classes if it makes sens
 
 ### JavaScript
 
-Thus far we've covered the anatomy of HTML and CSS, so now it is time for JavaScript. In a way we already looked at the anatomy of JavaScript in the *Elements and Elements* section. That breakdown was a bit more granular though and we'll revisit the specifics in the next chapter *Coding and JavaScript*. For now we will look at the high level anatomy of a JavaScript program. We will focus on shape, space, and form or more precisely function, scope, and object.
+Thus far we've covered the anatomy of HTML and CSS, so now it is time for JavaScript. In a way we already looked at the anatomy of JavaScript in the *Elements and Elements* section. That breakdown was a bit more granular though and we'll revisit the specifics in the next chapter *80/20 JavaScript*. For now we will look at the high level anatomy of a JavaScript program. We will focus on shape, space, and form or more precisely function, scope, and object.
 
 As you already know, a function is like a shape because it encloses scope just as a shape encloses space. An enclosure helps prevent clashing of what exists between different scopes or spaces. No clashing please. Objects, like forms, are a higher level enclosure. More often than not, they each embody one or more functions or shapes respectively. JavaScript, like the majority of programming languages, has specific *types* of objects. JavaScript is fairly unique however in that a function is *also* an object.
 
@@ -280,6 +280,6 @@ Do not worry if you cannot understand everything in the above function as we'll 
 
 A function is not always structed this way by a coder, but JavaScript compilation essentially enforces it. We don't go into the details of compilation as previously mentioned, but look into *JavaScript hoisting* if you want to dig deeper. Just save yourself some pain and declare your identifiers (`var`s first and `function`s second) at the top of their parent function prior to use.
 
-Admittedly, this program is tiny as it is comprised of only one small function. Take note however that programs of all sizes leverage this structure since they are just functions nested in functions. And consequently scopes nested in scopes. We will consider larger programs later in the *Coding and JavaScript* chapter to see this in action.
+Admittedly, this program is tiny as it is comprised of only one small function. Take note however that programs of all sizes leverage this structure since they are just functions nested in functions. And consequently scopes nested in scopes. We will consider larger programs later in the *80/20 JavaScript* chapter to see this in action.
 
 Before advancing to the next chapter though, we'll dive really deep into the `toggleImageOpacity` function. The function *works*, but we can *improve* it.

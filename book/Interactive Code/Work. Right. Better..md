@@ -189,4 +189,4 @@ This closing curly brace simply defines the end of the `toggleImageOpacity` func
 
 In this section we introduced some of the vocabulary, concepts, and considerations of advanced coders. Overwhelming I know. Hopefully a few things made sense though. Regardless, seeds should be planted that will bear fruit later in your learn-to-code journey.
 
-In the next chapter *Coding and JavaScript* we will bypass much of this advanced material in favor of a simplified approach. As you progress as a coder you can begin to make code *right* and *better*. Until then, the goal is to make code that works. Let's do this.
+In the next chapter *80/20 JavaScript* we will bypass much of this advanced material in favor of a simplified approach. As you progress as a coder you can begin to make code *right* and *better*. Until then, the goal is to make code that works. Let's do this.

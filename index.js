@@ -24,8 +24,8 @@ var htmlTitles        = {
                           openCh3 : '<a href="/programming-and-visual-design"><h1>',
                           chapter4: '<span class="chapter-designation">Chapter 4</span><br>Interactive<br>Code',
                           openCh4 : '<a href="/interactive-code"><h1>',
-                          chapter5: '<span class="chapter-designation">Chapter 5</span><br>Coding <span>&</span><br>JavaScript',
-                          openCh5 : '<a href="/coding-and-javascript"><h1>',
+                          chapter5: '<span class="chapter-designation">Chapter 5</span><br>80/20<br>JavaScript',
+                          openCh5 : '<a href="/80-20-javascript"><h1>',
                           chapter6: '<span class="chapter-designation">Chapter 6</span><br>Deconstructing<br>Designs',
                           openCh6 : '<a href="/deconstructing-designs"><h1>',
                           closeCh : '</h1></a>'
@@ -91,8 +91,8 @@ Metalsmith(__dirname)
     output: 'interactive-code.md'
   }))
   .use(concat({
-    files: ['Coding and JavaScript/wip.md'],
-    output: 'coding-and-javascript.md'
+    files: ['JavaScript/wip.md'],
+    output: '80-20-javascript.md'
   }))
   .use(concat({
     files: ['Deconstructing Designs/wip.md'],
@@ -105,7 +105,7 @@ Metalsmith(__dirname)
     chapter2: 'structure-style-and-behavior.md',
     chapter3: 'programming-and-visual-design.md',
     chapter4: 'interactive-code.md',
-    chapter5: 'coding-and-javascript.md',
+    chapter5: '80-20-javascript.md',
     chapter6: 'deconstructing-designs.md'
   }))
   .use(metadata({
@@ -157,8 +157,8 @@ Metalsmith(__dirname)
     'collections.chapter5': {
       layout: 'chapter.html',
       htmlTitle: htmlTitles.chapter5,
-      title: 'Coding & JavaScript',
-      description: 'Chapter five, Coding and JavaScript, will reinforce what has been learned, but in the context of JavaScript. JavaScript is the most accessible programming language today. If you have pushed a button on a web page, then you have been impacted by JavaScript.',
+      title: '80/20 JavaScript',
+      description: 'Chapter five, 80/20 JavaScript, will reinforce what has been learned, but in the context of JavaScript. JavaScript is the most accessible programming language today. If you have pushed a button on a web page, then you have been impacted by JavaScript.',
       htmlPrevChapter: htmlTitles.openCh4 + htmlTitles.chapter4 + htmlTitles.closeCh,
       htmlNextChapter: htmlTitles.openCh6 + htmlTitles.chapter6 + htmlTitles.closeCh
     },
