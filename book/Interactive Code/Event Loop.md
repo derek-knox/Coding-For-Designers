@@ -38,7 +38,7 @@ We can update our HTML-like example from before:
 
 So what do each of these runtime parts do anyway? Here is a succint breakdown where the use of *work* implies some amount of code reading and/or executing:
 1. engine - does work
-    - *heap* - memory for work
+    - *heap* - shared memory for work
     - *stack* - organizes the engine's work
 2. *runtime APIs* - does special work the engine cannot
 3. *event queue* - organizes the results of special work as packages of engine work
