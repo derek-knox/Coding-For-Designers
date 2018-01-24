@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
     <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.0.40">
+    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.0.55">
     <link rel="stylesheet" href="../assets/css/prism.css">
   </head>
   <body>
@@ -48,8 +48,8 @@
     
     </div>
     <header class='header-chapter'>
-      <div class='nav'>
-      	<div id='nav-menu-toggle' class='nav-button shadow-1' onclick='onToggleNav(event)'>
+      <div id='nav' class='nav shadow-1'>
+      	<div id='nav-menu-toggle' onclick='onToggleNav(event)'>
       		Chapter<br>Selection<br>+
       	</div>
       	<ul id='nav-menu' class='nav-menu-closed'>
@@ -150,8 +150,8 @@
         <h2 id="ones-and-zeros">Ones and Zeros</h2>
 <p>Computers are dumb. They can do amazing things, but they are dumb. They are pretty needy too. We give them what they need and what they need is <em>electricity</em>.</p>
 <p>Kind of obvious I suppose, but this is the fundamental requirement that makes them valuable to us. That is unless you like throwing computers. No electricity required. How computers <em>use</em> electricity is pretty cool though. And quite simple too. This is where the ones and zeros come in.</p>
-<p>A <em>one</em> is the <em>presence of electricity</em>. A <em>zero</em> is the <em>absence of electricity</em>. Think <em>on</em> and <em>off</em>. Same thing. Electricity’s presence (one) and absence (zero) make a computer tick. We will see how later, but this is the core.</p>
-<p>In fact, you have just learned the most basic code of computers. That was quick. One is presence and zero is absence. One is on and zero is off. This particular code is called <em>binary</em>. Now when you hear coders talk about <em>binary</em>, you know what they are referring to. Ones and zeros. That is it. Those ones and zeros are not that magical now huh?</p>
+<p>A <em>one</em> is the <em>presence of electricity</em>. A <em>zero</em> is the <em>absence of electricity</em>. Think <em>on</em> and <em>off</em>. Same thing. Electricity’s presence (one) and absence (zero) make a computer tick.</p>
+<p>In fact, you have just learned the most basic code of computers. That was quick. One is presence and zero is absence. One is on and zero is off. This particular code is called <em>binary</em>. Now when you hear coders talk about binary, you know what they are referring to. Ones and zeros. That is it. Those ones and zeros are not that magical now huh?</p>
 </div><div id="todo---table-replace" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg" alt="TODO - Table Replace" title="TODO - Table Replace"><figcaption class="hr"><hr>TODO - Table Replace</figcaption></figure></div><div class="content-text">
 <table>
   <tr>
@@ -184,10 +184,10 @@
 <p>I could take a pencil and write a 1 or a 0 on a sheet of paper (or any two distinct symbols for that matter). I could then give it to you. As long as both of us agree on the <em>converted meaning</em>, then we would have a binary code to communicate. For example a 1 could mean &quot;yes&quot; and a 0 “no”. We could ask each other questions verbally and respond in this code.</p>
 <p>There is nothing inherently magical about code. Remember this fact.</p>
 <h2 id="hard-to-soft">Hard to Soft</h2>
-<p>Computers take electricity as input. People convert meaning as output. Specifically, people have agreed that the presence of electricity is 1 and the absence is 0. Go take a look at the power buttons of various devices around you. I will wait. You will see that most, if not all, have a line symbol (1) and a circle symbol (0). Binary switch. On and Off. Cool.</p>
+<p>Computers take electricity as input. People convert meaning as output. Specifically, people have <em>agreed</em> that the presence of electricity is 1 and the absence is 0. Go take a look at the power buttons of various devices around you. I will wait. You will see that most, if not all, have a line symbol (1) and a circle symbol (0). Binary switch. On and Off. Cool.</p>
 </div><div id="i/o-examples" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg" alt="I/O examples" title="I/O examples"><figcaption class="hr"><hr>I/O examples</figcaption></figure></div><div class="content-text">
 <p>How do we actually <em>control</em> electricity though? We can’t reliably use binary code to convert meaning in a computer if we cannot control electricity now can we. Welcome to the <em>electric circuit</em>. It has one job. Control the <em>flow of electricity</em>. How convenient. Presence and absence. On and off. One and zero. This is the exact point where we bridge the physical world (presence or absence of electricity in a circuit) and the virtual world (one or zero). Think <em>hard</em> to <em>soft</em>. <em>Hard</em>ware to <em>soft</em>ware.</p>
-<p>We won’t go into the details of circuits because that is an entirely different topic. If you are interested in learning more however, I highly recommend <em>But How Do It Know?</em> by J. Clark Scott. The designer in me wishes the book had a more communicative title in addition to a more timeless cover design, but I digress. J. Clark Scott does an amazing job teaching how computers and their various components work. As important, he teaches in a very easy-to-understand and digestible fashion. Get the book if you want to learn how computers work. Soapbox dismounted.</p>
+<p>We won’t go into the details of circuits because they exceed the scope of this book. If you are interested in learning more however, I highly recommend <em>But How Do It Know?</em> by J. Clark Scott. The designer in me wishes the book had a more communicative title in addition to a more timeless cover design, but I digress. J. Clark Scott does an amazing job teaching how computers and their various components work. As important, he teaches in a very easy-to-understand and digestible fashion. Get the book if you want to learn how computers work. Soapbox dismounted.</p>
 <p>Scott’s book is not required reading to move forward though. Just know that the amount of binary states that can be represented physically (electrically) and thus virtually (code) in a computer, is more than you need. Think about that again. Your creativity and experience are the only limiting factors.</p>
 <p>Bridging the physical to virtual gap is the fundamental aspect that enables computers and the amazing games, tools, and software we love, to exist.</p>
 <h2 id="bits-and-bytes">Bits and Bytes</h2>
@@ -532,7 +532,7 @@
     <!-- Reveal Animation -->
     <div id='reveal-overlay'></div>
 
-    <script src="../assets/js/book.js?1.0.40"></script>
+    <script src="../assets/js/book.js?1.0.55"></script>
     <script src="../assets/js/prism.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 

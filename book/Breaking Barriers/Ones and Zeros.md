@@ -4,9 +4,9 @@ Computers are dumb. They can do amazing things, but they are dumb. They are pret
 
 Kind of obvious I suppose, but this is the fundamental requirement that makes them valuable to us. That is unless you like throwing computers. No electricity required. How computers *use* electricity is pretty cool though. And quite simple too. This is where the ones and zeros come in.
 
-A *one* is the *presence of electricity*. A *zero* is the *absence of electricity*. Think *on* and *off*. Same thing. Electricity’s presence (one) and absence (zero) make a computer tick. We will see how later, but this is the core.
+A *one* is the *presence of electricity*. A *zero* is the *absence of electricity*. Think *on* and *off*. Same thing. Electricity’s presence (one) and absence (zero) make a computer tick.
 
-In fact, you have just learned the most basic code of computers. That was quick. One is presence and zero is absence. One is on and zero is off. This particular code is called *binary*. Now when you hear coders talk about *binary*, you know what they are referring to. Ones and zeros. That is it. Those ones and zeros are not that magical now huh?
+In fact, you have just learned the most basic code of computers. That was quick. One is presence and zero is absence. One is on and zero is off. This particular code is called *binary*. Now when you hear coders talk about binary, you know what they are referring to. Ones and zeros. That is it. Those ones and zeros are not that magical now huh?
 
 ![TODO - Table Replace](../assets/img/visual-todo-placeholder.jpg "TODO - Table Replace")
 

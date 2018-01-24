@@ -88,7 +88,6 @@ h1, h2, h3 {
 	line-height: 1em;
 	font-weight: 900;
 	color: #272822;
-	overflow: hidden;
 }
 h1 span {
 	font-size: 50%;
@@ -99,12 +98,12 @@ p, ul, ol, pre, table, blockquote {
 	margin-top: 0em;
 	margin-bottom: 1.27777778em;
 }
+p + ul, p + ol {
+	margin-top: -0.60526316em;
+}
 ul ul, ol ol, ul ol, ol ul {
 	margin-top: 0em;
 	margin-bottom: 0em;
-}
-header {
-	margin-top: 100px;
 }
 header h1,
 footer h1 {
@@ -222,6 +221,22 @@ footer {
 
 /* Menu */
 
+.nav {
+	margin-top: 0em;
+	display: inline-block;
+	border: 2px solid #fff;
+	width: 108px;
+	height: 90px;
+	transition: all .2s ease-out;
+	overflow: hidden;
+	user-select: none;
+}
+
+.nav-open {
+	width: 340px;
+	height: 1420px;
+}
+
 .nav a:link,
 .nav a:visited,
 .nav a:active,
@@ -240,16 +255,18 @@ footer a:hover {
 	padding: 10px 0 0 0;
 }
 
-.nav-button {
+#nav-menu-toggle,
+#nav-menu {
 	margin-top: 0em;
-	padding: 10px 15px;
-	display: inline-block;
-	cursor: pointer;
-	border: 2px solid #fff;
+    padding: 10px 15px;
 }
 
 #nav-menu {
-	transition: all .4s ease-in;
+	width: 312px;
+}
+
+#nav-menu-toggle {
+	cursor: pointer;
 }
 
 .nav-menu-open {
@@ -333,7 +350,7 @@ footer a:hover {
 }
 
 .toc header {
-	padding: calc(19vh - 47px) 0;
+	padding: calc(18vh - 45px) 0;
 	margin-top: 0;
 }
 
@@ -349,13 +366,18 @@ footer a:hover {
 
 /* Visual Areas (main copy, image figure w/caption, and code) */
 
-.nav,
+
+.header-chapter,
 .change-chapter,
 .content-text,
 .content-code pre {
 	max-width: 720px;
 	margin: 0 auto;
 	padding: 0 25px;
+}
+
+.header-chapter {
+	padding-top: 100px;
 }
 
 .content-visual,
@@ -490,6 +512,13 @@ pre::-webkit-scrollbar-thumb
 @media screen and (max-width: 640px) {
 	html {
 		font-size: 16px;
+	}
+	.intro-container {
+		padding: 0 25px;
+	}
+	.nav-open {
+		width: calc(100vw - 54px);
+		height: 1242px;
 	}
 }
 
