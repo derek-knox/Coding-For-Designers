@@ -1,10 +1,12 @@
 // CACHE ---------------------------------------------------------------------------------------
 
 var isMenuOpen = false,
+	isDarkMode = false,
 	$wipContainer = null,
 	$nav = null,
 	$navMenuToggle = null,
 	$navMenu = null,
+	$lightModeToggle = null,
 	$revealOverlay = null;
 
 // METHODS -------------------------------------------------------------------------------------	
@@ -60,6 +62,7 @@ function onReady() {
 	$nav = document.getElementById('nav');
 	$navMenuToggle = document.getElementById('nav-menu-toggle');
 	$navMenu = document.getElementById('nav-menu');
+	$lightModeToggle = document.getElementById('light-mode-toggle');
 	$revealOverlay = document.getElementById('reveal-overlay');
 
 	// Initialize leveraging updated cache
@@ -81,6 +84,12 @@ function onToggleNav(e) {
 	document.body.style.minHeight = isMenuOpen ? '1600px' : 'auto';
 	var targetY = isMenuOpen ? $navMenuToggle.getBoundingClientRect().y : 0;
 	window.scrollTo({ top: Math.ceil(targetY - 35), left: 0, behavior: 'smooth'});
+}
+
+function onToggleDarkMode(e) {
+	isDarkMode = !isDarkMode;
+	isDarkMode ? document.body.classList.add('dark-mode') : document.body.classList.remove('dark-mode');
+	$lightModeToggle.innerHTML = 'Light<br>' + (isDarkMode ? '+' : '-');
 }
 
 // INITIALIZATION ------------------------------------------------------------------------------

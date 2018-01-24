@@ -62,7 +62,9 @@ body {
 	font-weight: 400;
 	line-height: 1.27777778em;
 	margin: 0;
+	color: #272822;
 	background-color: #eee;
+	transition: all .2s ease-out;
 	overflow-x: hidden;
 }
 h1 {
@@ -88,6 +90,7 @@ h1, h2, h3 {
 	line-height: 1em;
 	font-weight: 900;
 	color: #272822;
+	transition: all .2s ease-out;
 }
 h1 span {
 	font-size: 50%;
@@ -221,7 +224,8 @@ footer {
 
 /* Menu */
 
-.nav {
+.nav,
+.light-mode {
 	margin-top: 0em;
 	display: inline-block;
 	border: 2px solid #fff;
@@ -230,6 +234,11 @@ footer {
 	transition: all .2s ease-out;
 	overflow: hidden;
 	user-select: none;
+}
+
+.light-mode {
+	height: auto;
+	margin-top: 15px;
 }
 
 .nav-open {
@@ -256,6 +265,7 @@ footer a:hover {
 }
 
 #nav-menu-toggle,
+#light-mode-toggle,
 #nav-menu {
 	margin-top: 0em;
     padding: 10px 15px;
@@ -265,7 +275,8 @@ footer a:hover {
 	width: 312px;
 }
 
-#nav-menu-toggle {
+#nav-menu-toggle,
+#light-mode-toggle, {
 	cursor: pointer;
 }
 
@@ -477,6 +488,38 @@ pre::-webkit-scrollbar-thumb
 
 #reveal-overlay.hide {
 	display: none;
+}
+
+/* Dark Mode */
+
+body.dark-mode {
+	color: #eee;
+	background-color: #272822;
+}
+
+.dark-mode .wip {
+	color: #eee;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+	color: #99cc33;
+}
+
+.dark-mode .header-chapter a,
+.dark-mode .footer-chapter a {
+	color: #99cc33;
+}
+
+.dark-mode .content-text code {
+	background-color: #555;
+}
+
+.dark-mode .content-visual,
+.dark-mode .content-code {
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #555;
 }
 
 /* Utils */
