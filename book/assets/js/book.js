@@ -7,13 +7,35 @@ var isMenuOpen = false,
 	$navMenuToggle = null,
 	$navMenu = null,
 	$lightModeToggle = null,
-	$revealOverlay = null;
+	$revealOverlay = null,
+	Settings = {
+		DARK_MODE: 'settings.darkMode'
+	};
 
 // METHODS -------------------------------------------------------------------------------------	
 
 function init() {
+	initLocalStorage();
 	initReveal();
 	initScroll();
+}
+
+function initLocalStorage() {
+	if(window.localStorage) {
+		var darkMode = window.localStorage.getItem(Settings.DARK_MODE);
+		if(darkMode) {
+			console.log('darkMode localStorage', darkMode);
+
+			// Update flag
+			isDarkMode = darkMode === 'true';
+			isHomePage = window.location.pathname.toLowerCase().indexOf('home') !== -1;
+
+			// Update UI
+			if(isDarkMode && !isHomePage) {
+				updateDarkMode(isDarkMode);
+			}
+		}
+	}
 }
 
 function initReveal() {
@@ -49,6 +71,22 @@ function revealComplete() {
 	$revealOverlay.classList = ['hide'];
 }
 
+function updateLocalStorage(key, value) {
+	window.localStorage.setItem(key, value.toString());
+}
+
+function updateDarkMode() {
+
+	// Update toggles/classes
+	isDarkMode ? document.body.classList.add('dark-mode') : document.body.classList.remove('dark-mode');
+
+	// Update UI
+	$lightModeToggle.innerHTML = 'Light<br>' + (isDarkMode ? '+' : '-');
+
+	// Update local storage
+	updateLocalStorage(Settings.DARK_MODE, isDarkMode);
+}
+
 // HANDLERS ------------------------------------------------------------------------------------
 
 function onReady() {
@@ -57,7 +95,6 @@ function onReady() {
 	document.removeEventListener('DOMContentLoaded', onReady);
 
 	// Update cache
-	isMenuOpen = false,
 	$wipContainer = document.getElementById('wip-container');
 	$nav = document.getElementById('nav');
 	$navMenuToggle = document.getElementById('nav-menu-toggle');
@@ -87,9 +124,12 @@ function onToggleNav(e) {
 }
 
 function onToggleDarkMode(e) {
+
+	// Update flag
 	isDarkMode = !isDarkMode;
-	isDarkMode ? document.body.classList.add('dark-mode') : document.body.classList.remove('dark-mode');
-	$lightModeToggle.innerHTML = 'Light<br>' + (isDarkMode ? '+' : '-');
+
+	// Update dark mode
+	updateDarkMode();
 }
 
 // INITIALIZATION ------------------------------------------------------------------------------
