@@ -24,7 +24,6 @@ function initLocalStorage() {
 	if(window.localStorage) {
 		var darkMode = window.localStorage.getItem(Settings.DARK_MODE);
 		if(darkMode) {
-			console.log('darkMode localStorage', darkMode);
 
 			// Update flag
 			isDarkMode = darkMode === 'true';
@@ -53,17 +52,25 @@ function initScroll() {
 	var hash = window.location.hash;
 	if(hash) {
 		
-		// Reset pos in prep for scroll
-		setTimeout(function() { window.scroll(0, 0); }, 0);
+		// Check against hash
+		var hashEl = document.getElementById(hash.substr(1));
+		if(hashEl) {
 
-		// Scroll
-		setTimeout(function(){
-			var hashEl = document.getElementById(hash.substr(1));
-			if(hashEl) {
-				var targetY = Math.ceil(hashEl.getBoundingClientRect().top) - 30;
-				window.scrollTo({ top: targetY, left: 0, behavior: 'smooth'});
-			}
-		}, 50);
+			// Reset pos in prep for scroll
+			setTimeout(function(){
+				window.scroll(0, 0);
+			}, 0);
+
+			// Scroll
+			setTimeout(function(){
+				var top = document.documentElement.scrollTop + hashEl.getBoundingClientRect().top,
+					targetY = Math.max(Math.ceil(top) - 30, 0);
+				if(targetY !== 0) {
+					window.scrollTo({ top: targetY, left: 0, behavior: 'smooth'});
+				}
+			}, 50);
+
+		}
 	}
 }
 
@@ -76,6 +83,9 @@ function updateLocalStorage(key, value) {
 }
 
 function updateDarkMode() {
+
+	// Home page escape condition
+	if(!$lightModeToggle) return;
 
 	// Update toggles/classes
 	isDarkMode ? document.body.classList.add('dark-mode') : document.body.classList.remove('dark-mode');
