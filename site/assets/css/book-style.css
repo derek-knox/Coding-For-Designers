@@ -601,6 +601,9 @@ body.dark-mode {
 	h2, .intro-top h2 {
 		font-size: 1.4em;
 	}
+	.intro-top h2 {
+		font-size: 1em;
+	}
 	h3, .intro-top h3 {
 		font-size: .9em;
 	}
