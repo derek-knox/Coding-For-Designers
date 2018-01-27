@@ -131,7 +131,7 @@ hr {
 	border: none;
 	background-color: #666;
     height: 1px;
-	margin: 1em -1em 0.5em;
+	margin: 1em -1em 1.5em;
 }
 sub, sup {
 	line-height: 0;
@@ -391,7 +391,8 @@ footer a:hover {
 	padding-top: 100px;
 }
 
-.heading-anchor {
+.heading-anchor,
+.figure-anchor {
 	text-decoration: none;
 }
 

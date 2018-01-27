@@ -35,7 +35,7 @@ Metalsmith(__dirname)
   .metadata({
     title: "Coding for Designers",
     description: "...",
-    version: '1.0.62'
+    version: '1.0.63'
   })
   .source('./book')
   .destination('./site')
@@ -185,7 +185,7 @@ Metalsmith(__dirname)
               search: /<p><img (.*) title=['"](.*)['"]><\/p>/gm,
               replace: function(match, p1, p2){
                 var id = p2.toLowerCase().replace(/ /g, '-');
-                return '</div><div id="' + id + '" class="content-visual"><figure><img ' + p1 + ' title="' + p2 + '"><figcaption class="hr"><hr>' + p2 + '</figcaption></figure></div><div class="content-text">'
+                return '</div><a href="#' + id + '" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="' + id + '" class="content-visual"><figure><img ' + p1 + ' title="' + p2 + '"><figcaption class="hr"><hr>' + p2 + '</figcaption></figure></div></a><div class="content-text">'
               }
           },
           // code block
