@@ -40,10 +40,10 @@ function initLocalStorage() {
 function initReveal() {
 	// Transition in effects
 	if($wipContainer) {
-		$wipContainer.classList = ['reveal'];
+		$wipContainer.classList.add('reveal');
 	}
 	if($revealOverlay) {
-		$revealOverlay.classList = ['show'];
+		$revealOverlay.classList.add('show');
 		setTimeout(revealComplete, 900);
 	}
 }
@@ -75,7 +75,8 @@ function initScroll() {
 }
 
 function revealComplete() {
-	$revealOverlay.classList = ['hide'];
+	$revealOverlay.classList.remove('show');
+	$revealOverlay.classList.add('hide');
 }
 
 function updateLocalStorage(key, value) {
@@ -124,7 +125,13 @@ function onToggleNav(e) {
 	// Update toggles/classes
 	$navMenuToggle.innerHTML = 'Chapter<br>Selection<br>' + (isMenuOpen ? '-' : '+');
 	isMenuOpen ? $nav.classList.add('nav-open') :  $nav.classList.remove('nav-open');
-	$navMenu.classList = isMenuOpen ? ['nav-menu-open'] : ['nav-menu-closed'];
+	if(isMenuOpen) {
+		$navMenu.classList.add('nav-menu-open');
+		$navMenu.classList.remove('nav-menu-closed');
+	} else {
+		$navMenu.classList.add('nav-menu-closed');
+		$navMenu.classList.remove('nav-menu-open');
+	}
 
 	// Determine scroll
 	// Update body height so simultanous menu expand animation and scroll animation don't conflict (full height isn't reached until expand animation completes)

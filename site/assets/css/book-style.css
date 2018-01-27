@@ -396,7 +396,8 @@ footer a:hover {
 	text-decoration: none;
 }
 
-.heading-anchor-hash {
+.heading-anchor-hash,
+.figure-anchor-hash {
 	color: #24292e;
 	position: absolute;
     margin-left: -36px;
@@ -404,6 +405,15 @@ footer a:hover {
     line-height: normal;
     cursor: pointer;
     user-select: none;
+}
+
+.figure-anchor-hash {
+    color: #999;
+    padding: 0;
+    margin: 0;
+    line-height: inherit;
+    margin-left: -14px;
+    font-size: 80%;
 }
 
 .content-visual,
