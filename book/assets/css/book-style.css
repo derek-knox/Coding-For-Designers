@@ -125,6 +125,7 @@ section {
 }
 a, b, i, strong, em, small, code {
 	line-height: 0;
+	outline: 0;
 }
 hr {
 	border: none;
