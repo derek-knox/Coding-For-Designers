@@ -201,7 +201,14 @@ Metalsmith(__dirname)
           {
               search: 'Unity®',
               replace: 'Unity<sup>&#174;</sup>'
-          }
+          },
+          // heading anchors
+          {
+              search: /<h2 id="(.*)">(.*)<\/h2>/gm,
+              replace: function(match, p1, p2){
+                return '<div><a href="#' + p1 + '" class="heading-anchor" onclick="return onAnchorJump(this);"><span class="heading-anchor-hash">#</span>' + match + '</a></div>';
+              }
+          },
       ]
   }))
   .use(assets({

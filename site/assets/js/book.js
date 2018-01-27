@@ -142,6 +142,20 @@ function onToggleDarkMode(e) {
 	updateDarkMode();
 }
 
+function onAnchorJump(e) {
+
+	// Scroll
+	e.scrollIntoView({ 'behavior': 'smooth', 'block': 'start' })
+
+	// Delay hash update to prevent "jumpy" behavior
+	setTimeout(function() {
+		window.location.hash = e.hash.substr(1);
+	}, 500);
+
+	// Prevent default hash link "jump" behavior
+	return false;
+}
+
 // INITIALIZATION ------------------------------------------------------------------------------
 
 function ready(fn) {

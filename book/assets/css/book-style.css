@@ -377,7 +377,6 @@ footer a:hover {
 
 /* Visual Areas (main copy, image figure w/caption, and code) */
 
-
 .header-chapter,
 .change-chapter,
 .content-text,
@@ -389,6 +388,20 @@ footer a:hover {
 
 .header-chapter {
 	padding-top: 100px;
+}
+
+.heading-anchor {
+	text-decoration: none;
+}
+
+.heading-anchor-hash {
+	color: #24292e;
+	position: absolute;
+    margin-left: -36px;
+    padding: 12px 24px 12px 12px;
+    line-height: normal;
+    cursor: pointer;
+    user-select: none;
 }
 
 .content-visual,
@@ -522,6 +535,10 @@ body.dark-mode {
 	border-bottom: 1px solid #555;
 }
 
+.dark-mode .heading-anchor-hash {
+	color: #99cc33;
+}
+
 /* Utils */
 
 .align-flex-center {
@@ -570,10 +587,14 @@ body.dark-mode {
 		font-size: 2.22222222em;
 	}
 	h2, .intro-top h2 {
-		font-size: 1em;
+		font-size: 1.4em;
 	}
 	h3, .intro-top h3 {
 		font-size: .9em;
+	}
+	.heading-anchor-hash {
+		margin-left: -18px;
+    	padding: 1px;
 	}
 	.home-buttons {
 		margin-top: 0;
