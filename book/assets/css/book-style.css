@@ -420,6 +420,7 @@ footer a:hover {
 	user-select: none;
 	position: relative;
 	padding-top: 100px;
+	overflow: hidden;
 }
 
 .heading-anchor,
