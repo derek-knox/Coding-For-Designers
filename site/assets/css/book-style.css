@@ -129,9 +129,6 @@ a, b, i, strong, em, small, code {
 }
 hr {
 	border: none;
-	background-color: #666;
-    height: 1px;
-	margin: 1em -1em;
 }
 sub, sup {
 	line-height: 0;
@@ -445,6 +442,7 @@ footer a:hover {
     padding: 0;
     margin: 0;
     line-height: inherit;
+    margin-top: 2px;
     margin-left: -14px;
     font-size: 80%;
 }

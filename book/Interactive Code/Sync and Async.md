@@ -23,7 +23,7 @@ Answer time:
 
 The Event Loop Machine 3D visualization from the *Event Loop* section should be popping into your head. The event loop cannot cycle when work is on the stack. The loop is blocked. The event queue does not prevent the event loop from cycling. The loop is not blocked.
 
-Let's look at code examples of both work types to see this in action. We haven't specifically covered JavaScript outside the brief introduction in the *Elements and Elements* section, but I am confident you'll get the gist.
+Let's look at code examples of both work types to see this in action. We haven't specifically covered JavaScript outside the brief introduction in the *Elements and Elements* section, but I am confident you'll get the gist. At the very least use this time to test your assumptions.
 
 Sync work:
 ```javascript

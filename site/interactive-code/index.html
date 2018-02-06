@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
     <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.0.75">
+    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.0.79">
     <link rel="stylesheet" href="../assets/css/prism.css">
   </head>
   <body>
@@ -318,7 +318,7 @@
 </table>
 
 <p>The Event Loop Machine 3D visualization from the <em>Event Loop</em> section should be popping into your head. The event loop cannot cycle when work is on the stack. The loop is blocked. The event queue does not prevent the event loop from cycling. The loop is not blocked.</p>
-<p>Let&apos;s look at code examples of both work types to see this in action. We haven&apos;t specifically covered JavaScript outside the brief introduction in the <em>Elements and Elements</em> section, but I am confident you&apos;ll get the gist.</p>
+<p>Let&apos;s look at code examples of both work types to see this in action. We haven&apos;t specifically covered JavaScript outside the brief introduction in the <em>Elements and Elements</em> section, but I am confident you&apos;ll get the gist. At the very least use this time to test your assumptions.</p>
 <p>Sync work:</p>
 </div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">makeBackgroundBlack</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>backgroundColor <span class="token operator">=</span> <span class="token string">&apos;#000000&apos;</span><span class="token punctuation">;</span>
@@ -399,7 +399,7 @@
 <p>The details of how the internet facilitates this communication is elegant and impressive, but not a focus of this book. I highly recommend <em>Introduction to Networking</em> by Charles Severance if you want to dig deeper, but it is not required reading to move forward. Just know that the internet enables a client computer and a server computer to talk.</p>
 <p>Let&apos;s look at two example programs that utilize the internet to help solidify your understanding. One program will be a web browser and the other an internet-connected mobile game. Let&apos;s just say that each example is running on a smartphone. Both the browser and the game are on the client, the smartphone. Each program leverages distinct APIs to request information from distinct and remote computers, the servers. Pretty simple relationship really.</p>
 </div><a href="#client-and-server" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="client-and-server" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg" alt="Client and Server" title="Client and Server"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>Client and Server</figcaption></figure></div></a><div class="content-text">
-<p>You already know that a web browser may be used to access a particular website or web app. While the site or web app is running, its code can make <em>additional requests</em> to the server in an effort to get additional data. For example, when a sport statistics app is starting up, or another input trigger occurs, the app could use an API to get the most up-to-date scores and stats. An updated version of the app is not required. Instead, an API interaction provides updated data. This is super useful.</p>
+<p>You already know that a web browser may be used to access a particular website or web app. While the site or web app is running, its code can make <em>additional requests</em> to a server in an effort to get additional data. For example, when a sport statistics app is starting up, or another input trigger occurs, the app could use an API to get the most up-to-date scores and stats. An updated version of the app is not required. Instead, an API interaction provides updated data. This is super useful.</p>
 <p>An internet-connected game works exactly the same way. When it starts up, or another input trigger occurs, it could make an API request to get current world-wide player rankings for the game. Additionally, if the designers and code authors designed the game in such a way, they could make different API requests for new worlds, levels, characters, etc. No update required. Pretty damn cool.</p>
 <p>A server, if you didn&apos;t guess already, is also responsible for providing a client web browser the <em>initial</em> HTML, CSS, and JavaScript for a website or web app. If too many people try to access the same data at the same time however, the server can crash. It is worth noting that each client is actually getting a copy of the data to reconstruct in its browser. Typically a crash occurs because the server software can&apos;t properly provide the various clients the copies fast enough. I mention this simply because many people don&apos;t grasp the fact that the client reconstructs what the server provides.</p>
 <p>Having talked about HTML, CSS, and JavaScript at solely a high level thus far, now is a great time to venture deeper. We&apos;ll do so next by exploring the anatomy of the three file types <code>.html</code>, <code>.css</code>, and <code>.js</code>.</p>
@@ -679,7 +679,7 @@ assets
 </li>
 </ol>
 <p>The above four parts make up the anatomy of a function. First, the <code>function</code> keyword tells the JavaScript engine your intent to define a function. Second, a custom identifier is set to enable other code to properly reference and call the function by name. Third, the function&apos;s signature input defines what arguments the function expects to use when doing its work. No arguments are expected for <code>toggleImageOpacity</code> currently. Lastly, the <code>{</code> and <code>}</code> define the bounds of the function body. All functions return a value prior to closing the function body too, but this <em>function signature output</em> will be covered in the next chapter. </p>
-<p>With respect to making snippet one <em>right</em> there is nothing we can do. A case could be made for making it <em>better</em> by renaming <code>toggleImageOpacity</code> to a single character alternative. This change is better for computers because there is less information to read which also translates to a smaller payload to send over a network. We won&apos;t make this change as we want to keep the code better for us humans. Research the <em>minification</em> process to learn about attaining the best of both worlds.</p>
+<p>With respect to making snippet one <em>right</em> there is nothing we can do. A case could be made for making it <em>better</em> by renaming <code>toggleImageOpacity</code> to a single character alternative. This change is better for computers because there is less information to read which also translates to a smaller payload to send over a network. We won&apos;t make this change as we want to keep the code better for us humans. Research the automated <em>minification</em> process to learn about attaining the best of both worlds.</p>
 <p>In snippet two there are five parts comprising the line of code:</p>
 </div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token comment">// 2. variable declaration and assignment using imageToToggle identifier</span>
 <span class="token keyword">var</span> imageToToggle <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&apos;image-to-toggle&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -811,7 +811,7 @@ imageToToggle<span class="token punctuation">.</span>style<span class="token pun
     <div id='reveal-overlay'></div>
 
     <script src="../assets/js/three.min.js"></script>
-    <script src="../assets/js/book.js?1.0.75"></script>
+    <script src="../assets/js/book.js?1.0.79"></script>
     <script src="../assets/js/prism.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
