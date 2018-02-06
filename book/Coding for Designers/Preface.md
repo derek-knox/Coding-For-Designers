@@ -2,9 +2,9 @@ Virtually all existing resources aimed at teaching people *about* or *how-to* co
 
 If you author content and self-identify as an illustrator or graphic, visual, UI, UX, motion, or game designer, then this is for you. Other non-coders wanting to learn about or how-to code will greatly benefit too, but self-identifying designers are the focus. This book, the one I wish existed when I began coding, is also for an earlier time-slice of myself. He will not reap the benefits of its existence, but you will.
 
-Though designers do not *need* to learn to code, those who do will undoubtedly have a valuable and powerful skill added to their skillset. After reading this book, you will have acquired the knowledge and a strong mental model to inform any future code-related conversations and pursuits. Even if you never engage with authoring or reading code upon completion of this book, your understanding of code generally and JavaScript specifically will be well rooted.
+Though designers do not *need* to learn to code, those who do will undoubtedly have a valuable and powerful skill added to their skillset. After reading this book, you will have acquired the knowledge and a strong mental model to inform future code-related conversations and pursuits. Additionally, even if you never author or read code again, your newfound appreciation and understanding of code generally and JavaScript specifically will enable you to see the digital tools you use in a different light.
 
-Designer or not, this book is not for you if you want to jump *straight* into code. We cover many ideas, topics, and concepts before truly diving into actual programming code. This intentionality helps frame *why* certain programming concepts exist as they do.
+This book is not for you if you want to jump *straight* into code though. We cover many ideas, topics, and concepts before truly diving into actual programming code. This intentionality helps frame *why* certain programming concepts exist as they do.
 
 The primary goal of this book is to instill a mental model that helps designers learn coding concepts faster, more deeply, and more intuitively. The secondary goal is to lower the barrier of entry into JavaScript by instilling confidence in those new(er) to programming. Neither goal is efficiently achievable by taking the traditional approach.
 
