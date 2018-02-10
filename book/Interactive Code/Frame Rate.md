@@ -19,7 +19,7 @@ Milliseconds might be intimidating at first, but you'll get used to them quickly
 
 You usually don't have to worry about the 16.6ms window however. I present it here simply for you to keep it in the back of your mind.
 
-In the future, if your application's animation and motion seems to have hiccups or it looks janky, then you likely have a problem or two. Typically this means your code, or a 3rd-party's code, is: 
+In the future, if your application's animation and motion seems to have hiccups or it looks janky, then you likely have a problem or two. Typically this means your code, or a third-party's code, is: 
 1. doing too much work each frame
 2. doing work inefficiently
 
