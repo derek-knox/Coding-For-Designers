@@ -85,7 +85,7 @@ The work `setTimout` actually does, in English, is:
 3. wait for the timer to complete
 4. upon completion, update the event queue with the function provided
 
-What is cool about many functions, `setTimeout` included, is that they can be designed with a small amount of flexibility built-in. As you may have guessed, as long as we give `setTimeout` valid arguments, it will always do the work we want (via the function provided) after a delay (via the time provided). Pretty damn cool. You can design your own functions with flexibility as well.
+What is cool about many functions, `setTimeout` included, is that they can be designed with an amount of flexibility built-in. As you may have guessed, as long as we give `setTimeout` valid arguments, it will always do the work we want (via the function provided) after a delay (via the time provided). Pretty damn cool. You can design your own functions with flexibility as well.
 
 As a quick example, let's design a new function named `changeBackgroundColor`.
 ```javascript
