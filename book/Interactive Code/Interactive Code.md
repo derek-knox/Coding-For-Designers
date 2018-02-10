@@ -1,6 +1,6 @@
 So far we've broken down some barriers around coding and computers in general. We've learned about coding structure, style, and behavior too. Additionally, we've introduced programming relative to visual design's elements, principles, and constructs. Though there is always more to learn, your confidence should be magnitudes higher than when we started. Additionally, a mental model should be forming. Let's strengthen it.
 
-To do so, we will visit one more set of concepts before getting into JavaScript itself. Virtually all of these concepts are language agnostic. Hell yea.
+To do so, we will visit one more set of concepts before getting into JavaScript itself. Virtually all of these concepts are language agnostic. You are welcome.
 
 In this section, we will visit the most important programming concepts that will help shape your future programming efforts. We will talk about the three main and distinct timeframes when code exists. These are *authoring time*, *compile time*, and *execution time*. This knowledge will help you understand the transition from authoring code to interactive creations people can use. Following this, we will visit the *frame rate* and *event loop* concepts in detail so we have a fine-tuned grasp of what actually happens during *execution time*.
 
