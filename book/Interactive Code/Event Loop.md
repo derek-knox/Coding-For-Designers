@@ -48,7 +48,7 @@ Here is a 3D representation of the relationship between the runtime and engine p
 
 ![The Event Loop Machine](../assets/img/visual-todo-placeholder.jpg "The Event Loop Machine")
 
-During compile time, just before execution time, the engine quickly does three things with our code:
+During compile time, just before execution time, the engine quickly does three things with our authored code:
 1. reads
 2. reorganizes
 3. optimizes
