@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
     <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.0.79">
+    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.0.81">
     <link rel="stylesheet" href="../assets/css/prism.css">
   </head>
   <body>
@@ -177,7 +177,7 @@
       </div>
       <div class='content-text'>
         <p>So far we&apos;ve broken down some barriers around coding and computers in general. We&apos;ve learned about coding structure, style, and behavior too. Additionally, we&apos;ve introduced programming relative to visual design&apos;s elements, principles, and constructs. Though there is always more to learn, your confidence should be magnitudes higher than when we started. Additionally, a mental model should be forming. Let&apos;s strengthen it.</p>
-<p>To do so, we will visit one more set of concepts before getting into JavaScript itself. Virtually all of these concepts are language agnostic. Hell yea.</p>
+<p>To do so, we will visit one more set of concepts before getting into JavaScript itself. Virtually all of these concepts are language agnostic. You are welcome.</p>
 <p>In this section, we will visit the most important programming concepts that will help shape your future programming efforts. We will talk about the three main and distinct timeframes when code exists. These are <em>authoring time</em>, <em>compile time</em>, and <em>execution time</em>. This knowledge will help you understand the transition from authoring code to interactive creations people can use. Following this, we will visit the <em>frame rate</em> and <em>event loop</em> concepts in detail so we have a fine-tuned grasp of what actually happens during <em>execution time</em>.</p>
 <p>Next we will explore the differences between <em>sync</em> (happens now) and <em>async</em> (happens later) behavior. This exploration will naturally tie into visiting <em>interfacing</em> and the <em>client-server model</em>. As a result, we will learn how code talks to other code while also learning the specific benefits of having multiple computers communicate and/or do dedicated and unique work.</p>
 <p>Second to last, we will look at the <em>anatomy of HTML (<code>.html</code>), CSS (<code>.css</code>), and JavaScript (<code>.js</code>)</em>. This will allow us to reference real code against various concepts covered thus far. Lastly, we will cover the <em>work. right. better.</em> mantra to help you improve your code authoring over time. All coders live by this, myself included.</p>
@@ -229,7 +229,7 @@
 </div><a href="#1-second-=-1000-milliseconds-so-1000ms/60fps-=-16.6ms-per-frame" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="1-second-=-1000-milliseconds-so-1000ms/60fps-=-16.6ms-per-frame" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg" alt="1 second = 1000 milliseconds so 1000ms/60fps = 16.6ms per frame" title="1 second = 1000 milliseconds so 1000ms/60fps = 16.6ms per frame"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>1 second = 1000 milliseconds so 1000ms/60fps = 16.6ms per frame</figcaption></figure></div></a><div class="content-text">
 <p>Milliseconds might be intimidating at first, but you&apos;ll get used to them quickly. In fact, you likely already have an intuitive understanding of milliseconds. Do you ever feel an  animation within an application or game is too slow or too fast? The milliseconds chosen as the animation time is the culprit.</p>
 <p>You usually don&apos;t have to worry about the 16.6ms window however. I present it here simply for you to keep it in the back of your mind.</p>
-<p>In the future, if your application&apos;s animation and motion seems to have hiccups or it looks janky, then you likely have a problem or two. Typically this means your code, or a 3rd-party&apos;s code, is: </p>
+<p>In the future, if your application&apos;s animation and motion seems to have hiccups or it looks janky, then you likely have a problem or two. Typically this means your code, or a third-party&apos;s code, is: </p>
 <ol>
 <li>doing too much work each frame</li>
 <li>doing work inefficiently</li>
@@ -280,7 +280,7 @@
 </ol>
 <p>Here is a 3D representation of the relationship between the runtime and engine parts:</p>
 </div><a href="#the-event-loop-machine" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="the-event-loop-machine" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg" alt="The Event Loop Machine" title="The Event Loop Machine"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>The Event Loop Machine</figcaption></figure></div></a><div class="content-text">
-<p>During compile time, just before execution time, the engine quickly does three things with our code:</p>
+<p>During compile time, just before execution time, the engine quickly does three things with our authored code:</p>
 <ol>
 <li>reads</li>
 <li>reorganizes</li>
@@ -368,7 +368,7 @@
 <li>wait for the timer to complete</li>
 <li>upon completion, update the event queue with the function provided</li>
 </ol>
-<p>What is cool about many functions, <code>setTimeout</code> included, is that they can be designed with a small amount of flexibility built-in. As you may have guessed, as long as we give <code>setTimeout</code> valid arguments, it will always do the work we want (via the function provided) after a delay (via the time provided). Pretty damn cool. You can design your own functions with flexibility as well.</p>
+<p>What is cool about many functions, <code>setTimeout</code> included, is that they can be designed with an amount of flexibility built-in. As you may have guessed, as long as we give <code>setTimeout</code> valid arguments, it will always do the work we want (via the function provided) after a delay (via the time provided). Pretty damn cool. You can design your own functions with flexibility as well.</p>
 <p>As a quick example, let&apos;s design a new function named <code>changeBackgroundColor</code>.</p>
 </div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">changeBackgroundColor</span><span class="token punctuation">(</span>newColor<span class="token punctuation">)</span> <span class="token punctuation">{</span>
   document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>backgroundColor <span class="token operator">=</span> newColor<span class="token punctuation">;</span>
@@ -391,8 +391,8 @@
 <p>An API is just an interface. The doorknob of a door is an interface. The steering wheel of a vehicle is an interface. The keys of a virtual keyboard are too. Interfaces provide a way to interact. The doorknob and steering wheel are physical interfaces designed for humans. A virtual keyboard is a digital interface also designed for humans. An API is a programming interface designed for code. An API allows code to interact with other code, this is the takeaway.</p>
 <p>As a code author, you get ease-of-use while the underlying complexity is the code designer&apos;s responsibility. Think about it. As a driver of a vehicle, you do not need to know all the details of how the engine works to use it. The designers take that responsibility. Similarly with code, you just use the API provided to gain benefit. This is a pretty solid trade.</p>
 <p>In the last section we saw one API in action, the built-in <code>setTimeout</code> function. We wrote our code to interact with that API by giving it two argument values. Behind the scenes, the runtime wired up and provided the functionality we expected. Both you and I don&apos;t really care how the work is done as long as it gets done. This is the trade-off an API provides, a simpler way to do work. APIs rock!</p>
-<p>Earlier in the <em>Constructs and Components</em> section we covered built-in, 3rd party, and custom components. Naturally, they each provide various APIs. As previously mentioned, we can create useful code for others to use too. Another author using our code APIs doesn&apos;t have to care about how the work actually gets done. They get the same trade-off as us, a simpler way to do work.</p>
-<p>As you gain coding and programming experience, you&apos;ll memorize certain built-in and 3rd party APIs. This translates to improving your authoring speed. Don&apos;t worry about being slow when you start out, you&apos;ll get better in time.</p>
+<p>Earlier in the <em>Constructs and Components</em> section we covered built-in, third-party, and custom components. Naturally, they each provide various APIs. As previously mentioned, we can create useful code for others to use too. Another author using our code APIs doesn&apos;t have to care about how the work actually gets done. They get the same trade-off as us, a simpler way to do work.</p>
+<p>As you gain coding and programming experience, you&apos;ll memorize certain built-in and third-party APIs. This translates to improving your authoring speed. Don&apos;t worry about being slow when you start out, you&apos;ll get better in time.</p>
 <p>This might sound weird at first, but some APIs exist on a different computer than the one your program runs on. Whoa. Have you ever wondered how a particular app or game can provide new content without actually updating? Welcome to the <em>client-server model</em>.</p>
 <div><a href="#client-and-server" class="heading-anchor" onclick="return onAnchorJump(this);"><span class="heading-anchor-hash">#</span><h2 id="client-and-server">Client and Server</h2></a></div>
 <p>Clients and servers are computers that communicate over a network. The internet is one such network that facilitates this communication. Some of these computers are clients and some are servers. Sometimes a computer is both a client and a server. The distinction is simple. A client asks for data and the server provides it. The network between them is the communication channel.</p>
@@ -811,7 +811,7 @@ imageToToggle<span class="token punctuation">.</span>style<span class="token pun
     <div id='reveal-overlay'></div>
 
     <script src="../assets/js/three.min.js"></script>
-    <script src="../assets/js/book.js?1.0.79"></script>
+    <script src="../assets/js/book.js?1.0.81"></script>
     <script src="../assets/js/prism.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 

@@ -455,9 +455,13 @@ footer a:hover {
 	text-align: center;
 	border-top: 1px solid #cccccc;
 	border-bottom: 1px solid #cccccc;
-	background-color: #272822;
-	color: #eeeeee;
+	background-color: #eeeeee;
+	color: #272822;
 	font-size: 80%;
+}
+
+.content-code {
+	background-color: #272822;
 }
 
 .content-visual figure,
