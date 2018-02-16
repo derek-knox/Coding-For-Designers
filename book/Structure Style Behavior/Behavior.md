@@ -4,7 +4,7 @@ Behavior, as previously mentioned, is where the structural building blocks in co
 
 The possible behaviors, and their respective ease of application, is contextual. In the context of 2D with the web platform, behavior is applied via JavaScript code. In the context of 3D and Unity, behavior is applied via C# code. Each coding language, in conjunction with each platform’s authoring tools, provide ways to help you apply certain behavior. For example, Unity with C# provides simple ways (compared to the web and JavaScript) to apply behavior in 3D space.
 
-Behaviors may be different depending on the context, but their fundamental purpose remains constant. Behavior brings life to a design. It does so in the form of interactivity, motion, and/or logic. For example, a design with behavior may manifest as a creative authoring environment, an entertaining animation, or a mission critical tool. The manifestations are endless and limited only by your imagination.
+Behaviors may be different depending on the context, but their fundamental purpose remains constant. Behavior brings life to a design. It does so in the form of interactivity, motion, and logic. For example, a design with behavior may manifest as a creative authoring environment, an entertaining animation, or a mission critical tool. The manifestations are endless and limited only by your imagination.
 
 Let’s explore some specific applications of behavior by building off the previous structure and style examples.
 
@@ -28,7 +28,7 @@ Adornments may be added or removed dynamically too.
 
 ![TODO - Style add/remove](../assets/img/visual-todo-placeholder.jpg "TODO - Style add/remove")
 
-Behavioral changes to these structures and/or adornments are just as easily modifiable based on any of these three triggers.
+Behavioral changes to these structures or adornments are just as easily modifiable based on any of these three triggers.
 
 ![TODO - Behavior change](../assets/img/visual-todo-placeholder.jpg "TODO - Behavior change")
 

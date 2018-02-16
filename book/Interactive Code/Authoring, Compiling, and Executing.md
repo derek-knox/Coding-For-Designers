@@ -22,14 +22,14 @@ In essence, smart and nerdy authors write *compiler programs* that compile and c
 The output of this compilation process results in code that the computer *executes* in real-time. This process often manifests as an interactive user interface in an application or an interactive environment in a game.
 
 With Unity, the process is:
-1. *Author* code in a text editor and/or with Unity's built-in UI that generates code
+1. *Author* code in a text editor or with Unity's built-in UI that generates code
 2. Click the "Build" button to *compile* the authored code into an executable package
 3. *Execute* this file's code on the target operating system in real-time
     - Remember file extensions?
     - Remember decoding?
 
 With JavaScript in a web browser, the process is:
-1. *Author* code in a text editor and/or a tool that helps generate code
+1. *Author* code in a text editor or a tool that helps generate code
 2. View a web page that hosts your authored JavaScript code, the browser *compiles* it on the fly
 3. This compiled code is then automatically *executed* in real-time 
 

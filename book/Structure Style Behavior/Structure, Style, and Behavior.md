@@ -1,4 +1,4 @@
-Visual designs created directly with code and/or computer software most often only use 2D space. Do not let this be a limitation as a designer. Designs leveraging 3D space can be extremely valuable too, especially when designing novel user interfaces, games, and other creative interactive products. Ultimately, 3D design excels when conveying spatial relationships is valuable.
+Visual designs created directly with code or computer software most often only use 2D space. Do not let this be a limitation as a designer. Designs leveraging 3D space can be extremely valuable too, especially when designing novel user interfaces, games, and other creative interactive products. Ultimately, 3D design excels when conveying spatial relationships is valuable.
 
 Though a 2D and 3D design may look drastically different in comparison, a computer utilizes the same three concepts to render interactive visuals for each. These concepts are:
 1. Structure
@@ -7,7 +7,7 @@ Though a 2D and 3D design may look drastically different in comparison, a comput
 
 The virtual world in addition to the real world leverage these same concepts in fact.
 
-A building for example (virtual or physical) is composed of a particular arrangement of a set of building blocks. This is structure. These building blocks are adorned with materials and other objects that have aesthetic and/or functional value. This is style. The building blocks of the structure in combination with the adorned materials and objects may respond to interaction, the environment, and time. This is behavior.
+A building for example (virtual or physical) is composed of a particular arrangement of a set of building blocks. This is structure. These building blocks are adorned with materials and other objects that have aesthetic or functional value. This is style. The building blocks of the structure in combination with the adorned materials and objects may respond to interaction, the environment, and time. This is behavior.
 
 Combined, all three concepts enable an interactive design to exist, evoke meaning for, and engage one or more viewers. Exist. Evoke. Engage.
 

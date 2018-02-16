@@ -36,7 +36,7 @@ We can update our HTML-like example from before:
 </runtime>
 ```
 
-So what do each of these runtime parts do anyway? Here is a succint breakdown where the use of *work* implies some amount of code reading and/or executing:
+So what do each of these runtime parts do anyway? Here is a succint breakdown where the use of *work* implies some amount of code reading or executing:
 1. engine - does work
     - *heap* - shared memory for work
     - *stack* - organizes the engine's work
