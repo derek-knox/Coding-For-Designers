@@ -384,7 +384,7 @@ footer a:hover {
 }
 
 .toc .nav {
-	max-width: 720px; 
+	max-width: 680px; 
     margin: 0; 
     padding: 0;
 }
@@ -406,11 +406,16 @@ footer a:hover {
 
 /* Visual Areas (main copy, image figure w/caption, and code) */
 
+.content-core {
+	font-size: 16pt;
+	line-height: 1.4em;
+}
+
 .header-chapter,
 .change-chapter,
 .content-text,
 .content-code pre {
-	max-width: 720px;
+	max-width: 680px;
 	margin: 0 auto;
 	padding: 0 25px;
 }
@@ -625,6 +630,9 @@ body.dark-mode {
 	html {
 		font-size: 16px;
 	}
+	.content-core {
+		font-size: 14pt;
+	}
 	.intro-container {
 		padding: 0 25px;
 	}
@@ -635,7 +643,7 @@ body.dark-mode {
 }
 
 @media screen and (max-width: 480px),
-	   (max-device-width: 720px) and (orientation: landscape) {
+	   (max-device-width: 680px) and (orientation: landscape) {
 	h1, .intro-top h1 {
 		font-size: 2.22222222em;
 	}
