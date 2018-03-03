@@ -1,8 +1,8 @@
-Virtually all resources aimed at teaching people *about* or *how-to* code introduce the code itself too soon. In doing so, many fundamental and empowering concepts remain hidden and out of reach. These same resources often lack explanations of *why* a coding concept exists as it does. Designers are rarely considered. Coding for Designers is the response to this unfortunate reality.
+Virtually all resources aimed at teaching people *how-to* code introduce the code itself too soon. In doing so, many fundamental and empowering concepts remain hidden and out of reach. These resources often lack explanations of *why* a coding concept exists as it does. Additionally, these resources rarely consider designers directly. *Coding for Designers* is the response to this unfortunate reality.
 
 ## The Audience
 
-If you self-identify as an illustrator or graphic, visual, UI, UX, motion, or game designer, then this is for you. Other non-coders will benefit too, but self-identifying designers are the focus. This book, the one I wish existed when I began coding, is also for an earlier time-slice of myself. He will not reap the benefits of its existence; you will.
+If you self-identify as an illustrator or graphic, visual, UI, UX, motion, or game designer then this is for you. Other non-coders will benefit too, but self-identifying designers are the focus. This book–the one I wish existed when I began coding–is also for an earlier time-slice of myself. He will not reap the benefits of its existence, but you will.
 
 Designers do not *need* to learn to code, but those who do will develop a valuable and powerful ability. In completing this book, you will gain the knowledge and a strong mental model for informing future code-related conversations and pursuits. Additionally–even if you never author or read code again–you'll be equipped to see digital creations through a more capable lens.
 
@@ -14,7 +14,7 @@ The primary goal of this book is to instill a mental model that helps designers 
 
 ## The Approach
 
-The plan of attack is simple. In chapter one, *Breaking Barriers*, we will explore and demystify a series of concepts that intimidate most designers and non-coders. From the seemingly magical ones and zeros, to the code you will soon write, we will see simple, basic, repetitive, and reusable concepts at play.
+The plan of attack is simple. In chapter one, *Breaking Barriers*, we will explore and demystify a series of concepts that intimidate most designers and non-coders. From the seemingly magical ones and zeros, to the code you will soon write, we will see simple, repetitive, and reusable concepts at play.
 
 In chapter two, *Structure, Style, and Behavior*, we will cover the three codeable features that enable computers to render our dynamic and interactive creations. We will do so from both a 2D context with the web platform and a 3D context with the Unity<sup>®</sup> platform. These perspectives will help solidify the distinct role that structure, style, and behavior each play regardless of dimensionality.
 
@@ -22,8 +22,8 @@ Chapter three, *Programming and Visual Design*, will cover the Elements, Princip
 
 In chapter four, *Interactive Code*, we will introduce many concepts that are invaluable when authoring dynamic and interactive creations. In coding, the terminology and often the code words themselves are reused exactly or with subtle variation across languages. Spoken languages lack this luxury. We will also visually explore how our code works in real-time.
 
-Chapter five, *80/20 JavaScript*, will reinforce prior chapter learnings in the context of JavaScript. Additionally, we'll take an optimized approach to enable your productivity. This will offset the burden of knowing the entire language and all its idiosyncrasies.
+Chapter five, *80/20 JavaScript*, will reinforce prior concepts in the context of JavaScript. Additionally, we'll take an optimized approach to enable your productivity. This will offset the burden of knowing the entire language and all its idiosyncrasies.
 
-Finally in chapter six, *Deconstructing Designs*, we will put everything we have learned to practice. We will do so by analyzing and deconstructing the user interfaces of impactful applications. We will then reconstruct portions of their UIs relative to prior learnings.
+Finally in chapter six, *Deconstructing Designs*, we will put everything we have learned to practice. We will do so by analyzing and deconstructing the user interfaces of impactful applications. We will then reconstruct portions of their UIs to learn how they are made.
 
 Let’s do this.

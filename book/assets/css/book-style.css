@@ -170,7 +170,7 @@ footer {
 	left: 0;
 	width: 40px;
 	height: 40px;
-	z-index: 1;
+	z-index: 2;
 }
 
 /* WIP Banner */
@@ -680,7 +680,7 @@ body.dark-mode {
 		z-index: 1;
 	}
 	#mc_embed_signup input.email {
-		width: calc(100% - 100px);
+		width: calc(100% - 104px);
 	}
 	#mc_embed_signup .button {
 		width: 100%;
