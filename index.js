@@ -35,7 +35,7 @@ Metalsmith(__dirname)
   .metadata({
     title: "Coding for Designers",
     description: "...",
-    version: '1.0.95'
+    version: '1.0.97'
   })
   .source('./book')
   .destination('./site')
@@ -113,13 +113,13 @@ Metalsmith(__dirname)
       layout: 'home.html',
       htmlTitle: 'Coding <span>for</span><br>Designers',
       title: 'Coding for Designers',
-      description: 'A Visually Infused Prerequisite for Learning Code and JavaScript',
+      description: 'Demystifying Code and Learning JavaScript',
     },
     'collections.chapter0': {
       layout: 'chapter.html',
       htmlTitle: htmlTitles.chapter0,
       title: 'Preface',
-      description: 'A Visually Infused Prerequisite for Learning Code and JavaScript',
+      description: 'Demystifying Code and Learning JavaScript',
       htmlNextChapter: htmlTitles.openCh1 + htmlTitles.chapter1 + htmlTitles.closeCh
     },
     'collections.chapter1': {

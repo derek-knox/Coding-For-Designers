@@ -4,9 +4,11 @@ Virtually all resources aimed at teaching people *how-to* code introduce the cod
 
 If you self-identify as an illustrator or graphic, visual, UI, UX, motion, or game designer then this is for you. Other non-coders will benefit too, but self-identifying designers are the focus. This book–the one I wish existed when I began coding–is also for an earlier time-slice of myself. He will not reap the benefits of its existence, but you will.
 
-Designers do not *need* to learn to code, but those who do will develop a valuable and powerful ability. In completing this book, you will gain the knowledge and a strong mental model for informing future code-related conversations and pursuits. Additionally–even if you never author or read code again–you'll be equipped to see digital creations through a more capable lens.
+Many claim that designers *need* to learn to code. I disagree. Yes, learning to read and author code is a powerful ability, but so too is conveying ideas and information visually. I want only to empower you further.
 
-This book is not for you if you want to jump straight into code though. We cover many ideas, topics, and concepts before diving into actual programming code. This intentionality helps frame why certain programming concepts exist as they do.
+ In completing this book, you will gain knowledge and confidence for engaging in–not shying from–conversations about code. You will form a mental model to improve your ability to read and author of code. Additionally–even if you never read or author code again–you'll be equipped to see and design digital creations through a more capable lens.
+
+This book is not for you if you want to jump straight into code though. We cover many ideas, topics, and concepts before diving into actual programming code. This intentionality helps frame why certain programming concepts exist as they do. It also encourages a way of thinking that may be less familiar.
 
 ## The Goals
 
