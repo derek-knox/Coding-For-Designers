@@ -47,7 +47,7 @@ Counting starting at zero instead of one is a recurring pattern you will see in 
 
 ### HEX
 
-Hexadecimal is another common color code. It represents the same color range as RGB, just differently. Instead of a range between *0-255* for each R, G, and B value, HEX uses *00-FF* for each. The letters A-F replace the numbers 10-15 (A instead of 10 through F instead of 15). So for HEX, each color channel is represented by two characters (00-FF) instead of RGB's three (0-255).
+Hexadecimal is another common color code. It represents the same color range as RGB, just differently. Instead of a range between *0-255* for each R, G, and B value, HEX uses *00-FF* for each. The letters A-F replace the numbers 10-15 (A instead of 10 through F instead of 15). The reason for this is so less bits are needed. So for HEX, each color channel is represented by two characters (00-FF) instead of RGB's three (0-255).
 
 ![TODO - Table Replace](../assets/img/visual-todo-placeholder.jpg "TODO - Table Replace")
 
