@@ -45,6 +45,7 @@ Coding for Designers is a work-in-progress book that demystifies coding and Java
 - [Work. Right. Better.](http://codingfordesignersbook.com/interactive-code/#work-right-better-)
 
 ### [80/20 JavaScript](http://codingfordesignersbook.com/80-20-javascript/)
+- Mindset
 - Subset
 - Browser
 - Execution
