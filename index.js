@@ -35,7 +35,7 @@ Metalsmith(__dirname)
   .metadata({
     title: "Coding for Designers",
     description: "...",
-    version: '1.0.98'
+    version: '1.1.1'
   })
   .source('./book')
   .destination('./site')
@@ -149,7 +149,7 @@ Metalsmith(__dirname)
     'collections.chapter4': {
       layout: 'chapter.html',
       htmlTitle: htmlTitles.chapter4,
-      title: 'Coding & Concept',
+      title: 'Interactive Code',
       description: 'In chapter four, Interactive Code, we will introduce language agnostic concepts that are invaluable when authoring dynamic and interactive creations. In coding, the terminology and often the code words themselves are reused exactly or with subtle variation across languages. Spoken languages lack this luxury. We will also visually explore how our code actually runs in real-time.',
       htmlPrevChapter: htmlTitles.openCh3 + htmlTitles.chapter3 + htmlTitles.closeCh,
       htmlNextChapter: htmlTitles.openCh5 + htmlTitles.chapter5 + htmlTitles.closeCh
