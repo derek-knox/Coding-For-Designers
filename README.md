@@ -47,7 +47,7 @@ Coding for Designers is a work-in-progress book that demystifies coding and Java
 ### [80/20 JavaScript](http://codingfordesignersbook.com/80-20-javascript/)
 - Mindset
 - Subset
-- Browser
+- Environment
 - Execution
 - Values
 - Operators
