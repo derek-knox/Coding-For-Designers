@@ -91,7 +91,7 @@ Metalsmith(__dirname)
     output: 'interactive-code.md'
   }))
   .use(concat({
-    files: ['JavaScript/wip.md'],
+    files: ['JavaScript/JavaScript.md'],
     output: '80-20-javascript.md'
   }))
   .use(concat({
