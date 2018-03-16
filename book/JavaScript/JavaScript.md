@@ -4,11 +4,11 @@ The aim of this chapter is to introduce JavaScript with this 80/20 notion in min
 
 The subset we'll focus on will help you author code that works. As you saw in *Work. Right. Better.*, this focus does not mean the code is not right. The Work. Right. Better. mantra simply provides a path for improving code over time.
 
-Prior to introducing this subset and detailing its parts we'll cover a *mindset* to adopt. This mindset will further prime and reinforce the mental model you've developed thus far.
+Prior to introducing this subset and detailing its parts we'll cover a *mindset* to adopt. This mindset will lend itself to the mental model you've developed thus far.
 
 ## Mindset
 
-This section covers a mindset, a way of thinking, for improved reading and authoring of JavaScript. These five ideas below will influence your way of thinking throughout the rest of this book and beyond:
+The five ideas below will influence your way of thinking about JavaScript throughout the rest of this book and beyond:
 
 1. Thinking in three zoom levels
 2. Functions are your friend
