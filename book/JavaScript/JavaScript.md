@@ -28,13 +28,19 @@ There are three zoom levels you should consider when reading and authoring code:
 2. Statement pattern
 3. Value resolution
 
+#### Zoom Level 1 - Scope Trees
+
 Whenever you are starting to read or author code, place yourself at zoom level 1. Take note that your editor or authoring environment may help you here.
 
 When reading, the goal is to scan for functions. You are looking at both their names and their nested structure. JavaScript programs are simply a tree of functions and thus a tree of scopes. Identifying the names and nesting of functions helps you understand the structural shape of the program. Grasping the program shape (or a subset of the program shape) helps you understand where you want to zoom in next.
 
 When authoring, the goal is the same. If starting with no code you'll lack program shape, so this is only important when adding new code. When code already exists, this effort determines the target location for the code you plan to add. It's almost impossible to select the location correctly the first time so don't stress. This fact is why we'll explore the *refactor early and often* mantra soon.
 
-Getting an idea for the function names and their nested structure is vital for scanning code and this leads you to zoom level 2.
+Grasping the function names and their nested structure (program shape) is vital. Once a particular function is of enough interest, you enter zoom level 2.
+
+#### Zoom Level 2 - Statement Pattern
+
+...
 
 ### Functions are your Friend - (Reusability)
 ### Don't Repeat Yourself - (Pragmatic Programmer)
