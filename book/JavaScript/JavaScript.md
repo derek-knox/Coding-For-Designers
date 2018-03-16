@@ -16,7 +16,7 @@ The five ideas below will influence your way of thinking about JavaScript throug
 4. Refactor early and often
 5. Prototype to learn
 
-The first, *thinking in three zoom levels* will help you determine what to focus on at a given time. *Functions are your friend* will highlight why functions are so paramount. *Don't repeat yourself*, *refactor early and often*, and *prototype to learn* are programming mantras found in *The Pragmatic Programmer* by Andrew Hunt and David Thomas. In order they encourage you to author reusable code, agressively refine it, and experiment. Combined, the five ideas will influence your action (reading and authoring) as your mental model will influence high-level understanding.
+The first, *thinking in three zoom levels* will help you determine what to focus on at a given time. *Functions are your friend* will highlight why functions are so paramount. *Don't repeat yourself*, *refactor early and often*, and *prototype to learn* are programming mantras found in *The Pragmatic Programmer* by Andrew Hunt and David Thomas. In order they encourage you to author reusable code, agressively refine it, and to experiment. Combined, the five ideas will influence your action (reading and authoring) as your mental model will influence high-level understanding.
 
 *Note about editors and authoring environments - pool your 5-7 local devs and online in search of diverse opinions. new and better tools are released so pick the one that's best for you based on opinions you trust. remember however that you can use the most basic text or file editor to read and author code, but certain editors will make your life much less painful in comparison*
 
