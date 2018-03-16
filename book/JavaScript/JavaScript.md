@@ -24,9 +24,9 @@ The first, *thinking in three zoom levels* will help you determine what to focus
 
 There are three zoom levels you should consider when reading and authoring code:
 
-1x. Scope tree
-2x. Statement pattern
-3x. Value resolution
+1. Scope tree
+2. Statement pattern
+3. Value resolution
 
 Whenever you are starting to read or author code, place yourself at zoom level 1x. Take note that your editor or authoring environment may help you here.
 
