@@ -30,7 +30,7 @@ There are three zoom levels you should consider when reading and authoring code:
 
 Whenever you are starting to read or author code, place yourself at zoom level 1. Take note that your editor or authoring environment may help you here.
 
-When reading, the goal is to scan for functions. You are looking at both their names and their nested structure. JavaScript programs are simply a tree of functions and thus a tree of scopes. Identifying the names and nesting of functions helps you understand the structural shape of the program. Grasping the program shape (or a subset of the program) helps you understand where you want to zoom in next.
+When reading, the goal is to scan for functions. You are looking at both their names and their nested structure. JavaScript programs are simply a tree of functions and thus a tree of scopes. Identifying the names and nesting of functions helps you understand the structural shape of the program. Grasping the program shape (or a subset of the program shape) helps you understand where you want to zoom in next.
 
 When authoring, the goal is also to grasp the program shape. If starting with no code you'll lack program shape, so this is only important when adding new code. When code already exists, this same scanning effort helps you understand where to zoom in next. As you might guess, being organized is extremely valueable when programming. Being organized helps ensure everyone wins. When adding code it's important to try to do so in the most logical place. It's almost impossible to get it right the first time and that's why we'll explore the *refactor early and often* mantra soon.
 
