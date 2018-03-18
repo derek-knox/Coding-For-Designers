@@ -86,7 +86,13 @@ h3 {
 	margin-top: 0.9787234em;
 	margin-bottom: 0.4893617em;
 }
-h1, h2, h3 {
+h4 {
+	font-size: 1.11111111em;
+	line-height: 1.5862069em;
+	margin-top: 0.9787234em;
+	margin-bottom: 0.4893617em;
+}
+h1, h2, h3, h4 {
 	line-height: 1em;
 	font-weight: 900;
 	color: #272822;
@@ -372,7 +378,7 @@ footer a:hover {
 	font-weight: 400;
 	line-height: 1.29em;
 	margin-top: 0;
-	margin: 0 0 20px;
+	margin: 0 0 30px;
 }
 .intro-top h3 {
 	font-size: 1.15em;
@@ -604,7 +610,8 @@ body.dark-mode {
 
 .dark-mode h1,
 .dark-mode h2,
-.dark-mode h3 {
+.dark-mode h3,
+.dark-mode h4 {
 	color: #99cc33;
 }
 
@@ -720,7 +727,13 @@ body.dark-mode {
 		font-size: 1em;
 	}
 	h3, .intro-top h3 {
+		font-size: 1.2em;
+	}
+	.intro-top h3 {
 		font-size: .9em;
+	}
+	h4 {
+		font-size: 1.1em;
 	}
 	.heading-anchor-hash {
 		margin-left: -18px;

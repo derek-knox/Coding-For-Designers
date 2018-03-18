@@ -45,16 +45,18 @@ Coding for Designers is a work-in-progress book that demystifies coding and Java
 - [Work. Right. Better.](http://codingfordesignersbook.com/interactive-code/#work-right-better-)
 
 ### [80/20 JavaScript](http://codingfordesignersbook.com/80-20-javascript/)
-- Mindset
+- [Mindset](http://codingfordesignersbook.com/80-20-javascript/#mindset)
 - Subset
+- Identifiers
 - Environment
 - Execution
+- Functions
+- Statements
 - Values
 - Operators
-- Identifiers
 - Conditionals
-- Functions
 - Errors
+- Debugging
 
 ### [Deconstructing Designs](http://codingfordesignersbook.com/deconstructing-designs/)
 - Adobe Illustrator
