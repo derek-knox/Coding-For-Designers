@@ -296,7 +296,7 @@ footer {
 
 .nav-open {
 	width: 340px;
-	height: 1420px;
+	height: 1660px;
 }
 
 .nav a:link,
@@ -708,7 +708,7 @@ body.dark-mode {
 	}
 	.nav-open {
 		width: calc(100vw - 54px);
-		height: 1242px;
+		height: 1462px;
 	}
 }
 

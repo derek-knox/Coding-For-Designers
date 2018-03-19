@@ -22,7 +22,7 @@
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
     <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon">
     <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.1.11">
+    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.1.14">
     <link rel="stylesheet" href="../assets/css/prism.css">
   </head>
   <body>
@@ -167,6 +167,19 @@
       					80/20<br>JavaScript
       				</h1>
       			</a>
+      			<ul class="nav-section">
+      				<li><a href="/80-20-javascript#mindset">Mindset</a></li>
+      				<li><a href="/80-20-javascript#environment">Environment</a></li>
+      				<li><a href="/80-20-javascript#identifiers">Identifiers</a></li>
+      				<li><a href="/80-20-javascript#execution">Execution</a></li>
+      				<li><a href="/80-20-javascript#functions">Functions</a></li>
+      				<li><a href="/80-20-javascript#statements">Statements</a></li>
+      				<li><a href="/80-20-javascript#values">Values</a></li>
+      				<li><a href="/80-20-javascript#operators">Operators</a></li>
+      				<li><a href="/80-20-javascript#conditionals">Conditionals</a></li>
+      				<li><a href="/80-20-javascript#errors">Errors</a></li>
+      				<li><a href="/80-20-javascript#debugging">Debugging</a></li>
+      			</ul>
       		</li>
       		<li>
       			<a href="/deconstructing-designs">
@@ -198,89 +211,56 @@
 <p>The subset we&#39;ll focus on will help you author code that works. As you saw in <em>Work. Right. Better.</em>, this focus does not mean the code is not right. The Work. Right. Better. mantra simply provides a path for improving code over time.</p>
 <p>Prior to introducing this subset and detailing its parts we&#39;ll cover a <em>mindset</em> to adopt. This mindset will lend itself to the mental model you&#39;ve developed thus far.</p>
 <div><a href="#mindset" class="heading-anchor" onclick="return onAnchorJump(this);"><span class="heading-anchor-hash">#</span><h2 id="mindset">Mindset</h2></a></div>
-<p>The five ideas below will influence your way of thinking about JavaScript throughout the rest of this book and beyond. They will simultaneously encourage tactics for reading and authoring.</p>
+<p>The five ideas below will influence your way of thinking about JavaScript throughout the rest of this book and beyond. They will simultaneously encourage tactics to use when reading and authoring code. For brevity, I will use the term coding to encapsulate reading and authoring moving forward. The five ideas are:</p>
 <ol>
 <li>Thinking in three zoom levels</li>
 <li>Functions are your friend</li>
+<li>Prototype to learn</li>
 <li>Don&#39;t repeat yourself</li>
 <li>Refactor early and often</li>
-<li>Prototype to learn</li>
 </ol>
-<p>The first, <em>thinking in three zoom levels</em> will help you determine what to focus on at a given time. <em>Functions are your friend</em> will highlight why functions are so paramount. <em>Don&#39;t repeat yourself</em>, <em>refactor early and often</em>, and <em>prototype to learn</em> are programming mantras found in <em>The Pragmatic Programmer</em> by Andrew Hunt and David Thomas. They encourage you to author reusable code, aggressively refine it, and to experiment. Combined, the five ideas will influence your action (reading and authoring) as your mental model will influence high-level understanding.</p>
-<p><em>It is worth noting that any text editor is usable for authoring code. Dedicated code editors however are designed to make a programmer&#39;s life less painful and much more efficient. Ask online or local programmers that you trust to determine which code editor is best for you. SublimeText, Visual Studio Code, and WebStorm are currently all great editors.</em></p>
-<h3 id="thinking-in-three-zoom-levels">Thinking in Three Zoom Levels</h3>
-<p>There are three zoom levels you should consider when reading and authoring code:</p>
+<p>The first, <em>thinking in three zoom levels</em> will help you determine what to focus on at a given time. <em>Functions are your friend</em> will highlight why functions are so paramount. <em>Prototype to learn</em>, <em>Don&#39;t repeat yourself</em>, and <em>refactor early and often</em> are programming mantras found in <em>The Pragmatic Programmer</em> by Andrew Hunt and David Thomas. They encourage you to experiment, author reusable code, and aggressively refine it. Combined, the five ideas will influence your actions when coding while your mental model will influence high-level understanding.</p>
+<h3 id="1-thinking-in-three-zoom-levels">1. Thinking in Three Zoom Levels</h3>
+<p>There are three zoom levels you should consider when coding:</p>
 <ol>
 <li>Scope tree</li>
 <li>Statement pattern</li>
 <li>Value resolution</li>
 </ol>
-<p>These zoom levels are useful at authoring time and execution time.</p>
-<h4 id="zoom-level-1-scope-trees">Zoom Level 1 - Scope Trees</h4>
-<p>Whenever you are starting to read or author code, place yourself at zoom level 1. Take note that your editor or authoring environment may help you here.</p>
+<p>These zoom levels are useful at authoring time (within code files) and execution time (within the program). This three zoom level approach is a tactic for navigating and understanding code more quickly.</p>
+<p><em>It is worth noting that any text editor is usable for coding. Dedicated code editors however are designed specifically to make our coding efforts less painful and much more efficient. Ask online or local programmers that you trust to determine which code editor is best for you. SublimeText, Visual Studio Code, and WebStorm (among many others) are all great editors currently.</em></p>
+<h4 id="zoom-level-1-scope-tree">Zoom Level 1 - Scope Tree</h4>
+<p>Whenever you are starting to read or author code, place yourself at zoom level 1. Take note that your editor, authoring environment, and debugger (we&#39;ll cover this guy later) will be of help at this step.</p>
 <p>When reading, the goal is to scan for functions. You are looking at both their names and their nested structure. JavaScript programs are simply a tree of functions and thus a tree of scopes. Identifying the names and nesting of functions helps you understand the structural shape of the program. Grasping the program shape (or a subset of the program shape) helps you understand where you want to zoom in next.</p>
-<p>When authoring, the goal is the same. If starting with no code you&#39;ll lack program shape, so this is only important when adding new code. When code already exists, this effort determines the target location for the code you plan to add. It&#39;s almost impossible to select the location correctly the first time so don&#39;t stress. This fact is why we&#39;ll explore the <em>refactor early and often</em> mantra soon.</p>
-<p>Grasping the function names and their nested structure (program shape) is vital. Once a particular function is of enough interest, you enter zoom level 2.</p>
+<p>When authoring, the goal is the same. If starting with no code you&#39;ll lack program shape, so this is only important when adding new code. When code already exists, this effort determines the target location for the code you plan to add. It can be difficult to select the location correctly the first time so don&#39;t stress. This fact is why we&#39;ll explore the <em>refactor early and often</em> mantra soon.</p>
+<p>Grasping the function names and their nested structure (program shape) is vital. We will cover their three fundamental use cases in the <em>Functions</em> section that soon follows. Once a particular function is of enough interest, you enter zoom level 2.</p>
 <h4 id="zoom-level-2-statement-pattern">Zoom Level 2 - Statement Pattern</h4>
-<p>...</p>
-<h3 id="functions-are-your-friend-reusability-">Functions are your Friend - (Reusability)</h3>
-<h3 id="don-t-repeat-yourself-pragmatic-programmer-">Don&#39;t Repeat Yourself - (Pragmatic Programmer)</h3>
-<h3 id="refactor-early-and-often-pragmatic-programmer-tie-in-to-distinct-services-views-models-etc-">Refactor Early and Often - (Pragmatic Programmer, tie in to distinct Services, Views, Models, etc)</h3>
-<h3 id="prototype-to-learn-pragmatic-programmer-cheap-but-valuable-speed-iteration-">Prototype to Learn - (Pragmatic Programmer, cheap but valuable, speed, iteration)</h3>
+<p>Zoom level 2 is all about prepping yourself to get answers in zoom level 3. Answers in this context are synonymous with values. Once you have values, they can be understood and operated on. Values ensure a function can actually do work.</p>
+<p>We will cover the specific statement patterns to look out for in the <em>Statements</em> section that soon follows.</p>
+<h4 id="zoom-level-3-value-resolution">Zoom Level 3 - Value Resolution</h4>
+<p>At zoom level 3 we have determined the statement pattern for a given code statement. Once determined, this informs the steps we take in resolving the values of it. Again, functions can&#39;t do work unless values exist. Since a program is a dynamic and living thing, these values can be different at different times. We take the three zoom level approach to help us determine the exact values at a given time.</p>
+<h3 id="2-functions-are-your-friend">2. Functions are your Friend</h3>
+<p>We will continue to reinforce the importance of functions throughout this book. They enable interactive code and the respective manifestation of the amazing games, tools, and software we love, to exist. It is in your best interest to make functions your friend.</p>
+<p>Each function has one of three fundamental use cases in JavaScript. Remember that a function still encapsulates its own scope regardless of use case. Each use case provides a means to a desired end. These use cases are:</p>
 <ul>
-<li>look at the code through three zoom levels<ul>
-<li>focus on patterns then details (this takes time where each zoom level is more detailed than the first)<ul>
-<li>zoom 1x - tree of functions, tree of scopes<ul>
-<li>trees can be huge and its valuable for you (and any developer) to focus on a specific scope or small subset of function scopes as its really difficult to understand them all, especially during execution time!</li>
-<li>pros even have a hard time and its a limitation of being human (our short term memory...). As a result
-  1) flatter trees/hierarchys
-  2) small specific functions are desireable.<pre><code>  These two aspects, though I can&#39;t prove it, likely inspired many advanced/senior programmer claims that functional programming is a programming style worth pursuing. Again the computer doesn&#39;t care, but we as humans do and that&#39;s why these ideas mean more to us.
-</code></pre></div><div class="content-text"></li>
+<li>Function as organizational unit (scope tree)</li>
+<li>Function as instantiatable unit (statement pattern)</li>
+<li>Function as reusable work unit (value resolution)</li>
 </ul>
-</li>
-<li>zoom 2x - statement pattern (80/20 the most common/important statement patterns for doing work)</li>
-<li>zoom 3x - values <ul>
-<li>literals</li>
-<li>identifier<ul>
-<li>Built-in<ul>
-<li>Language</li>
-<li>Environment</li>
-</ul>
-</li>
-<li>Third-party</li>
-<li>Custom</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>take an example of some code used in a popular library and break it down in these three zoom levels (3 examples as expectation of this chapter - here&#39;s a thing and how it works and now here are three examples)</li>
-</ul>
-</li>
-<li>may or may not be worth mentioning, but &#39;task&#39; as statement and &#39;work&#39; as function (usually one or more tasks)</li>
-<li>don&#39;t mention this explicitly, but use the term &#39;function&#39; vs &#39;method&#39; everywhere (KISS - ensure entire book respects this)</li>
-<li>loopless programming (find clever way to not talk about &#39;loops&#39; but loop/iteration behavior (maybe conditional processing of each item in a collection?) and using JS built-in functions to accomplish the work)<ul>
-<li>*maybe make a grid/graph/chart showcasing this</li>
-<li>map (conversion aka convert each thing to this other thing, processes entire collection)</li>
-<li>reduce (reduction aka convert all the things into this one thing, processes entire collection)</li>
-<li>filter (filtration aka select specific things, processes entire collection)</li>
-<li>find (selection aka select a specific thing, processes collection until target found or search exhausted)</li>
-<li><ul>
-<li>use these functions with examples of software design/tools to showcase what they&#39;re (likely) doing under the hood - this will help communicate the value of using them within a common function of the tooling/software they likely use</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>find Kyle Simpson quote on &quot;80/90% of my code doesn&#39;t use &#39;this&#39;...&quot;</li>
-<li>worth mentioning that files are simply another way for us humans to group code in more understandable and digestable units<ul>
-<li>if computers and the networks on which they rely didn&#39;t help the code get transmitted quicker, we wouldn&#39;t even have to worry about ensuring our code was encoded in a way that is beneficial to network transmission of bits and bytes. Thankfully, just like coders who created the compilation programs, certain coders created tools that <em>minify</em> (an encoding) code for better transmission across networks like the internet.</li>
-<li>humans first, computers second (we have tools that automate improvement for computers, the focus is for us first)</li>
-</ul>
-</li>
-<li>abstraction... neocortex already does it and is one of the fundamental things that makes us human. Stretches our brain a bit, but it is built for abstraction. The act of focusing on reuse, recycling, efficiency, and clean-up will influence you to take a right/better approach as you try to make code work. Eventually you&#39;ll start to get the best of all possibilities.</li>
-<li>*random idea, for all the books that I mention, maybe have a psuedo shelf where the one(s) recently mentioned are in focus so I can have a visual to show off all the books</li>
-</ul>
+<p>We&#39;ll cover these in great detail in the <em>Functions</em> section below.</p>
+<h3 id="3-prototype-to-learn">3. Prototype to Learn</h3>
+<p>Code is virtual not physical. We must use this reality to our advantage. Authoring code and throwing it away is cheap and easy. We can undo and redo in an instant. This quality enables us to iterate quickly toward a solution or desired result with minimal consequence. Cheap and easy is not to be confused with being invaluable however. Prototyping is extremely valuable as you can explore a solution space quickly to learn. Learning through quick iteration eventually manifests as a clear or general path to follow. Following this path either leads to a solution or surfaces a new idea to prototype against.</p>
+<p>Prototyping is how we experiment when coding. Taking shortcuts and ignoring best practices is OK here. Only after we have a working prototype are we concerned with not taking shortcuts and following best practices. Prototypes require minimal effort but result in great value. Completing a prototype provides our first-step toward a shortcut-free and best practice implementation. It needs to work before it can be right and better.</p>
+<h3 id="4-don-t-repeat-yourself">4. Don&#39;t Repeat Yourself</h3>
+<p>Programming enables us to break the restrictions of the physical world. Every single day we do work to get results. Often times we&#39;ve done this work thousands of times before. A few things I do everyday that fit this description include eating, brushing my teeth, getting a glass of water, unlocking my phone, logging in to my computer, and reading. In each example I used energy to accomplish work to get a result. The work took some amount of time before I got the result. The result was not instantaneous. Regardless of how good or fast I get at the tasks that comprise the work, the result will never be instantaneous.</p>
+<p>In the virtual world, through software, we lack this restriction. We can get results instantaneously. In software we can codify the tasks that manifest as work. Once codified we can simply execute a particular function to do that work in order to get the desired result. The same effort that was initially required no longer exists, it is codified. The benefit is that we get the result in a fraction of the time.</p>
+<p>The takeaway is that we strive to create functions that are reusable. We briefly covered this idea earlier in the <em>Elements and Elements</em> section. Additionally, we provided a concrete example in the <em>Sync and Async</em> section with the <code>changeBackgroundColor(newColor)</code> function. We will further explore this idea and concrete examples in the <em>Functions</em> section.</p>
+<h3 id="5-refactor-early-and-often">5. Refactor Early and Often</h3>
+<p>As previously mentioned, it can be difficult to select the correct location the first time you add code. Additionally, it can be difficult enough to get code to work through prototyping. It can even be difficult to name identifiers well. Thankfully the code is not set in stone. It is easy to move and rename. We are working in the virtual not physical world after all. Use this to your advantage. Our editors can even help us accomplish this faster while minimizing error.</p>
+<p>The core benefit of refactoring is that it enables us to improve code readability. Remember the three zoom levels? Refactoring helps us here. Code complexity can also be reduced which makes it more understandable to us, other coders, and our future self.</p>
+<p>Take note that refactoring requires that the correct work still gets done. In other words, the functional behavior remains where the implementation of that behavior may differ. This idea parallels the <em>Work. Right. Better.</em> mantra in that refactoring leads to right and better. It is worth noting however that refactoring is a susceptible step in that it can lead to bugs. A bug is code that unintentionally prevents work or that does work incorrectly. We&#39;ll cover this more and explore concrete examples in the <em>Errors</em> and <em>Debugging</em> sections.</p>
+<p>The takeaway is that code is a living thing. It can be molded into a more perfect shape. Code can be made more understandable during authoring time while becoming more efficient during execution time. By refactoring early and often we author more readable, less complex, and sometimes more efficient code.</p>
+<p>...</p>
 
         </div>
       </div>
@@ -299,7 +279,7 @@
     <div id='reveal-overlay'></div>
 
     <script src="../assets/js/three.min.js"></script>
-    <script src="../assets/js/book.js?1.1.11"></script>
+    <script src="../assets/js/book.js?1.1.14"></script>
     <script src="../assets/js/prism.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
