@@ -94,6 +94,7 @@ Metalsmith(__dirname)
     files: ['JavaScript/JavaScript.md',
             'JavaScript/Environment.md',
             'JavaScript/Mindset.md',
+            'JavaScript/Subset.md',
             'JavaScript/Identifiers.md'],
     output: '80-20-javascript.md'
   }))
