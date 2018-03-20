@@ -45,10 +45,9 @@ Coding for Designers is a work-in-progress book that demystifies coding and Java
 - [Work. Right. Better.](http://codingfordesignersbook.com/interactive-code/#work-right-better-)
 
 ### [80/20 JavaScript](http://codingfordesignersbook.com/80-20-javascript/)
-- [Mindset](http://codingfordesignersbook.com/80-20-javascript/#mindset)
 - Environment
+- [Mindset](http://codingfordesignersbook.com/80-20-javascript/#mindset)
 - Identifiers
-- Execution
 - Functions
 - Statements
 - Values

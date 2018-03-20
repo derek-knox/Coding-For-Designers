@@ -22,7 +22,7 @@
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
     <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon">
     <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.1.14">
+    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.1.16">
     <link rel="stylesheet" href="../assets/css/prism.css">
   </head>
   <body>
@@ -168,10 +168,9 @@
       				</h1>
       			</a>
       			<ul class="nav-section">
-      				<li><a href="/80-20-javascript#mindset">Mindset</a></li>
       				<li><a href="/80-20-javascript#environment">Environment</a></li>
+      				<li><a href="/80-20-javascript#mindset">Mindset</a></li>
       				<li><a href="/80-20-javascript#identifiers">Identifiers</a></li>
-      				<li><a href="/80-20-javascript#execution">Execution</a></li>
       				<li><a href="/80-20-javascript#functions">Functions</a></li>
       				<li><a href="/80-20-javascript#statements">Statements</a></li>
       				<li><a href="/80-20-javascript#values">Values</a></li>
@@ -206,12 +205,16 @@
       </div>
       <div class='content-core'>
         <div class='content-text'>
-          <p>Have you ever heard of the Pareto principle? It states that roughly 80% of the output in a system comes from 20% of the input. Though this is not a hard and fast rule for all systems, it appears often enough to be a respected truth.</p>
-<p>The aim of this chapter is to introduce JavaScript with this 80/20 notion in mind. Though both numbers are rough, the takeaway is that you can be productive in JavaScript by knowing and using a small and specific subset of the language. This approach is in contrast to knowing all its keywords and various subsystems. I recommend learning them later if you are interested, but you don&#39;t need them all to be productive.</p>
-<p>The subset we&#39;ll focus on will help you author code that works. As you saw in <em>Work. Right. Better.</em>, this focus does not mean the code is not right. The Work. Right. Better. mantra simply provides a path for improving code over time.</p>
-<p>Prior to introducing this subset and detailing its parts we&#39;ll cover a <em>mindset</em> to adopt. This mindset will lend itself to the mental model you&#39;ve developed thus far.</p>
+          <p>Have you ever heard of the Pareto principle? It states that roughly 80% of the output in a system results from 20% of the input. Though this is not a hard and fast rule for all systems, it appears often enough to be a respected truth.</p>
+<p>The aim of this chapter is to introduce JavaScript with this 80/20 notion in mind. Though both numbers are rough, the takeaway is that you can be productive in JavaScript by knowing and using a small and specific subset of the language. This approach is in contrast to knowing all its keywords, their behavior, and the various subsystems. I recommend learning them later if you are interested, but you don&#39;t need them all to be productive.</p>
+<p>The subset we&#39;ll focus on will help you author code that works. As you saw in <em>Work. Right. Better.</em>, this focus does not mean the code is not right. The mantra simply provides a path for improving code over time.</p>
+<p>Prior to introducing this subset and detailing its parts we&#39;ll briefly cover JavaScript in terms of the <em>environment</em> in which it executes. We will then cover a <em>mindset</em> that explains useful tactics for reading and authoring in JavaScript. Finally, we&#39;ll be ready to dive into the subset, the code itself.</p>
+<div><a href="#environment" class="heading-anchor" onclick="return onAnchorJump(this);"><span class="heading-anchor-hash">#</span><h2 id="environment">Environment</h2></a></div>
+<p>As mentioned in the <em>Event Loop</em> section, there is a runtime that JavaScript executes within. This runtime is also known as the runtime <em>environment</em>. The browser has been the runtime environment of focus thus far. This fact will remain. You should know however that JavaScript can be executed in many different environments.</p>
+<p>In the <em>Client and Server</em> section, we learned that the browser is a client. Can JavaScript be executed in a server environment? You bet. This is known as a Node server. Some programs even embed an environment enabling coders to author plug-ins (new software) that extend the original program. JavaScript is a very flexible programming language. For this reason it is useful in many environments.</p>
+<p>We will continue to focus on JavaScript in the browser, just know it has more than one home.</p>
 <div><a href="#mindset" class="heading-anchor" onclick="return onAnchorJump(this);"><span class="heading-anchor-hash">#</span><h2 id="mindset">Mindset</h2></a></div>
-<p>The five ideas below will influence your way of thinking about JavaScript throughout the rest of this book and beyond. They will simultaneously encourage tactics to use when reading and authoring code. For brevity, I will use the term coding to encapsulate reading and authoring moving forward. The five ideas are:</p>
+<p>The five notions below will influence your way of thinking about JavaScript throughout the rest of this book and beyond. They will simultaneously explain useful tactics for reading and authoring code. For brevity, I will use the term coding to encapsulate reading and authoring moving forward. The five notions are:</p>
 <ol>
 <li>Thinking in three zoom levels</li>
 <li>Functions are your friend</li>
@@ -219,7 +222,7 @@
 <li>Don&#39;t repeat yourself</li>
 <li>Refactor early and often</li>
 </ol>
-<p>The first, <em>thinking in three zoom levels</em> will help you determine what to focus on at a given time. <em>Functions are your friend</em> will highlight why functions are so paramount. <em>Prototype to learn</em>, <em>Don&#39;t repeat yourself</em>, and <em>refactor early and often</em> are programming mantras found in <em>The Pragmatic Programmer</em> by Andrew Hunt and David Thomas. They encourage you to experiment, author reusable code, and aggressively refine it. Combined, the five ideas will influence your actions when coding while your mental model will influence high-level understanding.</p>
+<p>The first, <em>thinking in three zoom levels</em> will help you determine what to focus on at a given time. <em>Functions are your friend</em> will highlight why functions are so paramount. <em>Prototype to learn</em>, <em>Don&#39;t repeat yourself</em>, and <em>refactor early and often</em> are programming mantras found in <em>The Pragmatic Programmer</em> by Andrew Hunt and David Thomas. They encourage you to experiment, author reusable code, and aggressively refine it. Combined, the five notions will influence your actions when coding.</p>
 <h3 id="1-thinking-in-three-zoom-levels">1. Thinking in Three Zoom Levels</h3>
 <p>There are three zoom levels you should consider when coding:</p>
 <ol>
@@ -230,7 +233,7 @@
 <p>These zoom levels are useful at authoring time (within code files) and execution time (within the program). This three zoom level approach is a tactic for navigating and understanding code more quickly.</p>
 <p><em>It is worth noting that any text editor is usable for coding. Dedicated code editors however are designed specifically to make our coding efforts less painful and much more efficient. Ask online or local programmers that you trust to determine which code editor is best for you. SublimeText, Visual Studio Code, and WebStorm (among many others) are all great editors currently.</em></p>
 <h4 id="zoom-level-1-scope-tree">Zoom Level 1 - Scope Tree</h4>
-<p>Whenever you are starting to read or author code, place yourself at zoom level 1. Take note that your editor, authoring environment, and debugger (we&#39;ll cover this guy later) will be of help at this step.</p>
+<p>Whenever you are starting to read or author code, place yourself at zoom level 1. Take note that your editor, authoring environment, and debugger (we&#39;ll cover this guy later) may each be of help at this step.</p>
 <p>When reading, the goal is to scan for functions. You are looking at both their names and their nested structure. JavaScript programs are simply a tree of functions and thus a tree of scopes. Identifying the names and nesting of functions helps you understand the structural shape of the program. Grasping the program shape (or a subset of the program shape) helps you understand where you want to zoom in next.</p>
 <p>When authoring, the goal is the same. If starting with no code you&#39;ll lack program shape, so this is only important when adding new code. When code already exists, this effort determines the target location for the code you plan to add. It can be difficult to select the location correctly the first time so don&#39;t stress. This fact is why we&#39;ll explore the <em>refactor early and often</em> mantra soon.</p>
 <p>Grasping the function names and their nested structure (program shape) is vital. We will cover their three fundamental use cases in the <em>Functions</em> section that soon follows. Once a particular function is of enough interest, you enter zoom level 2.</p>
@@ -239,27 +242,29 @@
 <p>We will cover the specific statement patterns to look out for in the <em>Statements</em> section that soon follows.</p>
 <h4 id="zoom-level-3-value-resolution">Zoom Level 3 - Value Resolution</h4>
 <p>At zoom level 3 we have determined the statement pattern for a given code statement. Once determined, this informs the steps we take in resolving the values of it. Again, functions can&#39;t do work unless values exist. Since a program is a dynamic and living thing, these values can be different at different times. We take the three zoom level approach to help us determine the exact values at a given time.</p>
+<p>The takeaway is that the three zoom levels help you navigate and understand code more quickly.</p>
 <h3 id="2-functions-are-your-friend">2. Functions are your Friend</h3>
 <p>We will continue to reinforce the importance of functions throughout this book. They enable interactive code and the respective manifestation of the amazing games, tools, and software we love, to exist. It is in your best interest to make functions your friend.</p>
 <p>Each function has one of three fundamental use cases in JavaScript. Remember that a function still encapsulates its own scope regardless of use case. Each use case provides a means to a desired end. These use cases are:</p>
 <ul>
-<li>Function as organizational unit (scope tree)</li>
-<li>Function as instantiatable unit (statement pattern)</li>
-<li>Function as reusable work unit (value resolution)</li>
+<li>Function as organizational unit</li>
+<li>Function as instantiatable unit</li>
+<li>Function as reusable work unit</li>
 </ul>
-<p>We&#39;ll cover these in great detail in the <em>Functions</em> section below.</p>
+<p>The takeaway is that functions are paramount to a program. Without them, a program is of no use. We&#39;ll cover these three use cases in great detail in the <em>Functions</em> section below.</p>
 <h3 id="3-prototype-to-learn">3. Prototype to Learn</h3>
-<p>Code is virtual not physical. We must use this reality to our advantage. Authoring code and throwing it away is cheap and easy. We can undo and redo in an instant. This quality enables us to iterate quickly toward a solution or desired result with minimal consequence. Cheap and easy is not to be confused with being invaluable however. Prototyping is extremely valuable as you can explore a solution space quickly to learn. Learning through quick iteration eventually manifests as a clear or general path to follow. Following this path either leads to a solution or surfaces a new idea to prototype against.</p>
-<p>Prototyping is how we experiment when coding. Taking shortcuts and ignoring best practices is OK here. Only after we have a working prototype are we concerned with not taking shortcuts and following best practices. Prototypes require minimal effort but result in great value. Completing a prototype provides our first-step toward a shortcut-free and best practice implementation. It needs to work before it can be right and better.</p>
+<p>Code is virtual not physical. We must use this reality to our advantage. Authoring code and throwing it away is cheap and easy. We can undo and redo in an instant. This quality enables us to iterate quickly toward a solution or desired result with minimal consequence. Cheap and easy is not to be confused with being invaluable however. Prototyping is extremely valuable as you can explore a solution space quickly and learn. Learning through quick iteration eventually manifests as a clear path to follow. Following this path either leads to a solution or surfaces a new idea to prototype against.</p>
+<p>The takeaway is that prototyping is how we experiment when coding. Taking shortcuts and ignoring best practices is OK here. Only after we have a working prototype are we concerned with not taking shortcuts and following best practices. Prototypes require minimal effort but result in great value. Completing a prototype ensures we have something that works. Right and better are for later.</p>
 <h3 id="4-don-t-repeat-yourself">4. Don&#39;t Repeat Yourself</h3>
-<p>Programming enables us to break the restrictions of the physical world. Every single day we do work to get results. Often times we&#39;ve done this work thousands of times before. A few things I do everyday that fit this description include eating, brushing my teeth, getting a glass of water, unlocking my phone, logging in to my computer, and reading. In each example I used energy to accomplish work to get a result. The work took some amount of time before I got the result. The result was not instantaneous. Regardless of how good or fast I get at the tasks that comprise the work, the result will never be instantaneous.</p>
-<p>In the virtual world, through software, we lack this restriction. We can get results instantaneously. In software we can codify the tasks that manifest as work. Once codified we can simply execute a particular function to do that work in order to get the desired result. The same effort that was initially required no longer exists, it is codified. The benefit is that we get the result in a fraction of the time.</p>
-<p>The takeaway is that we strive to create functions that are reusable. We briefly covered this idea earlier in the <em>Elements and Elements</em> section. Additionally, we provided a concrete example in the <em>Sync and Async</em> section with the <code>changeBackgroundColor(newColor)</code> function. We will further explore this idea and concrete examples in the <em>Functions</em> section.</p>
+<p>Programming enables us to break the restrictions of the physical world. Every single day we do work to get results. Often times we&#39;ve done this work thousands of times before. A few things I do everyday that fit this description include eating, drinking water, and reading. In each example I use energy to accomplish work in an effort to get a result. The work takes some amount of time before I get the result. The result is not instantaneous. Regardless of how good or fast I get at the tasks that comprise the work, the result is never be instantaneous.</p>
+<p>We lack this restriction in the virtual world. We can get results instantly. In software we can codify the work. Once codified we can simply execute a particular function to do work and to get a desired result. The same effort that was initially required no longer exists. It is codified. We get the result in a fraction of the time.</p>
+<p>The takeaway is that we strive to create functions that are reusable. We briefly covered this idea earlier in the <em>Elements and Elements</em> section. Additionally, we provided a concrete example in the <em>Sync and Async</em> section with the <code>changeBackgroundColor(newColor)</code> function. We will further explore this idea and more concrete examples in the <em>Functions</em> section.</p>
 <h3 id="5-refactor-early-and-often">5. Refactor Early and Often</h3>
-<p>As previously mentioned, it can be difficult to select the correct location the first time you add code. Additionally, it can be difficult enough to get code to work through prototyping. It can even be difficult to name identifiers well. Thankfully the code is not set in stone. It is easy to move and rename. We are working in the virtual not physical world after all. Use this to your advantage. Our editors can even help us accomplish this faster while minimizing error.</p>
+<p>As previously mentioned, it can be difficult to select the correct location the first time you add code. Additionally, it can be difficult enough to get code to work through prototyping. It can even be difficult to name identifiers well. Thankfully the code is not set in stone. It is easy to move and rename. We are working in the virtual not physical world after all. Use this to your advantage. Our editors help us accomplish this faster while minimizing error.</p>
 <p>The core benefit of refactoring is that it enables us to improve code readability. Remember the three zoom levels? Refactoring helps us here. Code complexity can also be reduced which makes it more understandable to us, other coders, and our future self.</p>
 <p>Take note that refactoring requires that the correct work still gets done. In other words, the functional behavior remains where the implementation of that behavior may differ. This idea parallels the <em>Work. Right. Better.</em> mantra in that refactoring leads to right and better. It is worth noting however that refactoring is a susceptible step in that it can lead to bugs. A bug is code that unintentionally prevents work or that does work incorrectly. We&#39;ll cover this more and explore concrete examples in the <em>Errors</em> and <em>Debugging</em> sections.</p>
-<p>The takeaway is that code is a living thing. It can be molded into a more perfect shape. Code can be made more understandable during authoring time while becoming more efficient during execution time. By refactoring early and often we author more readable, less complex, and sometimes more efficient code.</p>
+<p>The takeaway is that code is a living thing. It can be molded into a more perfect shape. Code can be made more understandable during authoring time while becoming more efficient during execution time. By refactoring early and often we author more readable, less complex, and more efficient code.</p>
+<div><a href="#identifiers" class="heading-anchor" onclick="return onAnchorJump(this);"><span class="heading-anchor-hash">#</span><h2 id="identifiers">Identifiers</h2></a></div>
 <p>...</p>
 
         </div>
@@ -279,7 +284,7 @@
     <div id='reveal-overlay'></div>
 
     <script src="../assets/js/three.min.js"></script>
-    <script src="../assets/js/book.js?1.1.14"></script>
+    <script src="../assets/js/book.js?1.1.16"></script>
     <script src="../assets/js/prism.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 

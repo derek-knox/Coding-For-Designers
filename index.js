@@ -35,7 +35,7 @@ Metalsmith(__dirname)
   .metadata({
     title: "Coding for Designers",
     description: "...",
-    version: '1.1.14'
+    version: '1.1.16'
   })
   .source('./book')
   .destination('./site')
@@ -92,7 +92,9 @@ Metalsmith(__dirname)
   }))
   .use(concat({
     files: ['JavaScript/JavaScript.md',
-            'JavaScript/Mindset.md'],
+            'JavaScript/Environment.md',
+            'JavaScript/Mindset.md',
+            'JavaScript/Identifiers.md'],
     output: '80-20-javascript.md'
   }))
   .use(concat({
