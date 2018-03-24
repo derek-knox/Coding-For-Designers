@@ -4,4 +4,4 @@ The aim of this chapter is to introduce JavaScript with this 80/20 notion in min
 
 The subset we'll focus on will help you author code that works. As you saw in *Work. Right. Better.*, this focus does not mean the code is not right. The mantra simply provides a path for improving code over time.
 
-Prior to introducing this subset and detailing its parts we'll briefly cover JavaScript in terms of the *environment* in which it executes. We will then cover a *mindset* that explains useful tactics for reading and authoring in JavaScript. Finally, we'll be ready to dive into the subset, the code itself.
+Prior to introducing this subset and detailing its parts we'll briefly cover JavaScript in terms of the *environment* in which it is executed. We will then cover a *mindset* that explains useful tactics for reading and authoring JavaScript. Finally, we'll be ready to dive into the subset, the code itself.
