@@ -22,9 +22,9 @@ In chapter two, *Structure, Style, and Behavior*, we will cover the three codeab
 
 Chapter three, *Programming and Visual Design*, will cover the Elements, Principles, and Constructs of Visual Design relative to programming’s counterparts. This work will help shape a mental model tuned specifically for designers.
 
-In chapter four, *Interactive Code*, we will introduce many concepts that are invaluable when reading or authoring code. We'll explore many topics including frame rate, the event loop, interfaces, and code anatomy. In exploring them you will further improve and shape your mental model.
+In chapter four, *Interactive Code*, we will introduce many concepts that are invaluable when reading and authoring code. We'll explore many topics including frame rate, the event loop, interfaces, and code anatomy. In exploring them you will further improve and shape your mental model.
 
-Chapter five, *80/20 JavaScript*, will reinforce your learning thus far in the context of JavaScript. We'll take an optimized approach to enable your productivity. This will empower you to author JavaScript without knowing the entire language and all its idiosyncrasies.
+Chapter five, *80/20 JavaScript*, will reinforce your learning in the context of JavaScript. We'll take an optimized approach to enable your productivity. This will empower you to author JavaScript without knowing the entire language and all its idiosyncrasies.
 
 Finally in chapter six, *Deconstructing Designs*, we will put everything we have learned to practice. We will do so by analyzing and deconstructing the user interfaces of impactful applications. We will then reconstruct portions of their UIs to learn how they are made.
 
