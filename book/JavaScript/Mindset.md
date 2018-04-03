@@ -8,7 +8,7 @@ The five notions below will influence your way of thinking about JavaScript thro
 4. Don't repeat yourself
 5. Refactor early and often
 
-The first, *thinking in three zoom levels* will help you determine what to focus on at a given time. *Functions are your friend* will highlight why functions are so paramount. *Prototype to learn*, *don't repeat yourself*, and *refactor early and often* are programming mantras found in *The Pragmatic Programmer* by Andrew Hunt and David Thomas. They encourage you to experiment, author reusable code, and aggressively refine it. Combined, the five notions will influence your actions when coding.
+The first, *thinking in three zoom levels* will help you determine what to focus on at a given time. *Functions are your friend* will highlight why functions are so paramount. *Prototype to learn*, *don't repeat yourself*, and *refactor early and often* are programming mantras found in *The Pragmatic Programmer* by Andrew Hunt and David Thomas. They encourage you to experiment, author reusable code, and aggressively refine it. Combined, the five notions will influence your actions while coding.
 
 ### 1. Thinking in Three Zoom Levels
 
