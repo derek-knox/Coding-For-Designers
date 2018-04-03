@@ -88,4 +88,4 @@ Take note that refactoring requires that the correct work still gets done. In ot
 
 It is worth noting however that refactoring is a susceptible step in that it can lead to bugs. A bug is code that unintentionally prevents work or that does work incorrectly. We'll cover this more and explore concrete examples in the *Errors* and *Debugging* sections.
 
-The takeaway is that code is a living thing. It can be molded into a more perfect shape. Code can be made more understandable during authoring time while becoming more efficient during execution time. By refactoring early and often we author more readable, less complex, and more efficient code.
+The takeaway is that code is a living thing. It can be molded into a more perfect shape. Code can be made more understandable during authoring time while becoming more efficient during execution time. By refactoring early and often we can author more readable, less complex, and more efficient code.
