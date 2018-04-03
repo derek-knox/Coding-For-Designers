@@ -20,7 +20,7 @@ There are three zoom levels you should consider when coding:
 
 These zoom levels are useful at authoring time (within code files) and execution time (within the program). This three zoom level approach is a tactic for navigating and understanding code more quickly.
 
-*It is worth noting that any text editor is usable for coding. However dedicated code editors are designed specifically to make our coding efforts less painful and more efficient. Ask online or local programmers that you trust to determine which code editor is best for you. SublimeText, Visual Studio Code, and WebStorm (among many others) are all great editors currently.*
+*It is worth noting that any text editor is usable for coding. However, dedicated code editors are designed specifically to make our coding efforts less painful and more efficient. Ask online or local programmers that you trust to determine which code editor is best for you. SublimeText, Visual Studio Code, and WebStorm (among many others) are all great editors currently.*
 
 #### Zoom Level 1 - Scope Tree
 
