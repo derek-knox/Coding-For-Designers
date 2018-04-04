@@ -8,6 +8,8 @@ Identifiers
 - custom (assignable)
   - using ∞/∞
 
+*resume breakdown plan at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+
 Statements
 - reserved keywords used for control flow and custom identifier declarations
 
