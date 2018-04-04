@@ -9,7 +9,10 @@ Identifiers
   - using ∞/∞
 
 Statements
+- reserved keywords used for control flow and custom identifier declarations
 
 Expressions
+- reserved keywords and character sequences for defining values
 
 Operators
+- special characters for working with values
