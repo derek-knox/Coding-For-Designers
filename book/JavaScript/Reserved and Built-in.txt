@@ -141,3 +141,9 @@ ReferenceError
 SyntaxError
 TypeError
 URIError
+
+
+* Built-in (structured data)
+ArrayBuffer
+DataView
+JSON
