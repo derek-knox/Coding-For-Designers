@@ -147,3 +147,36 @@ URIError
 ArrayBuffer
 DataView
 JSON
+
+
+*Built-in (Control abstraction objects)
+Promise
+Generator
+GeneratorFunction
+
+
+*Built-in (Reflection)
+Reflect
+Proxy
+
+
+*Built-in (Internationalization)
+Intl
+Intl.Collator
+Intl.DateTimeFormat
+Intl.NumberFormat
+
+
+Built-in (WebAssembly)
+WebAssembly
+WebAssembly.Module
+WebAssembly.Instance
+WebAssembly.Memory
+WebAssembly.Table
+WebAssembly.CompileError
+WebAssembly.LinkError
+WebAssembly.RuntimeError
+
+
+Built-in (Other/Special)
+arguments
