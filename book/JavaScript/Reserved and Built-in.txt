@@ -1,3 +1,5 @@
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+
 *Reserved Words (cannot be used for identifiers)
 
 await (reserved in module code)
