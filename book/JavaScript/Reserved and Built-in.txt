@@ -1,6 +1,6 @@
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
 
-*Reserved Words (cannot be used for identifiers)
+--- Reserved Words (cannot be used for identifiers and are *non-assignable*) ---
 
 await (reserved in module code)
 break
@@ -48,18 +48,25 @@ with
 yield
 
 
-*Literals
+*Reserved Literals
 
-false (reserved words)
-null (reserved words)
-true (reserved words)
+false (reserved word)
+null (reserved word)
+true (reserved word)
 0, 1, 2, 3.9 ... (numbers)
 'some string'
 []
 {}
 
 
-*Types
+--- Non-reserved words and are reassignable (but shouldn't be - language flaw) ---
+
+*Built-in (values)
+Infinity
+NaN
+
+
+*Built-in (Types)
 Boolean
 Null
 Number
@@ -69,7 +76,37 @@ Symbol
 Undefined
 
 
-*Built-in (helpers)
+*Built-in (fundamental objects)
+Object
+Function
+Boolean
+Symbol
+Error
+EvalError
+InternalError
+RangeError
+ReferenceError
+SyntaxError
+TypeError
+URIError
+
+
+*Built-in (functions of the global object)
+eval()
+uneval() 
+isFinite()
+isNaN()
+parseFloat()
+parseInt()
+decodeURI()
+decodeURIComponent()
+encodeURI()
+encodeURIComponent()
+escape()
+unescape()
+
+
+*Built-in (helper objects)
 Date
 Math
 RegExp
