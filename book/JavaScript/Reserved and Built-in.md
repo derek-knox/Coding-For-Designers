@@ -1,0 +1,104 @@
+*Reserved Words (cannot be used for identifiers)
+
+await (reserved in module code)
+break
+case
+catch
+class
+const
+continue
+debugger
+default
+delete
+do
+else
+enum (for future use)
+export
+extends
+false (also a literal value)
+finally
+for
+function
+if
+implements (reserved in strict mode)
+import
+interface (reserved in strict mode)
+in
+instanceof
+let (reserved in strict mode)
+new
+package (reserved in strict mode)
+private (reserved in strict mode)
+protected (reserved in strict mode)
+null (also a literal value)
+return
+super
+switch
+this
+throw
+true (also a literal value)
+try
+typeof
+var
+void
+while
+with
+yield
+
+
+*Literals
+
+false (reserved words)
+null (reserved words)
+true (reserved words)
+0, 1, 2, 3.9 ... (numbers)
+'some string'
+[]
+{}
+
+
+*Types
+Boolean
+Null
+Number
+Object
+String
+Symbol
+Undefined
+
+
+*Built-in (helpers)
+Date
+Math
+RegExp
+
+
+*Built-in (indexed collections)
+Array
+Int8Array
+Uint8Array
+Uint8ClampedArray
+Int16Array
+Uint16Array
+Int32Array
+Uint32Array
+Float32Array
+Float64Array
+
+
+*Built-in (keyed collections)
+Map
+Set
+WeakMap
+WeakSet
+
+
+*Built-in (errors)
+Error
+EvalError
+InternalError
+RangeError
+ReferenceError
+SyntaxError
+TypeError
+URIError
