@@ -16,7 +16,8 @@ Statements
 
 Expressions
 - reserved keywords and character sequences for defining values
-  - using ~22/66
+  - using ~6/17
 
 Operators
 - special characters for working with values
+  - using ~14/51
