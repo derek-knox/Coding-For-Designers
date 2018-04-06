@@ -22,5 +22,5 @@ Operators
 - special characters for working with values
   - using ~14/51
 
-Total
+## Subset Total
  - using ~51/200
