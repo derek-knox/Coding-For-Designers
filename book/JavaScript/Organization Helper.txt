@@ -1,5 +1,7 @@
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
 
+# Keywords
+
 --- Reserved Words (cannot be used for identifiers and are *non-assignable*) ---
 
 await (reserved in module code)
@@ -180,3 +182,43 @@ WebAssembly.RuntimeError
 
 Built-in (Other/Special)
 arguments
+
+
+# Statements
+
+* Control flow
+Block {}
+break
+continue
+Empty
+if...else
+switch
+throw
+try...catch
+
+* Declarations
+var
+let
+const
+
+* Functions and classes
+function
+function*
+async function
+return
+class
+
+*Iterations
+do...while
+for
+for each...in
+for...in
+for...of
+while
+
+*Others
+debugger
+export
+import
+label
+with (bad)
