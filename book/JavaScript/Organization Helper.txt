@@ -222,3 +222,101 @@ export
 import
 label
 with (bad)
+
+# Expressions
+
+* Primary expressions
+this
+function
+class
+function*
+yield
+yield*
+ async function*
+ await
+[]
+{}
+/ab+c/i
+( )
+
+* Left-hand-side expressions
+Property accessors (dot and bracket notation)
+new
+new.target
+super
+...obj
+
+# Operators
+
+* Increment and decrement
+A++
+A--
+++A
+--A
+
+* Unary operators
+delete
+void
+typeof
++
+-
+~
+!
+
+* Arithmetic operators
++
+-
+/
+*
+%
+**
+
+* Relational operators
+in
+instanceof
+<
+>
+<=
+>=
+
+* Equality operators
+==
+!=
+===
+!==
+
+* Bitwise shift operators
+<<
+>>
+>>>
+
+* Binary bitwise operators
+&
+|
+^
+
+* Binary logical operators
+&&
+||
+
+* Conditional (ternary) operator
+(condition ? ifTrue : ifFalse)
+
+Assignment operators
+=
+*=
+/=
+%=
++=
+-=
+<<=
+>>=
+>>>=
+&=
+^=
+|=
+[a, b] = [1, 2]
+{a, b} = {a:1, b:2}
+
+* Comma operator
+,
