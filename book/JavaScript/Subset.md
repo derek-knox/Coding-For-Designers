@@ -21,3 +21,6 @@ Expressions
 Operators
 - special characters for working with values
   - using ~14/51
+
+Total
+ - using ~51/200
