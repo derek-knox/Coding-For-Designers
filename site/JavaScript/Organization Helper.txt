@@ -1,0 +1,322 @@
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+
+# Keywords
+
+--- Reserved Words (cannot be used for identifiers and are *non-assignable*) ---
+
+await (reserved in module code)
+break
+case
+catch
+class
+const
+continue
+debugger
+default
+delete
+do
+else
+enum (for future use)
+export
+extends
+false (also a literal value)
+finally
+for
+function
+if
+implements (reserved in strict mode)
+import
+interface (reserved in strict mode)
+in
+instanceof
+let (reserved in strict mode)
+new
+package (reserved in strict mode)
+private (reserved in strict mode)
+protected (reserved in strict mode)
+null (also a literal value)
+return
+super
+switch
+this
+throw
+true (also a literal value)
+try
+typeof
+var
+void
+while
+with
+yield
+
+
+*Reserved Literals
+
+false (reserved word)
+null (reserved word)
+true (reserved word)
+0, 1, 2, 3.9 ... (numbers)
+'some string'
+[]
+{}
+
+
+--- Non-reserved words and are reassignable (but shouldn't be - language flaw) ---
+
+*Built-in (values)
+Infinity
+NaN
+
+
+*Built-in (Types)
+Boolean
+Null
+Number
+Object
+String
+Symbol
+Undefined
+
+
+*Built-in (fundamental objects)
+Object
+Function
+Boolean
+Symbol
+Error
+EvalError
+InternalError
+RangeError
+ReferenceError
+SyntaxError
+TypeError
+URIError
+
+
+*Built-in (functions of the global object)
+eval()
+uneval() 
+isFinite()
+isNaN()
+parseFloat()
+parseInt()
+decodeURI()
+decodeURIComponent()
+encodeURI()
+encodeURIComponent()
+escape()
+unescape()
+
+
+*Built-in (helper objects)
+Date
+Math
+RegExp
+
+
+*Built-in (indexed collections)
+Array
+Int8Array
+Uint8Array
+Uint8ClampedArray
+Int16Array
+Uint16Array
+Int32Array
+Uint32Array
+Float32Array
+Float64Array
+
+
+*Built-in (keyed collections)
+Map
+Set
+WeakMap
+WeakSet
+
+
+*Built-in (errors)
+Error
+EvalError
+InternalError
+RangeError
+ReferenceError
+SyntaxError
+TypeError
+URIError
+
+
+* Built-in (structured data)
+ArrayBuffer
+DataView
+JSON
+
+
+*Built-in (Control abstraction objects)
+Promise
+Generator
+GeneratorFunction
+
+
+*Built-in (Reflection)
+Reflect
+Proxy
+
+
+*Built-in (Internationalization)
+Intl
+Intl.Collator
+Intl.DateTimeFormat
+Intl.NumberFormat
+
+
+Built-in (WebAssembly)
+WebAssembly
+WebAssembly.Module
+WebAssembly.Instance
+WebAssembly.Memory
+WebAssembly.Table
+WebAssembly.CompileError
+WebAssembly.LinkError
+WebAssembly.RuntimeError
+
+
+Built-in (Other/Special)
+arguments
+
+
+# Statements
+
+* Control flow
+Block {}
+break
+continue
+Empty
+if...else
+switch
+throw
+try...catch
+
+* Declarations
+var
+let
+const
+
+* Functions and classes
+function
+function*
+async function
+return
+class
+
+*Iterations
+do...while
+for
+for each...in
+for...in
+for...of
+while
+
+*Others
+debugger
+export
+import
+label
+with (bad)
+
+# Expressions
+
+* Primary expressions
+this
+function
+class
+function*
+yield
+yield*
+ async function*
+ await
+[]
+{}
+/ab+c/i
+( )
+
+* Left-hand-side expressions
+Property accessors (dot and bracket notation)
+new
+new.target
+super
+...obj
+
+# Operators
+
+* Increment and decrement
+A++
+A--
+++A
+--A
+
+* Unary operators
+delete
+void
+typeof
++
+-
+~
+!
+
+* Arithmetic operators
++
+-
+/
+*
+%
+**
+
+* Relational operators
+in
+instanceof
+<
+>
+<=
+>=
+
+* Equality operators
+==
+!=
+===
+!==
+
+* Bitwise shift operators
+<<
+>>
+>>>
+
+* Binary bitwise operators
+&
+|
+^
+
+* Binary logical operators
+&&
+||
+
+* Conditional (ternary) operator
+(condition ? ifTrue : ifFalse)
+
+Assignment operators
+=
+*=
+/=
+%=
++=
+-=
+<<=
+>>=
+>>>=
+&=
+^=
+|=
+[a, b] = [1, 2]
+{a, b} = {a:1, b:2}
+
+* Comma operator
+,
