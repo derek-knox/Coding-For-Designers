@@ -4,9 +4,9 @@ Just like natural languages have many words, rules, and exceptions, so too do pr
 
 With this in mind we'll begin to explore the 80/20 subset of JavaScript. The subset is broken down into four groups:
 1. Identifiers
-1. Statements
-1. Expressions
-1. Operators
+2. Statements
+3. Expressions
+4. Operators
 
 Identifiers
 - reserved keywords (non-assignable)
