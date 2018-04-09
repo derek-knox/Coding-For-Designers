@@ -2,19 +2,19 @@
 
 Just like natural languages have many words, rules, and exceptions, so too do programming languages. As we all know from experience, we only use a small fraction of a language to communicate. JavaScript—and programming languages in general—are no different.
 
-The JavaScript subset we'll cover is broken down into four groups:
+The JavaScript subset we will cover is broken down into four groups:
 1. Identifiers
 2. Expressions
 3. Operators
 4. Statements
 
-These four groupings make a program useful by enabling it to execute work. Think of the respective groupings as:
+These four groupings make a program useful by enabling it to do work during execution time. Think of the respective groupings as:
 1. Named shortcuts to values
 2. Values
-3. Characters for manipulating values
+3. Characters for changing values
 4. Pattern groups of keywords
 
-
+Identifiers are named shortcuts to values. They enable us to use a natural-language-like approach for *identifying* a value, something meaningful. Expressions are values. They unsurprisingly can be represented with identifers, but also as literals (like the number `23`) or *to-be expressed* evaluations (like a `function` expression). Without values, we would not be able to translate our ideas to a computer. Operators are characters for manipulating values. Operators enable values to be *operated on*, to be changed. Lastly, statements are pattern groups of keywords. Statements enable us to group and reason about the various identifiers, values, and operators in a particular portion of code.
 
 Identifiers
 - reserved keywords (non-assignable)
