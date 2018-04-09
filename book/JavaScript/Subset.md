@@ -2,13 +2,13 @@
 
 Just like natural languages have many words, rules, and exceptions, so too do programming languages. As we all know from experience, we only use a small fraction of a language to communicate. JavaScript—and programming languages in general—are no different.
 
-The JavaScript subset is broken down into four groups:
+The JavaScript subset we'll cover is broken down into four groups:
 1. Identifiers
 2. Expressions
 3. Operators
 4. Statements
 
-These four groupings enable four respective qualities:
+These four groupings make a program potentially useful by enabling it to do work. Think of the respective groupings as:
 1. Named shortcuts to values
 2. Values
 3. Characters for manipulating values
