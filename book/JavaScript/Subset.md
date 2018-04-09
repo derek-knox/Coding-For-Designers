@@ -8,7 +8,7 @@ The JavaScript subset we'll cover is broken down into four groups:
 3. Operators
 4. Statements
 
-These four groupings make a program useful by enabling it to do work. Think of the respective groupings as:
+These four groupings make a program useful by enabling it to execute work. Think of the respective groupings as:
 1. Named shortcuts to values
 2. Values
 3. Characters for manipulating values
