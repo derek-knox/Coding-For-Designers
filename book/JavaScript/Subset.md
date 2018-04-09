@@ -2,7 +2,7 @@
 
 Just like natural languages have many words, rules, and exceptions, so too do programming languages. As we all know from experience, we only use a small fraction of a language to communicate. JavaScript—and programming languages in general—are no different.
 
-The subset—and JavaScript itself-is broken down into four groups:
+The JavaScript subset is broken down into four groups:
 1. Identifiers
 2. Expressions
 3. Operators
