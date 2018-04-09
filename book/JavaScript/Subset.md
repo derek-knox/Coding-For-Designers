@@ -2,11 +2,19 @@
 
 Just like natural languages have many words, rules, and exceptions, so too do programming languages. As we all know from experience, we only use a small fraction of a language to communicate. JavaScript—and programming languages in general—are no different.
 
-With this in mind we'll begin to explore the 80/20 subset of JavaScript. The subset is broken down into four groups:
+The subset—and JavaScript itself-is broken down into four groups:
 1. Identifiers
-2. Statements
-3. Expressions
-4. Operators
+2. Expressions
+3. Operators
+4. Statements
+
+These four groupings enable four respective qualities:
+1. Named shortcuts to values
+2. Values
+3. Characters for manipulating values
+4. Pattern groups of keywords and special characters
+
+
 
 Identifiers
 - reserved keywords (non-assignable)
