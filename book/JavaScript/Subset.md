@@ -12,7 +12,7 @@ These four groupings enable four respective qualities:
 1. Named shortcuts to values
 2. Values
 3. Characters for manipulating values
-4. Pattern groups of keywords and special characters
+4. Pattern groups of keywords
 
 
 
