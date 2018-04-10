@@ -16,12 +16,6 @@ These four groupings make a program useful by enabling it to do work during exec
 3. Characters for changing values
 4. Pattern groups of keywords
 
-Identifiers are named shortcuts to values. They enable us to use a natural-language-like approach for *identifying* something meaningful.
+Identifiers are named shortcuts to values. They enable us to use a natural-language-like approach for *identifying* something meaningful. Expressions are values. They unsurprisingly can be represented with identifers, but also as literals (like the number `23`) or *to-be expressed* evaluations (which we'll cover later). Without values, we would not be able to translate meaningful ideas to a computer. Operators are characters for changing values. Operators enable values to be *operated on* and changed. You already know about the *arithmetic operators* of `+, -, *, and /` for changing number values. Statements are pattern groups of keywords. Statements enable us to group and reason about the various identifiers, values, and operators in a particular portion of code through a small pattern.
 
-Expressions are values. They unsurprisingly can be represented with identifers, but also as literals (like the number `23`) or *to-be expressed* evaluations (which we'll cover later). Without values, we would not be able to translate meaningful ideas to a computer.
-
-Operators are characters for changing values. Operators enable values to be *operated on* and changed. You already know about *arithmetic operators* for changing number values.
-
-Statements are pattern groups of keywords. Statements enable us to group and reason about the various identifiers, values, and operators in a particular portion of code.
-
-Combined, all four groups enable us to author code that a computer understands. It can then render interactive visuals to the screen.
+Combined, all four groups enable us to author code that a computer understands. When this happens, it renders our animated and interactive creations.
