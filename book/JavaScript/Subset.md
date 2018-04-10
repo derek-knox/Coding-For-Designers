@@ -4,7 +4,7 @@ Just like natural languages have many words, rules, and exceptions, so too do pr
 
 The question is, why do extra words in a language even exist? If it isn't obvious, extra words are useful to those more experienced with a given language or topic. They enable concise communication for those in-the-know. They enable communicating more with less. The tradeoff is a risk of increased complexity as others may be unfamiliar with the words and their meaning. The subset approach mitigates this risk.
 
-The JavaScript subset to follow is broken down into four groups:
+The JavaScript subset to follow is broken down in four groups:
 1. Identifiers
 2. Expressions
 3. Operators
@@ -16,7 +16,7 @@ These four groupings make a program useful by enabling it to do work during exec
 3. Characters for changing values
 4. Pattern groups of keywords
 
-Identifiers are named shortcuts to values. They enable us to use a natural-language-like approach for *identifying* something meaningful. Expressions are values. They unsurprisingly can be represented with identifers, but also as literals (the number `23`) or *to-be expressed* evaluations (the to-be-covered-below `function` expression). Without values, we would not be able to translate our ideas to a computer. Operators are characters for manipulating values. Operators enable values to be *operated on*, to be changed. Lastly, statements are pattern groups of keywords. Statements enable us to group and reason about the various identifiers, values, and operators in a particular portion of code.
+Identifiers are named shortcuts to values. They enable us to use a natural-language-like approach for *identifying* something meaningful. Expressions are values. They unsurprisingly can be represented with identifers, but also as literals (like the number `23`) or *to-be expressed* evaluations (like the to-be-covered-later *function expression*). Without values, we would not be able to translate our ideas to a computer. Operators are characters for changing values. Operators enable values to be *operated on* and changed. Lastly, statements are pattern groups of keywords. Statements enable us to group and reason about the various identifiers, values, and operators in a particular portion of code. Combined, all four groups enable us to author code that a computer understands. It can then render interactive visuals to the screen.
 
 Identifiers
 - reserved keywords (non-assignable)
