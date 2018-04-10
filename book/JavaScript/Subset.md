@@ -1,6 +1,8 @@
 ## Subset
 
-Just like natural languages have many words, rules, and exceptions, so too do programming languages. As we all know from experience, we only use a small fraction to communicate. JavaScript—and programming languages in general—are no different.
+Just like natural languages have many words, rules, and exceptions, so too do programming languages. As we all know from experience, we only use a small fraction to communicate. JavaScript—and programming languages in general—are no different. 
+
+Both programming and natural languages have more words than necessary for communicating. These extra words are useful to those more experienced with a given language or topic domain. They enable communication in a more concise way, they enable communicating more with less. The tradeoff is a risk of complexity as others may be unfamiliar with the words and thus their meaning.
 
 The JavaScript subset we will cover is broken down into four groups:
 1. Identifiers
