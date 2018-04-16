@@ -42,7 +42,7 @@ The takeaway is that any portion of code that resembles a natural-language-like 
 
 ### Reserved Keywords
 
-There is one reserved keyword in the snippet above. There are over forty reserved keywords in JavaScript. With our subset approach there are 10 that we care about. Listed alphabetically the are:
+There is one reserved keyword in the snippet above. There are over forty in JavaScript. With our subset approach there are 10 that we care about. Listed alphabetically the are:
 
 1. `debugger`
 1. `else`
@@ -57,7 +57,7 @@ There is one reserved keyword in the snippet above. There are over forty reserve
 
 These are the reserved keywords to get really familiar with. We'll explore them in more detail in the remaining sections of this chapter in addition to the Deconstructing Designs chapter. This way we'll explore them in the context of when they are useful.
 
-Instead of listing them alphabetically, it is more useful to group them. Below are the groupings in addition to a concise description of how they are used:
+Listing the words alphabetically works, but it is more useful to group them. Below are the groupings in addition to a concise description of how they are used:
 
 Custom Keyword Declaration Helpers
 - `var` - helper for declaring a custom reusable value
@@ -67,17 +67,17 @@ Instance Keyword Helper
 - `new` - helper for creating a specific Object instance
 
 Code Flow Keywords
-- `if` - 
-- `else`
-- `return`
+- `if` - helper for guiding the engine to read certain code
+- `else` - helper for guiding the engine to read certain other code
+- `return` - helper for a function to provide the result of its work
 
 Literal Value Keywords
-- `true`
-- `false`
-- `null`
+- `true` - helper for validating code flow
+- `false` - helper for validating code flow
+- `null` - helper for the absence of a value
 
 Debugging Keyword Helper
-- `debugger`
+- `debugger` -  helper for debugging
 
 ### Non-Reserved Keywords - JavaScript
 ### Non-Reserved Keywords - Environment
