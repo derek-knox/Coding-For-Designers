@@ -5,7 +5,7 @@ So we now know keywords are named shortcuts to values. Each keyword is a *key* u
 1. Reserved keywords
 2. Non-reserved keywords
 
-Put another way, reserved keywords are those that cannot be reassigned a value. They have a predefined value by default. It cannot be changed. Non-reserved keywords can be reassigned a value. They also have a predefined value by default. They however can be changed.
+Put another way, reserved keywords are those that cannot be reassigned a value. They have a predefined value assigned by JavaScript. The value cannot be changed. Non-reserved keywords can be reassigned a value. They also have a predefined value by default, but they can be changed.
 
 Non-reserved keywords are also known as *identifiers*. An identifier is simply any keyword that isn't already reserved. Non-reserved keywords are organized in three groups:
 
@@ -25,7 +25,7 @@ function makeBackgroundBlack() {
 makeBackgroundBlack();
 ```
 
-Before reading on, test yourself real quick by listing out what you think the keywords are. Then try to guess each keyword's reserved or non-reserved identifier status (this will be challenging I know).
+Before reading on, test yourself by listing out what you think the keywords are. Then try to guess each keyword's reserved or non-reserved identifier status (this will be challenging I know).
 
 Answer time:
 
@@ -36,7 +36,9 @@ Answer time:
 5. `style` - environment identifier
 6. `backgroundColor` - environment identifier
 
-You may have thought `'#000000'` was a keyword, but it is a literal value. We'll cover the distinction between literal values and keywords in the next section. The takeaway is that any portion of code that resembles a natural-language-like word (abbreviations and aggregations included) is a keyword. Everything else is either a literal value, an operator, or a statement's special character(s).
+You may have thought `'#000000'` was a keyword, but it is a literal value. We'll cover the distinction between literal values and keywords in the next section.
+
+The takeaway is that any portion of code that resembles a natural-language-like word (abbreviations and aggregations included) is a keyword. Everything else is either a literal value, an operator, or a statement's special character(s).
 
 ### Reserved Keywords
 
