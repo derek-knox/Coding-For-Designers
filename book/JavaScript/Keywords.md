@@ -80,6 +80,9 @@ Debugging Keyword Helper
 - `debugger` -  helper for debugging
 
 ### Non-Reserved Keywords - JavaScript
+
+In the snippet above, there is not an example of a non-reserved JavaScript keyword. 
+
 ### Non-Reserved Keywords - Environment
 ### Non-Reserved Keywords - Custom
 
