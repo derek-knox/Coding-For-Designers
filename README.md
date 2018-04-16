@@ -47,7 +47,7 @@ Coding for Designers is a work-in-progress book that demystifies coding and Java
 ### [80/20 JavaScript](http://codingfordesignersbook.com/80-20-javascript/)
 - [Environment](http://codingfordesignersbook.com/80-20-javascript/#environment)
 - [Mindset](http://codingfordesignersbook.com/80-20-javascript/#mindset)
-- Subset
+- [Subset](http://codingfordesignersbook.com/80-20-javascript/#subset)
 - Identifiers
 - Functions
 - Statements
