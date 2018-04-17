@@ -42,7 +42,7 @@ The takeaway is that any portion of code that resembles a natural-language-like 
 
 ### Reserved Keywords
 
-There is one reserved keyword in the snippet above. There are over forty in JavaScript. With our subset approach there are 10 that we care about. Listed alphabetically the are:
+There is one reserved keyword in the snippet above. There are over forty in JavaScript. With our subset approach there are ten that we care about. Listed alphabetically the are:
 
 1. `debugger`
 1. `else`
@@ -83,17 +83,16 @@ The concise description accompanying each keyword may not make complete sense at
 
 ### Non-Reserved Keywords - JavaScript
 
-In the snippet above, there is no example of a non-reserved JavaScript keyword. There are around seventy in JavaScript however. With our subset approach there are 6 that we care about. We'll skip the alphabetical listing and reveal them in groups:
+In the snippet above, there is no example of a non-reserved JavaScript keyword. There are around seventy in JavaScript however. With our subset approach there are six that we care about. They each specialize in working with common types of values.
 
-Helper Function Objects
-- `Number` - 
-- `String` - 
-- `Error` - 
-- `Date` - 
+1. `Date` - helper for working with dates
+1. `Error` - helper for working with errors
+1. `JSON` - helper for reading and writing data
+1. `Math` - helper for doing math
+1. `Number` - helper for working with numbers
+1. `String` - helper for working with strings
 
-Helper Objects
-- `Math` - helper for doing math
-- `JSON` - helper for 
+The `Date` helps us work with dates and time. Errors you understand generally, but we'll explore them in the context of code in the Errors section at the end of this chapter. `JSON` pronounced "Jason" is likely foreign. `JSON` is useful for reading and writing a data format (by the same name) that is really useful in JavaScript. `Math` provides a bunch of functions that help coders do complex work with numbers. It also allows us to do simple work with numbers like rounding. `Number` helps us do more generic work with numbers. Lastly, `String` helps us work with characters and English words that we don't want to be read as keywords, operators, or statements.
 
 ### Non-Reserved Keywords - Environment
 ### Non-Reserved Keywords - Custom
