@@ -79,9 +79,11 @@ Literal Value Keywords
 Debugging Keyword Helper
 - `debugger` -  helper for debugging
 
+The concise description accompanying each keyword may not make a lot of sense at the moment. This is OK. The takeaway is that these are the ten reserved keywords of JavaScript that you want to learn. We'll better understand what they do for us as we explore more code later.
+
 ### Non-Reserved Keywords - JavaScript
 
-In the snippet above, there is not an example of a non-reserved JavaScript keyword. 
+In the snippet above, there is no example of a non-reserved JavaScript keyword. There are over 
 
 ### Non-Reserved Keywords - Environment
 ### Non-Reserved Keywords - Custom
