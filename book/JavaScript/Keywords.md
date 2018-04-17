@@ -55,7 +55,7 @@ There is one reserved keyword in the snippet above. There are over forty in Java
 1. `true` - (also a literal value)
 1. `var`
 
-These are the reserved keywords to get really familiar with. We'll explore them in more detail in the remaining sections of this chapter in addition to the Deconstructing Designs chapter. This way we'll explore them in the context of when they are useful.
+These are the reserved keywords to get really familiar with. We'll explore them in more detail in the remaining sections of this chapter in addition to the Deconstructing Designs chapter. This way we'll explore them in the context of when they are most useful.
 
 Listing the words alphabetically works, but it is more useful to group them. Below are the groupings in addition to a concise description of how they help us code:
 
@@ -79,11 +79,21 @@ Literal Value Keywords
 Debugging Keyword Helper
 - `debugger` -  helper for debugging
 
-The concise description accompanying each keyword may not make a lot of sense at the moment. This is OK. The takeaway is that these are the ten reserved keywords of JavaScript that you want to learn. We'll better understand what they do for us as we explore more code later.
+The concise description accompanying each keyword may not make complete sense at the moment. This is OK. The takeaway is that these are the ten reserved keywords of JavaScript that you want to focus on. We'll better understand what they do for us as we explore more code.
 
 ### Non-Reserved Keywords - JavaScript
 
-In the snippet above, there is no example of a non-reserved JavaScript keyword. There are over 
+In the snippet above, there is no example of a non-reserved JavaScript keyword. There are around seventy in JavaScript however. With our subset approach there are 6 that we care about. We'll skip the alphabetical listing and reveal them in groups:
+
+Helper Function Objects
+- `Number` - 
+- `String` - 
+- `Error` - 
+- `Date` - 
+
+Helper Objects
+- `Math` - helper for doing math
+- `JSON` - helper for 
 
 ### Non-Reserved Keywords - Environment
 ### Non-Reserved Keywords - Custom
