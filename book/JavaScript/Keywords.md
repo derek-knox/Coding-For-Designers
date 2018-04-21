@@ -96,9 +96,17 @@ The `Date` helps us work with dates and time. Errors you understand generally, b
 
 ### Non-Reserved Keywords - Environment
 
-...
+There are four non-reserved environment keywords in the snippet above. They are `document`, `body`, `style`, and `backgroundColor`. Each is parented by the former. We'll explore how this keyword parenting is possible in the Expressions section that soon follows.
+
+The `document` has a parent too. This parent is special and is known as the *host object*. The host object in a browser environment is the `window` object. The `window` object provides the runtime APIs we learned about in the Event Loop section of the Interactive Code chapter. As a result, the use of `document` and `window.document` are interchangeable. As an aside, the `document` provides APIs for us to update our HTML during execution time. This is exactly what we want in our `makeBackgroundBlack` function.
+
+Now is a great time to reinforce that professional coders don't remember all the runtime APIs (there are 700+). They reference resources just like beginners. We will do the same and simply focus on knowing about the `window` object. Over time we'll memorize certain APIs that we use often.
+
+I do however recommend exploring the list of all the web APIs sometime. The effort enables you to grasp what is possible in the browser. You will be impressed and you'll likely find many that peak your interest.
 
 ### Non-Reserved Keywords - Custom
+
+In the snippet above, there is one non-reserved custom keyword. It is `makeBackgroundBlack`.
 
 - case sensitive
   - a-z
@@ -112,7 +120,7 @@ The `Date` helps us work with dates and time. Errors you understand generally, b
   - underscore
 - remember comments
 
-Identifiers
+Keywords
 - reserved keywords (non-assignable)
   - using ~12/44
 - non-reserved keywords (built-in but re-assignable - language flaw)
@@ -122,10 +130,6 @@ Identifiers
 
 *resume breakdown plan at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
 
-Statements
-- reserved keywords used for control flow and custom identifier declarations
-  - using ~6/27
-
 Expressions
 - reserved keywords and character sequences for defining values
   - using ~6/17
@@ -134,6 +138,10 @@ Expressions
 Operators
 - special characters for working with values
   - using ~14/51
+
+Statements
+- reserved keywords used for control flow and custom identifier declarations
+  - using ~6/27
 
 ## Subset Total
  - using ~51/200

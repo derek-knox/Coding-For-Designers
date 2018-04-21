@@ -205,94 +205,7 @@
       </div>
       <div class='content-core'>
         <div class='content-text'>
-          <p>Have you ever heard of the Pareto principle? It states that roughly 80% of the output from a system results from 20% of the input. Though this is not a universal rule for all systems, it appears often enough to be a respected truth.</p>
-<p>The aim of this chapter is to introduce JavaScript with this 80/20 notion in mind. Though both numbers are rough, the takeaway is that you can be productive in JavaScript by knowing and using a small and specific subset of the language. This approach is in contrast to knowing all its keywords, their behavior, syntax, and the various subsystems. I recommend learning them later if you are interested, but you don&apos;t need them all to be productive.</p>
-<p>The subset we&apos;ll focus on will help you author code that works. As you saw in <em>Work. Right. Better.</em>, this focus does not mean the code is not right. The mantra simply provides a path for improving code over time.</p>
-<p>Prior to introducing this subset and detailing its parts we&apos;ll briefly cover JavaScript in terms of the <em>environment</em> in which it is executed. We will then cover a <em>mindset</em> that explains useful tactics for reading and authoring JavaScript. Finally, we&apos;ll be ready to dive into the subset, the code itself.</p>
-<div><a href="#environment" class="heading-anchor" onclick="return onAnchorJump(this);"><span class="heading-anchor-hash">#</span><h2 id="environment">Environment</h2></a></div>
-<p>As mentioned in the <em>Event Loop</em> section, there is a runtime that JavaScript is executed within. This runtime is also known as the runtime <em>environment</em>. The browser has been the runtime environment of focus thus far. This fact will remain. You should know however that JavaScript can be executed in different environments.</p>
-<p>In the <em>Client and Server</em> section, we learned that the browser is a client. Can JavaScript also be executed in a server environment? You bet. Some programs even embed an environment enabling coders to author plug-ins (new software) that extend the original program. JavaScript is a very flexible programming language and for this reason it is useful in many environments.</p>
-<p>Though it may seem odd at first, each environment expects a particular language <em>version</em>. This idea makes a lot of sense in programming unlike English for example. A version consists of a specific set of keywords, syntax, and functionality. This allows a language to evolve where changes to it won&apos;t break existing programs. A language evolves and can improve when third-party and custom code is so useful that it should be built-in.</p>
-<p>We will continue to focus on JavaScript in the browser, but just know it has more than one home and that its home expects a particular language version. The code in this book is version six (ES6). It&apos;s worth noting that the subset in this book makes the code look like version five (ES5). This is intentional. The majority of ES6 additions fall in the <em>right</em> and <em>better</em> categories for advanced coders, not beginners.</p>
-<div><a href="#mindset" class="heading-anchor" onclick="return onAnchorJump(this);"><span class="heading-anchor-hash">#</span><h2 id="mindset">Mindset</h2></a></div>
-<p>The five notions below will influence your way of thinking about JavaScript throughout the rest of this book and beyond. They will simultaneously explain useful tactics for reading and authoring code. For brevity, I will use the term coding to encapsulate reading and authoring moving forward. The five notions are:</p>
-<ol>
-<li>Thinking in three zoom levels</li>
-<li>Functions are your friend</li>
-<li>Prototype to learn</li>
-<li>Don&apos;t repeat yourself</li>
-<li>Refactor early and often</li>
-</ol>
-<p>The first, <em>thinking in three zoom levels</em> will help you determine what to focus on at a given time. <em>Functions are your friend</em> will highlight why functions are so paramount. <em>Prototype to learn</em>, <em>don&apos;t repeat yourself</em>, and <em>refactor early and often</em> are programming mantras found in <em>The Pragmatic Programmer</em> by Andrew Hunt and David Thomas. They encourage you to experiment, author reusable code, and aggressively refine it. Combined, the five notions will influence your actions while coding.</p>
-<h3 id="1-thinking-in-three-zoom-levels">1. Thinking in Three Zoom Levels</h3>
-<p>There are three zoom levels you should consider when coding:</p>
-<ol>
-<li>Scope tree</li>
-<li>Statement pattern</li>
-<li>Value resolution</li>
-</ol>
-<p>These zoom levels are useful at authoring time (within code files) and execution time (within the program). This three zoom level approach is a tactic for navigating and understanding code more quickly.</p>
-<p><em>It is worth noting that any text editor is usable for coding. However, dedicated code editors are designed specifically to make our coding efforts less painful and more efficient. Ask online or local programmers that you trust to determine which code editor is best for you. SublimeText, Visual Studio Code, and WebStorm (among many others) are all great editors currently.</em></p>
-<h4 id="zoom-level-1-scope-tree">Zoom Level 1 - Scope Tree</h4>
-<p>Whenever you are starting to read or author code, place yourself at zoom level 1. Take note that your editor, authoring environment, and debugger (we&apos;ll cover this guy later) may each be of help at this step.</p>
-<p>When reading, the goal is to scan for functions. You are looking at both their names and their nested structure. JavaScript programs are simply a tree of functions and thus a tree of scopes. Identifying the names and nesting of functions helps you understand the structural shape of the program. Grasping the program shape (or a subset of the program shape) helps you understand where you want to zoom in next.</p>
-<p>When authoring, the goal is the same. If starting with no code you&apos;ll lack program shape, so this is only important when adding new code. When code already exists, this effort determines the target location for the code you plan to add. It can be difficult to select the location correctly the first time so don&apos;t stress. This fact is why we&apos;ll explore the <em>refactor early and often</em> mantra soon.</p>
-<p>Grasping the function names and their nested structure (program shape) is vital. We will cover their three fundamental use cases in the <em>Functions</em> section that soon follows. Once a particular function is of enough interest, you enter zoom level 2.</p>
-</div><a href="#nested-functions-highlight-example" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="nested-functions-highlight-example" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg" alt="Nested Functions Highlight Example" title="Nested Functions Highlight Example"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>Nested Functions Highlight Example</figcaption></figure></div></a><div class="content-text">
-<h4 id="zoom-level-2-statement-pattern">Zoom Level 2 - Statement Pattern</h4>
-<p>Zoom level 2 is all about prepping yourself to get answers in zoom level 3. Answers in this context are synonymous with values. Once you have values, they can be understood and operated on. Values ensure a function can actually do work.</p>
-<p>We will cover the specific statement patterns to look out for later in the <em>Statements</em> section.</p>
-</div><a href="#statement-pattern-highlight-example" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="statement-pattern-highlight-example" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg" alt="Statement Pattern Highlight Example" title="Statement Pattern Highlight Example"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>Statement Pattern Highlight Example</figcaption></figure></div></a><div class="content-text">
-<h4 id="zoom-level-3-value-resolution">Zoom Level 3 - Value Resolution</h4>
-<p>At zoom level 3 we have determined the statement pattern for a given code statement. Once determined, this informs the steps we take in resolving the values of it. Again, functions can&apos;t do work unless values exist. Since a program is a dynamic and living thing, these values can be different at different times. We take the three zoom level approach to help us determine the exact values at a given time.</p>
-<p>The takeaway is that the three zoom levels help you navigate and understand code more quickly.</p>
-</div><a href="#value-resolution-highlight-example" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="value-resolution-highlight-example" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg" alt="Value Resolution Highlight Example" title="Value Resolution Highlight Example"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>Value Resolution Highlight Example</figcaption></figure></div></a><div class="content-text">
-<h3 id="2-functions-are-your-friend">2. Functions are your Friend</h3>
-<p>We will continue to reinforce the importance of functions throughout this book. They enable interactive code and the respective manifestation of the amazing games, tools, and software we love, to exist. It is in your best interest to make functions your friend.</p>
-<p>Each function has one of three fundamental use cases in JavaScript. Remember that a function still encapsulates its own scope regardless of use case. Each use case provides a means to a desired end. These use cases are:</p>
-<ul>
-<li>Function as organizational unit</li>
-<li>Function as instantiatable unit</li>
-<li>Function as reusable work unit</li>
-</ul>
-<p>The takeaway is that functions are paramount to a program. Without them, a program is of no use. We&apos;ll cover these three use cases in great detail in the <em>Functions</em> section below.</p>
-<h3 id="3-prototype-to-learn">3. Prototype to Learn</h3>
-<p>Code is virtual not physical. We must use this reality to our advantage. Authoring code and throwing it away is cheap and easy. We can undo and redo in an instant. This quality enables us to iterate quickly toward a solution or desired result with minimal consequence.</p>
-<p>Cheap and easy is not to be confused with being invaluable however. Prototyping is extremely valuable as you can explore a solution space quickly and learn. Learning through quick iteration eventually manifests as a clear path to follow. Following this path either leads to a solution or surfaces a new idea to prototype against.</p>
-<p>The takeaway is that prototyping is how we sketch and experiment when coding. Taking shortcuts and ignoring best practices is OK here. Only after we have a working prototype are we concerned with not taking shortcuts and following best practices. Prototypes require minimal effort but result in great value. Completing a prototype ensures we have something that works. Right and better are for later.</p>
-<h3 id="4-don-t-repeat-yourself">4. Don&apos;t Repeat Yourself</h3>
-<p>Programming enables us to break the restrictions of the physical world. Every single day we do work to get results. Often times we&apos;ve done this work thousands of times before. A few things I do everyday that fit this description include eating, drinking water, and reading. In each example I use energy to accomplish work in an effort to get a result. The work takes some amount of time before I get the result. The result is not instantaneous. Regardless of how good or fast I get at the tasks that comprise the work, the result will never be instantaneous.</p>
-<p>We lack this restriction in the virtual world. We can get results instantly. In software we can encode the work. Once encoded we can simply execute a particular function to do work and to get a desired result. The same effort that was initially required no longer exists. It is encoded. Electricity is so fast the result of the work seems instantaneous.</p>
-<p>The takeaway is that we strive to create functions that are reusable. We briefly covered this idea earlier in the <em>Elements and Elements</em> section. Additionally, we provided a concrete example in the <em>Sync and Async</em> section with the <code>changeBackgroundColor(newColor)</code> function. We will further explore this idea and more concrete examples in the <em>Functions</em> section.</p>
-<h3 id="5-refactor-early-and-often">5. Refactor Early and Often</h3>
-<p>As previously mentioned, it can be difficult to select the correct location when first adding code. Additionally, it can be difficult enough to get code to work through prototyping. It can even be difficult to name identifiers well (believe it or not this is one of the more difficult aspects of programming). Thankfully the code is not set in stone. It is easy to move, change, and rename. This is refactoring. We are working in the virtual not physical world after all. Use this to your advantage. Our editors can even help us accomplish this faster while minimizing error.</p>
-<p>The core benefit of refactoring is that it enables us to improve code readability. Remember the three zoom levels? Refactoring helps us here. Code complexity can also be reduced which makes it more understandable to us, other coders, and our future self.</p>
-<p>Take note that refactoring requires that the correct work still gets done. In other words, the functional behavior remains where the implementation of that behavior may differ. This idea parallels the <em>Work. Right. Better.</em> mantra in that refactoring leads to right and better.</p>
-<p>It is worth noting however that refactoring is a susceptible step in that it can lead to bugs. A bug is code that unintentionally prevents work or that does work incorrectly. We&apos;ll cover this more and explore concrete examples in the <em>Errors</em> and <em>Debugging</em> sections.</p>
-<p>The takeaway is that code is a living thing. It can be molded into a more perfect shape. Code can be made more understandable during authoring time while becoming more efficient during execution time. By refactoring early and often we can author more readable, less complex, and more efficient code.</p>
-<div><a href="#subset" class="heading-anchor" onclick="return onAnchorJump(this);"><span class="heading-anchor-hash">#</span><h2 id="subset">Subset</h2></a></div>
-<p>Just like natural languages have many words, rules, and exceptions, so too do programming languages. As we all know from experience, we only use a small fraction of English to communicate. JavaScript&#x2014;and programming languages in general&#x2014;are no different. </p>
-<p>The question is, why do extra words in a language even exist? Extra words are useful to those more experienced with a given language. They enable concise communication between those in-the-know. They are intended as a shortcut to shared meaning and understanding. The tradeoff of using these words is a risk of increased misunderstanding for those unfamiliar with them. The subset approach mitigates this risk.</p>
-<p>The JavaScript subset&#x2014;and the language itself&#x2014;is organized in four groups:</p>
-<ol>
-<li>Keywords</li>
-<li>Expressions</li>
-<li>Operators</li>
-<li>Statements</li>
-</ol>
-<p>These four groupings make a program useful by enabling it to do work during execution time. Think of the respective groupings as:</p>
-<ol>
-<li>Named shortcuts to values</li>
-<li>Values</li>
-<li>Special characters for changing values</li>
-<li>Patterns of special characters and keywords</li>
-</ol>
-<p>Keywords are named shortcuts to values. They enable us to use a natural-language-like <em>key</em> for identifying something as meaningful.</p>
-<p>Expressions are values. They unsurprisingly can be represented with keywords, but also with literals (like the number <code>23</code>) or to-be-<em>expressed</em> evaluations (which we&apos;ll cover later). Without values, we would not be able to translate meaningful ideas to a computer.</p>
-<p>Operators are special characters for changing values. Operators enable values to be <em>operated on</em> and changed. You already know about the arithmetic operators <code>+, -, *, and /</code> from math class.</p>
-<p>Statements are patterns of special characters and keywords. They enable us to group and reason about the various special characters, keywords, values, and operators in a particular portion of code using a small pattern. Put another way, we <em>state</em> something meaningful using a small pattern.</p>
-<p>Combined, all four groups enable us to author code that a JavaScript engine understands. When this happens in the browser, it works with other programs on the computer to ensure we see our animated and interactive creations on screen. Let&apos;s dig into each group one-by-one.</p>
-<div><a href="#keywords" class="heading-anchor" onclick="return onAnchorJump(this);"><span class="heading-anchor-hash">#</span><h2 id="keywords">Keywords</h2></a></div>
+          <div><a href="#keywords" class="heading-anchor" onclick="return onAnchorJump(this);"><span class="heading-anchor-hash">#</span><h2 id="keywords">Keywords</h2></a></div>
 <p>So we now know keywords are named shortcuts to values. Each keyword is a <em>key</em> used to access a value using a natural-language-like word. Keywords are not always full words as you would expect in English. They are sometimes abbreviations (like <code>var</code> is for variable) or aggregations (like <code>makeBackgroundBlack</code> is for &quot;make background black&quot;). The former is a <em>reserved keyword</em> where the latter is a <em>non-reserved keyword</em>. These are the two keyword types in JavaScript:</p>
 <ol>
 <li>Reserved keywords</li>
@@ -379,8 +292,12 @@
 </ol>
 <p>The <code>Date</code> helps us work with dates and time. Errors you understand generally, but we&apos;ll explore them in the context of code in the Errors section at the end of this chapter. <code>JSON</code> pronounced &quot;Jason&quot; is likely foreign. <code>JSON</code> is useful for reading and writing a data format (by the same name) that is really useful in communicating between clients and servers. <code>Math</code> provides a bunch of functions that help coders do complex work with numbers. It also allows us to do simple work with numbers like rounding. <code>Number</code> helps us do more generic work with numbers. Lastly, <code>String</code> helps us work with characters and natural language words that we don&apos;t want the engine to interpret as keywords, operators, or statements.</p>
 <h3 id="non-reserved-keywords-environment">Non-Reserved Keywords - Environment</h3>
-<p>...</p>
+<p>There are four non-reserved environment keywords in the snippet above. They are <code>document</code>, <code>body</code>, <code>style</code>, and <code>backgroundColor</code>. Each is parented by the former. We&apos;ll explore how this keyword parenting is possible in the Expressions section that soon follows.</p>
+<p>The <code>document</code> has a parent too. This parent is special and is known as the <em>host object</em>. The host object in a browser environment is the <code>window</code> object. The <code>window</code> object provides the runtime APIs we learned about in the Event Loop section of the Interactive Code chapter. As a result, the use of <code>document</code> and <code>window.document</code> are interchangeable. As an aside, the <code>document</code> provides APIs for us to update our HTML during execution time. This is exactly what we want in our <code>makeBackgroundBlack</code> function.</p>
+<p>Now is a great time to reinforce that professional coders don&apos;t remember all the runtime APIs (there are 700+). They reference resources just like beginners. We will do the same and simply focus on knowing about the <code>window</code> object. Over time we&apos;ll memorize certain APIs that we use often.</p>
+<p>I do however recommend exploring the list of all the web APIs sometime. The effort enables you to grasp what is possible in the browser. You will be impressed and you&apos;ll likely find many that peak your interest.</p>
 <h3 id="non-reserved-keywords-custom">Non-Reserved Keywords - Custom</h3>
+<p>In the snippet above, there is one non-reserved custom keyword. It is <code>makeBackgroundBlack</code>.</p>
 <ul>
 <li>case sensitive<ul>
 <li>a-z</li>
@@ -398,7 +315,7 @@
 </li>
 <li>remember comments</li>
 </ul>
-<p>Identifiers</p>
+<p>Keywords</p>
 <ul>
 <li>reserved keywords (non-assignable)<ul>
 <li>using ~12/44</li>
@@ -414,13 +331,6 @@
 </li>
 </ul>
 <p>*resume breakdown plan at <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference</a></p>
-<p>Statements</p>
-<ul>
-<li>reserved keywords used for control flow and custom identifier declarations<ul>
-<li>using ~6/27</li>
-</ul>
-</li>
-</ul>
 <p>Expressions</p>
 <ul>
 <li>reserved keywords and character sequences for defining values<ul>
@@ -433,6 +343,13 @@
 <ul>
 <li>special characters for working with values<ul>
 <li>using ~14/51</li>
+</ul>
+</li>
+</ul>
+<p>Statements</p>
+<ul>
+<li>reserved keywords used for control flow and custom identifier declarations<ul>
+<li>using ~6/27</li>
 </ul>
 </li>
 </ul>
