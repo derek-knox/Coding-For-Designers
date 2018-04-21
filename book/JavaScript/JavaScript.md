@@ -1,4 +1,4 @@
-Have you ever heard of the Pareto principle? It states that roughly 80% of the output in a system results from 20% of the input. Though this is not a hard and fast rule for all systems, it appears often enough to be a respected truth.
+Have you ever heard of the Pareto principle? It states that roughly 80% of the output from a system results from 20% of the input. Though this is not a universal rule for all systems, it appears often enough to be a respected truth.
 
 The aim of this chapter is to introduce JavaScript with this 80/20 notion in mind. Though both numbers are rough, the takeaway is that you can be productive in JavaScript by knowing and using a small and specific subset of the language. This approach is in contrast to knowing all its keywords, their behavior, syntax, and the various subsystems. I recommend learning them later if you are interested, but you don't need them all to be productive.
 

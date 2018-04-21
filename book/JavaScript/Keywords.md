@@ -1,11 +1,11 @@
 ## Keywords
 
-So we now know keywords are named shortcuts to values. Each keyword is a *key* used to access a value using a natural-language-like word. Keywords are not always full words as you would expect in English. They are sometimes abbreviations (like `var` is for variable) or aggregations (like `makeBackgroundBlack` is for `make background black`). The former is a *reserved keyword* where the latter is a *non-reserved keyword*. These are the two keyword types in JavaScript:
+So we now know keywords are named shortcuts to values. Each keyword is a *key* used to access a value using a natural-language-like word. Keywords are not always full words as you would expect in English. They are sometimes abbreviations (like `var` is for variable) or aggregations (like `makeBackgroundBlack` is for "make background black"). The former is a *reserved keyword* where the latter is a *non-reserved keyword*. These are the two keyword types in JavaScript:
 
 1. Reserved keywords
 2. Non-reserved keywords
 
-Put another way, reserved keywords are those that cannot be reassigned a value. They have a predefined value assigned by JavaScript. The value cannot be changed. Non-reserved keywords can be reassigned a value. They also have a predefined value by default, but they can be changed.
+Put another way, reserved keywords are those that cannot be reassigned a value. They have a predefined value assigned by JavaScript. This value cannot be changed. In contrast, non-reserved keywords *can* be reassigned a value. They also have a predefined value by default, but it can be changed.
 
 Non-reserved keywords are also known as *identifiers*. An identifier is simply any keyword that isn't already reserved. Non-reserved keywords are organized in three groups:
 
@@ -13,7 +13,7 @@ Non-reserved keywords are also known as *identifiers*. An identifier is simply a
 2. Environment identifiers
 3. Custom identifiers
 
-A JavaScript identifier is a keyword with a predetermined value. This value is useful to your code as it can help facilitate language-specific work. An environment identifier is a keyword with a predetermined value also. Its value is useful to your code as it can help facilitate environment-specific work. Custom identifiers have the special JavaScript value known as `undefined` until the identifier is reassigned a value. So JavaScript identifiers and environment identifiers each have predetermined values. These values are set by the language and environment respectively. Custom identifiers have the predetermined value `undefined` until we reassign them a value (this is the *assignment statement* pattern we'll learn about later).
+A JavaScript identifier is a keyword with a predetermined value. This value is useful to your code as it can help facilitate language-specific work. An environment identifier is a keyword with a predetermined value also. Its value is useful to your code as it can help facilitate environment-specific work. Custom identifiers have the special JavaScript value known as `undefined` until the identifier is reassigned a value. So JavaScript identifiers and environment identifiers each have predetermined values. These values are set by the language and environment respectively. Custom identifiers have the predetermined value `undefined` until we reassign them a value (this is an example of the *assignment statement* pattern we'll learn about later).
 
 Let's explore what we just learned relative to a familiar code snippet:
 
@@ -25,7 +25,7 @@ function makeBackgroundBlack() {
 makeBackgroundBlack();
 ```
 
-Before reading on, test yourself by listing out what you think the keywords are. Then try to guess each keyword's reserved or non-reserved identifier status (this will be challenging I know).
+Before reading on, test yourself by listing out what you think the keywords are. Then try to guess each keyword's reserved or non-reserved status (this will be challenging I know).
 
 Answer time:
 
@@ -42,7 +42,7 @@ The takeaway is that any portion of code that resembles a natural-language-like 
 
 ### Reserved Keywords
 
-There is one reserved keyword in the snippet above. There are over forty in JavaScript. With our subset approach there are ten that we care about. Listed alphabetically the are:
+There is one reserved keyword in the snippet above. There are over forty in JavaScript. With our subset approach there are ten that we care about. Listed alphabetically they are:
 
 1. `debugger`
 1. `else`
@@ -59,12 +59,12 @@ These are the reserved keywords to get really familiar with. We'll explore them 
 
 Listing the words alphabetically works, but it is more useful to group them. Below are the groupings in addition to a concise description of how they help us code:
 
-Custom Keyword Declaration Helpers
-- `var` - helper for declaring a custom reusable value
-- `function` - helper for declaring a custom reusable function
+Custom Keyword Helpers
+- `var` - helper for declaring a reusable value by a custom name
+- `function` - helper for declaring a reusable function by a custom name
 
-Instance Keyword Helper
-- `new` - helper for creating a specific Object instance
+Instance Helper
+- `new` - helper for creating unique function instances
 
 Code Flow Keywords
 - `if` - helper for guiding the engine to read certain code
@@ -74,7 +74,7 @@ Code Flow Keywords
 Literal Value Keywords
 - `true` - helper for validating code flow
 - `false` - helper for validating code flow
-- `null` - helper for the absence of a value
+- `null` - helper for the special "absence of a value" value
 
 Debugging Keyword Helper
 - `debugger` -  helper for debugging
@@ -92,9 +92,12 @@ In the snippet above, there is no example of a non-reserved JavaScript keyword. 
 1. `Number` - helper for working with numbers
 1. `String` - helper for working with strings
 
-The `Date` helps us work with dates and time. Errors you understand generally, but we'll explore them in the context of code in the Errors section at the end of this chapter. `JSON` pronounced "Jason" is likely foreign. `JSON` is useful for reading and writing a data format (by the same name) that is really useful in JavaScript. `Math` provides a bunch of functions that help coders do complex work with numbers. It also allows us to do simple work with numbers like rounding. `Number` helps us do more generic work with numbers. Lastly, `String` helps us work with characters and English words that we don't want to be read as keywords, operators, or statements.
+The `Date` helps us work with dates and time. Errors you understand generally, but we'll explore them in the context of code in the Errors section at the end of this chapter. `JSON` pronounced "Jason" is likely foreign. `JSON` is useful for reading and writing a data format (by the same name) that is really useful in communicating between clients and servers. `Math` provides a bunch of functions that help coders do complex work with numbers. It also allows us to do simple work with numbers like rounding. `Number` helps us do more generic work with numbers. Lastly, `String` helps us work with characters and natural language words that we don't want the engine to interpret as keywords, operators, or statements.
 
 ### Non-Reserved Keywords - Environment
+
+...
+
 ### Non-Reserved Keywords - Custom
 
 - case sensitive

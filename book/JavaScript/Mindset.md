@@ -68,13 +68,13 @@ Code is virtual not physical. We must use this reality to our advantage. Authori
 
 Cheap and easy is not to be confused with being invaluable however. Prototyping is extremely valuable as you can explore a solution space quickly and learn. Learning through quick iteration eventually manifests as a clear path to follow. Following this path either leads to a solution or surfaces a new idea to prototype against.
 
-The takeaway is that prototyping is how we experiment when coding. Taking shortcuts and ignoring best practices is OK here. Only after we have a working prototype are we concerned with not taking shortcuts and following best practices. Prototypes require minimal effort but result in great value. Completing a prototype ensures we have something that works. Right and better are for later.
+The takeaway is that prototyping is how we sketch and experiment when coding. Taking shortcuts and ignoring best practices is OK here. Only after we have a working prototype are we concerned with not taking shortcuts and following best practices. Prototypes require minimal effort but result in great value. Completing a prototype ensures we have something that works. Right and better are for later.
 
 ### 4. Don't Repeat Yourself
 
 Programming enables us to break the restrictions of the physical world. Every single day we do work to get results. Often times we've done this work thousands of times before. A few things I do everyday that fit this description include eating, drinking water, and reading. In each example I use energy to accomplish work in an effort to get a result. The work takes some amount of time before I get the result. The result is not instantaneous. Regardless of how good or fast I get at the tasks that comprise the work, the result will never be instantaneous.
 
-We lack this restriction in the virtual world. We can get results instantly. In software we can codify the work. Once codified we can simply execute a particular function to do work and to get a desired result. The same effort that was initially required no longer exists. It is codified. Electricity is so fast the result of the work seems instantaneous.
+We lack this restriction in the virtual world. We can get results instantly. In software we can encode the work. Once encoded we can simply execute a particular function to do work and to get a desired result. The same effort that was initially required no longer exists. It is encoded. Electricity is so fast the result of the work seems instantaneous.
 
 The takeaway is that we strive to create functions that are reusable. We briefly covered this idea earlier in the *Elements and Elements* section. Additionally, we provided a concrete example in the *Sync and Async* section with the `changeBackgroundColor(newColor)` function. We will further explore this idea and more concrete examples in the *Functions* section.
 
