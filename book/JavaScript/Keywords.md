@@ -92,56 +92,47 @@ In the snippet above, there is no example of a non-reserved JavaScript keyword. 
 1. `Number` - helper for working with numbers
 1. `String` - helper for working with strings
 
-The `Date` helps us work with dates and time. Errors you understand generally, but we'll explore them in the context of code in the Errors section at the end of this chapter. `JSON` pronounced "Jason" is likely foreign. `JSON` is useful for reading and writing a data format (by the same name) that is really useful in communicating between clients and servers. `Math` provides a bunch of functions that help coders do complex work with numbers. It also allows us to do simple work with numbers like rounding. `Number` helps us do more generic work with numbers. Lastly, `String` helps us work with characters and natural language words that we don't want the engine to interpret as keywords, operators, or statements.
+The `Date` helps us work with dates and time. Errors you understand generally, but we'll explore them in the context of code in the Errors section at the end of this chapter. `JSON` pronounced "Jason" is likely foreign. `JSON` is useful for reading and writing in a data format by the same name. The format is really useful in communicating between clients and servers. `Math` provides a bunch of functions that help coders do complex work with numbers. It also allows us to do simple work with numbers like rounding. `Number` helps us do more generic work with numbers. Lastly, `String` helps us work with characters and natural language words that we don't want the engine to interpret as keywords, operators, or statements.
 
 ### Non-Reserved Keywords - Environment
 
 There are four non-reserved environment keywords in the snippet above. They are `document`, `body`, `style`, and `backgroundColor`. Each is parented by the former. We'll explore how this keyword parenting is possible in the Expressions section that soon follows.
 
-The `document` has a parent too. This parent is special and is known as the *host object*. The host object in a browser environment is the `window` object. The `window` object provides the runtime APIs we learned about in the Event Loop section of the Interactive Code chapter. As a result, the use of `document` and `window.document` are interchangeable. As an aside, the `document` provides APIs for us to update our HTML during execution time. This is exactly what we want in our `makeBackgroundBlack` function.
+The `document` has a parent too. This parent is special and is known as the *host object*. The host object in a browser environment is the `window` object. The `window` object provides the runtime APIs we learned about in the Event Loop section of the Interactive Code chapter. As a result, the use of `document` and `window.document` are interchangeable. As an aside, the `document` provides APIs for us to update our HTML during execution time. This is exactly what we want–and do–in our `makeBackgroundBlack` function.
 
-Now is a great time to reinforce that professional coders don't remember all the runtime APIs (there are 700+). They reference resources just like beginners. We will do the same and simply focus on knowing about the `window` object. Over time we'll memorize certain APIs that we use often.
+Now is a great time to reinforce that professional coders don't remember all the runtime APIs (there are 700+). They reference resources just like beginners. We will do the same and simply focus on knowing about the special `window` object. Over time we'll memorize certain APIs that we use often.
 
-I do however recommend exploring the list of all the web APIs sometime. The effort enables you to grasp what is possible in the browser. You will be impressed and you'll likely find many that peak your interest.
+I do however recommend exploring the list of all the web APIs sometime. The effort enables you to grasp the big picture of what is possible in the browser. You will be impressed and you'll likely find many that peak your interest.
 
 ### Non-Reserved Keywords - Custom
 
-In the snippet above, there is one non-reserved custom keyword. It is `makeBackgroundBlack`.
+In the snippet above, there is one non-reserved custom keyword. It is `makeBackgroundBlack`. There are naturally an infinite amount of custom keywords. Remember that the computer doesn't care about the keyword name when it is custom. It just cares that it is unique. We could have instead named our `makeBackgroundBlack` function `a`. The snippet could instead be:
 
-- case sensitive
-  - a-z
-  - A-Z
-  - _
-  - $
-  - 0-9 (not first character though)
-- case style
-  - upper camel
-  - lower camel
-  - underscore
-- remember comments
+```javascript
+function a() {
+  document.body.style.backgroundColor = '#000000';
+}
 
-Keywords
-- reserved keywords (non-assignable)
-  - using ~12/44
-- non-reserved keywords (built-in but re-assignable - language flaw)
-  - using ~13/61
-- custom (assignable)
-  - using ∞/∞
+a();
+```
+The functionality is the same even though there are fewer characters. As a result there is less code–a smaller payload–to send from a client to a server and vice versa. Remember however that we are coding for humans first. Naming keywords meaningfully is the primary goal. We can decrease the payload size later through the aforementioned minification process among others. The takeaway is that the engine only cares that custom keywords are unique. The name itself is useful for us coders.
 
-*resume breakdown plan at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+You will notice that the `document`, `body`, `style`, and `backgroundColor` environment identifiers are left untouched. This is because they are not custom keywords, the runtime expects them to be associated with certain values. As such, they cannot be shortened.
 
-Expressions
-- reserved keywords and character sequences for defining values
-  - using ~6/17
-  - talk about "data" vs "code"
+It is worth noting that when naming custom keywords there are a set of rules. I will list them here for general familiarity, but will propose a subset to focus on. Custom keywords can use the following characters:
 
-Operators
-- special characters for working with values
-  - using ~14/51
+- `a-z` (lowercase English letters)
+- `A-Z` (uppercase English letters)
+- `_` (underscore character)
+- `$` (dollar sign character)
+- `0-9` (number characters when not the first keyword's character)
 
-Statements
-- reserved keywords used for control flow and custom identifier declarations
-  - using ~6/27
+There are three common case styles that are used as a result of the above rules:
 
-## Subset Total
- - using ~51/200
+1. upper camel (ex. UpperCamelCase)
+1. lower camel (ex. lowerCamelCase)
+1. underscore (ex. underscore_case)
+
+I recommend using the `lowerCamelCase` just like we did with `makeBackgroundBlack`. We'll additionally use the `UpperCamelCase` style for certain functions, but we'll cover why in the Functions section later. The takeaway is that you can use all the rules above, but it is much simpler to stick to the `lowerCamelCase` and `UpperCamelCase` styles.
+
+Now that we've explored the various keyword types, now is the best time to explore the types of expressions–or values–a keyword can represent.
