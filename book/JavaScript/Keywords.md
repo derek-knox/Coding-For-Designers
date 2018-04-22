@@ -106,7 +106,7 @@ I do however recommend exploring the list of all the web APIs sometime. The effo
 
 ### Non-Reserved Keywords - Custom
 
-In the snippet above, there is one non-reserved custom keyword. It is `makeBackgroundBlack`. There are naturally an infinite amount of custom keywords. Remember that the computer doesn't care about the keyword name when it is custom. It just cares that it is unique. We could have instead named our `makeBackgroundBlack` function `a`. The snippet could instead be:
+In the snippet above, there is one non-reserved custom keyword. It is `makeBackgroundBlack`. There are naturally an infinite amount of custom keywords. Remember that the computer doesn't care what the keyword name is when it is custom. It just cares that it is unique. We could have instead named our `makeBackgroundBlack` function `a` and the snippet would instead be:
 
 ```javascript
 function a() {
@@ -117,9 +117,9 @@ a();
 ```
 The functionality is the same even though there are fewer characters. As a result there is less code–a smaller payload–to send from a client to a server and vice versa. Remember however that we are coding for humans first. Naming keywords meaningfully is the primary goal. We can decrease the payload size later through the aforementioned minification process among others. The takeaway is that the engine only cares that custom keywords are unique. The name itself is useful for us coders.
 
-You will notice that the `document`, `body`, `style`, and `backgroundColor` environment identifiers are left untouched. This is because they are not custom keywords, the runtime expects them to be associated with certain values. As such, they cannot be shortened.
+You will notice that the `document`, `body`, `style`, and `backgroundColor` environment identifiers are left untouched. This is because they are not custom keywords, the runtime expects them to be associated with certain values. As such, they would not be shortened through minification.
 
-It is worth noting that when naming custom keywords there are a set of rules. I will list them here for general familiarity, but will propose a subset to focus on. Custom keywords can use the following characters:
+It is worth noting that when naming custom keywords there are a set of rules. I will list them here for general familiarity, but there is a subset to instead focus on. Custom keywords can use the following characters:
 
 - `a-z` (lowercase English letters)
 - `A-Z` (uppercase English letters)
@@ -134,5 +134,7 @@ There are three common case styles that are used as a result of the above rules:
 1. underscore (ex. underscore_case)
 
 I recommend using the `lowerCamelCase` just like we did with `makeBackgroundBlack`. We'll additionally use the `UpperCamelCase` style for certain functions, but we'll cover why in the Functions section later. The takeaway is that you can use all the rules above, but it is much simpler to stick to the `lowerCamelCase` and `UpperCamelCase` styles.
+
+It is worth noting that these case styles exist for a reason. If blank spaces were allowed then our `makeBackgroundBlack` keyword would be `make Background Black`. The engine would instead see three keywords as opposed to one. The `lowerCamelCase` and `UpperCamelCase` styles exist to mitigate this issue.
 
 Now that we've explored the various keyword types, now is the best time to explore the types of expressions–or values–a keyword can represent.

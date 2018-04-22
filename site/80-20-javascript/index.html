@@ -384,7 +384,7 @@
 <p>Now is a great time to reinforce that professional coders don&apos;t remember all the runtime APIs (there are 700+). They reference resources just like beginners. We will do the same and simply focus on knowing about the special <code>window</code> object. Over time we&apos;ll memorize certain APIs that we use often.</p>
 <p>I do however recommend exploring the list of all the web APIs sometime. The effort enables you to grasp the big picture of what is possible in the browser. You will be impressed and you&apos;ll likely find many that peak your interest.</p>
 <h3 id="non-reserved-keywords-custom">Non-Reserved Keywords - Custom</h3>
-<p>In the snippet above, there is one non-reserved custom keyword. It is <code>makeBackgroundBlack</code>. There are naturally an infinite amount of custom keywords. Remember that the computer doesn&apos;t care about the keyword name when it is custom. It just cares that it is unique. We could have instead named our <code>makeBackgroundBlack</code> function <code>a</code>. The snippet could instead be:</p>
+<p>In the snippet above, there is one non-reserved custom keyword. It is <code>makeBackgroundBlack</code>. There are naturally an infinite amount of custom keywords. Remember that the computer doesn&apos;t care what the keyword name is when it is custom. It just cares that it is unique. We could have instead named our <code>makeBackgroundBlack</code> function <code>a</code> and the snippet would instead be:</p>
 </div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>backgroundColor <span class="token operator">=</span> <span class="token string">&apos;#000000&apos;</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
@@ -392,8 +392,8 @@
 <span class="token function">a</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><div class="content-text">
 <p>The functionality is the same even though there are fewer characters. As a result there is less code&#x2013;a smaller payload&#x2013;to send from a client to a server and vice versa. Remember however that we are coding for humans first. Naming keywords meaningfully is the primary goal. We can decrease the payload size later through the aforementioned minification process among others. The takeaway is that the engine only cares that custom keywords are unique. The name itself is useful for us coders.</p>
-<p>You will notice that the <code>document</code>, <code>body</code>, <code>style</code>, and <code>backgroundColor</code> environment identifiers are left untouched. This is because they are not custom keywords, the runtime expects them to be associated with certain values. As such, they cannot be shortened.</p>
-<p>It is worth noting that when naming custom keywords there are a set of rules. I will list them here for general familiarity, but will propose a subset to focus on. Custom keywords can use the following characters:</p>
+<p>You will notice that the <code>document</code>, <code>body</code>, <code>style</code>, and <code>backgroundColor</code> environment identifiers are left untouched. This is because they are not custom keywords, the runtime expects them to be associated with certain values. As such, they would not be shortened through minification.</p>
+<p>It is worth noting that when naming custom keywords there are a set of rules. I will list them here for general familiarity, but there is a subset to instead focus on. Custom keywords can use the following characters:</p>
 <ul>
 <li><code>a-z</code> (lowercase English letters)</li>
 <li><code>A-Z</code> (uppercase English letters)</li>
@@ -408,6 +408,7 @@
 <li>underscore (ex. underscore_case)</li>
 </ol>
 <p>I recommend using the <code>lowerCamelCase</code> just like we did with <code>makeBackgroundBlack</code>. We&apos;ll additionally use the <code>UpperCamelCase</code> style for certain functions, but we&apos;ll cover why in the Functions section later. The takeaway is that you can use all the rules above, but it is much simpler to stick to the <code>lowerCamelCase</code> and <code>UpperCamelCase</code> styles.</p>
+<p>It is worth noting that these case styles exist for a reason. If blank spaces were allowed then our <code>makeBackgroundBlack</code> keyword would be <code>make Background Black</code>. The engine would instead see three keywords as opposed to one. The <code>lowerCamelCase</code> and <code>UpperCamelCase</code> styles exist to mitigate this issue.</p>
 <p>Now that we&apos;ve explored the various keyword types, now is the best time to explore the types of expressions&#x2013;or values&#x2013;a keyword can represent.</p>
 <div><a href="#expressions" class="heading-anchor" onclick="return onAnchorJump(this);"><span class="heading-anchor-hash">#</span><h2 id="expressions">Expressions</h2></a></div>
 <p>...</p>
