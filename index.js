@@ -35,7 +35,7 @@ Metalsmith(__dirname)
   .metadata({
     title: "Coding for Designers",
     description: "...",
-    version: '1.1.22'
+    version: '1.1.23'
   })
   .source('./book')
   .destination('./site')

@@ -18,7 +18,7 @@ These four groupings make a program useful by enabling it to do work during exec
 
 Keywords are named shortcuts to values. They enable us to use a natural-language-like *key* for identifying something as meaningful.
 
-Expressions are values. They unsurprisingly can be represented with keywords, but also with literals (like the number `23`) or to-be-*expressed* evaluations (which we'll cover later). Without values, we would not be able to translate meaningful ideas to a computer.
+Expressions are values. They unsurprisingly can be represented with keywords, but also with literals (like the number `360`) or to-be-*expressed* evaluations (which we'll cover later). Without values, we would not be able to translate meaningful ideas to a computer.
 
 Operators are special characters for changing values. Operators enable values to be *operated on* and changed. You already know about the arithmetic operators `+, -, *, and /` from math class.
 
