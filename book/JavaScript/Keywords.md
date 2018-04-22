@@ -121,8 +121,8 @@ You will notice that the `document`, `body`, `style`, and `backgroundColor` envi
 
 It is worth noting that when naming custom keywords there are a set of rules. I will list them here for general familiarity, but there is a subset to instead focus on. Custom keywords can use the following characters:
 
-- `a-z` (lowercase English letters)
-- `A-Z` (uppercase English letters)
+- `a-z` (lowercase characters)
+- `A-Z` (uppercase characters)
 - `_` (underscore character)
 - `$` (dollar sign character)
 - `0-9` (number characters when not the first keyword's character)
