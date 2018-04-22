@@ -11,16 +11,29 @@ Both examples are not really useful on their own however. An expression—the re
 - `if(currentRotation > 360) { currentRotation = 360; }`
 - `function getMaximumRotation() { return 360; }`
 
-We've talked a lot about values, but we have not explicitly explored the *types* of values in JavaScript. We only care about six of the seven:
+We've talked a lot about values, but we have not explicitly explored the built-in *types* of values in JavaScript. We only care about six of the seven types. Additionally, the types are organized into two groups:
 
-1. null (`null`)
-1. undefined (`undefined`)
-1. Boolean (`true` & `false`)
-1. Number (`360`)
-1. String (`"360... one or more characters—including numbers—wrapped in quotes"`)
-1. Object (`{}`)
+1. Primitive
+  - null (`null`)
+  - undefined (`undefined`)
+  - Boolean (`true` & `false`)
+  - Number (`360`)
+  - String (`"360... one or more characters—including numbers—wrapped in quotes"`)
+2. Complex
+  - Object (`{}`)
 
-The examples within parenthesis above are all examples of the *literal form* of the respective value type. This form is very common, but it is important to know that most types in JavaScript can exist in two forms:
+The examples within parenthesis above are all examples of the *literal form* of the respective value type. This form is most common and preferred, but it is important to know that JavaScript has another way to create values. This other way is called the *constructor form*. The constructor form leverages the `new` keyword in addition to an environment keyword. Here is the same list using `new` and the respective type's environment keyword:
+
+1. Primitive
+  - null (only literal form)
+  - undefined (only literal form)
+  - Boolean (`new Boolean(true)` & `new Boolean(false)`)
+  - Number (`new Number(360)`)
+  - String (`new String("360... one or more characters—including numbers—wrapped in quotes")`)
+2. Complex
+  - Object (`new Object()`)
+
+...
 
 1. literal
 2. reference 
