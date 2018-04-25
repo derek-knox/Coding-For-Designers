@@ -56,8 +56,10 @@ Each type allows the organization of data—information and code—using two str
 - Object as Tree
 - Array as List
 
+The literal form of each is `{}` and `[]` respectively. An Object literal uses *braces* and an Array literal uses *brackets*. Braces are curved and brackets are straight. These visual differences are clues reminding you which structure belongs to which literal form:
 
+- Object/curves/braces/`{}`
+- Array/straight/brackets/`[]`
 
-The literal form of each is `{}` and `[]` respectively. An Object literal uses *braces* and an Array literal uses *brackets*.
 
 ... data as container for values (primitive or complex) and that leads us to the dot operator so we can access nested values :)
