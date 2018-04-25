@@ -16,24 +16,24 @@ Both examples are not really useful on their own however. An expression—the re
 We've talked a lot about values, but we have not explicitly explored the built-in *types* of values in JavaScript. We only care about six of the seven types and they are organized in two forms:
 
 1. Primitive
-  - null (`null`)
-  - undefined (`undefined`)
-  - Boolean (`true` & `false`)
-  - Number (`360`)
-  - String (`"one or more characters—including numbers—wrapped in quotes"`)
+    - null (`null`)
+    - undefined (`undefined`)
+    - Boolean (`true` & `false`)
+    - Number (`360`)
+    - String (`"one or more characters—including numbers—wrapped in quotes"`)
 2. Complex
-  - Object (`{}` & `[]`)
+    - Object (`{}` & `[]`)
 
 The examples within parenthesis above are all examples of the *literal form* of the respective value type. This form is most common and preferred, but it is important to know that JavaScript has another way to create values. This other way is called the *constructor form*. The constructor form leverages the `new` operator keyword in addition to an environment keyword denoting the value's specific Object type. Here is the same list using `new` and the respective type's environment keyword:
 
 1. Primitive
-  - null (only literal form)
-  - undefined (only literal form)
-  - Boolean (`new Boolean(true)` & `new Boolean(false)`)
-  - Number (`new Number(360)`)
-  - String (`new String("one or more characters—including numbers—wrapped in quotes")`)
+    - null (only literal form)
+    - undefined (only literal form)
+    - Boolean (`new Boolean(true)` & `new Boolean(false)`)
+    - Number (`new Number(360)`)
+    - String (`new String("one or more characters—including numbers—wrapped in quotes")`)
 2. Complex
-  - Object (`new Object()` & `new Array()`)
+    - Object (`new Object()` & `new Array()`)
 
 The literal form is best for built-in types where the constructor form is best for custom types. Additionally, the constructor form is useful for specific types of environment Objects like the aforementioned `Date` and `Error`.
 
