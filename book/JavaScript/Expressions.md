@@ -35,7 +35,7 @@ The examples within parenthesis above are all examples of the *literal form* of 
 2. Complex Values
     - Object (`new Object()` & `new Array()`)
 
-The literal form is best for built-in types where the constructor form is best for custom types. Additionally, the constructor form is useful for specific types of environment Objects like the aforementioned `Date` and `Error`.
+The literal form is best for built-in types where the constructor form is best for custom types. Programmers like shortcuts, so this is why the literal form is preferred. The constructor form is useful for specific types of environment Objects like the aforementioned `Date` and `Error` among others.
 
 ### Copy vs. Reference
 
