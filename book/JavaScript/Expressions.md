@@ -13,7 +13,7 @@ Both examples are not really useful on their own however. An expression—the re
 
 ### Types & Forms
 
-We've talked a lot about values, but we have not explicitly explored the built-in *types* of values in JavaScript. We only care about six of the seven types and they are organized in two forms:
+We've talked a lot about values, but we have not explicitly explored the built-in *types* of values in JavaScript. We only care about six of the seven types and they are organized in two groups:
 
 1. Primitive
     - null (`null`)
