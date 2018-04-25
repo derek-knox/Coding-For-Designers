@@ -48,7 +48,7 @@ Coding for Designers is a work-in-progress book that demystifies coding and Java
 - [Environment](http://codingfordesignersbook.com/80-20-javascript/#environment)
 - [Mindset](http://codingfordesignersbook.com/80-20-javascript/#mindset)
 - [Subset](http://codingfordesignersbook.com/80-20-javascript/#subset)
-- Keywords
+- [Keywords](http://codingfordesignersbook.com/80-20-javascript/#keywords)
 - Expressions
 - Operators
 - Statements
