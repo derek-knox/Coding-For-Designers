@@ -1,6 +1,6 @@
 ## Expressions
 
-Expressions are values. More precisely an expression is any amount of code that results in a value. The term expression is used to denote the fact that the engine may need to do some work to get the value—the expressed result. In both examples below the value is the number `360`. The latter of the two examples however requires work where the former does not:
+Expressions are values. More precisely an expression is a piece of code that results in a value. The term expression is used to denote the fact that the engine may need to do some work to get the value—the expressed result. In both examples below the value is the number `360`. The latter of the two examples however requires work where the former does not:
 
 - `360` (literal value expression)
 - `300 + 60` (arithmetic expression)
@@ -11,91 +11,53 @@ Both examples are not really useful on their own however. An expression—the re
 - `if(currentRotation > 360) { currentRotation = 360; }`
 - `function getMaximumRotation() { return 360; }`
 
-We've talked a lot about values, but we have not explicitly explored the built-in *types* of values in JavaScript. We only care about six of the seven types. Additionally, the types are organized into two groups:
+### Types & Forms
+
+We've talked a lot about values, but we have not explicitly explored the built-in *types* of values in JavaScript. We only care about six of the seven types and they are organized in two forms:
 
 1. Primitive
   - null (`null`)
   - undefined (`undefined`)
   - Boolean (`true` & `false`)
   - Number (`360`)
-  - String (`"360... one or more characters—including numbers—wrapped in quotes"`)
+  - String (`"one or more characters—including numbers—wrapped in quotes"`)
 2. Complex
-  - Object (`{}`)
+  - Object (`{}` & `[]`)
 
-The examples within parenthesis above are all examples of the *literal form* of the respective value type. This form is most common and preferred, but it is important to know that JavaScript has another way to create values. This other way is called the *constructor form*. The constructor form leverages the `new` keyword in addition to an environment keyword. Here is the same list using `new` and the respective type's environment keyword:
+The examples within parenthesis above are all examples of the *literal form* of the respective value type. This form is most common and preferred, but it is important to know that JavaScript has another way to create values. This other way is called the *constructor form*. The constructor form leverages the `new` operator keyword in addition to an environment keyword denoting the value's specific Object type. Here is the same list using `new` and the respective type's environment keyword:
 
 1. Primitive
   - null (only literal form)
   - undefined (only literal form)
   - Boolean (`new Boolean(true)` & `new Boolean(false)`)
   - Number (`new Number(360)`)
-  - String (`new String("360... one or more characters—including numbers—wrapped in quotes")`)
+  - String (`new String("one or more characters—including numbers—wrapped in quotes")`)
 2. Complex
-  - Object (`new Object()`)
+  - Object (`new Object()` & `new Array()`)
 
-...
+The literal form is best for built-in types where the constructor form is best for custom types. Additionally, the constructor form is useful for specific types of environment Objects like the aforementioned `Date` and `Error`.
 
-1. literal
-2. reference 
+### Copy vs. Reference
 
-The various snippets throughout the book thus far have had examples of one form, the other form, or both forms. Challenge yourself by looking back at snippets and try to identify some literal forms. Test yourself further and see if you can identify some reference forms.
+Custom keywords—declared with the help of `var` and `function`—are how we declare our own named shortcuts to values. These values are one of the six types above where `function` is a specific type of Object. When a primitive value is assigned to a keyword, the keyword holds a *copy* of the value. A complex value assigned or associated to a keyword is instead a *reference* to the value. So primitive values are always copies and complex values are always references. This distinction is important because references, unlike copies, enable the sharing of:
 
-Reference forms—if not already obvious—are those that use a keyword to *reference* a value. This fact is why the `var`, `function`, and `new` reserved keywords are our most valuable keywords to know.
+- functionality
+- data
 
+We already know that sharing functionality—sharing `function`s—provides us a simple and reusable way to do work. This shared functionality is what gives us APIs. Code would not be able to talk to other code otherwise. Data is not something we've explicitly covered yet however.
 
+Data in JavaScript is structured using two complex types:
 
+- Object
+- Array
 
+Each type allows the organization of data—information and code—using two structures:
 
-
-
-* Primary expressions
-this
-function
-class
-function*
-yield
-yield*
- async function*
- await
-[]
-{}
-/ab+c/i
-( )
-
-* Left-hand-side expressions
-Property accessors (dot and bracket notation)
-new
-new.target
-super
-...obj
+- Object as Tree
+- Array as List
 
 
 
- They unsurprisingly can be represented with keywords, but also with literals (like the number `360`) or to-be-expressed evaluations (which we'll cover later). Without values, we would not be able to translate meaningful ideas to a computer.
+The literal form of each is `{}` and `[]` respectively. An Object literal uses *braces* and an Array literal uses *brackets*.
 
-nested keyword access - dot operator transition?
-
-Keywords
-- reserved keywords (non-assignable)
-  - using ~12/44
-- non-reserved keywords (built-in but re-assignable - language flaw)
-  - using ~13/61
-- custom (assignable)
-  - using ∞/∞
-
-Expressions
-- reserved keywords and character sequences for defining values
-  - using ~6/17
-  - talk about "data" vs "code"
-
-Operators
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators
-- special characters for working with values
-  - using ~14/51
-
-Statements
-- reserved keywords used for control flow and custom identifier declarations
-  - using ~6/27
-
-## Subset Total
- - using ~51/200
+... data as container for values (primitive or complex) and that leads us to the dot operator so we can access nested values :)
