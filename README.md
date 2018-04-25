@@ -49,7 +49,7 @@ Coding for Designers is a work-in-progress book that demystifies coding and Java
 - [Mindset](http://codingfordesignersbook.com/80-20-javascript/#mindset)
 - [Subset](http://codingfordesignersbook.com/80-20-javascript/#subset)
 - [Keywords](http://codingfordesignersbook.com/80-20-javascript/#keywords)
-- Expressions
+- [Expressions](http://codingfordesignersbook.com/80-20-javascript/#expressions)
 - Operators
 - Statements
 - Functions
