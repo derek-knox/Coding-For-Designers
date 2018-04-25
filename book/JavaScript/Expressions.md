@@ -20,7 +20,7 @@ We've talked a lot about values, but we have not explicitly explored the built-i
     - undefined (`undefined`)
     - Boolean (`true` & `false`)
     - Number (`360`)
-    - String (`"one or more characters wrapped in quotes"`)
+    - String (`"one or more characters wrapped in double quotes"` or `'single quotes'`)
 2. Complex Values
     - Object (`{}` & `[]`)
 
@@ -31,7 +31,7 @@ The examples within parenthesis above are all examples of the *literal form* of 
     - undefined (only literal form)
     - Boolean (`new Boolean(true)` & `new Boolean(false)`)
     - Number (`new Number(360)`)
-    - String (`new String("one or more characters wrapped in quotes")`)
+    - String (`new String("one or more characters wrapped in double quotes")` or `new String('single quotes')`)
 2. Complex Values
     - Object (`new Object()` & `new Array()`)
 
