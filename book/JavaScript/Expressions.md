@@ -37,6 +37,14 @@ The examples within parenthesis above are all examples of the *literal form* of 
 
 The literal form is best for built-in types where the constructor form is best for non-built-in types. Programmers like shortcuts, so this is why the literal form is preferred. The constructor form is useful—required really—for specific types of environment Objects like the aforementioned `Date` and `Error` among others. Custom types also require the constructor form.
 
+Since primitive values are so fundamental to JavaScript coding, let's explore each of them in a little more detail.
+
+#### Null
+#### Undefined
+#### Boolean
+#### Number
+#### String
+
 ### Copy vs. Reference
 
 Custom keywords—declared with the help of `var` and `function`—are how we declare our own named shortcuts to values. These values are one of the six types above where `function` is a specific type of Object. When a primitive value is assigned to a keyword, the keyword holds a *copy* of the value. A complex value assigned or associated to a keyword is instead a *reference* to the value. So primitive values are always copies and complex values are always references. This distinction is important because references, unlike copies, enable the sharing of:
