@@ -13,7 +13,7 @@ Both examples are not really useful on their own however. An expression—the re
 - `if(currentRotation > 360) { currentRotation = 360; }`
 - `function getMaximumRotation() { return 360; }`
 
-The relationship of words to a sentence in natural languages is similar to the relationship of expressions to a statement in programming languages. A word is a basic unit of meaning just like an expression is. These units in aggregate provide greater meaning as a sentence in natural language or a statement in a programming language. In time and in the Statements section you'll begin to grasp what constitutes a valid statement.
+The relationship of words to a sentence in natural languages is similar to the relationship of expressions to a statement in programming languages. A word is a basic unit of meaning just like an expression is. These units in aggregate provide greater meaning as a sentence in natural language or a statement in a programming language. In time and in the Statements section you'll begin to grasp what constitutes a valid statement. For now this comparison should help.
 
 ### Types & Forms
 
