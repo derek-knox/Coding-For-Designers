@@ -44,6 +44,14 @@ The literal form is best for built-in types where the constructor form is best f
 Since primitive values are so fundamental to JavaScript coding, let's explore each of them in a little more detail.
 
 #### Null
+
+The `null` keyword in JavaScript denotes the intentional absence of a value. Think of it as a special way to say *nothing*. We need some way to intentionally say *nothing* in our code and `null` is how. Here are two common code snippets that leverage it:
+
+- `if(canvas === null) { canvas = new Canvas(); }`
+- `if(isCanvasGarbage) { canvas = null; }`
+
+The first snippet translated to English is: if the canvas doesn't exist yet, create one and assign it to the canvas keyword. This is a common practice where the code checks for the existence of some value before doing certain work. In the second snippet the translation is: if the canvas is garbage then assign it as so. The former will be most useful to you in the near term. In the long term the latter will be useful by helping you keep the program clean during runtime.
+
 #### Undefined
 #### Boolean
 #### Number
