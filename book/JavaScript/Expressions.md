@@ -66,17 +66,17 @@ Here is an example of a few custom Objects in literal form. They are each assign
 ```javascript
 var pen = {
     name: 'Pen',
-    color: '#000000`,
+    color: '#000000',
     thickness: 1 
 };
 var highlighter = {
     name: 'Highlighter',
-    color: '#FFFF00`,
+    color: '#FFFF00',
     thickness: 3
 };
 var paintbrush = {
     name: 'Paintbrush',
-    color: '#0000FF`,
+    color: '#0000FF',
     thickness: 8 
 };
 ```
