@@ -1,6 +1,6 @@
 ## Expressions
 
-Expressions are values. More precisely an expression is a piece of code that results in a value. The term expression is used to denote the fact that the engine may need to do some work to get the value—the expressed result. In both examples below the value is the number `360`. The latter of the two examples however requires work where the former does not:
+Expressions are values. More precisely an expression is a piece of code that results in a value. The term expression is used to denote the fact that the engine may need to do some work to get the value—the expressed result. In both examples below the value is the number `360`. The latter of the two requires work where the former does not:
 
 - `360` (literal value expression)
 - `300 + 60` (arithmetic expression)
