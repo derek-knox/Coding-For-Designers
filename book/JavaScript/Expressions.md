@@ -42,9 +42,9 @@ The literal form is best for built-in types where the constructor form is best f
 Custom keywords—declared with the help of `var` and `function`—are how we declare our own named shortcuts to values. These values are one of the six types above where `function` is a specific type of Object. When a primitive value is assigned to a keyword, the keyword holds a *copy* of the value. A complex value assigned or associated to a keyword is instead a *reference* to the value. So primitive values are always copies and complex values are always references. This distinction is important because references, unlike copies, enable the sharing of:
 
 - functionality
-- data
+- structured data
 
-We already know that sharing functionality—sharing `function`s—provides us a simple and reusable way to do work. This shared functionality is what gives us APIs. Code would not be able to talk to other code otherwise. Data is not something we've explicitly covered yet however.
+We already know that sharing functionality—sharing `function`s—provides us a simple and reusable way to do work. This shared functionality is what gives us APIs. Code would not be able to talk to other code otherwise. Structured data is not something we've explicitly covered yet however.
 
 Data in JavaScript is structured using two complex types:
 
