@@ -61,5 +61,34 @@ The literal form of each is `{}` and `[]` respectively. An Object literal uses *
 - Object/curves/braces/`{}`
 - Array/straight/brackets/`[]`
 
+Here is an example of a few custom Objects in literal form. They are each assigned to a keyword—using `var`—for easier understanding and later reuse:
+
+```javascript
+var pen = {
+    name: 'Pen',
+    color: '#000000`,
+    thickness: 1 
+};
+var highlighter = {
+    name: 'Highlighter',
+    color: '#FFFF00`,
+    thickness: 3
+};
+var paintbrush = {
+    name: 'Paintbrush',
+    color: '#0000FF`,
+    thickness: 8 
+};
+```
+
+Now here is an example of a custom Array in literal form. The list is assigned to a keyword too—again using `var`—for easier understanding and later reuse:
+
+```javascript
+var drawingTools = [pen, highlighter, paintbrush];
+```
+
+
+
+
 
 ... data as container for values (primitive or complex) and that leads us to the dot operator so we can access nested values :)
