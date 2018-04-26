@@ -61,7 +61,11 @@ The literal form of each is `{}` and `[]` respectively. An Object literal uses *
 - Object/curves/braces/`{}`
 - Array/straight/brackets/`[]`
 
-Here is an example of a few custom Objects in literal form. They are each assigned to a keyword—using `var`—for easier understanding and later reuse:
+For reference, here is a visualization of the anatomy of each structure:
+
+![Object and Array Anatomy](../assets/img/visual-todo-placeholder.jpg "Object and Array Anatomy")
+
+Let's explore some examples of code to really drive home Objects and Arrays. First, here is an example of a few custom Objects in literal form. They are each assigned to a keyword—using `var`—for easier understanding and later reuse:
 
 ```javascript
 var pen = {
