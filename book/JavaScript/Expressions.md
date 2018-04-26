@@ -7,13 +7,13 @@ In both examples below the value is the number `360`. The latter of the two requ
 - `360` (literal value expression)
 - `300 + 60` (arithmetic expression)
 
-Both examples are not really useful on their own however. An expression—the resulting value—becomes useful when used in the context of a code statement. A statement always consists of at least one expression. We will explore statements in greater detail in the Statements section, but here are a few examples so you may begin to intuit how values are useful:
+Both examples are not really useful on their own however. An expression—the resulting value—becomes useful when used in the context of a code statement. A statement always consists of at least one expression. We will explore statements in greater detail in the Statements section but here are a few examples so you may begin to intuit how values are useful:
 
 - `var maximumRotation = 360;`
 - `if(currentRotation > 360) { currentRotation = 360; }`
 - `function getMaximumRotation() { return 360; }`
 
-The relationship of words to a sentence in natural languages is similar to the relationship of expressions to a statement in programming languages. A word is a basic unit of meaning just like an expression is. These units in aggregate provide greater meaning as a sentence in natural language or a statement in a programming language. In time and in the Statements section you'll begin to grasp what constitutes a valid statement. For now this comparison should help.
+Here is another way to think about expressions. The relationship of words to a sentence in natural languages is similar to the relationship of expressions to a statement in programming languages. A word is a basic unit of meaning just like an expression is. These units in aggregate provide greater meaning as a sentence in natural language or a statement in a programming language. In the Statements section and in time you'll begin to grasp what constitutes a valid statement. For now, this comparison will help.
 
 ### Types & Forms
 
