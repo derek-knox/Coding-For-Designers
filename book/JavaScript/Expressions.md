@@ -41,7 +41,7 @@ The examples within parenthesis above are all examples of the *literal form* of 
 
 The literal form is best for built-in types where the constructor form is best for non-built-in types. Programmers like shortcuts, so this is why the literal form is preferred. The constructor form is useful—required really—for specific types of environment Objects like the aforementioned `Date` and `Error` among others. Custom types also require the constructor form.
 
-Since primitive values are so fundamental to JavaScript coding, let's explore each of them in a little more detail.
+Since primitive values are so fundamental to JavaScript, let's explore each of them in a little more detail.
 
 #### Null
 
