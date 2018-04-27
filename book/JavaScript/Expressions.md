@@ -66,12 +66,12 @@ Custom keywords—declared with the help of `var` and `function`—are how we de
 
 We already know that sharing functionality—sharing `function`s—provides us a simple and reusable way to do work. This shared functionality is what gives us APIs. Code would not be able to talk to other code otherwise. Data and specifically structured data have not been explicitly covered yet however.
 
-Data is simply any primitive or complex value. Structured data is always a complex value that parents other primitive or complex values. Below are the two complex value types (Array is a special type of Object) that enable the structuring of data:
+Data is simply any primitive or complex value. Structured data is always a complex value. It parents other values in an:
 
 - Object
 - Array
 
-Each type allows the organization of data—primitive or complex values—using two structures:
+Each allows the organization of data—primitive or complex values—using a particular structure. These structures are:
 
 - Object as Tree
 - Array as List
