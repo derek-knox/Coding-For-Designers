@@ -45,12 +45,11 @@ Since primitive values are so fundamental to JavaScript, let's explore each of t
 
 #### Null
 
-The special `null` value denotes the *intentional absence of a value*. This special value is not automatically assigned in JavaScript. It must intentionally be assigned to a keyword by a coder. Though `null` represents the absence of a value, it is technically a value itself. This is what makes it "special".
+The special `null` value denotes the *intentional* absence of a value. This special value *is not* automatically assigned in JavaScript. It must intentionally be assigned to a keyword by a coder. Though `null` represents the absence of a value, it is technically a value itself. This is what makes it "special".
 
 #### Undefined
 
-The special `undefined` value denotes the *unintentional absence of a value*. This special value is automatically assigned in JavaScript. It is the default value for `var`iable declarations
-- nonexistent keywords
+The special `undefined` value denotes the *unintentional* absence of a value. This special value *is* automatically assigned in JavaScript. It is the default value for `var`iable declarations. Additionally, it is the value returned when a nonexistent keyword is accessed. These two aspects make it "special".
 
 #### Boolean
 #### Number
