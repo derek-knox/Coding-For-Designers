@@ -45,20 +45,12 @@ Since primitive values are so fundamental to JavaScript, let's explore each of t
 
 #### Null
 
-The special `null` value denotes the intentional absence of a value. Think of it as a special way to say *nothing*. We need some way to intentionally say *nothing* in our code and `null` is how. Here are two structurally common code snippets that leverage it:
-
-- `if(canvas === null) { canvas = new Canvas(); }`
-- `if(isCanvasGarbage) { canvas = null; }`
-
-The first snippet translated to English is: if the canvas doesn't exist yet, create one and assign it to the canvas keyword for later use. This is a common practice where the code checks for the existence of a value before doing certain work. In the second snippet the translation is: if the canvas is garbage then intentionally assign it as so. The former will be most useful to you in the near term. In the long term the latter will be useful by helping you keep a program clean during runtime.
-
-The takeaway is that `null` is most useful for checking the existence of a keyword's value. This check determines what code should execute next.
+The special `null` value denotes the *intentional absence of a value*. This special value is not automatically assigned in JavaScript. It must intentionally be assigned to a keyword by a coder. Though `null` represents the absence of a value, it is technically a value itself. This is what makes it "special".
 
 #### Undefined
 
-The special `undefined` value denotes that a keyword has not been declared or it lacks an assigned value. The default value for custom keywords is `undefined`. Think of `undefined` as a special way to say *nonexistent*. Either the keyword is nonexistent or it exists but lacks an assigned value.
-
-You may be thinking that `null` and `undefined` are the same. You'd be right except for the fact that we need a way to *intentionally* say *nothing*. We have `null` for this reason. Think of `undefined` has the unintentionaly way to say  
+The special `undefined` value denotes the *unintentional absence of a value*. This special value is automatically assigned in JavaScript. It is the default value for `var`iable declarations
+- nonexistent keywords
 
 #### Boolean
 #### Number
