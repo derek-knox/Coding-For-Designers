@@ -41,11 +41,15 @@ The examples within parenthesis above are all examples of the *literal form* of 
 
 The literal form is best for built-in types where the constructor form is best for non-built-in types. Programmers like shortcuts, so this is why the literal form is preferred. The constructor form is useful—required really—for specific types of environment Objects like the aforementioned `Date` and `Error` among others. Custom types also require the constructor form.
 
-Since primitive values are so fundamental to JavaScript, let's explore each of them in a little more detail. Below is a snippet that will be further referenced to illustrate an example use of each primitive type. Pretend that this code is running in a web app that can dislay multiple canvases to draw on in addition to a "Create Canvas Button".
+Since primitive values are so fundamental to JavaScript, let's explore each of them in a little more detail. Below is a snippet that will be further referenced to illustrate an example use of each primitive type. Pretend that this code is running in a web app that:
+
+1. can dislay multiple canvases to draw on
+2. has a "Create Canvas" button (`<button id='create'>Create Canvas</button>`)
+3. has a "Delete Canvas" button (`<button id='delete'>Delete Canvas</button>`)
 
 ```javascript
-var createCanvasButton = document.getElementById('create-canvas-button');
-var deleteCanvasButton = document.getElementById('delete-canvas-button');
+var createCanvasButton = document.getElementById('create');
+var deleteCanvasButton = document.getElementById('delete');
 var canvases = [];
 var canvasInFocus;
 
