@@ -41,35 +41,52 @@ The examples within parenthesis above are all examples of the *literal form* of 
 
 The literal form is best for built-in types where the constructor form is best for non-built-in types. Programmers like shortcuts, so this is why the literal form is preferred. The constructor form is useful—required really—for specific types of environment Objects like the aforementioned `Date` and `Error` among others. Custom types also require the constructor form.
 
-Since primitive values are so fundamental to JavaScript, let's explore each of them in a little more detail. Below is a snippet that will be further referenced to illustrate an example use of each primitive type. Pretend that this code is running in a web app that:
+### Primitive Values
 
-1. can dislay multiple canvases to draw on
-2. has a "Create Canvas" button (`<button id='create'>Create Canvas</button>`)
-3. has a "Delete Canvas" button (`<button id='delete'>Delete Canvas</button>`)
+Since primitive values are so fundamental to JavaScript, let's explore each of them in a little more detail. Below is a small program that will be further referenced as an example use of each primitive. Comments are intentionally absent so you can practice the *thinking in three zoom levels* technique. Pretend that the code is running in a browser whose HTML structure:
+
+1. can display multiple artboards on a surface
+2. has a "Create Artboard" button (`<button id='create'>Create Artboard</button>`)
+3. has a "Delete Artboard" button (`<button id='delete'>Delete Artboard</button>`)
+4. has downloaded, compiled, and is executing our program (`<script src='assets/js/artboards.js'></script>`)
 
 ```javascript
-var createCanvasButton = document.getElementById('create');
-var deleteCanvasButton = document.getElementById('delete');
-var canvases = [];
-var canvasInFocus;
+var createArtboardButton = document.getElementById('create');
+var deleteArtboardButton = document.getElementById('delete');
+var artboards = [];
+var artboardInFocus;
 
 function setupEventListeners() {
-    createCanvasButton.addEventListener('click', onCreateCanvasButtonClick);
-    deleteCanvasButton.addEventListener('click', onDeleteCanvasButtonClick);
+    createArtboardButton.addEventListener('click', onCreateArtboardButtonClick);
+    deleteArtboardButton.addEventListener('click', onDeleteArtboardButtonClick);
 }
 
-function onCreateCanvasButtonClick(event) {
-    var canvas = new Canvas();
-    canvases.push(canvas);
-    updateCanvasInFocus(canvas);
+function updateArtboardInFocus(artboard) {
+    artboardInFocus = artboard;
 }
 
-function onDeleteCanvasButtonClick(event) {
-    if(canvasInFocus === undefined) { alert('No canvas to delete'); }
+function deleteArtboardInFocus() {
+    var artboardInFocusIndex = artboards.indexOf(artboardInFocus);
+    artboards.splice(artboardInFocusIndex, 1);
+    artboardInFocus.removeSelfFromSurface();
+    artboardInFocus = null;
 }
 
-function updateCanvasInFocus(canvas) {
-    canvasInFocus = canvas;
+function onCreateArtboardButtonClick() {
+    var artboard = new Artboard();
+    artboard.addSelfToSurface();
+    artboards.push(artboard);
+    updateArtboardInFocus(artboard);
+}
+
+function onDeleteArtboardButtonClick() {
+    if (artboardInFocus === undefined) {
+        alert('No artboard to delete. Try creating one first.');
+    } else if (artboardInFocus === null) {
+        alert('No artboard to delete. None of the ' + String(artboards.length) + ' artboards are in focus.');
+    } else {
+        deleteArtboardInFocus();
+    }
 }
 
 setupEventListeners();
@@ -77,43 +94,114 @@ setupEventListeners();
 
 #### Null
 
-The special `null` value denotes the *intentional* absence of a value. This special value *is not* automatically assigned in JavaScript. It must intentionally be assigned to a keyword by a coder. Though `null` represents the absence of a value, it is technically a value itself. This is what makes it "special". Here is an example snippet:
+The special `null` value denotes the *intentional* absence of a value. This special value *is not* automatically assigned in JavaScript. It must intentionally be assigned to a keyword by a coder. Though `null` represents the absence of a value, it is technically a value itself. A little weird I know. This is what makes it "special".
+
+In the `artboards.js` code above we use `null` in the `deleteArtboardInFocus` function:
 
 ```javascript
-canvasInFocus = null;
+artboardInFocus = null;
 ```
+
+and in the `onDeleteArtboardButtonClick` function:
+
+```javascript
+else if (artboardInFocus === null) {
+    alert('No artboard to delete. None of the ' + String(artboards.length) + ' artboards are in focus.');
+}
+```
+
+By using `null` we can provide a more intentional path for the engine to execute code when the program is being interacted with.
 
 #### Undefined
 
-The special `undefined` value denotes the *unintentional* absence of a value. This special value *is* automatically assigned in JavaScript. It is the default value for `var`iable declarations. Additionally, it is the value returned when a nonexistent keyword is accessed. These two aspects make it "special". Here is an example snippet:
+The special `undefined` value denotes the *unintentional* absence of a value. This special value *is* automatically assigned in JavaScript. It is the default value for `var`iable declarations. Additionally, it is the value returned when a nonexistent keyword is accessed. These two aspects make it "special".
+
+In the `artboards.js` code above `undefined` is automatically used in the `var`iable declarations section:
 
 ```javascript
-
+var artboardInFocus;
 ```
+
+and additionally in the `onDeleteArtboardButtonClick` function:
+
+```javascript
+if (artboardInFocus === undefined) {
+    alert('No artboard to delete. Try creating one first.');
+}
+```
+
+If the first interaction with the program is to click the "Delete Canvas" button then the above `alert` code would run. If we did not check for `undefined` and `null` prior to executing `deleteArtboardInFocus()` we'd get an `Error`. This would happen because we can't delete an artboard that does not exist. The above examples illustrate why the `undefined` and `null` values are useful.
 
 #### Boolean
 
-The Boolean type denotes one of two values: `true` or `false`. Remember the bit? This is JavaScript's formal approach to the same goal of defining one of two states. The bit's `0` is the Boolean's `false`. Its `1` is the Boolean's `true`. Here is an example snippet:
+The Boolean type denotes one of two values: `true` or `false`. Remember the bit? This is JavaScript's formal approach to the same goal of defining one of two states. The bit's `0` is the Boolean's `false`. Its `1` is the Boolean's `true`.
+
+In the `artboards.js` code above the `onDeleteArtboardButtonClick` function *implies* the use of a Boolean value in two places. Can you spot them before reading on?
+
+Here is a more *explicit* version of the same functionality using the constructor form:
 
 ```javascript
-
+var isArtboardInFocusUndefined = Boolean(artboardInFocus === undefined);
+var isArtboardInFocusNull = Boolean(artboardInFocus === null);
+if (isArtboardInFocusUndefined) {
+    alert('No artboard to delete. Try creating one first.');
+} else if (isArtboardInFocusNull) {
+    alert('No artboard to delete. None of the ' + String(artboards.length) + ' artboards are in focus.');
+} else {
+    deleteArtboardInFocus();
+}
 ```
+
+Both the implicit (literal form) and the explicit (constructor form) versions result in the same code flow. Since programmers like shortcuts you will almost always see the *implicit* version when working with `if`, `else if`, and `else`. Admittedly the implicit version falls in the right and better categories. Feel free to use whichever version makes more sense to you.
+
+The takeaway is that Boolean values—in either literal or constructor form—are fundamental to controlling code flow.
 
 #### Number
 
- Here is an example snippet:
+The Number type denotes numbers. Impressive I know. These numbers can be whole (`-360`, `0`, and `360`) or fractions (`-.36`, `.36`, and `3.6`). They can be negative or positive too. There are technically limits to a number value in JavaScript, but for our subset approach we can ignore them. If you ever need to work with extreme whole numbers (positives or negatives in the quadrillions) or similarly extreme fractions then feel free to dig deeper. Thought so.
+
+In the `artboards.js` code above we use a Number twice in the `deleteArtboardInFocus` function:
 
 ```javascript
-
+var artboardInFocusIndex = artboards.indexOf(artboardInFocus);
+artboards.splice(artboardInFocusIndex, 1);
 ```
+
+and once in the `onDeleteArtboardButtonClick` function:
+
+```javascript
+alert('No artboard to delete. None of the ' + String(artboards.length) + ' artboards are in focus.');
+```
+
+The first snippet uses an evaluated number assigned to `artboardInFocusIndex` in addition to the literal `1` value. The two lines of code work together to:
+
+1. find *where* in the `artboards` array the `artboardInFocus` is
+2. use the Array's built-in `splice` function to remove that artboard (the `artboardInFocus`)
+
+The second snippet uses the evaluated `artboards.length` value to get the number of total artboards that exist. This allows us to display an up-to-date message using the correct artboards count.
 
 #### String
 
- Here is an example snippet:
+The String type denotes `"one or more characters wrapped in double quotes"` or `'single quotes'`. There are seven examples of String values being used in the `artboard.js` code above.
+
+Strings are useful for defining names, event types, and messages among other things. Concrete examples of this are the use of `create` and `delete`, `click`, and the `alert` strings respectively. It is worth noting that double quoted and single quoted strings are valuable in different scenarios:
+
+- `"The artboard's size is too small."`
+- `"The artboard is too small", she said."`
+
+There is one specific example from the `onDeleteArtboardButtonClick` function I'd like to call out:
 
 ```javascript
-
+alert('No artboard to delete. None of the ' + String(artboards.length) + ' artboards are in focus.');
 ```
+
+Since `artboards.length` is a number, we explicitly convert it to a String using the `String` function. We additionally use the `+` (concatenation operator) twice to make one large string from three smaller strings. This latter fact will soon be explored more in the Operators section.
+
+The takeaway is that the String type prevents the engine from processing its characters as keywords or other value types. For example, 'null', 'undefined', 'true', 'false', and '360' are all String values because they are wrapped in quotes. If we removed the quotes they would instead be examples of the `null`, `undefined`, Boolean, Boolean, and Number types respectively.
+
+### Complex Values
+
+...
 
 ### Copy vs. Reference
 

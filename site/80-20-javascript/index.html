@@ -22,7 +22,7 @@
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
     <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon">
     <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.1.24">
+    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.1.25">
     <link rel="stylesheet" href="../assets/css/prism.css">
   </head>
   <body>
@@ -408,71 +408,215 @@
 <li>underscore (ex. underscore_case)</li>
 </ol>
 <p>I recommend using the <code>lowerCamelCase</code> just like we did with <code>makeBackgroundBlack</code>. We&apos;ll additionally use the <code>UpperCamelCase</code> style for certain functions, but we&apos;ll cover why in the Functions section later. The takeaway is that you can use all the rules above, but it is much simpler to stick to the <code>lowerCamelCase</code> and <code>UpperCamelCase</code> styles.</p>
-<p>It is worth noting that these case styles exist for a reason. If blank spaces were allowed then our <code>makeBackgroundBlack</code> keyword would be <code>make Background Black</code>. The engine would instead see three keywords as opposed to one. The <code>lowerCamelCase</code> and <code>UpperCamelCase</code> styles exist to mitigate this issue.</p>
+<p>It is worth noting that these case styles exist for a reason. If blank spaces were allowed then our <code>makeBackgroundBlack</code> keyword would be <code>make Background Black</code>. The engine would instead see three keywords as opposed to one. The <code>lowerCamelCase</code> and <code>UpperCamelCase</code> styles exist to mitigate this issue while maintaining readability.</p>
 <p>Now that we&apos;ve explored the various keyword types, now is the best time to explore the types of expressions&#x2013;or values&#x2013;a keyword can represent.</p>
 <div><a href="#expressions" class="heading-anchor" onclick="return onAnchorJump(this);"><span class="heading-anchor-hash">#</span><h2 id="expressions">Expressions</h2></a></div>
-<p>Expressions are values. More precisely an expression is a piece of code that results in a value. The term expression is used to denote the fact that the engine may need to do some work to get the value&#x2014;the expressed result. In both examples below the value is the number <code>360</code>. The latter of the two examples however requires work where the former does not:</p>
+<p>Expressions are values. More precisely an expression is a piece of code that results in a value. The term expression is used to denote the fact that the engine may need to do some work to get the value&#x2014;the expressed result. If this was not the case then the official term would be value instead of expression.</p>
+<p>In both examples below the value is the number <code>360</code>. The latter of the two requires work where the former does not:</p>
 <ul>
 <li><code>360</code> (literal value expression)</li>
 <li><code>300 + 60</code> (arithmetic expression)</li>
 </ul>
-<p>Both examples are not really useful on their own however. An expression&#x2014;the resulting value&#x2014;becomes useful when used in the context of a code statement. A statement always consists of at least one expression. We will explore statements in greater detail in the next section, but here are a few examples so you may begin to intuit how values are useful:</p>
+<p>Both examples are not really useful on their own however. An expression&#x2014;the resulting value&#x2014;becomes useful when used in the context of a code statement. A statement always consists of at least one expression. We will explore statements in greater detail in the Statements section but here are a few examples so you may begin to intuit how values are useful:</p>
 <ul>
 <li><code>var maximumRotation = 360;</code></li>
 <li><code>if(currentRotation &gt; 360) { currentRotation = 360; }</code></li>
 <li><code>function getMaximumRotation() { return 360; }</code></li>
 </ul>
+<p>The relationship of words to a sentence in natural languages is similar to the relationship of expressions to a statement in programming languages. A word is a basic unit of meaning just like an expression is. These units in aggregate provide greater meaning as a sentence in natural language or a statement in a programming language. In the Statements section and in time you&apos;ll begin to grasp what constitutes a valid statement.</p>
 <h3 id="types-forms">Types &amp; Forms</h3>
-<p>We&apos;ve talked a lot about values, but we have not explicitly explored the built-in <em>types</em> of values in JavaScript. We only care about six of the seven types and they are organized in two forms:</p>
+<p>We&apos;ve talked a lot about values, but we have not explicitly explored the built-in <em>types</em> of values in JavaScript. We only care about six of the seven types due to our subset approach. The types are organized in two groups:</p>
 <ol>
-<li>Primitive<ul>
+<li>Primitive Values<ul>
 <li>null (<code>null</code>)</li>
 <li>undefined (<code>undefined</code>)</li>
 <li>Boolean (<code>true</code> &amp; <code>false</code>)</li>
 <li>Number (<code>360</code>)</li>
-<li>String (<code>&quot;one or more characters&#x2014;including numbers&#x2014;wrapped in quotes&quot;</code>)</li>
+<li>String (<code>&quot;one or more characters wrapped in double quotes&quot;</code> or <code>&apos;single quotes&apos;</code>)</li>
 </ul>
 </li>
-<li>Complex<ul>
+<li>Complex Values<ul>
 <li>Object (<code>{}</code> &amp; <code>[]</code>)</li>
 </ul>
 </li>
 </ol>
-<p>The examples within parenthesis above are all examples of the <em>literal form</em> of the respective value type. This form is most common and preferred, but it is important to know that JavaScript has another way to create values. This other way is called the <em>constructor form</em>. The constructor form leverages the <code>new</code> operator keyword in addition to an environment keyword denoting the value&apos;s specific Object type. Here is the same list using <code>new</code> and the respective type&apos;s environment keyword:</p>
+<p>The examples within parenthesis above are all examples of the <em>literal form</em> of the respective value type. This form is most common and preferred. It is important to know that JavaScript has another way to create values however. This other way is called the <em>constructor form</em>. The constructor form leverages the <code>new</code> operator keyword in addition to an environment keyword. This environment keyword denotes the value&apos;s specific Object type. Here is the same list using <code>new</code> and the respective type&apos;s environment keyword (which is a named shortcut to a function):</p>
 <ol>
-<li>Primitive<ul>
+<li>Primitive Values<ul>
 <li>null (only literal form)</li>
 <li>undefined (only literal form)</li>
 <li>Boolean (<code>new Boolean(true)</code> &amp; <code>new Boolean(false)</code>)</li>
 <li>Number (<code>new Number(360)</code>)</li>
-<li>String (<code>new String(&quot;one or more characters&#x2014;including numbers&#x2014;wrapped in quotes&quot;)</code>)</li>
+<li>String (<code>new String(&quot;one or more characters wrapped in double quotes&quot;)</code> or <code>new String(&apos;single quotes&apos;)</code>)</li>
 </ul>
 </li>
-<li>Complex<ul>
+<li>Complex Values<ul>
 <li>Object (<code>new Object()</code> &amp; <code>new Array()</code>)</li>
 </ul>
 </li>
 </ol>
-<p>The literal form is best for built-in types where the constructor form is best for custom types. Additionally, the constructor form is useful for specific types of environment Objects like the aforementioned <code>Date</code> and <code>Error</code>.</p>
+<p>The literal form is best for built-in types where the constructor form is best for non-built-in types. Programmers like shortcuts, so this is why the literal form is preferred. The constructor form is useful&#x2014;required really&#x2014;for specific types of environment Objects like the aforementioned <code>Date</code> and <code>Error</code> among others. Custom types also require the constructor form.</p>
+<h3 id="primitive-values">Primitive Values</h3>
+<p>Since primitive values are so fundamental to JavaScript, let&apos;s explore each of them in a little more detail. Below is a small program that will be further referenced as an example use of each primitive. Comments are intentionally absent so you can practice the <em>thinking in three zoom levels</em> technique. Pretend that the code is running in a browser whose HTML structure:</p>
+<ol>
+<li>can display multiple artboards on a surface</li>
+<li>has a &quot;Create Artboard&quot; button (<code>&lt;button id=&apos;create&apos;&gt;Create Artboard&lt;/button&gt;</code>)</li>
+<li>has a &quot;Delete Artboard&quot; button (<code>&lt;button id=&apos;delete&apos;&gt;Delete Artboard&lt;/button&gt;</code>)</li>
+<li>has downloaded, compiled, and is executing our program (<code>&lt;script src=&apos;assets/js/artboards.js&apos;&gt;&lt;/script&gt;</code>)</li>
+</ol>
+</div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">var</span> createArtboardButton <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&apos;create&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> deleteArtboardButton <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&apos;delete&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> artboards <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> artboardInFocus<span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">setupEventListeners</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    createArtboardButton<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&apos;click&apos;</span><span class="token punctuation">,</span> onCreateArtboardButtonClick<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    deleteArtboardButton<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&apos;click&apos;</span><span class="token punctuation">,</span> onDeleteArtboardButtonClick<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">updateArtboardInFocus</span><span class="token punctuation">(</span>artboard<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    artboardInFocus <span class="token operator">=</span> artboard<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">deleteArtboardInFocus</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> artboardInFocusIndex <span class="token operator">=</span> artboards<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>artboardInFocus<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    artboards<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span>artboardInFocusIndex<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    artboardInFocus<span class="token punctuation">.</span><span class="token function">removeSelfFromSurface</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    artboardInFocus <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">onCreateArtboardButtonClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> artboard <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Artboard</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    artboard<span class="token punctuation">.</span><span class="token function">addSelfToSurface</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    artboards<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>artboard<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">updateArtboardInFocus</span><span class="token punctuation">(</span>artboard<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">onDeleteArtboardButtonClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>artboardInFocus <span class="token operator">===</span> undefined<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&apos;No artboard to delete. Try creating one first.&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>artboardInFocus <span class="token operator">===</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&apos;No artboard to delete. None of the &apos;</span> <span class="token operator">+</span> <span class="token function">String</span><span class="token punctuation">(</span>artboards<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&apos; artboards are in focus.&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token function">deleteArtboardInFocus</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">setupEventListeners</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><div class="content-text">
+<h4 id="null">Null</h4>
+<p>The special <code>null</code> value denotes the <em>intentional</em> absence of a value. This special value <em>is not</em> automatically assigned in JavaScript. It must intentionally be assigned to a keyword by a coder. Though <code>null</code> represents the absence of a value, it is technically a value itself. A little weird I know. This is what makes it &quot;special&quot;.</p>
+<p>In the <code>artboards.js</code> code above we use <code>null</code> in the <code>deleteArtboardInFocus</code> function:</p>
+</div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript">artboardInFocus <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+</code></pre></div><div class="content-text">
+<p>and in the <code>onDeleteArtboardButtonClick</code> function:</p>
+</div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>artboardInFocus <span class="token operator">===</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&apos;No artboard to delete. None of the &apos;</span> <span class="token operator">+</span> <span class="token function">String</span><span class="token punctuation">(</span>artboards<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&apos; artboards are in focus.&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="content-text">
+<p>By using <code>null</code> we can provide a more intentional path for the engine to execute code when the program is being interacted with.</p>
+<h4 id="undefined">Undefined</h4>
+<p>The special <code>undefined</code> value denotes the <em>unintentional</em> absence of a value. This special value <em>is</em> automatically assigned in JavaScript. It is the default value for <code>var</code>iable declarations. Additionally, it is the value returned when a nonexistent keyword is accessed. These two aspects make it &quot;special&quot;.</p>
+<p>In the <code>artboards.js</code> code above <code>undefined</code> is automatically used in the <code>var</code>iable declarations section:</p>
+</div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">var</span> artboardInFocus<span class="token punctuation">;</span>
+</code></pre></div><div class="content-text">
+<p>and additionally in the <code>onDeleteArtboardButtonClick</code> function:</p>
+</div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">if</span> <span class="token punctuation">(</span>artboardInFocus <span class="token operator">===</span> undefined<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&apos;No artboard to delete. Try creating one first.&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="content-text">
+<p>If the first interaction with the program is to click the &quot;Delete Canvas&quot; button then the above <code>alert</code> code would run. If we did not check for <code>undefined</code> and <code>null</code> prior to executing <code>deleteArtboardInFocus()</code> we&apos;d get an <code>Error</code>. This would happen because we can&apos;t delete an artboard that does not exist. The above examples illustrate why the <code>undefined</code> and <code>null</code> values are useful.</p>
+<h4 id="boolean">Boolean</h4>
+<p>The Boolean type denotes one of two values: <code>true</code> or <code>false</code>. Remember the bit? This is JavaScript&apos;s formal approach to the same goal of defining one of two states. The bit&apos;s <code>0</code> is the Boolean&apos;s <code>false</code>. Its <code>1</code> is the Boolean&apos;s <code>true</code>.</p>
+<p>In the <code>artboards.js</code> code above the <code>onDeleteArtboardButtonClick</code> function <em>implies</em> the use of a Boolean value in two places. Can you spot them before reading on?</p>
+<p>Here is a more <em>explicit</em> version of the same functionality using the constructor form:</p>
+</div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">var</span> isArtboardInFocusUndefined <span class="token operator">=</span> <span class="token function">Boolean</span><span class="token punctuation">(</span>artboardInFocus <span class="token operator">===</span> undefined<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> isArtboardInFocusNull <span class="token operator">=</span> <span class="token function">Boolean</span><span class="token punctuation">(</span>artboardInFocus <span class="token operator">===</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>isArtboardInFocusUndefined<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&apos;No artboard to delete. Try creating one first.&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>isArtboardInFocusNull<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&apos;No artboard to delete. None of the &apos;</span> <span class="token operator">+</span> <span class="token function">String</span><span class="token punctuation">(</span>artboards<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&apos; artboards are in focus.&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token function">deleteArtboardInFocus</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="content-text">
+<p>Both the implicit (literal form) and the explicit (constructor form) versions result in the same code flow. Since programmers like shortcuts you will almost always see the <em>implicit</em> version when working with <code>if</code>, <code>else if</code>, and <code>else</code>. Admittedly the implicit version falls in the right and better categories. Feel free to use whichever version makes more sense to you.</p>
+<p>The takeaway is that Boolean values&#x2014;in either literal or constructor form&#x2014;are fundamental to controlling code flow.</p>
+<h4 id="number">Number</h4>
+<p>The Number type denotes numbers. Impressive I know. These numbers can be whole (<code>-360</code>, <code>0</code>, and <code>360</code>) or fractions (<code>-.36</code>, <code>.36</code>, and <code>3.6</code>). They can be negative or positive too. There are technically limits to a number value in JavaScript, but for our subset approach we can ignore them. If you ever need to work with extreme whole numbers (positives or negatives in the quadrillions) or similarly extreme fractions then feel free to dig deeper. Thought so.</p>
+<p>In the <code>artboards.js</code> code above we use a Number twice in the <code>deleteArtboardInFocus</code> function:</p>
+</div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">var</span> artboardInFocusIndex <span class="token operator">=</span> artboards<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>artboardInFocus<span class="token punctuation">)</span><span class="token punctuation">;</span>
+artboards<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span>artboardInFocusIndex<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><div class="content-text">
+<p>and once in the <code>onDeleteArtboardButtonClick</code> function:</p>
+</div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&apos;No artboard to delete. None of the &apos;</span> <span class="token operator">+</span> <span class="token function">String</span><span class="token punctuation">(</span>artboards<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&apos; artboards are in focus.&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><div class="content-text">
+<p>The first snippet uses an evaluated number assigned to <code>artboardInFocusIndex</code> in addition to the literal <code>1</code> value. The two lines of code work together to:</p>
+<ol>
+<li>find <em>where</em> in the <code>artboards</code> array the <code>artboardInFocus</code> is</li>
+<li>use the Array&apos;s built-in <code>splice</code> function to remove that artboard (the <code>artboardInFocus</code>)</li>
+</ol>
+<p>The second snippet uses the evaluated <code>artboards.length</code> value to get the number of total artboards that exist. This allows us to display an up-to-date message using the correct artboards count.</p>
+<h4 id="string">String</h4>
+<p>The String type denotes <code>&quot;one or more characters wrapped in double quotes&quot;</code> or <code>&apos;single quotes&apos;</code>. There are seven examples of String values being used in the <code>artboard.js</code> code above.</p>
+<p>Strings are useful for defining names, event types, and messages among other things. Concrete examples of this are the use of <code>create</code> and <code>delete</code>, <code>click</code>, and the <code>alert</code> strings respectively. It is worth noting that double quoted and single quoted strings are valuable in different scenarios:</p>
+<ul>
+<li><code>&quot;The artboard&apos;s size is too small.&quot;</code></li>
+<li><code>&quot;The artboard is too small&quot;, she said.&quot;</code></li>
+</ul>
+<p>There is one specific example from the <code>onDeleteArtboardButtonClick</code> function I&apos;d like to call out:</p>
+</div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&apos;No artboard to delete. None of the &apos;</span> <span class="token operator">+</span> <span class="token function">String</span><span class="token punctuation">(</span>artboards<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&apos; artboards are in focus.&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><div class="content-text">
+<p>Since <code>artboards.length</code> is a number, we explicitly convert it to a String using the <code>String</code> function. We additionally use the <code>+</code> (concatenation operator) twice to make one large string from three smaller strings. This latter fact will soon be explored more in the Operators section.</p>
+<p>The takeaway is that the String type prevents the engine from processing its characters as keywords or other value types. For example, &apos;null&apos;, &apos;undefined&apos;, &apos;true&apos;, &apos;false&apos;, and &apos;360&apos; are all String values because they are wrapped in quotes. If we removed the quotes they would instead be examples of the <code>null</code>, <code>undefined</code>, Boolean, Boolean, and Number types respectively.</p>
+<h3 id="complex-values">Complex Values</h3>
+<p>...</p>
 <h3 id="copy-vs-reference">Copy vs. Reference</h3>
 <p>Custom keywords&#x2014;declared with the help of <code>var</code> and <code>function</code>&#x2014;are how we declare our own named shortcuts to values. These values are one of the six types above where <code>function</code> is a specific type of Object. When a primitive value is assigned to a keyword, the keyword holds a <em>copy</em> of the value. A complex value assigned or associated to a keyword is instead a <em>reference</em> to the value. So primitive values are always copies and complex values are always references. This distinction is important because references, unlike copies, enable the sharing of:</p>
 <ul>
 <li>functionality</li>
-<li>data</li>
+<li>structured data</li>
 </ul>
-<p>We already know that sharing functionality&#x2014;sharing <code>function</code>s&#x2014;provides us a simple and reusable way to do work. This shared functionality is what gives us APIs. Code would not be able to talk to other code otherwise. Data is not something we&apos;ve explicitly covered yet however.</p>
-<p>Data in JavaScript is structured using two complex types:</p>
+<p>We already know that sharing functionality&#x2014;sharing <code>function</code>s&#x2014;provides us a simple and reusable way to do work. This shared functionality is what gives us APIs. Code would not be able to talk to other code otherwise. Data and specifically structured data have not been explicitly covered yet however.</p>
+<p>Data is simply any primitive or complex value. Structured data is always a complex value. It parents other values in an:</p>
 <ul>
 <li>Object</li>
 <li>Array</li>
 </ul>
-<p>Each type allows the organization of data&#x2014;information and code&#x2014;using two structures:</p>
+<p>Each allows the organization of data&#x2014;primitive or complex values&#x2014;using a particular structure. These structures are:</p>
 <ul>
 <li>Object as Tree</li>
 <li>Array as List</li>
 </ul>
-<p>The literal form of each is <code>{}</code> and <code>[]</code> respectively. An Object literal uses <em>braces</em> and an Array literal uses <em>brackets</em>.</p>
-<p>... data as container for values (primitive or complex) and that leads us to the dot operator so we can access nested values :)</p>
+<p>The literal form of each is <code>{}</code> and <code>[]</code> respectively. An Object literal uses <em>braces</em> and an Array literal uses <em>brackets</em>. Braces are curved and brackets are straight. These visual differences are clues reminding you which structure belongs to which literal form:</p>
+<ul>
+<li>Object/curves/braces/<code>{}</code></li>
+<li>Array/straight/brackets/<code>[]</code></li>
+</ul>
+<p>For reference, here is a visualization of the anatomy of each structure:</p>
+</div><a href="#object-and-array-anatomy" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="object-and-array-anatomy" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg" alt="Object and Array Anatomy" title="Object and Array Anatomy"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>Object and Array Anatomy</figcaption></figure></div></a><div class="content-text">
+<p>Let&apos;s explore some examples of code to really drive home Objects and Arrays. First, here is an example of a few custom Objects in literal form. They are each assigned to a keyword&#x2014;using <code>var</code>&#x2014;for easier understanding and later reuse:</p>
+</div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">var</span> pen <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">&apos;Pen&apos;</span><span class="token punctuation">,</span>
+    color<span class="token punctuation">:</span> <span class="token string">&apos;#000000&apos;</span><span class="token punctuation">,</span>
+    thickness<span class="token punctuation">:</span> <span class="token number">1</span> 
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> highlighter <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">&apos;Highlighter&apos;</span><span class="token punctuation">,</span>
+    color<span class="token punctuation">:</span> <span class="token string">&apos;#FFFF00&apos;</span><span class="token punctuation">,</span>
+    thickness<span class="token punctuation">:</span> <span class="token number">3</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> paintbrush <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">&apos;Paintbrush&apos;</span><span class="token punctuation">,</span>
+    color<span class="token punctuation">:</span> <span class="token string">&apos;#0000FF&apos;</span><span class="token punctuation">,</span>
+    thickness<span class="token punctuation">:</span> <span class="token number">8</span> 
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><div class="content-text">
+<p>Now here is an example of a custom Array in literal form. The list is assigned to a keyword too&#x2014;again using <code>var</code>&#x2014;for easier understanding and later reuse:</p>
+</div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">var</span> drawingTools <span class="token operator">=</span> <span class="token punctuation">[</span>pen<span class="token punctuation">,</span> highlighter<span class="token punctuation">,</span> paintbrush<span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><div class="content-text">
+<p>The code for each drawing tool type makes the most sense when structured as a tree&#x2014;an Object. When organizing all the drawing tools, it makes the most sense to structure them as a list&#x2014;an Array. Over time you will learn to intuit when to use which type.</p>
+<p>On their own, all four variable declarations above are not all that useful. An Object is most useful when code can <em>access</em> its nested keywords and thus its nested values. Likewise, an Array is most useful when code can <em>iterate</em> its values. We&apos;ll cover what it means to iterate an array&apos;s values in the Functions section. Accessing an object&apos;s nested keywords however transitions us into right into learning about Operators.</p>
 
         </div>
       </div>
@@ -491,7 +635,7 @@
     <div id='reveal-overlay'></div>
 
     <script src="../assets/js/three.min.js"></script>
-    <script src="../assets/js/book.js?1.1.24"></script>
+    <script src="../assets/js/book.js?1.1.25"></script>
     <script src="../assets/js/prism.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
