@@ -41,19 +41,75 @@ The examples within parenthesis above are all examples of the *literal form* of 
 
 The literal form is best for built-in types where the constructor form is best for non-built-in types. Programmers like shortcuts, so this is why the literal form is preferred. The constructor form is useful—required really—for specific types of environment Objects like the aforementioned `Date` and `Error` among others. Custom types also require the constructor form.
 
-Since primitive values are so fundamental to JavaScript, let's explore each of them in a little more detail.
+Since primitive values are so fundamental to JavaScript, let's explore each of them in a little more detail. Below is a snippet that will be further referenced to illustrate an example use of each primitive type. Pretend that this code is running in a web app that can dislay multiple canvases to draw on in addition to a "Create Canvas Button".
+
+```javascript
+var createCanvasButton = document.getElementById('create-canvas-button');
+var deleteCanvasButton = document.getElementById('delete-canvas-button');
+var canvases = [];
+var canvasInFocus;
+
+function setupEventListeners() {
+    createCanvasButton.addEventListener('click', onCreateCanvasButtonClick);
+    deleteCanvasButton.addEventListener('click', onDeleteCanvasButtonClick);
+}
+
+function onCreateCanvasButtonClick(event) {
+    var canvas = new Canvas();
+    canvases.push(canvas);
+    updateCanvasInFocus(canvas);
+}
+
+function onDeleteCanvasButtonClick(event) {
+    if(canvasInFocus === undefined) { alert('No canvas to delete'); }
+}
+
+function updateCanvasInFocus(canvas) {
+    canvasInFocus = canvas;
+}
+
+setupEventListeners();
+```
 
 #### Null
 
-The special `null` value denotes the *intentional* absence of a value. This special value *is not* automatically assigned in JavaScript. It must intentionally be assigned to a keyword by a coder. Though `null` represents the absence of a value, it is technically a value itself. This is what makes it "special".
+The special `null` value denotes the *intentional* absence of a value. This special value *is not* automatically assigned in JavaScript. It must intentionally be assigned to a keyword by a coder. Though `null` represents the absence of a value, it is technically a value itself. This is what makes it "special". Here is an example snippet:
+
+```javascript
+canvasInFocus = null;
+```
 
 #### Undefined
 
-The special `undefined` value denotes the *unintentional* absence of a value. This special value *is* automatically assigned in JavaScript. It is the default value for `var`iable declarations. Additionally, it is the value returned when a nonexistent keyword is accessed. These two aspects make it "special".
+The special `undefined` value denotes the *unintentional* absence of a value. This special value *is* automatically assigned in JavaScript. It is the default value for `var`iable declarations. Additionally, it is the value returned when a nonexistent keyword is accessed. These two aspects make it "special". Here is an example snippet:
+
+```javascript
+
+```
 
 #### Boolean
+
+The Boolean type denotes one of two values: `true` or `false`. Remember the bit? This is JavaScript's formal approach to the same goal of defining one of two states. The bit's `0` is the Boolean's `false`. Its `1` is the Boolean's `true`. Here is an example snippet:
+
+```javascript
+
+```
+
 #### Number
+
+ Here is an example snippet:
+
+```javascript
+
+```
+
 #### String
+
+ Here is an example snippet:
+
+```javascript
+
+```
 
 ### Copy vs. Reference
 
