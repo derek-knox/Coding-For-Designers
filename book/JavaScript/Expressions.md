@@ -74,8 +74,8 @@ function deleteArtboardInFocus() {
 
 function onCreateArtboardButtonClick() {
     var artboard = new Artboard();
-    artboard.addSelfToSurface();
     artboards.push(artboard);
+    artboard.addSelfToSurface();
     updateArtboardInFocus(artboard);
 }
 
@@ -187,7 +187,7 @@ The String type denotes `"one or more characters wrapped in double quotes"` or `
 Strings are useful for defining names, event types, and messages among other things. Concrete examples of this are the use of `create` and `delete`, `click`, and the `alert` strings respectively. It is worth noting that double quoted and single quoted strings are valuable in different scenarios:
 
 - `"The artboard's size is too small."`
-- `"The artboard is too small", she said."`
+- `'"The artboard is too small," she said.'`
 
 There is one specific example from the `onDeleteArtboardButtonClick` function I'd like to call out:
 
@@ -259,4 +259,4 @@ var drawingTools = [pen, highlighter, paintbrush];
 
 The code for each drawing tool type makes the most sense when structured as a tree—an Object. When organizing all the drawing tools, it makes the most sense to structure them as a list—an Array. Over time you will learn to intuit when to use which type.
 
-On their own, all four variable declarations above are not all that useful. An Object is most useful when code can *access* its nested keywords and thus its nested values. Likewise, an Array is most useful when code can *iterate* its values. We'll cover what it means to iterate an array's values in the Functions section. Accessing an object's nested keywords however transitions us into right into learning about Operators.
+On their own, all four variable declarations above are not all that useful. An Object is most useful when code can *access* its nested keywords and thus its nested values. Likewise, an Array is most useful when code can *iterate* its values. We'll cover what it means to iterate an array's values in the Functions section. Accessing an object's nested keywords however transitions us right into learning about Operators.

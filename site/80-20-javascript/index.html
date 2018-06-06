@@ -22,7 +22,7 @@
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
     <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon">
     <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.1.26">
+    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.1.27">
     <link rel="stylesheet" href="../assets/css/prism.css">
   </head>
   <body>
@@ -487,8 +487,8 @@
 
 <span class="token keyword">function</span> <span class="token function">onCreateArtboardButtonClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">var</span> artboard <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Artboard</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    artboard<span class="token punctuation">.</span><span class="token function">addSelfToSurface</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     artboards<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>artboard<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    artboard<span class="token punctuation">.</span><span class="token function">addSelfToSurface</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token function">updateArtboardInFocus</span><span class="token punctuation">(</span>artboard<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
@@ -562,7 +562,7 @@ artboards<span class="token punctuation">.</span><span class="token function">sp
 <p>Strings are useful for defining names, event types, and messages among other things. Concrete examples of this are the use of <code>create</code> and <code>delete</code>, <code>click</code>, and the <code>alert</code> strings respectively. It is worth noting that double quoted and single quoted strings are valuable in different scenarios:</p>
 <ul>
 <li><code>&quot;The artboard&apos;s size is too small.&quot;</code></li>
-<li><code>&quot;The artboard is too small&quot;, she said.&quot;</code></li>
+<li><code>&apos;&quot;The artboard is too small,&quot; she said.&apos;</code></li>
 </ul>
 <p>There is one specific example from the <code>onDeleteArtboardButtonClick</code> function I&apos;d like to call out:</p>
 </div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&apos;No artboard to delete. None of the &apos;</span> <span class="token operator">+</span> <span class="token function">String</span><span class="token punctuation">(</span>artboards<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&apos; artboards are in focus.&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -616,7 +616,7 @@ artboards<span class="token punctuation">.</span><span class="token function">sp
 </div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">var</span> drawingTools <span class="token operator">=</span> <span class="token punctuation">[</span>pen<span class="token punctuation">,</span> highlighter<span class="token punctuation">,</span> paintbrush<span class="token punctuation">]</span><span class="token punctuation">;</span>
 </code></pre></div><div class="content-text">
 <p>The code for each drawing tool type makes the most sense when structured as a tree&#x2014;an Object. When organizing all the drawing tools, it makes the most sense to structure them as a list&#x2014;an Array. Over time you will learn to intuit when to use which type.</p>
-<p>On their own, all four variable declarations above are not all that useful. An Object is most useful when code can <em>access</em> its nested keywords and thus its nested values. Likewise, an Array is most useful when code can <em>iterate</em> its values. We&apos;ll cover what it means to iterate an array&apos;s values in the Functions section. Accessing an object&apos;s nested keywords however transitions us into right into learning about Operators.</p>
+<p>On their own, all four variable declarations above are not all that useful. An Object is most useful when code can <em>access</em> its nested keywords and thus its nested values. Likewise, an Array is most useful when code can <em>iterate</em> its values. We&apos;ll cover what it means to iterate an array&apos;s values in the Functions section. Accessing an object&apos;s nested keywords however transitions us right into learning about Operators.</p>
 
         </div>
       </div>
@@ -635,7 +635,7 @@ artboards<span class="token punctuation">.</span><span class="token function">sp
     <div id='reveal-overlay'></div>
 
     <script src="../assets/js/three.min.js"></script>
-    <script src="../assets/js/book.js?1.1.26"></script>
+    <script src="../assets/js/book.js?1.1.27"></script>
     <script src="../assets/js/prism.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
