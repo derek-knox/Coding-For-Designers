@@ -35,7 +35,7 @@ Metalsmith(__dirname)
   .metadata({
     title: "Coding for Designers",
     description: "...",
-    version: '1.1.27'
+    version: '1.1.28'
   })
   .source('./book')
   .destination('./site')
@@ -186,7 +186,7 @@ Metalsmith(__dirname)
   .use(replace({
       subs: [
           {
-              search: /^<p>(\w{1})/g,
+              search: /<p>(\w{1})/,
               replace: '<p><span class="content-drop-cap">$1</span>'
           },
           // img

@@ -525,16 +525,15 @@ footer a:hover {
 
 .content-drop-cap {
 	float: left;
-	font-size: 1.4em;
+	font-size: 1.8em;
 	font-weight: 600;
-	line-height: normal;
+	line-height: .9em;
 	padding: 10px;
 	width: 30px;
 	height: 30px;
-	color: #99cc33;
-	background-color: #272822;
-	border: 1px solid #99cc33;
-	margin-right: 8px;
+	color: #272822;
+	border: 1px solid #272822;
+	margin-right: 6px;
 	display: flex;
 	align-content: center;
 	justify-content: center;
@@ -639,6 +638,11 @@ body.dark-mode {
 
 .dark-mode .content-text code {
 	background-color: #555;
+}
+
+.dark-mode .content-drop-cap {
+	color: #99cc33;
+	border: 1px solid #99cc33;
 }
 
 .dark-mode .content-visual,
