@@ -185,6 +185,10 @@ Metalsmith(__dirname)
   }))
   .use(replace({
       subs: [
+          {
+              search: /^<p>(\w{1})/g,
+              replace: '<p><span class="content-drop-cap">$1</span>'
+          },
           // img
           {
               search: /<p><img (.*) title=['"](.*)['"]><\/p>/gm,
