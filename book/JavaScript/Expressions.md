@@ -143,6 +143,7 @@ Here is a more *explicit* version of the same functionality using the constructo
 ```javascript
 var isArtboardInFocusUndefined = Boolean(artboardInFocus === undefined);
 var isArtboardInFocusNull = Boolean(artboardInFocus === null);
+
 if (isArtboardInFocusUndefined) {
     alert('No artboard to delete. Try creating one first.');
 } else if (isArtboardInFocusNull) {
