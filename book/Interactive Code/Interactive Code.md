@@ -8,4 +8,4 @@ Next we will explore the differences between *sync* (happens now) and *async* (h
 
 Second to last, we will look at the *anatomy of HTML (`.html`), CSS (`.css`), and JavaScript (`.js`)*. This will allow us to reference real code against various concepts covered thus far. Lastly, we will cover the *work. right. better.* mantra to help you improve your code authoring over time. All coders live by this, myself included.
 
-Upon completion of this section, your mental model will be primed for programming in JavaScript. Let's get going.
+Upon completion of this chapter, your mental model will be primed for programming in JavaScript. Let's get going.
