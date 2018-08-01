@@ -16,7 +16,7 @@ Code is a system for converting meaning between forms. One form is considered *e
     <td>1 and 0</td>
   </tr>
   <tr>
-    <td>Pencil and Paper Questions</td>
+    <td>Pencil and Paper Answers</td>
     <td>1 and 0</td>
     <td>Yes and No</td>
   </tr>
