@@ -8,8 +8,8 @@ The constructs embody the elements and principles in an effort to communicate sp
     - Iconography
     - Illustration
 3. Typography
-    - Text Content
-    - Text Style
+    - Content
+    - Style
 
 The lack of a grid can be useful, but more often than not a grid will exist in a visual design. A grid instantly provides the scaffolding, scaling, and patterns of space in which imagery and typography will live. Imagery in its various forms and typography are the core communicative components of a visual design. Imagery typically communicates faster than typography, but the content of text itself has the least likelihood of misinterpretation.
 
