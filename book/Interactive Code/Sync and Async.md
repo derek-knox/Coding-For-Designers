@@ -51,7 +51,7 @@ function makeBackgroundBlack() {
 makeBackgroundBlack();
 ```
 
-Without comments, there are naturally a lot less lines for us humans to read. As far as the engine is concerned however, these are the same program. As you gain more experience you will understand when and when not to use comments. When in doubt use them to help other coders, including your future self, understand your original intention.
+Without comments, there are naturally a lot less lines for us humans to read. As far as the engine is concerned however, these are the same program. As you gain more experience you will understand when and when not to use comments. When in doubt use them to help other coders, including your future self, understand your original intention. It's worth mentioning that the  descriptive function names used in this book are intentional. From the engine's perspective function nameed "X" would suffice, but a descriptive alternative helps all coders more quickly understand the intention of the code.
 
 Admittedly, the code above does not do a whole lot. The work inside of the `makeBackgroundBlack` function will happen really fast too. The event loop will technically be blocked for less than 1ms, but from a user's perspective the work will happen instantly and then the event loop will become unblocked. If the function instead counted to a million before changing the background color, then the user would percieve the program as slower (and rightly so).
 
