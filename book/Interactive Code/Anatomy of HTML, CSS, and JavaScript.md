@@ -6,7 +6,7 @@ We know code is a system for converting meaning between forms where HTML, CSS, a
 
 We will now start to dig into HTML, CSS, and JavaScript since we have a greater understanding of how the various concepts we have covered play-off each other. Your mental model should be primed.
 
-Let's squash a myth real quick. Designers and other non-coders new to coding think they need to learn an *entire* new language including all its words, syntax, and idiosyncrasies. 
+Let's squash a myth real quick first. Designers and other non-coders new to coding think they need to learn an *entire* new language including all its words, syntax, and idiosyncrasies. 
 - Word - you know what a word is
 - Syntax - language-specific rules of meaningful word and character patterns
 - Idiosyncrasies - exceptions to rules
