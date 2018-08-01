@@ -42,7 +42,7 @@ So what do each of these runtime parts do anyway? Here is a succint breakdown wh
     - *stack* - organizes the engine's work
 2. *runtime APIs* - does special work the engine cannot
 3. *event queue* - organizes the results of special work as packages of engine work
-4. *event loop* - gives the engine queued packages of work
+4. *event loop* - gives the engine queued packages of special work
 
 Here is a 3D representation of the relationship between the runtime and engine parts:
 
