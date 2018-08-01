@@ -9,7 +9,7 @@ A frame rate is simply the amount of frames that are shown in a second. A frame 
 
 As you likely guessed, a high frame rate results in the illusion of smooth motion. A slow frame rate results in an illusion of less smooth motion. The human eye typically needs 24fps or more for a smooth perception of motion to be recognized. Within an interactive medium like applications or games, 60fps is a common target.
 
-It is worth noting that if your application or game does not change often or lacks animation, you will likely be able to get away with 10fps or 5fps. The more motion and animation you have however, the more likely you'll want to target 60fps. Generally, the richer and more fluid the experience, the greater the target frame rate.
+It is worth noting that if your application or game does not change often or lacks animation, you will likely be able to get away with 10fps, 5fps, or lower. The more motion and animation you have however, the more likely you'll want to target 60fps. Generally, the richer and more fluid the experience, the greater the target frame rate.
 
 An application or game that targets 60fps must render a new image every 16.6 milliseconds. Damn, that's fast.
 
