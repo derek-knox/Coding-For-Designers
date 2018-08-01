@@ -63,7 +63,7 @@ This is the most structurally simple, complete, and valid HTML a browser uses. L
 
 There are many types of element tags that can be added in both the `<head>` and `<body>` element tags. As mentioned earlier, we will not go over them here as you, just like other coders, can use other resources to look up what tags are available. We will reveal the most common ones for the `<body>` however to fulfill the *common subset* bullet above. Instead of comments I will use English inline with the tags to show how the elements wrap content. Content is visible to the user where the tags that wrap the content are not. The tags simply tell the browser your structure, the building block parent-child relationships. The spacing *between elements* is not important as the browser understands the structure regardless. Spacing *between content* is what matters.
 
-Spacing, tabs, and new lines do typically exist between elements however. This is solely to improve human readability. Imagine if the below HTML elements were all on a single line. The browser wouldn't care as the defined structure would remain the same, but we would have a much tougher time reading and easily seeing the parent-child relationships when authoring.
+Spacing, tabs, and new lines do typically exist between elements however. This is solely to improve human readability. Imagine if the below HTML elements were all on a single line. The browser wouldn't care as the defined structure would remain the same (thanks to the opening and closing HTML tags), but we would have a much tougher time reading and easily seeing the parent-child relationships when authoring.
 
 ```markup
 <body>
