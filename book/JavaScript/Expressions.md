@@ -210,26 +210,26 @@ The takeaway is that the String type prevents the engine from processing its cha
 
 ### Copy vs. Reference
 
-Custom keywords—declared with the help of the reserved `var` and `function` keywords—are how we declare our own named shortcuts to values. These values are one of the six types above where `function` is a specific type of Object. Additionally, the aforementioned `Date`, `Error`, and `Math` are also specific types of Objects. Any value that isn't a primitive value is either a basic or specific Object value.
+Custom keywords—declared with the help of the reserved `var` and `function` keywords—are how we declare our own named shortcuts to values. These values are one of the six types above where `function` is a specific type of `Object`. Additionally, the aforementioned `Date`, `Error`, and `Math` are also specific types of `Object`s. Any value that isn't a primitive value is either a basic or specific `Object` value.
 
 When a primitive value is assigned to a keyword, the keyword holds a *copy* of the value. A complex value assigned or associated to a keyword is instead a *reference* to the value. So primitive values are always copies and complex values are always references. This distinction is important because references, unlike copies, enable the sharing of:
 
 - functionality
 - structured data
 
-We already know that sharing functionality—sharing `function`s and the Object's that contain them—provides us a simple and reusable way to do work. This shared functionality is what gives us APIs. Code would not be able to talk to other code otherwise. Data and specifically structured data have not been explicitly covered yet however.
+We already know that sharing functionality—sharing `function`s and the `Object`'s that contain them—provides us a simple and reusable way to do work. This shared functionality is what gives us APIs. Code would not be able to talk to other code otherwise. Data and specifically structured data have not been explicitly covered yet however.
 
 Data is simply any primitive or complex value. Structured data is always a complex value. It parents other values in either an:
 
-- Object
-- Array
+- `Object`
+- `Array`
 
 Each allows the organization of data—primitive or complex values—using a particular structure. These structures are:
 
-- Object as Tree
-- Array as List
+- `Object` as Tree
+- `Array` as List
 
-The literal form of each is `{}` and `[]` respectively. An Object literal uses *braces* and an Array literal uses *brackets*. Braces are curved and brackets are straight. These visual differences are clues reminding you which structure belongs to which literal form:
+The literal form of each is `{}` and `[]` respectively. An object literal uses *braces* and an Array literal uses *brackets*. Braces are curved and brackets are straight. These visual differences are clues reminding you which structure belongs to which literal form:
 
 - Object/curves/braces/`{}`
 - Array/straight/brackets/`[]`
