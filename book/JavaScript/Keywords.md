@@ -108,7 +108,7 @@ I do however recommend exploring the list of all the web APIs sometime. The effo
 
 ### Non-Reserved Keywords - Custom
 
-In the snippet above, there is one non-reserved custom keyword. It is `makeBackgroundBlack`. There are naturally an infinite amount of custom keywords. Remember that the computer doesn't care what the keyword name is when it is custom. It just cares that it is unique. We could have instead named our `makeBackgroundBlack` function `a` and the snippet would instead be:
+In the snippet above, there is one non-reserved custom keyword. It is `makeBackgroundBlack`. There are naturally an infinite amount of custom keywords. Remember that the computer doesn't care what the keyword name is when it is custom. It just cares that it is unique while providing a reference to a specific value. We could have instead named our `makeBackgroundBlack` function `a` and the snippet would instead be:
 
 ```javascript
 function a() {
