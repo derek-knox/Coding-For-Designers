@@ -80,7 +80,7 @@ The takeaway is that we strive to create functions that are reusable. We briefly
 
 ### 5. Refactor Early and Often
 
-As previously mentioned, it can be difficult to select the correct location when first adding code. Additionally, it can be difficult enough to get code to work through prototyping. It can even be difficult to name identifiers well (believe it or not this is one of the more difficult aspects of programming). Thankfully the code is not set in stone. It is easy to move, change, and rename. This is refactoring. We are working in the virtual not physical world after all. Use this to your advantage. Our editors can even help us accomplish this faster while minimizing error.
+As previously mentioned, it can be difficult to select the correct location when first adding code. Additionally, it can be difficult enough to get code to work through prototyping. It can even be difficult to name identifiers well (believe it or not this is one of the more difficult aspects of programming). Thankfully the code is not set in stone. It is easy to move, change, and rename. This is refactoring. We are working in the virtual not physical world after all. Use this to your advantage. Our editors can even help us accomplish this faster while minimizing mistakes.
 
 The core benefit of refactoring is that it enables us to improve code readability. Remember the three zoom levels? Refactoring helps us here. Code complexity can also be reduced which makes it more understandable to us, other coders, and our future self.
 
