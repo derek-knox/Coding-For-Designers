@@ -217,21 +217,9 @@ Do you remember the first two of four ideas I wanted to instill way back in the 
 1. Computers, these complex machines, rely solely on extremely basic concepts
 2. There is no magic in coding, just simple ideas stacked atop each other
 
-These same two ideas that applied to bits manifest in `Object`s too. Instead of the binary nature of bits were working with six value types contained in an `Object`. Admittedly this is a little more complex, but basic concepts and ideas stacked upon each other are still at the core.
+These same two ideas that applied to bits manifest in `Object`s too. Instead of the binary nature of bits were working with six value types contained in an `Object`. Admittedly this is a little more complex, but basic concepts and ideas stacked atop each other are still at the core.
 
-They come in two styles:
-
-- basic
-- specific
-
-A basic object is created in one of two ways:
-
-1. object literal form (`{}`)
-1. object constructor form (`new Object()`)
-
-A specific object is created in only one way:
-
-1. object constructor form (`new Date()` or `new Error()` for example) 
+An object is considered either basic or specific where the disinction is simple. A specific object is one that isn't basic...
 
 #### Array
 
