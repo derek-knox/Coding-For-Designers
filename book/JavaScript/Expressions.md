@@ -206,11 +206,32 @@ The takeaway is that the String type prevents the engine from processing its cha
 
 ### Complex Values
 
-...
+Any value that isn't a primitive value is a complex value. The only complex value type in JavaScript is the `Object`. Through its properties, it can contain references to primitive values in addition to complex values. In contrast, a primitive can contain only one primitive value of the five potential types (`null`, `undefined`, `true`, `360`, `'360'`).
 
 #### Object
 
-...
+Objects in JavaScript are what enable coders the most creative freedom. Because we can create custom identifiers and assign them primitive or other complex values, we can represent virtually anything. We can model real-world concepts just as easily as fantasy concepts. We can mix and match to our desire. This range of freedom is what enables the wide variety of games, tools, and software we love, to exist. 
+
+Do you remember the first two of four ideas I wanted to instill way back in the *Bits and Bytes* section of the *Breaking Barriers* chapter? Here is a refresher:
+
+1. Computers, these complex machines, rely solely on extremely basic concepts
+2. There is no magic in coding, just simple ideas stacked atop each other
+
+These same two ideas that applied to bits manifest in `Object`s too. Instead of the binary nature of bits were working with six value types contained in an `Object`. Admittedly this is a little more complex, but basic concepts and ideas stacked upon each other are still at the core.
+
+They come in two styles:
+
+- basic
+- specific
+
+A basic object is created in one of two ways:
+
+1. object literal form (`{}`)
+1. object constructor form (`new Object()`)
+
+A specific object is created in only one way:
+
+1. object constructor form (`new Date()` or `new Error()` for example) 
 
 ### Copy vs. Reference
 
