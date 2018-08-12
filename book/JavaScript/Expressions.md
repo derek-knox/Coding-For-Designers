@@ -7,7 +7,7 @@ In both examples below the value is the number `360`. The latter of the two requ
 - `360` (literal value expression)
 - `300 + 60` (arithmetic expression)
 
-Both examples are not really useful on their own however. An expression—the resulting value—becomes useful when used in the context of a code statement. A statement always consists of at least one expression. We will explore statements in greater detail in the Statements section but here are a few examples so you may begin to intuit how values are useful:
+Both examples are not really useful on their own however. An expression—the resulting value—becomes useful when used in the context of a code statement. A statement always consists of at least one expression. We will explore statements in greater detail in the *Statements* section but here are a few examples so you may begin to intuit how values are useful:
 
 - `var maximumRotation = 360;`
 - `if(currentRotation > 360) { currentRotation = 360; }`
