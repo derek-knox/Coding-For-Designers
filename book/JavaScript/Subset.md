@@ -22,6 +22,6 @@ Expressions are values. They unsurprisingly can be represented with keywords, bu
 
 Operators are special characters for changing values. Operators enable values to be *operated on* and changed. You already know about the arithmetic operators `+, -, *, and /` from math class.
 
-Statements are patterns of special characters and keywords. They enable us to group and reason about the various special characters, keywords, values, and operators in a particular portion of code using a small pattern. Put another way, we *state* something meaningful using a small pattern.
+Statements are useful patterns of special characters and keywords. They enable us to group and reason about the various special characters, keywords, values, and operators in a particular portion of code using a small pattern. Put another way, we *state* something meaningful using a small pattern.
 
 Combined, all four groups enable us to author code that a JavaScript engine understands. When this happens in the browser, it works with other programs on the computer to ensure we see our animated and interactive creations on screen. Let's dig into each group one-by-one.
