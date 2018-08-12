@@ -132,6 +132,8 @@ if (artboardInFocus === undefined) {
 
 If the first interaction with the program is to click the "Delete Canvas" button then the above `alert` code would run. If we did not check for `undefined` and `null` prior to executing `deleteArtboardInFocus()` we'd get an `Error`. This would happen because we can't delete an artboard that does not exist. The above examples illustrate why the `undefined` and `null` values are useful.
 
+The observant designer will wonder why the "Delete Artboard" button is interactive if there is not a valid artboard to delete. A better design would leverage the interaction design principle *progressive disclosure* and only show or enable the "Delete Artboard" button when an artboard became focused. I highlight this idea to illustrate the importance of designers and developers working together. Remember, design is the accumulation of decisions and these decisions impact designers and developers just as they do end-users.
+
 #### Boolean
 
 The Boolean type denotes one of two values: `true` or `false`. Remember the bit? This is JavaScript's formal approach to the same goal of defining one of two states. The bit's `0` is the Boolean's `false`. Its `1` is the Boolean's `true`.
