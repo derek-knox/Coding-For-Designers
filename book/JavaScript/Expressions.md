@@ -210,7 +210,7 @@ Any value that isn't one of the five primitive values is a complex value. The on
 
 #### Object
 
-`Object`s in JavaScript are what enable coders a massive amount of creative freedom. Because we can create custom identifiers and assign them primitive or other complex values, we can represent virtually anything. We can model real-world concepts just as easily as fantasy concepts. We can mix and match to our desire. We can use existing specific objects like `Date`, `Error`, and `Math` or create our own like `Color`, `Pen`, and `Artboard`. This range of freedom is what enables the wide variety of interactive games, tools, and software we love, to exist. 
+`Object`s in JavaScript are what enable coders a massive amount of creative freedom. Since we can create custom identifiers and assign them primitive or other complex values, we can represent virtually anything. We can model real-world concepts just as easily as fantasy concepts. We can mix and match to our desire. We can use existing specific objects like `Date`, `Error`, and `Math` or create our own like `Color`, `Pen`, and `Artboard`. This range of freedom is what enables the wide variety of interactive games, tools, and software we love, to exist. 
 
 Do you remember the first two of four ideas I wanted to instill way back in the *Bits and Bytes* section of the *Breaking Barriers* chapter? Here is a refresher:
 
