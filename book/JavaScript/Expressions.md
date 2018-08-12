@@ -217,7 +217,7 @@ Custom keywords—declared with the help of the reserved `var` and `function` ke
 
 We already know that sharing functionality—sharing `function`s—provides us a simple and reusable way to do work. This shared functionality is what gives us APIs. Code would not be able to talk to other code otherwise. Data and specifically structured data have not been explicitly covered yet however.
 
-Data is simply any primitive or complex value. Structured data is always a complex value. It parents other values in an:
+Data is simply any primitive or complex value. Structured data is always a complex value. It parents other values in either an:
 
 - Object
 - Array
