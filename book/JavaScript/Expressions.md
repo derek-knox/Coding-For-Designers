@@ -238,7 +238,7 @@ For reference, here is a visualization of the anatomy of each structure:
 
 ![Object and Array Anatomy](../assets/img/visual-todo-placeholder.jpg "Object and Array Anatomy")
 
-Let's explore some examples of code to really drive home Objects and Arrays. First, here is an example of a few custom Objects in literal form. They are each assigned to a keyword—using `var`—for easier understanding and later reuse:
+Let's explore some examples of code to really drive home `Object`s and `Array`s. First, here is an example of a few custom `Object`s in literal form. They are each assigned to a keyword—using `var`—for easier understanding and later reuse:
 
 ```javascript
 var pen = {
@@ -254,16 +254,16 @@ var highlighter = {
 var paintbrush = {
     name: 'Paintbrush',
     color: '#0000FF',
-    thickness: 8 
+    thickness: 16 
 };
 ```
 
-Now here is an example of a custom Array in literal form. The list is assigned to a keyword too—again using `var`—for easier understanding and later reuse:
+Now here is an example of a custom `Array` in literal form. The list is assigned to a keyword too—again using `var`—for easier understanding and later reuse:
 
 ```javascript
 var drawingTools = [pen, highlighter, paintbrush];
 ```
 
-The code for each drawing tool type makes the most sense when structured as a tree—an Object. When organizing all the drawing tools, it makes the most sense to structure them as a list—an Array. Over time you will learn to intuit when to use which type.
+The code for each drawing tool type makes the most sense when structured as a tree—an `Object`. When organizing all the drawing tools, it makes the most sense to structure them as a list—an `Array`. Over time you will learn to intuit when to use which type, but this distinction should help immensely.
 
-On their own, all four variable declarations above are not all that useful. An Object is most useful when code can *access* its nested keywords and thus its nested values. Likewise, an Array is most useful when code can *iterate* its values. We'll cover what it means to iterate an array's values in the Functions section. Accessing an object's nested keywords however transitions us right into learning about Operators.
+On their own, all four `var`iable declarations above are not all that useful. An `Object` is most useful when code can *access* its nested keywords and thus its nested values. Likewise, an `Array` is most useful when code can *iterate* its values. We'll cover what it means to iterate an `Array`'s values in the *Functions* section. Accessing an object's nested keywords however transitions us right into learning about operators.
