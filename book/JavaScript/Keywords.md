@@ -57,7 +57,7 @@ There is one reserved keyword in the snippet above. There are over forty in Java
 1. `true` - (also a literal value)
 1. `var`
 
-These are the reserved keywords to get really familiar with. We'll explore them in more detail in the remaining sections of this chapter in addition to the Deconstructing Designs chapter. This way we'll explore them in the context of when they are most useful.
+These are the reserved keywords to get really familiar with. We'll explore them in more detail in the remaining sections of this chapter in addition to the *Deconstructing Designs* chapter. This way we'll explore them in the context of when they are most useful.
 
 Listing the words alphabetically works, but it is more useful to group them. Below are the groupings in addition to a concise description of how they help us code:
 
