@@ -110,7 +110,7 @@ else if (artboardInFocus === null) {
 }
 ```
 
-By using `null` we can provide a more intentional path for the engine to execute code when the program is being interacted with.
+By using `null` we can provide a more intentional path (code flow) for the engine to execute code when the program is being interacted with.
 
 #### Undefined
 
