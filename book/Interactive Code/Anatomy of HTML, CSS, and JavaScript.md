@@ -117,7 +117,7 @@ The first thing you will notice about six of the seven tags is that they are abb
 
 A `<div>` tag simpy denotes a division of content where the aesthetic and layout (position and dimension) of each division is dependent on style. This will likely become your most used element tag. Combining it with the virtually infinite variations of CSS styling enables you to create the same visual effect of virtually every other tag. If not for the specific *attributes* and *semantics* of certain tags that browsers, operating systems, and search engines use, we could almost get away with solely using `<div>`s with custom styles. I mention this to illustrate that a lot can be achieved with little.
 
-Moving on, the `<h1>`, `<p>`, `<button>`, and `<h2>` tags are explained and covered with the examples above. The `<img>` and `<a>` tags are not however. This is because they are each lacking *attributes*. We'll use the shortcut *attrs* moving forward. All elements can leverage attrs, but these latter two elements *require* them to function as designed.
+Moving on, the `<h1>`, `<p>`, `<button>`, and `<h2>` tags are explained and covered with in the inline examples above. The `<img>` and `<a>` tags are not however. This is because they are each lacking *attributes*. We'll use the shortcut *attrs* moving forward. All elements can leverage attrs, but these latter two elements *require* them to function as designed.
 
 Think of attrs as APIs. Attrs enable the coder to achieve functionality based on a shared understanding of designed use. They are also where we start to transition toward CSS via the `class` attr. First we will update the `<img>` and `<a>` tags with each of their most useful attrs.
 
