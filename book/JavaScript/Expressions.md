@@ -219,7 +219,7 @@ When a primitive value is assigned to a keyword, the keyword holds a *copy* of t
 
 We already know that sharing functionality—sharing `function`s and the `Object`'s that contain them—provides us a simple and reusable way to do work. This shared functionality is what gives us APIs. Code would not be able to talk to other code otherwise. Data and specifically structured data have not been explicitly covered yet however.
 
-Data is simply any primitive or complex value. Structured data is always a complex value. It parents other values as an:
+Data is simply any primitive or complex value. Structured data is always a complex value. It parents other values as either an:
 
 - `Object`
 - `Array`
