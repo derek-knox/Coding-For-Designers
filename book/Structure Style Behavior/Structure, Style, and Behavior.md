@@ -9,7 +9,7 @@ The virtual world in addition to the real world leverage these same concepts in 
 
 A building for example (virtual or physical) is composed of a particular arrangement of a set of building blocks. This is structure. These building blocks are adorned with materials and other objects that have aesthetic or functional value. This is style. The building blocks of the structure in combination with the adorned materials and objects may respond to interaction, the environment, and time. This is behavior.
 
-Combined, all three concepts enable an interactive design to exist, evoke meaning for, and engage one or more viewers. Exist. Evoke. Engage.
+Combined, structure, style, and behavior enable an interactive design to exist, evoke meaning for, and engage one or more viewers. Exist. Evoke. Engage.
 
 In the following sections we will visit each concept from both a 2D and a 3D perspective. We will do so in the context of the web platform for 2D design and the Unity<sup>®</sup> platform for 3D design. This approach will help solidify your general mental model for coding, help crystalize gaps in knowledge, and expand your design thinking into 3D space. Right on.
 
