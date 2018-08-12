@@ -83,7 +83,7 @@ function onDeleteArtboardButtonClick() {
     if (artboardInFocus === undefined) {
         alert('No artboard to delete. Try creating one first.');
     } else if (artboardInFocus === null) {
-        alert('No artboard to delete. None of the ' + String(artboards.length) + ' artboards are in focus.');
+        alert('No artboard to delete. None of the ' + new String(artboards.length) + ' artboards are in focus.');
     } else {
         deleteArtboardInFocus();
     }
@@ -106,7 +106,7 @@ and in the `onDeleteArtboardButtonClick` function:
 
 ```javascript
 else if (artboardInFocus === null) {
-    alert('No artboard to delete. None of the ' + String(artboards.length) + ' artboards are in focus.');
+    alert('No artboard to delete. None of the ' + new String(artboards.length) + ' artboards are in focus.');
 }
 ```
 
@@ -150,7 +150,7 @@ function onDeleteArtboardButtonClick() {
     if (isArtboardInFocusUndefined) {
         alert('No artboard to delete. Try creating one first.');
     } else if (isArtboardInFocusNull) {
-        alert('No artboard to delete. None of the ' + String(artboards.length) + ' artboards are in focus.');
+        alert('No artboard to delete. None of the ' + new String(artboards.length) + ' artboards are in focus.');
     } else {
         deleteArtboardInFocus();
     }
@@ -175,7 +175,7 @@ artboards.splice(artboardInFocusIndex, 1);
 and once in the `onDeleteArtboardButtonClick` function:
 
 ```javascript
-alert('No artboard to delete. None of the ' + String(artboards.length) + ' artboards are in focus.');
+alert('No artboard to delete. None of the ' + new String(artboards.length) + ' artboards are in focus.');
 ```
 
 The first snippet uses an evaluated number assigned to `artboardInFocusIndex` in addition to the literal `1` value. The two lines of code work together to:
@@ -183,7 +183,7 @@ The first snippet uses an evaluated number assigned to `artboardInFocusIndex` in
 1. find *where* in the `artboards` array the `artboardInFocus` is
 2. use the Array's built-in `splice` function to remove that artboard (the `artboardInFocus`)
 
-The second snippet uses the evaluated `artboards.length` value to get the number of total artboards that exist. This allows us to display an up-to-date message using the correct artboards count.
+The second snippet uses the evaluated `artboards.length` value to get the number of total artboards that exist. This allows us to display an up-to-date message using the correct artboards count number as a String value.
 
 #### String
 
@@ -197,7 +197,7 @@ Strings are useful for defining names, event types, and messages among other thi
 There is one specific example from the `onDeleteArtboardButtonClick` function I'd like to call out:
 
 ```javascript
-alert('No artboard to delete. None of the ' + String(artboards.length) + ' artboards are in focus.');
+alert('No artboard to delete. None of the ' + new String(artboards.length) + ' artboards are in focus.');
 ```
 
 Since `artboards.length` is a number, we explicitly convert it to a String using the `String` function. We additionally use the `+` (concatenation operator) twice to make one large string from three smaller strings. This latter fact will soon be explored more in the Operators section.
