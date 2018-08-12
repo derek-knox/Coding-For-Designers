@@ -206,7 +206,7 @@ The takeaway is that the String type prevents the engine from processing its cha
 
 ### Complex Values
 
-Any value that isn't one of the five primitive values is a complex value. The only complex value type in JavaScript is the `Object`. Through its properties, it can contain references to primitive values in addition to complex values. In contrast, a primitive can contain only one primitive value of the five potential types (`null`, `undefined`, `true`, `360`, `'360'`).
+Any value that isn't one of the five primitive values is a complex value. The only complex value type in JavaScript is the `Object`. Through its properties, it can contain references to primitive values in addition to complex values. In contrast, a primitive can contain only one primitive value of the five potential types (`null`, `undefined`, `true`, `360`, or `'360'`).
 
 #### Object
 
