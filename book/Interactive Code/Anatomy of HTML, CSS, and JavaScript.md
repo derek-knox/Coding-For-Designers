@@ -157,7 +157,7 @@ assets
     cover-coding-for-designers.jpg
 ```
 
-Now is the time to look at the anatomy of a `.css` file which, for our purpose, consists of one class definition. Typically the file would have more than one, but currently we only need one. Take note that CSS uses *comments* via `/**/` where the comment itself resides in the middle. I too wish HTML, CSS, JS shared the same comment syntax, but I digress. Our `style.css` file is simply:
+Now is the time to look at the anatomy of a `.css` file which, for our purpose, consists of one class definition. Typically the file would have more than one, but currently we only need one. Take note that CSS uses *comments* via `/**/` where the comment itself resides in the middle. I too wish HTML, CSS, and JavaScripot shared the same comment syntax, but I digress. Our `style.css` file is simply:
 
 ```css
 .dark-background {
@@ -172,7 +172,7 @@ Each class definition is denoted by a preceding `.` so our `dark-background` cla
 
 Each property-value pair consists of a property name that uses the same rules for class naming suggested above, followed by a `:` and then an actual value. For ease of learning, I wish the `:` was `=` instead, but I digress. With a class and its valid property-value pair(s) defined, any element that has a `class` by the same name will get the styles applied. Pretty damn cool and very reusable.
 
-If it isn't already obvious, each browser sets default styles for elements to provide some baseline style. More often than not, you'll want to set your own styles to override the defaults. This is why we created `style.css`.
+If it isn't already obvious, each browser sets *default styles* to provide some baseline. Without default styles we would see nothing until we provided our own. So browser's provide defaults so we at least can render something before starting to customize. Think of default styles as a `browser-specific-style.css` that the browser provides each page behind the scenes. Defaults instead apply style based element type instead of by the `class` attr. More often than not, you'll want to set your own styles to override these defaults. This is why we created `style.css`.
 
 Since browsers typically default the color of text to black, our applied `dark-background` class makes our text blend with the dark background. We want to see the text too so we can fix this by updating our class definition to use another common property named `color`. Again, we won't go over all the valid properties that are possible as you, like other coders and designers, can reference resources. The takeaway is the relationship of property-value pairs within class definitions. Here is one approach to update our `style.css` file:
 
