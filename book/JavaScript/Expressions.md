@@ -210,7 +210,7 @@ Any value that isn't a primitive value is a complex value. The only complex valu
 
 #### Object
 
-Objects in JavaScript are what enable coders the most creative freedom. Because we can create custom identifiers and assign them primitive or other complex values, we can represent virtually anything. We can model real-world concepts just as easily as fantasy concepts. We can mix and match to our desire. This range of freedom is what enables the wide variety of games, tools, and software we love, to exist. 
+`Object`s in JavaScript are what enable coders a massive amount of creative freedom. Because we can create custom identifiers and assign them primitive or other complex values, we can represent virtually anything. We can model real-world concepts just as easily as fantasy concepts. We can mix and match to our desire. This range of freedom is what enables the wide variety of interactive games, tools, and software we love, to exist. 
 
 Do you remember the first two of four ideas I wanted to instill way back in the *Bits and Bytes* section of the *Breaking Barriers* chapter? Here is a refresher:
 
@@ -232,6 +232,10 @@ A basic object is created in one of two ways:
 A specific object is created in only one way:
 
 1. object constructor form (`new Date()` or `new Error()` for example) 
+
+#### Array
+
+...
 
 ### Copy vs. Reference
 
