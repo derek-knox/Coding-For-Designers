@@ -144,8 +144,8 @@ Here is a more *explicit* version of the same functionality using the constructo
 
 ```javascript
 function onDeleteArtboardButtonClick() {
-    var isArtboardInFocusUndefined = Boolean(artboardInFocus === undefined);
-    var isArtboardInFocusNull = Boolean(artboardInFocus === null);
+    var isArtboardInFocusUndefined = new Boolean(artboardInFocus === undefined);
+    var isArtboardInFocusNull = new Boolean(artboardInFocus === null);
 
     if (isArtboardInFocusUndefined) {
         alert('No artboard to delete. Try creating one first.');
