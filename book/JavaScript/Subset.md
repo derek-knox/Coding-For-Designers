@@ -14,7 +14,7 @@ These four groupings make a program useful by enabling it to do work during exec
 1. Named shortcuts to values
 2. Values
 3. Special characters for changing values
-4. Patterns of special characters and keywords
+4. Useful patterns of special characters and keywords
 
 Keywords are named shortcuts to values. They enable us to use a natural-language-like *key* for identifying something as meaningful.
 
