@@ -210,7 +210,7 @@ The takeaway is that the String type prevents the engine from processing its cha
 
 ### Copy vs. Reference
 
-Custom keywords—declared with the help of the reserved `var` and `function` keywords—are how we declare our own named shortcuts to values. These values are one of the six types above where `function` is a specific type of Object. Additionally, the aforementioned `Date`, `Error`, and `Math` are also specific types of Objects. Any value that isn't a primitive value is a specific Object value.
+Custom keywords—declared with the help of the reserved `var` and `function` keywords—are how we declare our own named shortcuts to values. These values are one of the six types above where `function` is a specific type of Object. Additionally, the aforementioned `Date`, `Error`, and `Math` are also specific types of Objects. Any value that isn't a primitive value is either a basic or specific Object value.
 
 When a primitive value is assigned to a keyword, the keyword holds a *copy* of the value. A complex value assigned or associated to a keyword is instead a *reference* to the value. So primitive values are always copies and complex values are always references. This distinction is important because references, unlike copies, enable the sharing of:
 
