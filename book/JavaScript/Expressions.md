@@ -231,8 +231,8 @@ Each allows the organization of data—primitive or complex values—using a par
 
 The literal form of each is `{}` and `[]` respectively. An object literal uses *braces* and an array literal uses *brackets*. Braces are curved and brackets are straight. These visual differences are clues reminding you which structure belongs to which literal form:
 
-- Object/curves/braces/`{}`
-- Array/straight/brackets/`[]`
+- `Object`/curves/braces/`{}`
+- `Array`/straight/brackets/`[]`
 
 For reference, here is a visualization of the anatomy of each structure:
 
