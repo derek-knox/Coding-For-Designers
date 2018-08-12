@@ -219,7 +219,7 @@ Do you remember the first two of four ideas I wanted to instill way back in the 
 
 These same two ideas that applied to bits manifest in `Object`s too. Instead of the binary nature of bits were working with six value types contained in an `Object`. Admittedly this is a little more complex, but basic concepts and ideas stacked atop each other are still at the core.
 
-An object is considered either basic or specific where the disinction is simple. A specific object is one that isn't basic...
+... object literal form + constructor form and transition to specifics, most notably the array and maybe briefly function
 
 #### Array
 
