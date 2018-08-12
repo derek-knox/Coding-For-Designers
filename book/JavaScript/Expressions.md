@@ -208,6 +208,10 @@ The takeaway is that the String type prevents the engine from processing its cha
 
 ...
 
+#### Object
+
+...
+
 ### Copy vs. Reference
 
 Custom keywords—declared with the help of the reserved `var` and `function` keywords—are how we declare our own named shortcuts to values. These values are one of the six types above where `function` is a specific type of `Object`. Additionally, the aforementioned `Date`, `Error`, and `Math` are also specific types of `Object`s. Any value that isn't a primitive value is either a basic or specific `Object` value.
