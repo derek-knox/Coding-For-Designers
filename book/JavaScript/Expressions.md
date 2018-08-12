@@ -143,15 +143,17 @@ In the `artboards.js` code above the `onDeleteArtboardButtonClick` function *imp
 Here is a more *explicit* version of the same functionality using the constructor form:
 
 ```javascript
-var isArtboardInFocusUndefined = Boolean(artboardInFocus === undefined);
-var isArtboardInFocusNull = Boolean(artboardInFocus === null);
+function onDeleteArtboardButtonClick() {
+    var isArtboardInFocusUndefined = Boolean(artboardInFocus === undefined);
+    var isArtboardInFocusNull = Boolean(artboardInFocus === null);
 
-if (isArtboardInFocusUndefined) {
-    alert('No artboard to delete. Try creating one first.');
-} else if (isArtboardInFocusNull) {
-    alert('No artboard to delete. None of the ' + String(artboards.length) + ' artboards are in focus.');
-} else {
-    deleteArtboardInFocus();
+    if (isArtboardInFocusUndefined) {
+        alert('No artboard to delete. Try creating one first.');
+    } else if (isArtboardInFocusNull) {
+        alert('No artboard to delete. None of the ' + String(artboards.length) + ' artboards are in focus.');
+    } else {
+        deleteArtboardInFocus();
+    }
 }
 ```
 
