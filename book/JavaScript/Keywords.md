@@ -133,7 +133,7 @@ There are three common case styles that are used as a result of the above rules:
 
 1. upper camel (ex. UpperCamelCase)
 1. lower camel (ex. lowerCamelCase)
-1. underscore (ex. underscore_case)
+1. underscore (ex. underscore_case aka snake_case)
 
 I recommend using the `lowerCamelCase` just like we did with `makeBackgroundBlack`. We'll additionally use the `UpperCamelCase` style for certain functions, but we'll cover why in the Functions section later. The takeaway is that you can use all the rules above, but it is much simpler to stick to the `lowerCamelCase` and `UpperCamelCase` styles.
 
