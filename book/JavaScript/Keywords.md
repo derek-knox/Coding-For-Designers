@@ -135,7 +135,7 @@ There are three common case styles that are used as a result of the above rules:
 1. lower camel (ex. lowerCamelCase)
 1. underscore (ex. underscore_case aka snake_case)
 
-I recommend using the `lowerCamelCase` just like we did with `makeBackgroundBlack`. We'll additionally use the `UpperCamelCase` style for certain functions, but we'll cover why in the Functions section later. The takeaway is that you can use all the rules above, but it is much simpler to stick to the `lowerCamelCase` and `UpperCamelCase` styles.
+I recommend using the `lowerCamelCase` just like we did with `makeBackgroundBlack`. We'll additionally use the `UpperCamelCase` style for certain functions, but we'll cover why in the *Functions* section later. The takeaway is that you can use all the rules above, but it is much simpler to stick to the `lowerCamelCase` and `UpperCamelCase` styles.
 
 It is worth noting that these case styles exist for a reason. If blank spaces were allowed then our `makeBackgroundBlack` keyword would be `make Background Black`. The engine would instead see three keywords as opposed to one. The `lowerCamelCase` and `UpperCamelCase` styles exist to mitigate this issue while maintaining readability.
 
