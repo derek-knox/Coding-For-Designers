@@ -98,7 +98,7 @@ The `Date` helps us work with dates and time. Errors you understand generally, b
 
 ### Non-Reserved Keywords - Environment
 
-There are four non-reserved environment keywords in the snippet above. They are `document`, `body`, `style`, and `backgroundColor`. Each is parented by the former. We'll explore how this keyword parenting is possible in the Expressions section that soon follows.
+There are four non-reserved environment keywords in the snippet above. They are `document`, `body`, `style`, and `backgroundColor`. Each is parented by the former. We'll explore how this keyword parenting is possible in the *Expressions* section that soon follows.
 
 The `document` has a parent too. This parent is special and is known as the *host object*. The host object in a browser environment is the `window` object. The `window` object provides the runtime APIs we learned about in the Event Loop section of the Interactive Code chapter. As a result, the use of `document` and `window.document` are interchangeable. As an aside, the `document` provides APIs for us to update our HTML during execution time. This is exactly what we want–and do–in our `makeBackgroundBlack` function.
 
