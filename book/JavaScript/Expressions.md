@@ -144,26 +144,26 @@ Here is a more *explicit* version of the same functionality using the constructo
 
 ```javascript
 function onDeleteArtboardButtonClick() {
-    var isArtboardInFocusUndefined = new Boolean(artboardInFocus === undefined);
     var isArtboardInFocusNull = new Boolean(artboardInFocus === null);
-
-    if (isArtboardInFocusUndefined) {
-        alert('No artboard to delete. Try creating one first.');
-    } else if (isArtboardInFocusNull) {
+    var isArtboardInFocusUndefined = new Boolean(artboardInFocus === undefined);
+    
+    if (isArtboardInFocusNull) {
         alert('No artboard to delete. None of the ' + new String(artboards.length) + ' artboards are in focus.');
+    } else if (isArtboardInFocusUndefined) {
+        alert('No artboard to delete. Try creating one first.');
     } else {
         deleteArtboardInFocus();
     }
 }
 ```
 
-Both the implicit (literal form) and the explicit (constructor form) versions result in the same code flow. Since programmers like shortcuts you will almost always see the *implicit* version when working with `if`, `else if`, and `else`. Admittedly the implicit version falls in the right and better categories. Feel free to use whichever version makes more sense to you.
+Both the implicit (literal form) and the explicit (constructor form) versions result in the same code flow. Since programmers like shortcuts you will almost always see the *implicit* version when working with `if`, `else if`, and `else`. Admittedly the implicit version falls in the right and better categories so feel free to use whichever version makes more sense to you.
 
 The takeaway is that Boolean values—in either literal or constructor form—are fundamental to controlling code flow.
 
 #### Number
 
-The Number type denotes numbers. Impressive I know. These numbers can be whole (`-360`, `0`, and `360`) or fractions (`-.36`, `.36`, and `3.6`). They can be negative or positive. There are technically limits to a number value in JavaScript, but for our subset approach we can ignore them. If you ever need to work with extreme whole numbers (positives or negatives in the quadrillions) or similarly extreme fractions then feel free to dig deeper. Thought so.
+The Number type denotes numbers. Impressive I know. These numbers can be whole (`-360`, `0`, and `360`) or fractions (`-.36`, `.36`, and `3.6`). They can be negative or positive too. There are technically limits to a number's minimum and maximum value in JavaScript, but for our subset approach we can ignore them. If you ever need to work with extreme whole numbers (positives or negatives in the quadrillions) or similarly extreme fractions then feel free to dig deeper. Thought so.
 
 In the `artboards.js` code above we use a Number twice in the `deleteArtboardInFocus` function:
 
@@ -187,7 +187,7 @@ The second snippet uses the evaluated `artboards.length` value to get the number
 
 #### String
 
-The String type denotes `"one or more characters wrapped in double quotes"` or `'single quotes'`. There are seven examples of String values being used in the `artboard.js` code above.
+The String type denotes `"one or more characters wrapped in double quotes"` or `'single quotes'`. There are eight examples of String values being used in the `artboard.js` code above.
 
 Strings are useful for defining names, event types, and messages among other things. Concrete examples of this are the use of `create` and `delete`, `click`, and the `alert` strings respectively. It is worth noting that double quoted and single quoted strings are valuable in different scenarios:
 
