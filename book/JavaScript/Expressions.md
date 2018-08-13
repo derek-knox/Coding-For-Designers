@@ -73,7 +73,7 @@ function deleteArtboardInFocus() {
 }
 
 function onCreateArtboardButtonClick() {
-    var artboard = new Artboard();
+    var artboard = new Artboard(); // Artboard is a custom object type, we'll learn about these later
     artboards.push(artboard);
     artboard.addSelfToSurface();
     updateArtboardInFocus(artboard);
