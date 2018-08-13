@@ -80,10 +80,10 @@ function onCreateArtboardButtonClick() {
 }
 
 function onDeleteArtboardButtonClick() {
-    if (artboardInFocus === undefined) {
-        alert('No artboard to delete. Try creating one first.');
-    } else if (artboardInFocus === null) {
+    if (artboardInFocus === null) {
         alert('No artboard to delete. None of the ' + new String(artboards.length) + ' artboards are in focus.');
+    } else if (artboardInFocus === undefined) {
+        alert('No artboard to delete. Try creating one first.');
     } else {
         deleteArtboardInFocus();
     }
@@ -94,7 +94,7 @@ setupEventListeners();
 
 #### Null
 
-The special `null` value denotes the *intentional* absence of a value. This special value *is not* automatically assigned in JavaScript. It must intentionally be assigned to a keyword by a coder. Though `null` represents the absence of a value, it is technically a value itself. A little weird I know. This is what makes it "special".
+The special `null` value denotes the *explicit* absence of a value. This special value *is not* automatically assigned in JavaScript. It must intentionally be assigned to a keyword by a coder. Though `null` represents the absence of a value, it is technically a value itself. A little weird I know. This is what makes it "special".
 
 In the `artboards.js` code above we use `null` in the `deleteArtboardInFocus` function:
 
@@ -105,7 +105,7 @@ artboardInFocus = null;
 and in the `onDeleteArtboardButtonClick` function:
 
 ```javascript
-else if (artboardInFocus === null) {
+if (artboardInFocus === null) {
     alert('No artboard to delete. None of the ' + new String(artboards.length) + ' artboards are in focus.');
 }
 ```
@@ -114,7 +114,7 @@ By using `null` we can provide a more intentional path (code flow) for the engin
 
 #### Undefined
 
-The special `undefined` value denotes the *unintentional* absence of a value. This special value *is* automatically assigned in JavaScript. It is the default value for `var`iable declarations. Additionally, it is the value returned when a nonexistent keyword is accessed. These two aspects make it "special".
+The special `undefined` value denotes the *implicit* absence of a value. This special value *is* automatically assigned in JavaScript. It is the default value for `var`iable declarations. Additionally, it is the value returned when a nonexistent keyword is accessed. These two aspects make it "special".
 
 In the `artboards.js` code above `undefined` is automatically used in the `var`iable declarations section:
 
@@ -125,7 +125,7 @@ var artboardInFocus;
 and additionally in the `onDeleteArtboardButtonClick` function:
 
 ```javascript
-if (artboardInFocus === undefined) {
+else if (artboardInFocus === undefined) {
     alert('No artboard to delete. Try creating one first.');
 }
 ```
