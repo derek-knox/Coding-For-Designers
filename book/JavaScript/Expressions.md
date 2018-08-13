@@ -28,7 +28,7 @@ We've talked a lot about values, but we have not explicitly explored the built-i
 2. Complex Values
     - Object (`{}` & `[]`)
 
-The examples within parenthesis above are all examples of the *literal form* of the respective value type. This form is most common and preferred. It is important to know that JavaScript has another way to create values however. This other way is called the *constructor form*. The constructor form for built-in types leverages the `new` operator keyword in addition to an environment keyword. This environment keyword denotes the value's specific Object type. Here is the same list using `new` and the respective type's environment keyword (which is a named shortcut to a function):
+The examples within parenthesis above are all examples of the *literal form* of the respective value type. This form is most common and preferred. It is important to know that JavaScript has another way to create values however. This other way is called the *constructor form*. The constructor form for built-in types leverages the `new` operator keyword in addition to an environment keyword. This environment keyword denotes the value's specific Object type. Here is the same list using `new` and the respective type's environment keyword (which is just a named shortcut to a function):
 
 1. Primitive Values
     - null (only literal form)
