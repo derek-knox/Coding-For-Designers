@@ -22,7 +22,7 @@
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
     <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon">
     <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.1.30">
+    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.1.31">
     <link rel="stylesheet" href="../assets/css/prism.css">
   </head>
   <body>
@@ -441,7 +441,7 @@
 </ul>
 </li>
 </ol>
-<p>The examples within parenthesis above are all examples of the <em>literal form</em> of the respective value type. This form is most common and preferred. It is important to know that JavaScript has another way to create values however. This other way is called the <em>constructor form</em>. The constructor form leverages the <code>new</code> operator keyword in addition to an environment keyword. This environment keyword denotes the value&apos;s specific Object type. Here is the same list using <code>new</code> and the respective type&apos;s environment keyword (which is a named shortcut to a function):</p>
+<p>The examples within parenthesis above are all examples of the <em>literal form</em> of the respective value type. This form is most common and preferred. It is important to know that JavaScript has another way to create values however. This other way is called the <em>constructor form</em>. The constructor form for built-in types leverages the <code>new</code> operator keyword in addition to an environment keyword. This environment keyword denotes the value&apos;s specific Object type. Here is the same list using <code>new</code> and the respective type&apos;s environment keyword (which is just a named shortcut to a function):</p>
 <ol>
 <li>Primitive Values<ul>
 <li>null (only literal form)</li>
@@ -456,7 +456,7 @@
 </ul>
 </li>
 </ol>
-<p>The literal form is best for built-in types where the constructor form is best for non-built-in types. Programmers like shortcuts, so this is why the literal form is preferred. The constructor form is useful&#x2014;required really&#x2014;for specific types of environment Objects like the aforementioned <code>Date</code> and <code>Error</code> among others. Custom types also require the constructor form.</p>
+<p>The literal form is best for built-in types where the constructor form is best for non-built-in types. Programmers like shortcuts, so this is why the literal form is preferred above. The constructor form is useful&#x2014;required really&#x2014;for specific types of environment Objects like the aforementioned <code>Date</code> and <code>Error</code> among others. Custom types also require the constructor form.</p>
 <h3 id="primitive-values">Primitive Values</h3>
 <p>Since primitive values are so fundamental to JavaScript, let&apos;s explore each of them in a little more detail. Below is a small program that will be further referenced as an example use of each primitive. Comments are intentionally absent so you can practice the <em>thinking in three zoom levels</em> technique. Pretend that the code is running in a browser whose HTML structure:</p>
 <ol>
@@ -487,17 +487,17 @@
 <span class="token punctuation">}</span>
 
 <span class="token keyword">function</span> <span class="token function">onCreateArtboardButtonClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">var</span> artboard <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Artboard</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> artboard <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Artboard</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// Artboard is a custom object type, we&apos;ll learn about these later</span>
     artboards<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>artboard<span class="token punctuation">)</span><span class="token punctuation">;</span>
     artboard<span class="token punctuation">.</span><span class="token function">addSelfToSurface</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token function">updateArtboardInFocus</span><span class="token punctuation">(</span>artboard<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
 <span class="token keyword">function</span> <span class="token function">onDeleteArtboardButtonClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>artboardInFocus <span class="token operator">===</span> undefined<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&apos;No artboard to delete. Try creating one first.&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>artboardInFocus <span class="token operator">===</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>artboardInFocus <span class="token operator">===</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&apos;No artboard to delete. None of the &apos;</span> <span class="token operator">+</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span>artboards<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&apos; artboards are in focus.&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>artboardInFocus <span class="token operator">===</span> undefined<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&apos;No artboard to delete. Try creating one first.&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
         <span class="token function">deleteArtboardInFocus</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
@@ -506,49 +506,49 @@
 <span class="token function">setupEventListeners</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><div class="content-text">
 <h4 id="null">Null</h4>
-<p>The special <code>null</code> value denotes the <em>intentional</em> absence of a value. This special value <em>is not</em> automatically assigned in JavaScript. It must intentionally be assigned to a keyword by a coder. Though <code>null</code> represents the absence of a value, it is technically a value itself. A little weird I know. This is what makes it &quot;special&quot;.</p>
+<p>The special <code>null</code> value denotes the <em>explicit</em> absence of a value. This special value <em>is not</em> automatically assigned in JavaScript. It must intentionally be assigned to a keyword by a coder. Though <code>null</code> represents the absence of a value, it is technically a value itself. A little weird I know. This is what makes it &quot;special&quot;.</p>
 <p>In the <code>artboards.js</code> code above we use <code>null</code> in the <code>deleteArtboardInFocus</code> function:</p>
 </div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript">artboardInFocus <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
 </code></pre></div><div class="content-text">
 <p>and in the <code>onDeleteArtboardButtonClick</code> function:</p>
-</div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>artboardInFocus <span class="token operator">===</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">if</span> <span class="token punctuation">(</span>artboardInFocus <span class="token operator">===</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&apos;No artboard to delete. None of the &apos;</span> <span class="token operator">+</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span>artboards<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&apos; artboards are in focus.&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre></div><div class="content-text">
 <p>By using <code>null</code> we can provide a more intentional path (code flow) for the engine to execute code when the program is being interacted with.</p>
 <h4 id="undefined">Undefined</h4>
-<p>The special <code>undefined</code> value denotes the <em>unintentional</em> absence of a value. This special value <em>is</em> automatically assigned in JavaScript. It is the default value for <code>var</code>iable declarations. Additionally, it is the value returned when a nonexistent keyword is accessed. These two aspects make it &quot;special&quot;.</p>
+<p>The special <code>undefined</code> value denotes the <em>implicit</em> absence of a value. This special value <em>is</em> automatically assigned in JavaScript. It is the default value for <code>var</code>iable declarations. Additionally, it is the value returned when a nonexistent keyword is accessed. These two aspects make it &quot;special&quot;.</p>
 <p>In the <code>artboards.js</code> code above <code>undefined</code> is automatically used in the <code>var</code>iable declarations section:</p>
 </div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">var</span> artboardInFocus<span class="token punctuation">;</span>
 </code></pre></div><div class="content-text">
 <p>and additionally in the <code>onDeleteArtboardButtonClick</code> function:</p>
-</div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">if</span> <span class="token punctuation">(</span>artboardInFocus <span class="token operator">===</span> undefined<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+</div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>artboardInFocus <span class="token operator">===</span> undefined<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&apos;No artboard to delete. Try creating one first.&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre></div><div class="content-text">
-<p>If the first interaction with the program is to click the &quot;Delete Canvas&quot; button then the above <code>alert</code> code would run. If we did not check for <code>undefined</code> and <code>null</code> prior to executing <code>deleteArtboardInFocus()</code> we&apos;d get an <code>Error</code>. This would happen because we can&apos;t delete an artboard that does not exist. The above examples illustrate why the <code>undefined</code> and <code>null</code> values are useful.</p>
+<p>If the first interaction with the program is to click the &quot;Delete Canvas&quot; button then the above <code>alert</code> code would run. If we did not check for <code>null</code> and <code>undefined</code> prior to executing <code>deleteArtboardInFocus()</code> we&apos;d get an <code>Error</code>. This would happen because we can&apos;t delete an artboard that does not exist. The above examples illustrate why the <code>null</code> and <code>undefined</code> values are useful.</p>
 <p>The observant designer will wonder why the &quot;Delete Artboard&quot; button is interactive if there is not a valid artboard to delete. A better design would leverage the interaction design principle <em>progressive disclosure</em> and only show or enable the &quot;Delete Artboard&quot; button when an artboard became focused. I highlight this idea to illustrate the importance of designers and developers working together. Remember, design is the accumulation of decisions and these decisions impact designers and developers just as they do end-users.</p>
 <h4 id="boolean">Boolean</h4>
 <p>The Boolean type denotes one of two values: <code>true</code> or <code>false</code>. Remember the bit? This is JavaScript&apos;s formal approach to the same goal of defining one of two states. The bit&apos;s <code>0</code> is the Boolean&apos;s <code>false</code>. Its <code>1</code> is the Boolean&apos;s <code>true</code>.</p>
 <p>In the <code>artboards.js</code> code above the <code>onDeleteArtboardButtonClick</code> function <em>implies</em> the use of a Boolean value in two places. Can you spot them before reading on?</p>
 <p>Here is a more <em>explicit</em> version of the same functionality using the constructor form:</p>
 </div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">onDeleteArtboardButtonClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">var</span> isArtboardInFocusUndefined <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Boolean</span><span class="token punctuation">(</span>artboardInFocus <span class="token operator">===</span> undefined<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token keyword">var</span> isArtboardInFocusNull <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Boolean</span><span class="token punctuation">(</span>artboardInFocus <span class="token operator">===</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">var</span> isArtboardInFocusUndefined <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Boolean</span><span class="token punctuation">(</span>artboardInFocus <span class="token operator">===</span> undefined<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>isArtboardInFocusUndefined<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&apos;No artboard to delete. Try creating one first.&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>isArtboardInFocusNull<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>isArtboardInFocusNull<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&apos;No artboard to delete. None of the &apos;</span> <span class="token operator">+</span> <span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span>artboards<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">&apos; artboards are in focus.&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>isArtboardInFocusUndefined<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">&apos;No artboard to delete. Try creating one first.&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
         <span class="token function">deleteArtboardInFocus</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre></div><div class="content-text">
-<p>Both the implicit (literal form) and the explicit (constructor form) versions result in the same code flow. Since programmers like shortcuts you will almost always see the <em>implicit</em> version when working with <code>if</code>, <code>else if</code>, and <code>else</code>. Admittedly the implicit version falls in the right and better categories. Feel free to use whichever version makes more sense to you.</p>
+<p>Both the implicit (literal form) and the explicit (constructor form) versions result in the same code flow. Since programmers like shortcuts you will almost always see the <em>implicit</em> version when working with <code>if</code>, <code>else if</code>, and <code>else</code>. Admittedly the implicit version falls in the right and better categories so feel free to use whichever version makes more sense to you.</p>
 <p>The takeaway is that Boolean values&#x2014;in either literal or constructor form&#x2014;are fundamental to controlling code flow.</p>
 <h4 id="number">Number</h4>
-<p>The Number type denotes numbers. Impressive I know. These numbers can be whole (<code>-360</code>, <code>0</code>, and <code>360</code>) or fractions (<code>-.36</code>, <code>.36</code>, and <code>3.6</code>). They can be negative or positive. There are technically limits to a number value in JavaScript, but for our subset approach we can ignore them. If you ever need to work with extreme whole numbers (positives or negatives in the quadrillions) or similarly extreme fractions then feel free to dig deeper. Thought so.</p>
+<p>The Number type denotes numbers. Impressive I know. These numbers can be whole (<code>-360</code>, <code>0</code>, and <code>360</code>) or fractions (<code>-.36</code>, <code>.36</code>, and <code>3.6</code>). They can be negative or positive too. There are technically limits to a number&apos;s minimum and maximum value in JavaScript, but for our subset approach we can ignore them. If you ever need to work with extreme whole numbers (positives or negatives in the quadrillions) or similarly extreme fractions then feel free to dig deeper. Thought so.</p>
 <p>In the <code>artboards.js</code> code above we use a Number twice in the <code>deleteArtboardInFocus</code> function:</p>
 </div><div class="content-code"><pre class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">var</span> artboardInFocusIndex <span class="token operator">=</span> artboards<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>artboardInFocus<span class="token punctuation">)</span><span class="token punctuation">;</span>
 artboards<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span>artboardInFocusIndex<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -563,7 +563,7 @@ artboards<span class="token punctuation">.</span><span class="token function">sp
 </ol>
 <p>The second snippet uses the evaluated <code>artboards.length</code> value to get the number of total artboards that exist. This allows us to display an up-to-date message using the correct artboards count number as a String value.</p>
 <h4 id="string">String</h4>
-<p>The String type denotes <code>&quot;one or more characters wrapped in double quotes&quot;</code> or <code>&apos;single quotes&apos;</code>. There are seven examples of String values being used in the <code>artboard.js</code> code above.</p>
+<p>The String type denotes <code>&quot;one or more characters wrapped in double quotes&quot;</code> or <code>&apos;single quotes&apos;</code>. There are eight examples of String values being used in the <code>artboard.js</code> code above.</p>
 <p>Strings are useful for defining names, event types, and messages among other things. Concrete examples of this are the use of <code>create</code> and <code>delete</code>, <code>click</code>, and the <code>alert</code> strings respectively. It is worth noting that double quoted and single quoted strings are valuable in different scenarios:</p>
 <ul>
 <li><code>&quot;The artboard&apos;s size is too small.&quot;</code></li>
@@ -675,7 +675,7 @@ artboards<span class="token punctuation">.</span><span class="token function">sp
     <div id='reveal-overlay'></div>
 
     <script src="../assets/js/three.min.js"></script>
-    <script src="../assets/js/book.js?1.1.30"></script>
+    <script src="../assets/js/book.js?1.1.31"></script>
     <script src="../assets/js/prism.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
