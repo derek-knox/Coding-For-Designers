@@ -28,7 +28,7 @@ We've talked a lot about values, but we have not explicitly explored the built-i
 2. Complex Values
     - Object (`{}` & `[]`)
 
-The examples within parenthesis above are all examples of the *literal form* of the respective value type. This form is most common and preferred. It is important to know that JavaScript has another way to create values however. This other way is called the *constructor form*. The constructor form leverages the `new` operator keyword in addition to an environment keyword. This environment keyword denotes the value's specific Object type. Here is the same list using `new` and the respective type's environment keyword (which is a named shortcut to a function):
+The examples within parenthesis above are all examples of the *literal form* of the respective value type. This form is most common and preferred. It is important to know that JavaScript has another way to create values however. This other way is called the *constructor form*. The constructor form for built-in types leverages the `new` operator keyword in addition to an environment keyword. This environment keyword denotes the value's specific Object type. Here is the same list using `new` and the respective type's environment keyword (which is just a named shortcut to a function):
 
 1. Primitive Values
     - null (only literal form)
@@ -39,7 +39,7 @@ The examples within parenthesis above are all examples of the *literal form* of 
 2. Complex Values
     - Object (`new Object()` & `new Array()`)
 
-The literal form is best for built-in types where the constructor form is best for non-built-in types. Programmers like shortcuts, so this is why the literal form is preferred. The constructor form is useful—required really—for specific types of environment Objects like the aforementioned `Date` and `Error` among others. Custom types also require the constructor form.
+The literal form is best for built-in types where the constructor form is best for non-built-in types. Programmers like shortcuts, so this is why the literal form is preferred above. The constructor form is useful—required really—for specific types of environment Objects like the aforementioned `Date` and `Error` among others. Custom types also require the constructor form.
 
 ### Primitive Values
 
@@ -73,17 +73,17 @@ function deleteArtboardInFocus() {
 }
 
 function onCreateArtboardButtonClick() {
-    var artboard = new Artboard();
+    var artboard = new Artboard(); // Artboard is a custom object type, we'll learn about these later
     artboards.push(artboard);
     artboard.addSelfToSurface();
     updateArtboardInFocus(artboard);
 }
 
 function onDeleteArtboardButtonClick() {
-    if (artboardInFocus === undefined) {
-        alert('No artboard to delete. Try creating one first.');
-    } else if (artboardInFocus === null) {
+    if (artboardInFocus === null) {
         alert('No artboard to delete. None of the ' + new String(artboards.length) + ' artboards are in focus.');
+    } else if (artboardInFocus === undefined) {
+        alert('No artboard to delete. Try creating one first.');
     } else {
         deleteArtboardInFocus();
     }
@@ -94,7 +94,7 @@ setupEventListeners();
 
 #### Null
 
-The special `null` value denotes the *intentional* absence of a value. This special value *is not* automatically assigned in JavaScript. It must intentionally be assigned to a keyword by a coder. Though `null` represents the absence of a value, it is technically a value itself. A little weird I know. This is what makes it "special".
+The special `null` value denotes the *explicit* absence of a value. This special value *is not* automatically assigned in JavaScript. It must intentionally be assigned to a keyword by a coder. Though `null` represents the absence of a value, it is technically a value itself. A little weird I know. This is what makes it "special".
 
 In the `artboards.js` code above we use `null` in the `deleteArtboardInFocus` function:
 
@@ -105,7 +105,7 @@ artboardInFocus = null;
 and in the `onDeleteArtboardButtonClick` function:
 
 ```javascript
-else if (artboardInFocus === null) {
+if (artboardInFocus === null) {
     alert('No artboard to delete. None of the ' + new String(artboards.length) + ' artboards are in focus.');
 }
 ```
@@ -114,7 +114,7 @@ By using `null` we can provide a more intentional path (code flow) for the engin
 
 #### Undefined
 
-The special `undefined` value denotes the *unintentional* absence of a value. This special value *is* automatically assigned in JavaScript. It is the default value for `var`iable declarations. Additionally, it is the value returned when a nonexistent keyword is accessed. These two aspects make it "special".
+The special `undefined` value denotes the *implicit* absence of a value. This special value *is* automatically assigned in JavaScript. It is the default value for `var`iable declarations. Additionally, it is the value returned when a nonexistent keyword is accessed. These two aspects make it "special".
 
 In the `artboards.js` code above `undefined` is automatically used in the `var`iable declarations section:
 
@@ -125,12 +125,12 @@ var artboardInFocus;
 and additionally in the `onDeleteArtboardButtonClick` function:
 
 ```javascript
-if (artboardInFocus === undefined) {
+else if (artboardInFocus === undefined) {
     alert('No artboard to delete. Try creating one first.');
 }
 ```
 
-If the first interaction with the program is to click the "Delete Canvas" button then the above `alert` code would run. If we did not check for `undefined` and `null` prior to executing `deleteArtboardInFocus()` we'd get an `Error`. This would happen because we can't delete an artboard that does not exist. The above examples illustrate why the `undefined` and `null` values are useful.
+If the first interaction with the program is to click the "Delete Canvas" button then the above `alert` code would run. If we did not check for `null` and `undefined` prior to executing `deleteArtboardInFocus()` we'd get an `Error`. This would happen because we can't delete an artboard that does not exist. The above examples illustrate why the `null` and `undefined` values are useful.
 
 The observant designer will wonder why the "Delete Artboard" button is interactive if there is not a valid artboard to delete. A better design would leverage the interaction design principle *progressive disclosure* and only show or enable the "Delete Artboard" button when an artboard became focused. I highlight this idea to illustrate the importance of designers and developers working together. Remember, design is the accumulation of decisions and these decisions impact designers and developers just as they do end-users.
 
@@ -144,26 +144,26 @@ Here is a more *explicit* version of the same functionality using the constructo
 
 ```javascript
 function onDeleteArtboardButtonClick() {
-    var isArtboardInFocusUndefined = new Boolean(artboardInFocus === undefined);
     var isArtboardInFocusNull = new Boolean(artboardInFocus === null);
-
-    if (isArtboardInFocusUndefined) {
-        alert('No artboard to delete. Try creating one first.');
-    } else if (isArtboardInFocusNull) {
+    var isArtboardInFocusUndefined = new Boolean(artboardInFocus === undefined);
+    
+    if (isArtboardInFocusNull) {
         alert('No artboard to delete. None of the ' + new String(artboards.length) + ' artboards are in focus.');
+    } else if (isArtboardInFocusUndefined) {
+        alert('No artboard to delete. Try creating one first.');
     } else {
         deleteArtboardInFocus();
     }
 }
 ```
 
-Both the implicit (literal form) and the explicit (constructor form) versions result in the same code flow. Since programmers like shortcuts you will almost always see the *implicit* version when working with `if`, `else if`, and `else`. Admittedly the implicit version falls in the right and better categories. Feel free to use whichever version makes more sense to you.
+Both the implicit (literal form) and the explicit (constructor form) versions result in the same code flow. Since programmers like shortcuts you will almost always see the *implicit* version when working with `if`, `else if`, and `else`. Admittedly the implicit version falls in the right and better categories so feel free to use whichever version makes more sense to you.
 
 The takeaway is that Boolean values—in either literal or constructor form—are fundamental to controlling code flow.
 
 #### Number
 
-The Number type denotes numbers. Impressive I know. These numbers can be whole (`-360`, `0`, and `360`) or fractions (`-.36`, `.36`, and `3.6`). They can be negative or positive. There are technically limits to a number value in JavaScript, but for our subset approach we can ignore them. If you ever need to work with extreme whole numbers (positives or negatives in the quadrillions) or similarly extreme fractions then feel free to dig deeper. Thought so.
+The Number type denotes numbers. Impressive I know. These numbers can be whole (`-360`, `0`, and `360`) or fractions (`-.36`, `.36`, and `3.6`). They can be negative or positive too. There are technically limits to a number's minimum and maximum value in JavaScript, but for our subset approach we can ignore them. If you ever need to work with extreme whole numbers (positives or negatives in the quadrillions) or similarly extreme fractions then feel free to dig deeper. Thought so.
 
 In the `artboards.js` code above we use a Number twice in the `deleteArtboardInFocus` function:
 
@@ -187,7 +187,7 @@ The second snippet uses the evaluated `artboards.length` value to get the number
 
 #### String
 
-The String type denotes `"one or more characters wrapped in double quotes"` or `'single quotes'`. There are seven examples of String values being used in the `artboard.js` code above.
+The String type denotes `"one or more characters wrapped in double quotes"` or `'single quotes'`. There are eight examples of String values being used in the `artboard.js` code above.
 
 Strings are useful for defining names, event types, and messages among other things. Concrete examples of this are the use of `create` and `delete`, `click`, and the `alert` strings respectively. It is worth noting that double quoted and single quoted strings are valuable in different scenarios:
 
