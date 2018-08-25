@@ -206,24 +206,49 @@ The takeaway is that the String type prevents the engine from processing its cha
 
 ### Complex Values
 
-Any value that isn't one of the five primitive values is a complex value. The only complex value type in JavaScript is the `Object`. An object is considered either *basic* or *specific* based on how it is created. Regardless of how however, its properties can contain references to primitive values and complex values. In contrast, a primitive can be only one of the five primitive types (`null`, `undefined`, `Boolean`, `Number`, or `String`).
+Any value that isn't one of the five primitive values is a complex value. The only complex value type in JavaScript is the `Object`. An object is considered either *basic* or *specific*. In either case its properties can contain primitive values *and* complex values. In contrast, a primitive can be *only* one of the five primitive types (`null`, `undefined`, `Boolean`, `Number`, or `String`).
 
 #### Object
 
-`Object`s in JavaScript are what enable coders a massive amount of creative freedom. Since we can create custom identifiers and assign them primitive or other complex values, we can represent virtually anything. We can model real-world concepts just as easily as fantasy concepts. We can mix and match to our desire. We can use existing specific objects like `Date`, `Error`, and `Math` or create our own like `Color`, `Pen`, and `Artboard`. This range of freedom is what enables the wide variety of interactive games, tools, and software we love, to exist. 
+`Object`s in JavaScript are what empower coders with a massive amount of creative freedom. Since we can create custom identifiers and assign them primitive and other complex values, we can represent virtually anything. We can model real-world concepts just as easily as fantasy concepts. We can mix and match to our desire. We can use existing specific objects like `Date`, `Error`, and `Math` or create our own like `Color`, `Pen`, and `Artboard`. This range of freedom is what enables the wide variety of interactive games, tools, and software we love, to exist. 
 
-Do you remember the first two of four ideas I wanted to instill way back in the *Bits and Bytes* section of the *Breaking Barriers* chapter? Here is a refresher:
+Do you remember the first two of four ideas I aimed to instill in the *Bits and Bytes* section of the *Breaking Barriers* chapter? Here is a refresher:
 
 1. Computers, these complex machines, rely solely on extremely basic concepts
 2. There is no magic in coding, just simple ideas stacked atop each other
 
-These same two ideas that applied to bits manifest in `Object`s too. Instead of the binary nature of bits were working with six value types contained in an `Object`. Admittedly this is a little more complex, but basic concepts and ideas stacked atop each other are still at the core.
+These same two ideas that applied to bits manifest in `Object`s too. Instead of the binary nature of bits we're working with six value types contained in an `Object`. Admittedly this is a little more complex, but basic concepts and ideas stacked atop each other are still at the core.
 
-... object literal form + constructor form and transition to specifics, most notably the array and maybe briefly function
+The distinction between a basic and specific object is simple. A basic `Object` is only ever one that is created via:
+
+- object literal form (`{}`)
+- object constructor form with the `Object` keyword (`new Object()`)
+
+Specific objects are almost always created with the object constructor form where the `Object` keyword is replaced. Here are three examples of the construction of specific objects:
+
+1. `new Date()`
+1. `new Error()`
+1. `new Array()`
+
+Below are three more examples, but of *custom* specific objects. Take note that the `Color`, `Pen`, and `Artboard` keywords need a custom function value associated too. Otherwise, as you learned in the `undefined` section above, the engine will have no idea what they mean and instead default to `undefined`.
+
+1. `new Color()`
+1. `new Pen()`
+1. `new Artboard()`
+
+The core takeaway is you should use the object literal form for creating basic `Object`s and the constructor form for specific objects. You'll intuit which to use in time.
 
 #### Array
 
-...
+As mentioned previously, the `Array` also has a literal form which is `[]`. It is a specific type of `Object`. It is so common that it gets its own literal form like `Object` does. The `Object` and `Array` data structures are so common and useful that they have literal forms (creation shortcuts essentially).
+
+`Array`s are nowhere near as flexible as `Object`s however. They are simply a list container. An `Array`'s flexibility manifests as the ability to order any amount of any of the six value types. Here are example arrays containing each value type (excluding the `undefined` and `null` types):
+
+- `[ 1, 2, 3 ]`
+- `[ {}, {}, {} ]`
+- `[ 'Page 1', 'Page 2', 'Page 3' ]`
+
+
 
 ### Copy vs. Reference
 
