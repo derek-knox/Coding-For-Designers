@@ -3,7 +3,8 @@
 var isMenuOpen = false,
 	isDarkMode = false,
 	isHomePage = window.location.pathname.toLowerCase().indexOf('home') !== -1,
-	hasWebGL = getHasWebGL(),
+	hasWebGL = getHasWebGlSupport(),
+	hasTouchSupport = getHasTouchSupport(),
 
 	$wipContainer = null,
 	$nav = null,
@@ -32,7 +33,10 @@ function init() {
 	// 3D
 	if (hasWebGL) {
 		initBoard3D();
-		initInteractiveDropCap3D();
+
+		if (!hasTouchSupport) {
+			initInteractiveDropCap3D();
+		}
 	}
 
 	// 2D
@@ -211,7 +215,7 @@ function initInteractiveDropCap3D() {
 			camera.position.y = 0;
 			camera.position.z = 20;
 
-			spotlight.castShadow = false;
+			spotlight.castShadow = true;
 			spotlight.position.set(0, 0, 90);
 
 			renderer.setSize(canvasSize, canvasSize);
@@ -313,7 +317,7 @@ function updateDarkMode() {
 	updateLocalStorage(Settings.DARK_MODE, isDarkMode);
 }
 
-function getHasWebGL() {
+function getHasWebGlSupport() {
 	try {
 		var canvas = document.createElement('canvas');
 		return !!(window.WebGLRenderingContext && (
@@ -323,6 +327,18 @@ function getHasWebGL() {
 	} catch (e) {
 		return false;
 	}
+}
+
+function getHasTouchSupport() {
+	return (
+		!!(typeof window !== 'undefined' &&
+			('ontouchstart' in window ||
+				(window.DocumentTouch &&
+					typeof document !== 'undefined' &&
+					document instanceof window.DocumentTouch))) ||
+		!!(typeof navigator !== 'undefined' &&
+			(navigator.maxTouchPoints || navigator.msMaxTouchPoints))
+	);
 }
 
 // HANDLERS ------------------------------------------------------------------------------------
