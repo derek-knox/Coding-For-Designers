@@ -55,7 +55,7 @@ One bit is boring because it can only represent one of two states. The natural q
 
 2 bits = 4 states
 
-That makes sense. One bit represents two states. Two bits represents four states. No brainer. Let’s look at all the output states for kicks.
+That makes sense. One bit represents one of two possible states. Two bits represents one of four possible states. No brainer. Let’s look at all the output states for kicks.
 
 ![TODO - Table Replace](../assets/img/visual-todo-placeholder.jpg "TODO - Table Replace")
 
@@ -92,7 +92,7 @@ How many states could we represent with three bits?
   </tr>
 </table>
 
-Eight? I was expecting six. It makes sense though when we see the state values printed out. For every bit we add, we double the total output states as before. This is obvious when we write it out.
+Eight? I was expecting six. It makes sense though when we see the state values printed out. For every bit we add, we double the total possible number of states as before. This is obvious when we write it out.
 
 ![TODO - Table Replace](../assets/img/visual-todo-placeholder.jpg "TODO - Table Replace")
 
@@ -135,9 +135,9 @@ Eight? I was expecting six. It makes sense though when we see the state values p
   </tr>
 </table>
 
-You will notice that I stop at eight bits in the table above. We could keep going and the same doubling rule would apply. Why stop at eight then? Random I know. Ultimately, *people simply agreed that eight is a good stopping point*. They *agreed* that being able to represent 256 states was *good enough*. Again, no inherent magic.
+You will notice that I stop at eight bits in the table above. We could keep going and the same doubling rule would apply. Why stop at eight then? Random I know. Ultimately, *people simply agreed that eight is a good stopping point*. They *agreed* that being able to represent 256 states was *good enough* for a wide range of codes. Again, no inherent magic.
 
-We know coders like shortcuts. Is there a shorter way to say and type *eight bits*? Yes, welcome to the word *byte*. A *byte* is *eight bits*. Naturally, a byte also represents 256 states.
+We know coders like shortcuts. Is there a shorter way to say and type *eight bits*? Yes, welcome to the word *byte*. A *byte* is *eight bits*. Naturally, a byte also represents one of 256 states.
 
 Let’s use what we just learned to make an example code of our own. We will use a byte’s 256 states to represent the symbols of the English language. Twenty-six lowercase and twenty-six uppercase letters would use up fifty-two states. Ten numerals and all the punctuation marks, including a lot of obscure marks, could be represented in another fifty states. We could increase fifty to one-hundred and include even more obscure marks (poop emoji included). One hundred four unused states would *still remain* (256 - 26 - 26 - 100 = 104). Good enough, for English at least.
 
