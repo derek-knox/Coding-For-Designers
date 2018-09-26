@@ -1,6 +1,6 @@
 ## Black and White
 
-Get out your sketchbook and try to come up with your own code that *represents* a 2x2 black and white image. Seriously, try it. Feel free to use the visual output states below as a guide.
+Get out your sketchbook and try to come up with your own binary code that *represents* a 2x2 black and white image. Seriously, try it. Feel free to use the visual output states below as a guide.
 
 ![Grid of 2x2 example](../assets/img/visual-todo-placeholder.jpg "Grid of 2x2 examples")
 
