@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>http://www.codingfordesignersbook.com/home/</loc> <lastmod>2018-08-28</lastmod> </url>
-<url> <loc>http://www.codingfordesignersbook.com/JavaScript/Functions/</loc> <lastmod>2018-08-28</lastmod> </url>
-<url> <loc>http://www.codingfordesignersbook.com/JavaScript/Operators/</loc> <lastmod>2018-08-28</lastmod> </url>
-<url> <loc>http://www.codingfordesignersbook.com/preface/</loc> <lastmod>2018-08-28</lastmod> </url>
-<url> <loc>http://www.codingfordesignersbook.com/breaking-barriers/</loc> <lastmod>2018-08-28</lastmod> </url>
-<url> <loc>http://www.codingfordesignersbook.com/structure-style-and-behavior/</loc> <lastmod>2018-08-28</lastmod> </url>
-<url> <loc>http://www.codingfordesignersbook.com/programming-and-visual-design/</loc> <lastmod>2018-08-28</lastmod> </url>
-<url> <loc>http://www.codingfordesignersbook.com/interactive-code/</loc> <lastmod>2018-08-28</lastmod> </url>
-<url> <loc>http://www.codingfordesignersbook.com/80-20-javascript/</loc> <lastmod>2018-08-28</lastmod> </url>
-<url> <loc>http://www.codingfordesignersbook.com/deconstructing-designs/</loc> <lastmod>2018-08-28</lastmod> </url>
+<url> <loc>http://www.codingfordesignersbook.com/home/</loc> <lastmod>2018-10-03</lastmod> </url>
+<url> <loc>http://www.codingfordesignersbook.com/JavaScript/Functions/</loc> <lastmod>2018-10-03</lastmod> </url>
+<url> <loc>http://www.codingfordesignersbook.com/JavaScript/Operators/</loc> <lastmod>2018-10-03</lastmod> </url>
+<url> <loc>http://www.codingfordesignersbook.com/preface/</loc> <lastmod>2018-10-03</lastmod> </url>
+<url> <loc>http://www.codingfordesignersbook.com/breaking-barriers/</loc> <lastmod>2018-10-03</lastmod> </url>
+<url> <loc>http://www.codingfordesignersbook.com/structure-style-and-behavior/</loc> <lastmod>2018-10-03</lastmod> </url>
+<url> <loc>http://www.codingfordesignersbook.com/programming-and-visual-design/</loc> <lastmod>2018-10-03</lastmod> </url>
+<url> <loc>http://www.codingfordesignersbook.com/interactive-code/</loc> <lastmod>2018-10-03</lastmod> </url>
+<url> <loc>http://www.codingfordesignersbook.com/80-20-javascript/</loc> <lastmod>2018-10-03</lastmod> </url>
+<url> <loc>http://www.codingfordesignersbook.com/deconstructing-designs/</loc> <lastmod>2018-10-03</lastmod> </url>
 </urlset>

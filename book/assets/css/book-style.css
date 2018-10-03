@@ -244,14 +244,6 @@ footer {
 	color: #99cc33;
 }
 
-.github-star {
-	position: absolute;
-	top: 1px;
-	right: 234px;
-	padding: 10px;
-	z-index: 1;
-}
-
 .github-follow {
 	position: absolute;
     top: 1px;
@@ -721,10 +713,6 @@ body.dark-mode {
 	.wip {
 		top: 38px;
 		padding: 0 6px;
-	}
-	.github-star {
-		top: 33px;
-		right: 128px;
 	}
 	.github-follow {
 		top: 33px;
