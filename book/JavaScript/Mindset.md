@@ -32,7 +32,7 @@ When authoring, the goal is the same. If starting with no code you'll lack progr
 
 Grasping the function names and their nested structure (program shape) is vital. We will cover their three fundamental use cases in the *Functions* section that soon follows. Once a particular function is of enough interest, you enter zoom level 2.
 
-![Nested Functions Highlight Example](../assets/img/visual-todo-placeholder.jpg "Nested Functions Highlight Example")
+![Nested Functions Highlight Example](../assets/img/visual-todo-placeholder.jpg?v1.1 "Nested Functions Highlight Example")
 
 #### Zoom Level 2 - Statement Pattern
 
@@ -40,7 +40,7 @@ Zoom level 2 is all about prepping yourself to get answers in zoom level 3. Answ
 
 We will cover the specific statement patterns to look out for later in the *Statements* section.
 
-![Statement Pattern Highlight Example](../assets/img/visual-todo-placeholder.jpg "Statement Pattern Highlight Example")
+![Statement Pattern Highlight Example](../assets/img/visual-todo-placeholder.jpg?v1.1 "Statement Pattern Highlight Example")
 
 #### Zoom Level 3 - Value Resolution
 
@@ -48,7 +48,7 @@ At zoom level 3 we have determined the statement pattern for a given code statem
 
 The takeaway is that the three zoom levels help you navigate and understand code more quickly.
 
-![Value Resolution Highlight Example](../assets/img/visual-todo-placeholder.jpg "Value Resolution Highlight Example")
+![Value Resolution Highlight Example](../assets/img/visual-todo-placeholder.jpg?v1.1 "Value Resolution Highlight Example")
 
 ### 2. Functions are your Friend
 

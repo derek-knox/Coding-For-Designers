@@ -13,7 +13,7 @@ It is worth noting that if your application or game does not change often or lac
 
 An application or game that targets 60fps must render a new image every 16.6 milliseconds. Damn, that's fast.
 
-![1 second = 1000 milliseconds so 1000ms/60fps = 16.6ms per frame](../assets/img/visual-todo-placeholder.jpg "1 second = 1000 milliseconds so 1000ms/60fps = 16.6ms per frame")
+![1 second = 1000 milliseconds so 1000ms/60fps = 16.6ms per frame](../assets/img/visual-todo-placeholder.jpg?v1.1 "1 second = 1000 milliseconds so 1000ms/60fps = 16.6ms per frame")
 
 Milliseconds might be intimidating at first, but you'll get used to them quickly. In fact, you likely already have an intuitive understanding of milliseconds. Do you ever feel an  animation within an application or game is too slow or too fast? The milliseconds chosen as the animation time is the culprit.
 

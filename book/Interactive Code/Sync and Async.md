@@ -6,7 +6,7 @@ Sync work is referred to as *blocking* where async work is *non-blocking*. Using
 
 Answer time:
 
-![TODO - Replace](../assets/img/visual-todo-placeholder.jpg "TODO - Replace")
+![TODO - Replace](../assets/img/visual-todo-placeholder.jpg?v1.1 "TODO - Replace")
 
 <table>
   <tr>

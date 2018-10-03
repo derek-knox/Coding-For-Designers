@@ -27,7 +27,7 @@ Now is a good time to share an often deemphasized fact that programmers benefit 
 
 *Built-in* components are those that come with the language you are authoring in or the code's execution environment. The initial author(s) of the programming language provide components that are "built-in". Additionally, the environment often provides components built upon the language to provide even more functionality.
 
-![TODO - JS and Browser, C# and Unity Engine](../assets/img/visual-todo-placeholder.jpg "TODO - JS and Browser, C# and Unity Engine")
+![TODO - JS and Browser, C# and Unity Engine](../assets/img/visual-todo-placeholder.jpg?v1.1 "TODO - JS and Browser, C# and Unity Engine")
 
 As you may have guessed, a programming language never has all the functionality you need. This is where *third-party* components often come to the rescue. These are written by other programmers and they are often shared for us to use (for free or purchase). In fact, you can share the code you create for others to use too. We all help each other out. Finally, you write custom code by combining built-in and third-party components with the code you create on your own.
 

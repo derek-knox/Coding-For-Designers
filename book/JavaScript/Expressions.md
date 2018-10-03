@@ -278,7 +278,7 @@ The literal form of each is `{}` and `[]` respectively. An object literal uses *
 
 For reference, here is a visualization of the anatomy of each structure:
 
-![Object and Array Anatomy](../assets/img/visual-todo-placeholder.jpg "Object and Array Anatomy")
+![Object and Array Anatomy](../assets/img/visual-todo-placeholder.jpg?v1.1 "Object and Array Anatomy")
 
 Let's explore some examples of code to really drive home `Object`s and `Array`s. First, here is an example of a few custom `Object`s in literal form. They are each assigned to a keyword—using `var`—for easier understanding and later reuse:
 

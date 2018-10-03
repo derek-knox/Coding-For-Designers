@@ -2,7 +2,7 @@
 
 Computers take electricity as input. People convert meaning as output. Specifically, people have *agreed* that the presence of electricity is 1 and the absence is 0. Go take a look at the power buttons of various devices around you. I will wait. You will see that most, if not all, have a line symbol (1) and a circle symbol (0). Binary switch. On and Off. Cool.
 
-![I/O examples](../assets/img/visual-todo-placeholder.jpg "I/O examples")
+![I/O examples](../assets/img/visual-todo-placeholder.jpg?v1.1 "I/O examples")
 
 How do we actually *control* electricity though? We can’t reliably use binary code to convert meaning in a computer if we cannot control electricity now can we. Welcome to the *electric circuit*. It has one job. Control the *flow of electricity*. How convenient. Presence and absence. On and off. One and zero. This is the exact point where we bridge the physical world (presence or absence of electricity in a circuit) and the virtual world (one or zero). Think *hard* to *soft*. *Hard*ware to *soft*ware.
 

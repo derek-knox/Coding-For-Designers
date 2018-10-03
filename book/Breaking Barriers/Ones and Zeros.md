@@ -8,7 +8,7 @@ A *one* is the *presence of electricity*. A *zero* is the *absence of electricit
 
 In fact, you have just learned the most basic code of computers. That was quick. One is presence and zero is absence. One is on and zero is off. This particular code is called *binary*. Now when you hear coders talk about binary, you know what they are referring to. Ones and zeros. That is it. Those ones and zeros are not that magical now huh?
 
-![TODO - Table Replace](../assets/img/visual-todo-placeholder.jpg "TODO - Table Replace")
+![TODO - Table Replace](../assets/img/visual-todo-placeholder.jpg?v1.1 "TODO - Table Replace")
 
 <table>
   <tr>

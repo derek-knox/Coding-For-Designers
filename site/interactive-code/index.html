@@ -22,7 +22,7 @@
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
     <link rel="icon" href="../assets/img/favicon.png" type="image/x-icon">
     <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.1.38">
+    <link rel="stylesheet" type="text/css" href="../assets/css/book-style.css?1.1.40">
     <link rel="stylesheet" href="../assets/css/prism.css">
   </head>
   <body>
@@ -220,7 +220,7 @@
 <p>After we have authored the code, we need to &quot;run&quot; or &quot;execute&quot; it. Executing it helps us confirm that it actually does what we want in real-time. Before we can do this however, a step needs to be taken that transforms our static authored code into code that can be executed. Welcome to <em>compile time</em>.</p>
 <p>Compile time is how we get from our authored <em>static</em> code to <em>dynamic</em> code that manifests as an interactive application or game. We won&apos;t go into the details of this step as it is complex. All you need to know is that this step exists so <em>we</em> can use words <em>we</em> understand instead of coding in binary, the only thing computers fundamentally understand. A prime example is how we use English words (and English abbreviations) within the programming language JavaScript.</p>
 <p>In essence, smart and nerdy authors write <em>compiler programs</em> that compile and convert a high-level programming language like JavaScript (easier for us humans to use) to lower-level languages (easier for super-nerdy humans to use) to binary (easier for super-super-nerdy humans and computers to use).</p>
-</div><a href="#author-&gt;-compile-&gt;-execute" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="author-&gt;-compile-&gt;-execute" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg" alt="Author &gt; Compile &gt; Run" title="Author &gt; Compile &gt; Execute"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>Author &gt; Compile &gt; Execute</figcaption></figure></div></a><div class="content-text">
+</div><a href="#author-&gt;-compile-&gt;-execute" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="author-&gt;-compile-&gt;-execute" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg?v1.1" alt="Author &gt; Compile &gt; Run" title="Author &gt; Compile &gt; Execute"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>Author &gt; Compile &gt; Execute</figcaption></figure></div></a><div class="content-text">
 <p>The output of this compilation process results in code that the computer <em>executes</em> in real-time. This process often manifests as an interactive user interface in an application or an interactive environment in a game.</p>
 <p>With Unity, the process is:</p>
 <ol>
@@ -251,7 +251,7 @@
 <p>As you likely guessed, a high frame rate results in the illusion of smooth motion. A slow frame rate results in an illusion of less smooth motion. The human eye typically needs 24fps or more for a smooth perception of motion to be recognized. Within an interactive medium like applications or games, 60fps is a common target.</p>
 <p>It is worth noting that if your application or game does not change often or lacks animation, you will likely be able to get away with 10fps, 5fps, or lower. The more motion and animation you have however, the more likely you&apos;ll want to target 60fps. Generally, the richer and more fluid the experience, the greater the target frame rate.</p>
 <p>An application or game that targets 60fps must render a new image every 16.6 milliseconds. Damn, that&apos;s fast.</p>
-</div><a href="#1-second-=-1000-milliseconds-so-1000ms/60fps-=-16.6ms-per-frame" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="1-second-=-1000-milliseconds-so-1000ms/60fps-=-16.6ms-per-frame" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg" alt="1 second = 1000 milliseconds so 1000ms/60fps = 16.6ms per frame" title="1 second = 1000 milliseconds so 1000ms/60fps = 16.6ms per frame"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>1 second = 1000 milliseconds so 1000ms/60fps = 16.6ms per frame</figcaption></figure></div></a><div class="content-text">
+</div><a href="#1-second-=-1000-milliseconds-so-1000ms/60fps-=-16.6ms-per-frame" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="1-second-=-1000-milliseconds-so-1000ms/60fps-=-16.6ms-per-frame" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg?v1.1" alt="1 second = 1000 milliseconds so 1000ms/60fps = 16.6ms per frame" title="1 second = 1000 milliseconds so 1000ms/60fps = 16.6ms per frame"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>1 second = 1000 milliseconds so 1000ms/60fps = 16.6ms per frame</figcaption></figure></div></a><div class="content-text">
 <p>Milliseconds might be intimidating at first, but you&apos;ll get used to them quickly. In fact, you likely already have an intuitive understanding of milliseconds. Do you ever feel an  animation within an application or game is too slow or too fast? The milliseconds chosen as the animation time is the culprit.</p>
 <p>You usually don&apos;t have to worry about the 16.6ms window however. I present it here simply for you to keep it in the back of your mind.</p>
 <p>In the future, if your application&apos;s animation and motion seems to have hiccups or it looks janky, then you likely have a problem or two. Typically this means your code, or a third-party&apos;s code, is: </p>
@@ -304,7 +304,7 @@
 <li><em>event loop</em> - gives the engine queued packages of special work</li>
 </ol>
 <p>Here is a 3D representation of the relationship between the runtime and engine parts:</p>
-</div><a href="#the-event-loop-machine" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="the-event-loop-machine" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg" alt="The Event Loop Machine" title="The Event Loop Machine"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>The Event Loop Machine</figcaption></figure></div></a><div class="content-text">
+</div><a href="#the-event-loop-machine" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="the-event-loop-machine" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg?v1.1" alt="The Event Loop Machine" title="The Event Loop Machine"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>The Event Loop Machine</figcaption></figure></div></a><div class="content-text">
 <p>During compile time, just before execution time, the engine quickly does three things with our authored code:</p>
 <ol>
 <li>reads</li>
@@ -328,7 +328,7 @@
 <p>Though we didn&apos;t explicitly state it, the nature of how the event loop works gives rise to the notion of <em>sync</em> and <em>async</em> work. Synchronous and asynchronous are the full terms, but we will use the shortcuts sync and async instead.</p>
 <p>Sync work is referred to as <em>blocking</em> where async work is <em>non-blocking</em>. Using your new knowledge of the event loop, how would you categorize the engine&apos;s stack work? How about the runtime APIs work? I&apos;ll give you a clue, they are different. Take a moment before continuing.</p>
 <p>Answer time:</p>
-</div><a href="#todo---replace" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="todo---replace" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg" alt="TODO - Replace" title="TODO - Replace"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>TODO - Replace</figcaption></figure></div></a><div class="content-text">
+</div><a href="#todo---replace" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="todo---replace" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg?v1.1" alt="TODO - Replace" title="TODO - Replace"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>TODO - Replace</figcaption></figure></div></a><div class="content-text">
 <table>
   <tr>
     <td>sync</td>
@@ -424,7 +424,7 @@
 <p>Clients and servers are computers that communicate over a network. The internet is one such network that facilitates this communication. Some of these computers are clients and some are servers. Sometimes a computer is both a client and a server. The distinction is simple. A client asks for data and the server provides it. The network between them is the communication channel.</p>
 <p>The details of how the internet facilitates this communication is elegant and impressive, but not a focus of this book. I highly recommend <em>Introduction to Networking</em> by Charles Severance if you want to dig deeper, but it is not required reading to move forward. Just know that the internet enables a client computer and a server computer to talk.</p>
 <p>Let&apos;s look at two example programs that utilize the internet to help solidify your understanding. One program will be a web browser and the other an internet-connected mobile game. Let&apos;s just say that each example is running on a smartphone. Both the browser and the game are on the client, the smartphone. Each program leverages distinct APIs to request information from distinct and remote computers, the servers. Pretty simple relationship really.</p>
-</div><a href="#client-and-server" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="client-and-server" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg" alt="Client and Server" title="Client and Server"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>Client and Server</figcaption></figure></div></a><div class="content-text">
+</div><a href="#client-and-server" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="client-and-server" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg?v1.1" alt="Client and Server" title="Client and Server"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>Client and Server</figcaption></figure></div></a><div class="content-text">
 <p>You already know that a web browser may be used to access a particular website or web app. While the site or web app is running, its code can make <em>additional requests</em> to a server in an effort to get additional data. For example, when a sport statistics app is starting up, or another input trigger occurs, the app could use an API to get the most up-to-date scores and stats. An updated version of the app is not required. Instead, an API interaction provides updated data. This is super useful.</p>
 <p>An internet-connected game works exactly the same way. When it starts up, or another input trigger occurs, it could make an API request to get current world-wide player rankings for the game. Additionally, if the designers and code authors designed the game in such a way, they could make different API requests for new worlds, levels, characters, etc. No update required. Pretty damn cool.</p>
 <p>A server, if you didn&apos;t guess already, is also responsible for providing a client web browser the <em>initial</em> HTML, CSS, and JavaScript for a website or web app. If too many people try to access the same data at the same time however, the server can crash. It is worth noting that each client is actually getting a copy of the data to reconstruct in its browser. Typically a crash occurs because the server software can&apos;t properly provide the various clients the copies fast enough. I mention this simply because many people don&apos;t grasp the fact that the client reconstructs what the server provides.</p>
@@ -498,7 +498,7 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
 </code></pre></div><div class="content-text">
 <p>The first thing you will notice about six of the seven tags is that they are abbreviations, they are shortcuts. This admitedly sucks for beginners, but it is great for when you know the small subset by heart. You will learn it quickly, but it still is lame from a beginner perspective. Here&apos;s a breakdown to help:</p>
-</div><a href="#html-tags-subset-map" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="html-tags-subset-map" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg" alt="HTML Tags Subset Map" title="HTML Tags Subset Map"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>HTML Tags Subset Map</figcaption></figure></div></a><div class="content-text">
+</div><a href="#html-tags-subset-map" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="html-tags-subset-map" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg?v1.1" alt="HTML Tags Subset Map" title="HTML Tags Subset Map"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>HTML Tags Subset Map</figcaption></figure></div></a><div class="content-text">
 <table>
   <tr>
     <td><code>div</code></td>
@@ -838,7 +838,7 @@ imageToToggle<span class="token punctuation">.</span>style<span class="token pun
     <div id='reveal-overlay'></div>
 
     <script src="../assets/js/three.min.js"></script>
-    <script src="../assets/js/book.js?1.1.38"></script>
+    <script src="../assets/js/book.js?1.1.40"></script>
     <script src="../assets/js/prism.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
