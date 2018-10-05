@@ -82,7 +82,7 @@ Spacing, tabs, and new lines do typically exist between elements however. This i
 
 The first thing you will notice about six of the seven tags is that they are abbreviations, they are shortcuts. This admitedly sucks for beginners, but it is great for when you know the small subset by heart. You will learn it quickly, but it still is lame from a beginner perspective. Here's a breakdown to help:
 
-![HTML Tags Subset Map](../assets/img/visual-todo-placeholder.jpg?v1.1 "HTML Tags Subset Map")
+![HTML Tags Subset Map](../assets/img/visual-todo-placeholder.jpg?v1.11 "HTML Tags Subset Map")
 
 <table>
   <tr>

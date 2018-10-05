@@ -2,7 +2,7 @@
 
 Code is a system for converting meaning between forms. One form is considered *encoded* and the other *decoded*. To *encode*, is to convert *into* coded form. To *decode* is to convert *from* coded form. A few forms have been encoded and decoded already.
 
-![TODO - Table Replace](../assets/img/visual-todo-placeholder.jpg?v1.1 "TODO - Table Replace")
+![TODO - Table Replace](../assets/img/visual-todo-placeholder.jpg?v1.11 "TODO - Table Replace")
 
 <table>
   <tr>
@@ -46,7 +46,7 @@ A decoded form can be another code’s encoded form. The opposite is also possib
 
 Imagine a code where a bit’s two states encoded for two RGB colors. The bit’s 1 would represent white. The bit’s 0 would represent black.
 
-![TODO - Table Replace](../assets/img/visual-todo-placeholder.jpg?v1.1 "TODO - Table Replace")
+![TODO - Table Replace](../assets/img/visual-todo-placeholder.jpg?v1.11 "TODO - Table Replace")
 
 <table>
   <tr>

@@ -32,7 +32,7 @@ When authoring, the goal is the same. If starting with no code you'll lack progr
 
 Grasping the function names and their nested structure (program shape) is vital. We will cover their three fundamental use cases in the *Functions* section that soon follows. Once a particular function is of enough interest, you enter zoom level 2.
 
-![Nested Functions Highlight Example](../assets/img/visual-todo-placeholder.jpg?v1.1 "Nested Functions Highlight Example")
+![Nested Functions Highlight Example](../assets/img/visual-todo-placeholder.jpg?v1.11 "Nested Functions Highlight Example")
 
 #### Zoom Level 2 - Statement Pattern
 
@@ -40,7 +40,7 @@ Zoom level 2 is all about prepping yourself to get answers in zoom level 3. Answ
 
 We will cover the specific statement patterns to look out for later in the *Statements* section.
 
-![Statement Pattern Highlight Example](../assets/img/visual-todo-placeholder.jpg?v1.1 "Statement Pattern Highlight Example")
+![Statement Pattern Highlight Example](../assets/img/visual-todo-placeholder.jpg?v1.11 "Statement Pattern Highlight Example")
 
 #### Zoom Level 3 - Value Resolution
 
@@ -48,17 +48,17 @@ At zoom level 3 we have determined the statement pattern for a given code statem
 
 The takeaway is that the three zoom levels help you navigate and understand code more quickly.
 
-![Value Resolution Highlight Example](../assets/img/visual-todo-placeholder.jpg?v1.1 "Value Resolution Highlight Example")
+![Value Resolution Highlight Example](../assets/img/visual-todo-placeholder.jpg?v1.11 "Value Resolution Highlight Example")
 
 ### 2. Functions are your Friend
 
 We will continue to reinforce the importance of functions throughout this book. They enable interactive code and the respective manifestation of the amazing games, tools, and software we love, to exist. It is in your best interest to make functions your friend.
 
-Each function has one of three fundamental use cases in JavaScript. Remember that a function still encapsulates its own scope regardless of use case. Each use case provides a means to a desired end. These use cases are:
+Each function has one of three fundamental use cases in JavaScript. Remember that a function still encapsulates its own scope regardless of use case. Each use case provides a means to a desired end. These use cases are function as:
 
-- Function as organizational unit
-- Function as instantiatable unit
-- Function as reusable work unit
+- Organizational unit
+- Instantiatable unit
+- Reusable work unit
 
 The takeaway is that functions are paramount to a program. Without them, a program is of no use. We'll cover these three use cases in great detail in the *Functions* section below.
 

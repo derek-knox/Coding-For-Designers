@@ -6,9 +6,14 @@ If you self-identify as an illustrator or graphic, visual, UI, UX, motion, or ga
 
 Many claim that designers *need* to learn to code. I disagree. Yes, learning to read and author code is a powerful ability, but so too is visually manifesting ideas and information. I want only to empower you further.
 
-In completing this book, you will gain knowledge and confidence for engaging in–not shying from–coding conversations. You will form a mental model to improve your ability to read, understand, and author code. Should you choose to never read or author it again, you'll have at least gained the power to see and design digital creations through a more capable lens.
+In reading this book, you will:
+- form a mental model for learning coding concepts faster and more deeply
+- improve your ability to read, understand, and author code
+- be a better asset to yourself, your team, and potential employers
+- increase confidence for engaging in–not shying from–coding conversations
+- gain the power to see and design digital creations through a more capable lens
 
-This book is not for you if you want to jump straight into code though. We cover many ideas, topics, and concepts before diving into actual programming code. This intentionality helps frame why certain programming concepts exist as they do. It also encourages a beneficial mindset that may be less familiar.
+This book is not for you if you want to jump straight into code though. We cover many ideas, topics, and concepts before diving into actual programming code. This intentionality helps frame why certain programming concepts exist as they do. It also encourages a beneficial mindset with accompanying tactics for reading, navigating, and understanding code.
 
 ## The Goals
 

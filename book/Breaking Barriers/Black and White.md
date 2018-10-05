@@ -2,11 +2,11 @@
 
 Get out your sketchbook and try to come up with your own binary code that *represents* a 2x2 black and white image. Seriously, try it. Feel free to use the visual output states below as a guide.
 
-![Grid of 2x2 example](../assets/img/visual-todo-placeholder.jpg?v1.1 "Grid of 2x2 examples")
+![Grid of 2x2 example](../assets/img/visual-todo-placeholder.jpg?v1.11 "Grid of 2x2 examples")
 
 Your solution may differ from mine and that is fine. The goal here is simply to demonstrate how we can *visualize a code*. This is a primitive example with admittedly uninteresting output. Regardless, it provides one example of how to visualize a code.
 
-![Grid of 2x2 examples with 4-bit code](../assets/img/visual-todo-placeholder.jpg?v1.1 "Grid of 2x2 examples with 4-bit code")
+![Grid of 2x2 examples with 4-bit code](../assets/img/visual-todo-placeholder.jpg?v1.11 "Grid of 2x2 examples with 4-bit code")
 
 The visual above illustrates a core aspect of computer graphics. If you author digital content you will have made the connection. Welcome to the *pixel*.
 

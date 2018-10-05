@@ -18,7 +18,7 @@ I want to leverage your visual design knowledge, experience, and intuition. We w
 
 With the elements as primitives and the principles as an organization of those primitives, the constructs are the compound results. Unfortunately there is not a one-to-one mapping from the visual realm to a programming equivalent. We will be able to come close enough however and create a solid bridge for comparison in the process.
 
-![TODO - Table Replace](../assets/img/visual-todo-placeholder.jpg?v1.1 "TODO - Table Replace")
+![TODO - Table Replace](../assets/img/visual-todo-placeholder.jpg?v1.11 "TODO - Table Replace")
 
 Visual Design
 - Elements = Primitives

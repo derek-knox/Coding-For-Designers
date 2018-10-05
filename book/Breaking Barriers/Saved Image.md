@@ -14,7 +14,7 @@ A single color will fit in our pixel. The color will be a random one of the over
 
 I simply flipped a coin eight times. Heads was 1 and tails was 0, my own little code. This resulted in a byte of encoded data. I repeated this process two more times. You know where I am going with this. Decoded, the three bytes represent one color. RGB or HEX will do.
 
-![TODO - Table Replace](../assets/img/visual-todo-placeholder.jpg?v1.1 "TODO - Table Replace")
+![TODO - Table Replace](../assets/img/visual-todo-placeholder.jpg?v1.11 "TODO - Table Replace")
 
 <table>
   <tr>

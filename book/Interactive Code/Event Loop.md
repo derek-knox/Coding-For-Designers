@@ -46,7 +46,7 @@ So what do each of these runtime parts do anyway? Here is a succint breakdown wh
 
 Here is a 3D representation of the relationship between the runtime and engine parts:
 
-![The Event Loop Machine](../assets/img/visual-todo-placeholder.jpg?v1.1 "The Event Loop Machine")
+![The Event Loop Machine](../assets/img/visual-todo-placeholder.jpg?v1.11 "The Event Loop Machine")
 
 During compile time, just before execution time, the engine quickly does three things with our authored code:
 1. reads

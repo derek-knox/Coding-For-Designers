@@ -8,7 +8,7 @@ Behaviors may be different depending on the context, but their fundamental purpo
 
 Let’s explore some specific applications of behavior by building off the previous structure and style examples.
 
-![TODO - (structural, styles, logical)](../assets/img/visual-todo-placeholder.jpg?v1.1 "TODO - (structural, styles, logical)")
+![TODO - (structural, styles, logical)](../assets/img/visual-todo-placeholder.jpg?v1.11 "TODO - (structural, styles, logical)")
 
 We know behavior may be applied to structure (a specific building block or group of building blocks). Additionally, we know behavior may be applied to style (adornments). The sheer presence of behavior however, due to its dynamic nature, results in an additional target we have yet to talk about. Time itself. Time in the form of delays and schedules are most common.
 
@@ -22,15 +22,15 @@ As you can imagine, the output possibilities are endless as a result of any of t
 
 New building blocks or groups of building blocks may be added to the structure dynamically. They can also be removed dynamically.
 
-![TODO - Structural add/remove](../assets/img/visual-todo-placeholder.jpg?v1.1 "TODO - Structural add/remove")
+![TODO - Structural add/remove](../assets/img/visual-todo-placeholder.jpg?v1.11 "TODO - Structural add/remove")
 
 Adornments may be added or removed dynamically too.
 
-![TODO - Style add/remove](../assets/img/visual-todo-placeholder.jpg?v1.1 "TODO - Style add/remove")
+![TODO - Style add/remove](../assets/img/visual-todo-placeholder.jpg?v1.11 "TODO - Style add/remove")
 
 Behavioral changes to these structures or adornments are just as easily modifiable based on any of these three triggers.
 
-![TODO - Behavior change](../assets/img/visual-todo-placeholder.jpg?v1.1 "TODO - Behavior change")
+![TODO - Behavior change](../assets/img/visual-todo-placeholder.jpg?v1.11 "TODO - Behavior change")
 
 The takeaway is that there are three input trigger types that provide an opportunity for output behavior. The specific inputs and outputs are up to you, the creator.
 
