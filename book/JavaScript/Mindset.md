@@ -54,8 +54,9 @@ The takeaway is that the three zoom levels help you navigate and understand code
 
 We will continue to reinforce the importance of functions throughout this book. They enable interactive code and the respective manifestation of the amazing games, tools, and software we love, to exist. It is in your best interest to make functions your friend.
 
-Each function has one of three fundamental use cases in JavaScript. Remember that a function still encapsulates its own scope regardless of use case. Each use case provides a means to a desired end. These use cases are function as:
+Each function has one of three fundamental use cases in JavaScript. Remember that a function still encapsulates its own scope regardless of use case. Each use case provides a means to a desired end. These use cases are:
 
+Function as:
 - Organizational unit
 - Instantiatable unit
 - Reusable work unit
