@@ -46,7 +46,7 @@ We will cover the specific statement patterns to look out for later in the *Stat
 
 At zoom level 3 we have determined the statement pattern for a given code statement. Once determined, this informs the steps we take in resolving the values of it. Again, functions can't do work unless values exist. Since a program is a dynamic and living thing, these values can be different at different times. We take the three zoom level approach to help us determine the exact values at a given time.
 
-The takeaway is that the three zoom levels help you navigate and understand code more quickly.
+The takeaway is that the three zoom levels help you navigate and understand code more quickly using a repeatable approach.
 
 ![Value Resolution Highlight Example](../assets/img/visual-todo-placeholder.jpg?v1.11 "Value Resolution Highlight Example")
 
