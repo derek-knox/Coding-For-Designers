@@ -120,7 +120,7 @@ a();
 
 The functionality is the same even though there are fewer characters. As a result there is less code–a smaller payload–to send from a client to a server and vice versa. Remember however that we are coding for humans first. Naming keywords meaningfully is the primary goal. We can decrease the payload size later through the aforementioned minification process among other steps. The takeaway is that the engine only cares that custom keywords are unique to a scope. The name itself is useful for us coders.
 
-You will notice that the `document`, `body`, `style`, and `backgroundColor` environment identifiers are left untouched. This is because they are not custom keywords, the runtime expects them to be associated with certain values. As such, they would not be shortened through minification.
+You will notice that the `document`, `body`, `style`, and `backgroundColor` environment identifiers are left untouched. This is because they are not custom keywords. The runtime expects them to be associated with certain values. As such, they would not be shortened through minification for example.
 
 It is worth noting that when naming custom keywords there are a set of rules. I will list them here for general familiarity, but there is a subset to instead focus on. Custom keywords can use the following characters:
 
