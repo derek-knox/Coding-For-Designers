@@ -94,7 +94,7 @@ In the snippet above, there is no example of a non-reserved JavaScript keyword. 
 1. `Number` - helper for working with numbers
 1. `String` - helper for working with strings
 
-The `Date` helps us work with dates and time. Errors you understand generally, but we'll explore them in the context of code in the *Errors* section at the end of this chapter. `JSON`, pronounced "Jason", is likely foreign. `JSON` is useful for reading and writing in a data format of the same name. The format is really useful in communicating between clients and servers. `Math` provides a bunch of functions that help coders do complex work with numbers. It also allows us to do simple work with numbers like rounding. `Number` helps us do more generic work with numbers. Lastly, `String` helps us work with characters and natural language words that we don't want the engine to interpret as keywords, operators, or statements.
+The `Date` helps us work with dates and time. Errors you understand generally, but we'll explore them in the context of code in the *Errors* section at the end of this chapter. `JSON`, pronounced "Jason", is likely foreign. `JSON` is useful for reading and writing in a data format useful in communicating between clients and servers. `Math` provides a bunch of functions that help coders do complex work with numbers. It also allows us to do simple work with numbers like rounding. `Number` helps us do more generic work with numbers. Lastly, `String` helps us work with characters and natural language words that we don't want the engine to interpret as keywords, operators, or statements.
 
 ### Non-Reserved Keywords - Environment
 
