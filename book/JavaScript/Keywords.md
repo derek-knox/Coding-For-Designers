@@ -122,7 +122,7 @@ The functionality is the same even though there are fewer characters. As a resul
 
 You will notice that the `document`, `body`, `style`, and `backgroundColor` environment identifiers are left untouched. This is because they are not custom keywords. The runtime expects them to be associated with certain values. As such, they would not be shortened through minification for example.
 
-It is worth noting that when naming custom keywords there are a set of rules. I will list them here for general familiarity, but there is a subset to instead focus on. Custom keywords can use the following characters:
+It is worth noting that when naming custom keywords there are a set of rules. I will list them here for general familiarity, but there is a rule subset to instead focus on. Custom keywords can technically use the following characters:
 
 - `a-z` (lowercase characters)
 - `A-Z` (uppercase characters)
