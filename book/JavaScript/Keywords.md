@@ -104,7 +104,7 @@ The `document` has a parent too. This parent is special and is known as the *hos
 
 Now is a great time to reinforce that professional coders don't remember all the runtime APIs (there are 700+). They reference resources *just like beginners*. We will do the same and simply focus on knowing about the special `window` object. Over time we'll memorize the APIs that we use most often.
 
-I do however recommend exploring the list of all the web APIs sometime. The effort enables you to grasp the big picture of what is possible in the browser. You will be impressed and you'll likely find many that that give you cool ideas.
+I do however recommend exploring the list of all the web APIs sometime. The effort enables you to grasp the big picture of what is possible by default in the browser. You will be impressed and you'll undoubtedly find many that give you cool ideas.
 
 ### Non-Reserved Keywords - Custom
 
