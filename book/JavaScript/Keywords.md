@@ -13,7 +13,7 @@ Non-reserved keywords are also known as *identifiers*. An identifier is simply a
 2. Environment identifiers
 3. Custom identifiers
 
-A JavaScript identifier is a keyword with a predetermined value. This value is useful to your code as it can help facilitate *language*-specific work. An environment identifier is a keyword with a predetermined value also. Its value is useful to your code as it can help facilitate *environment*-specific work. Custom identifiers have the special JavaScript value `undefined` until the identifier is reassigned a value.
+A JavaScript identifier is a keyword with a predetermined-by-JavaScript value. This value is useful to your code as it can help facilitate *language*-specific work. An environment identifier is a keyword with a predetermined value also. Its value is useful to your code as it can help facilitate *environment*-specific work. Custom identifiers have the special JavaScript value `undefined` until the identifier is reassigned a value.
 
 So JavaScript identifiers and environment identifiers each have predetermined non-`undefined` values. These values are set by the language and environment respectively. Custom identifiers have the predetermined value `undefined` until we reassign them a value (this is an example of the *assignment statement* pattern we'll learn about later).
 
