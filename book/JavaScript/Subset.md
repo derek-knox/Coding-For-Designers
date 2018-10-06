@@ -16,7 +16,7 @@ These four groupings make a program useful by enabling it to do work during exec
 3. Special characters for changing values
 4. Useful patterns of special characters and keywords
 
-Keywords are named shortcuts to values. They enable us to use a natural-language-like *key* for identifying something as meaningful.
+Keywords are named shortcuts to values. They enable us to use a natural-language-like *key* for identifying something as meaningful to us.
 
 Expressions are values. They unsurprisingly can be represented with keywords, but also with literals (like the number `360`) or to-be-*expressed* evaluations (which we'll cover later). Without values, we would not be able to translate meaningful ideas to a computer.
 
