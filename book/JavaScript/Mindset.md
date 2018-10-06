@@ -73,7 +73,7 @@ The takeaway is that prototyping is how we sketch and experiment when coding. Ta
 
 ### 4. Don't Repeat Yourself
 
-Programming enables us to break the restrictions of the physical world. Every single day we do work to get results. Often times we've done this work thousands of times before. A few things I do everyday that fit this description include eating, drinking water, and reading. In each example I use energy to accomplish work in an effort to get a result. The work takes some amount of time before I get the result. The result is not instantaneous. Regardless of how good or fast I get at the tasks that comprise the work, the result will never be instantaneous.
+Programming enables us to break the restrictions of the physical world. Every single day we do work to get results. Often times we've done this work thousands of times before. A few things I do everyday that fit this description include eating, drinking water, and reading. In each example I use energy to accomplish work in an effort to get a result. The work takes some amount of time before I get the result. The result is not instantaneous though I wish it was. Regardless of how good or fast I get at the tasks that comprise the work, the result will never be instantaneous.
 
 We lack this restriction in the virtual world. We can get results instantly. In software we can encode the work. Once encoded we can simply execute a particular function to do work and to get a desired result. The same effort that was initially required no longer exists. It is encoded. Electricity is so fast the result of the work seems instantaneous.
 
