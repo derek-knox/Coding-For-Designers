@@ -67,7 +67,7 @@ The takeaway is that functions are paramount to a program. Without them, a progr
 
 Code is virtual not physical. We must use this reality to our advantage. Authoring code and throwing it away is cheap and easy. We can undo and redo in an instant. This quality enables us to iterate quickly toward a solution or desired result with minimal consequence.
 
-Cheap and easy is not to be confused with being invaluable however. Prototyping is extremely valuable as you can explore a solution space quickly to learn. Learning through quick iteration eventually manifests as a clear path to follow. Following this path either leads to a solution or surfaces a new idea to prototype against.
+Cheap and easy is not to be confused with being less valuable however. Prototyping is extremely valuable as you can explore a solution space quickly to learn. Learning through quick iteration eventually manifests as a clear path to follow. Following this path either leads to a solution or surfaces a new idea to prototype against.
 
 The takeaway is that prototyping is how we sketch and experiment when coding. Taking shortcuts and ignoring best practices is OK here. Only after we have a working prototype are we concerned with not taking shortcuts and following best practices. Prototypes require minimal effort but result in great value. Completing a prototype ensures we have something that works. Right and better are for later.
 
