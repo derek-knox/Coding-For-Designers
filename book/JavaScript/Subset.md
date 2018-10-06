@@ -2,7 +2,7 @@
 
 Just like natural languages have many words, rules, and exceptions, so too do programming languages. As we all know from experience, we only use a small fraction of English to communicate. JavaScript—and programming languages in general—are no different. 
 
-The question is then, why do extra words in a language even exist? Extra words are useful to those more experienced with a given language. They enable concise communication between those in-the-know. They are intended as a shortcut to shared meaning and understanding. The tradeoff of using these words is a risk of increased misunderstanding for those unfamiliar with them. The subset approach mitigates this risk.
+The question is then, why do extra words in a language even exist? Extra words are useful to those more experienced with a given language. They enable concise communication between those in-the-know. They are intended as a shortcut to shared meaning and understanding. The tradeoff of using these words is a risk of increased misunderstanding for those unfamiliar with them. The subset approach helps mitigates this risk.
 
 The JavaScript subset—and the language itself—is organized in four groups:
 1. Keywords
