@@ -1,6 +1,6 @@
 ## Keywords
 
-So we now know keywords are named shortcuts to values. Each keyword is a *key* used to access a value with a natural-language-like word. Keywords are not always full words as you would expect in English. They are sometimes abbreviations (like `var` is for variable) or aggregations (like `makeBackgroundBlack` is for "make background black"). The former is a *reserved keyword* where the latter is a *non-reserved keyword*. These are the two keyword types in JavaScript:
+So we now know keywords are named shortcuts to values. Each keyword is a *key* for accessessing a value using a natural-language-like word. Keywords are not always full words as you would expect in English. They are sometimes abbreviations (like `var` is for variable) or aggregations (like `makeBackgroundBlack` is for "make background black"). The former is a *reserved keyword* where the latter is a *non-reserved keyword*. These are the two keyword types in JavaScript:
 
 1. Reserved keywords
 2. Non-reserved keywords
