@@ -40,7 +40,7 @@ Answer time:
 
 You may have thought `'#000000'` was a keyword, but it is a literal value. We'll cover the distinction between literal values and keywords in the next section.
 
-The takeaway is that any portion of code not in quotation marks resembling a natural-language-like word (abbreviations and aggregations included) is a keyword. Everything else is either a literal value, an operator, or a statement's special character(s).
+The takeaway is that any portion of code resembling a natural-language-like word (abbreviations and aggregations included) is a keyword if it's not reserved or in quotation marks. Everything else is either a literal value, an operator, or a statement's special character(s).
 
 ### Reserved Keywords
 
