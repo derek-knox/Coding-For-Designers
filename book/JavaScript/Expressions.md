@@ -28,7 +28,7 @@ We've talked a lot about values, but we have not explicitly explored the built-i
 2. Complex Values
     - Object (`{}` & `[]`)
 
-The examples within parenthesis above are all examples of the *literal form* of the respective value type. This form is most common and preferred. It is important to know that JavaScript has another way to create values however. This other way is called the *constructor form*. The constructor form for built-in types leverages the `new` operator keyword in addition to an environment keyword. This environment keyword denotes the value's specific Object type. Here is the same list using `new` and the respective type's environment keyword (which is just a named shortcut to a function):
+The examples within parenthesis above are all examples of the *literal form* of the respective value type. This form is most common and preferred. It is important to know that JavaScript has another way to create values however. This other way is called the *constructor form*. The constructor form for built-in types leverages the `new` operator keyword in addition to an environment keyword. This environment keyword denotes the value's specific Object type. Here is the same list using `new` and the respective type's environment keyword (which is just a named shortcut to a function value):
 
 1. Primitive Values
     - null (only literal form)
@@ -49,6 +49,12 @@ Since primitive values are so fundamental to JavaScript, let's explore each of t
 2. has a "Create Artboard" button (`<button id='create'>Create Artboard</button>`)
 3. has a "Delete Artboard" button (`<button id='delete'>Delete Artboard</button>`)
 4. has downloaded, compiled, and is executing our program (`<script src='assets/js/artboards.js'></script>`)
+
+It could look something like this:
+
+![Example Artboards App](../assets/img/visual-todo-placeholder.jpg?v1.11 "Example Artboards App")
+
+Here is this JavaScript code of our `artboards.js` file:
 
 ```javascript
 var createArtboardButton = document.getElementById('create');
@@ -189,7 +195,7 @@ The second snippet uses the evaluated `artboards.length` value to get the number
 
 The String type denotes `"one or more characters wrapped in double quotes"` or `'single quotes'`. There are eight examples of String values being used in the `artboard.js` code above.
 
-Strings are useful for defining names, event types, and messages among other things. Concrete examples of this are the use of `create` and `delete`, `click`, and the `alert` strings respectively. It is worth noting that double quoted and single quoted strings are valuable in different scenarios:
+Strings are useful for defining names, event types, and messages among other things. Concrete examples of this are the use of `'create'` and `'delete'`, `'click'`, and the `alert` strings respectively. It is worth noting that double quoted and single quoted strings are valuable in different scenarios:
 
 - `"The artboard's size is too small."`
 - `'"The artboard is too small," she said.'`
@@ -202,27 +208,29 @@ alert('No artboard to delete. None of the ' + new String(artboards.length) + ' a
 
 Since `artboards.length` is a number, we explicitly use the constructor form of String to convert the Number to a String. We additionally use the `+` (concatenation operator) twice to make one large string from three smaller strings. This latter fact will soon be explored more in the *Operators* section.
 
-The takeaway is that the String type prevents the engine from processing its characters as keywords or other value types. For example, 'null', 'undefined', 'true', 'false', and '360' are all String values because they are wrapped in quotes. If we removed the quotes they would instead be examples of the `null`, `undefined`, Boolean, Boolean, and Number types respectively.
+The takeaway is that the String type prevents the engine from processing its characters as keywords or other value types. For example, `'null'`, `'undefined'`, `'true'`, `'false'`, and `'360'` are all String values because they are wrapped in quotes. If we removed the quotes they would instead be examples of the `null`, `undefined`, Boolean, Boolean, and Number types respectively.
 
 ### Complex Values
 
-Any value that isn't one of the five primitive values is a complex value. The only complex value type in JavaScript is the `Object`. An object is considered either *basic* or *specific*. In either case its properties can contain primitive values *and* complex values. In contrast, a primitive can be *only* one of the five primitive types (`null`, `undefined`, `Boolean`, `Number`, or `String`).
+Any value that isn't one of the five primitive values is a complex value. The only complex value type in JavaScript is the `Object`. An object is considered either *basic* or *specific*. In either case, each of its properties (attached identifiers) can contain a primitive *or* complex value. In contrast, a primitive can be *only* one of the five primitive types (`null`, `undefined`, `Boolean`, `Number`, or `String`).
 
 #### Object
 
-`Object`s in JavaScript are what empower coders with a massive amount of creative freedom. Since we can create custom identifiers and assign them primitive and other complex values, we can represent virtually anything. We can model real-world concepts just as easily as fantasy concepts. We can mix and match to our desire. We can use existing specific objects like `Date`, `Error`, and `Math` or create our own like `Color`, `Pen`, and `Artboard`. This range of freedom is what enables the wide variety of interactive games, tools, and software we love, to exist. 
+`Object`s in JavaScript are what empower coders with a massive amount of creative freedom. Since we can create custom identifiers and assign each a primitive or complex value, we can represent virtually anything. We can model real-world concepts just as easily as fantasy concepts. We can mix and match to our desire. We can use existing specific objects like `Date`, `Error`, and `Math` or create our own like `Color`, `Pen`, and `Artboard`. This range of freedom is what enables the wide variety of interactive games, tools, and software we love, to exist. 
 
 Do you remember the first two of four ideas I aimed to instill in the *Bits and Bytes* section of the *Breaking Barriers* chapter? Here is a refresher:
 
 1. Computers, these complex machines, rely solely on extremely basic concepts
 2. There is no magic in coding, just simple ideas stacked atop each other
 
-These same two ideas that applied to bits manifest in `Object`s too. Instead of the binary nature of bits we're working with six value types contained in an `Object`. Admittedly this is a little more complex, but basic concepts and ideas stacked atop each other are still at the core.
+These same two ideas that applied to bits manifest in `Object`s too. Instead of the binary nature of bits we're working with six value types. Any value of a given type can then be attached to an `Object` using an identifier. Admittedly this is a little more complex, but basic concepts and ideas stacked atop each other are still at the core.
 
 The distinction between a basic and specific object is simple. A basic `Object` is only ever one that is created via:
 
 - object literal form (`{}`)
 - object constructor form with the `Object` keyword (`new Object()`)
+
+Both are examples of the *Object object*. Sounds funny I know. `Object` is the most basic type of object where all others are specific. 
 
 Specific objects are almost always created with the object constructor form where the `Object` keyword is replaced. Here are three examples of the construction of specific objects:
 
@@ -230,7 +238,7 @@ Specific objects are almost always created with the object constructor form wher
 1. `new Error()`
 1. `new Array()`
 
-Below are three more examples, but of *custom* specific objects. Take note that the `Color`, `Pen`, and `Artboard` keywords need a custom function value associated too. Otherwise, as you learned in the `undefined` section above, the engine will have no idea what they mean and instead default to `undefined`.
+Below are three more examples, but of *custom* specific objects. Take note that the `Color`, `Pen`, and `Artboard` keywords need a custom function value associated also. Their constructor functions would need to exist in third-party or custom components. Otherwise, as you learned in the `undefined` section above, the engine will have no idea what they mean and instead default to `undefined`.
 
 1. `new Color()`
 1. `new Pen()`
@@ -240,21 +248,22 @@ The core takeaway is you should use the object literal form for creating basic `
 
 #### Array
 
-As mentioned previously, the `Array` also has a literal form which is `[]`. It is a specific type of `Object`. It is so common that it gets its own literal form like `Object` does. The `Object` and `Array` data structures are so common and useful that they have literal forms (creation shortcuts essentially).
+As mentioned previously, the `Array` also has a literal form. It is `[]`. It is a specific type of `Object`. It is so common that it gets its own literal form like `Object` does. The `Object` and `Array` data structures are so common and useful that they have literal forms (creation shortcuts essentially).
 
 `Array`s are nowhere near as flexible as `Object`s however. They are simply a list container. An `Array`'s flexibility manifests as the ability to order any amount of any of the six value types. Here are example arrays containing each value type (excluding the `undefined` and `null` types):
 
+- `[ true, false, true ]`
 - `[ 1, 2, 3 ]`
-- `[ {}, {}, {} ]`
 - `[ 'Page 1', 'Page 2', 'Page 3' ]`
+- `[ {}, {}, {} ]`
 
-
+The takeaway is that `Object`s are useful for organizing and modeling a *tree* of real-world, fantasy, or a combination of values using meaningful identifiers. Sequence doesn't matter. `Array`s are useful for organizing a *list* of those same primitive or complex values. Sequence does matter.
 
 ### Copy vs. Reference
 
-Custom keywords—declared with the help of the reserved `var` and `function` keywords—are how we declare our own named shortcuts to values. These values are one of the six types above where `function` is a specific type of `Object`. Additionally, the aforementioned `Date`, `Error`, and `Math` are also specific types of `Object`s. Any value that isn't a primitive value is either a basic or specific `Object` value.
+Custom keywords—declared with the help of the reserved `var` and `function` keywords—are how we declare our own named shortcuts to values. These values are one of the six types mentioned above where `function` is a specific type of `Object` (the `Function` object). Additionally, the aforementioned `Date`, `Error`, and `Math` are also specific types of `Object`s. Any value that isn't a primitive value is either a basic or specific `Object` value.
 
-When a primitive value is assigned to a keyword, the keyword holds a *copy* of the value. A complex value assigned or associated to a keyword is instead a *reference* to the value. So primitive values are always copies and complex values are always references. This distinction is important because references, unlike copies, enable the sharing of:
+When a primitive value is assigned or associated to a keyword, the keyword holds a *copy* of the value. A complex value assigned or associated to a keyword is instead a *reference* to the value. So primitive values are always copies and complex values are always references. This distinction is important because references, unlike copies, enable the sharing of:
 
 - functionality
 - structured data
@@ -268,25 +277,25 @@ Data is simply any primitive or complex value. Structured data is always a compl
 
 Each allows the organization of data—primitive or complex values—using a particular structure. These structures are:
 
-- `Object` as Tree
-- `Array` as List
+- `Object` as tree
+- `Array` as list
 
 The literal form of each is `{}` and `[]` respectively. An object literal uses *braces* and an array literal uses *brackets*. Braces are curved and brackets are straight. These visual differences are clues reminding you which structure belongs to which literal form:
 
-- `Object`/curves/braces/`{}`
-- `Array`/straight/brackets/`[]`
+- `Object`/curves/non-linear/braces/`{}`
+- `Array`/straight/linear/brackets/`[]`
 
 For reference, here is a visualization of the anatomy of each structure:
 
 ![Object and Array Anatomy](../assets/img/visual-todo-placeholder.jpg?v1.11 "Object and Array Anatomy")
 
-Let's explore some examples of code to really drive home `Object`s and `Array`s. First, here is an example of a few custom `Object`s in literal form. They are each assigned to a keyword—using `var`—for easier understanding and later reuse:
+Let's explore some examples of code to really drive home `Object`s and `Array`s. First, here is an example of a few custom `Object`s in literal form. They are each assigned (using the `=` operator) to a keyword—using `var`—for easier understanding and later reuse. Take note that the `name`, `color`, and `thickness` custom identifier keywords of each `pen`, `highlighter`, and `paintbrush` object have their values associated with `:` instead of assigned with `=`. I wish `=` was still used for simplicity and consistency, but I didn't design JavaScript. For object literals, this is how their keywords get values.
 
 ```javascript
 var pen = {
     name: 'Pen',
     color: '#000000',
-    thickness: 1 
+    thickness: 1
 };
 var highlighter = {
     name: 'Highlighter',
@@ -296,11 +305,11 @@ var highlighter = {
 var paintbrush = {
     name: 'Paintbrush',
     color: '#0000FF',
-    thickness: 16 
+    thickness: 16
 };
 ```
 
-Now here is an example of a custom `Array` in literal form. The list is assigned to a keyword too—again using `var`—for easier understanding and later reuse:
+Now here is an example of a custom `Array` in literal form. The list is assigned (again using the `=` operator) to a keyword too—again using `var`—for easier understanding and later reuse.
 
 ```javascript
 var drawingTools = [pen, highlighter, paintbrush];
