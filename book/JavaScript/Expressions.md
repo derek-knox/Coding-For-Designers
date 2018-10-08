@@ -315,6 +315,6 @@ Now here is an example of a custom `Array` in literal form. The list is assigned
 var drawingTools = [pen, highlighter, paintbrush];
 ```
 
-The code for each drawing tool type makes the most sense when structured as a tree—an `Object`. When organizing all the drawing tools, it makes the most sense to structure them as a list—an `Array`. Over time you will learn to intuit when to use which type, but this distinction should help immensely. Even so, refactoring is always an option.
+The code for each drawing tool type makes the most sense when structured as a tree—an `Object`. When organizing all the drawing tools, it makes the most sense to structure them as a list—an `Array`. Over time you will learn to intuit when to use which type, but this distinction should help immensely. Even so, refactoring is always an option if a better model for organizing surfaces.
 
 On their own, all four `var`iable declarations above are not all that useful. An `Object` is most useful when code can *access* its nested keywords and thus its nested values. Likewise, an `Array` is most useful when code can *iterate* its values. We'll cover what it means to iterate an `Array`'s values in the *Functions* section. Accessing an object's nested keywords however transitions us right into learning about operators.
