@@ -1,5 +1,132 @@
 ## Operators
 
+Expressions are synonymous with values. Values by themselves are useful, but they're more so when they can be *operated* on. Put another way, being able to assign, combine, and access values is useful.
+
+JavaScript provides certain reserved keywords and special characters that fall into this operator category. There are over 50 but with our subset approach we only care about 14. You know most of them already from math class, so that's a bonus. Additionally, there is an extemely useful character that's not technically an operator but might as well be. We'll start there. Welcome to the *dot* (`.`).
+
+### Dot Notation
+
+The dot is not an operator, but a notation. This is just fancy talk. We'll consider it an operator.
+
+The dot allows us to access an object's nested keywords and thus its nested values. You have already seen this in action through virtually all the code samples up to this point. Refresh time:
+
+```javascript
+function makeBackgroundBlack() {
+  document.body.style.backgroundColor = '#000000';
+}
+
+makeBackgroundBlack();
+```
+
+There are three uses of the dot in the familiar snippet above. In each subsequent use an object's keyword is accessed.
+
+### Assignment Operator
+
+### Arithmitic
+
+### Comparison Operators
+
+### Unary Operators
+
+### Comma Operator
+
+- . Dot
+- = Assignment
+- + Arithmitic Add
+- - Arithmitic Subtract
+- * Arithmitic Multiply
+- / Arithmitic Divide
+- === Comparison Equality
+- !== Comparison Inequality
+- > Comparison Greater than
+- >= Comparison Greater than or Equal to
+- < Comparison Less than
+- <= Comparison Less than or Equal to
+- + Unary String
+- ! Unary Not
+- , Comma Operator
+
+
+
+
+
+
+
+# Operators
+
+* Increment and decrement
+A++
+A--
+++A
+--A
+
+* Unary operators
+delete
+void
+typeof
++
+-
+~
+!
+
+* Arithmetic operators
++
+-
+/
+*
+%
+**
+
+* Relational operators
+in
+instanceof
+<
+>
+<=
+>=
+
+* Equality operators
+==
+!=
+===
+!==
+
+* Bitwise shift operators
+<<
+>>
+>>>
+
+* Binary bitwise operators
+&
+|
+^
+
+* Binary logical operators
+&&
+||
+
+* Conditional (ternary) operator
+(condition ? ifTrue : ifFalse)
+
+Assignment operators
+=
+*=
+/=
+%=
++=
+-=
+<<=
+>>=
+>>>=
+&=
+^=
+|=
+[a, b] = [1, 2]
+{a, b} = {a:1, b:2}
+
+* Comma operator
+,
+
 ...
 
 * Primary expressions
