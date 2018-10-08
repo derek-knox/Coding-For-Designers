@@ -96,7 +96,8 @@ Metalsmith(__dirname)
             'JavaScript/Mindset.md',
             'JavaScript/Subset.md',
             'JavaScript/Keywords.md',
-            'JavaScript/Expressions.md'],
+            'JavaScript/Expressions.md',
+            'JavaScript/Operators.md'],
     output: '80-20-javascript.md'
   }))
   .use(concat({
