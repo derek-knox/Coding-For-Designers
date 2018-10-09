@@ -8,7 +8,7 @@ JavaScript provides certain reserved keywords and special characters that fall i
 
 The dot is not an operator, but a notation. This is just fancy talk. We'll consider it an operator.
 
-The dot allows us to access an object's nested keywords and thus its nested values. You have already seen this in action through virtually all the code snippets up to this point. Refresh time:
+The dot allows us to access an object's nested keywords and thus its nested values. You have already seen this in action through virtually all the code snippets up to this point. Refresher time:
 
 ```javascript
 function makeBackgroundBlack() {
