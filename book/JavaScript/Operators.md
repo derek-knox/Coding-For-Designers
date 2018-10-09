@@ -31,11 +31,25 @@ The dot character is powerful because it allows us to *navigate the tree*. By na
 
 ### Assignment Operator
 
+The most commonly used operator is the *assignment* operator, the equal (`=`) sign. You already know what it does. In JavaScript, you can assign keyword identifiers specific values using it. These values can be primitive or complex. They can be literal or evaluated expressions. In either case, the engine works to produce a single value that is then assigned to a specific keyword identifier. Simple. Here we go again:
+
+```javascript
+function makeBackgroundBlack() {
+  document.body.style.backgroundColor = '#000000';
+}
+
+makeBackgroundBlack();
+```
+
+In the above snippet we're assigning the literal String value `'#000000'`
+
 ### Arithmitic
 
 ### Comparison Operators
 
 ### Unary Operators
+
+- refresh makeBackgroundBlack assignment but use + strings to make the black hex val
 
 ### Comma Operator
 
