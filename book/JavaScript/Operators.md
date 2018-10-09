@@ -47,9 +47,9 @@ Assignment is useful for one fundamental reason. What do you think it is?
 
 Without assignment, we would never be able to *save values for later use*. This would mean new values could be created during execution time, but no other code would be able to use them. That would make for lame games, tools, and software. Thank you `=`. 
 
-### Arithmitic
+### Arithmetic Operators
 
-We won't dwell on the arithmitic operators as you already know these too. They are:
+We won't dwell on the arithmetic operators as you already know these too. They are:
 
 - `+` Addition
 - `-` Subtraction
