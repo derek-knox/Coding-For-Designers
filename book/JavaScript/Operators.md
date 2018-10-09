@@ -49,7 +49,14 @@ Without assignment, we would never be able to *save values for later use*. This 
 
 ### Arithmitic
 
+We won't dwell on the arithmitic operators as you already know these too. They are:
 
+- `+` Addition
+- `-` Subtraction
+- `*` Multiplication
+- `/` Division
+
+The combination of these four operators and the assignment operator give us a ton of power. For examlpe, we gain the ability to animate and otherwise move, resize, scale, and transform visual elements with ease.
 
 ### Comparison Operators
 
