@@ -20,7 +20,14 @@ makeBackgroundBlack();
 
 There are three uses of the dot in the familiar snippet above. In each subsequent use an object's keyword is accessed. This is exactly what the dot is for, accessing nested keyword values.
 
-If you recall, a JavaScript program is just a tree of functions. Since a function is a certain type of `Object` (namely the `Function` Object) a JavaScript program is also a tree of objects.  
+If you recall from the *Interactive Code* chapter, a JavaScript program is just a tree of functions and thus a tree of scopes. Since a function is also certain type of `Object` (namely the `Function` Object) a JavaScript program is also a tree of objects.
+
+A JavaScript program is a tree of:
+- functions
+- scopes
+- objects
+
+The dot character is powerful because it allows us to *navigate the program tree*. We will explore this more in the *Functions* section later in this chapter.
 
 ### Assignment Operator
 
