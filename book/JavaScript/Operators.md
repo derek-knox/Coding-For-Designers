@@ -2,7 +2,7 @@
 
 Expressions are synonymous with values. Values by themselves are useful, but they're more so when they can be *operated* on. Put another way, being able to assign, combine, and access values is useful.
 
-JavaScript provides certain reserved keywords and special characters that fall into this operator category. There are over 50 but with our subset approach we only care about 14. You know most of them already from math class, so that's a bonus. Additionally, there is an extemely useful character that's not technically an operator but might as well be. We'll start there. Welcome to the *dot* (`.`).
+JavaScript provides certain reserved keywords and special characters that fall into this operator category. There are over 50 but with our subset approach we only care about 14. You know most of them already from math class. Bonus. Additionally, there is an extemely useful character that's not technically an operator but might as well be. We'll start there. Welcome to the *dot* (`.`).
 
 ### Dot Notation
 
