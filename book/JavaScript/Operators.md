@@ -18,7 +18,9 @@ function makeBackgroundBlack() {
 makeBackgroundBlack();
 ```
 
-There are three uses of the dot in the familiar snippet above. In each subsequent use an object's keyword is accessed.
+There are three uses of the dot in the familiar snippet above. In each subsequent use an object's keyword is accessed. This is exactly what the dot is for, accessing nested keyword values.
+
+If you recall, a JavaScript program is just a tree of functions. Since a function is a certain type of `Object` (namely the `Function` Object) a JavaScript program is also a tree of objects.  
 
 ### Assignment Operator
 
