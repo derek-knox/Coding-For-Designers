@@ -31,7 +31,7 @@ The dot character is powerful because it allows us to *navigate the tree*. By na
 
 ### Assignment Operator
 
-The most commonly used operator is the *assignment* operator, the equal (`=`) sign. You already know what it does. In JavaScript, you assign keyword identifiers specific values with it. These values can be primitive or complex. They can be literal or evaluated expressions too. In either case, the engine works to produce a single value that is then assigned to a specific keyword identifier. Simple. Here we go again:
+The most commonly used operator is the *assignment* operator, the equal (`=`) sign. You already know what it does. In JavaScript, you assign keyword identifiers specific values with it. These values can be primitive or complex. They can be literal expressions or evaluated expressions too. In either case, the engine works to produce a single value that is then assigned to a specific keyword identifier. Simple. Here we go again:
 
 ```javascript
 function makeBackgroundBlack() {
@@ -41,11 +41,11 @@ function makeBackgroundBlack() {
 makeBackgroundBlack();
 ```
 
-In the above snippet, the engine's work is easy. The value is the literal hex color String `'#000000'` and we're assigning it to the `backgroundColor` keyword of the `document.body.style` environment object. As an aside, we now know the `backgroundColor` keyword is on an object nested three levels deep in the program tree.
+In the above snippet, the engine's work is easy. The value of focus is the literal hex color String `'#000000'` and we're assigning it to the `backgroundColor` keyword of the `document.body.style` environment object. As an aside, we now know the `backgroundColor` keyword is on an object nested three levels deep in the program tree.
 
 Assignment is useful for one fundamental reason. What do you think it is?
 
-Without assignment, we would never be able to *save values for later use* by other code. 
+Without assignment, we would never be able to *save values for later use*. This would mean new values could be created during execution time, but no other code would be able to use them. That would make for lame games, tools, and software. Thank you `=`. 
 
 ### Arithmitic
 
