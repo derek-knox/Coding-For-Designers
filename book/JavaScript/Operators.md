@@ -31,7 +31,7 @@ The dot character is powerful because it allows us to *navigate the tree*. By na
 
 ### Assignment Operator
 
-The most commonly used operator is the *assignment* operator, the equal (`=`) sign. You already know what it does. In JavaScript, you can assign keyword identifiers specific values using it. These values can be primitive or complex. They can be literal or evaluated expressions. In either case, the engine works to produce a single value that is then assigned to a specific keyword identifier. Simple. Here we go again:
+The most commonly used operator is the *assignment* operator, the equal (`=`) sign. You already know what it does. In JavaScript, you assign keyword identifiers specific values using it. These values can be primitive or complex. They can be literal or evaluated expressions too. In either case, the engine works to produce a single value that is then assigned to a specific keyword identifier. Simple. Here we go again:
 
 ```javascript
 function makeBackgroundBlack() {
@@ -41,7 +41,7 @@ function makeBackgroundBlack() {
 makeBackgroundBlack();
 ```
 
-In the above snippet we're assigning the literal String value `'#000000'`
+In the above snippet, the engine's work is easy. The value is the literal hex color String `'#000000'` and we're assigning it to the `backgroundColor` keyword of the `document.body.style` object. Based off our recent learning, we know the `backgroundColor` keyword is on an object nested three levels deep in the program tree.
 
 ### Arithmitic
 
