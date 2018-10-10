@@ -56,7 +56,7 @@ We won't dwell on the arithmetic operators as you already know these too. They a
 - `*` Multiplication
 - `/` Division
 
-The combination of these four operators with the assignment operator give us coders a ton of power. Among many abilities, we gain the ability to animate and otherwise move, resize, scale, and transform visual elements with ease. In fact, ...
+The combination of these four operators with the assignment operator give us coders a ton of power. For example, we gain the core ability to animate and otherwise move, resize, scale, and transform visual elements with ease. In fact, ...
 
 ### Comparison Operators
 
