@@ -56,12 +56,14 @@ We won't dwell on the arithmetic operators as you already know these too. They a
 - `*` Multiplication
 - `/` Division
 
-The combination of these four operators with the assignment operator give us coders a ton of power. For example, we gain the core ability to animate and otherwise move, resize, scale, and transform visual elements with ease. In fact, here is a primitive example using HTML, CSS, and JavaScript codes for each respective structure, style, and behavior feature:
+The combination of these four operators with the assignment operator give us coders a ton of power. For example, we gain the core ability to animate and otherwise move, resize, scale, and transform visual elements with ease. In fact, here is a primitive example using HTML (structure), CSS (style), and JavaScript (behavior):
 
+HTML
 ```html
 <div id='the-brick' class="brick">I'm a brick</div>
 ```
 
+CSS
 ```css
 .brick {
   background-color: #FF0000;
@@ -69,6 +71,7 @@ The combination of these four operators with the assignment operator give us cod
 }
 ```
 
+JavaScript
 ```javascript
 var theBrick = document.getElementById('the-brick'),
     angle = 0;
