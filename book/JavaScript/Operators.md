@@ -41,7 +41,7 @@ function makeBackgroundBlack() {
 makeBackgroundBlack();
 ```
 
-In the above snippet, the engine's work is easy. The value of focus is the literal hex color String `'#000000'` and we're assigning it to the `backgroundColor` keyword of the `document.body.style` environment object. As an aside, we now know the `backgroundColor` keyword is on an object nested three levels deep in the program tree.
+In the above snippet, the engine's work is simple. The value of focus is the literal hex color String `'#000000'` and we're assigning it to the `backgroundColor` keyword of the `document.body.style` environment object. As an aside, we now know the `backgroundColor` keyword is on an object nested three levels deep in the program tree.
 
 Assignment is useful for one fundamental reason. What do you think it is?
 
@@ -56,7 +56,7 @@ We won't dwell on the arithmetic operators as you already know these too. They a
 - `*` Multiplication
 - `/` Division
 
-The combination of these four operators and the assignment operator give us coders a ton of power. For example, we gain the ability to animate and otherwise move, resize, scale, and transform visual elements with ease. In fact, ...
+The combination of these four operators with the assignment operator give us coders a ton of power. Among many abilities, we gain the ability to animate and otherwise move, resize, scale, and transform visual elements with ease. In fact, ...
 
 ### Comparison Operators
 
