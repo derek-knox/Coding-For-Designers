@@ -60,7 +60,7 @@ The combination of these four operators with the assignment operator give us cod
 
 HTML
 ```html
-<div id='the-brick' class="brick">I'm a brick</div>
+<div id='the-brick' class='brick'>I'm a brick</div>
 ```
 
 CSS
