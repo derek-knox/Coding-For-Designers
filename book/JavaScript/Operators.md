@@ -82,8 +82,10 @@ The combination of these four operators with the assignment operator give us cod
 - ! Unary Not
 - , Comma Operator
 
+### TODO
+- Regarding the "JavaScript program is a tree of functions/scopes/objects" where the `.` operator allows us to go deeper, using identifiers without a dot allows us to go shallower. This is how we can navigate up and down the program tree to access specific identifiers and thus thier values.
 
-
+- Need to visualize the "global function". Without it the program can't startup and additionally allow the rest of the built-in, third-party, and custom code to be evaluated. Special section on this "startup" aspect. AKA `program()` which equates to the program scope.
 
 
 
