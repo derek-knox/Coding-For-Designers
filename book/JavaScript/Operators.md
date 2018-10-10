@@ -84,6 +84,8 @@ function updateBrickPosition() {
 setInterval(updateBrickPosition, 16);
 ```
 
+Take a moment to envision what the result of each snippet is...
+
 ### Comparison Operators
 
 ### Unary Operators
