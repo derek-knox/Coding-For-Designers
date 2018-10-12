@@ -33,7 +33,7 @@ The dot character is powerful because it allows us to *navigate deeper into the 
 
 ### Assignment Operator
 
-The most commonly used operator is the *assignment* operator, the equal (`=`) sign. You already know what it does. In JavaScript, you assign keyword identifiers specific values with it. These values can be primitive or complex. They can be literal expressions or evaluated expressions too. In all cases, the engine works to produce a single value that is then assigned to a specific keyword identifier. Simple. Here we go again:
+The most commonly used operator is the *assignment* operator, the equal (`=`) sign. You already know what it does. In JavaScript, you assign keyword identifiers specific values with it. These values can be primitive or complex. They can be literal expressions or evaluated expressions too. In all cases, the engine works to provide a single value that is then assigned to a specific keyword identifier. Simple. Here we go again:
 
 ```javascript
 function makeBackgroundBlack() {
