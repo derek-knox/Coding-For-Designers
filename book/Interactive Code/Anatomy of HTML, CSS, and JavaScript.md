@@ -211,8 +211,12 @@ Thus far we've covered the anatomy of HTML and CSS, so now it is time for JavaSc
 
 As you already know, a function is like a shape because it encloses scope just as a shape encloses space. An enclosure helps prevent clashing of what exists between different scopes or spaces. No clashing please. Objects, like forms, are a higher level enclosure. More often than not, they each embody one or more functions or shapes respectively. JavaScript, like the majority of programming languages, has specific *types* of objects. JavaScript is fairly unique however in that a function is *also* an object.
 
-Long story short, a JavaScript program is essentially a nested tree of functions. As a byproduct of functions each enclosing a scope, a JavaScript program can also be thought of as a nested tree of scopes. So when the JavaScript engine evaluates an expression that has a reference (shortcut name for a value), it works like this in an effort to get the bound value:
-1. Look in the target scope for the reference
+Long story short, at execution time, a JavaScript program is a nested tree of functions. As a byproduct of functions each enclosing a scope, a JavaScript program can also be thought of as a nested tree of scopes. What is interesting is that the tree changes. This occurs because the stack of functions grows and shrinks over time.
+
+![TODO - Execution Time Tree](../assets/img/visual-todo-placeholder.jpg?v1.11 "TODO - Execution Time Tree")
+
+When the JavaScript engine evaluates an expression that has a reference (shortcut name for a value), it works like this in an effort to get the bound value:
+1. Look in this function's scope for the reference
 2. If not found, look in that scope's parent scope
 3. Repeat until the reference is found or the root parent scope is hit
 
