@@ -18,7 +18,9 @@ function makeBackgroundBlack() {
 makeBackgroundBlack();
 ```
 
-There are three uses of the dot in the familiar snippet above. In each subsequent use a specific keyword of a nested object is accessed. Accessing a specific keyword of an object—and thus its value—is exactly what the dot is for.
+There are three uses of the dot in the familiar snippet above. In each subsequent use a specific keyword of a nested object is accessed. Accessing a specific keyword of an object—and thus its value—is exactly what the dot is for. Here is a visual representations:
+
+![TODO - Dot Operator Nested Access](../assets/img/visual-todo-placeholder.jpg?v1.11 "TODO - Dot Operator Nested Access")
 
 If you recall from the *Interactive Code* chapter, a JavaScript program is just a tree of functions and thus a tree of scopes. Since a function is also a certain type of `Object` (the `Function` Object) a JavaScript program is also a *tree of objects*.
 
