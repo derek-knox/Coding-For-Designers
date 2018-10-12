@@ -22,7 +22,7 @@ There are three uses of the dot in the familiar snippet above. In each subsequen
 
 ![TODO - Dot Operator Nested Access](../assets/img/visual-todo-placeholder.jpg?v1.11 "TODO - Dot Operator Nested Access")
 
-If you recall from the *Interactive Code* chapter, a JavaScript program is just a tree of functions and thus a tree of scopes. Since a function is also a certain type of `Object` (the `Function` Object) a JavaScript program is also a *tree of objects*.
+If you recall from the *Interactive Code* chapter, a JavaScript program at execution time is just a tree of functions and thus a tree of scopes. Since a function is also a certain type of `Object` (the `Function` Object) a JavaScript program is also a *tree of objects*.
 
 A JavaScript program is a tree of:
 - objects
