@@ -81,7 +81,7 @@ function updateBrickPosition() {
   theBrick.style.transform = 'rotate(' + angle + 'deg)';
 }
   
-setInterval(updateBrickPosition, 16);
+setInterval(updateBrickPosition, 1);
 ```
 
 Take a moment to envision what the result of each snippet is...
