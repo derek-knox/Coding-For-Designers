@@ -45,7 +45,7 @@ makeBackgroundBlack();
 
 In the above snippet, the engine's work is simple. The value of focus is the literal hex color String `'#000000'` and we're assigning it to the `backgroundColor` keyword of the `document.body.style` environment object. As an aside, we now know the `backgroundColor` keyword is on an object nested three levels deep in the program tree. Here is the sample before and after:
 
-```
+```javascript
 // before
 window.document = {
   body: {
