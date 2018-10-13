@@ -113,7 +113,7 @@ Take a moment to envision what the combination of each snippet results in. Spoil
 ...
 
 JavaScript
-```
+```javascript
 var theBrick = document.getElementById('the-brick'),
     isClockwise = true,
     angle = 0;
