@@ -33,7 +33,7 @@ The dot character is powerful because it allows us to *navigate objects*. By nav
 
 ### Assignment Operator
 
-The most commonly used operator is the *assignment* operator, the equal (`=`) sign. You already know what it does. In JavaScript, you assign keyword identifiers specific values with it. These values can be primitive or complex. They can be literal expressions or evaluated expressions too. In all cases, the engine works to provide a single value that is then assigned to a specific keyword identifier. Simple. Here we go again:
+The most commonly used operator is the *assignment* operator, the equal (`=`) sign. You already know what it does. In JavaScript, you assign keyword identifiers specific values with it. These values can be primitive (like `360`, `'360'`, and `true`) or complex (like `{}` and `[]`). They can be literal expressions (like `360`) or evaluated expressions too (like `300 + 60`). In all cases, the engine works to provide a single value that is then assigned to a specific keyword identifier. Simple. Here we go again:
 
 ```javascript
 function makeBackgroundBlack() {
