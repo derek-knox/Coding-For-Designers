@@ -78,7 +78,7 @@ We won't spend much time on the arithmetic operators as you already know about t
 - `*` Multiplication
 - `/` Division
 
-The combination of these four operators and the assignment operator give us coders a ton of power. For example, we gain the core ability to animate and otherwise move, resize, scale, and transform visual elements with ease. In fact, here is a primitive example using HTML (structure), CSS (style), and JavaScript (behavior):
+These four operators in combination with the assignment operator give us coders a ton of power. For example, we gain the core ability to animate and otherwise move, resize, scale, and transform visual elements with ease. In fact, here is a primitive example using HTML (structure), CSS (style), and JavaScript (behavior):
 
 HTML
 ```html
