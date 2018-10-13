@@ -106,7 +106,7 @@ function updateBrickRotation() {
 setInterval(updateBrickRotation, 10);
 ```
 
-Take a moment to envision what the combination of each snippet results in. Spoiler alert, it's a spinning brick. It may not be the most interesting creation, but it illustrates how we can use the arithmetic and assignment operators together to make changes over time.
+Take a moment to envision what the combination of each snippet results in. Spoiler alert, it's a spinning brick. The example illustrates how we can use the arithmetic and assignment operators together to make changes over time.
 
 ### Comparison Operators
 
