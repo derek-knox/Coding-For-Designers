@@ -98,17 +98,19 @@ JavaScript
 var theBrick = document.getElementById('the-brick'),
     angle = 0;
 
-function updateBrickPosition() {
+function updateBrickRotation() {
   angle = angle + 1;
   theBrick.style.transform = 'rotate(' + angle + 'deg)';
 }
   
-setInterval(updateBrickPosition, 1);
+setInterval(updateBrickRotation, 10);
 ```
 
-Take a moment to envision what the combination of each snippet results in.
+Take a moment to envision what the combination of each snippet results in. Spoiler alert, it's a spinning brick. It may not be the most interesting creation, but it illustrates how we can use the arithmetic and assignment operators together to make changes over time.
 
 ### Comparison Operators
+
+
 
 ### Unary Operators
 
