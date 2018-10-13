@@ -43,11 +43,31 @@ function makeBackgroundBlack() {
 makeBackgroundBlack();
 ```
 
-In the above snippet, the engine's work is simple. The value of focus is the literal hex color String `'#000000'` and we're assigning it to the `backgroundColor` keyword of the `document.body.style` environment object. As an aside, we now know the `backgroundColor` keyword is on an object nested three levels deep in the program tree.
+In the above snippet, the engine's work is simple. The value of focus is the literal hex color String `'#000000'` and we're assigning it to the `backgroundColor` keyword of the `document.body.style` environment object. As an aside, we now know the `backgroundColor` keyword is on an object nested three levels deep in the program tree. Here is the sample before and after:
+
+```
+// before
+window.document = {
+  body: {
+    style: {
+      backgroundColor: ''
+    }
+  }
+}
+
+// after
+window.document = {
+  body: {
+    style: {
+      backgroundColor: '#000000'
+    }
+  }
+}
+```
 
 Assignment is useful for one fundamental reason. What do you think it is?
 
-Without assignment, we would never be able to *save values for later use*. This would mean new values could be created during execution time, but no other code would be able to use them. That would make for lame games, tools, and software. Thank you `=`. 
+Without assignment, we would never be able to *change or save values*. This would mean new values could be created during execution time, but no other code would be able to use them. That would make for lame games, tools, and software. Thank you `=`. 
 
 ### Arithmetic Operators
 
