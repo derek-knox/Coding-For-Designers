@@ -29,7 +29,7 @@ A JavaScript program is a tree of:
 - functions
 - scopes
 
-The dot character is powerful because it allows us to *navigate deeper into the tree*. By navigating deeper into the tree, we can access specific and nested values we want to work with. This is where the operators come in handy.
+The dot character is powerful because it allows us to *navigate objects*. By navigating objects, we can access specific and nested values we want to work with. This is where the operators come in handy.
 
 ### Assignment Operator
 
