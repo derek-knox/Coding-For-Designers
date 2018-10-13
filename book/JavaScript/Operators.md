@@ -71,14 +71,14 @@ Without assignment, we would never be able to *change or save values*. This woul
 
 ### Arithmetic Operators
 
-We won't dwell on the arithmetic operators as you already know these too. They are:
+We won't spend much time on the arithmetic operators as you already know about them. They are:
 
 - `+` Addition
 - `-` Subtraction
 - `*` Multiplication
 - `/` Division
 
-The combination of these four operators with the assignment operator give us coders a ton of power. For example, we gain the core ability to animate and otherwise move, resize, scale, and transform visual elements with ease. In fact, here is a primitive example using HTML (structure), CSS (style), and JavaScript (behavior):
+The combination of these four operators and the assignment operator give us coders a ton of power. For example, we gain the core ability to animate and otherwise move, resize, scale, and transform visual elements with ease. In fact, here is a primitive example using HTML (structure), CSS (style), and JavaScript (behavior):
 
 HTML
 ```html
