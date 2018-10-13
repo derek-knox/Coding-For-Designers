@@ -110,7 +110,31 @@ Take a moment to envision what the combination of each snippet results in. Spoil
 
 ### Comparison Operators
 
+...
 
+JavaScript
+```
+var theBrick = document.getElementById('the-brick'),
+    isClockwise = true,
+    angle = 0;
+
+function toggleIsClockwise() {
+  isClockwise = !isClockwise;
+}
+
+function updateBrickRotation() {
+  if(isClockwise === true) {
+    angle = angle + 1;  
+  } else if (isClockwise === false) {
+    angle = angle - 1;
+  }
+  
+  theBrick.style.transform = 'rotate(' + angle + 'deg)';
+}
+  
+setInterval(updateBrickRotation, 10);
+setInterval(toggleIsClockwise, 2000);
+```
 
 ### Unary Operators
 
