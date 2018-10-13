@@ -106,7 +106,7 @@ function updateBrickPosition() {
 setInterval(updateBrickPosition, 1);
 ```
 
-Take a moment to envision what the result of each snippet is...
+Take a moment to envision what the combination of each snippet results in.
 
 ### Comparison Operators
 
