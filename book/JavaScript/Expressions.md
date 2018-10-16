@@ -206,7 +206,7 @@ There is one specific example from the `onDeleteArtboardButtonClick` function I'
 alert('No artboard to delete. None of the ' + new String(artboards.length) + ' artboards are in focus.');
 ```
 
-Since `artboards.length` is a number, we explicitly use the constructor form of String to convert the Number to a String. We additionally use the `+` (concatenation operator) twice to make one large string from three smaller strings. This latter fact will soon be explored more in the *Operators* section.
+Since `artboards.length` is a number, we explicitly use the constructor form of String to convert the Number to a String. We additionally use the `+` (String Concatenation Operator) twice to make one large string from three smaller strings. This latter fact will soon be explored more in the *Operators* section.
 
 The takeaway is that the String type prevents the engine from processing its characters as keywords or other value types. For example, `'null'`, `'undefined'`, `'true'`, `'false'`, and `'360'` are all String values because they are wrapped in quotes. If we removed the quotes they would instead be examples of the `null`, `undefined`, Boolean, Boolean, and Number types respectively.
 

@@ -201,7 +201,376 @@
       </div>
       <div class='content-core'>
         <div class='content-text'>
-          
+          <div><a href="#ones-and-zeros" class="heading-anchor" onclick="return onAnchorJump(this);"><span class="heading-anchor-hash">#</span><h2 id="ones-and-zeros">Ones and Zeros</h2></a></div>
+<p><div class="content-drop-cap-container"><span class="content-drop-cap">C</span></div>omputers are dumb. They can do amazing things, but they are dumb. They are pretty needy too. We give them what they need and what they need is <em>electricity</em>.</p>
+<p>Kind of obvious I suppose, but this is the fundamental requirement that makes them valuable to us. That is unless you like throwing computers. No electricity required. How computers <em>use</em> electricity is pretty cool though. And quite simple too. This is where the ones and zeros come in.</p>
+<p>A <em>one</em> is the <em>presence of electricity</em>. A <em>zero</em> is the <em>absence of electricity</em>. Think <em>on</em> and <em>off</em>. Same thing. Electricity’s presence (one) and absence (zero) make a computer tick.</p>
+<p>In fact, you have just learned the most basic code of computers. That was quick. One is presence and zero is absence. One is on and zero is off. This particular code is called <em>binary</em>. Now when you hear coders talk about binary, you know what they are referring to. Ones and zeros. That is it. Those ones and zeros are not that magical now huh?</p>
+</div><a href="#todo---table-replace" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="todo---table-replace" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg?v1.11" alt="TODO - Table Replace" title="TODO - Table Replace"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>TODO - Table Replace</figcaption></figure></div></a><div class="content-text">
+<table>
+  <tr>
+    <td>Common Binary Flavors</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>on</td>
+    <td>off</td>
+  </tr>
+  <tr>
+    <td>yes</td>
+    <td>no</td>
+  </tr>
+  <tr>
+    <td>true</td>
+    <td>false</td>
+  </tr>
+</table>
+
+<p>Most coders don’t really care about the presence or absence of electricity though. Myself included. Coders just care that binary <em>represents one of two states</em>. State <em>1</em> or state <em>0</em>. State <em>on</em> or state <em>off</em>. State <em>true</em> or state <em>false</em>. Ultimately the two states can represent anything you want. State <em>color</em> or state <em>grayscale</em> for example. Only one is active at a time. You get the idea.</p>
+<p>For binary code, the computer takes the presence or absence of electricity in (input) and we <em>convert meaning</em> out (output). What makes binary code a <em>code</em> is that it is a <em>system for converting meaning between forms</em>. Etch this in your brain.</p>
+<blockquote>
+<p>Code is a system for converting meaning between forms.</p>
+</blockquote>
+<p>I could take a pencil and write a 1 or a 0 on a sheet of paper (or any two distinct symbols for that matter). I could then give it to you. As long as both of us agree on the <em>converted meaning</em>, then we would have a binary code to communicate. For example a 1 could mean &quot;yes&quot; and a 0 “no”. We could ask each other questions verbally and respond in this code.</p>
+<p>There is nothing inherently magical about code. Remember this fact.</p>
+<div><a href="#hard-to-soft" class="heading-anchor" onclick="return onAnchorJump(this);"><span class="heading-anchor-hash">#</span><h2 id="hard-to-soft">Hard to Soft</h2></a></div>
+<p>Computers take electricity as input. People convert meaning as output. Specifically, people have <em>agreed</em> that the presence of electricity is 1 and the absence is 0. Go take a look at the power buttons of various devices around you. I will wait. You will see that most, if not all, have a line symbol (1) and a circle symbol (0). Binary switch. On and Off. Cool.</p>
+</div><a href="#i/o-examples" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="i/o-examples" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg?v1.11" alt="I/O examples" title="I/O examples"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>I/O examples</figcaption></figure></div></a><div class="content-text">
+<p>How do we actually <em>control</em> electricity though? We can’t reliably use binary code to convert meaning in a computer if we cannot control electricity now can we. Welcome to the <em>electric circuit</em>. It has one job. Control the <em>flow of electricity</em>. How convenient. Presence and absence. On and off. One and zero. This is the exact point where we bridge the physical world (presence or absence of electricity in a circuit) and the virtual world (one or zero). Think <em>hard</em> to <em>soft</em>. <em>Hard</em>ware to <em>soft</em>ware.</p>
+<p>We won’t go into the details of circuits because they exceed the scope of this book. If you are interested in learning more however, I highly recommend <em>But How Do It Know?</em> by J. Clark Scott. The designer in me wishes the book had a more communicative title in addition to a more timeless cover design, but I digress. J. Clark Scott does an amazing job teaching how computers and their various components work. As important, he teaches in a very easy-to-understand and digestible fashion. Get the book if you want to learn how computers work. Soapbox dismounted.</p>
+<p>Scott’s book is not required reading to move forward though. Just know that the amount of binary states that can be represented physically (electrically) and thus virtually (code) in a computer, is more than you need. Additionally, computers are fast because electricity is fast. For example electricity can revolve around Earth&#39;s equater roughly seven times in one second. Think about that again. Your creativity and experience are the only limiting factors.</p>
+<p>Bridging the physical to virtual gap is the fundamental aspect that enables computers and the amazing games, tools, and software we love, to exist.</p>
+<div><a href="#bits-and-bytes" class="heading-anchor" onclick="return onAnchorJump(this);"><span class="heading-anchor-hash">#</span><h2 id="bits-and-bytes">Bits and Bytes</h2></a></div>
+<p>A code with only two states is kind of boring. Useful yes, but boring. I bet you are thinking we can make a more interesting code if we have more than one binary. You are correct. Coders never say <em>more than one binary</em> though. It sounds weird. It also takes too long to say and type. Coders prefer shortcuts. Welcome to the word <em>bit</em>.</p>
+<p>A <em>bit</em> is a <em>binary digit</em>. We already know binary represents one of two states. We also know that those two states are agreed to mean <em>1</em> and <em>0</em>. So a bit is a binary digit. A bit can either be a <em>1</em> or a <em>0</em>. Simple.</p>
+<p>One bit is boring because it can only represent one of two states. The natural question is then, how many states can we represent with <em>two</em> bits?</p>
+</div><a href="#todo---table-replace" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="todo---table-replace" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg?v1.11" alt="TODO - Table Replace" title="TODO - Table Replace"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>TODO - Table Replace</figcaption></figure></div></a><div class="content-text">
+<table>
+  <tr>
+    <td>Bit A</td>
+  </tr>
+  <tr>
+    <td>
+      <table>
+        <tr>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<p>1 bit = 2 states</p>
+</div><a href="#todo---table-replace" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="todo---table-replace" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg?v1.11" alt="TODO - Table Replace" title="TODO - Table Replace"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>TODO - Table Replace</figcaption></figure></div></a><div class="content-text">
+<table>
+  <tr>
+    <td>Bit B</td>
+    <td>Bit C</td>
+  </tr>
+  <tr>
+    <td>
+      <table>
+        <tr>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+      </table>
+    </td>
+    <td>
+      <table>
+        <tr>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<p>2 bits = 4 states</p>
+<p>That makes sense. One bit represents one of two possible states. Two bits represents one of four possible states. No brainer. Let’s look at all the output states for kicks.</p>
+</div><a href="#todo---table-replace" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="todo---table-replace" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg?v1.11" alt="TODO - Table Replace" title="TODO - Table Replace"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>TODO - Table Replace</figcaption></figure></div></a><div class="content-text">
+<table>
+  <tr>
+    <td>Bit A</td>
+    <td>Bit B and Bit C</td>
+  </tr>
+  <tr>
+    <td>0 or 1</td>
+    <td>00 or 01 or 10 or 11</td>
+  </tr>
+</table>
+
+<p>That <em>00 or 01 or 10 or 11</em> looks weird. It is. Thankfully, when we get to writing our own code, we don’t have to write in <em>1s</em> and <em>0s</em>. As a designer, I would not have learned to code otherwise.</p>
+<p>Now is a good point in time to reflect on <em>why</em> we are even looking at bits if we don’t have to code with them. There are four ideas worth instilling:</p>
+<ol>
+<li>Computers, these complex machines, rely solely on extremely basic concepts</li>
+<li>There is no magic in coding, just simple ideas stacked atop each other</li>
+<li>The <em>one-of-two-states concept</em> a single bit represents is constantly reused in coding</li>
+<li>The longer the <em>sequence of bits</em>, the greater the amount of <em>states</em></li>
+</ol>
+<p>How many states could we represent with three bits?</p>
+</div><a href="#todo---table-replace" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="todo---table-replace" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg?v1.11" alt="TODO - Table Replace" title="TODO - Table Replace"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>TODO - Table Replace</figcaption></figure></div></a><div class="content-text">
+<table>
+  <tr>
+    <td>Bit D and Bit E and Bit F</td>
+  </tr>
+  <tr>
+    <td>000 or 001 or 010 or 011 or 100 or 101 or 110 or 111</td>
+  </tr>
+</table>
+
+<p>Eight? I was expecting six. It makes sense though when we see the state values printed out. For every bit we add, we double the total possible number of states as before. This is obvious when we write it out.</p>
+</div><a href="#todo---table-replace" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="todo---table-replace" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg?v1.11" alt="TODO - Table Replace" title="TODO - Table Replace"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>TODO - Table Replace</figcaption></figure></div></a><div class="content-text">
+<table>
+  <tr>
+    <td>Number of Bits</td>
+    <td>Number of States</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>16</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>32</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>64</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>128</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>256</td>
+  </tr>
+</table>
+
+<p>You will notice that I stop at eight bits in the table above. We could keep going and the same doubling rule would apply. Why stop at eight then? Random I know. Ultimately, <em>people simply agreed that eight is a good stopping point</em>. They <em>agreed</em> that being able to represent 256 states was <em>good enough</em> for a wide range of codes. Again, no inherent magic.</p>
+<p>We know coders like shortcuts. Is there a shorter way to say and type <em>eight bits</em>? Yes, welcome to the word <em>byte</em>. A <em>byte</em> is <em>eight bits</em>. Naturally, a byte also represents one of 256 states.</p>
+<p>Let’s use what we just learned to make an example code of our own. We will use a byte’s 256 states to represent the symbols of the English language. Twenty-six lowercase and twenty-six uppercase letters would use up fifty-two states. Ten numerals and all the punctuation marks, including a lot of obscure marks, could be represented in another fifty states. We could increase fifty to one-hundred and include even more obscure marks (poop emoji included). One hundred four unused states would <em>still remain</em> (256 - 26 - 26 - 100 = 104). Good enough, for English at least.</p>
+</div><a href="#image-grid-of-english-symbols" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="image-grid-of-english-symbols" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg?v1.11" alt="Image Grid of English Symbols" title="Image Grid of English Symbols"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>Image Grid of English Symbols</figcaption></figure></div></a><div class="content-text">
+<p>What if we wanted a code to represent <em>all the symbols of every single human language we have ever known</em>? A single byte would not cut it. Different amounts of bits, and thus bytes, are useful for different scenarios. Chew on that.</p>
+<p>I want to reinforce the notion that the <em>converted meaning</em> represented by a certain number of states could be <em>anything we want</em>. This is why coding is such an expressive and creative craft. This foundation of binary, bit, and byte is simply about representing <em>states</em>. As the amount of states a computer controls increases, so too does the potential power of <em>the code we author</em>.</p>
+<p>I mentioned previously that we don’t have to write code in 1s and 0s. Thank god. Coders have done that for us already. Then other coders created their own code on top of that. This stacking of code on top of code is what will allow us to write JavaScript later. We won’t care about any of the code underneath JavaScript. We will focus only on the <em>high-level language</em> of JavaScript. We will ignore the <em>low-level languages</em> beneath it. We will just know, and respect the fact, that they are there.</p>
+<div><a href="#black-and-white" class="heading-anchor" onclick="return onAnchorJump(this);"><span class="heading-anchor-hash">#</span><h2 id="black-and-white">Black and White</h2></a></div>
+<p>Get out your sketchbook and try to come up with your own binary code that <em>represents</em> a 2x2 black and white image. Seriously, try it. Feel free to use the visual output states below as a guide.</p>
+</div><a href="#grid-of-2x2-examples" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="grid-of-2x2-examples" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg?v1.11" alt="Grid of 2x2 example" title="Grid of 2x2 examples"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>Grid of 2x2 examples</figcaption></figure></div></a><div class="content-text">
+<p>Your solution may differ from mine and that is fine. The goal here is simply to demonstrate how we can <em>visualize a code</em>. This is a primitive example with admittedly uninteresting output. Regardless, it provides one example of how to visualize a code.</p>
+</div><a href="#grid-of-2x2-examples-with-4-bit-code" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="grid-of-2x2-examples-with-4-bit-code" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg?v1.11" alt="Grid of 2x2 examples with 4-bit code" title="Grid of 2x2 examples with 4-bit code"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>Grid of 2x2 examples with 4-bit code</figcaption></figure></div></a><div class="content-text">
+<p>The visual above illustrates a core aspect of computer graphics. If you author digital content you will have made the connection. Welcome to the <em>pixel</em>.</p>
+<p>Pixel is another shortcut word. A pixel is a <em>picture element</em>. Do not ask me where the &quot;x&quot; came from. Simply put, to visualize a code on a computer screen, pixels are used. Naturally, the more pixels you have, the larger the image. Makes sense.</p>
+<p>The sixteen variants above each represent a 2x2 four pixel image. They are represented in code using a 4-bit code (half a byte). If we used a full byte, then we could represent an eight pixel image that has two hundred fifty six variants. Technically speaking our image&#39;s dimensions, using the two hundred fifty six state variants, could be either:</p>
+<ul>
+<li>1x8</li>
+<li>2x4</li>
+<li>4x2</li>
+<li>8x1</li>
+</ul>
+<p>Similarly, our 4-bit code could represent the image dimensions:</p>
+<ul>
+<li>1x4</li>
+<li>2x2</li>
+<li>4x1</li>
+</ul>
+<p>In either case, the underlying bits are simply a sequence of ones and zeros. The pixel count remains constant where the <em>converted meaning</em> of the bit sequence determines the image&#39;s dimensions. Generally speaking, the greater the pixel count, the more bits and thus bytes are required to represent it.</p>
+<p>The above approach only allows for black and white images. As designers however, we greatly value the use of color to communicate within our creations. Take a moment before continuing and consider <em>how might you code color</em>?</p>
+<div><a href="#coding-color" class="heading-anchor" onclick="return onAnchorJump(this);"><span class="heading-anchor-hash">#</span><h2 id="coding-color">Coding Color</h2></a></div>
+<p>Thus far we have made our own example codes. One to represent the symbols in the English language and another to represent black and white images. We could continue this trend. Instead we will transition toward codes that already exist. The advantage is twofold:</p>
+<ol>
+<li>Less work for us, we don’t need to reinvent the wheel</li>
+<li>Using established codes empowers us to achieve more, faster</li>
+</ol>
+<p>In the context of color we will explore the common codes RGB and HEX. The former is <em>red green blue</em> and the latter is <em>hexadecimal</em>. We will start with RGB.</p>
+<h3 id="rgb">RGB</h3>
+<p>RGB is composed of three values (color channels). A red value, a green value, and a blue value. Combined they represent a specific color value. The literal color represented by a specific RGB coded value has already been decided. No work on our end. Nice. We simply rely on the various design applications we use to consistently represent colors in our digital designs. Photoshop, Illustrator, Lightroom, and Sketch are a few examples of the hundreds, if not thousands, of authoring applications we depend on to consistently represent color.</p>
+<p>RGB is represented in a few flavors too. For illustration purposes, let’s briefly represent our own custom RGB code using a <em>bit</em> for each red value, blue value, and green value.</p>
+</div><a href="#custom-rgb-=-8-different-colors" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="custom-rgb-=-8-different-colors" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg?v1.11" alt="Custom RGB = 8 different colors" title="Custom RGB = 8 different colors"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>Custom RGB = 8 different colors</figcaption></figure></div></a><div class="content-text">
+<p>Eight colors is a pretty limiting palette. What happens if we swap out the bits for bytes? Holy shit. RGB gets us <em>over 16 million</em> color values. That palette is enormous. This is an actual flavor of RGB called RGB24. Another is called RGB32 or RGBA, where &quot;A&quot; is an <em>alpha</em> (transparency) value. Just call them by their normal names RGB and RGBA.</p>
+</div><a href="#rgb-and-rgba" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="rgb-and-rgba" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg?v1.11" alt="RGB and RGBA" title="RGB and RGBA"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>RGB and RGBA</figcaption></figure></div></a><div class="content-text">
+<p>*^</p>
+<p>1 byte + 1 byte + 1 byte = 8 bits + 8 bits + 8 bits = RGB24 = RGB</p>
+<p>1 byte + 1 byte + 1 byte + 1 byte = 8 bits + 8 bits + 8 bits + 8 bits = RGB32 = RGBA</p>
+<p>R(0) + G(0) + B(0) = Black</p>
+<p>R(255) + G(255) + B(255) = White</p>
+<p>R(255) + G(0) + B(0) = Red</p>
+<p>R(255) + G(255) + B(0) = Yellow</p>
+<p>R(0) + G(255) + B(0) = Green</p>
+<p>R(0) + G(255) + B(255) = Cyan</p>
+<p>R(0) + G(0) + B(255) = Blue</p>
+<p>^*</p>
+<p>You will notice the sample RGB colors above range from 0-255 for each byte’s value. If I invented the RGB code, 1-256 would be used instead. I did not invent it and instead we must use 0-255. Sad.</p>
+<p>Counting starting at zero instead of one is a recurring pattern you will see in coding. This is one of the fundamental aspects that throws non-coders off when first learning more about coding. We have started counting from <em>one not zero our entire lives</em>. This is admittedly a difficult pill to swallow, but we must. Thankfully it will become second nature in time. Feel free to pursue clarity through <em>zero-based numbering</em> research however. For a quick and dirty answer, math nerds and computer optimization are to blame.</p>
+<h3 id="hex">HEX</h3>
+<p>Hexadecimal is another common color code. It represents the same color range as RGB, just differently. Instead of a range between <em>0-255</em> for each R, G, and B value, HEX uses <em>00-FF</em> for each. The letters A-F replace the numbers 10-15 (A instead of 10 through F instead of 15). The reason for this is so less bits are needed. So for HEX, each color channel is represented by two characters (00-FF) instead of RGB&#39;s three (0-255).</p>
+</div><a href="#todo---table-replace" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="todo---table-replace" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg?v1.11" alt="TODO - Table Replace" title="TODO - Table Replace"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>TODO - Table Replace</figcaption></figure></div></a><div class="content-text">
+<table>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+    <td>13</td>
+    <td>14</td>
+    <td>15</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+    <td>A</td>
+    <td>B</td>
+    <td>C</td>
+    <td>D</td>
+    <td>E</td>
+    <td>F</td>
+  </tr>
+</table>
+
+<p>Naturally, each character pair represents 256 values (16 <em> 16 = 256). Additionally, the </em>#* symbol often precedes the value. Example time.</p>
+</div><a href="#hex" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="hex" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg?v1.11" alt="HEX" title="HEX"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>HEX</figcaption></figure></div></a><div class="content-text">
+<p>*^</p>
+<p>1 byte + 1 byte + 1 byte = 8 bits + 8 bits + 8 bits = HEX</p>
+<p>00 + 00 + 00 = #000000 = Black</p>
+<p>FF + FF + FF = #FFFFFF = White</p>
+<p>FF + 00 + 00 = #FF0000= Red</p>
+<p>FF + FF + 00 = #FFFF00 = Yellow</p>
+<p>00 + FF + 00 = #00FF00 Green</p>
+<p>00 + FF + FF = #00FFFF = Cyan</p>
+<p>00 + 00 + FF = #0000FF = Blue</p>
+<p>^*</p>
+<p>Feel free to continue to use color pickers, swatches, generated palettes, or any other tooling you use for color when designing. Moving forward you will simply be armed with a deeper understanding of how the color is coded. Or more precisely <em>encoded</em>.</p>
+<div><a href="#encode-and-decode" class="heading-anchor" onclick="return onAnchorJump(this);"><span class="heading-anchor-hash">#</span><h2 id="encode-and-decode">Encode and Decode</h2></a></div>
+<p>Code is a system for converting meaning between forms. One form is considered <em>encoded</em> and the other <em>decoded</em>. To <em>encode</em>, is to convert <em>into</em> coded form. To <em>decode</em> is to convert <em>from</em> coded form. A few forms have been encoded and decoded already.</p>
+</div><a href="#todo---table-replace" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="todo---table-replace" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg?v1.11" alt="TODO - Table Replace" title="TODO - Table Replace"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>TODO - Table Replace</figcaption></figure></div></a><div class="content-text">
+<table>
+  <tr>
+    <td></td>
+    <td>Encoded</td>
+    <td>Decoded</td>
+  </tr>
+  <tr>
+    <td>Electricity</td>
+    <td>Presence and Absence</td>
+    <td>1 and 0</td>
+  </tr>
+  <tr>
+    <td>Pencil and Paper Answers</td>
+    <td>1 and 0</td>
+    <td>Yes and No</td>
+  </tr>
+  <tr>
+    <td>Binary Switch</td>
+    <td>1 and 0</td>
+    <td>On and Off</td>
+  </tr>
+  <tr>
+    <td>Example English Code</td>
+    <td>1 Byte</td>
+    <td>1 of 256 Unique Symbols</td>
+  </tr>
+  <tr>
+    <td>2x2 Black and White Image</td>
+    <td>4-Bits</td>
+    <td>1 of 16 Unique Images</td>
+  </tr>
+  <tr>
+    <td>RGB and HEX Color</td>
+    <td>3 Bytes</td>
+    <td>1 of 16,777,216 Color Values</td>
+  </tr>
+</table>
+
+<p>A decoded form can be another code’s encoded form. The opposite is also possible. Remember this. Different environments, systems, and software sometimes only work with a specific form. The internet, browsers, and design software for example, in addition to the operating systems they run on, all need to encode and decode to do the cool things they do. Having the capability to convert forms enables better communication with each other. Each software system may expand its own capabilities by having this conversion power too. Conversion through encoding and decoding is power.</p>
+<p>Imagine a code where a bit’s two states encoded for two RGB colors. The bit’s 1 would represent white. The bit’s 0 would represent black.</p>
+</div><a href="#todo---table-replace" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="todo---table-replace" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg?v1.11" alt="TODO - Table Replace" title="TODO - Table Replace"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>TODO - Table Replace</figcaption></figure></div></a><div class="content-text">
+<table>
+  <tr>
+    <td></td>
+    <td>Encoded</td>
+    <td>Decoded</td>
+  </tr>
+  <tr>
+    <td>White</td>
+    <td>1</td>
+    <td>11111111 11111111 11111111</td>
+  </tr>
+  <tr>
+    <td>Black</td>
+    <td>0</td>
+    <td>00000000 00000000 00000000</td>
+  </tr>
+</table>
+
+<p>What if we had to send this coded data over the internet from one side of the world to the other. Remember that a decoded form may be another code’s encoded form. Remember the opposite is also possible. Armed with this knowledge, which form would you send over the internet?</p>
+<p>Math is not my strong suit, but a single bit is twenty-four times smaller than twenty-four bits. In principle, the single bit will be delivered twenty-four times faster. Winning. This illustrates that the single bit is better for sending across the internet. However, once the bit arrives, it will not be understood as white or black until decoding occurs.</p>
+<p>What if I told you that the decoding process took one hour? This is just a thought experiment, but if that was the case, then I would take my chances sending the twenty-four bits instead. </p>
+<p>The takeaway here is that encoded and decoded forms are valuable in different scenarios. As illustrated above, the desire for fast internet often means encoding data before sending and then decoding upon arrival.</p>
+<div><a href="#saved-image" class="heading-anchor" onclick="return onAnchorJump(this);"><span class="heading-anchor-hash">#</span><h2 id="saved-image">Saved Image</h2></a></div>
+<p>Let’s chain together everything we have covered thus far to save a color image.</p>
+<p>Computers manage the presence and absence of electricity with circuits. These allow us to bridge the physical world (hardware) to the virtual (software). We agree that the presence of electricity is a 1 and the absence a 0. We refer to 1 and 0 as a binary code. Each 1 and 0 is a binary digit.</p>
+<p>Saying and typing binary digit is annoying. Coders created the shortcut word bit to alleviate this annoyance. Naturally, a bit represents one of two states at any moment in time. Eight of these bits are a byte. A byte allows us to represent 256 states. The number eight is arbitrary. Representing 256 states was simply a good enough amount for coders. It was good enough because it could represent a wide range of codes. All the English characters and then some for example, can be represented within 256 states with ease. </p>
+<p>Using three bytes (24 bits) allows us to represent over 16 million different states. Colors in our examples thus far. For the image to be saved we will simply encode bytes and save to a file. When a design application loads our image file, it will be responsible for decoding it. Since RGB and HEX are agreed upon ways to represent color, we can rely on the application to display what we intended. This only works if we let the application know how to decode it. Cool, that makes sense.</p>
+<p>For simplicity we will create a one pixel image. Understanding how one color pixel is encoded means we can simply repeat the same process until we have as many pixels as we want. Again, coding uses simple, basic, repetitive, and reusable concepts. Not magic.</p>
+<p>A single color will fit in our pixel. The color will be a random one of the over 16 million possibilities. How might you accomplish this? Try to sketch an approach before moving forward.</p>
+<p>I simply flipped a coin eight times. Heads was 1 and tails was 0, my own little code. This resulted in a byte of encoded data. I repeated this process two more times. You know where I am going with this. Decoded, the three bytes represent one color. RGB or HEX will do.</p>
+</div><a href="#todo---table-replace" class="figure-anchor" onclick="return onAnchorJump(this);"><div id="todo---table-replace" class="content-visual"><figure><img src="../assets/img/visual-todo-placeholder.jpg?v1.11" alt="TODO - Table Replace" title="TODO - Table Replace"><figcaption class="hr"><hr><span class="figure-anchor-hash">#</span>TODO - Table Replace</figcaption></figure></div></a><div class="content-text">
+<table>
+  <tr>
+    <td>Random Color Binary</td>
+    <td>10010001 01110101 001010101</td>
+  </tr>
+  <tr>
+    <td>Random Color RGB</td>
+    <td>R(145) G(117) B(85)</td>
+  </tr>
+  <tr>
+    <td>Random Color HEX</td>
+    <td>#917555</td>
+  </tr>
+</table>
+
+<p>Once encoded, we need to actually save it to a file. How do we do that? Well it is quite simple actually. The Operating System (OS) you run and use your design application(s) on (Windows, Mac, iOS, Android, etc.) has prewritten code giving you this power. Again, prewritten code stacked on prewritten code often gives us an easy way to accomplish tasks that would otherwise be more difficult.</p>
+<p>Long story short, the encoded data needs to be inserted into an empty file. When saving the file, it needs to have a <em>file extension</em> appended to the file’s name. Think <code>.jpg</code>, <code>.png</code>, <code>.psd</code>, <code>.html</code>, <code>.css</code>, and <code>.js</code> for example. The sole reason for a file extension is so the OS and its applications can quickly identify the file’s <em>type</em>. Why is that important? If you didn’t already guess, the file extension helps identify the decoding approach. In turn, only certain applications know how to work with certain file <em>types</em>. Full circle.</p>
+<p>Later, when we start to write our own JavaScript code, we will use the file extension <code>.js</code>. The code in the JavaScript file will not be in 1s and 0s though. Instead we will use the words that are part of the JavaScript language. We are not limited to just JavaScript words though, we get to use our own custom ones too. Much better than 1s and 0s. </p>
+<p>First however, we will look at the three distinct concepts used to display static, dynamic, and interactive designs on a computer or device screen. These concepts are structure, style, and behavior. We will visit each in the context of 2D and 3D to better shape your perspective (pun intended). Go time.</p>
+
         </div>
       </div>
     </section>

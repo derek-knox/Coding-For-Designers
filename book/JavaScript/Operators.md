@@ -2,7 +2,7 @@
 
 Expressions are synonymous with values. Values by themselves are useful, but they're more so when they can be *operated* on. Put another way, being able to assign, combine, and access values is useful.
 
-JavaScript provides certain reserved keywords and special characters that fall into this operator category. There are over 50 but with our subset approach we only care about 14. You know most of them already from math class. Bonus. Additionally, there is an extemely useful character that's not technically an operator but might as well be. We'll start there. Welcome to the *dot* (`.`).
+JavaScript provides certain reserved keywords and special characters that fall into this operator category. There are over 50 but with our subset approach we only care about 15. You know most of them already from math class. Bonus. Additionally, there is an extremely useful character that's not technically an operator but might as well be. We'll start there. Welcome to the *dot* (`.`).
 
 ### Dot Notation
 
@@ -100,19 +100,63 @@ var theBrick = document.getElementById('the-brick'),
 
 function updateBrickRotation() {
   angle = angle + 1;
-  theBrick.style.transform = 'rotate(' + angle + 'deg)';
+  theBrick.style.transform = 'rotate(' + new String(angle) + 'deg)';
 }
   
 setInterval(updateBrickRotation, 10);
 ```
 
-Take a moment to envision what the combination of each snippet results in. Spoiler alert, it's a spinning brick. The example illustrates how we can use the arithmetic and assignment operators together to make changes over time.
+Take a moment to envision what the combination of snippets results in before reading on. Spoiler alert, it's a spinning brick. This example illustrates how we can use the arithmetic and assignment operators together to make changes over time.
+
+Remember the *Frame Rate* section of the *Interactive Code* chapter? Animation is simply one or more changes that impact visual elements between each rendered frame. With code we can make and apply these changes to visual elements over time. It's as simple as that.
+
+### String Concatenation Operator
+
+The line of code in the example above that is *applying* the rotation change is:
+
+```javascript
+  theBrick.style.transform = 'rotate(' + new String(angle) + 'deg)';
+```
+
+We've seen this String Concatenation Operator (`+`) before in our `artboards.js` file:
+
+```javascript
+alert('No artboard to delete. None of the ' + new String(artboards.length) + ' artboards are in focus.');
+```
+
+Yes, the `+` is *both* an arithmetic operator *and* the String Concatenation Operator. When used only with numbers, it is the arithmetic operator and when Strings are involved, it is the String Concatenation Operator.
+
+If we pretend that the `angle` value is `45` and `artboards.length` is `3`, then our snippets become:
+
+```javascript
+  theBrick.style.transform = 'rotate(' + '45' + 'deg)';
+```
+
+and 
+
+```javascript
+alert('No artboard to delete. None of the ' + '3' + ' artboards are in focus.');
+```
+
+After the concatenation operator does its work (adding Strings together), the end result of each snippet is:
+
+```javascript
+  theBrick.style.transform = 'rotate(45deg)';
+```
+
+and
+
+```javascript
+alert('No artboard to delete. None of the 3 artboards are in focus.');
+```
+
+When expressions are evaluated and a resulting value remains (specific Strings in our two examples above), this is the moment in time they are useful. What if we only wanted to make changes over time *given a certain condition*? This is where the comparison operators come in.
+
 
 ### Comparison Operators
 
-...
+These comparison operators are vital for controlling *code flow*. Put another way, only certain code executes at a given moment in time based on one or more conditions. We'll update just the brick JavaScript snippet from above to extend our brick animation example:
 
-JavaScript
 ```javascript
 var theBrick = document.getElementById('the-brick'),
     isClockwise = true,
@@ -123,7 +167,7 @@ function toggleIsClockwise() {
 }
 
 function updateBrickRotation() {
-  if(isClockwise === true) {
+  if (isClockwise === true) {
     angle = angle + 1;  
   } else if (isClockwise === false) {
     angle = angle - 1;
@@ -136,11 +180,53 @@ setInterval(updateBrickRotation, 10);
 setInterval(toggleIsClockwise, 2000);
 ```
 
-### Unary Operators
+We added four new pieces:
+1. `isClockwise` identifier
+1. `toggleIsClockwise()` function
+1. `if...else if` statement
+1. `setInterval(toggleIsClockwise, 2000)` function call
+
+How do you think the above additions change the program? There is a new operator (`!`) added that we'll soon cover, but still try to guess how the program changes.
+
+Here is added context for each addition:
+1. `isClockwise` identifier (to track clockwise rotation over time)
+1. `toggleIsClockwise()` function (to update `isClockwise`)
+1. `if...else if` statement (to control code flow)
+1. `setInterval(toggleIsClockwise, 2000)` function call (to execute `toggleIsClockwise()` every 2000 milliseconds, aka 2 seconds)
+
+You nailed it if you guessed that the changes make the brick's rotation toggle between a clockwise and counter-clockwise rotation every two seconds.
+
+The main comparison operator in use is the `===`, but there are six in total:
+- `===` Equality
+- `!==` Inequality
+- `>` Greater than
+- `>=` Greater than or Equal to
+- `<` Less than
+- `<=` Less than or Equal to
+
+It is worth noting that the `===` and `!==` are useful with Strings just as they are with Numbers. In either case, the expression, the *resulting value of the comparison* is a Boolean value.
+
+With these six operator options you can validate certain conditions and thus control code flow. You'll notice that in the example above and in all cases we care about, the comparison operators are used with variations of `if/else` statements. We've yet to explicitly cover these statements in hopes that you can intuit what they do on your own. We will cover them in the following *Statements* section however to solidify your understanding.
+
+Of the four additions in the previous code example, the one that should be the most odd has to do with the `toggleIsClockwise()` function, and specifically its body:
+
+```javascript
+isClockwise = !isClockwise;
+```
+
+This should be the case due to the uncovered `!` operator. This brings us to the logic operators.
+
+### Logic Operators
+
+The `!` is the *not* operator. Think of it as a function
+
+- ! not
+- && and
+- || or
 
 - refresh makeBackgroundBlack assignment but use + strings to make the black hex val
 
-### Comma Operator
+### TODO
 
 - . Dot
 - = Assignment
@@ -148,17 +234,17 @@ setInterval(toggleIsClockwise, 2000);
 - - Arithmitic Subtract
 - * Arithmitic Multiply
 - / Arithmitic Divide
+- + String concatenation
 - === Comparison Equality
 - !== Comparison Inequality
 - > Comparison Greater than
 - >= Comparison Greater than or Equal to
 - < Comparison Less than
 - <= Comparison Less than or Equal to
-- + Unary String
-- ! Unary Not
-- , Comma Operator
+- ! Logic Not
+- && Logic And
+- || Logic Or
 
-### TODO
 - Regarding the "JavaScript program is a tree of functions/scopes/objects" where the `.` operator allows us to go deeper, using identifiers without a dot allows us to go shallower. This is how we can navigate up and down the program tree to access specific identifiers and thus thier values.
 
 - Need to visualize the "global function". Without it the program can't startup and additionally allow the rest of the built-in, third-party, and custom code to be evaluated. Special section on this "startup" aspect. AKA `program()` which equates to the program scope.
